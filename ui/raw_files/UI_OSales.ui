@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OWNER_SALES</class>
+ <widget class="QMainWindow" name="OWNER_SALES">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1921</width>
+    <height>1005</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Inventory and Sales Management System</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: white;</string>
+  </property>
+  <widget class="QWidget" name="Owner_centralwidget">
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <widget class="QFrame" name="LeftMenuBar">
+    <property name="geometry">
+     <rect>
+      <x>-1</x>
+      <y>-1</y>
+      <width>301</width>
+      <height>981</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(235, 224, 204, 0.47); /* #ebe0cc with 47% opacity */</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="JJelevate_text">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>250</y>
+       <width>251</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Montserrat ExtraBold</family>
+       <pointsize>18</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #12245c; 
+background: transparent;
+</string>
+     </property>
+     <property name="text">
+      <string>J &amp; J ELEVATE</string>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Logo">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>50</y>
+       <width>241</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: transparent;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>:/JJimages/JJLOGO.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Dashboard">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>310</y>
+       <width>231</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Montserrat Medium</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    padding: 9px;
+text-align: left;
+}
+QPushButton:hover {
+    background-color:#c25b55;
+color:black;
+font-weight: 700;
+}
+QPushButton#activeButton {
+    background-color:#c25b55;
+color:black;
+font-weight: 700;
+}
+</string>
+     </property>
+     <property name="text">
+      <string> Dashboard   </string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/JJimages/dashboard_icon.svg</normaloff>:/JJimages/dashboard_icon.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Inventory">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>390</y>
+       <width>231</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Montserrat Medium</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    padding: 9px;
+text-align: left;
+}
+QPushButton:hover {
+    background-color:#c25b55;
+color:black;
+font-weight: 700;
+}
+QPushButton#activeButton {
+    background-color:#c25b55;
+color:black;
+font-weight: 700;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Inventory</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/JJimages/inventory_icon.svg</normaloff>:/JJimages/inventory_icon.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>45</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Orders">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>470</y>
+       <width>231</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Montserrat Medium</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    padding: 9px;
+text-align: left;
+}
+QPushButton:hover {
+    background-color:#c25b55;
+color:black;
+font-weight: 700;
+}
+QPushButton#activeButton {
+    background-color:#c25b55;
+color:black;
+font-weight: 700;
+}
+</string>
+     </property>
+     <property name="text">
+      <string> Orders</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/JJimages/orders_icon.svg</normaloff>:/JJimages/orders_icon.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>46</width>
+       <height>42</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Sales">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>550</y>
+       <width>231</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Montserrat Medium</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    padding: 9px;
+text-align: left;
+}
+QPushButton:hover {
+    background-color:#c25b55;
+color:black;
+font-weight: 700;
+}
+QPushButton#activeButton {
+    background-color:#c25b55;
+color:black;
+font-weight: 700;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>  Sales</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/JJimages/sales_icon.svg</normaloff>:/JJimages/sales_icon.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>35</width>
+       <height>35</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Account">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>710</y>
+       <width>231</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Montserrat Medium</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    padding: 9px;
+text-align: left;
+}
+QPushButton:hover {
+    background-color:#c25b55;
+color:black;
+font-weight: 700;
+}
+QPushButton#activeButton {
+    background-color:#c25b55;
+color:black;
+font-weight: 700;
+}
+</string>
+     </property>
+     <property name="text">
+      <string> Account     </string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/JJimages/account_icon.svg</normaloff>:/JJimages/account_icon.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>48</width>
+       <height>48</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_LogOut">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>890</y>
+       <width>231</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Verdana</family>
+       <pointsize>12</pointsize>
+       <weight>87</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:#022162;
+color:white;
+font-weight: 700;
+    border-radius: 25px;
+    padding: 9px;
+font-size: 14;
+text-align: left;
+}</string>
+     </property>
+     <property name="text">
+      <string>Log out</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/JJimages/WHITElogout_icon.svg</normaloff>:/JJimages/WHITElogout_icon.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>38</width>
+       <height>38</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Stock_History">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>630</y>
+       <width>231</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Montserrat Medium</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    padding: 9px;
+text-align: left;
+}
+QPushButton:hover {
+    background-color:#c25b55;
+color:black;
+font-weight: 700;
+}
+QPushButton#activeButton {
+    background-color:#c25b55;
+color:black;
+font-weight: 700;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Stock History</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/JJimages/inventory_icon.svg</normaloff>:/JJimages/inventory_icon.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>45</height>
+      </size>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="sales_inview" native="true">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>0</y>
+      <width>1931</width>
+      <height>1005</height>
+     </rect>
+    </property>
+    <widget class="QFrame" name="frame_45">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1621</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QComboBox" name="comboBox_filterSales">
+      <property name="geometry">
+       <rect>
+        <x>1350</x>
+        <y>50</y>
+        <width>231</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">    background-color: #ebe0cc;
+    border-radius: 15px;
+font-size:28px;
+text-align: center;</string>
+      </property>
+      <property name="currentText">
+       <string>    Filter Sales</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>    Filter Sales</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Daily</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Weekly</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Monthly</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QFrame" name="frame_29">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>150</y>
+        <width>661</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="pushButton_summaryView">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>10</y>
+         <width>261</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Verdana</family>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #003366; /* Blue color */
+    border-radius: 10px;
+    font-size: 24px;
+    color: #ffffff; /* Corrected from font-color */
+    padding: 9px;
+    font-family: &quot;Verdana&quot;, sans-serif;
+    text-align: center;
+}
+
+/* Hover Effect on Inactive Buttons */
+QPushButton:hover {
+    background-color: #8d2721;
+    color: #ffffff; /* Ensure text color remains white */
+}
+
+/* Active Button (Current Page) */
+QPushButton#activeButton {
+    background-color:#8d2721;
+    color: #ffffff; /* Ensure text color remains white */
+}</string>
+       </property>
+       <property name="text">
+        <string>Summary View</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_salesDetail">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>10</y>
+         <width>281</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Verdana</family>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #003366; /* Blue color */
+    border-radius: 10px;
+    font-size: 24px;
+    color: #ffffff; /* Corrected from font-color */
+    padding: 9px;
+    font-family: &quot;Verdana&quot;, sans-serif;
+    text-align: center;
+}
+
+/* Hover Effect on Inactive Buttons */
+QPushButton:hover {
+    background-color: #8d2721;
+    color: #ffffff; /* Ensure text color remains white */
+}
+
+/* Active Button (Current Page) */
+QPushButton#activeButton {
+    background-color: #8d2721;
+    color: #ffffff; /* Ensure text color remains white */
+}</string>
+       </property>
+       <property name="text">
+        <string>Detailed View</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="salesReportText">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>50</y>
+        <width>501</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size:50px;
+background: transparent;</string>
+      </property>
+      <property name="text">
+       <string>Sales Report</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>210</y>
+       <width>1621</width>
+       <height>771</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="page">
+      <widget class="QTableWidget" name="tableWidget_salesSummary">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>0</y>
+         <width>1531</width>
+         <height>741</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"> 
+QTableWidget {
+    background-color: white;
+    gridline-color: lightgray;
+    selection-background-color: #ebe0cc;
+    selection-color: white;               /* selected row text */
+}
+
+QTableWidget::item:hover {
+    background-color: #b33c35;  /* slightly lighter hover effect */
+    color: white;
+}
+
+QHeaderView::section {
+    background-color: #c25b55; /* deep maroon header */
+    color: white;
+    font-weight: bold;
+    padding: 4px;
+    border: 1px solid lightgray;
+}
+
+QTableWidget::item {
+    padding-left: 12px;
+    padding-right: 12px;
+}</string>
+       </property>
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>265</number>
+       </attribute>
+       <column>
+        <property name="text">
+         <string>Report ID</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Shop Branch</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Report Type</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Total Quantity Sold</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Total Revenue (₱)</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Date Generated</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+       </column>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <widget class="QTableWidget" name="tableWidget_salesDetails">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>0</y>
+         <width>1531</width>
+         <height>741</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QTableWidget {
+    background-color: white;
+    gridline-color: lightgray;
+    selection-background-color: #ebe0cc;
+    selection-color: white;               /* selected row text */
+}
+
+QTableWidget::item:hover {
+    background-color: #b33c35;  /* slightly lighter hover effect */
+    color: white;
+}
+
+QHeaderView::section {
+    background-color: #c25b55; /* deep maroon header */
+    color: white;
+    font-weight: bold;
+    padding: 4px;
+    border: 1px solid lightgray;
+}
+
+QTableWidget::item {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+</string>
+       </property>
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>265</number>
+       </attribute>
+       <column>
+        <property name="text">
+         <string>Detail ID</string>
+        </property>
+        <property name="font">
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Product Name</string>
+        </property>
+        <property name="font">
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Quantity Sold</string>
+        </property>
+        <property name="font">
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Total Sales Amount (₱)</string>
+        </property>
+        <property name="font">
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Date Recorded</string>
+        </property>
+        <property name="font">
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+       </column>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="../../../jj_owner_resources.qrc"/>
+  <include location="../../../jj_owner_resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

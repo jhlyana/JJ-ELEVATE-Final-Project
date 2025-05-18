@@ -1,0 +1,2738 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OWNER_ACCOUNT</class>
+ <widget class="QMainWindow" name="OWNER_ACCOUNT">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1914</width>
+    <height>1002</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Inventory and Sales Management System</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: white;</string>
+  </property>
+  <widget class="QWidget" name="Owner_centralwidget">
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <widget class="QFrame" name="frame_45">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>0</y>
+      <width>1621</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="timeLabel">
+     <property name="geometry">
+      <rect>
+       <x>840</x>
+       <y>20</y>
+       <width>731</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Montserrat ExtraBold</family>
+       <pointsize>38</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+    background-color: #f6f3ee;
+	border-radius: 16;
+    padding: 10px;
+color: #051a54;
+</string>
+     </property>
+     <property name="text">
+      <string> 09 : 10 : 54 AM</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>20</y>
+       <width>771</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Montserrat ExtraBold</family>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+    background-color: #f6f3ee;
+	border-radius: 16;
+    padding: 10px;
+
+</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:38pt; color:#022162;&quot;&gt;March 1, 2025&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot; font-size:20pt; color:#b2423c;&quot;&gt;Monday&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::RichText</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>299</x>
+      <y>209</y>
+      <width>1621</width>
+      <height>791</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QFrame" name="BUTTONS_FRAME">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1621</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QPushButton" name="pushButton_CREATE_C">
+      <property name="geometry">
+       <rect>
+        <x>1130</x>
+        <y>0</y>
+        <width>441</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* Default Inactive Buttons */
+QPushButton {
+    background-color: #a6a6a6;
+    border-radius: 20px;
+	font-size: 24px;
+	font-color:#000000;
+    padding: 9px;
+	font-family: &quot;Verdana&quot;, sans-serif; 
+	text-align: center;
+}
+
+/* Hover Effect on Inactive Buttons */
+QPushButton:hover {
+    background-color:#374550;
+	color:white;
+}
+
+/* Active Button (Current Page) */
+QPushButton#activeButton {
+    background-color: #374550;
+    color: white;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Create New Cashier Account</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_VIEW_C">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>0</y>
+        <width>441</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* Default Inactive Buttons */
+QPushButton {
+    background-color: #a6a6a6;
+    border-radius: 20px;
+	font-size: 24px;
+	font-color:#000000;
+    padding: 9px;
+	font-family: &quot;Verdana&quot;, sans-serif; 
+	text-align: center;
+}
+
+/* Hover Effect on Inactive Buttons */
+QPushButton:hover {
+    background-color:#374550;
+	color:white;
+}
+
+/* Active Button (Current Page) */
+QPushButton#activeButton {
+    background-color: #374550;
+    color: white;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>View Cashier Account</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_ViewAcc">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>0</y>
+        <width>441</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* Default Inactive Buttons */
+QPushButton {
+    background-color: #a6a6a6;
+    border-radius: 20px;
+	font-size: 24px;
+	font-color:#000000;
+    padding: 9px;
+	font-family: &quot;Verdana&quot;, sans-serif; 
+	text-align: center;
+}
+
+/* Hover Effect on Inactive Buttons */
+QPushButton:hover {
+    background-color:#374550;
+	color:white;
+}
+
+/* Active Button (Current Page) */
+QPushButton#activeButton {
+    background-color: #374550;
+    color: white;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>View Account</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QStackedWidget" name="accountPage">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>-1</x>
+       <y>69</y>
+       <width>1621</width>
+       <height>651</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>4</number>
+     </property>
+     <widget class="QWidget" name="page">
+      <widget class="QFrame" name="frame_4">
+       <property name="geometry">
+        <rect>
+         <x>590</x>
+         <y>-10</y>
+         <width>1031</width>
+         <height>661</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QFrame" name="frame_41">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>981</width>
+          <height>661</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>7</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background: transparent;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="ownerIDText">
+         <property name="geometry">
+          <rect>
+           <x>230</x>
+           <y>120</y>
+           <width>141</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins Medium</family>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QLabel {
+	font-size:36px;
+}
+    
+</string>
+         </property>
+         <property name="text">
+          <string>User ID</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="ownerID">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>170</y>
+           <width>561</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid #000000; 
+border-radius: 22px; 
+padding: 1px;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="ownerRoleText">
+         <property name="geometry">
+          <rect>
+           <x>230</x>
+           <y>260</y>
+           <width>191</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins Medium</family>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QLabel {
+	font-size:36px;
+}
+    
+</string>
+         </property>
+         <property name="text">
+          <string>User Role</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="ownerRole">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>300</y>
+           <width>561</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid #000000; 
+border-radius: 22px; 
+padding: 1px;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="ownerNameText">
+         <property name="geometry">
+          <rect>
+           <x>230</x>
+           <y>380</y>
+           <width>191</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins Medium</family>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QLabel {
+	font-size:36px;
+}
+    
+</string>
+         </property>
+         <property name="text">
+          <string>Username</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="ownerName">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>420</y>
+           <width>561</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid #000000; 
+border-radius: 22px; 
+padding: 1px;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_3">
+         <property name="geometry">
+          <rect>
+           <x>-70</x>
+           <y>40</y>
+           <width>1051</width>
+           <height>501</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(235, 224, 204, 0.47); 
+border-radius: 80px;
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_editDetailsOwner">
+         <property name="geometry">
+          <rect>
+           <x>660</x>
+           <y>560</y>
+           <width>291</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins Medium</family>
+           <pointsize>14</pointsize>
+           <weight>62</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+color: #ffffff;
+border-radius: 20px; 
+padding: 3px; 
+background-color: #b2423c; 
+font-weight: 500;
+</string>
+         </property>
+         <property name="text">
+          <string>Edit Details</string>
+         </property>
+        </widget>
+        <zorder>label_3</zorder>
+        <zorder>ownerIDText</zorder>
+        <zorder>ownerID</zorder>
+        <zorder>ownerRoleText</zorder>
+        <zorder>ownerRole</zorder>
+        <zorder>ownerNameText</zorder>
+        <zorder>ownerName</zorder>
+        <zorder>pushButton_editDetailsOwner</zorder>
+       </widget>
+      </widget>
+      <widget class="QFrame" name="frame_10">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>-10</y>
+         <width>591</width>
+         <height>661</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="label_createUSER_profile_pic_cashier_4">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>80</y>
+          <width>400</width>
+          <height>400</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius: 200px;   /* half of 400 */
+border: 2px solid #12245c;  /* optional: blue border */
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>:/JJimages/userProfilepicture.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_10">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>40</y>
+          <width>671</width>
+          <height>501</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(235, 224, 204, 0.47); /* #ebe0cc with 47% opacity */
+border-radius:80px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <zorder>label_10</zorder>
+       <zorder>label_createUSER_profile_pic_cashier_4</zorder>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <widget class="QFrame" name="frame_5">
+       <property name="geometry">
+        <rect>
+         <x>590</x>
+         <y>-10</y>
+         <width>1031</width>
+         <height>661</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QFrame" name="frame_42">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>981</width>
+          <height>661</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>7</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background: transparent;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="userNameText">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>130</y>
+           <width>141</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins Medium</family>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QLabel {
+	font-size:20px;
+}
+    
+</string>
+         </property>
+         <property name="text">
+          <string>Username</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="userNameEnter">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>170</y>
+           <width>341</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid #000000; 
+border-radius: 22px; 
+padding: 1px;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="oldPassText">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>300</y>
+           <width>201</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins Medium</family>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QLabel {
+	font-size:20px;
+}
+    
+</string>
+         </property>
+         <property name="text">
+          <string>Old Password</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="oldPassEnter">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>340</y>
+           <width>341</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid #000000; 
+border-radius: 22px; 
+padding: 1px;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="setPassText">
+         <property name="geometry">
+          <rect>
+           <x>580</x>
+           <y>300</y>
+           <width>261</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins Medium</family>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QLabel {
+	font-size:20px;
+}
+    
+</string>
+         </property>
+         <property name="text">
+          <string>Set New Password</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="setPassEnter">
+         <property name="geometry">
+          <rect>
+           <x>570</x>
+           <y>340</y>
+           <width>341</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid #000000; 
+border-radius: 22px; 
+padding: 1px;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_4">
+         <property name="geometry">
+          <rect>
+           <x>-70</x>
+           <y>40</y>
+           <width>1051</width>
+           <height>501</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(235, 224, 204, 0.47); 
+border-radius: 80px;
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_saveOwnerDetails">
+         <property name="geometry">
+          <rect>
+           <x>720</x>
+           <y>560</y>
+           <width>231</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins Medium</family>
+           <pointsize>14</pointsize>
+           <weight>62</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+color: #ffffff;
+border-radius: 20px; 
+padding: 3px; 
+background-color: #b2423c; 
+font-weight: 500;
+</string>
+         </property>
+         <property name="text">
+          <string>Save</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="changeUserNameText">
+         <property name="geometry">
+          <rect>
+           <x>340</x>
+           <y>70</y>
+           <width>351</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins Medium</family>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QLabel {
+	font-size:36px;
+	font-color: #003366;
+}
+    
+</string>
+         </property>
+         <property name="text">
+          <string>Change Username</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="newUserNameEnter">
+         <property name="geometry">
+          <rect>
+           <x>570</x>
+           <y>170</y>
+           <width>341</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid #000000; 
+border-radius: 22px; 
+padding: 1px;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="newUserNameText">
+         <property name="geometry">
+          <rect>
+           <x>580</x>
+           <y>130</y>
+           <width>191</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins Medium</family>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QLabel {
+	font-size:20px;
+}
+    
+</string>
+         </property>
+         <property name="text">
+          <string>New Username</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="changeUserPassText">
+         <property name="geometry">
+          <rect>
+           <x>350</x>
+           <y>250</y>
+           <width>361</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins Medium</family>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QLabel {
+	font-size:36px;
+}
+    
+</string>
+         </property>
+         <property name="text">
+          <string>Change Password</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="confirmPassEnter">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>450</y>
+           <width>341</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid #000000; 
+border-radius: 22px; 
+padding: 1px;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="confirmPassText">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>410</y>
+           <width>261</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins Medium</family>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QLabel {
+	font-size:20px;
+}
+    
+</string>
+         </property>
+         <property name="text">
+          <string>Confirm New Password</string>
+         </property>
+        </widget>
+        <zorder>label_4</zorder>
+        <zorder>userNameText</zorder>
+        <zorder>userNameEnter</zorder>
+        <zorder>oldPassText</zorder>
+        <zorder>oldPassEnter</zorder>
+        <zorder>setPassText</zorder>
+        <zorder>setPassEnter</zorder>
+        <zorder>pushButton_saveOwnerDetails</zorder>
+        <zorder>changeUserNameText</zorder>
+        <zorder>newUserNameEnter</zorder>
+        <zorder>newUserNameText</zorder>
+        <zorder>changeUserPassText</zorder>
+        <zorder>confirmPassEnter</zorder>
+        <zorder>confirmPassText</zorder>
+       </widget>
+      </widget>
+      <widget class="QFrame" name="frame_11">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>-10</y>
+         <width>591</width>
+         <height>661</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="label_createUSER_profile_pic_cashier_5">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>80</y>
+          <width>400</width>
+          <height>400</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius: 200px;   /* half of 400 */
+border: 2px solid #12245c;  /* optional: blue border */
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>:/JJimages/userProfilepicture.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_12">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>40</y>
+          <width>671</width>
+          <height>501</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(235, 224, 204, 0.47); /* #ebe0cc with 47% opacity */
+border-radius:80px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <zorder>label_12</zorder>
+       <zorder>label_createUSER_profile_pic_cashier_5</zorder>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_3">
+      <widget class="QFrame" name="frame_6">
+       <property name="geometry">
+        <rect>
+         <x>590</x>
+         <y>-10</y>
+         <width>1031</width>
+         <height>661</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QFrame" name="frame_43">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>981</width>
+          <height>661</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>7</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background: transparent;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="cashierIDText">
+         <property name="geometry">
+          <rect>
+           <x>230</x>
+           <y>120</y>
+           <width>141</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins Medium</family>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QLabel {
+	font-size:36px;
+}
+    
+</string>
+         </property>
+         <property name="text">
+          <string>User ID</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="cashierID">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>170</y>
+           <width>561</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid #000000; 
+border-radius: 22px; 
+padding: 1px;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="cashierRoleText">
+         <property name="geometry">
+          <rect>
+           <x>230</x>
+           <y>260</y>
+           <width>191</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins Medium</family>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QLabel {
+	font-size:36px;
+}
+    
+</string>
+         </property>
+         <property name="text">
+          <string>User Role</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="cashierRole">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>300</y>
+           <width>561</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid #000000; 
+border-radius: 22px; 
+padding: 1px;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="cashierNameText">
+         <property name="geometry">
+          <rect>
+           <x>230</x>
+           <y>380</y>
+           <width>191</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins Medium</family>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QLabel {
+	font-size:36px;
+}
+    
+</string>
+         </property>
+         <property name="text">
+          <string>Username</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="cashierName">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>420</y>
+           <width>561</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid #000000; 
+border-radius: 22px; 
+padding: 1px;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_5">
+         <property name="geometry">
+          <rect>
+           <x>-70</x>
+           <y>40</y>
+           <width>1051</width>
+           <height>501</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(235, 224, 204, 0.47); 
+border-radius: 80px;
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_editDetailsCashier">
+         <property name="geometry">
+          <rect>
+           <x>660</x>
+           <y>560</y>
+           <width>291</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins Medium</family>
+           <pointsize>14</pointsize>
+           <weight>62</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+color: #ffffff;
+border-radius: 20px; 
+padding: 3px; 
+background-color: #b2423c; 
+font-weight: 500;
+</string>
+         </property>
+         <property name="text">
+          <string>Edit Details</string>
+         </property>
+        </widget>
+        <zorder>label_5</zorder>
+        <zorder>cashierIDText</zorder>
+        <zorder>cashierID</zorder>
+        <zorder>cashierRoleText</zorder>
+        <zorder>cashierRole</zorder>
+        <zorder>cashierNameText</zorder>
+        <zorder>cashierName</zorder>
+        <zorder>pushButton_editDetailsCashier</zorder>
+       </widget>
+      </widget>
+      <widget class="QFrame" name="frame_8">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>-10</y>
+         <width>591</width>
+         <height>661</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="label_createUSER_profile_pic_cashier_2">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>80</y>
+          <width>400</width>
+          <height>400</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius: 200px;   /* half of 400 */
+border: 2px solid #12245c;  /* optional: blue border */
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>:/JJimages/userProfilepicture.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>40</y>
+          <width>671</width>
+          <height>501</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(235, 224, 204, 0.47); /* #ebe0cc with 47% opacity */
+border-radius:80px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <zorder>label_8</zorder>
+       <zorder>label_createUSER_profile_pic_cashier_2</zorder>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_4">
+      <widget class="QFrame" name="frame_7">
+       <property name="geometry">
+        <rect>
+         <x>590</x>
+         <y>-10</y>
+         <width>1031</width>
+         <height>661</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QFrame" name="frame_44">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>981</width>
+          <height>661</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>7</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background: transparent;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="userNameText_2">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>130</y>
+           <width>141</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins Medium</family>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QLabel {
+	font-size:20px;
+}
+    
+</string>
+         </property>
+         <property name="text">
+          <string>Username</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="userNameEnter_2">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>170</y>
+           <width>341</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid #000000; 
+border-radius: 22px; 
+padding: 1px;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="oldPassText_2">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>300</y>
+           <width>201</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins Medium</family>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QLabel {
+	font-size:20px;
+}
+    
+</string>
+         </property>
+         <property name="text">
+          <string>Old Password</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="oldPassEnter_2">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>340</y>
+           <width>341</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid #000000; 
+border-radius: 22px; 
+padding: 1px;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="setPassText_2">
+         <property name="geometry">
+          <rect>
+           <x>580</x>
+           <y>300</y>
+           <width>261</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins Medium</family>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QLabel {
+	font-size:20px;
+}
+    
+</string>
+         </property>
+         <property name="text">
+          <string>Set New Password</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="setPassEnter_2">
+         <property name="geometry">
+          <rect>
+           <x>570</x>
+           <y>340</y>
+           <width>341</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid #000000; 
+border-radius: 22px; 
+padding: 1px;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_6">
+         <property name="geometry">
+          <rect>
+           <x>-70</x>
+           <y>40</y>
+           <width>1051</width>
+           <height>501</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(235, 224, 204, 0.47); 
+border-radius: 80px;
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_saveCashierDetails">
+         <property name="geometry">
+          <rect>
+           <x>720</x>
+           <y>560</y>
+           <width>231</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins Medium</family>
+           <pointsize>14</pointsize>
+           <weight>62</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+color: #ffffff;
+border-radius: 20px; 
+padding: 3px; 
+background-color: #b2423c; 
+font-weight: 500;
+</string>
+         </property>
+         <property name="text">
+          <string>Save</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="changeUserNameText_2">
+         <property name="geometry">
+          <rect>
+           <x>340</x>
+           <y>70</y>
+           <width>351</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins Medium</family>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QLabel {
+	font-size:36px;
+	font-color: #003366;
+}
+    
+</string>
+         </property>
+         <property name="text">
+          <string>Change Username</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="newUserNameEnter_2">
+         <property name="geometry">
+          <rect>
+           <x>570</x>
+           <y>170</y>
+           <width>341</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid #000000; 
+border-radius: 22px; 
+padding: 1px;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="newUserNameText_2">
+         <property name="geometry">
+          <rect>
+           <x>580</x>
+           <y>130</y>
+           <width>191</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins Medium</family>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QLabel {
+	font-size:20px;
+}
+    
+</string>
+         </property>
+         <property name="text">
+          <string>New Username</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="changeUserPassText_2">
+         <property name="geometry">
+          <rect>
+           <x>350</x>
+           <y>250</y>
+           <width>361</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins Medium</family>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QLabel {
+	font-size:36px;
+}
+    
+</string>
+         </property>
+         <property name="text">
+          <string>Change Password</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="confirmPassEnter_2">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>450</y>
+           <width>341</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid #000000; 
+border-radius: 22px; 
+padding: 1px;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="confirmPassText_2">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>410</y>
+           <width>261</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins Medium</family>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QLabel {
+	font-size:20px;
+}
+    
+</string>
+         </property>
+         <property name="text">
+          <string>Confirm New Password</string>
+         </property>
+        </widget>
+        <zorder>label_6</zorder>
+        <zorder>userNameText_2</zorder>
+        <zorder>userNameEnter_2</zorder>
+        <zorder>oldPassText_2</zorder>
+        <zorder>oldPassEnter_2</zorder>
+        <zorder>setPassText_2</zorder>
+        <zorder>setPassEnter_2</zorder>
+        <zorder>pushButton_saveCashierDetails</zorder>
+        <zorder>changeUserNameText_2</zorder>
+        <zorder>newUserNameEnter_2</zorder>
+        <zorder>newUserNameText_2</zorder>
+        <zorder>changeUserPassText_2</zorder>
+        <zorder>confirmPassEnter_2</zorder>
+        <zorder>confirmPassText_2</zorder>
+       </widget>
+      </widget>
+      <widget class="QFrame" name="frame_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>-10</y>
+         <width>591</width>
+         <height>661</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="label_createUSER_profile_pic_cashier">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>80</y>
+          <width>400</width>
+          <height>400</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius: 200px;   /* half of 400 */
+border: 2px solid #12245c;  /* optional: blue border */
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>:/JJimages/userProfilepicture.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>40</y>
+          <width>671</width>
+          <height>501</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(235, 224, 204, 0.47); /* #ebe0cc with 47% opacity */
+border-radius:80px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <zorder>label_2</zorder>
+       <zorder>label_createUSER_profile_pic_cashier</zorder>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_5">
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>30</y>
+         <width>1521</width>
+         <height>501</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(235, 224, 204, 0.47); 
+border-radius: 40px;
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="changeUserNameText_3">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>90</y>
+         <width>631</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Poppins Medium</family>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QLabel {
+	background: transparent;
+	font-size: 40px;
+	font-color: #003366;
+}
+    
+</string>
+       </property>
+       <property name="text">
+        <string>Create a New Cashier Account</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="changeUserNameText_4">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>200</y>
+         <width>101</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Poppins Medium</family>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QLabel {
+	background: transparent;
+	font-size:22px;
+	font-color: #003366;
+}
+    
+</string>
+       </property>
+       <property name="text">
+        <string>Shop ID</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="changeUserNameText_5">
+       <property name="geometry">
+        <rect>
+         <x>650</x>
+         <y>200</y>
+         <width>131</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Poppins Medium</family>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QLabel {
+	background: transparent;
+	font-size:22px;
+	font-color: #003366;
+}
+    
+</string>
+       </property>
+       <property name="text">
+        <string>User Role</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="changeUserNameText_6">
+       <property name="geometry">
+        <rect>
+         <x>1110</x>
+         <y>200</y>
+         <width>171</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Poppins Medium</family>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QLabel {
+	background: transparent;
+	font-size:22px;
+	font-color: #003366;
+}
+    
+</string>
+       </property>
+       <property name="text">
+        <string>Username</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="newUserNameEnter_3">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>250</y>
+         <width>341</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 1px solid #000000; 
+border-radius: 22px; 
+padding: 1px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="newUserNameEnter_4">
+       <property name="geometry">
+        <rect>
+         <x>640</x>
+         <y>250</y>
+         <width>341</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 1px solid #000000; 
+border-radius: 22px; 
+padding: 1px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="newUserNameEnter_5">
+       <property name="geometry">
+        <rect>
+         <x>1100</x>
+         <y>250</y>
+         <width>341</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 1px solid #000000; 
+border-radius: 22px; 
+padding: 1px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="newUserNameEnter_6">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>380</y>
+         <width>341</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 1px solid #000000; 
+border-radius: 22px; 
+padding: 1px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="changeUserNameText_7">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>330</y>
+         <width>131</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Poppins Medium</family>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QLabel {
+	background: transparent;
+	font-size:22px;
+	font-color: #003366;
+}
+    
+</string>
+       </property>
+       <property name="text">
+        <string>Password</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="newUserNameEnter_7">
+       <property name="geometry">
+        <rect>
+         <x>640</x>
+         <y>380</y>
+         <width>341</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 1px solid #000000; 
+border-radius: 22px; 
+padding: 1px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="changeUserNameText_8">
+       <property name="geometry">
+        <rect>
+         <x>650</x>
+         <y>330</y>
+         <width>241</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Poppins Medium</family>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QLabel {
+	background: transparent;
+	font-size:22px;
+	font-color: #003366;
+}
+    
+</string>
+       </property>
+       <property name="text">
+        <string>Confirm Password</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_saveAcc">
+       <property name="geometry">
+        <rect>
+         <x>1360</x>
+         <y>550</y>
+         <width>201</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Poppins Medium</family>
+         <pointsize>14</pointsize>
+         <weight>62</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+color: #ffffff;
+border-radius: 20px; 
+padding: 3px; 
+background-color: #12245c; 
+font-weight: 500;
+</string>
+       </property>
+       <property name="text">
+        <string>Confirm</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_discardAcc">
+       <property name="geometry">
+        <rect>
+         <x>1140</x>
+         <y>550</y>
+         <width>201</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Poppins Medium</family>
+         <pointsize>14</pointsize>
+         <weight>62</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+color: #ffffff;
+border-radius: 20px; 
+padding: 3px; 
+background-color: #b2423c; 
+font-weight: 500;
+</string>
+       </property>
+       <property name="text">
+        <string>Discard</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>930</y>
+      <width>1631</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #374550;
+padding: 2px;
+color: #ffffff;
+text-align: center;
+</string>
+    </property>
+    <property name="text">
+     <string>                                                                           J  &amp;  J  ROOFSTEEL  AND  GUTTER  SUPPLY  (MOALBOAL BRANCH)     </string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="LeftMenuBar">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>301</width>
+      <height>981</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(235, 224, 204, 0.47); /* #ebe0cc with 47% opacity */</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="JJelevate_text">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>250</y>
+       <width>251</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Montserrat ExtraBold</family>
+       <pointsize>18</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #12245c; 
+background: transparent;
+</string>
+     </property>
+     <property name="text">
+      <string>J &amp; J ELEVATE</string>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Logo">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>50</y>
+       <width>241</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: transparent;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>:/JJimages/JJLOGO.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Dashboard">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>310</y>
+       <width>231</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Montserrat Medium</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    padding: 9px;
+text-align: left;
+}
+QPushButton:hover {
+    background-color:#c25b55;
+color:black;
+font-weight: 700;
+}
+QPushButton#activeButton {
+    background-color:#c25b55;
+color:black;
+font-weight: 700;
+}
+</string>
+     </property>
+     <property name="text">
+      <string> Dashboard   </string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/JJimages/dashboard_icon.svg</normaloff>:/JJimages/dashboard_icon.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Inventory">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>390</y>
+       <width>231</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Montserrat Medium</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    padding: 9px;
+text-align: left;
+}
+QPushButton:hover {
+    background-color:#c25b55;
+color:black;
+font-weight: 700;
+}
+QPushButton#activeButton {
+    background-color:#c25b55;
+color:black;
+font-weight: 700;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Inventory</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/JJimages/inventory_icon.svg</normaloff>:/JJimages/inventory_icon.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>45</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Orders">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>470</y>
+       <width>231</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Montserrat Medium</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    padding: 9px;
+text-align: left;
+}
+QPushButton:hover {
+    background-color:#c25b55;
+color:black;
+font-weight: 700;
+}
+QPushButton#activeButton {
+    background-color:#c25b55;
+color:black;
+font-weight: 700;
+}
+</string>
+     </property>
+     <property name="text">
+      <string> Orders</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/JJimages/orders_icon.svg</normaloff>:/JJimages/orders_icon.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>46</width>
+       <height>42</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Sales">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>550</y>
+       <width>231</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Montserrat Medium</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    padding: 9px;
+text-align: left;
+}
+QPushButton:hover {
+    background-color:#c25b55;
+color:black;
+font-weight: 700;
+}
+QPushButton#activeButton {
+    background-color:#c25b55;
+color:black;
+font-weight: 700;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>  Sales</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/JJimages/sales_icon.svg</normaloff>:/JJimages/sales_icon.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>35</width>
+       <height>35</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Account">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>710</y>
+       <width>231</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Montserrat Medium</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    padding: 9px;
+text-align: left;
+}
+QPushButton:hover {
+    background-color:#c25b55;
+color:black;
+font-weight: 700;
+}
+QPushButton#activeButton {
+    background-color:#c25b55;
+color:black;
+font-weight: 700;
+}
+</string>
+     </property>
+     <property name="text">
+      <string> Account     </string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/JJimages/account_icon.svg</normaloff>:/JJimages/account_icon.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>48</width>
+       <height>48</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_LogOut">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>890</y>
+       <width>231</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Verdana</family>
+       <pointsize>12</pointsize>
+       <weight>87</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:#022162;
+color:white;
+font-weight: 700;
+    border-radius: 25px;
+    padding: 9px;
+font-size: 14;
+text-align: left;
+}</string>
+     </property>
+     <property name="text">
+      <string>Log out</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/JJimages/WHITElogout_icon.svg</normaloff>:/JJimages/WHITElogout_icon.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>38</width>
+       <height>38</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Stock_History">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>630</y>
+       <width>231</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Montserrat Medium</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    padding: 9px;
+text-align: left;
+}
+QPushButton:hover {
+    background-color:#c25b55;
+color:black;
+font-weight: 700;
+}
+QPushButton#activeButton {
+    background-color:#c25b55;
+color:black;
+font-weight: 700;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Stock History</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/JJimages/inventory_icon.svg</normaloff>:/JJimages/inventory_icon.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>45</height>
+      </size>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="../../../resources/jj_owner_resources.qrc"/>
+  <include location="../jj_owner_resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>JJ_LANDING</class>
+ <widget class="QMainWindow" name="JJ_LANDING">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1925</width>
+    <height>1035</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Inventory and Sales Management System</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="BG">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>0</y>
+      <width>1925</width>
+      <height>982</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../resources/jj_resources.qrc">:/images/assets/images/BACKGROUND.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>130</y>
+      <width>381</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../resources/jj_resources.qrc">:/images/assets/images/JJLOGO.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>430</y>
+      <width>431</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial Black</family>
+      <pointsize>60</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #d75413;
+font-family: &quot;Arial Black&quot;, Arial, sans-serif; 
+background: transparent;</string>
+    </property>
+    <property name="text">
+     <string>Elevate
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>440</y>
+      <width>281</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Rubik Mono One</family>
+      <pointsize>60</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #ebe0cc;
+font-family: &quot;Rubik Mono One&quot;, sans-serif;
+background: transparent;</string>
+    </property>
+    <property name="text">
+     <string>J&amp;J
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>550</y>
+      <width>721</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sora Semibold</family>
+      <pointsize>21</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #f6f3ee;
+font-family: &quot;Sora Semibold&quot;, sans-serif; 
+background: transparent;</string>
+    </property>
+    <property name="text">
+     <string>Elevate Your Space, One Roof at a Time</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>650</y>
+      <width>501</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Poppins Extrabold</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #ebe0cc;
+font-family: &quot;Poppins Extrabold&quot;, sans-serif;
+background: transparent;</string>
+    </property>
+    <property name="text">
+     <string>Supply                               Install                               Repair    </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_cont_2Login">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>800</y>
+      <width>281</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background-color: #f6f3ee;
+border-radius: 15px; 
+padding: 4px;
+border: none;
+color: #374550;
+font-family: &quot;MS Shell Dlg 2&quot;, sans-serif;
+                }
+QPushButton:hover {
+                    background-color:#b2423c;
+                    color:white;
+font-weight: 700;
+                    text-align: center;
+                }
+</string>
+    </property>
+    <property name="text">
+     <string>Continue to Login</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1925</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="../resources/jj_resources.qrc"/>
+  <include location="../resources/jj_resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
