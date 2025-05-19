@@ -189,7 +189,7 @@ QPushButton.activeButton {
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QFrame" name="frame_4">
@@ -425,13 +425,16 @@ border-radius: 80px;
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">
-color: #ffffff;
-border-radius: 20px; 
-padding: 3px; 
-background-color: #b2423c; 
-font-weight: 500;
-</string>
+         <string notr="true">    QPushButton {
+        color: #ffffff;
+        border-radius: 20px;
+        padding: 3px;
+        background-color: #b2423c;
+        font-weight: 500;
+    }
+    QPushButton:hover {
+        background-color: rgba(178, 66, 60, 0.9);
+    }</string>
         </property>
         <property name="text">
          <string>Edit Details</string>
@@ -741,13 +744,16 @@ border-radius: 80px;
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">
-color: #ffffff;
-border-radius: 20px; 
-padding: 3px; 
-background-color: #12245c; 
-font-weight: 500;
-</string>
+         <string notr="true">    QPushButton {
+        color: #ffffff;
+        border-radius: 20px;
+        padding: 3px;
+        background-color: #12245c;
+        font-weight: 500;
+    }
+    QPushButton:hover {
+        background-color: rgba(18, 36, 92, 0.9);
+    }</string>
         </property>
         <property name="text">
          <string>Save</string>
@@ -932,13 +938,16 @@ QLabel {
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">
-color: #ffffff;
-border-radius: 20px; 
-padding: 3px; 
-background-color: #b2423c; 
-font-weight: 500;
-</string>
+         <string notr="true">    QPushButton {
+        color: #ffffff;
+        border-radius: 20px;
+        padding: 3px;
+        background-color: #b2423c;
+        font-weight: 500;
+    }
+    QPushButton:hover {
+        background-color: rgba(178, 66, 60, 0.9);
+    }</string>
         </property>
         <property name="text">
          <string>Cancel</string>
@@ -1255,13 +1264,16 @@ border-radius: 80px;
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">
-color: #ffffff;
-border-radius: 20px; 
-padding: 3px; 
-background-color: #b2423c; 
-font-weight: 500;
-</string>
+         <string notr="true">    QPushButton {
+        color: #ffffff;
+        border-radius: 20px;
+        padding: 3px;
+        background-color: #b2423c;
+        font-weight: 500;
+    }
+    QPushButton:hover {
+        background-color: rgba(178, 66, 60, 0.9);
+    }</string>
         </property>
         <property name="text">
          <string>Edit Details</string>
@@ -1571,13 +1583,16 @@ border-radius: 80px;
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">
-color: #ffffff;
-border-radius: 20px; 
-padding: 3px; 
-background-color: #12245c; 
-font-weight: 500;
-</string>
+         <string notr="true">    QPushButton {
+        color: #ffffff;
+        border-radius: 20px;
+        padding: 3px;
+        background-color: #12245c;
+        font-weight: 500;
+    }
+    QPushButton:hover {
+        background-color: rgba(18, 36, 92, 0.9);
+    }</string>
         </property>
         <property name="text">
          <string>Save</string>
@@ -1762,13 +1777,16 @@ QLabel {
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">
-color: #ffffff;
-border-radius: 20px; 
-padding: 3px; 
-background-color: #b2423c; 
-font-weight: 500;
-</string>
+         <string notr="true">    QPushButton {
+        color: #ffffff;
+        border-radius: 20px;
+        padding: 3px;
+        background-color: #b2423c;
+        font-weight: 500;
+    }
+    QPushButton:hover {
+        background-color: rgba(178, 66, 60, 0.9);
+    }</string>
         </property>
         <property name="text">
          <string>Cancel</string>
@@ -2210,13 +2228,16 @@ QLabel {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">
-color: #ffffff;
-border-radius: 20px; 
-padding: 3px; 
-background-color: #12245c; 
-font-weight: 500;
-</string>
+       <string notr="true">    QPushButton {
+        color: #ffffff;
+        border-radius: 20px;
+        padding: 3px;
+        background-color: #12245c;
+        font-weight: 500;
+    }
+    QPushButton:hover {
+        background-color: rgba(18, 36, 92, 0.9);
+    }</string>
       </property>
       <property name="text">
        <string>Confirm</string>
@@ -2240,13 +2261,16 @@ font-weight: 500;
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">
-color: #ffffff;
-border-radius: 20px; 
-padding: 3px; 
-background-color: #b2423c; 
-font-weight: 500;
-</string>
+       <string notr="true">    QPushButton {
+        color: #ffffff;
+        border-radius: 20px;
+        padding: 3px;
+        background-color: #b2423c;
+        font-weight: 500;
+    }
+    QPushButton:hover {
+        background-color: rgba(178, 66, 60, 0.9);
+    }</string>
       </property>
       <property name="text">
        <string>Discard</string>
@@ -2608,8 +2632,8 @@ font-size: 14;
 text-align: left;
 }
 QPushButton:hover {
-    background-color:gray;
-    color:white;
+        background-color: rgba(2, 33, 98, 0.8);
+        color: white;
     font-weight: 700;
 }</string>
     </property>

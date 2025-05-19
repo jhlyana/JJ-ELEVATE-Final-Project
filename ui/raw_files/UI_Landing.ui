@@ -50,7 +50,7 @@ background: transparent;</string>
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../../../../New folder/resources/images/BACKGROUND.png</pixmap>
+    <pixmap>../resources/images/BACKGROUND.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -157,7 +157,7 @@ font-weight: 700;
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../../../../New folder/resources/images/J&amp;J logo.png</pixmap>
+    <pixmap>../resources/images/JJLOGO.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>

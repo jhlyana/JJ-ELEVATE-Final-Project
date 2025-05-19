@@ -15,6 +15,7 @@ class Ui_OWNER_ORDERS(object):
     def setupUi(self, OWNER_ORDERS):
         OWNER_ORDERS.setObjectName("OWNER_ORDERS")
         OWNER_ORDERS.resize(1921, 1005)
+        OWNER_ORDERS.setStyleSheet("background: white;")
         self.stackedWidget = QtWidgets.QStackedWidget(OWNER_ORDERS)
         self.stackedWidget.setGeometry(QtCore.QRect(300, 210, 1621, 771))
         self.stackedWidget.setObjectName("stackedWidget")
@@ -234,7 +235,7 @@ class Ui_OWNER_ORDERS(object):
 "padding: 5;\n"
 "")
         self.label_18.setText("")
-        self.label_18.setPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/search.png"))
+        self.label_18.setPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/search.png"))
         self.label_18.setScaledContents(True)
         self.label_18.setObjectName("label_18")
         self.pushButton_searchOrders = QtWidgets.QPushButton(self.frame_4)
@@ -245,15 +246,15 @@ class Ui_OWNER_ORDERS(object):
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_searchOrders.setFont(font)
-        self.pushButton_searchOrders.setStyleSheet("\n"
-"    background-color: #003366;\n"
-"    color: white;\n"
-"    padding: 2px;\n"
-"    text-align: center;\n"
-"\n"
-"\n"
-"\n"
-"")
+        self.pushButton_searchOrders.setStyleSheet("    QPushButton {\n"
+"        background-color: #003366;\n"
+"        color: white;\n"
+"        padding: 2px;\n"
+"        text-align: center;\n"
+"    }\n"
+"    QPushButton:hover {\n"
+"        background-color: rgba(0, 51, 102, 0.9);\n"
+"    }")
         self.pushButton_searchOrders.setObjectName("pushButton_searchOrders")
         self.orderReportText = QtWidgets.QLabel(self.frame_45)
         self.orderReportText.setGeometry(QtCore.QRect(50, 50, 501, 71))
@@ -307,17 +308,17 @@ class Ui_OWNER_ORDERS(object):
 "    color: black;\n"
 "    border-radius: 25px;\n"
 "    padding: 9px;\n"
-"text-align: left;\n"
+"    text-align: left;\n"
 "}\n"
 "QPushButton:hover {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
-"QPushButton#activeButton {\n"
+"QPushButton.activeButton {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
 "")
         icon = QtGui.QIcon()
@@ -336,17 +337,17 @@ class Ui_OWNER_ORDERS(object):
 "    color: black;\n"
 "    border-radius: 25px;\n"
 "    padding: 9px;\n"
-"text-align: left;\n"
+"    text-align: left;\n"
 "}\n"
 "QPushButton:hover {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
-"QPushButton#activeButton {\n"
+"QPushButton.activeButton {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
 "")
         icon1 = QtGui.QIcon()
@@ -365,17 +366,17 @@ class Ui_OWNER_ORDERS(object):
 "    color: black;\n"
 "    border-radius: 25px;\n"
 "    padding: 9px;\n"
-"text-align: left;\n"
+"    text-align: left;\n"
 "}\n"
 "QPushButton:hover {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
-"QPushButton#activeButton {\n"
+"QPushButton.activeButton {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
 "")
         icon2 = QtGui.QIcon()
@@ -394,17 +395,17 @@ class Ui_OWNER_ORDERS(object):
 "    color: black;\n"
 "    border-radius: 25px;\n"
 "    padding: 9px;\n"
-"text-align: left;\n"
+"    text-align: left;\n"
 "}\n"
 "QPushButton:hover {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
-"QPushButton#activeButton {\n"
+"QPushButton.activeButton {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
 "")
         icon3 = QtGui.QIcon()
@@ -423,17 +424,17 @@ class Ui_OWNER_ORDERS(object):
 "    color: black;\n"
 "    border-radius: 25px;\n"
 "    padding: 9px;\n"
-"text-align: left;\n"
+"    text-align: left;\n"
 "}\n"
 "QPushButton:hover {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
-"QPushButton#activeButton {\n"
+"QPushButton.activeButton {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
 "")
         icon4 = QtGui.QIcon()
@@ -457,6 +458,11 @@ class Ui_OWNER_ORDERS(object):
 "    padding: 9px;\n"
 "font-size: 14;\n"
 "text-align: left;\n"
+"}\n"
+"QPushButton:hover {\n"
+"        background-color: rgba(2, 33, 98, 0.8);\n"
+"        color: white;\n"
+"    font-weight: 700;\n"
 "}")
         icon5 = QtGui.QIcon()
         icon5.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/WHITElogout_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
@@ -474,17 +480,17 @@ class Ui_OWNER_ORDERS(object):
 "    color: black;\n"
 "    border-radius: 25px;\n"
 "    padding: 9px;\n"
-"text-align: left;\n"
+"    text-align: left;\n"
 "}\n"
 "QPushButton:hover {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
-"QPushButton#activeButton {\n"
+"QPushButton.activeButton {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
 "")
         self.pushButton_Stock_History.setIcon(icon1)
@@ -538,7 +544,7 @@ class Ui_OWNER_ORDERS(object):
         item = self.tableWidget_orderDetails.horizontalHeaderItem(2)
         item.setText(_translate("OWNER_ORDERS", "Product"))
         item = self.tableWidget_orderDetails.horizontalHeaderItem(3)
-        item.setText(_translate("OWNER_ORDERS", "Quanity"))
+        item.setText(_translate("OWNER_ORDERS", "Quantity"))
         item = self.tableWidget_orderDetails.horizontalHeaderItem(4)
         item.setText(_translate("OWNER_ORDERS", "Unit Price"))
         item = self.tableWidget_orderDetails.horizontalHeaderItem(5)
@@ -555,7 +561,7 @@ class Ui_OWNER_ORDERS(object):
         self.pushButton_order.setText(_translate("OWNER_ORDERS", "Orders"))
         self.pushButton_orderDetail.setText(_translate("OWNER_ORDERS", "View Order Details"))
         self.lineEdit__QuickSearch_Orders.setPlaceholderText(_translate("OWNER_ORDERS", "      Quick Search"))
-        self.pushButton_searchOrders.setText(_translate("OWNER_ORDERS", "SEARCH"))
+        self.pushButton_searchOrders.setText(_translate("OWNER_ORDERS", "Search"))
         self.orderReportText.setText(_translate("OWNER_ORDERS", "Order Report"))
         self.JJelevate_text_2.setText(_translate("OWNER_ORDERS", "J&J "))
         self.pushButton_Dashboard.setText(_translate("OWNER_ORDERS", "  Home   "))

@@ -15,6 +15,7 @@ class Ui_OWNER_DASHBOARD(object):
     def setupUi(self, OWNER_DASHBOARD):
         OWNER_DASHBOARD.setObjectName("OWNER_DASHBOARD")
         OWNER_DASHBOARD.resize(1921, 1005)
+        OWNER_DASHBOARD.setStyleSheet("background: white;")
         self.frame_45 = QtWidgets.QFrame(OWNER_DASHBOARD)
         self.frame_45.setGeometry(QtCore.QRect(300, 0, 1621, 211))
         self.frame_45.setFrameShape(QtWidgets.QFrame.StyledPanel)
@@ -96,17 +97,17 @@ class Ui_OWNER_DASHBOARD(object):
 "    color: black;\n"
 "    border-radius: 25px;\n"
 "    padding: 9px;\n"
-"text-align: left;\n"
+"    text-align: left;\n"
 "}\n"
 "QPushButton:hover {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
-"QPushButton#activeButton {\n"
+"QPushButton.activeButton {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
 "")
         icon = QtGui.QIcon()
@@ -125,17 +126,17 @@ class Ui_OWNER_DASHBOARD(object):
 "    color: black;\n"
 "    border-radius: 25px;\n"
 "    padding: 9px;\n"
-"text-align: left;\n"
+"    text-align: left;\n"
 "}\n"
 "QPushButton:hover {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
-"QPushButton#activeButton {\n"
+"QPushButton.activeButton {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
 "")
         icon1 = QtGui.QIcon()
@@ -154,17 +155,17 @@ class Ui_OWNER_DASHBOARD(object):
 "    color: black;\n"
 "    border-radius: 25px;\n"
 "    padding: 9px;\n"
-"text-align: left;\n"
+"    text-align: left;\n"
 "}\n"
 "QPushButton:hover {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
-"QPushButton#activeButton {\n"
+"QPushButton.activeButton {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
 "")
         icon2 = QtGui.QIcon()
@@ -183,17 +184,17 @@ class Ui_OWNER_DASHBOARD(object):
 "    color: black;\n"
 "    border-radius: 25px;\n"
 "    padding: 9px;\n"
-"text-align: left;\n"
+"    text-align: left;\n"
 "}\n"
 "QPushButton:hover {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
-"QPushButton#activeButton {\n"
+"QPushButton.activeButton {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
 "")
         icon3 = QtGui.QIcon()
@@ -212,17 +213,17 @@ class Ui_OWNER_DASHBOARD(object):
 "    color: black;\n"
 "    border-radius: 25px;\n"
 "    padding: 9px;\n"
-"text-align: left;\n"
+"    text-align: left;\n"
 "}\n"
 "QPushButton:hover {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
-"QPushButton#activeButton {\n"
+"QPushButton.activeButton {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
 "")
         icon4 = QtGui.QIcon()
@@ -246,6 +247,11 @@ class Ui_OWNER_DASHBOARD(object):
 "    padding: 9px;\n"
 "font-size: 14;\n"
 "text-align: left;\n"
+"}\n"
+"QPushButton:hover {\n"
+"        background-color: rgba(2, 33, 98, 0.8);\n"
+"        color: white;\n"
+"    font-weight: 700;\n"
 "}")
         icon5 = QtGui.QIcon()
         icon5.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/WHITElogout_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
@@ -263,17 +269,17 @@ class Ui_OWNER_DASHBOARD(object):
 "    color: black;\n"
 "    border-radius: 25px;\n"
 "    padding: 9px;\n"
-"text-align: left;\n"
+"    text-align: left;\n"
 "}\n"
 "QPushButton:hover {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
-"QPushButton#activeButton {\n"
+"QPushButton.activeButton {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
 "")
         self.pushButton_Stock_History.setIcon(icon1)
@@ -679,7 +685,6 @@ class Ui_OWNER_DASHBOARD(object):
         self.top1LOWEST_STOCK_PROD_QTY.setObjectName("top1LOWEST_STOCK_PROD_QTY")
         self.lowstockbox.raise_()
         self.label_11.raise_()
-        self.btnViewMore_Inventory.raise_()
         self.dashb_lowinstock_value.raise_()
         self.label_12.raise_()
         self.label_13.raise_()
@@ -695,6 +700,7 @@ class Ui_OWNER_DASHBOARD(object):
         self.top3LOWSTOCK_PROD_QTY.raise_()
         self.top4LOWSTOCK_PRODUCT.raise_()
         self.top4LOWSTOCK_PROD_QTY.raise_()
+        self.btnViewMore_Inventory.raise_()
 
         self.retranslateUi(OWNER_DASHBOARD)
         QtCore.QMetaObject.connectSlotsByName(OWNER_DASHBOARD)

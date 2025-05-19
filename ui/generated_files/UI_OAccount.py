@@ -220,13 +220,16 @@ class Ui_OWNER_ACCOUNT(object):
         font.setBold(True)
         font.setWeight(62)
         self.pushButton_EditAccount.setFont(font)
-        self.pushButton_EditAccount.setStyleSheet("\n"
-"color: #ffffff;\n"
-"border-radius: 20px; \n"
-"padding: 3px; \n"
-"background-color: #b2423c; \n"
-"font-weight: 500;\n"
-"")
+        self.pushButton_EditAccount.setStyleSheet("    QPushButton {\n"
+"        color: #ffffff;\n"
+"        border-radius: 20px;\n"
+"        padding: 3px;\n"
+"        background-color: #b2423c;\n"
+"        font-weight: 500;\n"
+"    }\n"
+"    QPushButton:hover {\n"
+"        background-color: rgba(178, 66, 60, 0.9);\n"
+"    }")
         self.pushButton_EditAccount.setObjectName("pushButton_EditAccount")
         self.label_3.raise_()
         self.ownerIDText.raise_()
@@ -362,13 +365,16 @@ class Ui_OWNER_ACCOUNT(object):
         font.setBold(True)
         font.setWeight(62)
         self.pushButton_saveEditaccount.setFont(font)
-        self.pushButton_saveEditaccount.setStyleSheet("\n"
-"color: #ffffff;\n"
-"border-radius: 20px; \n"
-"padding: 3px; \n"
-"background-color: #12245c; \n"
-"font-weight: 500;\n"
-"")
+        self.pushButton_saveEditaccount.setStyleSheet("    QPushButton {\n"
+"        color: #ffffff;\n"
+"        border-radius: 20px;\n"
+"        padding: 3px;\n"
+"        background-color: #12245c;\n"
+"        font-weight: 500;\n"
+"    }\n"
+"    QPushButton:hover {\n"
+"        background-color: rgba(18, 36, 92, 0.9);\n"
+"    }")
         self.pushButton_saveEditaccount.setObjectName("pushButton_saveEditaccount")
         self.changeUserNameText = QtWidgets.QLabel(self.frame_42)
         self.changeUserNameText.setGeometry(QtCore.QRect(340, 70, 351, 41))
@@ -453,13 +459,16 @@ class Ui_OWNER_ACCOUNT(object):
         font.setBold(True)
         font.setWeight(62)
         self.pushButton_cancelEditAccount_owner.setFont(font)
-        self.pushButton_cancelEditAccount_owner.setStyleSheet("\n"
-"color: #ffffff;\n"
-"border-radius: 20px; \n"
-"padding: 3px; \n"
-"background-color: #b2423c; \n"
-"font-weight: 500;\n"
-"")
+        self.pushButton_cancelEditAccount_owner.setStyleSheet("    QPushButton {\n"
+"        color: #ffffff;\n"
+"        border-radius: 20px;\n"
+"        padding: 3px;\n"
+"        background-color: #b2423c;\n"
+"        font-weight: 500;\n"
+"    }\n"
+"    QPushButton:hover {\n"
+"        background-color: rgba(178, 66, 60, 0.9);\n"
+"    }")
         self.pushButton_cancelEditAccount_owner.setObjectName("pushButton_cancelEditAccount_owner")
         self.label_4.raise_()
         self.userNameText.raise_()
@@ -602,13 +611,16 @@ class Ui_OWNER_ACCOUNT(object):
         font.setBold(True)
         font.setWeight(62)
         self.pushButton_EditAccount_cashier.setFont(font)
-        self.pushButton_EditAccount_cashier.setStyleSheet("\n"
-"color: #ffffff;\n"
-"border-radius: 20px; \n"
-"padding: 3px; \n"
-"background-color: #b2423c; \n"
-"font-weight: 500;\n"
-"")
+        self.pushButton_EditAccount_cashier.setStyleSheet("    QPushButton {\n"
+"        color: #ffffff;\n"
+"        border-radius: 20px;\n"
+"        padding: 3px;\n"
+"        background-color: #b2423c;\n"
+"        font-weight: 500;\n"
+"    }\n"
+"    QPushButton:hover {\n"
+"        background-color: rgba(178, 66, 60, 0.9);\n"
+"    }")
         self.pushButton_EditAccount_cashier.setObjectName("pushButton_EditAccount_cashier")
         self.label_5.raise_()
         self.cashierIDText.raise_()
@@ -744,13 +756,16 @@ class Ui_OWNER_ACCOUNT(object):
         font.setBold(True)
         font.setWeight(62)
         self.pushButton_saveEditaccount_cashier.setFont(font)
-        self.pushButton_saveEditaccount_cashier.setStyleSheet("\n"
-"color: #ffffff;\n"
-"border-radius: 20px; \n"
-"padding: 3px; \n"
-"background-color: #12245c; \n"
-"font-weight: 500;\n"
-"")
+        self.pushButton_saveEditaccount_cashier.setStyleSheet("    QPushButton {\n"
+"        color: #ffffff;\n"
+"        border-radius: 20px;\n"
+"        padding: 3px;\n"
+"        background-color: #12245c;\n"
+"        font-weight: 500;\n"
+"    }\n"
+"    QPushButton:hover {\n"
+"        background-color: rgba(18, 36, 92, 0.9);\n"
+"    }")
         self.pushButton_saveEditaccount_cashier.setObjectName("pushButton_saveEditaccount_cashier")
         self.changeUserNameText_2 = QtWidgets.QLabel(self.frame_44)
         self.changeUserNameText_2.setGeometry(QtCore.QRect(340, 70, 351, 41))
@@ -835,13 +850,16 @@ class Ui_OWNER_ACCOUNT(object):
         font.setBold(True)
         font.setWeight(62)
         self.pushButton_cancelEditAccount_cashier.setFont(font)
-        self.pushButton_cancelEditAccount_cashier.setStyleSheet("\n"
-"color: #ffffff;\n"
-"border-radius: 20px; \n"
-"padding: 3px; \n"
-"background-color: #b2423c; \n"
-"font-weight: 500;\n"
-"")
+        self.pushButton_cancelEditAccount_cashier.setStyleSheet("    QPushButton {\n"
+"        color: #ffffff;\n"
+"        border-radius: 20px;\n"
+"        padding: 3px;\n"
+"        background-color: #b2423c;\n"
+"        font-weight: 500;\n"
+"    }\n"
+"    QPushButton:hover {\n"
+"        background-color: rgba(178, 66, 60, 0.9);\n"
+"    }")
         self.pushButton_cancelEditAccount_cashier.setObjectName("pushButton_cancelEditAccount_cashier")
         self.label_6.raise_()
         self.userNameText_2.raise_()
@@ -1049,13 +1067,16 @@ class Ui_OWNER_ACCOUNT(object):
         font.setBold(True)
         font.setWeight(62)
         self.pushButton_CreateAccount_cashier.setFont(font)
-        self.pushButton_CreateAccount_cashier.setStyleSheet("\n"
-"color: #ffffff;\n"
-"border-radius: 20px; \n"
-"padding: 3px; \n"
-"background-color: #12245c; \n"
-"font-weight: 500;\n"
-"")
+        self.pushButton_CreateAccount_cashier.setStyleSheet("    QPushButton {\n"
+"        color: #ffffff;\n"
+"        border-radius: 20px;\n"
+"        padding: 3px;\n"
+"        background-color: #12245c;\n"
+"        font-weight: 500;\n"
+"    }\n"
+"    QPushButton:hover {\n"
+"        background-color: rgba(18, 36, 92, 0.9);\n"
+"    }")
         self.pushButton_CreateAccount_cashier.setObjectName("pushButton_CreateAccount_cashier")
         self.pushButton_cancelCreateAccount_cashier = QtWidgets.QPushButton(self.page_5)
         self.pushButton_cancelCreateAccount_cashier.setGeometry(QtCore.QRect(1140, 550, 201, 51))
@@ -1065,13 +1086,16 @@ class Ui_OWNER_ACCOUNT(object):
         font.setBold(True)
         font.setWeight(62)
         self.pushButton_cancelCreateAccount_cashier.setFont(font)
-        self.pushButton_cancelCreateAccount_cashier.setStyleSheet("\n"
-"color: #ffffff;\n"
-"border-radius: 20px; \n"
-"padding: 3px; \n"
-"background-color: #b2423c; \n"
-"font-weight: 500;\n"
-"")
+        self.pushButton_cancelCreateAccount_cashier.setStyleSheet("    QPushButton {\n"
+"        color: #ffffff;\n"
+"        border-radius: 20px;\n"
+"        padding: 3px;\n"
+"        background-color: #b2423c;\n"
+"        font-weight: 500;\n"
+"    }\n"
+"    QPushButton:hover {\n"
+"        background-color: rgba(178, 66, 60, 0.9);\n"
+"    }")
         self.pushButton_cancelCreateAccount_cashier.setObjectName("pushButton_cancelCreateAccount_cashier")
         self.stackedWidget_AccountBtns.addWidget(self.page_5)
         self.LeftMenuBar = QtWidgets.QFrame(OWNER_ACCOUNT)
@@ -1270,8 +1294,8 @@ class Ui_OWNER_ACCOUNT(object):
 "text-align: left;\n"
 "}\n"
 "QPushButton:hover {\n"
-"    background-color:gray;\n"
-"    color:white;\n"
+"        background-color: rgba(2, 33, 98, 0.8);\n"
+"        color: white;\n"
 "    font-weight: 700;\n"
 "}")
         icon5 = QtGui.QIcon()
@@ -1359,7 +1383,7 @@ class Ui_OWNER_ACCOUNT(object):
         self.label.setObjectName("label")
 
         self.retranslateUi(OWNER_ACCOUNT)
-        self.stackedWidget_AccountBtns.setCurrentIndex(1)
+        self.stackedWidget_AccountBtns.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(OWNER_ACCOUNT)
 
     def retranslateUi(self, OWNER_ACCOUNT):

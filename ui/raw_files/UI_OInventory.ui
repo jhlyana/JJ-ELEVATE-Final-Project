@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background: white;</string>
+  </property>
   <widget class="QFrame" name="frame_4">
    <property name="geometry">
     <rect>
@@ -84,7 +87,7 @@ padding: 5;
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../../Documents/assets/images/search.png</pixmap>
+     <pixmap>../resources/images/search.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -108,18 +111,18 @@ padding: 5;
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">
-    background-color: #003366;
-    color: white;
-    padding: 2px;
-    text-align: center;
-
-
-
-</string>
+     <string notr="true">    QPushButton {
+        background-color: #003366;
+        color: white;
+        padding: 2px;
+        text-align: center;
+    }
+    QPushButton:hover {
+        background-color: rgba(0, 51, 102, 0.9);
+    }</string>
     </property>
     <property name="text">
-     <string>SEARCH</string>
+     <string>Search</string>
     </property>
    </widget>
   </widget>
@@ -184,9 +187,9 @@ p, li { white-space: pre-wrap; }
    <widget class="QFrame" name="frame_12">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>20</x>
       <y>20</y>
-      <width>971</width>
+      <width>981</width>
       <height>71</height>
      </rect>
     </property>
@@ -252,7 +255,7 @@ QPushButton#activeButton {
 </string>
      </property>
      <property name="text">
-      <string>ALL ITEMS</string>
+      <string>All Items</string>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButton_Inventory_ROOF_table">
@@ -311,7 +314,7 @@ QPushButton#activeButton {
 </string>
      </property>
      <property name="text">
-      <string>ROOF</string>
+      <string>Roof</string>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButton_Inventory_SPANDREL_table">
@@ -370,7 +373,7 @@ QPushButton#activeButton {
 </string>
      </property>
      <property name="text">
-      <string>SPANDREL</string>
+      <string>Spandrel</string>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButton_Inventory_GUTTER_table">
@@ -429,7 +432,7 @@ QPushButton#activeButton {
 </string>
      </property>
      <property name="text">
-      <string>GUTTER</string>
+      <string>Gutter</string>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButton_Inventory_OTHER_table">
@@ -488,7 +491,7 @@ QPushButton#activeButton {
 </string>
      </property>
      <property name="text">
-      <string>OTHER</string>
+      <string>Other</string>
      </property>
     </widget>
    </widget>
@@ -553,7 +556,7 @@ color:black;
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../../../../Documents/assets/images/add.png</normaloff>../../../../Documents/assets/images/add.png</iconset>
+       <normaloff>../resources/images/add.png</normaloff>../resources/images/add.png</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -608,7 +611,7 @@ color:black;
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../../../../Documents/assets/images/edit.png</normaloff>../../../../Documents/assets/images/edit.png</iconset>
+       <normaloff>../resources/images/edit.png</normaloff>../resources/images/edit.png</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -663,7 +666,7 @@ color:black;
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../../../../Documents/assets/images/delete.png</normaloff>../../../../Documents/assets/images/delete.png</iconset>
+       <normaloff>../resources/images/delete.png</normaloff>../resources/images/delete.png</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -692,19 +695,19 @@ color:black;
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">
-    background-color: #b2423c;
-border-radius: 10;
-    color: white;
-    padding: 2px;
-    text-align: center;
-
-
-
-</string>
+    <string notr="true">    QPushButton {
+        background-color: #b2423c;
+        border-radius: 10px;
+        color: white;
+        padding: 2px;
+        text-align: center;
+    }
+    QPushButton:hover {
+        background-color: rgba(178, 66, 60, 0.9);
+    }</string>
    </property>
    <property name="text">
-    <string>VIEW HISTORY</string>
+    <string>View History</string>
    </property>
   </widget>
   <widget class="QStackedWidget" name="INVENTORY_afterBUTTONSclick">
@@ -720,10 +723,10 @@ border-radius: 10;
     <string notr="true">background: transparent;</string>
    </property>
    <property name="currentIndex">
-    <number>5</number>
+    <number>0</number>
    </property>
    <widget class="QWidget" name="page_INV_ALL_ITEMS_5">
-    <widget class="QTableWidget" name="tableWidget_ALL_ITEMS_5">
+    <widget class="QTableWidget" name="tableWidget_ALL_ITEMS">
      <property name="geometry">
       <rect>
        <x>60</x>
@@ -732,126 +735,154 @@ border-radius: 10;
        <height>651</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <family>MS Shell Dlg 2</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">padding: 1;</string>
+      <string notr="true">QTableWidget {
+    background-color: white;
+    gridline-color: lightgray;
+}
+
+QHeaderView::section {
+    background-color: #003366; 
+    color: #ffffff;
+    font-weight: bold;
+padding: 3;
+}
+</string>
      </property>
      <attribute name="horizontalHeaderDefaultSectionSize">
       <number>265</number>
      </attribute>
      <column>
       <property name="text">
-       <string>PRODUCT ID</string>
+       <string>Product ID</string>
       </property>
       <property name="font">
        <font>
-        <pointsize>12</pointsize>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>14</pointsize>
        </font>
       </property>
      </column>
      <column>
       <property name="text">
-       <string>PRODUCT TYPE</string>
+       <string>Product Type</string>
       </property>
       <property name="font">
        <font>
-        <pointsize>12</pointsize>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>14</pointsize>
        </font>
       </property>
      </column>
      <column>
       <property name="text">
-       <string>NAME</string>
+       <string>Name</string>
       </property>
       <property name="font">
        <font>
-        <pointsize>12</pointsize>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>14</pointsize>
        </font>
       </property>
      </column>
      <column>
       <property name="text">
-       <string>PRICE</string>
+       <string>Price</string>
       </property>
       <property name="font">
        <font>
-        <pointsize>12</pointsize>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>14</pointsize>
        </font>
       </property>
      </column>
      <column>
       <property name="text">
-       <string>STOCK QTY.</string>
+       <string>Stock Qty.</string>
       </property>
       <property name="font">
        <font>
-        <pointsize>12</pointsize>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>14</pointsize>
        </font>
       </property>
      </column>
      <column>
       <property name="text">
-       <string>UPDATED AT</string>
+       <string>Updated At</string>
       </property>
       <property name="font">
        <font>
-        <pointsize>12</pointsize>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>14</pointsize>
        </font>
       </property>
      </column>
      <column>
       <property name="text">
-       <string>COLOR</string>
+       <string>Color</string>
       </property>
       <property name="font">
        <font>
-        <pointsize>12</pointsize>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>14</pointsize>
        </font>
       </property>
      </column>
      <column>
       <property name="text">
-       <string>LENGTH </string>
+       <string>Length</string>
       </property>
       <property name="font">
        <font>
-        <pointsize>12</pointsize>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>14</pointsize>
        </font>
       </property>
      </column>
      <column>
       <property name="text">
-       <string>THICKNESS</string>
+       <string>Thickness</string>
       </property>
       <property name="font">
        <font>
-        <pointsize>12</pointsize>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>14</pointsize>
        </font>
       </property>
      </column>
      <column>
       <property name="text">
-       <string>WIDTH</string>
+       <string>Width</string>
       </property>
       <property name="font">
        <font>
-        <pointsize>12</pointsize>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>14</pointsize>
        </font>
       </property>
      </column>
      <column>
       <property name="text">
-       <string>OTHER SPECIFICATIONS</string>
+       <string>Other Specifications</string>
       </property>
       <property name="font">
        <font>
-        <pointsize>12</pointsize>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>14</pointsize>
        </font>
       </property>
      </column>
     </widget>
    </widget>
    <widget class="QWidget" name="page_INV_ROOF_5">
-    <widget class="QTableWidget" name="tableWidget_ROOF_5">
+    <widget class="QTableWidget" name="tableWidget_ROOF">
      <property name="geometry">
       <rect>
        <x>60</x>
@@ -860,15 +891,32 @@ border-radius: 10;
        <height>651</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <family>MS Shell Dlg 2</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">padding: 1;</string>
+      <string notr="true">QTableWidget {
+    background-color: white;
+    gridline-color: lightgray;
+}
+
+QHeaderView::section {
+    background-color: #003366; 
+    color: #ffffff;
+    font-weight: bold;
+padding: 3;
+}
+</string>
      </property>
      <attribute name="horizontalHeaderDefaultSectionSize">
       <number>265</number>
      </attribute>
      <column>
       <property name="text">
-       <string>PRODUCT ID</string>
+       <string>Product ID</string>
       </property>
       <property name="font">
        <font>
@@ -878,7 +926,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>PRODUCT TYPE</string>
+       <string>Product Type</string>
       </property>
       <property name="font">
        <font>
@@ -888,7 +936,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>NAME</string>
+       <string>Name</string>
       </property>
       <property name="font">
        <font>
@@ -898,7 +946,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>PRICE</string>
+       <string>Price  </string>
       </property>
       <property name="font">
        <font>
@@ -908,7 +956,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>STOCK QTY.</string>
+       <string>Stock Qty.</string>
       </property>
       <property name="font">
        <font>
@@ -918,7 +966,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>UPDATED AT</string>
+       <string>Updated At </string>
       </property>
       <property name="font">
        <font>
@@ -928,7 +976,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>COLOR</string>
+       <string>Color  </string>
       </property>
       <property name="font">
        <font>
@@ -938,7 +986,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>LENGTH </string>
+       <string>Length  </string>
       </property>
       <property name="font">
        <font>
@@ -948,7 +996,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>THICKNESS</string>
+       <string>Thickness  </string>
       </property>
       <property name="font">
        <font>
@@ -958,7 +1006,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>WIDTH</string>
+       <string>Width  </string>
       </property>
       <property name="font">
        <font>
@@ -968,7 +1016,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>OTHER SPECIFICATIONS</string>
+       <string>Other Specifications</string>
       </property>
       <property name="font">
        <font>
@@ -979,7 +1027,7 @@ border-radius: 10;
     </widget>
    </widget>
    <widget class="QWidget" name="page_INV_SPANDREL_5">
-    <widget class="QTableWidget" name="tableWidget_SPANDREL_5">
+    <widget class="QTableWidget" name="tableWidget_SPANDREL">
      <property name="geometry">
       <rect>
        <x>60</x>
@@ -988,15 +1036,32 @@ border-radius: 10;
        <height>651</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <family>MS Shell Dlg 2</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">padding: 1;</string>
+      <string notr="true">QTableWidget {
+    background-color: white;
+    gridline-color: lightgray;
+}
+
+QHeaderView::section {
+    background-color: #003366; 
+    color: #ffffff;
+    font-weight: bold;
+padding: 3;
+}
+</string>
      </property>
      <attribute name="horizontalHeaderDefaultSectionSize">
       <number>265</number>
      </attribute>
      <column>
       <property name="text">
-       <string>PRODUCT ID</string>
+       <string>Product ID</string>
       </property>
       <property name="font">
        <font>
@@ -1006,7 +1071,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>PRODUCT TYPE</string>
+       <string>Product Type</string>
       </property>
       <property name="font">
        <font>
@@ -1016,7 +1081,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>NAME</string>
+       <string>Name  </string>
       </property>
       <property name="font">
        <font>
@@ -1026,7 +1091,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>PRICE</string>
+       <string>Price  </string>
       </property>
       <property name="font">
        <font>
@@ -1036,7 +1101,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>STOCK QTY.</string>
+       <string>Stock Qty.  </string>
       </property>
       <property name="font">
        <font>
@@ -1046,7 +1111,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>UPDATED AT</string>
+       <string>Updated At</string>
       </property>
       <property name="font">
        <font>
@@ -1056,7 +1121,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>COLOR</string>
+       <string>Color  </string>
       </property>
       <property name="font">
        <font>
@@ -1066,7 +1131,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>LENGTH </string>
+       <string>Length  </string>
       </property>
       <property name="font">
        <font>
@@ -1076,7 +1141,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>THICKNESS</string>
+       <string>Thickness  </string>
       </property>
       <property name="font">
        <font>
@@ -1086,7 +1151,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>WIDTH</string>
+       <string>Width  </string>
       </property>
       <property name="font">
        <font>
@@ -1096,7 +1161,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>OTHER SPECIFICATIONS</string>
+       <string>Other Specifications</string>
       </property>
       <property name="font">
        <font>
@@ -1107,7 +1172,7 @@ border-radius: 10;
     </widget>
    </widget>
    <widget class="QWidget" name="page_INV_GUTTER_5">
-    <widget class="QTableWidget" name="tableWidget_GUTTER_5">
+    <widget class="QTableWidget" name="tableWidget_GUTTER">
      <property name="geometry">
       <rect>
        <x>60</x>
@@ -1116,15 +1181,32 @@ border-radius: 10;
        <height>651</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <family>MS Shell Dlg 2</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">padding: 1;</string>
+      <string notr="true">QTableWidget {
+    background-color: white;
+    gridline-color: lightgray;
+}
+
+QHeaderView::section {
+    background-color: #003366; 
+    color: #ffffff;
+    font-weight: bold;
+padding: 3;
+}
+</string>
      </property>
      <attribute name="horizontalHeaderDefaultSectionSize">
       <number>265</number>
      </attribute>
      <column>
       <property name="text">
-       <string>PRODUCT ID</string>
+       <string>Product ID</string>
       </property>
       <property name="font">
        <font>
@@ -1134,7 +1216,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>PRODUCT TYPE</string>
+       <string>Product Type</string>
       </property>
       <property name="font">
        <font>
@@ -1144,7 +1226,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>NAME</string>
+       <string>Name</string>
       </property>
       <property name="font">
        <font>
@@ -1154,7 +1236,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>PRICE</string>
+       <string>Price </string>
       </property>
       <property name="font">
        <font>
@@ -1164,7 +1246,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>STOCK QTY.</string>
+       <string>Stock Qty. </string>
       </property>
       <property name="font">
        <font>
@@ -1174,7 +1256,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>UPDATED AT</string>
+       <string>Updated At </string>
       </property>
       <property name="font">
        <font>
@@ -1184,7 +1266,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>COLOR</string>
+       <string>Color</string>
       </property>
       <property name="font">
        <font>
@@ -1194,7 +1276,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>LENGTH </string>
+       <string>Length </string>
       </property>
       <property name="font">
        <font>
@@ -1204,7 +1286,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>THICKNESS</string>
+       <string>Thickness  </string>
       </property>
       <property name="font">
        <font>
@@ -1214,7 +1296,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>WIDTH</string>
+       <string>Width  </string>
       </property>
       <property name="font">
        <font>
@@ -1224,7 +1306,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>OTHER SPECIFICATIONS</string>
+       <string>Other Specifications</string>
       </property>
       <property name="font">
        <font>
@@ -1235,7 +1317,7 @@ border-radius: 10;
     </widget>
    </widget>
    <widget class="QWidget" name="page_INV_OTHER_5">
-    <widget class="QTableWidget" name="tableWidget_OTHER_5">
+    <widget class="QTableWidget" name="tableWidget_OTHER">
      <property name="geometry">
       <rect>
        <x>60</x>
@@ -1244,15 +1326,32 @@ border-radius: 10;
        <height>651</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <family>MS Shell Dlg 2</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">padding: 1;</string>
+      <string notr="true">QTableWidget {
+    background-color: white;
+    gridline-color: lightgray;
+}
+
+QHeaderView::section {
+    background-color: #003366; 
+    color: #ffffff;
+    font-weight: bold;
+padding: 3;
+}
+</string>
      </property>
      <attribute name="horizontalHeaderDefaultSectionSize">
       <number>265</number>
      </attribute>
      <column>
       <property name="text">
-       <string>PRODUCT ID</string>
+       <string>Product ID</string>
       </property>
       <property name="font">
        <font>
@@ -1262,7 +1361,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>PRODUCT TYPE</string>
+       <string>Product Type</string>
       </property>
       <property name="font">
        <font>
@@ -1272,7 +1371,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>NAME</string>
+       <string>Name</string>
       </property>
       <property name="font">
        <font>
@@ -1282,7 +1381,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>PRICE</string>
+       <string>Price</string>
       </property>
       <property name="font">
        <font>
@@ -1292,7 +1391,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>STOCK QTY.</string>
+       <string>Stock Qty.</string>
       </property>
       <property name="font">
        <font>
@@ -1302,7 +1401,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>UPDATED AT</string>
+       <string>Updated At</string>
       </property>
       <property name="font">
        <font>
@@ -1312,7 +1411,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>COLOR</string>
+       <string>Color</string>
       </property>
       <property name="font">
        <font>
@@ -1322,7 +1421,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>LENGTH </string>
+       <string>Length</string>
       </property>
       <property name="font">
        <font>
@@ -1332,7 +1431,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>THICKNESS</string>
+       <string>Thickness</string>
       </property>
       <property name="font">
        <font>
@@ -1342,7 +1441,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>WIDTH</string>
+       <string>Width</string>
       </property>
       <property name="font">
        <font>
@@ -1352,7 +1451,7 @@ border-radius: 10;
      </column>
      <column>
       <property name="text">
-       <string>OTHER SPECIFICATIONS</string>
+       <string>Other Specifications</string>
       </property>
       <property name="font">
        <font>
@@ -1362,7 +1461,7 @@ border-radius: 10;
      </column>
     </widget>
    </widget>
-   <widget class="QWidget" name="page_INV_ADD_STOCK_5">
+   <widget class="QWidget" name="page_INV_ADD_STOCK">
     <widget class="QFrame" name="frame_97">
      <property name="geometry">
       <rect>
@@ -1428,7 +1527,7 @@ border: 1px solid #000000; </string>
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QStackedWidget" name="Add_Select_Prod_Type_5">
+     <widget class="QStackedWidget" name="Add_Select_Prod_Type">
       <property name="geometry">
        <rect>
         <x>100</x>
@@ -1441,7 +1540,7 @@ border: 1px solid #000000; </string>
        <string notr="true">background: #f6f3ee;</string>
       </property>
       <property name="currentIndex">
-       <number>4</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="ADD_blank_5">
        <widget class="QLabel" name="label_120">
@@ -1508,13 +1607,19 @@ color: #a6a6a6;</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">    background-color: #b2423c;
+          <string notr="true">QPushButton {
+    background-color: #b2423c;
     color: white;
     border-radius: 15px;
-border: 1px solid #000000; 
+    border: 1px solid #000000;
     padding: 9px;
-font-family: &quot;Verdana&quot;, sans-serif; 
-text-align: center;</string>
+    font-family: &quot;Verdana&quot;, sans-serif;
+    text-align: center;
+}
+
+QPushButton:hover {
+    background-color: rgba(178, 66, 60, 0.9); 
+}</string>
          </property>
          <property name="text">
           <string>CONFIRM</string>
@@ -1569,8 +1674,8 @@ QPushButton#activeButton {
        <widget class="QFrame" name="frame_addroof_7">
         <property name="geometry">
          <rect>
-          <x>-11</x>
-          <y>9</y>
+          <x>-10</x>
+          <y>10</y>
           <width>1411</width>
           <height>411</height>
          </rect>
@@ -2107,13 +2212,19 @@ border: 1px solid #000000;
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">    background-color: #b2423c;
+          <string notr="true">QPushButton {
+    background-color: #b2423c;
     color: white;
     border-radius: 15px;
-border: 1px solid #000000; 
+    border: 1px solid #000000;
     padding: 9px;
-font-family: &quot;Verdana&quot;, sans-serif; 
-text-align: center;</string>
+    font-family: &quot;Verdana&quot;, sans-serif;
+    text-align: center;
+}
+
+QPushButton:hover {
+    background-color: rgba(178, 66, 60, 0.9); 
+}</string>
          </property>
          <property name="text">
           <string>CONFIRM</string>
@@ -2706,13 +2817,19 @@ border: 1px solid #000000;
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">    background-color: #b2423c;
+          <string notr="true">QPushButton {
+    background-color: #b2423c;
     color: white;
     border-radius: 15px;
-border: 1px solid #000000; 
+    border: 1px solid #000000;
     padding: 9px;
-font-family: &quot;Verdana&quot;, sans-serif; 
-text-align: center;</string>
+    font-family: &quot;Verdana&quot;, sans-serif;
+    text-align: center;
+}
+
+QPushButton:hover {
+    background-color: rgba(178, 66, 60, 0.9); 
+}</string>
          </property>
          <property name="text">
           <string>CONFIRM</string>
@@ -3305,13 +3422,19 @@ border: 1px solid #000000;
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">    background-color: #b2423c;
+          <string notr="true">QPushButton {
+    background-color: #b2423c;
     color: white;
     border-radius: 15px;
-border: 1px solid #000000; 
+    border: 1px solid #000000;
     padding: 9px;
-font-family: &quot;Verdana&quot;, sans-serif; 
-text-align: center;</string>
+    font-family: &quot;Verdana&quot;, sans-serif;
+    text-align: center;
+}
+
+QPushButton:hover {
+    background-color: rgba(178, 66, 60, 0.9); 
+}</string>
          </property>
          <property name="text">
           <string>CONFIRM</string>
@@ -4021,7 +4144,7 @@ border: 1px solid #000000; </string>
        <string notr="true">background: #f6f3ee;</string>
       </property>
       <property name="currentIndex">
-       <number>4</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="EDIT_blank_5">
        <widget class="QLabel" name="label_613">
@@ -4088,13 +4211,19 @@ color: #a6a6a6;</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">    background-color: #b2423c;
+          <string notr="true">QPushButton {
+    background-color: #b2423c;
     color: white;
     border-radius: 15px;
-border: 1px solid #000000; 
+    border: 1px solid #000000;
     padding: 9px;
-font-family: &quot;Verdana&quot;, sans-serif; 
-text-align: center;</string>
+    font-family: &quot;Verdana&quot;, sans-serif;
+    text-align: center;
+}
+
+QPushButton:hover {
+    background-color: rgba(178, 66, 60, 0.9); 
+}</string>
          </property>
          <property name="text">
           <string>SAVE CHANGES</string>
@@ -4687,13 +4816,19 @@ border: 1px solid #000000;
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">    background-color: #b2423c;
+          <string notr="true">QPushButton {
+    background-color: #b2423c;
     color: white;
     border-radius: 15px;
-border: 1px solid #000000; 
+    border: 1px solid #000000;
     padding: 9px;
-font-family: &quot;Verdana&quot;, sans-serif; 
-text-align: center;</string>
+    font-family: &quot;Verdana&quot;, sans-serif;
+    text-align: center;
+}
+
+QPushButton:hover {
+    background-color: rgba(178, 66, 60, 0.9); 
+}</string>
          </property>
          <property name="text">
           <string>SAVE CHANGES</string>
@@ -5286,13 +5421,19 @@ border: 1px solid #000000;
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">    background-color: #b2423c;
+          <string notr="true">QPushButton {
+    background-color: #b2423c;
     color: white;
     border-radius: 15px;
-border: 1px solid #000000; 
+    border: 1px solid #000000;
     padding: 9px;
-font-family: &quot;Verdana&quot;, sans-serif; 
-text-align: center;</string>
+    font-family: &quot;Verdana&quot;, sans-serif;
+    text-align: center;
+}
+
+QPushButton:hover {
+    background-color: rgba(178, 66, 60, 0.9); 
+}</string>
          </property>
          <property name="text">
           <string>SAVE CHANGES</string>
@@ -6389,13 +6530,19 @@ border: 1px solid #000000;
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">    background-color: #b2423c;
+          <string notr="true">QPushButton {
+    background-color: #b2423c;
     color: white;
     border-radius: 15px;
-border: 1px solid #000000; 
+    border: 1px solid #000000;
     padding: 9px;
-font-family: &quot;Verdana&quot;, sans-serif; 
-text-align: center;</string>
+    font-family: &quot;Verdana&quot;, sans-serif;
+    text-align: center;
+}
+
+QPushButton:hover {
+    background-color: rgba(178, 66, 60, 0.9); 
+}</string>
          </property>
          <property name="text">
           <string>SAVE CHANGES</string>
@@ -6619,7 +6766,7 @@ border: 1px solid #000000; </string>
         <string notr="true">background: #f6f3ee;</string>
        </property>
        <property name="currentIndex">
-        <number>3</number>
+        <number>0</number>
        </property>
        <widget class="QWidget" name="DELETE_blank_5">
         <widget class="QLabel" name="label_656">
@@ -6686,13 +6833,19 @@ color: #a6a6a6;</string>
            </font>
           </property>
           <property name="styleSheet">
-           <string notr="true">    background-color: #b2423c;
+           <string notr="true">QPushButton {
+    background-color: #b2423c;
     color: white;
     border-radius: 15px;
-border: 1px solid #000000; 
+    border: 1px solid #000000;
     padding: 9px;
-font-family: &quot;Verdana&quot;, sans-serif; 
-text-align: center;</string>
+    font-family: &quot;Verdana&quot;, sans-serif;
+    text-align: center;
+}
+
+QPushButton:hover {
+    background-color: rgba(178, 66, 60, 0.9); 
+}</string>
           </property>
           <property name="text">
            <string>CONFIRM</string>
@@ -6955,13 +7108,19 @@ color: #d75413;
            </font>
           </property>
           <property name="styleSheet">
-           <string notr="true">    background-color: #b2423c;
+           <string notr="true">QPushButton {
+    background-color: #b2423c;
     color: white;
     border-radius: 15px;
-border: 1px solid #000000; 
+    border: 1px solid #000000;
     padding: 9px;
-font-family: &quot;Verdana&quot;, sans-serif; 
-text-align: center;</string>
+    font-family: &quot;Verdana&quot;, sans-serif;
+    text-align: center;
+}
+
+QPushButton:hover {
+    background-color: rgba(178, 66, 60, 0.9); 
+}</string>
           </property>
           <property name="text">
            <string>CONFIRM</string>
@@ -7224,13 +7383,19 @@ color: #d75413;
            </font>
           </property>
           <property name="styleSheet">
-           <string notr="true">    background-color: #b2423c;
+           <string notr="true">QPushButton {
+    background-color: #b2423c;
     color: white;
     border-radius: 15px;
-border: 1px solid #000000; 
+    border: 1px solid #000000;
     padding: 9px;
-font-family: &quot;Verdana&quot;, sans-serif; 
-text-align: center;</string>
+    font-family: &quot;Verdana&quot;, sans-serif;
+    text-align: center;
+}
+
+QPushButton:hover {
+    background-color: rgba(178, 66, 60, 0.9); 
+}</string>
           </property>
           <property name="text">
            <string>CONFIRM</string>
@@ -7667,13 +7832,19 @@ color: #d75413;
            </font>
           </property>
           <property name="styleSheet">
-           <string notr="true">    background-color: #b2423c;
+           <string notr="true">QPushButton {
+    background-color: #b2423c;
     color: white;
     border-radius: 15px;
-border: 1px solid #000000; 
+    border: 1px solid #000000;
     padding: 9px;
-font-family: &quot;Verdana&quot;, sans-serif; 
-text-align: center;</string>
+    font-family: &quot;Verdana&quot;, sans-serif;
+    text-align: center;
+}
+
+QPushButton:hover {
+    background-color: rgba(178, 66, 60, 0.9); 
+}</string>
           </property>
           <property name="text">
            <string>CONFIRM</string>
@@ -7904,17 +8075,17 @@ font-size: 30px;</string>
     color: black;
     border-radius: 25px;
     padding: 9px;
-text-align: left;
+    text-align: left;
 }
 QPushButton:hover {
     background-color:#c25b55;
-color:black;
-font-weight: 700;
+    color:black;
+    font-weight: 700;
 }
-QPushButton#activeButton {
+QPushButton.activeButton {
     background-color:#c25b55;
-color:black;
-font-weight: 700;
+    color:black;
+    font-weight: 700;
 }
 </string>
     </property>
@@ -7953,17 +8124,17 @@ font-weight: 700;
     color: black;
     border-radius: 25px;
     padding: 9px;
-text-align: left;
+    text-align: left;
 }
 QPushButton:hover {
     background-color:#c25b55;
-color:black;
-font-weight: 700;
+    color:black;
+    font-weight: 700;
 }
-QPushButton#activeButton {
+QPushButton.activeButton {
     background-color:#c25b55;
-color:black;
-font-weight: 700;
+    color:black;
+    font-weight: 700;
 }
 </string>
     </property>
@@ -8002,17 +8173,17 @@ font-weight: 700;
     color: black;
     border-radius: 25px;
     padding: 9px;
-text-align: left;
+    text-align: left;
 }
 QPushButton:hover {
     background-color:#c25b55;
-color:black;
-font-weight: 700;
+    color:black;
+    font-weight: 700;
 }
-QPushButton#activeButton {
+QPushButton.activeButton {
     background-color:#c25b55;
-color:black;
-font-weight: 700;
+    color:black;
+    font-weight: 700;
 }
 </string>
     </property>
@@ -8051,17 +8222,17 @@ font-weight: 700;
     color: black;
     border-radius: 25px;
     padding: 9px;
-text-align: left;
+    text-align: left;
 }
 QPushButton:hover {
     background-color:#c25b55;
-color:black;
-font-weight: 700;
+    color:black;
+    font-weight: 700;
 }
-QPushButton#activeButton {
+QPushButton.activeButton {
     background-color:#c25b55;
-color:black;
-font-weight: 700;
+    color:black;
+    font-weight: 700;
 }
 </string>
     </property>
@@ -8100,17 +8271,17 @@ font-weight: 700;
     color: black;
     border-radius: 25px;
     padding: 9px;
-text-align: left;
+    text-align: left;
 }
 QPushButton:hover {
     background-color:#c25b55;
-color:black;
-font-weight: 700;
+    color:black;
+    font-weight: 700;
 }
-QPushButton#activeButton {
+QPushButton.activeButton {
     background-color:#c25b55;
-color:black;
-font-weight: 700;
+    color:black;
+    font-weight: 700;
 }
 </string>
     </property>
@@ -8154,6 +8325,11 @@ font-weight: 700;
     padding: 9px;
 font-size: 14;
 text-align: left;
+}
+QPushButton:hover {
+        background-color: rgba(2, 33, 98, 0.8);
+        color: white;
+    font-weight: 700;
 }</string>
     </property>
     <property name="text">
@@ -8191,17 +8367,17 @@ text-align: left;
     color: black;
     border-radius: 25px;
     padding: 9px;
-text-align: left;
+    text-align: left;
 }
 QPushButton:hover {
     background-color:#c25b55;
-color:black;
-font-weight: 700;
+    color:black;
+    font-weight: 700;
 }
-QPushButton#activeButton {
+QPushButton.activeButton {
     background-color:#c25b55;
-color:black;
-font-weight: 700;
+    color:black;
+    font-weight: 700;
 }
 </string>
     </property>

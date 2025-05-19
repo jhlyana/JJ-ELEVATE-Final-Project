@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background: white;</string>
+  </property>
   <widget class="QFrame" name="frame_45">
    <property name="geometry">
     <rect>
@@ -194,17 +197,17 @@ font-size: 30px;</string>
     color: black;
     border-radius: 25px;
     padding: 9px;
-text-align: left;
+    text-align: left;
 }
 QPushButton:hover {
     background-color:#c25b55;
-color:black;
-font-weight: 700;
+    color:black;
+    font-weight: 700;
 }
-QPushButton#activeButton {
+QPushButton.activeButton {
     background-color:#c25b55;
-color:black;
-font-weight: 700;
+    color:black;
+    font-weight: 700;
 }
 </string>
     </property>
@@ -243,17 +246,17 @@ font-weight: 700;
     color: black;
     border-radius: 25px;
     padding: 9px;
-text-align: left;
+    text-align: left;
 }
 QPushButton:hover {
     background-color:#c25b55;
-color:black;
-font-weight: 700;
+    color:black;
+    font-weight: 700;
 }
-QPushButton#activeButton {
+QPushButton.activeButton {
     background-color:#c25b55;
-color:black;
-font-weight: 700;
+    color:black;
+    font-weight: 700;
 }
 </string>
     </property>
@@ -292,17 +295,17 @@ font-weight: 700;
     color: black;
     border-radius: 25px;
     padding: 9px;
-text-align: left;
+    text-align: left;
 }
 QPushButton:hover {
     background-color:#c25b55;
-color:black;
-font-weight: 700;
+    color:black;
+    font-weight: 700;
 }
-QPushButton#activeButton {
+QPushButton.activeButton {
     background-color:#c25b55;
-color:black;
-font-weight: 700;
+    color:black;
+    font-weight: 700;
 }
 </string>
     </property>
@@ -341,17 +344,17 @@ font-weight: 700;
     color: black;
     border-radius: 25px;
     padding: 9px;
-text-align: left;
+    text-align: left;
 }
 QPushButton:hover {
     background-color:#c25b55;
-color:black;
-font-weight: 700;
+    color:black;
+    font-weight: 700;
 }
-QPushButton#activeButton {
+QPushButton.activeButton {
     background-color:#c25b55;
-color:black;
-font-weight: 700;
+    color:black;
+    font-weight: 700;
 }
 </string>
     </property>
@@ -390,17 +393,17 @@ font-weight: 700;
     color: black;
     border-radius: 25px;
     padding: 9px;
-text-align: left;
+    text-align: left;
 }
 QPushButton:hover {
     background-color:#c25b55;
-color:black;
-font-weight: 700;
+    color:black;
+    font-weight: 700;
 }
-QPushButton#activeButton {
+QPushButton.activeButton {
     background-color:#c25b55;
-color:black;
-font-weight: 700;
+    color:black;
+    font-weight: 700;
 }
 </string>
     </property>
@@ -444,6 +447,11 @@ font-weight: 700;
     padding: 9px;
 font-size: 14;
 text-align: left;
+}
+QPushButton:hover {
+        background-color: rgba(2, 33, 98, 0.8);
+        color: white;
+    font-weight: 700;
 }</string>
     </property>
     <property name="text">
@@ -481,17 +489,17 @@ text-align: left;
     color: black;
     border-radius: 25px;
     padding: 9px;
-text-align: left;
+    text-align: left;
 }
 QPushButton:hover {
     background-color:#c25b55;
-color:black;
-font-weight: 700;
+    color:black;
+    font-weight: 700;
 }
-QPushButton#activeButton {
+QPushButton.activeButton {
     background-color:#c25b55;
-color:black;
-font-weight: 700;
+    color:black;
+    font-weight: 700;
 }
 </string>
     </property>
@@ -1428,7 +1436,6 @@ background: transparent;</string>
     </widget>
     <zorder>lowstockbox</zorder>
     <zorder>label_11</zorder>
-    <zorder>btnViewMore_Inventory</zorder>
     <zorder>dashb_lowinstock_value</zorder>
     <zorder>label_12</zorder>
     <zorder>label_13</zorder>
@@ -1444,6 +1451,7 @@ background: transparent;</string>
     <zorder>top3LOWSTOCK_PROD_QTY</zorder>
     <zorder>top4LOWSTOCK_PRODUCT</zorder>
     <zorder>top4LOWSTOCK_PROD_QTY</zorder>
+    <zorder>btnViewMore_Inventory</zorder>
    </widget>
   </widget>
  </widget>

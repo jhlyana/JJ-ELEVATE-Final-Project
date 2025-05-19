@@ -15,6 +15,7 @@ class Ui_OWNER_INVENTORY(object):
     def setupUi(self, OWNER_INVENTORY):
         OWNER_INVENTORY.setObjectName("OWNER_INVENTORY")
         OWNER_INVENTORY.resize(1936, 1005)
+        OWNER_INVENTORY.setStyleSheet("background: white;")
         self.frame_4 = QtWidgets.QFrame(OWNER_INVENTORY)
         self.frame_4.setGeometry(QtCore.QRect(1120, 20, 511, 71))
         self.frame_4.setFrameShape(QtWidgets.QFrame.StyledPanel)
@@ -46,7 +47,7 @@ class Ui_OWNER_INVENTORY(object):
 "padding: 5;\n"
 "")
         self.label_18.setText("")
-        self.label_18.setPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/search.png"))
+        self.label_18.setPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/search.png"))
         self.label_18.setScaledContents(True)
         self.label_18.setObjectName("label_18")
         self.pushButton_SEARCHitems = QtWidgets.QPushButton(self.frame_4)
@@ -57,15 +58,15 @@ class Ui_OWNER_INVENTORY(object):
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_SEARCHitems.setFont(font)
-        self.pushButton_SEARCHitems.setStyleSheet("\n"
-"    background-color: #003366;\n"
-"    color: white;\n"
-"    padding: 2px;\n"
-"    text-align: center;\n"
-"\n"
-"\n"
-"\n"
-"")
+        self.pushButton_SEARCHitems.setStyleSheet("    QPushButton {\n"
+"        background-color: #003366;\n"
+"        color: white;\n"
+"        padding: 2px;\n"
+"        text-align: center;\n"
+"    }\n"
+"    QPushButton:hover {\n"
+"        background-color: rgba(0, 51, 102, 0.9);\n"
+"    }")
         self.pushButton_SEARCHitems.setObjectName("pushButton_SEARCHitems")
         self.textBrowser_inv_ROOF_lowstk_warning = QtWidgets.QTextBrowser(OWNER_INVENTORY)
         self.textBrowser_inv_ROOF_lowstk_warning.setGeometry(QtCore.QRect(340, 890, 1531, 71))
@@ -96,7 +97,7 @@ class Ui_OWNER_INVENTORY(object):
         self.frame_80.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_80.setObjectName("frame_80")
         self.frame_12 = QtWidgets.QFrame(self.frame_80)
-        self.frame_12.setGeometry(QtCore.QRect(30, 20, 971, 71))
+        self.frame_12.setGeometry(QtCore.QRect(20, 20, 981, 71))
         self.frame_12.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_12.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_12.setObjectName("frame_12")
@@ -361,7 +362,7 @@ class Ui_OWNER_INVENTORY(object):
 "}\n"
 "")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/add.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/add.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_OWNER_Add_Inventory.setIcon(icon)
         self.pushButton_OWNER_Add_Inventory.setIconSize(QtCore.QSize(26, 26))
         self.pushButton_OWNER_Add_Inventory.setObjectName("pushButton_OWNER_Add_Inventory")
@@ -396,7 +397,7 @@ class Ui_OWNER_INVENTORY(object):
 "}\n"
 "")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/edit.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon1.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/edit.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_OWNER_Edit_Inventory.setIcon(icon1)
         self.pushButton_OWNER_Edit_Inventory.setIconSize(QtCore.QSize(27, 27))
         self.pushButton_OWNER_Edit_Inventory.setObjectName("pushButton_OWNER_Edit_Inventory")
@@ -431,7 +432,7 @@ class Ui_OWNER_INVENTORY(object):
 "}\n"
 "")
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/delete.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon2.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/delete.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_OWNER_Delete_Inventory.setIcon(icon2)
         self.pushButton_OWNER_Delete_Inventory.setIconSize(QtCore.QSize(27, 27))
         self.pushButton_OWNER_Delete_Inventory.setObjectName("pushButton_OWNER_Delete_Inventory")
@@ -443,16 +444,16 @@ class Ui_OWNER_INVENTORY(object):
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_ViewHistory.setFont(font)
-        self.pushButton_ViewHistory.setStyleSheet("\n"
-"    background-color: #b2423c;\n"
-"border-radius: 10;\n"
-"    color: white;\n"
-"    padding: 2px;\n"
-"    text-align: center;\n"
-"\n"
-"\n"
-"\n"
-"")
+        self.pushButton_ViewHistory.setStyleSheet("    QPushButton {\n"
+"        background-color: #b2423c;\n"
+"        border-radius: 10px;\n"
+"        color: white;\n"
+"        padding: 2px;\n"
+"        text-align: center;\n"
+"    }\n"
+"    QPushButton:hover {\n"
+"        background-color: rgba(178, 66, 60, 0.9);\n"
+"    }")
         self.pushButton_ViewHistory.setObjectName("pushButton_ViewHistory")
         self.INVENTORY_afterBUTTONSclick = QtWidgets.QStackedWidget(OWNER_INVENTORY)
         self.INVENTORY_afterBUTTONSclick.setGeometry(QtCore.QRect(300, 200, 1631, 711))
@@ -460,332 +461,418 @@ class Ui_OWNER_INVENTORY(object):
         self.INVENTORY_afterBUTTONSclick.setObjectName("INVENTORY_afterBUTTONSclick")
         self.page_INV_ALL_ITEMS_5 = QtWidgets.QWidget()
         self.page_INV_ALL_ITEMS_5.setObjectName("page_INV_ALL_ITEMS_5")
-        self.tableWidget_ALL_ITEMS_5 = QtWidgets.QTableWidget(self.page_INV_ALL_ITEMS_5)
-        self.tableWidget_ALL_ITEMS_5.setGeometry(QtCore.QRect(60, 0, 1471, 651))
-        self.tableWidget_ALL_ITEMS_5.setStyleSheet("padding: 1;")
-        self.tableWidget_ALL_ITEMS_5.setObjectName("tableWidget_ALL_ITEMS_5")
-        self.tableWidget_ALL_ITEMS_5.setColumnCount(11)
-        self.tableWidget_ALL_ITEMS_5.setRowCount(0)
+        self.tableWidget_ALL_ITEMS = QtWidgets.QTableWidget(self.page_INV_ALL_ITEMS_5)
+        self.tableWidget_ALL_ITEMS.setGeometry(QtCore.QRect(60, 0, 1471, 651))
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(14)
+        self.tableWidget_ALL_ITEMS.setFont(font)
+        self.tableWidget_ALL_ITEMS.setStyleSheet("QTableWidget {\n"
+"    background-color: white;\n"
+"    gridline-color: lightgray;\n"
+"}\n"
+"\n"
+"QHeaderView::section {\n"
+"    background-color: #003366; \n"
+"    color: #ffffff;\n"
+"    font-weight: bold;\n"
+"padding: 3;\n"
+"}\n"
+"")
+        self.tableWidget_ALL_ITEMS.setObjectName("tableWidget_ALL_ITEMS")
+        self.tableWidget_ALL_ITEMS.setColumnCount(11)
+        self.tableWidget_ALL_ITEMS.setRowCount(0)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
-        font.setPointSize(12)
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(14)
         item.setFont(font)
-        self.tableWidget_ALL_ITEMS_5.setHorizontalHeaderItem(0, item)
+        self.tableWidget_ALL_ITEMS.setHorizontalHeaderItem(0, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
-        font.setPointSize(12)
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(14)
         item.setFont(font)
-        self.tableWidget_ALL_ITEMS_5.setHorizontalHeaderItem(1, item)
+        self.tableWidget_ALL_ITEMS.setHorizontalHeaderItem(1, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
-        font.setPointSize(12)
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(14)
         item.setFont(font)
-        self.tableWidget_ALL_ITEMS_5.setHorizontalHeaderItem(2, item)
+        self.tableWidget_ALL_ITEMS.setHorizontalHeaderItem(2, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
-        font.setPointSize(12)
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(14)
         item.setFont(font)
-        self.tableWidget_ALL_ITEMS_5.setHorizontalHeaderItem(3, item)
+        self.tableWidget_ALL_ITEMS.setHorizontalHeaderItem(3, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
-        font.setPointSize(12)
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(14)
         item.setFont(font)
-        self.tableWidget_ALL_ITEMS_5.setHorizontalHeaderItem(4, item)
+        self.tableWidget_ALL_ITEMS.setHorizontalHeaderItem(4, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
-        font.setPointSize(12)
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(14)
         item.setFont(font)
-        self.tableWidget_ALL_ITEMS_5.setHorizontalHeaderItem(5, item)
+        self.tableWidget_ALL_ITEMS.setHorizontalHeaderItem(5, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
-        font.setPointSize(12)
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(14)
         item.setFont(font)
-        self.tableWidget_ALL_ITEMS_5.setHorizontalHeaderItem(6, item)
+        self.tableWidget_ALL_ITEMS.setHorizontalHeaderItem(6, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
-        font.setPointSize(12)
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(14)
         item.setFont(font)
-        self.tableWidget_ALL_ITEMS_5.setHorizontalHeaderItem(7, item)
+        self.tableWidget_ALL_ITEMS.setHorizontalHeaderItem(7, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
-        font.setPointSize(12)
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(14)
         item.setFont(font)
-        self.tableWidget_ALL_ITEMS_5.setHorizontalHeaderItem(8, item)
+        self.tableWidget_ALL_ITEMS.setHorizontalHeaderItem(8, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
-        font.setPointSize(12)
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(14)
         item.setFont(font)
-        self.tableWidget_ALL_ITEMS_5.setHorizontalHeaderItem(9, item)
+        self.tableWidget_ALL_ITEMS.setHorizontalHeaderItem(9, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
-        font.setPointSize(12)
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(14)
         item.setFont(font)
-        self.tableWidget_ALL_ITEMS_5.setHorizontalHeaderItem(10, item)
-        self.tableWidget_ALL_ITEMS_5.horizontalHeader().setDefaultSectionSize(265)
+        self.tableWidget_ALL_ITEMS.setHorizontalHeaderItem(10, item)
+        self.tableWidget_ALL_ITEMS.horizontalHeader().setDefaultSectionSize(265)
         self.INVENTORY_afterBUTTONSclick.addWidget(self.page_INV_ALL_ITEMS_5)
         self.page_INV_ROOF_5 = QtWidgets.QWidget()
         self.page_INV_ROOF_5.setObjectName("page_INV_ROOF_5")
-        self.tableWidget_ROOF_5 = QtWidgets.QTableWidget(self.page_INV_ROOF_5)
-        self.tableWidget_ROOF_5.setGeometry(QtCore.QRect(60, 0, 1471, 651))
-        self.tableWidget_ROOF_5.setStyleSheet("padding: 1;")
-        self.tableWidget_ROOF_5.setObjectName("tableWidget_ROOF_5")
-        self.tableWidget_ROOF_5.setColumnCount(11)
-        self.tableWidget_ROOF_5.setRowCount(0)
+        self.tableWidget_ROOF = QtWidgets.QTableWidget(self.page_INV_ROOF_5)
+        self.tableWidget_ROOF.setGeometry(QtCore.QRect(60, 0, 1471, 651))
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(14)
+        self.tableWidget_ROOF.setFont(font)
+        self.tableWidget_ROOF.setStyleSheet("QTableWidget {\n"
+"    background-color: white;\n"
+"    gridline-color: lightgray;\n"
+"}\n"
+"\n"
+"QHeaderView::section {\n"
+"    background-color: #003366; \n"
+"    color: #ffffff;\n"
+"    font-weight: bold;\n"
+"padding: 3;\n"
+"}\n"
+"")
+        self.tableWidget_ROOF.setObjectName("tableWidget_ROOF")
+        self.tableWidget_ROOF.setColumnCount(11)
+        self.tableWidget_ROOF.setRowCount(0)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_ROOF_5.setHorizontalHeaderItem(0, item)
+        self.tableWidget_ROOF.setHorizontalHeaderItem(0, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_ROOF_5.setHorizontalHeaderItem(1, item)
+        self.tableWidget_ROOF.setHorizontalHeaderItem(1, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_ROOF_5.setHorizontalHeaderItem(2, item)
+        self.tableWidget_ROOF.setHorizontalHeaderItem(2, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_ROOF_5.setHorizontalHeaderItem(3, item)
+        self.tableWidget_ROOF.setHorizontalHeaderItem(3, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_ROOF_5.setHorizontalHeaderItem(4, item)
+        self.tableWidget_ROOF.setHorizontalHeaderItem(4, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_ROOF_5.setHorizontalHeaderItem(5, item)
+        self.tableWidget_ROOF.setHorizontalHeaderItem(5, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_ROOF_5.setHorizontalHeaderItem(6, item)
+        self.tableWidget_ROOF.setHorizontalHeaderItem(6, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_ROOF_5.setHorizontalHeaderItem(7, item)
+        self.tableWidget_ROOF.setHorizontalHeaderItem(7, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_ROOF_5.setHorizontalHeaderItem(8, item)
+        self.tableWidget_ROOF.setHorizontalHeaderItem(8, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_ROOF_5.setHorizontalHeaderItem(9, item)
+        self.tableWidget_ROOF.setHorizontalHeaderItem(9, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_ROOF_5.setHorizontalHeaderItem(10, item)
-        self.tableWidget_ROOF_5.horizontalHeader().setDefaultSectionSize(265)
+        self.tableWidget_ROOF.setHorizontalHeaderItem(10, item)
+        self.tableWidget_ROOF.horizontalHeader().setDefaultSectionSize(265)
         self.INVENTORY_afterBUTTONSclick.addWidget(self.page_INV_ROOF_5)
         self.page_INV_SPANDREL_5 = QtWidgets.QWidget()
         self.page_INV_SPANDREL_5.setObjectName("page_INV_SPANDREL_5")
-        self.tableWidget_SPANDREL_5 = QtWidgets.QTableWidget(self.page_INV_SPANDREL_5)
-        self.tableWidget_SPANDREL_5.setGeometry(QtCore.QRect(60, 0, 1471, 651))
-        self.tableWidget_SPANDREL_5.setStyleSheet("padding: 1;")
-        self.tableWidget_SPANDREL_5.setObjectName("tableWidget_SPANDREL_5")
-        self.tableWidget_SPANDREL_5.setColumnCount(11)
-        self.tableWidget_SPANDREL_5.setRowCount(0)
+        self.tableWidget_SPANDREL = QtWidgets.QTableWidget(self.page_INV_SPANDREL_5)
+        self.tableWidget_SPANDREL.setGeometry(QtCore.QRect(60, 0, 1471, 651))
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(14)
+        self.tableWidget_SPANDREL.setFont(font)
+        self.tableWidget_SPANDREL.setStyleSheet("QTableWidget {\n"
+"    background-color: white;\n"
+"    gridline-color: lightgray;\n"
+"}\n"
+"\n"
+"QHeaderView::section {\n"
+"    background-color: #003366; \n"
+"    color: #ffffff;\n"
+"    font-weight: bold;\n"
+"padding: 3;\n"
+"}\n"
+"")
+        self.tableWidget_SPANDREL.setObjectName("tableWidget_SPANDREL")
+        self.tableWidget_SPANDREL.setColumnCount(11)
+        self.tableWidget_SPANDREL.setRowCount(0)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_SPANDREL_5.setHorizontalHeaderItem(0, item)
+        self.tableWidget_SPANDREL.setHorizontalHeaderItem(0, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_SPANDREL_5.setHorizontalHeaderItem(1, item)
+        self.tableWidget_SPANDREL.setHorizontalHeaderItem(1, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_SPANDREL_5.setHorizontalHeaderItem(2, item)
+        self.tableWidget_SPANDREL.setHorizontalHeaderItem(2, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_SPANDREL_5.setHorizontalHeaderItem(3, item)
+        self.tableWidget_SPANDREL.setHorizontalHeaderItem(3, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_SPANDREL_5.setHorizontalHeaderItem(4, item)
+        self.tableWidget_SPANDREL.setHorizontalHeaderItem(4, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_SPANDREL_5.setHorizontalHeaderItem(5, item)
+        self.tableWidget_SPANDREL.setHorizontalHeaderItem(5, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_SPANDREL_5.setHorizontalHeaderItem(6, item)
+        self.tableWidget_SPANDREL.setHorizontalHeaderItem(6, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_SPANDREL_5.setHorizontalHeaderItem(7, item)
+        self.tableWidget_SPANDREL.setHorizontalHeaderItem(7, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_SPANDREL_5.setHorizontalHeaderItem(8, item)
+        self.tableWidget_SPANDREL.setHorizontalHeaderItem(8, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_SPANDREL_5.setHorizontalHeaderItem(9, item)
+        self.tableWidget_SPANDREL.setHorizontalHeaderItem(9, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_SPANDREL_5.setHorizontalHeaderItem(10, item)
-        self.tableWidget_SPANDREL_5.horizontalHeader().setDefaultSectionSize(265)
+        self.tableWidget_SPANDREL.setHorizontalHeaderItem(10, item)
+        self.tableWidget_SPANDREL.horizontalHeader().setDefaultSectionSize(265)
         self.INVENTORY_afterBUTTONSclick.addWidget(self.page_INV_SPANDREL_5)
         self.page_INV_GUTTER_5 = QtWidgets.QWidget()
         self.page_INV_GUTTER_5.setObjectName("page_INV_GUTTER_5")
-        self.tableWidget_GUTTER_5 = QtWidgets.QTableWidget(self.page_INV_GUTTER_5)
-        self.tableWidget_GUTTER_5.setGeometry(QtCore.QRect(60, 0, 1471, 651))
-        self.tableWidget_GUTTER_5.setStyleSheet("padding: 1;")
-        self.tableWidget_GUTTER_5.setObjectName("tableWidget_GUTTER_5")
-        self.tableWidget_GUTTER_5.setColumnCount(11)
-        self.tableWidget_GUTTER_5.setRowCount(0)
+        self.tableWidget_GUTTER = QtWidgets.QTableWidget(self.page_INV_GUTTER_5)
+        self.tableWidget_GUTTER.setGeometry(QtCore.QRect(60, 0, 1471, 651))
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(14)
+        self.tableWidget_GUTTER.setFont(font)
+        self.tableWidget_GUTTER.setStyleSheet("QTableWidget {\n"
+"    background-color: white;\n"
+"    gridline-color: lightgray;\n"
+"}\n"
+"\n"
+"QHeaderView::section {\n"
+"    background-color: #003366; \n"
+"    color: #ffffff;\n"
+"    font-weight: bold;\n"
+"padding: 3;\n"
+"}\n"
+"")
+        self.tableWidget_GUTTER.setObjectName("tableWidget_GUTTER")
+        self.tableWidget_GUTTER.setColumnCount(11)
+        self.tableWidget_GUTTER.setRowCount(0)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_GUTTER_5.setHorizontalHeaderItem(0, item)
+        self.tableWidget_GUTTER.setHorizontalHeaderItem(0, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_GUTTER_5.setHorizontalHeaderItem(1, item)
+        self.tableWidget_GUTTER.setHorizontalHeaderItem(1, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_GUTTER_5.setHorizontalHeaderItem(2, item)
+        self.tableWidget_GUTTER.setHorizontalHeaderItem(2, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_GUTTER_5.setHorizontalHeaderItem(3, item)
+        self.tableWidget_GUTTER.setHorizontalHeaderItem(3, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_GUTTER_5.setHorizontalHeaderItem(4, item)
+        self.tableWidget_GUTTER.setHorizontalHeaderItem(4, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_GUTTER_5.setHorizontalHeaderItem(5, item)
+        self.tableWidget_GUTTER.setHorizontalHeaderItem(5, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_GUTTER_5.setHorizontalHeaderItem(6, item)
+        self.tableWidget_GUTTER.setHorizontalHeaderItem(6, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_GUTTER_5.setHorizontalHeaderItem(7, item)
+        self.tableWidget_GUTTER.setHorizontalHeaderItem(7, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_GUTTER_5.setHorizontalHeaderItem(8, item)
+        self.tableWidget_GUTTER.setHorizontalHeaderItem(8, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_GUTTER_5.setHorizontalHeaderItem(9, item)
+        self.tableWidget_GUTTER.setHorizontalHeaderItem(9, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_GUTTER_5.setHorizontalHeaderItem(10, item)
-        self.tableWidget_GUTTER_5.horizontalHeader().setDefaultSectionSize(265)
+        self.tableWidget_GUTTER.setHorizontalHeaderItem(10, item)
+        self.tableWidget_GUTTER.horizontalHeader().setDefaultSectionSize(265)
         self.INVENTORY_afterBUTTONSclick.addWidget(self.page_INV_GUTTER_5)
         self.page_INV_OTHER_5 = QtWidgets.QWidget()
         self.page_INV_OTHER_5.setObjectName("page_INV_OTHER_5")
-        self.tableWidget_OTHER_5 = QtWidgets.QTableWidget(self.page_INV_OTHER_5)
-        self.tableWidget_OTHER_5.setGeometry(QtCore.QRect(60, 0, 1471, 651))
-        self.tableWidget_OTHER_5.setStyleSheet("padding: 1;")
-        self.tableWidget_OTHER_5.setObjectName("tableWidget_OTHER_5")
-        self.tableWidget_OTHER_5.setColumnCount(11)
-        self.tableWidget_OTHER_5.setRowCount(0)
+        self.tableWidget_OTHER = QtWidgets.QTableWidget(self.page_INV_OTHER_5)
+        self.tableWidget_OTHER.setGeometry(QtCore.QRect(60, 0, 1471, 651))
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(14)
+        self.tableWidget_OTHER.setFont(font)
+        self.tableWidget_OTHER.setStyleSheet("QTableWidget {\n"
+"    background-color: white;\n"
+"    gridline-color: lightgray;\n"
+"}\n"
+"\n"
+"QHeaderView::section {\n"
+"    background-color: #003366; \n"
+"    color: #ffffff;\n"
+"    font-weight: bold;\n"
+"padding: 3;\n"
+"}\n"
+"")
+        self.tableWidget_OTHER.setObjectName("tableWidget_OTHER")
+        self.tableWidget_OTHER.setColumnCount(11)
+        self.tableWidget_OTHER.setRowCount(0)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_OTHER_5.setHorizontalHeaderItem(0, item)
+        self.tableWidget_OTHER.setHorizontalHeaderItem(0, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_OTHER_5.setHorizontalHeaderItem(1, item)
+        self.tableWidget_OTHER.setHorizontalHeaderItem(1, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_OTHER_5.setHorizontalHeaderItem(2, item)
+        self.tableWidget_OTHER.setHorizontalHeaderItem(2, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_OTHER_5.setHorizontalHeaderItem(3, item)
+        self.tableWidget_OTHER.setHorizontalHeaderItem(3, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_OTHER_5.setHorizontalHeaderItem(4, item)
+        self.tableWidget_OTHER.setHorizontalHeaderItem(4, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_OTHER_5.setHorizontalHeaderItem(5, item)
+        self.tableWidget_OTHER.setHorizontalHeaderItem(5, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_OTHER_5.setHorizontalHeaderItem(6, item)
+        self.tableWidget_OTHER.setHorizontalHeaderItem(6, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_OTHER_5.setHorizontalHeaderItem(7, item)
+        self.tableWidget_OTHER.setHorizontalHeaderItem(7, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_OTHER_5.setHorizontalHeaderItem(8, item)
+        self.tableWidget_OTHER.setHorizontalHeaderItem(8, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_OTHER_5.setHorizontalHeaderItem(9, item)
+        self.tableWidget_OTHER.setHorizontalHeaderItem(9, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_OTHER_5.setHorizontalHeaderItem(10, item)
-        self.tableWidget_OTHER_5.horizontalHeader().setDefaultSectionSize(265)
+        self.tableWidget_OTHER.setHorizontalHeaderItem(10, item)
+        self.tableWidget_OTHER.horizontalHeader().setDefaultSectionSize(265)
         self.INVENTORY_afterBUTTONSclick.addWidget(self.page_INV_OTHER_5)
-        self.page_INV_ADD_STOCK_5 = QtWidgets.QWidget()
-        self.page_INV_ADD_STOCK_5.setObjectName("page_INV_ADD_STOCK_5")
-        self.frame_97 = QtWidgets.QFrame(self.page_INV_ADD_STOCK_5)
+        self.page_INV_ADD_STOCK = QtWidgets.QWidget()
+        self.page_INV_ADD_STOCK.setObjectName("page_INV_ADD_STOCK")
+        self.frame_97 = QtWidgets.QFrame(self.page_INV_ADD_STOCK)
         self.frame_97.setGeometry(QtCore.QRect(-20, -10, 1641, 701))
         self.frame_97.setStyleSheet("background: transparent;")
         self.frame_97.setFrameShape(QtWidgets.QFrame.StyledPanel)
@@ -811,10 +898,10 @@ class Ui_OWNER_INVENTORY(object):
 "")
         self.addStocklabel_5.setAlignment(QtCore.Qt.AlignCenter)
         self.addStocklabel_5.setObjectName("addStocklabel_5")
-        self.Add_Select_Prod_Type_5 = QtWidgets.QStackedWidget(self.frame_97)
-        self.Add_Select_Prod_Type_5.setGeometry(QtCore.QRect(100, 120, 1411, 521))
-        self.Add_Select_Prod_Type_5.setStyleSheet("background: #f6f3ee;")
-        self.Add_Select_Prod_Type_5.setObjectName("Add_Select_Prod_Type_5")
+        self.Add_Select_Prod_Type = QtWidgets.QStackedWidget(self.frame_97)
+        self.Add_Select_Prod_Type.setGeometry(QtCore.QRect(100, 120, 1411, 521))
+        self.Add_Select_Prod_Type.setStyleSheet("background: #f6f3ee;")
+        self.Add_Select_Prod_Type.setObjectName("Add_Select_Prod_Type")
         self.ADD_blank_5 = QtWidgets.QWidget()
         self.ADD_blank_5.setObjectName("ADD_blank_5")
         self.label_120 = QtWidgets.QLabel(self.ADD_blank_5)
@@ -828,7 +915,7 @@ class Ui_OWNER_INVENTORY(object):
 "color: #a6a6a6;")
         self.label_120.setAlignment(QtCore.Qt.AlignCenter)
         self.label_120.setObjectName("label_120")
-        self.Add_Select_Prod_Type_5.addWidget(self.ADD_blank_5)
+        self.Add_Select_Prod_Type.addWidget(self.ADD_blank_5)
         self.ADD_ROOF_5 = QtWidgets.QWidget()
         self.ADD_ROOF_5.setObjectName("ADD_ROOF_5")
         self.frame_98 = QtWidgets.QFrame(self.ADD_ROOF_5)
@@ -844,13 +931,19 @@ class Ui_OWNER_INVENTORY(object):
         font.setFamily("Verdana")
         font.setPointSize(14)
         self.pushButton_Confirm_ROOFadd_5.setFont(font)
-        self.pushButton_Confirm_ROOFadd_5.setStyleSheet("    background-color: #b2423c;\n"
+        self.pushButton_Confirm_ROOFadd_5.setStyleSheet("QPushButton {\n"
+"    background-color: #b2423c;\n"
 "    color: white;\n"
 "    border-radius: 15px;\n"
-"border: 1px solid #000000; \n"
+"    border: 1px solid #000000;\n"
 "    padding: 9px;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"text-align: center;")
+"    font-family: \"Verdana\", sans-serif;\n"
+"    text-align: center;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(178, 66, 60, 0.9); \n"
+"}")
         self.pushButton_Confirm_ROOFadd_5.setObjectName("pushButton_Confirm_ROOFadd_5")
         self.pushButton_Close_ROOFadd_5 = QtWidgets.QPushButton(self.frame_98)
         self.pushButton_Close_ROOFadd_5.setGeometry(QtCore.QRect(740, 20, 261, 51))
@@ -884,7 +977,7 @@ class Ui_OWNER_INVENTORY(object):
 "")
         self.pushButton_Close_ROOFadd_5.setObjectName("pushButton_Close_ROOFadd_5")
         self.frame_addroof_7 = QtWidgets.QFrame(self.ADD_ROOF_5)
-        self.frame_addroof_7.setGeometry(QtCore.QRect(-11, 9, 1411, 411))
+        self.frame_addroof_7.setGeometry(QtCore.QRect(-10, 10, 1411, 411))
         self.frame_addroof_7.setStyleSheet("    background-color: transparent;\n"
 "")
         self.frame_addroof_7.setFrameShape(QtWidgets.QFrame.StyledPanel)
@@ -1108,7 +1201,7 @@ class Ui_OWNER_INVENTORY(object):
 "    padding: 9px;\n"
 "")
         self.lineEdit_AddROOF_Name_5.setObjectName("lineEdit_AddROOF_Name_5")
-        self.Add_Select_Prod_Type_5.addWidget(self.ADD_ROOF_5)
+        self.Add_Select_Prod_Type.addWidget(self.ADD_ROOF_5)
         self.ADD_SPANDREL_5 = QtWidgets.QWidget()
         self.ADD_SPANDREL_5.setObjectName("ADD_SPANDREL_5")
         self.frame_99 = QtWidgets.QFrame(self.ADD_SPANDREL_5)
@@ -1124,13 +1217,19 @@ class Ui_OWNER_INVENTORY(object):
         font.setFamily("Verdana")
         font.setPointSize(14)
         self.pushButton_Confirm_SPANDRELadd_5.setFont(font)
-        self.pushButton_Confirm_SPANDRELadd_5.setStyleSheet("    background-color: #b2423c;\n"
+        self.pushButton_Confirm_SPANDRELadd_5.setStyleSheet("QPushButton {\n"
+"    background-color: #b2423c;\n"
 "    color: white;\n"
 "    border-radius: 15px;\n"
-"border: 1px solid #000000; \n"
+"    border: 1px solid #000000;\n"
 "    padding: 9px;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"text-align: center;")
+"    font-family: \"Verdana\", sans-serif;\n"
+"    text-align: center;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(178, 66, 60, 0.9); \n"
+"}")
         self.pushButton_Confirm_SPANDRELadd_5.setObjectName("pushButton_Confirm_SPANDRELadd_5")
         self.pushButton_Close_SPANDRELadd_5 = QtWidgets.QPushButton(self.frame_99)
         self.pushButton_Close_SPANDRELadd_5.setGeometry(QtCore.QRect(740, 20, 261, 51))
@@ -1388,7 +1487,7 @@ class Ui_OWNER_INVENTORY(object):
 "    padding: 9px;\n"
 "")
         self.lineEdit_AddSPANDREL_Name_5.setObjectName("lineEdit_AddSPANDREL_Name_5")
-        self.Add_Select_Prod_Type_5.addWidget(self.ADD_SPANDREL_5)
+        self.Add_Select_Prod_Type.addWidget(self.ADD_SPANDREL_5)
         self.ADD_GUTTER_5 = QtWidgets.QWidget()
         self.ADD_GUTTER_5.setObjectName("ADD_GUTTER_5")
         self.frame_100 = QtWidgets.QFrame(self.ADD_GUTTER_5)
@@ -1404,13 +1503,19 @@ class Ui_OWNER_INVENTORY(object):
         font.setFamily("Verdana")
         font.setPointSize(14)
         self.pushButton_Confirm_GUTTERadd_5.setFont(font)
-        self.pushButton_Confirm_GUTTERadd_5.setStyleSheet("    background-color: #b2423c;\n"
+        self.pushButton_Confirm_GUTTERadd_5.setStyleSheet("QPushButton {\n"
+"    background-color: #b2423c;\n"
 "    color: white;\n"
 "    border-radius: 15px;\n"
-"border: 1px solid #000000; \n"
+"    border: 1px solid #000000;\n"
 "    padding: 9px;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"text-align: center;")
+"    font-family: \"Verdana\", sans-serif;\n"
+"    text-align: center;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(178, 66, 60, 0.9); \n"
+"}")
         self.pushButton_Confirm_GUTTERadd_5.setObjectName("pushButton_Confirm_GUTTERadd_5")
         self.pushButton_Close_GUTTERadd_5 = QtWidgets.QPushButton(self.frame_100)
         self.pushButton_Close_GUTTERadd_5.setGeometry(QtCore.QRect(740, 20, 261, 51))
@@ -1668,7 +1773,7 @@ class Ui_OWNER_INVENTORY(object):
 "    padding: 9px;\n"
 "")
         self.lineEdit_AddGUTTER_Name_5.setObjectName("lineEdit_AddGUTTER_Name_5")
-        self.Add_Select_Prod_Type_5.addWidget(self.ADD_GUTTER_5)
+        self.Add_Select_Prod_Type.addWidget(self.ADD_GUTTER_5)
         self.ADD_OTHER_5 = QtWidgets.QWidget()
         self.ADD_OTHER_5.setObjectName("ADD_OTHER_5")
         self.frame_101 = QtWidgets.QFrame(self.ADD_OTHER_5)
@@ -1684,13 +1789,19 @@ class Ui_OWNER_INVENTORY(object):
         font.setFamily("Verdana")
         font.setPointSize(14)
         self.pushButton_Confirm_OTHERadd_5.setFont(font)
-        self.pushButton_Confirm_OTHERadd_5.setStyleSheet("    background-color: #b2423c;\n"
+        self.pushButton_Confirm_OTHERadd_5.setStyleSheet("QPushButton {\n"
+"    background-color: #b2423c;\n"
 "    color: white;\n"
 "    border-radius: 15px;\n"
-"border: 1px solid #000000; \n"
+"    border: 1px solid #000000;\n"
 "    padding: 9px;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"text-align: center;")
+"    font-family: \"Verdana\", sans-serif;\n"
+"    text-align: center;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(178, 66, 60, 0.9); \n"
+"}")
         self.pushButton_Confirm_OTHERadd_5.setObjectName("pushButton_Confirm_OTHERadd_5")
         self.pushButton_Close_OTHERadd_5 = QtWidgets.QPushButton(self.frame_101)
         self.pushButton_Close_OTHERadd_5.setGeometry(QtCore.QRect(740, 20, 261, 51))
@@ -1948,7 +2059,7 @@ class Ui_OWNER_INVENTORY(object):
 "    padding: 9px;\n"
 "")
         self.lineEdit_AddOTHER_Name_5.setObjectName("lineEdit_AddOTHER_Name_5")
-        self.Add_Select_Prod_Type_5.addWidget(self.ADD_OTHER_5)
+        self.Add_Select_Prod_Type.addWidget(self.ADD_OTHER_5)
         self.comboBox_Select_Prod_Type_toAdd_5 = QtWidgets.QComboBox(self.frame_97)
         self.comboBox_Select_Prod_Type_toAdd_5.setGeometry(QtCore.QRect(1220, 50, 251, 51))
         font = QtGui.QFont()
@@ -1972,7 +2083,7 @@ class Ui_OWNER_INVENTORY(object):
         self.label_611.setPixmap(QtGui.QPixmap(":/JJimages/straightline.png"))
         self.label_611.setScaledContents(True)
         self.label_611.setObjectName("label_611")
-        self.INVENTORY_afterBUTTONSclick.addWidget(self.page_INV_ADD_STOCK_5)
+        self.INVENTORY_afterBUTTONSclick.addWidget(self.page_INV_ADD_STOCK)
         self.page_INV_EDIT_STOCK_5 = QtWidgets.QWidget()
         self.page_INV_EDIT_STOCK_5.setObjectName("page_INV_EDIT_STOCK_5")
         self.frame_102 = QtWidgets.QFrame(self.page_INV_EDIT_STOCK_5)
@@ -2034,13 +2145,19 @@ class Ui_OWNER_INVENTORY(object):
         font.setFamily("Verdana")
         font.setPointSize(14)
         self.pushButton_Save_ROOFedit_5.setFont(font)
-        self.pushButton_Save_ROOFedit_5.setStyleSheet("    background-color: #b2423c;\n"
+        self.pushButton_Save_ROOFedit_5.setStyleSheet("QPushButton {\n"
+"    background-color: #b2423c;\n"
 "    color: white;\n"
 "    border-radius: 15px;\n"
-"border: 1px solid #000000; \n"
+"    border: 1px solid #000000;\n"
 "    padding: 9px;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"text-align: center;")
+"    font-family: \"Verdana\", sans-serif;\n"
+"    text-align: center;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(178, 66, 60, 0.9); \n"
+"}")
         self.pushButton_Save_ROOFedit_5.setObjectName("pushButton_Save_ROOFedit_5")
         self.pushButton_Discard_ROOFedit_5 = QtWidgets.QPushButton(self.frame_103)
         self.pushButton_Discard_ROOFedit_5.setGeometry(QtCore.QRect(740, 20, 281, 51))
@@ -2314,13 +2431,19 @@ class Ui_OWNER_INVENTORY(object):
         font.setFamily("Verdana")
         font.setPointSize(14)
         self.pushButton_Save_SPANDRELedit_5.setFont(font)
-        self.pushButton_Save_SPANDRELedit_5.setStyleSheet("    background-color: #b2423c;\n"
+        self.pushButton_Save_SPANDRELedit_5.setStyleSheet("QPushButton {\n"
+"    background-color: #b2423c;\n"
 "    color: white;\n"
 "    border-radius: 15px;\n"
-"border: 1px solid #000000; \n"
+"    border: 1px solid #000000;\n"
 "    padding: 9px;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"text-align: center;")
+"    font-family: \"Verdana\", sans-serif;\n"
+"    text-align: center;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(178, 66, 60, 0.9); \n"
+"}")
         self.pushButton_Save_SPANDRELedit_5.setObjectName("pushButton_Save_SPANDRELedit_5")
         self.pushButton_Discard_SPANDRELedit_5 = QtWidgets.QPushButton(self.frame_104)
         self.pushButton_Discard_SPANDRELedit_5.setGeometry(QtCore.QRect(740, 20, 281, 51))
@@ -2594,13 +2717,19 @@ class Ui_OWNER_INVENTORY(object):
         font.setFamily("Verdana")
         font.setPointSize(14)
         self.pushButton_Save_GUTTERedit_5.setFont(font)
-        self.pushButton_Save_GUTTERedit_5.setStyleSheet("    background-color: #b2423c;\n"
+        self.pushButton_Save_GUTTERedit_5.setStyleSheet("QPushButton {\n"
+"    background-color: #b2423c;\n"
 "    color: white;\n"
 "    border-radius: 15px;\n"
-"border: 1px solid #000000; \n"
+"    border: 1px solid #000000;\n"
 "    padding: 9px;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"text-align: center;")
+"    font-family: \"Verdana\", sans-serif;\n"
+"    text-align: center;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(178, 66, 60, 0.9); \n"
+"}")
         self.pushButton_Save_GUTTERedit_5.setObjectName("pushButton_Save_GUTTERedit_5")
         self.pushButton_Discard_GUTTERedit_5 = QtWidgets.QPushButton(self.frame_105)
         self.pushButton_Discard_GUTTERedit_5.setGeometry(QtCore.QRect(740, 20, 281, 51))
@@ -3099,13 +3228,19 @@ class Ui_OWNER_INVENTORY(object):
         font.setFamily("Verdana")
         font.setPointSize(14)
         self.pushButton_Save_OTHERedit_5.setFont(font)
-        self.pushButton_Save_OTHERedit_5.setStyleSheet("    background-color: #b2423c;\n"
+        self.pushButton_Save_OTHERedit_5.setStyleSheet("QPushButton {\n"
+"    background-color: #b2423c;\n"
 "    color: white;\n"
 "    border-radius: 15px;\n"
-"border: 1px solid #000000; \n"
+"    border: 1px solid #000000;\n"
 "    padding: 9px;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"text-align: center;")
+"    font-family: \"Verdana\", sans-serif;\n"
+"    text-align: center;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(178, 66, 60, 0.9); \n"
+"}")
         self.pushButton_Save_OTHERedit_5.setObjectName("pushButton_Save_OTHERedit_5")
         self.pushButton_Discard_OTHERedit_5 = QtWidgets.QPushButton(self.frame_106)
         self.pushButton_Discard_OTHERedit_5.setGeometry(QtCore.QRect(740, 20, 281, 51))
@@ -3230,13 +3365,19 @@ class Ui_OWNER_INVENTORY(object):
         font.setFamily("Verdana")
         font.setPointSize(14)
         self.pushButton_Confirm_ROOFdelete_5.setFont(font)
-        self.pushButton_Confirm_ROOFdelete_5.setStyleSheet("    background-color: #b2423c;\n"
+        self.pushButton_Confirm_ROOFdelete_5.setStyleSheet("QPushButton {\n"
+"    background-color: #b2423c;\n"
 "    color: white;\n"
 "    border-radius: 15px;\n"
-"border: 1px solid #000000; \n"
+"    border: 1px solid #000000;\n"
 "    padding: 9px;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"text-align: center;")
+"    font-family: \"Verdana\", sans-serif;\n"
+"    text-align: center;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(178, 66, 60, 0.9); \n"
+"}")
         self.pushButton_Confirm_ROOFdelete_5.setObjectName("pushButton_Confirm_ROOFdelete_5")
         self.pushButton_Close_ROOFdelete_5 = QtWidgets.QPushButton(self.frame_109)
         self.pushButton_Close_ROOFdelete_5.setGeometry(QtCore.QRect(740, 20, 281, 51))
@@ -3362,13 +3503,19 @@ class Ui_OWNER_INVENTORY(object):
         font.setFamily("Verdana")
         font.setPointSize(14)
         self.pushButton_Confirm_SPANDRELdelete_5.setFont(font)
-        self.pushButton_Confirm_SPANDRELdelete_5.setStyleSheet("    background-color: #b2423c;\n"
+        self.pushButton_Confirm_SPANDRELdelete_5.setStyleSheet("QPushButton {\n"
+"    background-color: #b2423c;\n"
 "    color: white;\n"
 "    border-radius: 15px;\n"
-"border: 1px solid #000000; \n"
+"    border: 1px solid #000000;\n"
 "    padding: 9px;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"text-align: center;")
+"    font-family: \"Verdana\", sans-serif;\n"
+"    text-align: center;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(178, 66, 60, 0.9); \n"
+"}")
         self.pushButton_Confirm_SPANDRELdelete_5.setObjectName("pushButton_Confirm_SPANDRELdelete_5")
         self.pushButton_Close_SPANDRELdelete_5 = QtWidgets.QPushButton(self.frame_110)
         self.pushButton_Close_SPANDRELdelete_5.setGeometry(QtCore.QRect(740, 20, 281, 51))
@@ -3494,13 +3641,19 @@ class Ui_OWNER_INVENTORY(object):
         font.setFamily("Verdana")
         font.setPointSize(14)
         self.pushButton_Confirm_GUTTERdelete_5.setFont(font)
-        self.pushButton_Confirm_GUTTERdelete_5.setStyleSheet("    background-color: #b2423c;\n"
+        self.pushButton_Confirm_GUTTERdelete_5.setStyleSheet("QPushButton {\n"
+"    background-color: #b2423c;\n"
 "    color: white;\n"
 "    border-radius: 15px;\n"
-"border: 1px solid #000000; \n"
+"    border: 1px solid #000000;\n"
 "    padding: 9px;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"text-align: center;")
+"    font-family: \"Verdana\", sans-serif;\n"
+"    text-align: center;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(178, 66, 60, 0.9); \n"
+"}")
         self.pushButton_Confirm_GUTTERdelete_5.setObjectName("pushButton_Confirm_GUTTERdelete_5")
         self.pushButton_Close_GUTTERdelete_5 = QtWidgets.QPushButton(self.frame_111)
         self.pushButton_Close_GUTTERdelete_5.setGeometry(QtCore.QRect(740, 20, 281, 51))
@@ -3703,13 +3856,19 @@ class Ui_OWNER_INVENTORY(object):
         font.setFamily("Verdana")
         font.setPointSize(14)
         self.pushButton_Confirm_OTHERdelete_5.setFont(font)
-        self.pushButton_Confirm_OTHERdelete_5.setStyleSheet("    background-color: #b2423c;\n"
+        self.pushButton_Confirm_OTHERdelete_5.setStyleSheet("QPushButton {\n"
+"    background-color: #b2423c;\n"
 "    color: white;\n"
 "    border-radius: 15px;\n"
-"border: 1px solid #000000; \n"
+"    border: 1px solid #000000;\n"
 "    padding: 9px;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"text-align: center;")
+"    font-family: \"Verdana\", sans-serif;\n"
+"    text-align: center;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(178, 66, 60, 0.9); \n"
+"}")
         self.pushButton_Confirm_OTHERdelete_5.setObjectName("pushButton_Confirm_OTHERdelete_5")
         self.pushButton_Close_OTHERdelete_5 = QtWidgets.QPushButton(self.frame_112)
         self.pushButton_Close_OTHERdelete_5.setGeometry(QtCore.QRect(740, 20, 281, 51))
@@ -3812,17 +3971,17 @@ class Ui_OWNER_INVENTORY(object):
 "    color: black;\n"
 "    border-radius: 25px;\n"
 "    padding: 9px;\n"
-"text-align: left;\n"
+"    text-align: left;\n"
 "}\n"
 "QPushButton:hover {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
-"QPushButton#activeButton {\n"
+"QPushButton.activeButton {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
 "")
         icon3 = QtGui.QIcon()
@@ -3841,17 +4000,17 @@ class Ui_OWNER_INVENTORY(object):
 "    color: black;\n"
 "    border-radius: 25px;\n"
 "    padding: 9px;\n"
-"text-align: left;\n"
+"    text-align: left;\n"
 "}\n"
 "QPushButton:hover {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
-"QPushButton#activeButton {\n"
+"QPushButton.activeButton {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
 "")
         icon4 = QtGui.QIcon()
@@ -3870,17 +4029,17 @@ class Ui_OWNER_INVENTORY(object):
 "    color: black;\n"
 "    border-radius: 25px;\n"
 "    padding: 9px;\n"
-"text-align: left;\n"
+"    text-align: left;\n"
 "}\n"
 "QPushButton:hover {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
-"QPushButton#activeButton {\n"
+"QPushButton.activeButton {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
 "")
         icon5 = QtGui.QIcon()
@@ -3899,17 +4058,17 @@ class Ui_OWNER_INVENTORY(object):
 "    color: black;\n"
 "    border-radius: 25px;\n"
 "    padding: 9px;\n"
-"text-align: left;\n"
+"    text-align: left;\n"
 "}\n"
 "QPushButton:hover {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
-"QPushButton#activeButton {\n"
+"QPushButton.activeButton {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
 "")
         icon6 = QtGui.QIcon()
@@ -3928,17 +4087,17 @@ class Ui_OWNER_INVENTORY(object):
 "    color: black;\n"
 "    border-radius: 25px;\n"
 "    padding: 9px;\n"
-"text-align: left;\n"
+"    text-align: left;\n"
 "}\n"
 "QPushButton:hover {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
-"QPushButton#activeButton {\n"
+"QPushButton.activeButton {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
 "")
         icon7 = QtGui.QIcon()
@@ -3962,6 +4121,11 @@ class Ui_OWNER_INVENTORY(object):
 "    padding: 9px;\n"
 "font-size: 14;\n"
 "text-align: left;\n"
+"}\n"
+"QPushButton:hover {\n"
+"        background-color: rgba(2, 33, 98, 0.8);\n"
+"        color: white;\n"
+"    font-weight: 700;\n"
 "}")
         icon8 = QtGui.QIcon()
         icon8.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/WHITElogout_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
@@ -3979,17 +4143,17 @@ class Ui_OWNER_INVENTORY(object):
 "    color: black;\n"
 "    border-radius: 25px;\n"
 "    padding: 9px;\n"
-"text-align: left;\n"
+"    text-align: left;\n"
 "}\n"
 "QPushButton:hover {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
-"QPushButton#activeButton {\n"
+"QPushButton.activeButton {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
 "")
         self.pushButton_Stock_History.setIcon(icon4)
@@ -4019,141 +4183,141 @@ class Ui_OWNER_INVENTORY(object):
         self.inventoryText.setObjectName("inventoryText")
 
         self.retranslateUi(OWNER_INVENTORY)
-        self.INVENTORY_afterBUTTONSclick.setCurrentIndex(5)
-        self.Add_Select_Prod_Type_5.setCurrentIndex(4)
-        self.Edit_Select_Prod_Type_5.setCurrentIndex(4)
-        self.Delete_Select_Prod_Type_5.setCurrentIndex(3)
+        self.INVENTORY_afterBUTTONSclick.setCurrentIndex(0)
+        self.Add_Select_Prod_Type.setCurrentIndex(0)
+        self.Edit_Select_Prod_Type_5.setCurrentIndex(1)
+        self.Delete_Select_Prod_Type_5.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(OWNER_INVENTORY)
 
     def retranslateUi(self, OWNER_INVENTORY):
         _translate = QtCore.QCoreApplication.translate
         OWNER_INVENTORY.setWindowTitle(_translate("OWNER_INVENTORY", "Form"))
         self.lineEdit_OWNER_QuickSearch_Inventory.setPlaceholderText(_translate("OWNER_INVENTORY", "      Quick Search"))
-        self.pushButton_SEARCHitems.setText(_translate("OWNER_INVENTORY", "SEARCH"))
+        self.pushButton_SEARCHitems.setText(_translate("OWNER_INVENTORY", "Search"))
         self.textBrowser_inv_ROOF_lowstk_warning.setHtml(_translate("OWNER_INVENTORY", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'Verdana\',\'sans-serif\'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
-        self.pushButton_Inventory_ALL_ITEMS_table.setText(_translate("OWNER_INVENTORY", "ALL ITEMS"))
-        self.pushButton_Inventory_ROOF_table.setText(_translate("OWNER_INVENTORY", "ROOF"))
-        self.pushButton_Inventory_SPANDREL_table.setText(_translate("OWNER_INVENTORY", "SPANDREL"))
-        self.pushButton_Inventory_GUTTER_table.setText(_translate("OWNER_INVENTORY", "GUTTER"))
-        self.pushButton_Inventory_OTHER_table.setText(_translate("OWNER_INVENTORY", "OTHER"))
+        self.pushButton_Inventory_ALL_ITEMS_table.setText(_translate("OWNER_INVENTORY", "All Items"))
+        self.pushButton_Inventory_ROOF_table.setText(_translate("OWNER_INVENTORY", "Roof"))
+        self.pushButton_Inventory_SPANDREL_table.setText(_translate("OWNER_INVENTORY", "Spandrel"))
+        self.pushButton_Inventory_GUTTER_table.setText(_translate("OWNER_INVENTORY", "Gutter"))
+        self.pushButton_Inventory_OTHER_table.setText(_translate("OWNER_INVENTORY", "Other"))
         self.pushButton_OWNER_Add_Inventory.setText(_translate("OWNER_INVENTORY", "ADD"))
         self.pushButton_OWNER_Edit_Inventory.setText(_translate("OWNER_INVENTORY", "EDIT"))
         self.pushButton_OWNER_Delete_Inventory.setText(_translate("OWNER_INVENTORY", "DELETE"))
-        self.pushButton_ViewHistory.setText(_translate("OWNER_INVENTORY", "VIEW HISTORY"))
-        item = self.tableWidget_ALL_ITEMS_5.horizontalHeaderItem(0)
-        item.setText(_translate("OWNER_INVENTORY", "PRODUCT ID"))
-        item = self.tableWidget_ALL_ITEMS_5.horizontalHeaderItem(1)
-        item.setText(_translate("OWNER_INVENTORY", "PRODUCT TYPE"))
-        item = self.tableWidget_ALL_ITEMS_5.horizontalHeaderItem(2)
-        item.setText(_translate("OWNER_INVENTORY", "NAME"))
-        item = self.tableWidget_ALL_ITEMS_5.horizontalHeaderItem(3)
-        item.setText(_translate("OWNER_INVENTORY", "PRICE"))
-        item = self.tableWidget_ALL_ITEMS_5.horizontalHeaderItem(4)
-        item.setText(_translate("OWNER_INVENTORY", "STOCK QTY."))
-        item = self.tableWidget_ALL_ITEMS_5.horizontalHeaderItem(5)
-        item.setText(_translate("OWNER_INVENTORY", "UPDATED AT"))
-        item = self.tableWidget_ALL_ITEMS_5.horizontalHeaderItem(6)
-        item.setText(_translate("OWNER_INVENTORY", "COLOR"))
-        item = self.tableWidget_ALL_ITEMS_5.horizontalHeaderItem(7)
-        item.setText(_translate("OWNER_INVENTORY", "LENGTH "))
-        item = self.tableWidget_ALL_ITEMS_5.horizontalHeaderItem(8)
-        item.setText(_translate("OWNER_INVENTORY", "THICKNESS"))
-        item = self.tableWidget_ALL_ITEMS_5.horizontalHeaderItem(9)
-        item.setText(_translate("OWNER_INVENTORY", "WIDTH"))
-        item = self.tableWidget_ALL_ITEMS_5.horizontalHeaderItem(10)
-        item.setText(_translate("OWNER_INVENTORY", "OTHER SPECIFICATIONS"))
-        item = self.tableWidget_ROOF_5.horizontalHeaderItem(0)
-        item.setText(_translate("OWNER_INVENTORY", "PRODUCT ID"))
-        item = self.tableWidget_ROOF_5.horizontalHeaderItem(1)
-        item.setText(_translate("OWNER_INVENTORY", "PRODUCT TYPE"))
-        item = self.tableWidget_ROOF_5.horizontalHeaderItem(2)
-        item.setText(_translate("OWNER_INVENTORY", "NAME"))
-        item = self.tableWidget_ROOF_5.horizontalHeaderItem(3)
-        item.setText(_translate("OWNER_INVENTORY", "PRICE"))
-        item = self.tableWidget_ROOF_5.horizontalHeaderItem(4)
-        item.setText(_translate("OWNER_INVENTORY", "STOCK QTY."))
-        item = self.tableWidget_ROOF_5.horizontalHeaderItem(5)
-        item.setText(_translate("OWNER_INVENTORY", "UPDATED AT"))
-        item = self.tableWidget_ROOF_5.horizontalHeaderItem(6)
-        item.setText(_translate("OWNER_INVENTORY", "COLOR"))
-        item = self.tableWidget_ROOF_5.horizontalHeaderItem(7)
-        item.setText(_translate("OWNER_INVENTORY", "LENGTH "))
-        item = self.tableWidget_ROOF_5.horizontalHeaderItem(8)
-        item.setText(_translate("OWNER_INVENTORY", "THICKNESS"))
-        item = self.tableWidget_ROOF_5.horizontalHeaderItem(9)
-        item.setText(_translate("OWNER_INVENTORY", "WIDTH"))
-        item = self.tableWidget_ROOF_5.horizontalHeaderItem(10)
-        item.setText(_translate("OWNER_INVENTORY", "OTHER SPECIFICATIONS"))
-        item = self.tableWidget_SPANDREL_5.horizontalHeaderItem(0)
-        item.setText(_translate("OWNER_INVENTORY", "PRODUCT ID"))
-        item = self.tableWidget_SPANDREL_5.horizontalHeaderItem(1)
-        item.setText(_translate("OWNER_INVENTORY", "PRODUCT TYPE"))
-        item = self.tableWidget_SPANDREL_5.horizontalHeaderItem(2)
-        item.setText(_translate("OWNER_INVENTORY", "NAME"))
-        item = self.tableWidget_SPANDREL_5.horizontalHeaderItem(3)
-        item.setText(_translate("OWNER_INVENTORY", "PRICE"))
-        item = self.tableWidget_SPANDREL_5.horizontalHeaderItem(4)
-        item.setText(_translate("OWNER_INVENTORY", "STOCK QTY."))
-        item = self.tableWidget_SPANDREL_5.horizontalHeaderItem(5)
-        item.setText(_translate("OWNER_INVENTORY", "UPDATED AT"))
-        item = self.tableWidget_SPANDREL_5.horizontalHeaderItem(6)
-        item.setText(_translate("OWNER_INVENTORY", "COLOR"))
-        item = self.tableWidget_SPANDREL_5.horizontalHeaderItem(7)
-        item.setText(_translate("OWNER_INVENTORY", "LENGTH "))
-        item = self.tableWidget_SPANDREL_5.horizontalHeaderItem(8)
-        item.setText(_translate("OWNER_INVENTORY", "THICKNESS"))
-        item = self.tableWidget_SPANDREL_5.horizontalHeaderItem(9)
-        item.setText(_translate("OWNER_INVENTORY", "WIDTH"))
-        item = self.tableWidget_SPANDREL_5.horizontalHeaderItem(10)
-        item.setText(_translate("OWNER_INVENTORY", "OTHER SPECIFICATIONS"))
-        item = self.tableWidget_GUTTER_5.horizontalHeaderItem(0)
-        item.setText(_translate("OWNER_INVENTORY", "PRODUCT ID"))
-        item = self.tableWidget_GUTTER_5.horizontalHeaderItem(1)
-        item.setText(_translate("OWNER_INVENTORY", "PRODUCT TYPE"))
-        item = self.tableWidget_GUTTER_5.horizontalHeaderItem(2)
-        item.setText(_translate("OWNER_INVENTORY", "NAME"))
-        item = self.tableWidget_GUTTER_5.horizontalHeaderItem(3)
-        item.setText(_translate("OWNER_INVENTORY", "PRICE"))
-        item = self.tableWidget_GUTTER_5.horizontalHeaderItem(4)
-        item.setText(_translate("OWNER_INVENTORY", "STOCK QTY."))
-        item = self.tableWidget_GUTTER_5.horizontalHeaderItem(5)
-        item.setText(_translate("OWNER_INVENTORY", "UPDATED AT"))
-        item = self.tableWidget_GUTTER_5.horizontalHeaderItem(6)
-        item.setText(_translate("OWNER_INVENTORY", "COLOR"))
-        item = self.tableWidget_GUTTER_5.horizontalHeaderItem(7)
-        item.setText(_translate("OWNER_INVENTORY", "LENGTH "))
-        item = self.tableWidget_GUTTER_5.horizontalHeaderItem(8)
-        item.setText(_translate("OWNER_INVENTORY", "THICKNESS"))
-        item = self.tableWidget_GUTTER_5.horizontalHeaderItem(9)
-        item.setText(_translate("OWNER_INVENTORY", "WIDTH"))
-        item = self.tableWidget_GUTTER_5.horizontalHeaderItem(10)
-        item.setText(_translate("OWNER_INVENTORY", "OTHER SPECIFICATIONS"))
-        item = self.tableWidget_OTHER_5.horizontalHeaderItem(0)
-        item.setText(_translate("OWNER_INVENTORY", "PRODUCT ID"))
-        item = self.tableWidget_OTHER_5.horizontalHeaderItem(1)
-        item.setText(_translate("OWNER_INVENTORY", "PRODUCT TYPE"))
-        item = self.tableWidget_OTHER_5.horizontalHeaderItem(2)
-        item.setText(_translate("OWNER_INVENTORY", "NAME"))
-        item = self.tableWidget_OTHER_5.horizontalHeaderItem(3)
-        item.setText(_translate("OWNER_INVENTORY", "PRICE"))
-        item = self.tableWidget_OTHER_5.horizontalHeaderItem(4)
-        item.setText(_translate("OWNER_INVENTORY", "STOCK QTY."))
-        item = self.tableWidget_OTHER_5.horizontalHeaderItem(5)
-        item.setText(_translate("OWNER_INVENTORY", "UPDATED AT"))
-        item = self.tableWidget_OTHER_5.horizontalHeaderItem(6)
-        item.setText(_translate("OWNER_INVENTORY", "COLOR"))
-        item = self.tableWidget_OTHER_5.horizontalHeaderItem(7)
-        item.setText(_translate("OWNER_INVENTORY", "LENGTH "))
-        item = self.tableWidget_OTHER_5.horizontalHeaderItem(8)
-        item.setText(_translate("OWNER_INVENTORY", "THICKNESS"))
-        item = self.tableWidget_OTHER_5.horizontalHeaderItem(9)
-        item.setText(_translate("OWNER_INVENTORY", "WIDTH"))
-        item = self.tableWidget_OTHER_5.horizontalHeaderItem(10)
-        item.setText(_translate("OWNER_INVENTORY", "OTHER SPECIFICATIONS"))
+        self.pushButton_ViewHistory.setText(_translate("OWNER_INVENTORY", "View History"))
+        item = self.tableWidget_ALL_ITEMS.horizontalHeaderItem(0)
+        item.setText(_translate("OWNER_INVENTORY", "Product ID"))
+        item = self.tableWidget_ALL_ITEMS.horizontalHeaderItem(1)
+        item.setText(_translate("OWNER_INVENTORY", "Product Type"))
+        item = self.tableWidget_ALL_ITEMS.horizontalHeaderItem(2)
+        item.setText(_translate("OWNER_INVENTORY", "Name"))
+        item = self.tableWidget_ALL_ITEMS.horizontalHeaderItem(3)
+        item.setText(_translate("OWNER_INVENTORY", "Price"))
+        item = self.tableWidget_ALL_ITEMS.horizontalHeaderItem(4)
+        item.setText(_translate("OWNER_INVENTORY", "Stock Qty."))
+        item = self.tableWidget_ALL_ITEMS.horizontalHeaderItem(5)
+        item.setText(_translate("OWNER_INVENTORY", "Updated At"))
+        item = self.tableWidget_ALL_ITEMS.horizontalHeaderItem(6)
+        item.setText(_translate("OWNER_INVENTORY", "Color"))
+        item = self.tableWidget_ALL_ITEMS.horizontalHeaderItem(7)
+        item.setText(_translate("OWNER_INVENTORY", "Length"))
+        item = self.tableWidget_ALL_ITEMS.horizontalHeaderItem(8)
+        item.setText(_translate("OWNER_INVENTORY", "Thickness"))
+        item = self.tableWidget_ALL_ITEMS.horizontalHeaderItem(9)
+        item.setText(_translate("OWNER_INVENTORY", "Width"))
+        item = self.tableWidget_ALL_ITEMS.horizontalHeaderItem(10)
+        item.setText(_translate("OWNER_INVENTORY", "Other Specifications"))
+        item = self.tableWidget_ROOF.horizontalHeaderItem(0)
+        item.setText(_translate("OWNER_INVENTORY", "Product ID"))
+        item = self.tableWidget_ROOF.horizontalHeaderItem(1)
+        item.setText(_translate("OWNER_INVENTORY", "Product Type"))
+        item = self.tableWidget_ROOF.horizontalHeaderItem(2)
+        item.setText(_translate("OWNER_INVENTORY", "Name"))
+        item = self.tableWidget_ROOF.horizontalHeaderItem(3)
+        item.setText(_translate("OWNER_INVENTORY", "Price  "))
+        item = self.tableWidget_ROOF.horizontalHeaderItem(4)
+        item.setText(_translate("OWNER_INVENTORY", "Stock Qty."))
+        item = self.tableWidget_ROOF.horizontalHeaderItem(5)
+        item.setText(_translate("OWNER_INVENTORY", "Updated At "))
+        item = self.tableWidget_ROOF.horizontalHeaderItem(6)
+        item.setText(_translate("OWNER_INVENTORY", "Color  "))
+        item = self.tableWidget_ROOF.horizontalHeaderItem(7)
+        item.setText(_translate("OWNER_INVENTORY", "Length  "))
+        item = self.tableWidget_ROOF.horizontalHeaderItem(8)
+        item.setText(_translate("OWNER_INVENTORY", "Thickness  "))
+        item = self.tableWidget_ROOF.horizontalHeaderItem(9)
+        item.setText(_translate("OWNER_INVENTORY", "Width  "))
+        item = self.tableWidget_ROOF.horizontalHeaderItem(10)
+        item.setText(_translate("OWNER_INVENTORY", "Other Specifications"))
+        item = self.tableWidget_SPANDREL.horizontalHeaderItem(0)
+        item.setText(_translate("OWNER_INVENTORY", "Product ID"))
+        item = self.tableWidget_SPANDREL.horizontalHeaderItem(1)
+        item.setText(_translate("OWNER_INVENTORY", "Product Type"))
+        item = self.tableWidget_SPANDREL.horizontalHeaderItem(2)
+        item.setText(_translate("OWNER_INVENTORY", "Name  "))
+        item = self.tableWidget_SPANDREL.horizontalHeaderItem(3)
+        item.setText(_translate("OWNER_INVENTORY", "Price  "))
+        item = self.tableWidget_SPANDREL.horizontalHeaderItem(4)
+        item.setText(_translate("OWNER_INVENTORY", "Stock Qty.  "))
+        item = self.tableWidget_SPANDREL.horizontalHeaderItem(5)
+        item.setText(_translate("OWNER_INVENTORY", "Updated At"))
+        item = self.tableWidget_SPANDREL.horizontalHeaderItem(6)
+        item.setText(_translate("OWNER_INVENTORY", "Color  "))
+        item = self.tableWidget_SPANDREL.horizontalHeaderItem(7)
+        item.setText(_translate("OWNER_INVENTORY", "Length  "))
+        item = self.tableWidget_SPANDREL.horizontalHeaderItem(8)
+        item.setText(_translate("OWNER_INVENTORY", "Thickness  "))
+        item = self.tableWidget_SPANDREL.horizontalHeaderItem(9)
+        item.setText(_translate("OWNER_INVENTORY", "Width  "))
+        item = self.tableWidget_SPANDREL.horizontalHeaderItem(10)
+        item.setText(_translate("OWNER_INVENTORY", "Other Specifications"))
+        item = self.tableWidget_GUTTER.horizontalHeaderItem(0)
+        item.setText(_translate("OWNER_INVENTORY", "Product ID"))
+        item = self.tableWidget_GUTTER.horizontalHeaderItem(1)
+        item.setText(_translate("OWNER_INVENTORY", "Product Type"))
+        item = self.tableWidget_GUTTER.horizontalHeaderItem(2)
+        item.setText(_translate("OWNER_INVENTORY", "Name"))
+        item = self.tableWidget_GUTTER.horizontalHeaderItem(3)
+        item.setText(_translate("OWNER_INVENTORY", "Price "))
+        item = self.tableWidget_GUTTER.horizontalHeaderItem(4)
+        item.setText(_translate("OWNER_INVENTORY", "Stock Qty. "))
+        item = self.tableWidget_GUTTER.horizontalHeaderItem(5)
+        item.setText(_translate("OWNER_INVENTORY", "Updated At "))
+        item = self.tableWidget_GUTTER.horizontalHeaderItem(6)
+        item.setText(_translate("OWNER_INVENTORY", "Color"))
+        item = self.tableWidget_GUTTER.horizontalHeaderItem(7)
+        item.setText(_translate("OWNER_INVENTORY", "Length "))
+        item = self.tableWidget_GUTTER.horizontalHeaderItem(8)
+        item.setText(_translate("OWNER_INVENTORY", "Thickness  "))
+        item = self.tableWidget_GUTTER.horizontalHeaderItem(9)
+        item.setText(_translate("OWNER_INVENTORY", "Width  "))
+        item = self.tableWidget_GUTTER.horizontalHeaderItem(10)
+        item.setText(_translate("OWNER_INVENTORY", "Other Specifications"))
+        item = self.tableWidget_OTHER.horizontalHeaderItem(0)
+        item.setText(_translate("OWNER_INVENTORY", "Product ID"))
+        item = self.tableWidget_OTHER.horizontalHeaderItem(1)
+        item.setText(_translate("OWNER_INVENTORY", "Product Type"))
+        item = self.tableWidget_OTHER.horizontalHeaderItem(2)
+        item.setText(_translate("OWNER_INVENTORY", "Name"))
+        item = self.tableWidget_OTHER.horizontalHeaderItem(3)
+        item.setText(_translate("OWNER_INVENTORY", "Price"))
+        item = self.tableWidget_OTHER.horizontalHeaderItem(4)
+        item.setText(_translate("OWNER_INVENTORY", "Stock Qty."))
+        item = self.tableWidget_OTHER.horizontalHeaderItem(5)
+        item.setText(_translate("OWNER_INVENTORY", "Updated At"))
+        item = self.tableWidget_OTHER.horizontalHeaderItem(6)
+        item.setText(_translate("OWNER_INVENTORY", "Color"))
+        item = self.tableWidget_OTHER.horizontalHeaderItem(7)
+        item.setText(_translate("OWNER_INVENTORY", "Length"))
+        item = self.tableWidget_OTHER.horizontalHeaderItem(8)
+        item.setText(_translate("OWNER_INVENTORY", "Thickness"))
+        item = self.tableWidget_OTHER.horizontalHeaderItem(9)
+        item.setText(_translate("OWNER_INVENTORY", "Width"))
+        item = self.tableWidget_OTHER.horizontalHeaderItem(10)
+        item.setText(_translate("OWNER_INVENTORY", "Other Specifications"))
         self.addStocklabel_5.setText(_translate("OWNER_INVENTORY", "ADD STOCK"))
         self.label_120.setText(_translate("OWNER_INVENTORY", "SELECT A PRODUCT TYPE TO ADD FIRST"))
         self.pushButton_Confirm_ROOFadd_5.setText(_translate("OWNER_INVENTORY", "CONFIRM"))

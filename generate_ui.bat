@@ -16,7 +16,7 @@
 :: ========================================================
 
 @echo off
-cd /d "C:\Users\Abie Gaile Casio\Updated Inventory and Sales\JJ-ELEVATE-Final-Project"
+cd /d "C:\Users\jhane\Desktop\JJ ELEVATE Final Project"
 
 :: Check if required commands exist
 where pyuic5 >nul 2>&1
