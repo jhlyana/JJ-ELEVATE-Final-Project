@@ -6,10 +6,14 @@ from ui.generated_files.UI_OSales import Ui_OWNER_SALES
 from ui.generated_files.UI_OStockHistory import Ui_OWNER_STOCKHISTORY
 from ui.generated_files.UI_OAccount import Ui_OWNER_ACCOUNT
 
-class OwnerController: #Create the Owner interface controller
+from core.controllers.OAcc_pageController import AccountPageController
+
+class OwnerController:
     def __init__(self, main_controller):
         self.main_controller = main_controller
         self.stack = QStackedWidget()
+        self.stack.setFixedSize(1921, 1005)
+        self.current_active_button = None
         
         # Initialize all owner pages
         self._init_dashboard()
@@ -21,6 +25,9 @@ class OwnerController: #Create the Owner interface controller
         
         # Connect navigation signals
         self._connect_navigation()
+        
+        # Set initial active button
+        self.set_active_button('dashboard')
     
     def _init_dashboard(self):
         self.dashboard_page = QWidget()
@@ -56,57 +63,166 @@ class OwnerController: #Create the Owner interface controller
         self.account_page = QWidget()
         self.account_ui = Ui_OWNER_ACCOUNT()
         self.account_ui.setupUi(self.account_page)
+        
+        # Initialize account controller
+        self.account_controller = AccountPageController(self.account_ui, self)
+        
         self.stack.addWidget(self.account_page)
     
     def _connect_navigation(self):
+        # Store all navigation buttons for easy access
+        self.nav_buttons = {
+            'dashboard': self.dashboard_ui.pushButton_Dashboard,
+            'inventory': self.dashboard_ui.pushButton_Inventory,
+            'orders': self.dashboard_ui.pushButton_Orders,
+            'sales': self.dashboard_ui.pushButton_Sales,
+            'stock_history': self.dashboard_ui.pushButton_Stock_History,
+            'account': self.dashboard_ui.pushButton_Account
+        }
+        
         # Dashboard navigation
-        self.dashboard_ui.pushButton_Inventory.clicked.connect(lambda: self.stack.setCurrentWidget(self.inventory_page))
-        self.dashboard_ui.pushButton_Orders.clicked.connect(lambda: self.stack.setCurrentWidget(self.orders_page))
-        self.dashboard_ui.pushButton_Sales.clicked.connect(lambda: self.stack.setCurrentWidget(self.sales_page))
-        self.dashboard_ui.pushButton_Stock_History.clicked.connect(lambda: self.stack.setCurrentWidget(self.stock_history_page))
-        self.dashboard_ui.pushButton_Account.clicked.connect(lambda: self.stack.setCurrentWidget(self.account_page))
-        self.dashboard_ui.pushButton_LogOut.clicked.connect(self.main_controller.logout)
+        self.dashboard_ui.pushButton_Inventory.clicked.connect(
+            lambda: [self.stack.setCurrentWidget(self.inventory_page), 
+                    self.set_active_button('inventory')])
+        self.dashboard_ui.pushButton_Orders.clicked.connect(
+            lambda: [self.stack.setCurrentWidget(self.orders_page), 
+                    self.set_active_button('orders')])
+        self.dashboard_ui.pushButton_Sales.clicked.connect(
+            lambda: [self.stack.setCurrentWidget(self.sales_page), 
+                    self.set_active_button('sales')])
+        self.dashboard_ui.pushButton_Stock_History.clicked.connect(
+            lambda: [self.stack.setCurrentWidget(self.stock_history_page), 
+                    self.set_active_button('stock_history')])
+        self.dashboard_ui.pushButton_Account.clicked.connect(
+            lambda: [self.stack.setCurrentWidget(self.account_page), 
+                    self.set_active_button('account')])
+        self.dashboard_ui.pushButton_LogOut.clicked.connect(lambda: [
+            self.stack.hide(),
+            self.main_controller.logout()
+        ])
         
         # Inventory navigation
-        self.inventory_ui.pushButton_Dashboard.clicked.connect(lambda: self.stack.setCurrentWidget(self.dashboard_page))
-        self.inventory_ui.pushButton_Orders.clicked.connect(lambda: self.stack.setCurrentWidget(self.orders_page))
-        self.inventory_ui.pushButton_Sales.clicked.connect(lambda: self.stack.setCurrentWidget(self.sales_page))
-        self.inventory_ui.pushButton_Stock_History.clicked.connect(lambda: self.stack.setCurrentWidget(self.stock_history_page))
-        self.inventory_ui.pushButton_Account.clicked.connect(lambda: self.stack.setCurrentWidget(self.account_page))
-        self.inventory_ui.pushButton_LogOut.clicked.connect(self.main_controller.logout)
+        self.inventory_ui.pushButton_Dashboard.clicked.connect(
+            lambda: [self.stack.setCurrentWidget(self.dashboard_page), 
+                    self.set_active_button('dashboard')])
+        self.inventory_ui.pushButton_Orders.clicked.connect(
+            lambda: [self.stack.setCurrentWidget(self.orders_page), 
+                    self.set_active_button('orders')])
+        self.inventory_ui.pushButton_Sales.clicked.connect(
+            lambda: [self.stack.setCurrentWidget(self.sales_page), 
+                    self.set_active_button('sales')])
+        self.inventory_ui.pushButton_Stock_History.clicked.connect(
+            lambda: [self.stack.setCurrentWidget(self.stock_history_page), 
+                    self.set_active_button('stock_history')])
+        self.inventory_ui.pushButton_Account.clicked.connect(
+            lambda: [self.stack.setCurrentWidget(self.account_page), 
+                    self.set_active_button('account')])
+        self.inventory_ui.pushButton_LogOut.clicked.connect(lambda: [
+            self.stack.hide(),
+            self.main_controller.logout()
+        ])
         
         # Orders navigation
-        self.orders_ui.pushButton_Dashboard.clicked.connect(lambda: self.stack.setCurrentWidget(self.dashboard_page))
-        self.orders_ui.pushButton_Inventory.clicked.connect(lambda: self.stack.setCurrentWidget(self.inventory_page))
-        self.orders_ui.pushButton_Sales.clicked.connect(lambda: self.stack.setCurrentWidget(self.sales_page))
-        self.orders_ui.pushButton_Stock_History.clicked.connect(lambda: self.stack.setCurrentWidget(self.stock_history_page))
-        self.orders_ui.pushButton_Account.clicked.connect(lambda: self.stack.setCurrentWidget(self.account_page))
-        self.orders_ui.pushButton_LogOut.clicked.connect(self.main_controller.logout)
+        self.orders_ui.pushButton_Dashboard.clicked.connect(
+            lambda: [self.stack.setCurrentWidget(self.dashboard_page), 
+                    self.set_active_button('dashboard')])
+        self.orders_ui.pushButton_Inventory.clicked.connect(
+            lambda: [self.stack.setCurrentWidget(self.inventory_page), 
+                    self.set_active_button('inventory')])
+        self.orders_ui.pushButton_Sales.clicked.connect(
+            lambda: [self.stack.setCurrentWidget(self.sales_page), 
+                    self.set_active_button('sales')])
+        self.orders_ui.pushButton_Stock_History.clicked.connect(
+            lambda: [self.stack.setCurrentWidget(self.stock_history_page), 
+                    self.set_active_button('stock_history')])
+        self.orders_ui.pushButton_Account.clicked.connect(
+            lambda: [self.stack.setCurrentWidget(self.account_page), 
+                    self.set_active_button('account')])
+        self.orders_ui.pushButton_LogOut.clicked.connect(lambda: [
+            self.stack.hide(),
+            self.main_controller.logout()
+        ])
         
         # Sales navigation
-        self.sales_ui.pushButton_Dashboard.clicked.connect(lambda: self.stack.setCurrentWidget(self.dashboard_page))
-        self.sales_ui.pushButton_Inventory.clicked.connect(lambda: self.stack.setCurrentWidget(self.inventory_page))
-        self.sales_ui.pushButton_Orders.clicked.connect(lambda: self.stack.setCurrentWidget(self.orders_page))
-        self.sales_ui.pushButton_Stock_History.clicked.connect(lambda: self.stack.setCurrentWidget(self.stock_history_page))
-        self.sales_ui.pushButton_Account.clicked.connect(lambda: self.stack.setCurrentWidget(self.account_page))
-        self.sales_ui.pushButton_LogOut.clicked.connect(self.main_controller.logout)
+        self.sales_ui.pushButton_Dashboard.clicked.connect(
+            lambda: [self.stack.setCurrentWidget(self.dashboard_page), 
+                    self.set_active_button('dashboard')])
+        self.sales_ui.pushButton_Inventory.clicked.connect(
+            lambda: [self.stack.setCurrentWidget(self.inventory_page), 
+                    self.set_active_button('inventory')])
+        self.sales_ui.pushButton_Orders.clicked.connect(
+            lambda: [self.stack.setCurrentWidget(self.orders_page), 
+                    self.set_active_button('orders')])
+        self.sales_ui.pushButton_Stock_History.clicked.connect(
+            lambda: [self.stack.setCurrentWidget(self.stock_history_page), 
+                    self.set_active_button('stock_history')])
+        self.sales_ui.pushButton_Account.clicked.connect(
+            lambda: [self.stack.setCurrentWidget(self.account_page), 
+                    self.set_active_button('account')])
+        self.sales_ui.pushButton_LogOut.clicked.connect(lambda: [
+            self.stack.hide(),
+            self.main_controller.logout()
+        ])
         
         # Stock History navigation
-        self.stock_history_ui.pushButton_Dashboard.clicked.connect(lambda: self.stack.setCurrentWidget(self.dashboard_page))
-        self.stock_history_ui.pushButton_Inventory.clicked.connect(lambda: self.stack.setCurrentWidget(self.inventory_page))
-        self.stock_history_ui.pushButton_Orders.clicked.connect(lambda: self.stack.setCurrentWidget(self.orders_page))
-        self.stock_history_ui.pushButton_Sales.clicked.connect(lambda: self.stack.setCurrentWidget(self.sales_page))
-        self.stock_history_ui.pushButton_Account.clicked.connect(lambda: self.stack.setCurrentWidget(self.account_page))
-        self.stock_history_ui.pushButton_LogOut.clicked.connect(self.main_controller.logout)
+        self.stock_history_ui.pushButton_Dashboard.clicked.connect(
+            lambda: [self.stack.setCurrentWidget(self.dashboard_page), 
+                    self.set_active_button('dashboard')])
+        self.stock_history_ui.pushButton_Inventory.clicked.connect(
+            lambda: [self.stack.setCurrentWidget(self.inventory_page), 
+                    self.set_active_button('inventory')])
+        self.stock_history_ui.pushButton_Orders.clicked.connect(
+            lambda: [self.stack.setCurrentWidget(self.orders_page), 
+                    self.set_active_button('orders')])
+        self.stock_history_ui.pushButton_Sales.clicked.connect(
+            lambda: [self.stack.setCurrentWidget(self.sales_page), 
+                    self.set_active_button('sales')])
+        self.stock_history_ui.pushButton_Account.clicked.connect(
+            lambda: [self.stack.setCurrentWidget(self.account_page), 
+                    self.set_active_button('account')])
+        self.stock_history_ui.pushButton_LogOut.clicked.connect(lambda: [
+            self.stack.hide(),
+            self.main_controller.logout()
+        ])
         
         # Account navigation
-        self.account_ui.pushButton_Dashboard.clicked.connect(lambda: self.stack.setCurrentWidget(self.dashboard_page))
-        self.account_ui.pushButton_Inventory.clicked.connect(lambda: self.stack.setCurrentWidget(self.inventory_page))
-        self.account_ui.pushButton_Orders.clicked.connect(lambda: self.stack.setCurrentWidget(self.orders_page))
-        self.account_ui.pushButton_Sales.clicked.connect(lambda: self.stack.setCurrentWidget(self.sales_page))
-        self.account_ui.pushButton_Stock_History.clicked.connect(lambda: self.stack.setCurrentWidget(self.stock_history_page))
-        self.account_ui.pushButton_LogOut.clicked.connect(self.main_controller.logout)
+        self.account_ui.pushButton_Dashboard.clicked.connect(
+            lambda: [self.stack.setCurrentWidget(self.dashboard_page), 
+                    self.set_active_button('dashboard')])
+        self.account_ui.pushButton_Inventory.clicked.connect(
+            lambda: [self.stack.setCurrentWidget(self.inventory_page), 
+                    self.set_active_button('inventory')])
+        self.account_ui.pushButton_Orders.clicked.connect(
+            lambda: [self.stack.setCurrentWidget(self.orders_page), 
+                    self.set_active_button('orders')])
+        self.account_ui.pushButton_Sales.clicked.connect(
+            lambda: [self.stack.setCurrentWidget(self.sales_page), 
+                    self.set_active_button('sales')])
+        self.account_ui.pushButton_Stock_History.clicked.connect(
+            lambda: [self.stack.setCurrentWidget(self.stock_history_page), 
+                    self.set_active_button('stock_history')])
+        self.account_ui.pushButton_LogOut.clicked.connect(lambda: [
+            self.stack.hide(),
+            self.main_controller.logout()
+        ])
+    
+    def set_active_button(self, button_name):
+        """Set the active button style and update all others"""
+        if self.current_active_button:
+            # Reset previous active button
+            self.current_active_button.setProperty('class', '')
+            self.current_active_button.style().unpolish(self.current_active_button)
+            self.current_active_button.style().polish(self.current_active_button)
+        
+        # Set new active button
+        button = self.nav_buttons.get(button_name)
+        if button:
+            button.setProperty('class', 'activeButton')
+            button.style().unpolish(button)
+            button.style().polish(button)
+            self.current_active_button = button
     
     def show_dashboard(self):
         self.stack.setCurrentWidget(self.dashboard_page)
+        self.set_active_button('dashboard')
         self.stack.show()

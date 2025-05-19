@@ -14,7 +14,8 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_OWNER_ACCOUNT(object):
     def setupUi(self, OWNER_ACCOUNT):
         OWNER_ACCOUNT.setObjectName("OWNER_ACCOUNT")
-        OWNER_ACCOUNT.resize(1914, 1002)
+        OWNER_ACCOUNT.resize(1936, 1005)
+        OWNER_ACCOUNT.setStyleSheet("background: white;")
         self.frame = QtWidgets.QFrame(OWNER_ACCOUNT)
         self.frame.setGeometry(QtCore.QRect(299, 209, 1621, 791))
         self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
@@ -36,24 +37,23 @@ class Ui_OWNER_ACCOUNT(object):
 "    background-color: #a6a6a6;\n"
 "    border-radius: 20px;\n"
 "    font-size: 24px;\n"
-"    font-color:#000000;\n"
+"    color: #000000;  /* Fixed from font-color to color */\n"
 "    padding: 9px;\n"
 "    font-family: \"Verdana\", sans-serif; \n"
 "    text-align: center;\n"
 "}\n"
 "\n"
-"/* Hover Effect on Inactive Buttons */\n"
+"/* Hover Effect */\n"
 "QPushButton:hover {\n"
-"    background-color:#374550;\n"
-"    color:white;\n"
-"}\n"
-"\n"
-"/* Active Button (Current Page) */\n"
-"QPushButton#activeButton {\n"
 "    background-color: #374550;\n"
 "    color: white;\n"
 "}\n"
-"")
+"\n"
+"/* Active Button */\n"
+"QPushButton.activeButton {\n"
+"    background-color: #374550;\n"
+"    color: white;\n"
+"}")
         self.pushButton_CREATE_C.setObjectName("pushButton_CREATE_C")
         self.pushButton_VIEW_C = QtWidgets.QPushButton(self.BUTTONS_FRAME)
         self.pushButton_VIEW_C.setGeometry(QtCore.QRect(590, 0, 441, 61))
@@ -66,59 +66,57 @@ class Ui_OWNER_ACCOUNT(object):
 "    background-color: #a6a6a6;\n"
 "    border-radius: 20px;\n"
 "    font-size: 24px;\n"
-"    font-color:#000000;\n"
+"    color: #000000;  /* Fixed from font-color to color */\n"
 "    padding: 9px;\n"
 "    font-family: \"Verdana\", sans-serif; \n"
 "    text-align: center;\n"
 "}\n"
 "\n"
-"/* Hover Effect on Inactive Buttons */\n"
+"/* Hover Effect */\n"
 "QPushButton:hover {\n"
-"    background-color:#374550;\n"
-"    color:white;\n"
-"}\n"
-"\n"
-"/* Active Button (Current Page) */\n"
-"QPushButton#activeButton {\n"
 "    background-color: #374550;\n"
 "    color: white;\n"
 "}\n"
-"")
+"\n"
+"/* Active Button */\n"
+"QPushButton.activeButton {\n"
+"    background-color: #374550;\n"
+"    color: white;\n"
+"}")
         self.pushButton_VIEW_C.setObjectName("pushButton_VIEW_C")
-        self.pushButton_ViewAcc = QtWidgets.QPushButton(self.BUTTONS_FRAME)
-        self.pushButton_ViewAcc.setGeometry(QtCore.QRect(50, 0, 441, 61))
+        self.pushButton_VIEW = QtWidgets.QPushButton(self.BUTTONS_FRAME)
+        self.pushButton_VIEW.setGeometry(QtCore.QRect(50, 0, 441, 61))
         font = QtGui.QFont()
         font.setFamily("Verdana")
         font.setPointSize(-1)
-        self.pushButton_ViewAcc.setFont(font)
-        self.pushButton_ViewAcc.setStyleSheet("/* Default Inactive Buttons */\n"
+        self.pushButton_VIEW.setFont(font)
+        self.pushButton_VIEW.setStyleSheet("/* Default Inactive Buttons */\n"
 "QPushButton {\n"
 "    background-color: #a6a6a6;\n"
 "    border-radius: 20px;\n"
 "    font-size: 24px;\n"
-"    font-color:#000000;\n"
+"    color: #000000;  /* Fixed from font-color to color */\n"
 "    padding: 9px;\n"
 "    font-family: \"Verdana\", sans-serif; \n"
 "    text-align: center;\n"
 "}\n"
 "\n"
-"/* Hover Effect on Inactive Buttons */\n"
+"/* Hover Effect */\n"
 "QPushButton:hover {\n"
-"    background-color:#374550;\n"
-"    color:white;\n"
-"}\n"
-"\n"
-"/* Active Button (Current Page) */\n"
-"QPushButton#activeButton {\n"
 "    background-color: #374550;\n"
 "    color: white;\n"
 "}\n"
-"")
-        self.pushButton_ViewAcc.setObjectName("pushButton_ViewAcc")
-        self.accountPage = QtWidgets.QStackedWidget(self.frame)
-        self.accountPage.setEnabled(True)
-        self.accountPage.setGeometry(QtCore.QRect(-1, 69, 1621, 651))
-        self.accountPage.setObjectName("accountPage")
+"\n"
+"/* Active Button */\n"
+"QPushButton.activeButton {\n"
+"    background-color: #374550;\n"
+"    color: white;\n"
+"}")
+        self.pushButton_VIEW.setObjectName("pushButton_VIEW")
+        self.stackedWidget_AccountBtns = QtWidgets.QStackedWidget(self.frame)
+        self.stackedWidget_AccountBtns.setEnabled(True)
+        self.stackedWidget_AccountBtns.setGeometry(QtCore.QRect(-1, 69, 1621, 651))
+        self.stackedWidget_AccountBtns.setObjectName("stackedWidget_AccountBtns")
         self.page = QtWidgets.QWidget()
         self.page.setObjectName("page")
         self.frame_4 = QtWidgets.QFrame(self.page)
@@ -214,22 +212,22 @@ class Ui_OWNER_ACCOUNT(object):
 "")
         self.label_3.setText("")
         self.label_3.setObjectName("label_3")
-        self.pushButton_editDetailsOwner = QtWidgets.QPushButton(self.frame_41)
-        self.pushButton_editDetailsOwner.setGeometry(QtCore.QRect(660, 560, 291, 51))
+        self.pushButton_EditAccount = QtWidgets.QPushButton(self.frame_41)
+        self.pushButton_EditAccount.setGeometry(QtCore.QRect(660, 560, 291, 51))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(True)
         font.setWeight(62)
-        self.pushButton_editDetailsOwner.setFont(font)
-        self.pushButton_editDetailsOwner.setStyleSheet("\n"
+        self.pushButton_EditAccount.setFont(font)
+        self.pushButton_EditAccount.setStyleSheet("\n"
 "color: #ffffff;\n"
 "border-radius: 20px; \n"
 "padding: 3px; \n"
 "background-color: #b2423c; \n"
 "font-weight: 500;\n"
 "")
-        self.pushButton_editDetailsOwner.setObjectName("pushButton_editDetailsOwner")
+        self.pushButton_EditAccount.setObjectName("pushButton_EditAccount")
         self.label_3.raise_()
         self.ownerIDText.raise_()
         self.ownerID.raise_()
@@ -237,7 +235,7 @@ class Ui_OWNER_ACCOUNT(object):
         self.ownerRole.raise_()
         self.ownerNameText.raise_()
         self.ownerName.raise_()
-        self.pushButton_editDetailsOwner.raise_()
+        self.pushButton_EditAccount.raise_()
         self.frame_10 = QtWidgets.QFrame(self.page)
         self.frame_10.setGeometry(QtCore.QRect(0, -10, 591, 661))
         self.frame_10.setFrameShape(QtWidgets.QFrame.StyledPanel)
@@ -249,7 +247,7 @@ class Ui_OWNER_ACCOUNT(object):
 "border: 2px solid #12245c;  /* optional: blue border */\n"
 "")
         self.label_createUSER_profile_pic_cashier_4.setText("")
-        self.label_createUSER_profile_pic_cashier_4.setPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/userProfilepicture.png"))
+        self.label_createUSER_profile_pic_cashier_4.setPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/userProfilepicture.png"))
         self.label_createUSER_profile_pic_cashier_4.setScaledContents(True)
         self.label_createUSER_profile_pic_cashier_4.setObjectName("label_createUSER_profile_pic_cashier_4")
         self.label_10 = QtWidgets.QLabel(self.frame_10)
@@ -260,7 +258,7 @@ class Ui_OWNER_ACCOUNT(object):
         self.label_10.setObjectName("label_10")
         self.label_10.raise_()
         self.label_createUSER_profile_pic_cashier_4.raise_()
-        self.accountPage.addWidget(self.page)
+        self.stackedWidget_AccountBtns.addWidget(self.page)
         self.page_2 = QtWidgets.QWidget()
         self.page_2.setObjectName("page_2")
         self.frame_5 = QtWidgets.QFrame(self.page_2)
@@ -356,22 +354,22 @@ class Ui_OWNER_ACCOUNT(object):
 "")
         self.label_4.setText("")
         self.label_4.setObjectName("label_4")
-        self.pushButton_saveOwnerDetails = QtWidgets.QPushButton(self.frame_42)
-        self.pushButton_saveOwnerDetails.setGeometry(QtCore.QRect(720, 560, 231, 51))
+        self.pushButton_saveEditaccount = QtWidgets.QPushButton(self.frame_42)
+        self.pushButton_saveEditaccount.setGeometry(QtCore.QRect(720, 560, 231, 51))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(True)
         font.setWeight(62)
-        self.pushButton_saveOwnerDetails.setFont(font)
-        self.pushButton_saveOwnerDetails.setStyleSheet("\n"
+        self.pushButton_saveEditaccount.setFont(font)
+        self.pushButton_saveEditaccount.setStyleSheet("\n"
 "color: #ffffff;\n"
 "border-radius: 20px; \n"
 "padding: 3px; \n"
-"background-color: #b2423c; \n"
+"background-color: #12245c; \n"
 "font-weight: 500;\n"
 "")
-        self.pushButton_saveOwnerDetails.setObjectName("pushButton_saveOwnerDetails")
+        self.pushButton_saveEditaccount.setObjectName("pushButton_saveEditaccount")
         self.changeUserNameText = QtWidgets.QLabel(self.frame_42)
         self.changeUserNameText.setGeometry(QtCore.QRect(340, 70, 351, 41))
         font = QtGui.QFont()
@@ -447,6 +445,22 @@ class Ui_OWNER_ACCOUNT(object):
 "    \n"
 "")
         self.confirmPassText.setObjectName("confirmPassText")
+        self.pushButton_cancelEditAccount_owner = QtWidgets.QPushButton(self.frame_42)
+        self.pushButton_cancelEditAccount_owner.setGeometry(QtCore.QRect(500, 560, 201, 51))
+        font = QtGui.QFont()
+        font.setFamily("Poppins Medium")
+        font.setPointSize(14)
+        font.setBold(True)
+        font.setWeight(62)
+        self.pushButton_cancelEditAccount_owner.setFont(font)
+        self.pushButton_cancelEditAccount_owner.setStyleSheet("\n"
+"color: #ffffff;\n"
+"border-radius: 20px; \n"
+"padding: 3px; \n"
+"background-color: #b2423c; \n"
+"font-weight: 500;\n"
+"")
+        self.pushButton_cancelEditAccount_owner.setObjectName("pushButton_cancelEditAccount_owner")
         self.label_4.raise_()
         self.userNameText.raise_()
         self.userNameEnter.raise_()
@@ -454,13 +468,14 @@ class Ui_OWNER_ACCOUNT(object):
         self.oldPassEnter.raise_()
         self.setPassText.raise_()
         self.setPassEnter.raise_()
-        self.pushButton_saveOwnerDetails.raise_()
+        self.pushButton_saveEditaccount.raise_()
         self.changeUserNameText.raise_()
         self.newUserNameEnter.raise_()
         self.newUserNameText.raise_()
         self.changeUserPassText.raise_()
         self.confirmPassEnter.raise_()
         self.confirmPassText.raise_()
+        self.pushButton_cancelEditAccount_owner.raise_()
         self.frame_11 = QtWidgets.QFrame(self.page_2)
         self.frame_11.setGeometry(QtCore.QRect(0, -10, 591, 661))
         self.frame_11.setFrameShape(QtWidgets.QFrame.StyledPanel)
@@ -472,7 +487,7 @@ class Ui_OWNER_ACCOUNT(object):
 "border: 2px solid #12245c;  /* optional: blue border */\n"
 "")
         self.label_createUSER_profile_pic_cashier_5.setText("")
-        self.label_createUSER_profile_pic_cashier_5.setPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/userProfilepicture.png"))
+        self.label_createUSER_profile_pic_cashier_5.setPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/userProfilepicture.png"))
         self.label_createUSER_profile_pic_cashier_5.setScaledContents(True)
         self.label_createUSER_profile_pic_cashier_5.setObjectName("label_createUSER_profile_pic_cashier_5")
         self.label_12 = QtWidgets.QLabel(self.frame_11)
@@ -483,7 +498,7 @@ class Ui_OWNER_ACCOUNT(object):
         self.label_12.setObjectName("label_12")
         self.label_12.raise_()
         self.label_createUSER_profile_pic_cashier_5.raise_()
-        self.accountPage.addWidget(self.page_2)
+        self.stackedWidget_AccountBtns.addWidget(self.page_2)
         self.page_3 = QtWidgets.QWidget()
         self.page_3.setObjectName("page_3")
         self.frame_6 = QtWidgets.QFrame(self.page_3)
@@ -579,22 +594,22 @@ class Ui_OWNER_ACCOUNT(object):
 "")
         self.label_5.setText("")
         self.label_5.setObjectName("label_5")
-        self.pushButton_editDetailsCashier = QtWidgets.QPushButton(self.frame_43)
-        self.pushButton_editDetailsCashier.setGeometry(QtCore.QRect(660, 560, 291, 51))
+        self.pushButton_EditAccount_cashier = QtWidgets.QPushButton(self.frame_43)
+        self.pushButton_EditAccount_cashier.setGeometry(QtCore.QRect(660, 560, 291, 51))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(True)
         font.setWeight(62)
-        self.pushButton_editDetailsCashier.setFont(font)
-        self.pushButton_editDetailsCashier.setStyleSheet("\n"
+        self.pushButton_EditAccount_cashier.setFont(font)
+        self.pushButton_EditAccount_cashier.setStyleSheet("\n"
 "color: #ffffff;\n"
 "border-radius: 20px; \n"
 "padding: 3px; \n"
 "background-color: #b2423c; \n"
 "font-weight: 500;\n"
 "")
-        self.pushButton_editDetailsCashier.setObjectName("pushButton_editDetailsCashier")
+        self.pushButton_EditAccount_cashier.setObjectName("pushButton_EditAccount_cashier")
         self.label_5.raise_()
         self.cashierIDText.raise_()
         self.cashierID.raise_()
@@ -602,7 +617,7 @@ class Ui_OWNER_ACCOUNT(object):
         self.cashierRole.raise_()
         self.cashierNameText.raise_()
         self.cashierName.raise_()
-        self.pushButton_editDetailsCashier.raise_()
+        self.pushButton_EditAccount_cashier.raise_()
         self.frame_8 = QtWidgets.QFrame(self.page_3)
         self.frame_8.setGeometry(QtCore.QRect(0, -10, 591, 661))
         self.frame_8.setFrameShape(QtWidgets.QFrame.StyledPanel)
@@ -614,7 +629,7 @@ class Ui_OWNER_ACCOUNT(object):
 "border: 2px solid #12245c;  /* optional: blue border */\n"
 "")
         self.label_createUSER_profile_pic_cashier_2.setText("")
-        self.label_createUSER_profile_pic_cashier_2.setPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/userProfilepicture.png"))
+        self.label_createUSER_profile_pic_cashier_2.setPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/userProfilepicture.png"))
         self.label_createUSER_profile_pic_cashier_2.setScaledContents(True)
         self.label_createUSER_profile_pic_cashier_2.setObjectName("label_createUSER_profile_pic_cashier_2")
         self.label_8 = QtWidgets.QLabel(self.frame_8)
@@ -625,7 +640,7 @@ class Ui_OWNER_ACCOUNT(object):
         self.label_8.setObjectName("label_8")
         self.label_8.raise_()
         self.label_createUSER_profile_pic_cashier_2.raise_()
-        self.accountPage.addWidget(self.page_3)
+        self.stackedWidget_AccountBtns.addWidget(self.page_3)
         self.page_4 = QtWidgets.QWidget()
         self.page_4.setObjectName("page_4")
         self.frame_7 = QtWidgets.QFrame(self.page_4)
@@ -721,22 +736,22 @@ class Ui_OWNER_ACCOUNT(object):
 "")
         self.label_6.setText("")
         self.label_6.setObjectName("label_6")
-        self.pushButton_saveCashierDetails = QtWidgets.QPushButton(self.frame_44)
-        self.pushButton_saveCashierDetails.setGeometry(QtCore.QRect(720, 560, 231, 51))
+        self.pushButton_saveEditaccount_cashier = QtWidgets.QPushButton(self.frame_44)
+        self.pushButton_saveEditaccount_cashier.setGeometry(QtCore.QRect(720, 560, 231, 51))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(True)
         font.setWeight(62)
-        self.pushButton_saveCashierDetails.setFont(font)
-        self.pushButton_saveCashierDetails.setStyleSheet("\n"
+        self.pushButton_saveEditaccount_cashier.setFont(font)
+        self.pushButton_saveEditaccount_cashier.setStyleSheet("\n"
 "color: #ffffff;\n"
 "border-radius: 20px; \n"
 "padding: 3px; \n"
-"background-color: #b2423c; \n"
+"background-color: #12245c; \n"
 "font-weight: 500;\n"
 "")
-        self.pushButton_saveCashierDetails.setObjectName("pushButton_saveCashierDetails")
+        self.pushButton_saveEditaccount_cashier.setObjectName("pushButton_saveEditaccount_cashier")
         self.changeUserNameText_2 = QtWidgets.QLabel(self.frame_44)
         self.changeUserNameText_2.setGeometry(QtCore.QRect(340, 70, 351, 41))
         font = QtGui.QFont()
@@ -812,6 +827,22 @@ class Ui_OWNER_ACCOUNT(object):
 "    \n"
 "")
         self.confirmPassText_2.setObjectName("confirmPassText_2")
+        self.pushButton_cancelEditAccount_cashier = QtWidgets.QPushButton(self.frame_44)
+        self.pushButton_cancelEditAccount_cashier.setGeometry(QtCore.QRect(490, 560, 201, 51))
+        font = QtGui.QFont()
+        font.setFamily("Poppins Medium")
+        font.setPointSize(14)
+        font.setBold(True)
+        font.setWeight(62)
+        self.pushButton_cancelEditAccount_cashier.setFont(font)
+        self.pushButton_cancelEditAccount_cashier.setStyleSheet("\n"
+"color: #ffffff;\n"
+"border-radius: 20px; \n"
+"padding: 3px; \n"
+"background-color: #b2423c; \n"
+"font-weight: 500;\n"
+"")
+        self.pushButton_cancelEditAccount_cashier.setObjectName("pushButton_cancelEditAccount_cashier")
         self.label_6.raise_()
         self.userNameText_2.raise_()
         self.userNameEnter_2.raise_()
@@ -819,13 +850,14 @@ class Ui_OWNER_ACCOUNT(object):
         self.oldPassEnter_2.raise_()
         self.setPassText_2.raise_()
         self.setPassEnter_2.raise_()
-        self.pushButton_saveCashierDetails.raise_()
+        self.pushButton_saveEditaccount_cashier.raise_()
         self.changeUserNameText_2.raise_()
         self.newUserNameEnter_2.raise_()
         self.newUserNameText_2.raise_()
         self.changeUserPassText_2.raise_()
         self.confirmPassEnter_2.raise_()
         self.confirmPassText_2.raise_()
+        self.pushButton_cancelEditAccount_cashier.raise_()
         self.frame_3 = QtWidgets.QFrame(self.page_4)
         self.frame_3.setGeometry(QtCore.QRect(0, -10, 591, 661))
         self.frame_3.setFrameShape(QtWidgets.QFrame.StyledPanel)
@@ -837,7 +869,7 @@ class Ui_OWNER_ACCOUNT(object):
 "border: 2px solid #12245c;  /* optional: blue border */\n"
 "")
         self.label_createUSER_profile_pic_cashier.setText("")
-        self.label_createUSER_profile_pic_cashier.setPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/userProfilepicture.png"))
+        self.label_createUSER_profile_pic_cashier.setPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/userProfilepicture.png"))
         self.label_createUSER_profile_pic_cashier.setScaledContents(True)
         self.label_createUSER_profile_pic_cashier.setObjectName("label_createUSER_profile_pic_cashier")
         self.label_2 = QtWidgets.QLabel(self.frame_3)
@@ -848,7 +880,7 @@ class Ui_OWNER_ACCOUNT(object):
         self.label_2.setObjectName("label_2")
         self.label_2.raise_()
         self.label_createUSER_profile_pic_cashier.raise_()
-        self.accountPage.addWidget(self.page_4)
+        self.stackedWidget_AccountBtns.addWidget(self.page_4)
         self.page_5 = QtWidgets.QWidget()
         self.page_5.setObjectName("page_5")
         self.label_11 = QtWidgets.QLabel(self.page_5)
@@ -1009,39 +1041,271 @@ class Ui_OWNER_ACCOUNT(object):
 "    \n"
 "")
         self.changeUserNameText_8.setObjectName("changeUserNameText_8")
-        self.pushButton_saveAcc = QtWidgets.QPushButton(self.page_5)
-        self.pushButton_saveAcc.setGeometry(QtCore.QRect(1360, 550, 201, 51))
+        self.pushButton_CreateAccount_cashier = QtWidgets.QPushButton(self.page_5)
+        self.pushButton_CreateAccount_cashier.setGeometry(QtCore.QRect(1360, 550, 201, 51))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(True)
         font.setWeight(62)
-        self.pushButton_saveAcc.setFont(font)
-        self.pushButton_saveAcc.setStyleSheet("\n"
+        self.pushButton_CreateAccount_cashier.setFont(font)
+        self.pushButton_CreateAccount_cashier.setStyleSheet("\n"
 "color: #ffffff;\n"
 "border-radius: 20px; \n"
 "padding: 3px; \n"
 "background-color: #12245c; \n"
 "font-weight: 500;\n"
 "")
-        self.pushButton_saveAcc.setObjectName("pushButton_saveAcc")
-        self.pushButton_discardAcc = QtWidgets.QPushButton(self.page_5)
-        self.pushButton_discardAcc.setGeometry(QtCore.QRect(1140, 550, 201, 51))
+        self.pushButton_CreateAccount_cashier.setObjectName("pushButton_CreateAccount_cashier")
+        self.pushButton_cancelCreateAccount_cashier = QtWidgets.QPushButton(self.page_5)
+        self.pushButton_cancelCreateAccount_cashier.setGeometry(QtCore.QRect(1140, 550, 201, 51))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(True)
         font.setWeight(62)
-        self.pushButton_discardAcc.setFont(font)
-        self.pushButton_discardAcc.setStyleSheet("\n"
+        self.pushButton_cancelCreateAccount_cashier.setFont(font)
+        self.pushButton_cancelCreateAccount_cashier.setStyleSheet("\n"
 "color: #ffffff;\n"
 "border-radius: 20px; \n"
 "padding: 3px; \n"
 "background-color: #b2423c; \n"
 "font-weight: 500;\n"
 "")
-        self.pushButton_discardAcc.setObjectName("pushButton_discardAcc")
-        self.accountPage.addWidget(self.page_5)
+        self.pushButton_cancelCreateAccount_cashier.setObjectName("pushButton_cancelCreateAccount_cashier")
+        self.stackedWidget_AccountBtns.addWidget(self.page_5)
+        self.LeftMenuBar = QtWidgets.QFrame(OWNER_ACCOUNT)
+        self.LeftMenuBar.setGeometry(QtCore.QRect(0, 0, 301, 981))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.LeftMenuBar.setFont(font)
+        self.LeftMenuBar.setStyleSheet("background-color: rgba(235, 224, 204, 0.47); /* #ebe0cc with 47% opacity */")
+        self.LeftMenuBar.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.LeftMenuBar.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.LeftMenuBar.setObjectName("LeftMenuBar")
+        self.JJelevate_text = QtWidgets.QLabel(self.LeftMenuBar)
+        self.JJelevate_text.setGeometry(QtCore.QRect(30, 250, 251, 21))
+        font = QtGui.QFont()
+        font.setFamily("Montserrat ExtraBold")
+        font.setPointSize(18)
+        font.setBold(True)
+        font.setWeight(75)
+        self.JJelevate_text.setFont(font)
+        self.JJelevate_text.setStyleSheet("color: #12245c; \n"
+"background: transparent;\n"
+"")
+        self.JJelevate_text.setScaledContents(True)
+        self.JJelevate_text.setObjectName("JJelevate_text")
+        self.Logo = QtWidgets.QLabel(self.LeftMenuBar)
+        self.Logo.setGeometry(QtCore.QRect(30, 50, 241, 171))
+        self.Logo.setStyleSheet("background: transparent;")
+        self.Logo.setText("")
+        self.Logo.setPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/JJLOGO.png"))
+        self.Logo.setScaledContents(True)
+        self.Logo.setAlignment(QtCore.Qt.AlignCenter)
+        self.Logo.setObjectName("Logo")
+        self.pushButton_Dashboard = QtWidgets.QPushButton(self.LeftMenuBar)
+        self.pushButton_Dashboard.setGeometry(QtCore.QRect(30, 310, 231, 51))
+        font = QtGui.QFont()
+        font.setFamily("Montserrat Medium")
+        font.setPointSize(12)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.pushButton_Dashboard.setFont(font)
+        self.pushButton_Dashboard.setStyleSheet("QPushButton {\n"
+"    background-color: white;\n"
+"    color: black;\n"
+"    border-radius: 25px;\n"
+"    padding: 9px;\n"
+"    text-align: left;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color:#c25b55;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
+"}\n"
+"QPushButton.activeButton {\n"
+"    background-color:#c25b55;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
+"}\n"
+"")
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/dashboard_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Dashboard.setIcon(icon)
+        self.pushButton_Dashboard.setIconSize(QtCore.QSize(40, 40))
+        self.pushButton_Dashboard.setObjectName("pushButton_Dashboard")
+        self.pushButton_Inventory = QtWidgets.QPushButton(self.LeftMenuBar)
+        self.pushButton_Inventory.setGeometry(QtCore.QRect(30, 390, 231, 51))
+        font = QtGui.QFont()
+        font.setFamily("Montserrat Medium")
+        font.setPointSize(12)
+        self.pushButton_Inventory.setFont(font)
+        self.pushButton_Inventory.setStyleSheet("QPushButton {\n"
+"    background-color: white;\n"
+"    color: black;\n"
+"    border-radius: 25px;\n"
+"    padding: 9px;\n"
+"    text-align: left;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color:#c25b55;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
+"}\n"
+"QPushButton.activeButton {\n"
+"    background-color:#c25b55;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
+"}\n"
+"")
+        icon1 = QtGui.QIcon()
+        icon1.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/inventory_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Inventory.setIcon(icon1)
+        self.pushButton_Inventory.setIconSize(QtCore.QSize(50, 45))
+        self.pushButton_Inventory.setObjectName("pushButton_Inventory")
+        self.pushButton_Orders = QtWidgets.QPushButton(self.LeftMenuBar)
+        self.pushButton_Orders.setGeometry(QtCore.QRect(30, 470, 231, 51))
+        font = QtGui.QFont()
+        font.setFamily("Montserrat Medium")
+        font.setPointSize(12)
+        self.pushButton_Orders.setFont(font)
+        self.pushButton_Orders.setStyleSheet("QPushButton {\n"
+"    background-color: white;\n"
+"    color: black;\n"
+"    border-radius: 25px;\n"
+"    padding: 9px;\n"
+"    text-align: left;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color:#c25b55;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
+"}\n"
+"QPushButton.activeButton {\n"
+"    background-color:#c25b55;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
+"}\n"
+"")
+        icon2 = QtGui.QIcon()
+        icon2.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/orders_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Orders.setIcon(icon2)
+        self.pushButton_Orders.setIconSize(QtCore.QSize(46, 42))
+        self.pushButton_Orders.setObjectName("pushButton_Orders")
+        self.pushButton_Sales = QtWidgets.QPushButton(self.LeftMenuBar)
+        self.pushButton_Sales.setGeometry(QtCore.QRect(30, 550, 231, 51))
+        font = QtGui.QFont()
+        font.setFamily("Montserrat Medium")
+        font.setPointSize(12)
+        self.pushButton_Sales.setFont(font)
+        self.pushButton_Sales.setStyleSheet("QPushButton {\n"
+"    background-color: white;\n"
+"    color: black;\n"
+"    border-radius: 25px;\n"
+"    padding: 9px;\n"
+"    text-align: left;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color:#c25b55;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
+"}\n"
+"QPushButton.activeButton {\n"
+"    background-color:#c25b55;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
+"}\n"
+"")
+        icon3 = QtGui.QIcon()
+        icon3.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/sales_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Sales.setIcon(icon3)
+        self.pushButton_Sales.setIconSize(QtCore.QSize(35, 35))
+        self.pushButton_Sales.setObjectName("pushButton_Sales")
+        self.pushButton_Account = QtWidgets.QPushButton(self.LeftMenuBar)
+        self.pushButton_Account.setGeometry(QtCore.QRect(30, 710, 231, 51))
+        font = QtGui.QFont()
+        font.setFamily("Montserrat Medium")
+        font.setPointSize(12)
+        self.pushButton_Account.setFont(font)
+        self.pushButton_Account.setStyleSheet("QPushButton {\n"
+"    background-color: white;\n"
+"    color: black;\n"
+"    border-radius: 25px;\n"
+"    padding: 9px;\n"
+"    text-align: left;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color:#c25b55;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
+"}\n"
+"QPushButton.activeButton {\n"
+"    background-color:#c25b55;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
+"}\n"
+"")
+        icon4 = QtGui.QIcon()
+        icon4.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/account_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Account.setIcon(icon4)
+        self.pushButton_Account.setIconSize(QtCore.QSize(48, 48))
+        self.pushButton_Account.setObjectName("pushButton_Account")
+        self.pushButton_LogOut = QtWidgets.QPushButton(self.LeftMenuBar)
+        self.pushButton_LogOut.setGeometry(QtCore.QRect(30, 890, 231, 51))
+        font = QtGui.QFont()
+        font.setFamily("Verdana")
+        font.setPointSize(12)
+        font.setBold(True)
+        font.setWeight(87)
+        self.pushButton_LogOut.setFont(font)
+        self.pushButton_LogOut.setStyleSheet("QPushButton {\n"
+"    background-color:#022162;\n"
+"color:white;\n"
+"font-weight: 700;\n"
+"    border-radius: 25px;\n"
+"    padding: 9px;\n"
+"font-size: 14;\n"
+"text-align: left;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color:gray;\n"
+"    color:white;\n"
+"    font-weight: 700;\n"
+"}")
+        icon5 = QtGui.QIcon()
+        icon5.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/WHITElogout_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_LogOut.setIcon(icon5)
+        self.pushButton_LogOut.setIconSize(QtCore.QSize(38, 38))
+        self.pushButton_LogOut.setObjectName("pushButton_LogOut")
+        self.pushButton_Stock_History = QtWidgets.QPushButton(self.LeftMenuBar)
+        self.pushButton_Stock_History.setGeometry(QtCore.QRect(30, 630, 231, 51))
+        font = QtGui.QFont()
+        font.setFamily("Montserrat Medium")
+        font.setPointSize(12)
+        self.pushButton_Stock_History.setFont(font)
+        self.pushButton_Stock_History.setStyleSheet("QPushButton {\n"
+"    background-color: white;\n"
+"    color: black;\n"
+"    border-radius: 25px;\n"
+"    padding: 9px;\n"
+"    text-align: left;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color:#c25b55;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
+"}\n"
+"QPushButton.activeButton {\n"
+"    background-color:#c25b55;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
+"}\n"
+"")
+        self.pushButton_Stock_History.setIcon(icon1)
+        self.pushButton_Stock_History.setIconSize(QtCore.QSize(50, 45))
+        self.pushButton_Stock_History.setObjectName("pushButton_Stock_History")
         self.frame_45 = QtWidgets.QFrame(OWNER_ACCOUNT)
         self.frame_45.setGeometry(QtCore.QRect(300, 0, 1621, 211))
         self.frame_45.setFrameShape(QtWidgets.QFrame.StyledPanel)
@@ -1093,252 +1357,9 @@ class Ui_OWNER_ACCOUNT(object):
 "text-align: center;\n"
 "")
         self.label.setObjectName("label")
-        self.LeftMenuBar = QtWidgets.QFrame(OWNER_ACCOUNT)
-        self.LeftMenuBar.setGeometry(QtCore.QRect(0, 0, 301, 1011))
-        font = QtGui.QFont()
-        font.setPointSize(14)
-        self.LeftMenuBar.setFont(font)
-        self.LeftMenuBar.setStyleSheet("background-color: rgba(235, 224, 204, 0.47); /* #ebe0cc with 47% opacity */")
-        self.LeftMenuBar.setFrameShape(QtWidgets.QFrame.NoFrame)
-        self.LeftMenuBar.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.LeftMenuBar.setObjectName("LeftMenuBar")
-        self.JJelevate_text_2 = QtWidgets.QLabel(self.LeftMenuBar)
-        self.JJelevate_text_2.setGeometry(QtCore.QRect(60, 220, 71, 41))
-        font = QtGui.QFont()
-        font.setFamily("Arial Black")
-        font.setPointSize(-1)
-        font.setBold(True)
-        font.setWeight(75)
-        self.JJelevate_text_2.setFont(font)
-        self.JJelevate_text_2.setStyleSheet("color: #12245c;\n"
-"font-family: \"Arial Black\", Arial, sans-serif; \n"
-"background: transparent;\n"
-"font-size: 30px;")
-        self.JJelevate_text_2.setScaledContents(True)
-        self.JJelevate_text_2.setObjectName("JJelevate_text_2")
-        self.Logo = QtWidgets.QLabel(self.LeftMenuBar)
-        self.Logo.setGeometry(QtCore.QRect(30, 50, 241, 171))
-        self.Logo.setStyleSheet("background: transparent;")
-        self.Logo.setText("")
-        self.Logo.setPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/JJLOGO.png"))
-        self.Logo.setScaledContents(True)
-        self.Logo.setAlignment(QtCore.Qt.AlignCenter)
-        self.Logo.setObjectName("Logo")
-        self.pushButton_Dashboard = QtWidgets.QPushButton(self.LeftMenuBar)
-        self.pushButton_Dashboard.setGeometry(QtCore.QRect(30, 310, 231, 51))
-        font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(12)
-        font.setBold(False)
-        font.setItalic(False)
-        font.setWeight(50)
-        self.pushButton_Dashboard.setFont(font)
-        self.pushButton_Dashboard.setStyleSheet("QPushButton {\n"
-"    background-color: white;\n"
-"    color: black;\n"
-"    border-radius: 25px;\n"
-"    padding: 9px;\n"
-"text-align: left;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"QPushButton#activeButton {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"")
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/dashboard_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Dashboard.setIcon(icon)
-        self.pushButton_Dashboard.setIconSize(QtCore.QSize(40, 40))
-        self.pushButton_Dashboard.setObjectName("pushButton_Dashboard")
-        self.pushButton_Inventory = QtWidgets.QPushButton(self.LeftMenuBar)
-        self.pushButton_Inventory.setGeometry(QtCore.QRect(30, 390, 231, 51))
-        font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(12)
-        self.pushButton_Inventory.setFont(font)
-        self.pushButton_Inventory.setStyleSheet("QPushButton {\n"
-"    background-color: white;\n"
-"    color: black;\n"
-"    border-radius: 25px;\n"
-"    padding: 9px;\n"
-"text-align: left;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"QPushButton#activeButton {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"")
-        icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/inventory_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Inventory.setIcon(icon1)
-        self.pushButton_Inventory.setIconSize(QtCore.QSize(50, 45))
-        self.pushButton_Inventory.setObjectName("pushButton_Inventory")
-        self.pushButton_Orders = QtWidgets.QPushButton(self.LeftMenuBar)
-        self.pushButton_Orders.setGeometry(QtCore.QRect(30, 470, 231, 51))
-        font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(12)
-        self.pushButton_Orders.setFont(font)
-        self.pushButton_Orders.setStyleSheet("QPushButton {\n"
-"    background-color: white;\n"
-"    color: black;\n"
-"    border-radius: 25px;\n"
-"    padding: 9px;\n"
-"text-align: left;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"QPushButton#activeButton {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"")
-        icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/orders_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Orders.setIcon(icon2)
-        self.pushButton_Orders.setIconSize(QtCore.QSize(46, 42))
-        self.pushButton_Orders.setObjectName("pushButton_Orders")
-        self.pushButton_Sales = QtWidgets.QPushButton(self.LeftMenuBar)
-        self.pushButton_Sales.setGeometry(QtCore.QRect(30, 550, 231, 51))
-        font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(12)
-        self.pushButton_Sales.setFont(font)
-        self.pushButton_Sales.setStyleSheet("QPushButton {\n"
-"    background-color: white;\n"
-"    color: black;\n"
-"    border-radius: 25px;\n"
-"    padding: 9px;\n"
-"text-align: left;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"QPushButton#activeButton {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"")
-        icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/sales_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Sales.setIcon(icon3)
-        self.pushButton_Sales.setIconSize(QtCore.QSize(35, 35))
-        self.pushButton_Sales.setObjectName("pushButton_Sales")
-        self.pushButton_Account = QtWidgets.QPushButton(self.LeftMenuBar)
-        self.pushButton_Account.setGeometry(QtCore.QRect(30, 710, 231, 51))
-        font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(12)
-        self.pushButton_Account.setFont(font)
-        self.pushButton_Account.setStyleSheet("QPushButton {\n"
-"    background-color: white;\n"
-"    color: black;\n"
-"    border-radius: 25px;\n"
-"    padding: 9px;\n"
-"text-align: left;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"QPushButton#activeButton {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"")
-        icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/account_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Account.setIcon(icon4)
-        self.pushButton_Account.setIconSize(QtCore.QSize(48, 48))
-        self.pushButton_Account.setObjectName("pushButton_Account")
-        self.pushButton_LogOut = QtWidgets.QPushButton(self.LeftMenuBar)
-        self.pushButton_LogOut.setGeometry(QtCore.QRect(30, 890, 231, 51))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(12)
-        font.setBold(True)
-        font.setWeight(87)
-        self.pushButton_LogOut.setFont(font)
-        self.pushButton_LogOut.setStyleSheet("QPushButton {\n"
-"    background-color:#022162;\n"
-"color:white;\n"
-"font-weight: 700;\n"
-"    border-radius: 25px;\n"
-"    padding: 9px;\n"
-"font-size: 14;\n"
-"text-align: left;\n"
-"}")
-        icon5 = QtGui.QIcon()
-        icon5.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/WHITElogout_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_LogOut.setIcon(icon5)
-        self.pushButton_LogOut.setIconSize(QtCore.QSize(38, 38))
-        self.pushButton_LogOut.setObjectName("pushButton_LogOut")
-        self.pushButton_Stock_History = QtWidgets.QPushButton(self.LeftMenuBar)
-        self.pushButton_Stock_History.setGeometry(QtCore.QRect(30, 630, 231, 51))
-        font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(12)
-        self.pushButton_Stock_History.setFont(font)
-        self.pushButton_Stock_History.setStyleSheet("QPushButton {\n"
-"    background-color: white;\n"
-"    color: black;\n"
-"    border-radius: 25px;\n"
-"    padding: 9px;\n"
-"text-align: left;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"QPushButton#activeButton {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"")
-        self.pushButton_Stock_History.setIcon(icon1)
-        self.pushButton_Stock_History.setIconSize(QtCore.QSize(50, 45))
-        self.pushButton_Stock_History.setObjectName("pushButton_Stock_History")
-        self.JJelevate_text_3 = QtWidgets.QLabel(self.LeftMenuBar)
-        self.JJelevate_text_3.setGeometry(QtCore.QRect(130, 220, 131, 41))
-        font = QtGui.QFont()
-        font.setFamily("Arial Black")
-        font.setPointSize(-1)
-        font.setBold(True)
-        font.setWeight(75)
-        self.JJelevate_text_3.setFont(font)
-        self.JJelevate_text_3.setStyleSheet("color: #d75413;\n"
-"font-family: \"Arial Black\", Arial, sans-serif; \n"
-"background: transparent;\n"
-"font-size: 29px;\n"
-"")
-        self.JJelevate_text_3.setScaledContents(True)
-        self.JJelevate_text_3.setObjectName("JJelevate_text_3")
 
         self.retranslateUi(OWNER_ACCOUNT)
-        self.accountPage.setCurrentIndex(0)
+        self.stackedWidget_AccountBtns.setCurrentIndex(1)
         QtCore.QMetaObject.connectSlotsByName(OWNER_ACCOUNT)
 
     def retranslateUi(self, OWNER_ACCOUNT):
@@ -1346,48 +1367,49 @@ class Ui_OWNER_ACCOUNT(object):
         OWNER_ACCOUNT.setWindowTitle(_translate("OWNER_ACCOUNT", "Form"))
         self.pushButton_CREATE_C.setText(_translate("OWNER_ACCOUNT", "Create New Cashier Account"))
         self.pushButton_VIEW_C.setText(_translate("OWNER_ACCOUNT", "View Cashier Account"))
-        self.pushButton_ViewAcc.setText(_translate("OWNER_ACCOUNT", "View Account"))
+        self.pushButton_VIEW.setText(_translate("OWNER_ACCOUNT", "View Account"))
         self.ownerIDText.setText(_translate("OWNER_ACCOUNT", "User ID"))
         self.ownerRoleText.setText(_translate("OWNER_ACCOUNT", "User Role"))
         self.ownerNameText.setText(_translate("OWNER_ACCOUNT", "Username"))
-        self.pushButton_editDetailsOwner.setText(_translate("OWNER_ACCOUNT", "Edit Details"))
+        self.pushButton_EditAccount.setText(_translate("OWNER_ACCOUNT", "Edit Details"))
         self.userNameText.setText(_translate("OWNER_ACCOUNT", "Username"))
         self.oldPassText.setText(_translate("OWNER_ACCOUNT", "Old Password"))
         self.setPassText.setText(_translate("OWNER_ACCOUNT", "Set New Password"))
-        self.pushButton_saveOwnerDetails.setText(_translate("OWNER_ACCOUNT", "Save"))
+        self.pushButton_saveEditaccount.setText(_translate("OWNER_ACCOUNT", "Save"))
         self.changeUserNameText.setText(_translate("OWNER_ACCOUNT", "Change Username"))
         self.newUserNameText.setText(_translate("OWNER_ACCOUNT", "New Username"))
         self.changeUserPassText.setText(_translate("OWNER_ACCOUNT", "Change Password"))
         self.confirmPassText.setText(_translate("OWNER_ACCOUNT", "Confirm New Password"))
+        self.pushButton_cancelEditAccount_owner.setText(_translate("OWNER_ACCOUNT", "Cancel"))
         self.cashierIDText.setText(_translate("OWNER_ACCOUNT", "User ID"))
         self.cashierRoleText.setText(_translate("OWNER_ACCOUNT", "User Role"))
         self.cashierNameText.setText(_translate("OWNER_ACCOUNT", "Username"))
-        self.pushButton_editDetailsCashier.setText(_translate("OWNER_ACCOUNT", "Edit Details"))
+        self.pushButton_EditAccount_cashier.setText(_translate("OWNER_ACCOUNT", "Edit Details"))
         self.userNameText_2.setText(_translate("OWNER_ACCOUNT", "Username"))
         self.oldPassText_2.setText(_translate("OWNER_ACCOUNT", "Old Password"))
         self.setPassText_2.setText(_translate("OWNER_ACCOUNT", "Set New Password"))
-        self.pushButton_saveCashierDetails.setText(_translate("OWNER_ACCOUNT", "Save"))
+        self.pushButton_saveEditaccount_cashier.setText(_translate("OWNER_ACCOUNT", "Save"))
         self.changeUserNameText_2.setText(_translate("OWNER_ACCOUNT", "Change Username"))
         self.newUserNameText_2.setText(_translate("OWNER_ACCOUNT", "New Username"))
         self.changeUserPassText_2.setText(_translate("OWNER_ACCOUNT", "Change Password"))
         self.confirmPassText_2.setText(_translate("OWNER_ACCOUNT", "Confirm New Password"))
+        self.pushButton_cancelEditAccount_cashier.setText(_translate("OWNER_ACCOUNT", "Cancel"))
         self.changeUserNameText_3.setText(_translate("OWNER_ACCOUNT", "Create a New Cashier Account"))
         self.changeUserNameText_4.setText(_translate("OWNER_ACCOUNT", "Shop ID"))
         self.changeUserNameText_5.setText(_translate("OWNER_ACCOUNT", "User Role"))
         self.changeUserNameText_6.setText(_translate("OWNER_ACCOUNT", "Username"))
         self.changeUserNameText_7.setText(_translate("OWNER_ACCOUNT", "Password"))
         self.changeUserNameText_8.setText(_translate("OWNER_ACCOUNT", "Confirm Password"))
-        self.pushButton_saveAcc.setText(_translate("OWNER_ACCOUNT", "Confirm"))
-        self.pushButton_discardAcc.setText(_translate("OWNER_ACCOUNT", "Discard"))
-        self.timeLabel.setText(_translate("OWNER_ACCOUNT", " 09 : 10 : 54 AM"))
-        self.label_7.setText(_translate("OWNER_ACCOUNT", "<html><head/><body><p align=\"center\"><span style=\" font-size:38pt; color:#022162;\">March 1, 2025</span><br/><span style=\" font-size:20pt; color:#b2423c;\">Monday</span></p></body></html>"))
-        self.label.setText(_translate("OWNER_ACCOUNT", "                                                                           J  &  J  ROOFSTEEL  AND  GUTTER  SUPPLY  (MOALBOAL BRANCH)     "))
-        self.JJelevate_text_2.setText(_translate("OWNER_ACCOUNT", "J&J "))
-        self.pushButton_Dashboard.setText(_translate("OWNER_ACCOUNT", "  Home   "))
+        self.pushButton_CreateAccount_cashier.setText(_translate("OWNER_ACCOUNT", "Confirm"))
+        self.pushButton_cancelCreateAccount_cashier.setText(_translate("OWNER_ACCOUNT", "Discard"))
+        self.JJelevate_text.setText(_translate("OWNER_ACCOUNT", "J & J ELEVATE"))
+        self.pushButton_Dashboard.setText(_translate("OWNER_ACCOUNT", " Dashboard   "))
         self.pushButton_Inventory.setText(_translate("OWNER_ACCOUNT", "Inventory"))
         self.pushButton_Orders.setText(_translate("OWNER_ACCOUNT", " Orders"))
         self.pushButton_Sales.setText(_translate("OWNER_ACCOUNT", "  Sales"))
         self.pushButton_Account.setText(_translate("OWNER_ACCOUNT", " Account     "))
-        self.pushButton_LogOut.setText(_translate("OWNER_ACCOUNT", "   Log out"))
+        self.pushButton_LogOut.setText(_translate("OWNER_ACCOUNT", "Log out"))
         self.pushButton_Stock_History.setText(_translate("OWNER_ACCOUNT", "Stock History"))
-        self.JJelevate_text_3.setText(_translate("OWNER_ACCOUNT", "Elevate"))
+        self.timeLabel.setText(_translate("OWNER_ACCOUNT", " 09 : 10 : 54 AM"))
+        self.label_7.setText(_translate("OWNER_ACCOUNT", "<html><head/><body><p align=\"center\"><span style=\" font-size:38pt; color:#022162;\">March 1, 2025</span><br/><span style=\" font-size:20pt; color:#b2423c;\">Monday</span></p></body></html>"))
+        self.label.setText(_translate("OWNER_ACCOUNT", "                                                                           J  &  J  ROOFSTEEL  AND  GUTTER  SUPPLY  (MOALBOAL BRANCH)     "))

@@ -13,6 +13,7 @@ class MainController: # Create the main controller to handle navigation
         
         # Create main stacked widget for auth pages
         self.auth_stack = QStackedWidget()
+        self.auth_stack.setFixedSize(1921, 1005)
         
         # Initialize auth pages
         self._init_landing_page()
@@ -87,5 +88,15 @@ class MainController: # Create the main controller to handle navigation
         self.show_login()
     
     def logout(self):
-        # Clear any session data
-        self.show_landing()
+        # Hide all controller stacks
+        self.owner_controller.stack.hide()
+        self.cashier_controller.stack.hide()
+        
+        # Clear any session data (add your own logic here)
+        # ...
+        
+        # Show auth stack and landing page
+        self.auth_stack.setCurrentWidget(self.landing_page)
+        self.auth_stack.show()
+        
+        # Reset any active states if needed

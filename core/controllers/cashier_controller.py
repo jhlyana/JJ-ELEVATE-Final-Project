@@ -10,6 +10,7 @@ class CashierController: # Create the Cashier interface controller
     def __init__(self, main_controller):
         self.main_controller = main_controller
         self.stack = QStackedWidget()
+        self.stack.setFixedSize(1921, 1005)
         
         # Initialize all cashier pages
         self._init_dashboard()
