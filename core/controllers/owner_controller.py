@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QStackedWidget, QWidget
+from PyQt5.QtWidgets import QStackedWidget, QWidget, QApplication
 from ui.generated_files.UI_ODashboard import Ui_OWNER_DASHBOARD
 from ui.generated_files.UI_OInventory import Ui_OWNER_INVENTORY
 from ui.generated_files.UI_OOrders import Ui_OWNER_ORDERS
@@ -26,8 +26,11 @@ class OwnerController:
         # Connect navigation signals
         self._connect_navigation()
         
-        # Set initial active button
+        # Force initial state
+        self.stack.setCurrentIndex(0)
+        QApplication.processEvents()
         self.set_active_button('dashboard')
+        QApplication.processEvents()
     
     def _init_dashboard(self):
         self.dashboard_page = QWidget()
@@ -208,19 +211,27 @@ class OwnerController:
     
     def set_active_button(self, button_name):
         """Set the active button style and update all others"""
-        if self.current_active_button:
-            # Reset previous active button
-            self.current_active_button.setProperty('class', '')
-            self.current_active_button.style().unpolish(self.current_active_button)
-            self.current_active_button.style().polish(self.current_active_button)
+        # 1. First reset all buttons
+        for name, button in self.nav_buttons.items():
+            button.setProperty('class', '')
+            button.style().unpolish(button)
+            button.style().polish(button)
+            button.update()
         
-        # Set new active button
+        # 2. Set new active button
         button = self.nav_buttons.get(button_name)
         if button:
             button.setProperty('class', 'activeButton')
+            
+            # Force style update
             button.style().unpolish(button)
             button.style().polish(button)
+            button.update()
+            
             self.current_active_button = button
+        
+        # Force immediate GUI update
+        QApplication.processEvents()
     
     def show_dashboard(self):
         self.stack.setCurrentWidget(self.dashboard_page)

@@ -38,7 +38,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../../../../New folder/resources/images/login_pic.png</pixmap>
+    <pixmap>../resources/images/PIC_log_sign_in.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -163,7 +163,7 @@ background: transparent;
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../../../../New folder/resources/images/J&amp;J logo.png</pixmap>
+    <pixmap>../resources/images/JJLOGO.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -543,7 +543,7 @@ color: white;</string>
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>../../../../../Downloads/EYE.png</normaloff>../../../../../Downloads/EYE.png</iconset>
+      <normaloff>../resources/images/EYE.png</normaloff>../resources/images/EYE.png</iconset>
     </property>
     <property name="iconSize">
      <size>
