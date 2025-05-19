@@ -1098,8 +1098,59 @@ class Ui_OWNER_ACCOUNT(object):
 "    }")
         self.pushButton_cancelCreateAccount_cashier.setObjectName("pushButton_cancelCreateAccount_cashier")
         self.stackedWidget_AccountBtns.addWidget(self.page_5)
+        self.frame_45 = QtWidgets.QFrame(OWNER_ACCOUNT)
+        self.frame_45.setGeometry(QtCore.QRect(300, 0, 1621, 211))
+        self.frame_45.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_45.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_45.setObjectName("frame_45")
+        self.timeLabel = QtWidgets.QLabel(self.frame_45)
+        self.timeLabel.setGeometry(QtCore.QRect(840, 20, 731, 171))
+        font = QtGui.QFont()
+        font.setFamily("Montserrat ExtraBold")
+        font.setPointSize(38)
+        font.setBold(True)
+        font.setWeight(75)
+        self.timeLabel.setFont(font)
+        self.timeLabel.setStyleSheet("\n"
+"    background-color: #f6f3ee;\n"
+"    border-radius: 16;\n"
+"    padding: 10px;\n"
+"color: #051a54;\n"
+"")
+        self.timeLabel.setAlignment(QtCore.Qt.AlignCenter)
+        self.timeLabel.setObjectName("timeLabel")
+        self.label_7 = QtWidgets.QLabel(self.frame_45)
+        self.label_7.setGeometry(QtCore.QRect(40, 20, 771, 171))
+        font = QtGui.QFont()
+        font.setFamily("Montserrat ExtraBold")
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_7.setFont(font)
+        self.label_7.setStyleSheet("\n"
+"    background-color: #f6f3ee;\n"
+"    border-radius: 16;\n"
+"    padding: 10px;\n"
+"\n"
+"")
+        self.label_7.setTextFormat(QtCore.Qt.RichText)
+        self.label_7.setObjectName("label_7")
+        self.label = QtWidgets.QLabel(OWNER_ACCOUNT)
+        self.label.setGeometry(QtCore.QRect(300, 930, 1631, 51))
+        font = QtGui.QFont()
+        font.setFamily("Verdana")
+        font.setPointSize(11)
+        font.setBold(True)
+        font.setItalic(True)
+        font.setWeight(75)
+        self.label.setFont(font)
+        self.label.setStyleSheet("background-color: #374550;\n"
+"padding: 2px;\n"
+"color: #ffffff;\n"
+"text-align: center;\n"
+"")
+        self.label.setObjectName("label")
         self.LeftMenuBar = QtWidgets.QFrame(OWNER_ACCOUNT)
-        self.LeftMenuBar.setGeometry(QtCore.QRect(0, 0, 301, 981))
+        self.LeftMenuBar.setGeometry(QtCore.QRect(0, 0, 301, 1011))
         font = QtGui.QFont()
         font.setPointSize(14)
         self.LeftMenuBar.setFont(font)
@@ -1107,19 +1158,20 @@ class Ui_OWNER_ACCOUNT(object):
         self.LeftMenuBar.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.LeftMenuBar.setFrameShadow(QtWidgets.QFrame.Raised)
         self.LeftMenuBar.setObjectName("LeftMenuBar")
-        self.JJelevate_text = QtWidgets.QLabel(self.LeftMenuBar)
-        self.JJelevate_text.setGeometry(QtCore.QRect(30, 250, 251, 21))
+        self.JJelevate_text_2 = QtWidgets.QLabel(self.LeftMenuBar)
+        self.JJelevate_text_2.setGeometry(QtCore.QRect(60, 220, 71, 41))
         font = QtGui.QFont()
-        font.setFamily("Montserrat ExtraBold")
-        font.setPointSize(18)
+        font.setFamily("Arial Black")
+        font.setPointSize(-1)
         font.setBold(True)
         font.setWeight(75)
-        self.JJelevate_text.setFont(font)
-        self.JJelevate_text.setStyleSheet("color: #12245c; \n"
+        self.JJelevate_text_2.setFont(font)
+        self.JJelevate_text_2.setStyleSheet("color: #12245c;\n"
+"font-family: \"Arial Black\", Arial, sans-serif; \n"
 "background: transparent;\n"
-"")
-        self.JJelevate_text.setScaledContents(True)
-        self.JJelevate_text.setObjectName("JJelevate_text")
+"font-size: 30px;")
+        self.JJelevate_text_2.setScaledContents(True)
+        self.JJelevate_text_2.setObjectName("JJelevate_text_2")
         self.Logo = QtWidgets.QLabel(self.LeftMenuBar)
         self.Logo.setGeometry(QtCore.QRect(30, 50, 241, 171))
         self.Logo.setStyleSheet("background: transparent;")
@@ -1330,57 +1382,21 @@ class Ui_OWNER_ACCOUNT(object):
         self.pushButton_Stock_History.setIcon(icon1)
         self.pushButton_Stock_History.setIconSize(QtCore.QSize(50, 45))
         self.pushButton_Stock_History.setObjectName("pushButton_Stock_History")
-        self.frame_45 = QtWidgets.QFrame(OWNER_ACCOUNT)
-        self.frame_45.setGeometry(QtCore.QRect(300, 0, 1621, 211))
-        self.frame_45.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_45.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_45.setObjectName("frame_45")
-        self.timeLabel = QtWidgets.QLabel(self.frame_45)
-        self.timeLabel.setGeometry(QtCore.QRect(840, 20, 731, 171))
+        self.JJelevate_text_3 = QtWidgets.QLabel(self.LeftMenuBar)
+        self.JJelevate_text_3.setGeometry(QtCore.QRect(130, 220, 131, 41))
         font = QtGui.QFont()
-        font.setFamily("Montserrat ExtraBold")
-        font.setPointSize(38)
+        font.setFamily("Arial Black")
+        font.setPointSize(-1)
         font.setBold(True)
         font.setWeight(75)
-        self.timeLabel.setFont(font)
-        self.timeLabel.setStyleSheet("\n"
-"    background-color: #f6f3ee;\n"
-"    border-radius: 16;\n"
-"    padding: 10px;\n"
-"color: #051a54;\n"
+        self.JJelevate_text_3.setFont(font)
+        self.JJelevate_text_3.setStyleSheet("color: #d75413;\n"
+"font-family: \"Arial Black\", Arial, sans-serif; \n"
+"background: transparent;\n"
+"font-size: 29px;\n"
 "")
-        self.timeLabel.setAlignment(QtCore.Qt.AlignCenter)
-        self.timeLabel.setObjectName("timeLabel")
-        self.label_7 = QtWidgets.QLabel(self.frame_45)
-        self.label_7.setGeometry(QtCore.QRect(40, 20, 771, 171))
-        font = QtGui.QFont()
-        font.setFamily("Montserrat ExtraBold")
-        font.setBold(True)
-        font.setWeight(75)
-        self.label_7.setFont(font)
-        self.label_7.setStyleSheet("\n"
-"    background-color: #f6f3ee;\n"
-"    border-radius: 16;\n"
-"    padding: 10px;\n"
-"\n"
-"")
-        self.label_7.setTextFormat(QtCore.Qt.RichText)
-        self.label_7.setObjectName("label_7")
-        self.label = QtWidgets.QLabel(OWNER_ACCOUNT)
-        self.label.setGeometry(QtCore.QRect(300, 930, 1631, 51))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(11)
-        font.setBold(True)
-        font.setItalic(True)
-        font.setWeight(75)
-        self.label.setFont(font)
-        self.label.setStyleSheet("background-color: #374550;\n"
-"padding: 2px;\n"
-"color: #ffffff;\n"
-"text-align: center;\n"
-"")
-        self.label.setObjectName("label")
+        self.JJelevate_text_3.setScaledContents(True)
+        self.JJelevate_text_3.setObjectName("JJelevate_text_3")
 
         self.retranslateUi(OWNER_ACCOUNT)
         self.stackedWidget_AccountBtns.setCurrentIndex(0)
@@ -1426,14 +1442,15 @@ class Ui_OWNER_ACCOUNT(object):
         self.changeUserNameText_8.setText(_translate("OWNER_ACCOUNT", "Confirm Password"))
         self.pushButton_CreateAccount_cashier.setText(_translate("OWNER_ACCOUNT", "Confirm"))
         self.pushButton_cancelCreateAccount_cashier.setText(_translate("OWNER_ACCOUNT", "Discard"))
-        self.JJelevate_text.setText(_translate("OWNER_ACCOUNT", "J & J ELEVATE"))
-        self.pushButton_Dashboard.setText(_translate("OWNER_ACCOUNT", " Dashboard   "))
+        self.timeLabel.setText(_translate("OWNER_ACCOUNT", " 09 : 10 : 54 AM"))
+        self.label_7.setText(_translate("OWNER_ACCOUNT", "<html><head/><body><p align=\"center\"><span style=\" font-size:38pt; color:#022162;\">March 1, 2025</span><br/><span style=\" font-size:20pt; color:#b2423c;\">Monday</span></p></body></html>"))
+        self.label.setText(_translate("OWNER_ACCOUNT", "                                                                           J  &  J  ROOFSTEEL  AND  GUTTER  SUPPLY  (MOALBOAL BRANCH)     "))
+        self.JJelevate_text_2.setText(_translate("OWNER_ACCOUNT", "J&J "))
+        self.pushButton_Dashboard.setText(_translate("OWNER_ACCOUNT", "  Home   "))
         self.pushButton_Inventory.setText(_translate("OWNER_ACCOUNT", "Inventory"))
         self.pushButton_Orders.setText(_translate("OWNER_ACCOUNT", " Orders"))
         self.pushButton_Sales.setText(_translate("OWNER_ACCOUNT", "  Sales"))
         self.pushButton_Account.setText(_translate("OWNER_ACCOUNT", " Account     "))
-        self.pushButton_LogOut.setText(_translate("OWNER_ACCOUNT", "Log out"))
+        self.pushButton_LogOut.setText(_translate("OWNER_ACCOUNT", "   Log out"))
         self.pushButton_Stock_History.setText(_translate("OWNER_ACCOUNT", "Stock History"))
-        self.timeLabel.setText(_translate("OWNER_ACCOUNT", " 09 : 10 : 54 AM"))
-        self.label_7.setText(_translate("OWNER_ACCOUNT", "<html><head/><body><p align=\"center\"><span style=\" font-size:38pt; color:#022162;\">March 1, 2025</span><br/><span style=\" font-size:20pt; color:#b2423c;\">Monday</span></p></body></html>"))
-        self.label.setText(_translate("OWNER_ACCOUNT", "                                                                           J  &  J  ROOFSTEEL  AND  GUTTER  SUPPLY  (MOALBOAL BRANCH)     "))
+        self.JJelevate_text_3.setText(_translate("OWNER_ACCOUNT", "Elevate"))
