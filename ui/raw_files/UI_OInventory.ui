@@ -723,9 +723,9 @@ color:black;
     <string notr="true">background: transparent;</string>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>7</number>
    </property>
-   <widget class="QWidget" name="page_INV_ALL_ITEMS_5">
+   <widget class="QWidget" name="page_INV_ALL_ITEMS">
     <widget class="QTableWidget" name="tableWidget_ALL_ITEMS">
      <property name="geometry">
       <rect>
@@ -881,7 +881,7 @@ padding: 3;
      </column>
     </widget>
    </widget>
-   <widget class="QWidget" name="page_INV_ROOF_5">
+   <widget class="QWidget" name="page_INV_ROOF">
     <widget class="QTableWidget" name="tableWidget_ROOF">
      <property name="geometry">
       <rect>
@@ -1026,7 +1026,7 @@ padding: 3;
      </column>
     </widget>
    </widget>
-   <widget class="QWidget" name="page_INV_SPANDREL_5">
+   <widget class="QWidget" name="page_INV_SPANDREL">
     <widget class="QTableWidget" name="tableWidget_SPANDREL">
      <property name="geometry">
       <rect>
@@ -1171,7 +1171,7 @@ padding: 3;
      </column>
     </widget>
    </widget>
-   <widget class="QWidget" name="page_INV_GUTTER_5">
+   <widget class="QWidget" name="page_INV_GUTTER">
     <widget class="QTableWidget" name="tableWidget_GUTTER">
      <property name="geometry">
       <rect>
@@ -1316,7 +1316,7 @@ padding: 3;
      </column>
     </widget>
    </widget>
-   <widget class="QWidget" name="page_INV_OTHER_5">
+   <widget class="QWidget" name="page_INV_OTHER">
     <widget class="QTableWidget" name="tableWidget_OTHER">
      <property name="geometry">
       <rect>
@@ -1498,7 +1498,7 @@ border: 1px solid #000000; </string>
        <string/>
       </property>
      </widget>
-     <widget class="QLabel" name="addStocklabel_5">
+     <widget class="QLabel" name="addStocklabel">
       <property name="geometry">
        <rect>
         <x>120</x>
@@ -1540,9 +1540,9 @@ border: 1px solid #000000; </string>
        <string notr="true">background: #f6f3ee;</string>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>4</number>
       </property>
-      <widget class="QWidget" name="ADD_blank_5">
+      <widget class="QWidget" name="ADD_blank">
        <widget class="QLabel" name="label_120">
         <property name="geometry">
          <rect>
@@ -1571,7 +1571,7 @@ color: #a6a6a6;</string>
         </property>
        </widget>
       </widget>
-      <widget class="QWidget" name="ADD_ROOF_5">
+      <widget class="QWidget" name="ADD_ROOF">
        <widget class="QFrame" name="frame_98">
         <property name="geometry">
          <rect>
@@ -1591,7 +1591,7 @@ color: #a6a6a6;</string>
         <property name="frameShadow">
          <enum>QFrame::Raised</enum>
         </property>
-        <widget class="QPushButton" name="pushButton_Confirm_ROOFadd_5">
+        <widget class="QPushButton" name="pushButton_Confirm_ROOFadd">
          <property name="geometry">
           <rect>
            <x>360</x>
@@ -1625,7 +1625,7 @@ QPushButton:hover {
           <string>CONFIRM</string>
          </property>
         </widget>
-        <widget class="QPushButton" name="pushButton_Close_ROOFadd_5">
+        <widget class="QPushButton" name="pushButton_Close_ROOFadd">
          <property name="geometry">
           <rect>
            <x>740</x>
@@ -1765,7 +1765,7 @@ QPushButton#activeButton {
           <string>NAME            :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_AddROOF_prodID_5">
+        <widget class="QLineEdit" name="lineEdit_AddROOF_prodID">
          <property name="geometry">
           <rect>
            <x>240</x>
@@ -1791,7 +1791,7 @@ border: 1px solid #000000;
           <string>.....</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_AddROOF_Width_5">
+        <widget class="QLineEdit" name="lineEdit_AddROOF_Width">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -1842,7 +1842,7 @@ border: 1px solid #000000;
           <string>STK. QTY.                    :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_AddROOF_Qty_5">
+        <widget class="QLineEdit" name="lineEdit_AddROOF_Qty">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -1918,7 +1918,7 @@ border: 1px solid #000000;
           <string>COLOR                        :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_AddROOF_Color_5">
+        <widget class="QLineEdit" name="lineEdit_AddROOF_Color">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -1969,7 +1969,7 @@ border: 1px solid #000000;
           <string>LENGTH                       :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_AddROOF_Length_5">
+        <widget class="QLineEdit" name="lineEdit_AddROOF_Length">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -2020,7 +2020,7 @@ border: 1px solid #000000;
           <string>OTHER          :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_AddROOF_Price_5">
+        <widget class="QLineEdit" name="lineEdit_AddROOF_Price">
          <property name="geometry">
           <rect>
            <x>240</x>
@@ -2046,7 +2046,7 @@ border: 1px solid #000000;
           <string>.....</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_AddROOF_OtherSpecifications_5">
+        <widget class="QLineEdit" name="lineEdit_AddROOF_OtherSpecifications">
          <property name="geometry">
           <rect>
            <x>240</x>
@@ -2097,7 +2097,7 @@ border: 1px solid #000000;
           <string>THICKNESS (MM)     :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_AddROOF_Thickness_5">
+        <widget class="QLineEdit" name="lineEdit_AddROOF_Thickness">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -2148,7 +2148,7 @@ border: 1px solid #000000;
           <string>SPECIFICATIONS</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_AddROOF_Name_5">
+        <widget class="QLineEdit" name="lineEdit_AddROOF_Name">
          <property name="geometry">
           <rect>
            <x>240</x>
@@ -2176,7 +2176,7 @@ border: 1px solid #000000;
         </widget>
        </widget>
       </widget>
-      <widget class="QWidget" name="ADD_SPANDREL_5">
+      <widget class="QWidget" name="ADD_SPANDREL">
        <widget class="QFrame" name="frame_99">
         <property name="geometry">
          <rect>
@@ -2196,7 +2196,7 @@ border: 1px solid #000000;
         <property name="frameShadow">
          <enum>QFrame::Raised</enum>
         </property>
-        <widget class="QPushButton" name="pushButton_Confirm_SPANDRELadd_5">
+        <widget class="QPushButton" name="pushButton_Confirm_SPANDRELadd">
          <property name="geometry">
           <rect>
            <x>360</x>
@@ -2230,7 +2230,7 @@ QPushButton:hover {
           <string>CONFIRM</string>
          </property>
         </widget>
-        <widget class="QPushButton" name="pushButton_Close_SPANDRELadd_5">
+        <widget class="QPushButton" name="pushButton_Close_SPANDRELadd">
          <property name="geometry">
           <rect>
            <x>740</x>
@@ -2370,7 +2370,7 @@ QPushButton#activeButton {
           <string>NAME            :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_AddSPANDREL_prodID_5">
+        <widget class="QLineEdit" name="lineEdit_AddSPANDREL_prodID">
          <property name="geometry">
           <rect>
            <x>240</x>
@@ -2396,7 +2396,7 @@ border: 1px solid #000000;
           <string>.....</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_AddSPANDREL_Width_5">
+        <widget class="QLineEdit" name="lineEdit_AddSPANDREL_Width">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -2447,7 +2447,7 @@ border: 1px solid #000000;
           <string>STK. QTY.                    :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_AddSPANDREL_Qty_5">
+        <widget class="QLineEdit" name="lineEdit_AddSPANDREL_Qty">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -2523,7 +2523,7 @@ border: 1px solid #000000;
           <string>COLOR                        :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_AddSPANDREL_Color_5">
+        <widget class="QLineEdit" name="lineEdit_AddSPANDREL_Color">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -2574,7 +2574,7 @@ border: 1px solid #000000;
           <string>LENGTH                       :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_AddSPANDREL_Length_5">
+        <widget class="QLineEdit" name="lineEdit_AddSPANDREL_Length">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -2625,7 +2625,7 @@ border: 1px solid #000000;
           <string>OTHER          :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_AddSPANDREL_Price_5">
+        <widget class="QLineEdit" name="lineEdit_AddSPANDREL_Price">
          <property name="geometry">
           <rect>
            <x>240</x>
@@ -2651,7 +2651,7 @@ border: 1px solid #000000;
           <string>.....</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_AddSPANDREL_OtherSpecifications_5">
+        <widget class="QLineEdit" name="lineEdit_AddSPANDREL_OtherSpecifications">
          <property name="geometry">
           <rect>
            <x>240</x>
@@ -2702,7 +2702,7 @@ border: 1px solid #000000;
           <string>THICKNESS (MM)     :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_AddSPANDREL_Thickness_5">
+        <widget class="QLineEdit" name="lineEdit_AddSPANDREL_Thickness">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -2753,7 +2753,7 @@ border: 1px solid #000000;
           <string>SPECIFICATIONS</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_AddSPANDREL_Name_5">
+        <widget class="QLineEdit" name="lineEdit_AddSPANDREL_Name">
          <property name="geometry">
           <rect>
            <x>240</x>
@@ -2781,7 +2781,7 @@ border: 1px solid #000000;
         </widget>
        </widget>
       </widget>
-      <widget class="QWidget" name="ADD_GUTTER_5">
+      <widget class="QWidget" name="ADD_GUTTER">
        <widget class="QFrame" name="frame_100">
         <property name="geometry">
          <rect>
@@ -2801,7 +2801,7 @@ border: 1px solid #000000;
         <property name="frameShadow">
          <enum>QFrame::Raised</enum>
         </property>
-        <widget class="QPushButton" name="pushButton_Confirm_GUTTERadd_5">
+        <widget class="QPushButton" name="pushButton_Confirm_GUTTERadd">
          <property name="geometry">
           <rect>
            <x>360</x>
@@ -2835,7 +2835,7 @@ QPushButton:hover {
           <string>CONFIRM</string>
          </property>
         </widget>
-        <widget class="QPushButton" name="pushButton_Close_GUTTERadd_5">
+        <widget class="QPushButton" name="pushButton_Close_GUTTERadd">
          <property name="geometry">
           <rect>
            <x>740</x>
@@ -2975,7 +2975,7 @@ QPushButton#activeButton {
           <string>NAME            :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_AddGUTTER_prodID_5">
+        <widget class="QLineEdit" name="lineEdit_AddGUTTER_prodID">
          <property name="geometry">
           <rect>
            <x>240</x>
@@ -3001,7 +3001,7 @@ border: 1px solid #000000;
           <string>.....</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_AddGUTTER_Width_5">
+        <widget class="QLineEdit" name="lineEdit_AddGUTTER_Width">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -3052,7 +3052,7 @@ border: 1px solid #000000;
           <string>STK. QTY.                    :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_AddGUTTER_Qty_5">
+        <widget class="QLineEdit" name="lineEdit_AddGUTTER_Qty">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -3128,7 +3128,7 @@ border: 1px solid #000000;
           <string>COLOR                        :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_AddGUTTER_Color_5">
+        <widget class="QLineEdit" name="lineEdit_AddGUTTER_Color">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -3179,7 +3179,7 @@ border: 1px solid #000000;
           <string>LENGTH                       :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_AddGUTTER_Length_5">
+        <widget class="QLineEdit" name="lineEdit_AddGUTTER_Length">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -3230,7 +3230,7 @@ border: 1px solid #000000;
           <string>OTHER          :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_AddGUTTER_Price_5">
+        <widget class="QLineEdit" name="lineEdit_AddGUTTER_Price">
          <property name="geometry">
           <rect>
            <x>240</x>
@@ -3256,7 +3256,7 @@ border: 1px solid #000000;
           <string>.....</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_AddGUTTER_OtherSpecifications_5">
+        <widget class="QLineEdit" name="lineEdit_AddGUTTER_OtherSpecifications">
          <property name="geometry">
           <rect>
            <x>240</x>
@@ -3307,7 +3307,7 @@ border: 1px solid #000000;
           <string>THICKNESS (MM)     :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_AddGUTTER_Thickness_5">
+        <widget class="QLineEdit" name="lineEdit_AddGUTTER_Thickness">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -3358,7 +3358,7 @@ border: 1px solid #000000;
           <string>SPECIFICATIONS</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_AddGUTTER_Name_5">
+        <widget class="QLineEdit" name="lineEdit_AddGUTTER_Name">
          <property name="geometry">
           <rect>
            <x>240</x>
@@ -3386,7 +3386,7 @@ border: 1px solid #000000;
         </widget>
        </widget>
       </widget>
-      <widget class="QWidget" name="ADD_OTHER_5">
+      <widget class="QWidget" name="ADD_OTHER">
        <widget class="QFrame" name="frame_101">
         <property name="geometry">
          <rect>
@@ -3406,7 +3406,7 @@ border: 1px solid #000000;
         <property name="frameShadow">
          <enum>QFrame::Raised</enum>
         </property>
-        <widget class="QPushButton" name="pushButton_Confirm_OTHERadd_5">
+        <widget class="QPushButton" name="pushButton_Confirm_OTHERadd">
          <property name="geometry">
           <rect>
            <x>360</x>
@@ -3440,7 +3440,7 @@ QPushButton:hover {
           <string>CONFIRM</string>
          </property>
         </widget>
-        <widget class="QPushButton" name="pushButton_Close_OTHERadd_5">
+        <widget class="QPushButton" name="pushButton_Close_OTHERadd">
          <property name="geometry">
           <rect>
            <x>740</x>
@@ -3580,7 +3580,7 @@ QPushButton#activeButton {
           <string>NAME            :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_AddOTHER_prodID_5">
+        <widget class="QLineEdit" name="lineEdit_AddOTHER_prodID">
          <property name="geometry">
           <rect>
            <x>240</x>
@@ -3606,7 +3606,7 @@ border: 1px solid #000000;
           <string>.....</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_AddOTHER_Width_5">
+        <widget class="QLineEdit" name="lineEdit_AddOTHER_Width">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -3657,7 +3657,7 @@ border: 1px solid #000000;
           <string>STK. QTY.                    :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_AddOTHER_Qty_5">
+        <widget class="QLineEdit" name="lineEdit_AddOTHER_Qty">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -3733,7 +3733,7 @@ border: 1px solid #000000;
           <string>COLOR                        :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_AddOTHER_Color_5">
+        <widget class="QLineEdit" name="lineEdit_AddOTHER_Color">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -3784,7 +3784,7 @@ border: 1px solid #000000;
           <string>LENGTH                       :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_AddOTHER_Length_5">
+        <widget class="QLineEdit" name="lineEdit_AddOTHER_Length">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -3835,7 +3835,7 @@ border: 1px solid #000000;
           <string>OTHER          :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_AddOTHER_Price_5">
+        <widget class="QLineEdit" name="lineEdit_AddOTHER_Price">
          <property name="geometry">
           <rect>
            <x>240</x>
@@ -3861,7 +3861,7 @@ border: 1px solid #000000;
           <string>.....</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_AddOTHER_OtherSpecifications_5">
+        <widget class="QLineEdit" name="lineEdit_AddOTHER_OtherSpecifications">
          <property name="geometry">
           <rect>
            <x>240</x>
@@ -3912,7 +3912,7 @@ border: 1px solid #000000;
           <string>THICKNESS (MM)     :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_AddOTHER_Thickness_5">
+        <widget class="QLineEdit" name="lineEdit_AddOTHER_Thickness">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -3963,7 +3963,7 @@ border: 1px solid #000000;
           <string>SPECIFICATIONS</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_AddOTHER_Name_5">
+        <widget class="QLineEdit" name="lineEdit_AddOTHER_Name">
          <property name="geometry">
           <rect>
            <x>240</x>
@@ -3992,7 +3992,7 @@ border: 1px solid #000000;
        </widget>
       </widget>
      </widget>
-     <widget class="QComboBox" name="comboBox_Select_Prod_Type_toAdd_5">
+     <widget class="QComboBox" name="comboBox_Select_Prod_Type_toAdd">
       <property name="geometry">
        <rect>
         <x>1220</x>
@@ -4065,7 +4065,7 @@ text-align: center;</string>
      </widget>
     </widget>
    </widget>
-   <widget class="QWidget" name="page_INV_EDIT_STOCK_5">
+   <widget class="QWidget" name="page_INV_EDIT_STOCK">
     <widget class="QFrame" name="frame_102">
      <property name="geometry">
       <rect>
@@ -4102,7 +4102,7 @@ border: 1px solid #000000; </string>
        <string/>
       </property>
      </widget>
-     <widget class="QLabel" name="editStocklabel_5">
+     <widget class="QLabel" name="editStocklabel">
       <property name="geometry">
        <rect>
         <x>120</x>
@@ -4131,7 +4131,7 @@ border: 1px solid #000000; </string>
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QStackedWidget" name="Edit_Select_Prod_Type_5">
+     <widget class="QStackedWidget" name="Edit_Select_Prod_Type">
       <property name="geometry">
        <rect>
         <x>100</x>
@@ -4144,9 +4144,9 @@ border: 1px solid #000000; </string>
        <string notr="true">background: #f6f3ee;</string>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>4</number>
       </property>
-      <widget class="QWidget" name="EDIT_blank_5">
+      <widget class="QWidget" name="EDIT_blank">
        <widget class="QLabel" name="label_613">
         <property name="geometry">
          <rect>
@@ -4175,7 +4175,7 @@ color: #a6a6a6;</string>
         </property>
        </widget>
       </widget>
-      <widget class="QWidget" name="EDIT_ROOF_5">
+      <widget class="QWidget" name="EDIT_ROOF">
        <widget class="QFrame" name="frame_103">
         <property name="geometry">
          <rect>
@@ -4195,7 +4195,7 @@ color: #a6a6a6;</string>
         <property name="frameShadow">
          <enum>QFrame::Raised</enum>
         </property>
-        <widget class="QPushButton" name="pushButton_Save_ROOFedit_5">
+        <widget class="QPushButton" name="pushButton_Save_ROOFedit">
          <property name="geometry">
           <rect>
            <x>360</x>
@@ -4229,7 +4229,7 @@ QPushButton:hover {
           <string>SAVE CHANGES</string>
          </property>
         </widget>
-        <widget class="QPushButton" name="pushButton_Discard_ROOFedit_5">
+        <widget class="QPushButton" name="pushButton_Discard_ROOFedit">
          <property name="geometry">
           <rect>
            <x>740</x>
@@ -4369,7 +4369,7 @@ QPushButton#activeButton {
           <string>NAME            :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_EditROOF_prodID_5">
+        <widget class="QLineEdit" name="lineEdit_EditROOF_prodID">
          <property name="geometry">
           <rect>
            <x>240</x>
@@ -4395,7 +4395,7 @@ border: 1px solid #000000;
           <string>.....</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_EditROOF_Width_5">
+        <widget class="QLineEdit" name="lineEdit_EditROOF_Width">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -4446,7 +4446,7 @@ border: 1px solid #000000;
           <string>STK. QTY.                    :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_EditROOF_Qty_5">
+        <widget class="QLineEdit" name="lineEdit_EditROOF_Qty">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -4522,7 +4522,7 @@ border: 1px solid #000000;
           <string>COLOR                        :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_EditROOF_Color_5">
+        <widget class="QLineEdit" name="lineEdit_EditROOF_Color">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -4573,7 +4573,7 @@ border: 1px solid #000000;
           <string>LENGTH                       :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_EditROOF_Length_5">
+        <widget class="QLineEdit" name="lineEdit_EditROOF_Length">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -4624,7 +4624,7 @@ border: 1px solid #000000;
           <string>OTHER          :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_EditROOF_Price_5">
+        <widget class="QLineEdit" name="lineEdit_EditROOF_Price">
          <property name="geometry">
           <rect>
            <x>240</x>
@@ -4650,7 +4650,7 @@ border: 1px solid #000000;
           <string>.....</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_EditROOF_OtherSpecifications_5">
+        <widget class="QLineEdit" name="lineEdit_EditROOF_OtherSpecifications">
          <property name="geometry">
           <rect>
            <x>240</x>
@@ -4701,7 +4701,7 @@ border: 1px solid #000000;
           <string>THICKNESS (MM)     :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_EditROOF_Thickness_5">
+        <widget class="QLineEdit" name="lineEdit_EditROOF_Thickness">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -4752,7 +4752,7 @@ border: 1px solid #000000;
           <string>SPECIFICATIONS</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_EditROOF_Name_5">
+        <widget class="QLineEdit" name="lineEdit_EditROOF_Name">
          <property name="geometry">
           <rect>
            <x>240</x>
@@ -4780,7 +4780,7 @@ border: 1px solid #000000;
         </widget>
        </widget>
       </widget>
-      <widget class="QWidget" name="EDIT_SPANDREL_5">
+      <widget class="QWidget" name="EDIT_SPANDREL">
        <widget class="QFrame" name="frame_104">
         <property name="geometry">
          <rect>
@@ -4800,7 +4800,7 @@ border: 1px solid #000000;
         <property name="frameShadow">
          <enum>QFrame::Raised</enum>
         </property>
-        <widget class="QPushButton" name="pushButton_Save_SPANDRELedit_5">
+        <widget class="QPushButton" name="pushButton_Save_SPANDRELedit">
          <property name="geometry">
           <rect>
            <x>360</x>
@@ -4834,7 +4834,7 @@ QPushButton:hover {
           <string>SAVE CHANGES</string>
          </property>
         </widget>
-        <widget class="QPushButton" name="pushButton_Discard_SPANDRELedit_5">
+        <widget class="QPushButton" name="pushButton_Discard_SPANDRELedit">
          <property name="geometry">
           <rect>
            <x>740</x>
@@ -4974,7 +4974,7 @@ QPushButton#activeButton {
           <string>NAME            :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_EditSPANDREL_prodID_5">
+        <widget class="QLineEdit" name="lineEdit_EditSPANDREL_prodID">
          <property name="geometry">
           <rect>
            <x>240</x>
@@ -5000,7 +5000,7 @@ border: 1px solid #000000;
           <string>.....</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_EditSPANDREL_Width_5">
+        <widget class="QLineEdit" name="lineEdit_EditSPANDREL_Width">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -5051,7 +5051,7 @@ border: 1px solid #000000;
           <string>STK. QTY.                    :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_EditSPANDREL_Qty_5">
+        <widget class="QLineEdit" name="lineEdit_EditSPANDREL_Qty">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -5127,7 +5127,7 @@ border: 1px solid #000000;
           <string>COLOR                        :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_EditSPANDREL_Color_5">
+        <widget class="QLineEdit" name="lineEdit_EditSPANDREL_Color">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -5178,7 +5178,7 @@ border: 1px solid #000000;
           <string>LENGTH                       :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_EditSPANDREL_Length_5">
+        <widget class="QLineEdit" name="lineEdit_EditSPANDREL_Length">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -5229,7 +5229,7 @@ border: 1px solid #000000;
           <string>OTHER          :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_EditSPANDREL_Price_5">
+        <widget class="QLineEdit" name="lineEdit_EditSPANDREL_Price">
          <property name="geometry">
           <rect>
            <x>240</x>
@@ -5255,7 +5255,7 @@ border: 1px solid #000000;
           <string>.....</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_EditSPANDREL_OtherSpecifications_5">
+        <widget class="QLineEdit" name="lineEdit_EditSPANDREL_OtherSpecifications">
          <property name="geometry">
           <rect>
            <x>240</x>
@@ -5306,7 +5306,7 @@ border: 1px solid #000000;
           <string>THICKNESS (MM)     :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_EditSPANDREL_Thickness_5">
+        <widget class="QLineEdit" name="lineEdit_EditSPANDREL_Thickness">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -5357,7 +5357,7 @@ border: 1px solid #000000;
           <string>SPECIFICATIONS</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_EditSPANDREL_Name_5">
+        <widget class="QLineEdit" name="lineEdit_EditSPANDREL_Name">
          <property name="geometry">
           <rect>
            <x>240</x>
@@ -5385,7 +5385,7 @@ border: 1px solid #000000;
         </widget>
        </widget>
       </widget>
-      <widget class="QWidget" name="EDIT_GUTTER_5">
+      <widget class="QWidget" name="EDIT_GUTTER">
        <widget class="QFrame" name="frame_105">
         <property name="geometry">
          <rect>
@@ -5405,7 +5405,7 @@ border: 1px solid #000000;
         <property name="frameShadow">
          <enum>QFrame::Raised</enum>
         </property>
-        <widget class="QPushButton" name="pushButton_Save_GUTTERedit_5">
+        <widget class="QPushButton" name="pushButton_Save_GUTTERedit">
          <property name="geometry">
           <rect>
            <x>360</x>
@@ -5439,7 +5439,7 @@ QPushButton:hover {
           <string>SAVE CHANGES</string>
          </property>
         </widget>
-        <widget class="QPushButton" name="pushButton_Discard_GUTTERedit_5">
+        <widget class="QPushButton" name="pushButton_Discard_GUTTERedit">
          <property name="geometry">
           <rect>
            <x>740</x>
@@ -5579,7 +5579,7 @@ QPushButton#activeButton {
           <string>NAME            :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_EditGUTTER_prodID_5">
+        <widget class="QLineEdit" name="lineEdit_EditGUTTER_prodID">
          <property name="geometry">
           <rect>
            <x>240</x>
@@ -5605,7 +5605,7 @@ border: 1px solid #000000;
           <string>.....</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_EditGUTTER_Width_5">
+        <widget class="QLineEdit" name="lineEdit_EditGUTTER_Width">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -5656,7 +5656,7 @@ border: 1px solid #000000;
           <string>STK. QTY.                    :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_EditGUTTER_Qty_5">
+        <widget class="QLineEdit" name="lineEdit_EditGUTTER_Qty">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -5732,7 +5732,7 @@ border: 1px solid #000000;
           <string>COLOR                        :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_EditGUTTER_Color_5">
+        <widget class="QLineEdit" name="lineEdit_EditGUTTER_Color">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -5783,7 +5783,7 @@ border: 1px solid #000000;
           <string>LENGTH                       :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_EditGUTTER_Length_5">
+        <widget class="QLineEdit" name="lineEdit_EditGUTTER_Length">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -5834,7 +5834,7 @@ border: 1px solid #000000;
           <string>OTHER          :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_EditGUTTER_Price_5">
+        <widget class="QLineEdit" name="lineEdit_EditGUTTER_Price">
          <property name="geometry">
           <rect>
            <x>240</x>
@@ -5860,7 +5860,7 @@ border: 1px solid #000000;
           <string>.....</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_EditGUTTER_OtherSpecifications_5">
+        <widget class="QLineEdit" name="lineEdit_EditGUTTER_OtherSpecifications">
          <property name="geometry">
           <rect>
            <x>240</x>
@@ -5911,7 +5911,7 @@ border: 1px solid #000000;
           <string>THICKNESS (MM)     :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_EditGUTTER_Thickness_5">
+        <widget class="QLineEdit" name="lineEdit_EditGUTTER_Thickness">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -5962,7 +5962,7 @@ border: 1px solid #000000;
           <string>SPECIFICATIONS</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_EditGUTTER_Name_5">
+        <widget class="QLineEdit" name="lineEdit_EditGUTTER_Name">
          <property name="geometry">
           <rect>
            <x>240</x>
@@ -5990,7 +5990,7 @@ border: 1px solid #000000;
         </widget>
        </widget>
       </widget>
-      <widget class="QWidget" name="EDIT_OTHER_5">
+      <widget class="QWidget" name="EDIT_OTHER">
        <widget class="QFrame" name="frame_editother_7">
         <property name="geometry">
          <rect>
@@ -6085,7 +6085,7 @@ border: 1px solid #000000;
           <string>NAME            :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_EditOTHER_prodID_5">
+        <widget class="QLineEdit" name="lineEdit_EditOTHER_prodID">
          <property name="geometry">
           <rect>
            <x>240</x>
@@ -6111,7 +6111,7 @@ border: 1px solid #000000;
           <string>.....</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_EditOTHER_Width_5">
+        <widget class="QLineEdit" name="lineEdit_EditOTHER_Width">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -6162,7 +6162,7 @@ border: 1px solid #000000;
           <string>STK. QTY.                    :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_EditOTHER_Qty_5">
+        <widget class="QLineEdit" name="lineEdit_EditOTHER_Qty">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -6238,7 +6238,7 @@ border: 1px solid #000000;
           <string>COLOR                        :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_EditOTHER_Color_5">
+        <widget class="QLineEdit" name="lineEdit_EditOTHER_Color">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -6289,7 +6289,7 @@ border: 1px solid #000000;
           <string>LENGTH                       :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_EditOTHER_Length_5">
+        <widget class="QLineEdit" name="lineEdit_EditOTHER_Length">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -6340,7 +6340,7 @@ border: 1px solid #000000;
           <string>OTHER          :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_EditOTHER_Price_5">
+        <widget class="QLineEdit" name="lineEdit_EditOTHER_Price">
          <property name="geometry">
           <rect>
            <x>240</x>
@@ -6366,7 +6366,7 @@ border: 1px solid #000000;
           <string>.....</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_EditOTHER_OtherSpecifications_5">
+        <widget class="QLineEdit" name="lineEdit_EditOTHER_OtherSpecifications">
          <property name="geometry">
           <rect>
            <x>240</x>
@@ -6417,7 +6417,7 @@ border: 1px solid #000000;
           <string>THICKNESS (MM)     :</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_EditOTHER_Thickness_5">
+        <widget class="QLineEdit" name="lineEdit_EditOTHER_Thickness">
          <property name="geometry">
           <rect>
            <x>1100</x>
@@ -6468,7 +6468,7 @@ border: 1px solid #000000;
           <string>SPECIFICATIONS</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_EditOTHER_Name_5">
+        <widget class="QLineEdit" name="lineEdit_EditOTHER_Name">
          <property name="geometry">
           <rect>
            <x>240</x>
@@ -6514,7 +6514,7 @@ border: 1px solid #000000;
         <property name="frameShadow">
          <enum>QFrame::Raised</enum>
         </property>
-        <widget class="QPushButton" name="pushButton_Save_OTHERedit_5">
+        <widget class="QPushButton" name="pushButton_Save_OTHERedit">
          <property name="geometry">
           <rect>
            <x>360</x>
@@ -6548,7 +6548,7 @@ QPushButton:hover {
           <string>SAVE CHANGES</string>
          </property>
         </widget>
-        <widget class="QPushButton" name="pushButton_Discard_OTHERedit_5">
+        <widget class="QPushButton" name="pushButton_Discard_OTHERedit">
          <property name="geometry">
           <rect>
            <x>740</x>
@@ -6596,7 +6596,7 @@ QPushButton#activeButton {
        </widget>
       </widget>
      </widget>
-     <widget class="QComboBox" name="comboBox_Select_Prod_Type_toEdit_5">
+     <widget class="QComboBox" name="comboBox_Select_Prod_Type_toEdit">
       <property name="geometry">
        <rect>
         <x>1220</x>
@@ -6669,7 +6669,7 @@ text-align: center;</string>
      </widget>
     </widget>
    </widget>
-   <widget class="QWidget" name="page_INV_DELETE_STOCK_5">
+   <widget class="QWidget" name="page_INV_DELETE_STOCK">
     <widget class="QFrame" name="frame_107">
      <property name="geometry">
       <rect>
@@ -6724,7 +6724,7 @@ border: 1px solid #000000; </string>
         <string/>
        </property>
       </widget>
-      <widget class="QLabel" name="deleteStocklabel_5">
+      <widget class="QLabel" name="deleteStocklabel">
        <property name="geometry">
         <rect>
          <x>120</x>
@@ -6753,7 +6753,7 @@ border: 1px solid #000000; </string>
         <set>Qt::AlignCenter</set>
        </property>
       </widget>
-      <widget class="QStackedWidget" name="Delete_Select_Prod_Type_5">
+      <widget class="QStackedWidget" name="Delete_Select_Prod_Type">
        <property name="geometry">
         <rect>
          <x>100</x>
@@ -6766,9 +6766,9 @@ border: 1px solid #000000; </string>
         <string notr="true">background: #f6f3ee;</string>
        </property>
        <property name="currentIndex">
-        <number>0</number>
+        <number>4</number>
        </property>
-       <widget class="QWidget" name="DELETE_blank_5">
+       <widget class="QWidget" name="DELETE_blank">
         <widget class="QLabel" name="label_656">
          <property name="geometry">
           <rect>
@@ -6797,7 +6797,7 @@ color: #a6a6a6;</string>
          </property>
         </widget>
        </widget>
-       <widget class="QWidget" name="DELETE_ROOF_5">
+       <widget class="QWidget" name="DELETE_ROOF">
         <widget class="QFrame" name="frame_109">
          <property name="geometry">
           <rect>
@@ -6817,7 +6817,7 @@ color: #a6a6a6;</string>
          <property name="frameShadow">
           <enum>QFrame::Raised</enum>
          </property>
-         <widget class="QPushButton" name="pushButton_Confirm_ROOFdelete_5">
+         <widget class="QPushButton" name="pushButton_Confirm_ROOFdelete">
           <property name="geometry">
            <rect>
             <x>360</x>
@@ -6851,7 +6851,7 @@ QPushButton:hover {
            <string>CONFIRM</string>
           </property>
          </widget>
-         <widget class="QPushButton" name="pushButton_Close_ROOFdelete_5">
+         <widget class="QPushButton" name="pushButton_Close_ROOFdelete">
           <property name="geometry">
            <rect>
             <x>740</x>
@@ -6897,7 +6897,7 @@ QPushButton#activeButton {
           </property>
          </widget>
         </widget>
-        <widget class="QFrame" name="frame_deleteroof_5">
+        <widget class="QFrame" name="frame_deleteroof">
          <property name="geometry">
           <rect>
            <x>-10</x>
@@ -6941,7 +6941,7 @@ QPushButton#activeButton {
            <string>PRODUCT ID                  :</string>
           </property>
          </widget>
-         <widget class="QLineEdit" name="lineEdit_DeleteROOF_prodID_5">
+         <widget class="QLineEdit" name="lineEdit_DeleteROOF_prodID">
           <property name="geometry">
            <rect>
             <x>530</x>
@@ -7014,7 +7014,7 @@ text-align: center;</string>
            <string>.....</string>
           </property>
          </widget>
-         <widget class="QLineEdit" name="lineEdit_DeleteROOF_Name_5">
+         <widget class="QLineEdit" name="lineEdit_DeleteROOF_Name">
           <property name="geometry">
            <rect>
             <x>530</x>
@@ -7072,7 +7072,7 @@ color: #d75413;
          </widget>
         </widget>
        </widget>
-       <widget class="QWidget" name="DELETE_SPANDREL_5">
+       <widget class="QWidget" name="DELETE_SPANDREL">
         <widget class="QFrame" name="frame_110">
          <property name="geometry">
           <rect>
@@ -7092,7 +7092,7 @@ color: #d75413;
          <property name="frameShadow">
           <enum>QFrame::Raised</enum>
          </property>
-         <widget class="QPushButton" name="pushButton_Confirm_SPANDRELdelete_5">
+         <widget class="QPushButton" name="pushButton_Confirm_SPANDRELdelete">
           <property name="geometry">
            <rect>
             <x>360</x>
@@ -7126,7 +7126,7 @@ QPushButton:hover {
            <string>CONFIRM</string>
           </property>
          </widget>
-         <widget class="QPushButton" name="pushButton_Close_SPANDRELdelete_5">
+         <widget class="QPushButton" name="pushButton_Close_SPANDRELdelete">
           <property name="geometry">
            <rect>
             <x>740</x>
@@ -7216,7 +7216,7 @@ QPushButton#activeButton {
            <string>PRODUCT ID                  :</string>
           </property>
          </widget>
-         <widget class="QLineEdit" name="lineEdit_DeleteSPANDREL_prodID_5">
+         <widget class="QLineEdit" name="lineEdit_DeleteSPANDREL_prodID">
           <property name="geometry">
            <rect>
             <x>530</x>
@@ -7289,7 +7289,7 @@ text-align: center;</string>
            <string>.....</string>
           </property>
          </widget>
-         <widget class="QLineEdit" name="lineEdit_DeleteSPANDREL_Name_5">
+         <widget class="QLineEdit" name="lineEdit_DeleteSPANDREL_Name">
           <property name="geometry">
            <rect>
             <x>530</x>
@@ -7347,7 +7347,7 @@ color: #d75413;
          </widget>
         </widget>
        </widget>
-       <widget class="QWidget" name="DELETE_GUTTER_5">
+       <widget class="QWidget" name="DELETE_GUTTER">
         <widget class="QFrame" name="frame_111">
          <property name="geometry">
           <rect>
@@ -7367,7 +7367,7 @@ color: #d75413;
          <property name="frameShadow">
           <enum>QFrame::Raised</enum>
          </property>
-         <widget class="QPushButton" name="pushButton_Confirm_GUTTERdelete_5">
+         <widget class="QPushButton" name="pushButton_Confirm_GUTTERdelete">
           <property name="geometry">
            <rect>
             <x>360</x>
@@ -7401,7 +7401,7 @@ QPushButton:hover {
            <string>CONFIRM</string>
           </property>
          </widget>
-         <widget class="QPushButton" name="pushButton_Close_GUTTERdelete_5">
+         <widget class="QPushButton" name="pushButton_Close_GUTTERdelete">
           <property name="geometry">
            <rect>
             <x>740</x>
@@ -7491,7 +7491,7 @@ QPushButton#activeButton {
            <string>PRODUCT ID                  :</string>
           </property>
          </widget>
-         <widget class="QLineEdit" name="lineEdit_DeleteGUTTER_prodID_5">
+         <widget class="QLineEdit" name="lineEdit_DeleteGUTTER_prodID">
           <property name="geometry">
            <rect>
             <x>530</x>
@@ -7564,7 +7564,7 @@ text-align: center;</string>
            <string>.....</string>
           </property>
          </widget>
-         <widget class="QLineEdit" name="lineEdit_DeleteGUTTER_Name_5">
+         <widget class="QLineEdit" name="lineEdit_DeleteGUTTER_Name">
           <property name="geometry">
            <rect>
             <x>530</x>
@@ -7622,7 +7622,7 @@ color: #d75413;
          </widget>
         </widget>
        </widget>
-       <widget class="QWidget" name="DELETE_OTHER_5">
+       <widget class="QWidget" name="DELETE_OTHER">
         <widget class="QFrame" name="frame_deletegutter_14">
          <property name="geometry">
           <rect>
@@ -7667,7 +7667,7 @@ color: #d75413;
            <string>PRODUCT ID                  :</string>
           </property>
          </widget>
-         <widget class="QLineEdit" name="lineEdit_DeleteOTHER_prodID_5">
+         <widget class="QLineEdit" name="lineEdit_DeleteOTHER_prodID">
           <property name="geometry">
            <rect>
             <x>530</x>
@@ -7740,7 +7740,7 @@ text-align: center;</string>
            <string>.....</string>
           </property>
          </widget>
-         <widget class="QLineEdit" name="lineEdit_DeleteOTHER_Name_5">
+         <widget class="QLineEdit" name="lineEdit_DeleteOTHER_Name">
           <property name="geometry">
            <rect>
             <x>530</x>
@@ -7816,7 +7816,7 @@ color: #d75413;
          <property name="frameShadow">
           <enum>QFrame::Raised</enum>
          </property>
-         <widget class="QPushButton" name="pushButton_Confirm_OTHERdelete_5">
+         <widget class="QPushButton" name="pushButton_Confirm_OTHERdelete">
           <property name="geometry">
            <rect>
             <x>360</x>
@@ -7850,7 +7850,7 @@ QPushButton:hover {
            <string>CONFIRM</string>
           </property>
          </widget>
-         <widget class="QPushButton" name="pushButton_Close_OTHERdelete_5">
+         <widget class="QPushButton" name="pushButton_Close_OTHERdelete">
           <property name="geometry">
            <rect>
             <x>740</x>
@@ -7898,7 +7898,7 @@ QPushButton#activeButton {
         </widget>
        </widget>
       </widget>
-      <widget class="QComboBox" name="comboBox_Select_Prod_Type_toDelete_5">
+      <widget class="QComboBox" name="comboBox_Select_Prod_Type_toDelete">
        <property name="geometry">
         <rect>
          <x>1220</x>

@@ -6,6 +6,7 @@ from ui.generated_files.UI_OSales import Ui_OWNER_SALES
 from ui.generated_files.UI_OStockHistory import Ui_OWNER_STOCKHISTORY
 from ui.generated_files.UI_OAccount import Ui_OWNER_ACCOUNT
 
+from core.controllers.OInv_pageController import InventoryPageController 
 from core.controllers.OAcc_pageController import AccountPageController
 
 class OwnerController:
@@ -43,6 +44,10 @@ class OwnerController:
         self.inventory_ui = Ui_OWNER_INVENTORY()
         self.inventory_ui.setupUi(self.inventory_page)
         self.stack.addWidget(self.inventory_page)
+        
+        # Initialize inventory controller
+        from core.controllers.OInv_pageController import InventoryPageController
+        self.inventory_controller = InventoryPageController(self.inventory_ui)
     
     def _init_orders(self):
         self.orders_page = QWidget()
@@ -210,27 +215,44 @@ class OwnerController:
         ])
     
     def set_active_button(self, button_name):
-        """Set the active button style and update all others"""
-        # 1. First reset all buttons
-        for name, button in self.nav_buttons.items():
-            button.setProperty('class', '')
-            button.style().unpolish(button)
-            button.style().polish(button)
-            button.update()
+        """Set the active button style using direct stylesheet changes"""
+        # Reset all buttons first
+        for button in self.nav_buttons.values():
+            button.setStyleSheet("""
+                QPushButton {
+                    background-color: white;
+                    color: black;
+                    border-radius: 25px;
+                    padding: 9px;
+                    text-align: left;
+                }
+                QPushButton:hover {
+                    background-color: #c25b55;
+                    color: black;
+                    font-weight: 700;
+                }
+            """)
         
-        # 2. Set new active button
+        # Set new active button
         button = self.nav_buttons.get(button_name)
         if button:
-            button.setProperty('class', 'activeButton')
-            
-            # Force style update
-            button.style().unpolish(button)
-            button.style().polish(button)
-            button.update()
-            
+            button.setStyleSheet("""
+                QPushButton {
+                    background-color: #c25b55;
+                    color: black;
+                    font-weight: 700;
+                    border-radius: 25px;
+                    padding: 9px;
+                    text-align: left;
+                }
+                QPushButton:hover {
+                    background-color: #c25b55;
+                    color: black;
+                    font-weight: 700;
+                }
+            """)
             self.current_active_button = button
         
-        # Force immediate GUI update
         QApplication.processEvents()
     
     def show_dashboard(self):
