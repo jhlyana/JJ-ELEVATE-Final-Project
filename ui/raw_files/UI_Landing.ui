@@ -16,16 +16,16 @@
   <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
-     <x>710</x>
+     <x>610</x>
      <y>650</y>
-     <width>501</width>
+     <width>691</width>
      <height>51</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>Poppins Extrabold</family>
-     <pointsize>12</pointsize>
+     <pointsize>18</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -40,17 +40,17 @@ background: transparent;</string>
   <widget class="QLabel" name="BG">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>1925</width>
-     <height>982</height>
+     <x>-6</x>
+     <y>-9</y>
+     <width>2001</width>
+     <height>1051</height>
     </rect>
    </property>
    <property name="text">
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../../../../Documents/assets/images/BACKGROUND.png</pixmap>
+    <pixmap>../../../../New folder/resources/images/BACKGROUND.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -59,16 +59,18 @@ background: transparent;</string>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>900</x>
-     <y>430</y>
-     <width>431</width>
-     <height>101</height>
+     <x>860</x>
+     <y>420</y>
+     <width>581</width>
+     <height>111</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>Arial Black</family>
-     <pointsize>60</pointsize>
+     <pointsize>80</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
     </font>
    </property>
    <property name="styleSheet">
@@ -84,16 +86,16 @@ background: transparent;</string>
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>600</x>
-     <y>440</y>
-     <width>281</width>
+     <x>510</x>
+     <y>430</y>
+     <width>371</width>
      <height>101</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>Rubik Mono One</family>
-     <pointsize>60</pointsize>
+     <pointsize>80</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -109,16 +111,16 @@ background: transparent;</string>
   <widget class="QPushButton" name="pushButton_cont_2Login">
    <property name="geometry">
     <rect>
-     <x>800</x>
-     <y>800</y>
-     <width>281</width>
-     <height>41</height>
+     <x>810</x>
+     <y>860</y>
+     <width>321</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>MS Shell Dlg 2</family>
-     <pointsize>14</pointsize>
+     <pointsize>16</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -155,7 +157,7 @@ font-weight: 700;
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../../../../Documents/assets/images/JJLOGO.png</pixmap>
+    <pixmap>../../../../New folder/resources/images/J&amp;J logo.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -164,16 +166,16 @@ font-weight: 700;
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>600</x>
+     <x>530</x>
      <y>550</y>
-     <width>721</width>
+     <width>851</width>
      <height>51</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>Sora Semibold</family>
-     <pointsize>21</pointsize>
+     <pointsize>26</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -185,6 +187,13 @@ background: transparent;</string>
     <string>Elevate Your Space, One Roof at a Time</string>
    </property>
   </widget>
+  <zorder>BG</zorder>
+  <zorder>label_5</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_3</zorder>
+  <zorder>pushButton_cont_2Login</zorder>
+  <zorder>label</zorder>
+  <zorder>label_4</zorder>
  </widget>
  <resources/>
  <connections/>

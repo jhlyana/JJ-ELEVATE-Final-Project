@@ -13,13 +13,16 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:white;</string>
+  </property>
   <widget class="QFrame" name="frame">
    <property name="geometry">
     <rect>
      <x>990</x>
      <y>0</y>
      <width>931</width>
-     <height>982</height>
+     <height>1041</height>
     </rect>
    </property>
    <property name="frameShape">
@@ -36,6 +39,9 @@
       <width>931</width>
       <height>861</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:white;</string>
     </property>
     <property name="currentIndex">
      <number>2</number>
@@ -530,7 +536,7 @@ color: white;</string>
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../../../../Documents/assets/images/JJLOGO.png</pixmap>
+    <pixmap>../../../../New folder/resources/images/J&amp;J logo.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -645,7 +651,7 @@ background: transparent;
      <x>0</x>
      <y>0</y>
      <width>1921</width>
-     <height>982</height>
+     <height>1031</height>
     </rect>
    </property>
    <property name="minimumSize">
@@ -664,12 +670,16 @@ background: transparent;
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../../../../Documents/assets/images/PIC_log_sign_in.png</pixmap>
+    <pixmap>../../../../New folder/resources/images/login_pic.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
    </property>
   </widget>
+  <zorder>PIC</zorder>
+  <zorder>frame</zorder>
+  <zorder>label</zorder>
+  <zorder>jframe</zorder>
  </widget>
  <resources/>
  <connections/>

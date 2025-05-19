@@ -16,7 +16,7 @@ class Ui_OWNER_INVENTORY(object):
         OWNER_INVENTORY.setObjectName("OWNER_INVENTORY")
         OWNER_INVENTORY.resize(1936, 1005)
         self.frame_4 = QtWidgets.QFrame(OWNER_INVENTORY)
-        self.frame_4.setGeometry(QtCore.QRect(330, 20, 611, 71))
+        self.frame_4.setGeometry(QtCore.QRect(1120, 20, 511, 71))
         self.frame_4.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_4.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_4.setObjectName("frame_4")
@@ -435,233 +435,6 @@ class Ui_OWNER_INVENTORY(object):
         self.pushButton_OWNER_Delete_Inventory.setIcon(icon2)
         self.pushButton_OWNER_Delete_Inventory.setIconSize(QtCore.QSize(27, 27))
         self.pushButton_OWNER_Delete_Inventory.setObjectName("pushButton_OWNER_Delete_Inventory")
-        self.LeftMenuBar = QtWidgets.QFrame(OWNER_INVENTORY)
-        self.LeftMenuBar.setGeometry(QtCore.QRect(0, 0, 301, 981))
-        font = QtGui.QFont()
-        font.setPointSize(14)
-        self.LeftMenuBar.setFont(font)
-        self.LeftMenuBar.setStyleSheet("background-color: rgba(235, 224, 204, 0.47); /* #ebe0cc with 47% opacity */")
-        self.LeftMenuBar.setFrameShape(QtWidgets.QFrame.NoFrame)
-        self.LeftMenuBar.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.LeftMenuBar.setObjectName("LeftMenuBar")
-        self.JJelevate_text_5 = QtWidgets.QLabel(self.LeftMenuBar)
-        self.JJelevate_text_5.setGeometry(QtCore.QRect(30, 250, 251, 21))
-        font = QtGui.QFont()
-        font.setFamily("Montserrat ExtraBold")
-        font.setPointSize(18)
-        font.setBold(True)
-        font.setWeight(75)
-        self.JJelevate_text_5.setFont(font)
-        self.JJelevate_text_5.setStyleSheet("color: #12245c; \n"
-"background: transparent;\n"
-"")
-        self.JJelevate_text_5.setScaledContents(True)
-        self.JJelevate_text_5.setObjectName("JJelevate_text_5")
-        self.Logo_5 = QtWidgets.QLabel(self.LeftMenuBar)
-        self.Logo_5.setGeometry(QtCore.QRect(30, 50, 241, 171))
-        self.Logo_5.setStyleSheet("background: transparent;")
-        self.Logo_5.setText("")
-        self.Logo_5.setPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/JJLOGO.png"))
-        self.Logo_5.setScaledContents(True)
-        self.Logo_5.setAlignment(QtCore.Qt.AlignCenter)
-        self.Logo_5.setObjectName("Logo_5")
-        self.pushButton_Dashboard = QtWidgets.QPushButton(self.LeftMenuBar)
-        self.pushButton_Dashboard.setGeometry(QtCore.QRect(30, 310, 231, 51))
-        font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(12)
-        font.setBold(False)
-        font.setItalic(False)
-        font.setWeight(50)
-        self.pushButton_Dashboard.setFont(font)
-        self.pushButton_Dashboard.setStyleSheet("QPushButton {\n"
-"    background-color: white;\n"
-"    color: black;\n"
-"    border-radius: 25px;\n"
-"    padding: 9px;\n"
-"text-align: left;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"QPushButton#activeButton {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"")
-        icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/dashboard_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Dashboard.setIcon(icon3)
-        self.pushButton_Dashboard.setIconSize(QtCore.QSize(40, 40))
-        self.pushButton_Dashboard.setObjectName("pushButton_Dashboard")
-        self.pushButton_Inventory = QtWidgets.QPushButton(self.LeftMenuBar)
-        self.pushButton_Inventory.setGeometry(QtCore.QRect(30, 390, 231, 51))
-        font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(12)
-        self.pushButton_Inventory.setFont(font)
-        self.pushButton_Inventory.setStyleSheet("QPushButton {\n"
-"    background-color: white;\n"
-"    color: black;\n"
-"    border-radius: 25px;\n"
-"    padding: 9px;\n"
-"text-align: left;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"QPushButton#activeButton {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"")
-        icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/inventory_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Inventory.setIcon(icon4)
-        self.pushButton_Inventory.setIconSize(QtCore.QSize(50, 45))
-        self.pushButton_Inventory.setObjectName("pushButton_Inventory")
-        self.pushButton_Orders = QtWidgets.QPushButton(self.LeftMenuBar)
-        self.pushButton_Orders.setGeometry(QtCore.QRect(30, 470, 231, 51))
-        font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(12)
-        self.pushButton_Orders.setFont(font)
-        self.pushButton_Orders.setStyleSheet("QPushButton {\n"
-"    background-color: white;\n"
-"    color: black;\n"
-"    border-radius: 25px;\n"
-"    padding: 9px;\n"
-"text-align: left;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"QPushButton#activeButton {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"")
-        icon5 = QtGui.QIcon()
-        icon5.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/orders_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Orders.setIcon(icon5)
-        self.pushButton_Orders.setIconSize(QtCore.QSize(46, 42))
-        self.pushButton_Orders.setObjectName("pushButton_Orders")
-        self.pushButton_Sales = QtWidgets.QPushButton(self.LeftMenuBar)
-        self.pushButton_Sales.setGeometry(QtCore.QRect(30, 550, 231, 51))
-        font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(12)
-        self.pushButton_Sales.setFont(font)
-        self.pushButton_Sales.setStyleSheet("QPushButton {\n"
-"    background-color: white;\n"
-"    color: black;\n"
-"    border-radius: 25px;\n"
-"    padding: 9px;\n"
-"text-align: left;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"QPushButton#activeButton {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"")
-        icon6 = QtGui.QIcon()
-        icon6.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/sales_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Sales.setIcon(icon6)
-        self.pushButton_Sales.setIconSize(QtCore.QSize(35, 35))
-        self.pushButton_Sales.setObjectName("pushButton_Sales")
-        self.pushButton_Account = QtWidgets.QPushButton(self.LeftMenuBar)
-        self.pushButton_Account.setGeometry(QtCore.QRect(30, 710, 231, 51))
-        font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(12)
-        self.pushButton_Account.setFont(font)
-        self.pushButton_Account.setStyleSheet("QPushButton {\n"
-"    background-color: white;\n"
-"    color: black;\n"
-"    border-radius: 25px;\n"
-"    padding: 9px;\n"
-"text-align: left;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"QPushButton#activeButton {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"")
-        icon7 = QtGui.QIcon()
-        icon7.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/account_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Account.setIcon(icon7)
-        self.pushButton_Account.setIconSize(QtCore.QSize(48, 48))
-        self.pushButton_Account.setObjectName("pushButton_Account")
-        self.pushButton_LogOut = QtWidgets.QPushButton(self.LeftMenuBar)
-        self.pushButton_LogOut.setGeometry(QtCore.QRect(30, 890, 231, 51))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(12)
-        font.setBold(True)
-        font.setWeight(87)
-        self.pushButton_LogOut.setFont(font)
-        self.pushButton_LogOut.setStyleSheet("QPushButton {\n"
-"    background-color:#022162;\n"
-"color:white;\n"
-"font-weight: 700;\n"
-"    border-radius: 25px;\n"
-"    padding: 9px;\n"
-"font-size: 14;\n"
-"text-align: left;\n"
-"}")
-        icon8 = QtGui.QIcon()
-        icon8.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/WHITElogout_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_LogOut.setIcon(icon8)
-        self.pushButton_LogOut.setIconSize(QtCore.QSize(38, 38))
-        self.pushButton_LogOut.setObjectName("pushButton_LogOut")
-        self.pushButton_Stock_History = QtWidgets.QPushButton(self.LeftMenuBar)
-        self.pushButton_Stock_History.setGeometry(QtCore.QRect(30, 630, 231, 51))
-        font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(12)
-        self.pushButton_Stock_History.setFont(font)
-        self.pushButton_Stock_History.setStyleSheet("QPushButton {\n"
-"    background-color: white;\n"
-"    color: black;\n"
-"    border-radius: 25px;\n"
-"    padding: 9px;\n"
-"text-align: left;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"QPushButton#activeButton {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"")
-        self.pushButton_Stock_History.setIcon(icon4)
-        self.pushButton_Stock_History.setIconSize(QtCore.QSize(50, 45))
-        self.pushButton_Stock_History.setObjectName("pushButton_Stock_History")
         self.pushButton_ViewHistory = QtWidgets.QPushButton(OWNER_INVENTORY)
         self.pushButton_ViewHistory.setGeometry(QtCore.QRect(1630, 30, 241, 51))
         font = QtGui.QFont()
@@ -3994,6 +3767,256 @@ class Ui_OWNER_INVENTORY(object):
         self.label_669.setScaledContents(True)
         self.label_669.setObjectName("label_669")
         self.INVENTORY_afterBUTTONSclick.addWidget(self.page_INV_DELETE_STOCK_5)
+        self.LeftMenuBar = QtWidgets.QFrame(OWNER_INVENTORY)
+        self.LeftMenuBar.setGeometry(QtCore.QRect(0, 0, 301, 1011))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.LeftMenuBar.setFont(font)
+        self.LeftMenuBar.setStyleSheet("background-color: rgba(235, 224, 204, 0.47); /* #ebe0cc with 47% opacity */")
+        self.LeftMenuBar.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.LeftMenuBar.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.LeftMenuBar.setObjectName("LeftMenuBar")
+        self.JJelevate_text_2 = QtWidgets.QLabel(self.LeftMenuBar)
+        self.JJelevate_text_2.setGeometry(QtCore.QRect(60, 220, 71, 41))
+        font = QtGui.QFont()
+        font.setFamily("Arial Black")
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setWeight(75)
+        self.JJelevate_text_2.setFont(font)
+        self.JJelevate_text_2.setStyleSheet("color: #12245c;\n"
+"font-family: \"Arial Black\", Arial, sans-serif; \n"
+"background: transparent;\n"
+"font-size: 30px;")
+        self.JJelevate_text_2.setScaledContents(True)
+        self.JJelevate_text_2.setObjectName("JJelevate_text_2")
+        self.Logo = QtWidgets.QLabel(self.LeftMenuBar)
+        self.Logo.setGeometry(QtCore.QRect(30, 50, 241, 171))
+        self.Logo.setStyleSheet("background: transparent;")
+        self.Logo.setText("")
+        self.Logo.setPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/JJLOGO.png"))
+        self.Logo.setScaledContents(True)
+        self.Logo.setAlignment(QtCore.Qt.AlignCenter)
+        self.Logo.setObjectName("Logo")
+        self.pushButton_Dashboard = QtWidgets.QPushButton(self.LeftMenuBar)
+        self.pushButton_Dashboard.setGeometry(QtCore.QRect(30, 310, 231, 51))
+        font = QtGui.QFont()
+        font.setFamily("Montserrat Medium")
+        font.setPointSize(12)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.pushButton_Dashboard.setFont(font)
+        self.pushButton_Dashboard.setStyleSheet("QPushButton {\n"
+"    background-color: white;\n"
+"    color: black;\n"
+"    border-radius: 25px;\n"
+"    padding: 9px;\n"
+"text-align: left;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color:#c25b55;\n"
+"color:black;\n"
+"font-weight: 700;\n"
+"}\n"
+"QPushButton#activeButton {\n"
+"    background-color:#c25b55;\n"
+"color:black;\n"
+"font-weight: 700;\n"
+"}\n"
+"")
+        icon3 = QtGui.QIcon()
+        icon3.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/dashboard_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Dashboard.setIcon(icon3)
+        self.pushButton_Dashboard.setIconSize(QtCore.QSize(40, 40))
+        self.pushButton_Dashboard.setObjectName("pushButton_Dashboard")
+        self.pushButton_Inventory = QtWidgets.QPushButton(self.LeftMenuBar)
+        self.pushButton_Inventory.setGeometry(QtCore.QRect(30, 390, 231, 51))
+        font = QtGui.QFont()
+        font.setFamily("Montserrat Medium")
+        font.setPointSize(12)
+        self.pushButton_Inventory.setFont(font)
+        self.pushButton_Inventory.setStyleSheet("QPushButton {\n"
+"    background-color: white;\n"
+"    color: black;\n"
+"    border-radius: 25px;\n"
+"    padding: 9px;\n"
+"text-align: left;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color:#c25b55;\n"
+"color:black;\n"
+"font-weight: 700;\n"
+"}\n"
+"QPushButton#activeButton {\n"
+"    background-color:#c25b55;\n"
+"color:black;\n"
+"font-weight: 700;\n"
+"}\n"
+"")
+        icon4 = QtGui.QIcon()
+        icon4.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/inventory_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Inventory.setIcon(icon4)
+        self.pushButton_Inventory.setIconSize(QtCore.QSize(50, 45))
+        self.pushButton_Inventory.setObjectName("pushButton_Inventory")
+        self.pushButton_Orders = QtWidgets.QPushButton(self.LeftMenuBar)
+        self.pushButton_Orders.setGeometry(QtCore.QRect(30, 470, 231, 51))
+        font = QtGui.QFont()
+        font.setFamily("Montserrat Medium")
+        font.setPointSize(12)
+        self.pushButton_Orders.setFont(font)
+        self.pushButton_Orders.setStyleSheet("QPushButton {\n"
+"    background-color: white;\n"
+"    color: black;\n"
+"    border-radius: 25px;\n"
+"    padding: 9px;\n"
+"text-align: left;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color:#c25b55;\n"
+"color:black;\n"
+"font-weight: 700;\n"
+"}\n"
+"QPushButton#activeButton {\n"
+"    background-color:#c25b55;\n"
+"color:black;\n"
+"font-weight: 700;\n"
+"}\n"
+"")
+        icon5 = QtGui.QIcon()
+        icon5.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/orders_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Orders.setIcon(icon5)
+        self.pushButton_Orders.setIconSize(QtCore.QSize(46, 42))
+        self.pushButton_Orders.setObjectName("pushButton_Orders")
+        self.pushButton_Sales = QtWidgets.QPushButton(self.LeftMenuBar)
+        self.pushButton_Sales.setGeometry(QtCore.QRect(30, 550, 231, 51))
+        font = QtGui.QFont()
+        font.setFamily("Montserrat Medium")
+        font.setPointSize(12)
+        self.pushButton_Sales.setFont(font)
+        self.pushButton_Sales.setStyleSheet("QPushButton {\n"
+"    background-color: white;\n"
+"    color: black;\n"
+"    border-radius: 25px;\n"
+"    padding: 9px;\n"
+"text-align: left;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color:#c25b55;\n"
+"color:black;\n"
+"font-weight: 700;\n"
+"}\n"
+"QPushButton#activeButton {\n"
+"    background-color:#c25b55;\n"
+"color:black;\n"
+"font-weight: 700;\n"
+"}\n"
+"")
+        icon6 = QtGui.QIcon()
+        icon6.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/sales_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Sales.setIcon(icon6)
+        self.pushButton_Sales.setIconSize(QtCore.QSize(35, 35))
+        self.pushButton_Sales.setObjectName("pushButton_Sales")
+        self.pushButton_Account = QtWidgets.QPushButton(self.LeftMenuBar)
+        self.pushButton_Account.setGeometry(QtCore.QRect(30, 710, 231, 51))
+        font = QtGui.QFont()
+        font.setFamily("Montserrat Medium")
+        font.setPointSize(12)
+        self.pushButton_Account.setFont(font)
+        self.pushButton_Account.setStyleSheet("QPushButton {\n"
+"    background-color: white;\n"
+"    color: black;\n"
+"    border-radius: 25px;\n"
+"    padding: 9px;\n"
+"text-align: left;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color:#c25b55;\n"
+"color:black;\n"
+"font-weight: 700;\n"
+"}\n"
+"QPushButton#activeButton {\n"
+"    background-color:#c25b55;\n"
+"color:black;\n"
+"font-weight: 700;\n"
+"}\n"
+"")
+        icon7 = QtGui.QIcon()
+        icon7.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/account_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Account.setIcon(icon7)
+        self.pushButton_Account.setIconSize(QtCore.QSize(48, 48))
+        self.pushButton_Account.setObjectName("pushButton_Account")
+        self.pushButton_LogOut = QtWidgets.QPushButton(self.LeftMenuBar)
+        self.pushButton_LogOut.setGeometry(QtCore.QRect(30, 890, 231, 51))
+        font = QtGui.QFont()
+        font.setFamily("Verdana")
+        font.setPointSize(12)
+        font.setBold(True)
+        font.setWeight(87)
+        self.pushButton_LogOut.setFont(font)
+        self.pushButton_LogOut.setStyleSheet("QPushButton {\n"
+"    background-color:#022162;\n"
+"color:white;\n"
+"font-weight: 700;\n"
+"    border-radius: 25px;\n"
+"    padding: 9px;\n"
+"font-size: 14;\n"
+"text-align: left;\n"
+"}")
+        icon8 = QtGui.QIcon()
+        icon8.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/WHITElogout_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_LogOut.setIcon(icon8)
+        self.pushButton_LogOut.setIconSize(QtCore.QSize(38, 38))
+        self.pushButton_LogOut.setObjectName("pushButton_LogOut")
+        self.pushButton_Stock_History = QtWidgets.QPushButton(self.LeftMenuBar)
+        self.pushButton_Stock_History.setGeometry(QtCore.QRect(30, 630, 231, 51))
+        font = QtGui.QFont()
+        font.setFamily("Montserrat Medium")
+        font.setPointSize(12)
+        self.pushButton_Stock_History.setFont(font)
+        self.pushButton_Stock_History.setStyleSheet("QPushButton {\n"
+"    background-color: white;\n"
+"    color: black;\n"
+"    border-radius: 25px;\n"
+"    padding: 9px;\n"
+"text-align: left;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color:#c25b55;\n"
+"color:black;\n"
+"font-weight: 700;\n"
+"}\n"
+"QPushButton#activeButton {\n"
+"    background-color:#c25b55;\n"
+"color:black;\n"
+"font-weight: 700;\n"
+"}\n"
+"")
+        self.pushButton_Stock_History.setIcon(icon4)
+        self.pushButton_Stock_History.setIconSize(QtCore.QSize(50, 45))
+        self.pushButton_Stock_History.setObjectName("pushButton_Stock_History")
+        self.JJelevate_text_3 = QtWidgets.QLabel(self.LeftMenuBar)
+        self.JJelevate_text_3.setGeometry(QtCore.QRect(130, 220, 131, 41))
+        font = QtGui.QFont()
+        font.setFamily("Arial Black")
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setWeight(75)
+        self.JJelevate_text_3.setFont(font)
+        self.JJelevate_text_3.setStyleSheet("color: #d75413;\n"
+"font-family: \"Arial Black\", Arial, sans-serif; \n"
+"background: transparent;\n"
+"font-size: 29px;\n"
+"")
+        self.JJelevate_text_3.setScaledContents(True)
+        self.JJelevate_text_3.setObjectName("JJelevate_text_3")
+        self.inventoryText = QtWidgets.QLabel(OWNER_INVENTORY)
+        self.inventoryText.setGeometry(QtCore.QRect(340, 20, 501, 71))
+        self.inventoryText.setStyleSheet("color: #12245c;\n"
+"font-family: \"Arial Black\", Arial, sans-serif; \n"
+"background: transparent;\n"
+"font-size: 50px;")
+        self.inventoryText.setObjectName("inventoryText")
 
         self.retranslateUi(OWNER_INVENTORY)
         self.INVENTORY_afterBUTTONSclick.setCurrentIndex(5)
@@ -4020,14 +4043,6 @@ class Ui_OWNER_INVENTORY(object):
         self.pushButton_OWNER_Add_Inventory.setText(_translate("OWNER_INVENTORY", "ADD"))
         self.pushButton_OWNER_Edit_Inventory.setText(_translate("OWNER_INVENTORY", "EDIT"))
         self.pushButton_OWNER_Delete_Inventory.setText(_translate("OWNER_INVENTORY", "DELETE"))
-        self.JJelevate_text_5.setText(_translate("OWNER_INVENTORY", "J & J ELEVATE"))
-        self.pushButton_Dashboard.setText(_translate("OWNER_INVENTORY", " Dashboard   "))
-        self.pushButton_Inventory.setText(_translate("OWNER_INVENTORY", "Inventory"))
-        self.pushButton_Orders.setText(_translate("OWNER_INVENTORY", " Orders"))
-        self.pushButton_Sales.setText(_translate("OWNER_INVENTORY", "  Sales"))
-        self.pushButton_Account.setText(_translate("OWNER_INVENTORY", " Account     "))
-        self.pushButton_LogOut.setText(_translate("OWNER_INVENTORY", "Log out"))
-        self.pushButton_Stock_History.setText(_translate("OWNER_INVENTORY", "Stock History"))
         self.pushButton_ViewHistory.setText(_translate("OWNER_INVENTORY", "VIEW HISTORY"))
         item = self.tableWidget_ALL_ITEMS_5.horizontalHeaderItem(0)
         item.setText(_translate("OWNER_INVENTORY", "PRODUCT ID"))
@@ -4360,3 +4375,13 @@ class Ui_OWNER_INVENTORY(object):
         self.comboBox_Select_Prod_Type_toDelete_5.setItemText(2, _translate("OWNER_INVENTORY", "SPANDREL"))
         self.comboBox_Select_Prod_Type_toDelete_5.setItemText(3, _translate("OWNER_INVENTORY", "GUTTER"))
         self.comboBox_Select_Prod_Type_toDelete_5.setItemText(4, _translate("OWNER_INVENTORY", "OTHER"))
+        self.JJelevate_text_2.setText(_translate("OWNER_INVENTORY", "J&J "))
+        self.pushButton_Dashboard.setText(_translate("OWNER_INVENTORY", "  Home   "))
+        self.pushButton_Inventory.setText(_translate("OWNER_INVENTORY", "Inventory"))
+        self.pushButton_Orders.setText(_translate("OWNER_INVENTORY", " Orders"))
+        self.pushButton_Sales.setText(_translate("OWNER_INVENTORY", "  Sales"))
+        self.pushButton_Account.setText(_translate("OWNER_INVENTORY", " Account     "))
+        self.pushButton_LogOut.setText(_translate("OWNER_INVENTORY", "   Log out"))
+        self.pushButton_Stock_History.setText(_translate("OWNER_INVENTORY", "Stock History"))
+        self.JJelevate_text_3.setText(_translate("OWNER_INVENTORY", "Elevate"))
+        self.inventoryText.setText(_translate("OWNER_INVENTORY", "Inventory"))

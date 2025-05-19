@@ -52,7 +52,7 @@ class Ui_OWNER_DASHBOARD(object):
         self.dateLabel.setTextFormat(QtCore.Qt.RichText)
         self.dateLabel.setObjectName("dateLabel")
         self.LeftMenuBar = QtWidgets.QFrame(OWNER_DASHBOARD)
-        self.LeftMenuBar.setGeometry(QtCore.QRect(-1, -1, 301, 981))
+        self.LeftMenuBar.setGeometry(QtCore.QRect(-1, -1, 301, 1011))
         font = QtGui.QFont()
         font.setPointSize(14)
         self.LeftMenuBar.setFont(font)
@@ -61,16 +61,17 @@ class Ui_OWNER_DASHBOARD(object):
         self.LeftMenuBar.setFrameShadow(QtWidgets.QFrame.Raised)
         self.LeftMenuBar.setObjectName("LeftMenuBar")
         self.JJelevate_text = QtWidgets.QLabel(self.LeftMenuBar)
-        self.JJelevate_text.setGeometry(QtCore.QRect(30, 250, 251, 21))
+        self.JJelevate_text.setGeometry(QtCore.QRect(60, 220, 71, 41))
         font = QtGui.QFont()
-        font.setFamily("Montserrat ExtraBold")
-        font.setPointSize(18)
+        font.setFamily("Arial Black")
+        font.setPointSize(-1)
         font.setBold(True)
         font.setWeight(75)
         self.JJelevate_text.setFont(font)
-        self.JJelevate_text.setStyleSheet("color: #12245c; \n"
+        self.JJelevate_text.setStyleSheet("color: #12245c;\n"
+"font-family: \"Arial Black\", Arial, sans-serif; \n"
 "background: transparent;\n"
-"")
+"font-size: 30px;")
         self.JJelevate_text.setScaledContents(True)
         self.JJelevate_text.setObjectName("JJelevate_text")
         self.Logo = QtWidgets.QLabel(self.LeftMenuBar)
@@ -278,8 +279,23 @@ class Ui_OWNER_DASHBOARD(object):
         self.pushButton_Stock_History.setIcon(icon1)
         self.pushButton_Stock_History.setIconSize(QtCore.QSize(50, 45))
         self.pushButton_Stock_History.setObjectName("pushButton_Stock_History")
+        self.JJelevate_text_2 = QtWidgets.QLabel(self.LeftMenuBar)
+        self.JJelevate_text_2.setGeometry(QtCore.QRect(130, 220, 131, 41))
+        font = QtGui.QFont()
+        font.setFamily("Arial Black")
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setWeight(75)
+        self.JJelevate_text_2.setFont(font)
+        self.JJelevate_text_2.setStyleSheet("color: #d75413;\n"
+"font-family: \"Arial Black\", Arial, sans-serif; \n"
+"background: transparent;\n"
+"font-size: 29px;\n"
+"")
+        self.JJelevate_text_2.setScaledContents(True)
+        self.JJelevate_text_2.setObjectName("JJelevate_text_2")
         self.frame_46 = QtWidgets.QFrame(OWNER_DASHBOARD)
-        self.frame_46.setGeometry(QtCore.QRect(340, 210, 1531, 751))
+        self.frame_46.setGeometry(QtCore.QRect(340, 210, 1531, 761))
         self.frame_46.setStyleSheet("\n"
 "    background-color: #f6f3ee;\n"
 "    border-radius: 16;\n"
@@ -688,14 +704,15 @@ class Ui_OWNER_DASHBOARD(object):
         OWNER_DASHBOARD.setWindowTitle(_translate("OWNER_DASHBOARD", "Form"))
         self.timeLabel.setText(_translate("OWNER_DASHBOARD", " 09 : 10 : 54 AM"))
         self.dateLabel.setText(_translate("OWNER_DASHBOARD", "<html><head/><body><p align=\"center\"><span style=\" font-size:38pt; color:#022162;\">March 1, 2025</span><br/><span style=\" font-size:20pt; color:#b2423c;\">Monday</span></p></body></html>"))
-        self.JJelevate_text.setText(_translate("OWNER_DASHBOARD", "J & J ELEVATE"))
-        self.pushButton_Dashboard.setText(_translate("OWNER_DASHBOARD", " Dashboard   "))
+        self.JJelevate_text.setText(_translate("OWNER_DASHBOARD", "J&J "))
+        self.pushButton_Dashboard.setText(_translate("OWNER_DASHBOARD", "  Home   "))
         self.pushButton_Inventory.setText(_translate("OWNER_DASHBOARD", "Inventory"))
         self.pushButton_Orders.setText(_translate("OWNER_DASHBOARD", " Orders"))
         self.pushButton_Sales.setText(_translate("OWNER_DASHBOARD", "  Sales"))
         self.pushButton_Account.setText(_translate("OWNER_DASHBOARD", " Account     "))
-        self.pushButton_LogOut.setText(_translate("OWNER_DASHBOARD", "Log out"))
+        self.pushButton_LogOut.setText(_translate("OWNER_DASHBOARD", "   Log out"))
         self.pushButton_Stock_History.setText(_translate("OWNER_DASHBOARD", "Stock History"))
+        self.JJelevate_text_2.setText(_translate("OWNER_DASHBOARD", "Elevate"))
         self.value_Tod_sales.setText(_translate("OWNER_DASHBOARD", "800,000"))
         self.label_4.setText(_translate("OWNER_DASHBOARD", "Today’s Sales"))
         self.value_Tod_orders.setText(_translate("OWNER_DASHBOARD", "300"))

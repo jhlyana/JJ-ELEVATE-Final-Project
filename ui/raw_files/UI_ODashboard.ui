@@ -98,7 +98,7 @@ color: #051a54;
      <x>-1</x>
      <y>-1</y>
      <width>301</width>
-     <height>981</height>
+     <height>1011</height>
     </rect>
    </property>
    <property name="font">
@@ -118,27 +118,28 @@ color: #051a54;
    <widget class="QLabel" name="JJelevate_text">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>250</y>
-      <width>251</width>
-      <height>21</height>
+      <x>60</x>
+      <y>220</y>
+      <width>71</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Montserrat ExtraBold</family>
-      <pointsize>18</pointsize>
+      <family>Arial Black</family>
+      <pointsize>-1</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: #12245c; 
+     <string notr="true">color: #12245c;
+font-family: &quot;Arial Black&quot;, Arial, sans-serif; 
 background: transparent;
-</string>
+font-size: 30px;</string>
     </property>
     <property name="text">
-     <string>J &amp; J ELEVATE</string>
+     <string>J&amp;J </string>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -208,7 +209,7 @@ font-weight: 700;
 </string>
     </property>
     <property name="text">
-     <string> Dashboard   </string>
+     <string>  Home   </string>
     </property>
     <property name="icon">
      <iconset>
@@ -446,7 +447,7 @@ text-align: left;
 }</string>
     </property>
     <property name="text">
-     <string>Log out</string>
+     <string>   Log out</string>
     </property>
     <property name="icon">
      <iconset>
@@ -508,6 +509,37 @@ font-weight: 700;
      </size>
     </property>
    </widget>
+   <widget class="QLabel" name="JJelevate_text_2">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>220</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial Black</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #d75413;
+font-family: &quot;Arial Black&quot;, Arial, sans-serif; 
+background: transparent;
+font-size: 29px;
+</string>
+    </property>
+    <property name="text">
+     <string>Elevate</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
   </widget>
   <widget class="QFrame" name="frame_46">
    <property name="geometry">
@@ -515,7 +547,7 @@ font-weight: 700;
      <x>340</x>
      <y>210</y>
      <width>1531</width>
-     <height>751</height>
+     <height>761</height>
     </rect>
    </property>
    <property name="styleSheet">

@@ -19,7 +19,7 @@
      <x>0</x>
      <y>0</y>
      <width>1921</width>
-     <height>982</height>
+     <height>1041</height>
     </rect>
    </property>
    <property name="minimumSize">
@@ -38,7 +38,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../../../../Documents/assets/images/PIC_log_sign_in.png</pixmap>
+    <pixmap>../../../../New folder/resources/images/login_pic.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -163,7 +163,7 @@ background: transparent;
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../../../../Documents/assets/images/JJLOGO.png</pixmap>
+    <pixmap>../../../../New folder/resources/images/J&amp;J logo.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -174,8 +174,8 @@ background: transparent;
     <rect>
      <x>990</x>
      <y>0</y>
-     <width>931</width>
-     <height>982</height>
+     <width>961</width>
+     <height>1051</height>
     </rect>
    </property>
    <property name="frameShape">
@@ -518,6 +518,38 @@ color: white;</string>
     </property>
     <property name="text">
      <string>Clear </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="togglePasswordButton_2">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>540</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#togglePasswordButton {
+    border: none;          /* Removes the border */
+    background-color: transparent; /* Transparent background */
+    padding: 2px;          /* Optional: Adds a bit of spacing */
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../../../Downloads/EYE.png</normaloff>../../../../../Downloads/EYE.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>45</width>
+      <height>45</height>
+     </size>
     </property>
    </widget>
   </widget>

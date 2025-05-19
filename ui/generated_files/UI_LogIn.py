@@ -16,11 +16,11 @@ class Ui_LOGIN(object):
         LOGIN.setObjectName("LOGIN")
         LOGIN.resize(1925, 1033)
         self.PIC = QtWidgets.QLabel(LOGIN)
-        self.PIC.setGeometry(QtCore.QRect(0, 0, 1921, 982))
+        self.PIC.setGeometry(QtCore.QRect(0, 0, 1921, 1041))
         self.PIC.setMinimumSize(QtCore.QSize(100, 40))
         self.PIC.setMaximumSize(QtCore.QSize(16777215, 16777215))
         self.PIC.setText("")
-        self.PIC.setPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/PIC_log_sign_in.png"))
+        self.PIC.setPixmap(QtGui.QPixmap("ui/raw_files\\../../../../New folder/resources/images/login_pic.png"))
         self.PIC.setScaledContents(True)
         self.PIC.setObjectName("PIC")
         self.jframe = QtWidgets.QFrame(LOGIN)
@@ -75,11 +75,11 @@ class Ui_LOGIN(object):
         self.label.setGeometry(QtCore.QRect(270, 130, 451, 331))
         self.label.setStyleSheet("background-color: transparent;")
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/JJLOGO.png"))
+        self.label.setPixmap(QtGui.QPixmap("ui/raw_files\\../../../../New folder/resources/images/J&J logo.png"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.frame = QtWidgets.QFrame(LOGIN)
-        self.frame.setGeometry(QtCore.QRect(990, 0, 931, 982))
+        self.frame.setGeometry(QtCore.QRect(990, 0, 961, 1051))
         self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame.setObjectName("frame")
@@ -246,6 +246,21 @@ class Ui_LOGIN(object):
 "background-color: #c25b55; \n"
 "color: white;")
         self.pushButton_clearLogins.setObjectName("pushButton_clearLogins")
+        self.togglePasswordButton_2 = QtWidgets.QPushButton(self.frame)
+        self.togglePasswordButton_2.setGeometry(QtCore.QRect(810, 540, 51, 41))
+        self.togglePasswordButton_2.setStyleSheet("QPushButton#togglePasswordButton {\n"
+"    border: none;          /* Removes the border */\n"
+"    background-color: transparent; /* Transparent background */\n"
+"    padding: 2px;          /* Optional: Adds a bit of spacing */\n"
+"}\n"
+"\n"
+"")
+        self.togglePasswordButton_2.setText("")
+        icon1 = QtGui.QIcon()
+        icon1.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../../Downloads/EYE.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.togglePasswordButton_2.setIcon(icon1)
+        self.togglePasswordButton_2.setIconSize(QtCore.QSize(45, 45))
+        self.togglePasswordButton_2.setObjectName("togglePasswordButton_2")
 
         self.retranslateUi(LOGIN)
         QtCore.QMetaObject.connectSlotsByName(LOGIN)
