@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'LOGIN.ui'
+# Form implementation generated from reading ui file 'ui/raw_files/UI_LogIn.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #
@@ -24,14 +24,14 @@ class Ui_LOGIN(object):
         self.PIC.setMinimumSize(QtCore.QSize(100, 40))
         self.PIC.setMaximumSize(QtCore.QSize(16777215, 16777215))
         self.PIC.setText("")
-        self.PIC.setPixmap(QtGui.QPixmap(":/JJimages/PIC_log_sign_in.png"))
+        self.PIC.setPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/PIC_log_sign_in.png"))
         self.PIC.setScaledContents(True)
         self.PIC.setObjectName("PIC")
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(270, 130, 451, 331))
         self.label.setStyleSheet("background-color: transparent;")
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap(":/JJimages/JJLOGO.png"))
+        self.label.setPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/JJLOGO.png"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.frame = QtWidgets.QFrame(self.centralwidget)
@@ -183,7 +183,7 @@ class Ui_LOGIN(object):
 "")
         self.togglePasswordButton.setText("")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("../../../Downloads/EYE.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../Downloads/EYE.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.togglePasswordButton.setIcon(icon)
         self.togglePasswordButton.setIconSize(QtCore.QSize(45, 45))
         self.togglePasswordButton.setObjectName("togglePasswordButton")
@@ -280,14 +280,3 @@ class Ui_LOGIN(object):
         self.label_6.setText(_translate("LOGIN", "Moalboal Branch"))
         self.label_11.setText(_translate("LOGIN", "Supply       |         Install       |         Repair    "))
 from ui.resources import jj_resources_rc
-
-
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    LOGIN = QtWidgets.QMainWindow()
-    ui = Ui_LOGIN()
-    ui.setupUi(LOGIN)
-    LOGIN.show()
-    sys.exit(app.exec_())

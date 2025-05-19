@@ -84,7 +84,7 @@ class MainController: # Create the main controller to handle navigation
         # # Implement password reset logic here
         # email = self.forgot_pass_ui.LINE_EMAIL.text()
         # print(f"Password reset requested for {email}")  # Replace with actual logic
-        # self.show_login()
+        self.show_login()
     
     def logout(self):
         # Clear any session data

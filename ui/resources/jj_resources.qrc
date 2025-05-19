@@ -1,27 +1,5 @@
 <RCC>
   <qresource prefix="images">
-    <file>../../assets/images/account_icon.svg</file>
-    <file>../../assets/images/add.png</file>
-    <file>../../assets/images/BACKGROUND.png</file>
-    <file>../../assets/images/dashboard_icon.svg</file>
-    <file>../../assets/images/dashboardcalendar.png</file>
-    <file>../../assets/images/delete.png</file>
-    <file>../../assets/images/dottedline.png</file>
-    <file>../../assets/images/edit.png</file>
-    <file>../../assets/images/EYE.png</file>
-    <file>../../assets/images/inventory_icon.svg</file>
-    <file>../../assets/images/JJLOGO.png</file>
-    <file>../../assets/images/logout_icon.svg</file>
-    <file>../../assets/images/moneyhand_icon.svg</file>
-    <file>../../assets/images/orders_icon.svg</file>
-    <file>../../assets/images/PIC_log_sign_in.png</file>
-    <file>../../assets/images/sales_icon.svg</file>
-    <file>../../assets/images/search.png</file>
-    <file>../../assets/images/straightline.png</file>
-    <file>../../assets/images/up.png</file>
-    <file>../../assets/images/userProfilepicture.png</file>
-    <file>../../assets/images/WHITElogout_icon.svg</file>
-    <file>../../assets/images/WHITEsearch_icon.png</file>
     <file>images/account_icon.svg</file>
     <file>images/add.png</file>
     <file>images/BACKGROUND.png</file>
@@ -37,12 +15,8 @@
     <file>images/moneyhand_icon.svg</file>
     <file>images/orders_icon.svg</file>
     <file>images/PIC_log_sign_in.png</file>
-    <file>images/Poppins-ExtraBold.ttf</file>
-    <file>images/Poppins-Medium.ttf</file>
-    <file>images/RubikMonoOne-Regular.ttf</file>
     <file>images/sales_icon.svg</file>
     <file>images/search.png</file>
-    <file>images/Sora-SemiBold.ttf</file>
     <file>images/straightline.png</file>
     <file>images/up.png</file>
     <file>images/userProfilepicture.png</file>

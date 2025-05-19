@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'UI_OINVENTORY.ui'
+# Form implementation generated from reading ui file 'ui/raw_files/UI_OInventory.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #
@@ -47,7 +47,7 @@ class Ui_OWNER_INVENTORY(object):
         self.Logo.setGeometry(QtCore.QRect(30, 50, 241, 171))
         self.Logo.setStyleSheet("background: transparent;")
         self.Logo.setText("")
-        self.Logo.setPixmap(QtGui.QPixmap(":/JJimages/JJLOGO.png"))
+        self.Logo.setPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/JJLOGO.png"))
         self.Logo.setScaledContents(True)
         self.Logo.setAlignment(QtCore.Qt.AlignCenter)
         self.Logo.setObjectName("Logo")
@@ -79,7 +79,7 @@ class Ui_OWNER_INVENTORY(object):
 "}\n"
 "")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(":/JJimages/dashboard_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/dashboard_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_Dashboard.setIcon(icon)
         self.pushButton_Dashboard.setIconSize(QtCore.QSize(40, 40))
         self.pushButton_Dashboard.setObjectName("pushButton_Dashboard")
@@ -108,7 +108,7 @@ class Ui_OWNER_INVENTORY(object):
 "}\n"
 "")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap(":/JJimages/inventory_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon1.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/inventory_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_Inventory.setIcon(icon1)
         self.pushButton_Inventory.setIconSize(QtCore.QSize(50, 45))
         self.pushButton_Inventory.setObjectName("pushButton_Inventory")
@@ -137,7 +137,7 @@ class Ui_OWNER_INVENTORY(object):
 "}\n"
 "")
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap(":/JJimages/orders_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon2.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/orders_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_Orders.setIcon(icon2)
         self.pushButton_Orders.setIconSize(QtCore.QSize(46, 42))
         self.pushButton_Orders.setObjectName("pushButton_Orders")
@@ -166,7 +166,7 @@ class Ui_OWNER_INVENTORY(object):
 "}\n"
 "")
         icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap(":/JJimages/sales_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon3.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/sales_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_Sales.setIcon(icon3)
         self.pushButton_Sales.setIconSize(QtCore.QSize(35, 35))
         self.pushButton_Sales.setObjectName("pushButton_Sales")
@@ -195,7 +195,7 @@ class Ui_OWNER_INVENTORY(object):
 "}\n"
 "")
         icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap(":/JJimages/account_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon4.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/account_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_Account.setIcon(icon4)
         self.pushButton_Account.setIconSize(QtCore.QSize(48, 48))
         self.pushButton_Account.setObjectName("pushButton_Account")
@@ -217,7 +217,7 @@ class Ui_OWNER_INVENTORY(object):
 "text-align: left;\n"
 "}")
         icon5 = QtGui.QIcon()
-        icon5.addPixmap(QtGui.QPixmap(":/JJimages/WHITElogout_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon5.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/WHITElogout_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_LogOut.setIcon(icon5)
         self.pushButton_LogOut.setIconSize(QtCore.QSize(38, 38))
         self.pushButton_LogOut.setObjectName("pushButton_LogOut")
@@ -279,7 +279,7 @@ class Ui_OWNER_INVENTORY(object):
 "padding: 5;\n"
 "")
         self.label_14.setText("")
-        self.label_14.setPixmap(QtGui.QPixmap(":/JJimages/search.png"))
+        self.label_14.setPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/search.png"))
         self.label_14.setScaledContents(True)
         self.label_14.setObjectName("label_14")
         self.pushButton_SEARCHitems = QtWidgets.QPushButton(self.frame_4)
@@ -613,7 +613,7 @@ class Ui_OWNER_INVENTORY(object):
 "}\n"
 "")
         icon6 = QtGui.QIcon()
-        icon6.addPixmap(QtGui.QPixmap(":/JJimages/add.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon6.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/add.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_OWNER_Add_Inventory.setIcon(icon6)
         self.pushButton_OWNER_Add_Inventory.setIconSize(QtCore.QSize(26, 26))
         self.pushButton_OWNER_Add_Inventory.setObjectName("pushButton_OWNER_Add_Inventory")
@@ -648,7 +648,7 @@ class Ui_OWNER_INVENTORY(object):
 "}\n"
 "")
         icon7 = QtGui.QIcon()
-        icon7.addPixmap(QtGui.QPixmap(":/JJimages/edit.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon7.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/edit.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_OWNER_Edit_Inventory.setIcon(icon7)
         self.pushButton_OWNER_Edit_Inventory.setIconSize(QtCore.QSize(27, 27))
         self.pushButton_OWNER_Edit_Inventory.setObjectName("pushButton_OWNER_Edit_Inventory")
@@ -683,7 +683,7 @@ class Ui_OWNER_INVENTORY(object):
 "}\n"
 "")
         icon8 = QtGui.QIcon()
-        icon8.addPixmap(QtGui.QPixmap(":/JJimages/delete.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon8.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/delete.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_OWNER_Delete_Inventory.setIcon(icon8)
         self.pushButton_OWNER_Delete_Inventory.setIconSize(QtCore.QSize(27, 27))
         self.pushButton_OWNER_Delete_Inventory.setObjectName("pushButton_OWNER_Delete_Inventory")
@@ -4373,13 +4373,3 @@ class Ui_OWNER_INVENTORY(object):
         self.comboBox_Select_Prod_Type_toDelete.setItemText(3, _translate("OWNER_INVENTORY", "GUTTER"))
         self.comboBox_Select_Prod_Type_toDelete.setItemText(4, _translate("OWNER_INVENTORY", "OTHER"))
 from ui.resources import jj_resources_rc
-
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    OWNER_INVENTORY = QtWidgets.QMainWindow()
-    ui = Ui_OWNER_INVENTORY()
-    ui.setupUi(OWNER_INVENTORY)
-    OWNER_INVENTORY.show()
-    sys.exit(app.exec_())

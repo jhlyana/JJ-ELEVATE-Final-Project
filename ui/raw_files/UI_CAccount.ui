@@ -277,7 +277,7 @@ QPushButton#activeButton {
       </rect>
      </property>
      <property name="currentIndex">
-      <number>4</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="page">
       <widget class="QFrame" name="frame_4">
@@ -568,7 +568,7 @@ border: 2px solid #12245c;  /* optional: blue border */
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap>:/JJimages/userProfilepicture.png</pixmap>
+         <pixmap resource="../resources/jj_resources.qrc">:/images/images/userProfilepicture.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1051,7 +1051,7 @@ border: 2px solid #12245c;  /* optional: blue border */
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap>:/JJimages/userProfilepicture.png</pixmap>
+         <pixmap>../../assets/images/userProfilepicture.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1367,7 +1367,7 @@ border: 2px solid #12245c;  /* optional: blue border */
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap>:/JJimages/userProfilepicture.png</pixmap>
+         <pixmap>../../assets/images/userProfilepicture.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1850,7 +1850,7 @@ border: 2px solid #12245c;  /* optional: blue border */
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap>:/JJimages/userProfilepicture.png</pixmap>
+         <pixmap>../../assets/images/userProfilepicture.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -2398,7 +2398,7 @@ background: transparent;
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>:/JJimages/JJLOGO.png</pixmap>
+      <pixmap>../../assets/images/JJLOGO.png</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
@@ -2450,7 +2450,7 @@ font-weight: 700;
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>:/JJimages/dashboard_icon.svg</normaloff>:/JJimages/dashboard_icon.svg</iconset>
+       <normaloff>../../assets/images/dashboard_icon.svg</normaloff>../../assets/images/dashboard_icon.svg</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -2499,7 +2499,7 @@ font-weight: 700;
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>:/JJimages/inventory_icon.svg</normaloff>:/JJimages/inventory_icon.svg</iconset>
+       <normaloff>../../assets/images/inventory_icon.svg</normaloff>../../assets/images/inventory_icon.svg</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -2548,7 +2548,7 @@ font-weight: 700;
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>:/JJimages/orders_icon.svg</normaloff>:/JJimages/orders_icon.svg</iconset>
+       <normaloff>../../assets/images/orders_icon.svg</normaloff>../../assets/images/orders_icon.svg</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -2597,7 +2597,7 @@ font-weight: 700;
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>:/JJimages/sales_icon.svg</normaloff>:/JJimages/sales_icon.svg</iconset>
+       <normaloff>../../assets/images/sales_icon.svg</normaloff>../../assets/images/sales_icon.svg</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -2646,7 +2646,7 @@ font-weight: 700;
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>:/JJimages/account_icon.svg</normaloff>:/JJimages/account_icon.svg</iconset>
+       <normaloff>../../assets/images/account_icon.svg</normaloff>../../assets/images/account_icon.svg</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -2688,7 +2688,7 @@ text-align: left;
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>:/JJimages/WHITElogout_icon.svg</normaloff>:/JJimages/WHITElogout_icon.svg</iconset>
+       <normaloff>../../assets/images/WHITElogout_icon.svg</normaloff>../../assets/images/WHITElogout_icon.svg</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -2737,7 +2737,7 @@ font-weight: 700;
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>:/JJimages/inventory_icon.svg</normaloff>:/JJimages/inventory_icon.svg</iconset>
+       <normaloff>../../assets/images/inventory_icon.svg</normaloff>../../assets/images/inventory_icon.svg</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -2751,7 +2751,6 @@ font-weight: 700;
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
-  <include location="../resources/jj_resources.qrc"/>
   <include location="../resources/jj_resources.qrc"/>
  </resources>
  <connections/>

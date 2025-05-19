@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'UI_CStockHistory.ui'
+# Form implementation generated from reading ui file 'ui/raw_files/UI_CStockHistory.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #
@@ -50,7 +50,7 @@ class Ui_CASHIER_STOCKHISTORY(object):
         self.Logo.setGeometry(QtCore.QRect(30, 50, 241, 171))
         self.Logo.setStyleSheet("background: transparent;")
         self.Logo.setText("")
-        self.Logo.setPixmap(QtGui.QPixmap(":/JJimages/JJLOGO.png"))
+        self.Logo.setPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/JJLOGO.png"))
         self.Logo.setScaledContents(True)
         self.Logo.setAlignment(QtCore.Qt.AlignCenter)
         self.Logo.setObjectName("Logo")
@@ -82,7 +82,7 @@ class Ui_CASHIER_STOCKHISTORY(object):
 "}\n"
 "")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(":/JJimages/dashboard_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/dashboard_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_Dashboard_CASHIER.setIcon(icon)
         self.pushButton_Dashboard_CASHIER.setIconSize(QtCore.QSize(40, 40))
         self.pushButton_Dashboard_CASHIER.setObjectName("pushButton_Dashboard_CASHIER")
@@ -111,7 +111,7 @@ class Ui_CASHIER_STOCKHISTORY(object):
 "}\n"
 "")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap(":/JJimages/inventory_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon1.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/inventory_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_Inventory_CASHIER.setIcon(icon1)
         self.pushButton_Inventory_CASHIER.setIconSize(QtCore.QSize(50, 45))
         self.pushButton_Inventory_CASHIER.setObjectName("pushButton_Inventory_CASHIER")
@@ -140,7 +140,7 @@ class Ui_CASHIER_STOCKHISTORY(object):
 "}\n"
 "")
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap(":/JJimages/orders_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon2.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/orders_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_Orders_CASHIER.setIcon(icon2)
         self.pushButton_Orders_CASHIER.setIconSize(QtCore.QSize(46, 42))
         self.pushButton_Orders_CASHIER.setObjectName("pushButton_Orders_CASHIER")
@@ -169,7 +169,7 @@ class Ui_CASHIER_STOCKHISTORY(object):
 "}\n"
 "")
         icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap(":/JJimages/sales_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon3.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/sales_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_Sales_CASHIER.setIcon(icon3)
         self.pushButton_Sales_CASHIER.setIconSize(QtCore.QSize(35, 35))
         self.pushButton_Sales_CASHIER.setObjectName("pushButton_Sales_CASHIER")
@@ -198,7 +198,7 @@ class Ui_CASHIER_STOCKHISTORY(object):
 "}\n"
 "")
         icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap(":/JJimages/account_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon4.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/account_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_Account_CASHIER.setIcon(icon4)
         self.pushButton_Account_CASHIER.setIconSize(QtCore.QSize(48, 48))
         self.pushButton_Account_CASHIER.setObjectName("pushButton_Account_CASHIER")
@@ -220,7 +220,7 @@ class Ui_CASHIER_STOCKHISTORY(object):
 "text-align: left;\n"
 "}")
         icon5 = QtGui.QIcon()
-        icon5.addPixmap(QtGui.QPixmap(":/JJimages/WHITElogout_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon5.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/WHITElogout_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_LogOut_CASHIER.setIcon(icon5)
         self.pushButton_LogOut_CASHIER.setIconSize(QtCore.QSize(38, 38))
         self.pushButton_LogOut_CASHIER.setObjectName("pushButton_LogOut_CASHIER")
@@ -390,7 +390,7 @@ class Ui_CASHIER_STOCKHISTORY(object):
 "padding: 5;\n"
 "")
         self.label_14.setText("")
-        self.label_14.setPixmap(QtGui.QPixmap(":/JJimages/search.png"))
+        self.label_14.setPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/search.png"))
         self.label_14.setScaledContents(True)
         self.label_14.setObjectName("label_14")
         self.pushButton_SEARCH_StockHistory = QtWidgets.QPushButton(self.frame_4)
@@ -468,13 +468,3 @@ class Ui_CASHIER_STOCKHISTORY(object):
         self.pushButton_SEARCH_StockHistory.setText(_translate("CASHIER_STOCKHISTORY", "SEARCH"))
         self.label.setText(_translate("CASHIER_STOCKHISTORY", "CASHIER"))
 from ui.resources import jj_resources_rc
-
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    CASHIER_STOCKHISTORY = QtWidgets.QMainWindow()
-    ui = Ui_CASHIER_STOCKHISTORY()
-    ui.setupUi(CASHIER_STOCKHISTORY)
-    CASHIER_STOCKHISTORY.show()
-    sys.exit(app.exec_())

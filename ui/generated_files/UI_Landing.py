@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'JJ_LANDING_PAGE.ui'
+# Form implementation generated from reading ui file 'ui/raw_files/UI_Landing.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #
@@ -21,13 +21,13 @@ class Ui_JJ_LANDING(object):
         self.BG = QtWidgets.QLabel(self.centralwidget)
         self.BG.setGeometry(QtCore.QRect(-10, 0, 1925, 982))
         self.BG.setText("")
-        self.BG.setPixmap(QtGui.QPixmap(":/JJimages/BACKGROUND.png"))
+        self.BG.setPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/BACKGROUND.png"))
         self.BG.setScaledContents(True)
         self.BG.setObjectName("BG")
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(780, 130, 381, 251))
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap(":/JJimages/JJLOGO.png"))
+        self.label.setPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/JJLOGO.png"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
@@ -115,13 +115,3 @@ class Ui_JJ_LANDING(object):
         self.label_5.setText(_translate("JJ_LANDING", "Supply                               Install                               Repair    "))
         self.pushButton_cont_2Login.setText(_translate("JJ_LANDING", "Continue to Login"))
 from ui.resources import jj_resources_rc
-
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    JJ_LANDING = QtWidgets.QMainWindow()
-    ui = Ui_JJ_LANDING()
-    ui.setupUi(JJ_LANDING)
-    JJ_LANDING.show()
-    sys.exit(app.exec_())

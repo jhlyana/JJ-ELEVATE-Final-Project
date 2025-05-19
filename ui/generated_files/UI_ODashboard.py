@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'UI_ODashboard.ui'
+# Form implementation generated from reading ui file 'ui/raw_files/UI_ODashboard.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #
@@ -47,7 +47,7 @@ class Ui_OWNER_DASHBOARD(object):
         self.Logo.setGeometry(QtCore.QRect(30, 50, 241, 171))
         self.Logo.setStyleSheet("background: transparent;")
         self.Logo.setText("")
-        self.Logo.setPixmap(QtGui.QPixmap(":/JJimages/JJLOGO.png"))
+        self.Logo.setPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/JJLOGO.png"))
         self.Logo.setScaledContents(True)
         self.Logo.setAlignment(QtCore.Qt.AlignCenter)
         self.Logo.setObjectName("Logo")
@@ -79,7 +79,7 @@ class Ui_OWNER_DASHBOARD(object):
 "}\n"
 "")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(":/JJimages/dashboard_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/dashboard_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_Dashboard.setIcon(icon)
         self.pushButton_Dashboard.setIconSize(QtCore.QSize(40, 40))
         self.pushButton_Dashboard.setObjectName("pushButton_Dashboard")
@@ -108,7 +108,7 @@ class Ui_OWNER_DASHBOARD(object):
 "}\n"
 "")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap(":/JJimages/inventory_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon1.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/inventory_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_Inventory.setIcon(icon1)
         self.pushButton_Inventory.setIconSize(QtCore.QSize(50, 45))
         self.pushButton_Inventory.setObjectName("pushButton_Inventory")
@@ -137,7 +137,7 @@ class Ui_OWNER_DASHBOARD(object):
 "}\n"
 "")
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap(":/JJimages/orders_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon2.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/orders_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_Orders.setIcon(icon2)
         self.pushButton_Orders.setIconSize(QtCore.QSize(46, 42))
         self.pushButton_Orders.setObjectName("pushButton_Orders")
@@ -166,7 +166,7 @@ class Ui_OWNER_DASHBOARD(object):
 "}\n"
 "")
         icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap(":/JJimages/sales_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon3.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/sales_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_Sales.setIcon(icon3)
         self.pushButton_Sales.setIconSize(QtCore.QSize(35, 35))
         self.pushButton_Sales.setObjectName("pushButton_Sales")
@@ -195,7 +195,7 @@ class Ui_OWNER_DASHBOARD(object):
 "}\n"
 "")
         icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap(":/JJimages/account_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon4.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/account_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_Account.setIcon(icon4)
         self.pushButton_Account.setIconSize(QtCore.QSize(48, 48))
         self.pushButton_Account.setObjectName("pushButton_Account")
@@ -217,7 +217,7 @@ class Ui_OWNER_DASHBOARD(object):
 "text-align: left;\n"
 "}")
         icon5 = QtGui.QIcon()
-        icon5.addPixmap(QtGui.QPixmap(":/JJimages/WHITElogout_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon5.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/WHITElogout_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_LogOut.setIcon(icon5)
         self.pushButton_LogOut.setIconSize(QtCore.QSize(38, 38))
         self.pushButton_LogOut.setObjectName("pushButton_LogOut")
@@ -728,13 +728,3 @@ class Ui_OWNER_DASHBOARD(object):
         self.top2LOWSTOCK_PROD_QTY.setText(_translate("OWNER_DASHBOARD", "ONLY 2 LEFT"))
         self.top1LOWEST_STOCK_PROD_QTY.setText(_translate("OWNER_DASHBOARD", "ONLY 1 LEFT"))
 from ui.resources import jj_resources_rc
-
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    OWNER_DASHBOARD = QtWidgets.QMainWindow()
-    ui = Ui_OWNER_DASHBOARD()
-    ui.setupUi(OWNER_DASHBOARD)
-    OWNER_DASHBOARD.show()
-    sys.exit(app.exec_())

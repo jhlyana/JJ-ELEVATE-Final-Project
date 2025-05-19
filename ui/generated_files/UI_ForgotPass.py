@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'FORGOTpass.ui'
+# Form implementation generated from reading ui file 'ui/raw_files/UI_ForgotPass.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #
@@ -24,14 +24,14 @@ class Ui_ForgotPass(object):
         self.PIC.setMinimumSize(QtCore.QSize(100, 40))
         self.PIC.setMaximumSize(QtCore.QSize(16777215, 16777215))
         self.PIC.setText("")
-        self.PIC.setPixmap(QtGui.QPixmap(":/JJimages/PIC_log_sign_in.png"))
+        self.PIC.setPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/PIC_log_sign_in.png"))
         self.PIC.setScaledContents(True)
         self.PIC.setObjectName("PIC")
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(270, 130, 451, 331))
         self.label.setStyleSheet("background-color: transparent;")
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap(":/JJimages/JJLOGO.png"))
+        self.label.setPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/JJLOGO.png"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.frame = QtWidgets.QFrame(self.centralwidget)
@@ -225,7 +225,7 @@ class Ui_ForgotPass(object):
 "")
         self.toggleNewPass.setText("")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("../../../../../Downloads/EYE.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../../Downloads/EYE.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.toggleNewPass.setIcon(icon)
         self.toggleNewPass.setIconSize(QtCore.QSize(45, 45))
         self.toggleNewPass.setObjectName("toggleNewPass")
@@ -354,13 +354,3 @@ class Ui_ForgotPass(object):
         self.label_6.setText(_translate("ForgotPass", "Moalboal Branch"))
         self.label_11.setText(_translate("ForgotPass", "Supply       |         Install       |         Repair    "))
 from ui.resources import jj_resources_rc
-
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    ForgotPass = QtWidgets.QMainWindow()
-    ui = Ui_ForgotPass()
-    ui.setupUi(ForgotPass)
-    ForgotPass.show()
-    sys.exit(app.exec_())
