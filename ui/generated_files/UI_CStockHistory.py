@@ -15,244 +15,89 @@ class Ui_CASHIER_STOCKHISTORY(object):
     def setupUi(self, CASHIER_STOCKHISTORY):
         CASHIER_STOCKHISTORY.setObjectName("CASHIER_STOCKHISTORY")
         CASHIER_STOCKHISTORY.resize(1921, 1005)
+        self.frame_45 = QtWidgets.QFrame(CASHIER_STOCKHISTORY)
+        self.frame_45.setGeometry(QtCore.QRect(301, 1, 1621, 211))
+        self.frame_45.setStyleSheet("background: transparent;;")
+        self.frame_45.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_45.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_45.setObjectName("frame_45")
+        self.comboBox_filterStockHistory = QtWidgets.QComboBox(self.frame_45)
+        self.comboBox_filterStockHistory.setGeometry(QtCore.QRect(1350, 50, 231, 71))
         font = QtGui.QFont()
-        font.setPointSize(4)
-        CASHIER_STOCKHISTORY.setFont(font)
-        CASHIER_STOCKHISTORY.setStyleSheet("background: white;")
-        self.Owner_centralwidget = QtWidgets.QWidget(CASHIER_STOCKHISTORY)
-        font = QtGui.QFont()
-        font.setPointSize(14)
-        self.Owner_centralwidget.setFont(font)
-        self.Owner_centralwidget.setObjectName("Owner_centralwidget")
-        self.LeftMenuBar = QtWidgets.QFrame(self.Owner_centralwidget)
-        self.LeftMenuBar.setGeometry(QtCore.QRect(-1, -1, 301, 981))
-        font = QtGui.QFont()
-        font.setPointSize(14)
-        self.LeftMenuBar.setFont(font)
-        self.LeftMenuBar.setStyleSheet("background-color: rgba(235, 224, 204, 0.47); /* #ebe0cc with 47% opacity */")
-        self.LeftMenuBar.setFrameShape(QtWidgets.QFrame.NoFrame)
-        self.LeftMenuBar.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.LeftMenuBar.setObjectName("LeftMenuBar")
-        self.JJelevate_text = QtWidgets.QLabel(self.LeftMenuBar)
-        self.JJelevate_text.setGeometry(QtCore.QRect(30, 250, 251, 21))
+        font.setPointSize(-1)
+        self.comboBox_filterStockHistory.setFont(font)
+        self.comboBox_filterStockHistory.setStyleSheet("    background-color: #ebe0cc;\n"
+"    border-radius: 15px;\n"
+"font-size:28px;\n"
+"text-align: center;")
+        self.comboBox_filterStockHistory.setObjectName("comboBox_filterStockHistory")
+        self.comboBox_filterStockHistory.addItem("")
+        self.comboBox_filterStockHistory.addItem("")
+        self.comboBox_filterStockHistory.addItem("")
+        self.comboBox_filterStockHistory.addItem("")
+        self.comboBox_filterStockHistory.addItem("")
+        self.frame_4 = QtWidgets.QFrame(self.frame_45)
+        self.frame_4.setGeometry(QtCore.QRect(30, 50, 611, 71))
+        self.frame_4.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_4.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_4.setObjectName("frame_4")
+        self.lineEdit_OWNER_QuickSearch_StockHistory = QtWidgets.QLineEdit(self.frame_4)
+        self.lineEdit_OWNER_QuickSearch_StockHistory.setGeometry(QtCore.QRect(10, 10, 291, 51))
         font = QtGui.QFont()
         font.setFamily("Montserrat ExtraBold")
-        font.setPointSize(18)
+        font.setPointSize(14)
         font.setBold(True)
         font.setWeight(75)
-        self.JJelevate_text.setFont(font)
-        self.JJelevate_text.setStyleSheet("color: #12245c; \n"
-"background: transparent;\n"
-"")
-        self.JJelevate_text.setScaledContents(True)
-        self.JJelevate_text.setObjectName("JJelevate_text")
-        self.Logo = QtWidgets.QLabel(self.LeftMenuBar)
-        self.Logo.setGeometry(QtCore.QRect(30, 50, 241, 171))
-        self.Logo.setStyleSheet("background: transparent;")
-        self.Logo.setText("")
-        self.Logo.setPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/JJLOGO.png"))
-        self.Logo.setScaledContents(True)
-        self.Logo.setAlignment(QtCore.Qt.AlignCenter)
-        self.Logo.setObjectName("Logo")
-        self.pushButton_Dashboard_CASHIER = QtWidgets.QPushButton(self.LeftMenuBar)
-        self.pushButton_Dashboard_CASHIER.setGeometry(QtCore.QRect(30, 310, 231, 51))
-        font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(12)
-        font.setBold(False)
-        font.setItalic(False)
-        font.setWeight(50)
-        self.pushButton_Dashboard_CASHIER.setFont(font)
-        self.pushButton_Dashboard_CASHIER.setStyleSheet("QPushButton {\n"
-"    background-color: white;\n"
+        self.lineEdit_OWNER_QuickSearch_StockHistory.setFont(font)
+        self.lineEdit_OWNER_QuickSearch_StockHistory.setStyleSheet("\n"
+"    background-color: transparent;\n"
 "    color: black;\n"
-"    border-radius: 25px;\n"
-"    padding: 9px;\n"
-"text-align: left;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"QPushButton#activeButton {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
+"    padding: 2px;\n"
+"    text-align: center;\n"
+"\n"
+"\n"
+"\n"
 "")
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/dashboard_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Dashboard_CASHIER.setIcon(icon)
-        self.pushButton_Dashboard_CASHIER.setIconSize(QtCore.QSize(40, 40))
-        self.pushButton_Dashboard_CASHIER.setObjectName("pushButton_Dashboard_CASHIER")
-        self.pushButton_Inventory_CASHIER = QtWidgets.QPushButton(self.LeftMenuBar)
-        self.pushButton_Inventory_CASHIER.setGeometry(QtCore.QRect(30, 390, 231, 51))
-        font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(12)
-        self.pushButton_Inventory_CASHIER.setFont(font)
-        self.pushButton_Inventory_CASHIER.setStyleSheet("QPushButton {\n"
-"    background-color: white;\n"
-"    color: black;\n"
-"    border-radius: 25px;\n"
-"    padding: 9px;\n"
-"text-align: left;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"QPushButton#activeButton {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
+        self.lineEdit_OWNER_QuickSearch_StockHistory.setAlignment(QtCore.Qt.AlignCenter)
+        self.lineEdit_OWNER_QuickSearch_StockHistory.setClearButtonEnabled(False)
+        self.lineEdit_OWNER_QuickSearch_StockHistory.setObjectName("lineEdit_OWNER_QuickSearch_StockHistory")
+        self.label_14 = QtWidgets.QLabel(self.frame_4)
+        self.label_14.setGeometry(QtCore.QRect(10, 10, 71, 51))
+        self.label_14.setStyleSheet("background: transparent;\n"
+"padding: 5;\n"
 "")
-        icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/inventory_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Inventory_CASHIER.setIcon(icon1)
-        self.pushButton_Inventory_CASHIER.setIconSize(QtCore.QSize(50, 45))
-        self.pushButton_Inventory_CASHIER.setObjectName("pushButton_Inventory_CASHIER")
-        self.pushButton_Orders_CASHIER = QtWidgets.QPushButton(self.LeftMenuBar)
-        self.pushButton_Orders_CASHIER.setGeometry(QtCore.QRect(30, 470, 231, 51))
+        self.label_14.setText("")
+        self.label_14.setPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/search.png"))
+        self.label_14.setScaledContents(True)
+        self.label_14.setObjectName("label_14")
+        self.pushButton_SEARCH_StockHistory = QtWidgets.QPushButton(self.frame_4)
+        self.pushButton_SEARCH_StockHistory.setGeometry(QtCore.QRect(300, 10, 181, 51))
         font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(12)
-        self.pushButton_Orders_CASHIER.setFont(font)
-        self.pushButton_Orders_CASHIER.setStyleSheet("QPushButton {\n"
-"    background-color: white;\n"
-"    color: black;\n"
-"    border-radius: 25px;\n"
-"    padding: 9px;\n"
-"text-align: left;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"QPushButton#activeButton {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"")
-        icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/orders_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Orders_CASHIER.setIcon(icon2)
-        self.pushButton_Orders_CASHIER.setIconSize(QtCore.QSize(46, 42))
-        self.pushButton_Orders_CASHIER.setObjectName("pushButton_Orders_CASHIER")
-        self.pushButton_Sales_CASHIER = QtWidgets.QPushButton(self.LeftMenuBar)
-        self.pushButton_Sales_CASHIER.setGeometry(QtCore.QRect(30, 550, 231, 51))
-        font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(12)
-        self.pushButton_Sales_CASHIER.setFont(font)
-        self.pushButton_Sales_CASHIER.setStyleSheet("QPushButton {\n"
-"    background-color: white;\n"
-"    color: black;\n"
-"    border-radius: 25px;\n"
-"    padding: 9px;\n"
-"text-align: left;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"QPushButton#activeButton {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"")
-        icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/sales_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Sales_CASHIER.setIcon(icon3)
-        self.pushButton_Sales_CASHIER.setIconSize(QtCore.QSize(35, 35))
-        self.pushButton_Sales_CASHIER.setObjectName("pushButton_Sales_CASHIER")
-        self.pushButton_Account_CASHIER = QtWidgets.QPushButton(self.LeftMenuBar)
-        self.pushButton_Account_CASHIER.setGeometry(QtCore.QRect(30, 710, 231, 51))
-        font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(12)
-        self.pushButton_Account_CASHIER.setFont(font)
-        self.pushButton_Account_CASHIER.setStyleSheet("QPushButton {\n"
-"    background-color: white;\n"
-"    color: black;\n"
-"    border-radius: 25px;\n"
-"    padding: 9px;\n"
-"text-align: left;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"QPushButton#activeButton {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"")
-        icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/account_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Account_CASHIER.setIcon(icon4)
-        self.pushButton_Account_CASHIER.setIconSize(QtCore.QSize(48, 48))
-        self.pushButton_Account_CASHIER.setObjectName("pushButton_Account_CASHIER")
-        self.pushButton_LogOut_CASHIER = QtWidgets.QPushButton(self.LeftMenuBar)
-        self.pushButton_LogOut_CASHIER.setGeometry(QtCore.QRect(30, 890, 231, 51))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
+        font.setFamily("Montserrat ExtraBold")
         font.setPointSize(12)
         font.setBold(True)
-        font.setWeight(87)
-        self.pushButton_LogOut_CASHIER.setFont(font)
-        self.pushButton_LogOut_CASHIER.setStyleSheet("QPushButton {\n"
-"    background-color:#022162;\n"
-"color:white;\n"
-"font-weight: 700;\n"
-"    border-radius: 25px;\n"
-"    padding: 9px;\n"
-"font-size: 14;\n"
-"text-align: left;\n"
-"}")
-        icon5 = QtGui.QIcon()
-        icon5.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/WHITElogout_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_LogOut_CASHIER.setIcon(icon5)
-        self.pushButton_LogOut_CASHIER.setIconSize(QtCore.QSize(38, 38))
-        self.pushButton_LogOut_CASHIER.setObjectName("pushButton_LogOut_CASHIER")
-        self.pushButton_Stock_History_CASHIER = QtWidgets.QPushButton(self.LeftMenuBar)
-        self.pushButton_Stock_History_CASHIER.setGeometry(QtCore.QRect(30, 630, 231, 51))
-        font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(12)
-        self.pushButton_Stock_History_CASHIER.setFont(font)
-        self.pushButton_Stock_History_CASHIER.setStyleSheet("QPushButton {\n"
-"    background-color: white;\n"
-"    color: black;\n"
-"    border-radius: 25px;\n"
-"    padding: 9px;\n"
-"text-align: left;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"QPushButton#activeButton {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
+        font.setWeight(75)
+        self.pushButton_SEARCH_StockHistory.setFont(font)
+        self.pushButton_SEARCH_StockHistory.setStyleSheet("\n"
+"    background-color: #003366;\n"
+"    color: white;\n"
+"    padding: 2px;\n"
+"    text-align: center;\n"
+"\n"
+"\n"
+"\n"
 "")
-        self.pushButton_Stock_History_CASHIER.setIcon(icon1)
-        self.pushButton_Stock_History_CASHIER.setIconSize(QtCore.QSize(50, 45))
-        self.pushButton_Stock_History_CASHIER.setObjectName("pushButton_Stock_History_CASHIER")
-        self.tableWidget_StockHistory = QtWidgets.QTableWidget(self.Owner_centralwidget)
-        self.tableWidget_StockHistory.setGeometry(QtCore.QRect(340, 160, 1521, 791))
+        self.pushButton_SEARCH_StockHistory.setObjectName("pushButton_SEARCH_StockHistory")
+        self.label = QtWidgets.QLabel(CASHIER_STOCKHISTORY)
+        self.label.setGeometry(QtCore.QRect(401, 311, 111, 31))
+        font = QtGui.QFont()
+        font.setPointSize(13)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label.setFont(font)
+        self.label.setObjectName("label")
+        self.tableWidget_StockHistory = QtWidgets.QTableWidget(CASHIER_STOCKHISTORY)
+        self.tableWidget_StockHistory.setGeometry(QtCore.QRect(341, 161, 1521, 791))
         font = QtGui.QFont()
         font.setFamily("Montserrat SemiBold")
         font.setPointSize(16)
@@ -338,110 +183,249 @@ class Ui_CASHIER_STOCKHISTORY(object):
         item.setFont(font)
         self.tableWidget_StockHistory.setHorizontalHeaderItem(7, item)
         self.tableWidget_StockHistory.horizontalHeader().setDefaultSectionSize(265)
-        self.frame_45 = QtWidgets.QFrame(self.Owner_centralwidget)
-        self.frame_45.setGeometry(QtCore.QRect(300, 0, 1621, 211))
-        self.frame_45.setStyleSheet("background: transparent;;")
-        self.frame_45.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_45.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_45.setObjectName("frame_45")
-        self.comboBox_filterStockHistory = QtWidgets.QComboBox(self.frame_45)
-        self.comboBox_filterStockHistory.setGeometry(QtCore.QRect(1350, 50, 231, 71))
+        self.LeftMenuBar = QtWidgets.QFrame(CASHIER_STOCKHISTORY)
+        self.LeftMenuBar.setGeometry(QtCore.QRect(0, 0, 301, 981))
         font = QtGui.QFont()
-        font.setPointSize(-1)
-        self.comboBox_filterStockHistory.setFont(font)
-        self.comboBox_filterStockHistory.setStyleSheet("    background-color: #ebe0cc;\n"
-"    border-radius: 15px;\n"
-"font-size:28px;\n"
-"text-align: center;")
-        self.comboBox_filterStockHistory.setObjectName("comboBox_filterStockHistory")
-        self.comboBox_filterStockHistory.addItem("")
-        self.comboBox_filterStockHistory.addItem("")
-        self.comboBox_filterStockHistory.addItem("")
-        self.comboBox_filterStockHistory.addItem("")
-        self.comboBox_filterStockHistory.addItem("")
-        self.frame_4 = QtWidgets.QFrame(self.frame_45)
-        self.frame_4.setGeometry(QtCore.QRect(30, 50, 611, 71))
-        self.frame_4.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_4.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_4.setObjectName("frame_4")
-        self.lineEdit_OWNER_QuickSearch_StockHistory = QtWidgets.QLineEdit(self.frame_4)
-        self.lineEdit_OWNER_QuickSearch_StockHistory.setGeometry(QtCore.QRect(10, 10, 291, 51))
+        font.setPointSize(14)
+        self.LeftMenuBar.setFont(font)
+        self.LeftMenuBar.setStyleSheet("background-color: rgba(235, 224, 204, 0.47); /* #ebe0cc with 47% opacity */")
+        self.LeftMenuBar.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.LeftMenuBar.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.LeftMenuBar.setObjectName("LeftMenuBar")
+        self.JJelevate_text = QtWidgets.QLabel(self.LeftMenuBar)
+        self.JJelevate_text.setGeometry(QtCore.QRect(30, 250, 251, 21))
         font = QtGui.QFont()
         font.setFamily("Montserrat ExtraBold")
-        font.setPointSize(14)
+        font.setPointSize(18)
         font.setBold(True)
         font.setWeight(75)
-        self.lineEdit_OWNER_QuickSearch_StockHistory.setFont(font)
-        self.lineEdit_OWNER_QuickSearch_StockHistory.setStyleSheet("\n"
-"    background-color: transparent;\n"
-"    color: black;\n"
-"    padding: 2px;\n"
-"    text-align: center;\n"
-"\n"
-"\n"
-"\n"
+        self.JJelevate_text.setFont(font)
+        self.JJelevate_text.setStyleSheet("color: #12245c; \n"
+"background: transparent;\n"
 "")
-        self.lineEdit_OWNER_QuickSearch_StockHistory.setAlignment(QtCore.Qt.AlignCenter)
-        self.lineEdit_OWNER_QuickSearch_StockHistory.setClearButtonEnabled(False)
-        self.lineEdit_OWNER_QuickSearch_StockHistory.setObjectName("lineEdit_OWNER_QuickSearch_StockHistory")
-        self.label_14 = QtWidgets.QLabel(self.frame_4)
-        self.label_14.setGeometry(QtCore.QRect(10, 10, 71, 51))
-        self.label_14.setStyleSheet("background: transparent;\n"
-"padding: 5;\n"
-"")
-        self.label_14.setText("")
-        self.label_14.setPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/search.png"))
-        self.label_14.setScaledContents(True)
-        self.label_14.setObjectName("label_14")
-        self.pushButton_SEARCH_StockHistory = QtWidgets.QPushButton(self.frame_4)
-        self.pushButton_SEARCH_StockHistory.setGeometry(QtCore.QRect(300, 10, 181, 51))
+        self.JJelevate_text.setScaledContents(True)
+        self.JJelevate_text.setObjectName("JJelevate_text")
+        self.Logo = QtWidgets.QLabel(self.LeftMenuBar)
+        self.Logo.setGeometry(QtCore.QRect(30, 50, 241, 171))
+        self.Logo.setStyleSheet("background: transparent;")
+        self.Logo.setText("")
+        self.Logo.setPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/JJLOGO.png"))
+        self.Logo.setScaledContents(True)
+        self.Logo.setAlignment(QtCore.Qt.AlignCenter)
+        self.Logo.setObjectName("Logo")
+        self.pushButton_Dashboard_CASHIER = QtWidgets.QPushButton(self.LeftMenuBar)
+        self.pushButton_Dashboard_CASHIER.setGeometry(QtCore.QRect(30, 310, 231, 51))
         font = QtGui.QFont()
-        font.setFamily("Montserrat ExtraBold")
+        font.setFamily("Montserrat Medium")
+        font.setPointSize(12)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.pushButton_Dashboard_CASHIER.setFont(font)
+        self.pushButton_Dashboard_CASHIER.setStyleSheet("QPushButton {\n"
+"    background-color: white;\n"
+"    color: black;\n"
+"    border-radius: 25px;\n"
+"    padding: 9px;\n"
+"text-align: left;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color:#c25b55;\n"
+"color:black;\n"
+"font-weight: 700;\n"
+"}\n"
+"QPushButton#activeButton {\n"
+"    background-color:#c25b55;\n"
+"color:black;\n"
+"font-weight: 700;\n"
+"}\n"
+"")
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/dashboard_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Dashboard_CASHIER.setIcon(icon)
+        self.pushButton_Dashboard_CASHIER.setIconSize(QtCore.QSize(40, 40))
+        self.pushButton_Dashboard_CASHIER.setObjectName("pushButton_Dashboard_CASHIER")
+        self.pushButton_Inventory_CASHIER = QtWidgets.QPushButton(self.LeftMenuBar)
+        self.pushButton_Inventory_CASHIER.setGeometry(QtCore.QRect(30, 390, 231, 51))
+        font = QtGui.QFont()
+        font.setFamily("Montserrat Medium")
+        font.setPointSize(12)
+        self.pushButton_Inventory_CASHIER.setFont(font)
+        self.pushButton_Inventory_CASHIER.setStyleSheet("QPushButton {\n"
+"    background-color: white;\n"
+"    color: black;\n"
+"    border-radius: 25px;\n"
+"    padding: 9px;\n"
+"text-align: left;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color:#c25b55;\n"
+"color:black;\n"
+"font-weight: 700;\n"
+"}\n"
+"QPushButton#activeButton {\n"
+"    background-color:#c25b55;\n"
+"color:black;\n"
+"font-weight: 700;\n"
+"}\n"
+"")
+        icon1 = QtGui.QIcon()
+        icon1.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/inventory_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Inventory_CASHIER.setIcon(icon1)
+        self.pushButton_Inventory_CASHIER.setIconSize(QtCore.QSize(50, 45))
+        self.pushButton_Inventory_CASHIER.setObjectName("pushButton_Inventory_CASHIER")
+        self.pushButton_Orders_CASHIER = QtWidgets.QPushButton(self.LeftMenuBar)
+        self.pushButton_Orders_CASHIER.setGeometry(QtCore.QRect(30, 470, 231, 51))
+        font = QtGui.QFont()
+        font.setFamily("Montserrat Medium")
+        font.setPointSize(12)
+        self.pushButton_Orders_CASHIER.setFont(font)
+        self.pushButton_Orders_CASHIER.setStyleSheet("QPushButton {\n"
+"    background-color: white;\n"
+"    color: black;\n"
+"    border-radius: 25px;\n"
+"    padding: 9px;\n"
+"text-align: left;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color:#c25b55;\n"
+"color:black;\n"
+"font-weight: 700;\n"
+"}\n"
+"QPushButton#activeButton {\n"
+"    background-color:#c25b55;\n"
+"color:black;\n"
+"font-weight: 700;\n"
+"}\n"
+"")
+        icon2 = QtGui.QIcon()
+        icon2.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/orders_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Orders_CASHIER.setIcon(icon2)
+        self.pushButton_Orders_CASHIER.setIconSize(QtCore.QSize(46, 42))
+        self.pushButton_Orders_CASHIER.setObjectName("pushButton_Orders_CASHIER")
+        self.pushButton_Sales_CASHIER = QtWidgets.QPushButton(self.LeftMenuBar)
+        self.pushButton_Sales_CASHIER.setGeometry(QtCore.QRect(30, 550, 231, 51))
+        font = QtGui.QFont()
+        font.setFamily("Montserrat Medium")
+        font.setPointSize(12)
+        self.pushButton_Sales_CASHIER.setFont(font)
+        self.pushButton_Sales_CASHIER.setStyleSheet("QPushButton {\n"
+"    background-color: white;\n"
+"    color: black;\n"
+"    border-radius: 25px;\n"
+"    padding: 9px;\n"
+"text-align: left;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color:#c25b55;\n"
+"color:black;\n"
+"font-weight: 700;\n"
+"}\n"
+"QPushButton#activeButton {\n"
+"    background-color:#c25b55;\n"
+"color:black;\n"
+"font-weight: 700;\n"
+"}\n"
+"")
+        icon3 = QtGui.QIcon()
+        icon3.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/sales_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Sales_CASHIER.setIcon(icon3)
+        self.pushButton_Sales_CASHIER.setIconSize(QtCore.QSize(35, 35))
+        self.pushButton_Sales_CASHIER.setObjectName("pushButton_Sales_CASHIER")
+        self.pushButton_Account_CASHIER = QtWidgets.QPushButton(self.LeftMenuBar)
+        self.pushButton_Account_CASHIER.setGeometry(QtCore.QRect(30, 710, 231, 51))
+        font = QtGui.QFont()
+        font.setFamily("Montserrat Medium")
+        font.setPointSize(12)
+        self.pushButton_Account_CASHIER.setFont(font)
+        self.pushButton_Account_CASHIER.setStyleSheet("QPushButton {\n"
+"    background-color: white;\n"
+"    color: black;\n"
+"    border-radius: 25px;\n"
+"    padding: 9px;\n"
+"text-align: left;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color:#c25b55;\n"
+"color:black;\n"
+"font-weight: 700;\n"
+"}\n"
+"QPushButton#activeButton {\n"
+"    background-color:#c25b55;\n"
+"color:black;\n"
+"font-weight: 700;\n"
+"}\n"
+"")
+        icon4 = QtGui.QIcon()
+        icon4.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/account_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Account_CASHIER.setIcon(icon4)
+        self.pushButton_Account_CASHIER.setIconSize(QtCore.QSize(48, 48))
+        self.pushButton_Account_CASHIER.setObjectName("pushButton_Account_CASHIER")
+        self.pushButton_LogOut_CASHIER = QtWidgets.QPushButton(self.LeftMenuBar)
+        self.pushButton_LogOut_CASHIER.setGeometry(QtCore.QRect(30, 890, 231, 51))
+        font = QtGui.QFont()
+        font.setFamily("Verdana")
         font.setPointSize(12)
         font.setBold(True)
-        font.setWeight(75)
-        self.pushButton_SEARCH_StockHistory.setFont(font)
-        self.pushButton_SEARCH_StockHistory.setStyleSheet("\n"
-"    background-color: #003366;\n"
-"    color: white;\n"
-"    padding: 2px;\n"
-"    text-align: center;\n"
-"\n"
-"\n"
-"\n"
-"")
-        self.pushButton_SEARCH_StockHistory.setObjectName("pushButton_SEARCH_StockHistory")
-        self.label = QtWidgets.QLabel(self.Owner_centralwidget)
-        self.label.setGeometry(QtCore.QRect(400, 310, 111, 31))
+        font.setWeight(87)
+        self.pushButton_LogOut_CASHIER.setFont(font)
+        self.pushButton_LogOut_CASHIER.setStyleSheet("QPushButton {\n"
+"    background-color:#022162;\n"
+"color:white;\n"
+"font-weight: 700;\n"
+"    border-radius: 25px;\n"
+"    padding: 9px;\n"
+"font-size: 14;\n"
+"text-align: left;\n"
+"}")
+        icon5 = QtGui.QIcon()
+        icon5.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/WHITElogout_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_LogOut_CASHIER.setIcon(icon5)
+        self.pushButton_LogOut_CASHIER.setIconSize(QtCore.QSize(38, 38))
+        self.pushButton_LogOut_CASHIER.setObjectName("pushButton_LogOut_CASHIER")
+        self.pushButton_Stock_History_CASHIER = QtWidgets.QPushButton(self.LeftMenuBar)
+        self.pushButton_Stock_History_CASHIER.setGeometry(QtCore.QRect(30, 630, 231, 51))
         font = QtGui.QFont()
-        font.setPointSize(13)
-        font.setBold(True)
-        font.setWeight(75)
-        self.label.setFont(font)
-        self.label.setObjectName("label")
-        self.tableWidget_StockHistory.raise_()
-        self.LeftMenuBar.raise_()
-        self.frame_45.raise_()
-        self.label.raise_()
-        CASHIER_STOCKHISTORY.setCentralWidget(self.Owner_centralwidget)
-        self.statusbar = QtWidgets.QStatusBar(CASHIER_STOCKHISTORY)
-        self.statusbar.setObjectName("statusbar")
-        CASHIER_STOCKHISTORY.setStatusBar(self.statusbar)
+        font.setFamily("Montserrat Medium")
+        font.setPointSize(12)
+        self.pushButton_Stock_History_CASHIER.setFont(font)
+        self.pushButton_Stock_History_CASHIER.setStyleSheet("QPushButton {\n"
+"    background-color: white;\n"
+"    color: black;\n"
+"    border-radius: 25px;\n"
+"    padding: 9px;\n"
+"text-align: left;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color:#c25b55;\n"
+"color:black;\n"
+"font-weight: 700;\n"
+"}\n"
+"QPushButton#activeButton {\n"
+"    background-color:#c25b55;\n"
+"color:black;\n"
+"font-weight: 700;\n"
+"}\n"
+"")
+        self.pushButton_Stock_History_CASHIER.setIcon(icon1)
+        self.pushButton_Stock_History_CASHIER.setIconSize(QtCore.QSize(50, 45))
+        self.pushButton_Stock_History_CASHIER.setObjectName("pushButton_Stock_History_CASHIER")
 
         self.retranslateUi(CASHIER_STOCKHISTORY)
         QtCore.QMetaObject.connectSlotsByName(CASHIER_STOCKHISTORY)
 
     def retranslateUi(self, CASHIER_STOCKHISTORY):
         _translate = QtCore.QCoreApplication.translate
-        CASHIER_STOCKHISTORY.setWindowTitle(_translate("CASHIER_STOCKHISTORY", "Inventory and Sales Management System"))
-        self.JJelevate_text.setText(_translate("CASHIER_STOCKHISTORY", "J & J ELEVATE"))
-        self.pushButton_Dashboard_CASHIER.setText(_translate("CASHIER_STOCKHISTORY", " Dashboard   "))
-        self.pushButton_Inventory_CASHIER.setText(_translate("CASHIER_STOCKHISTORY", "Inventory"))
-        self.pushButton_Orders_CASHIER.setText(_translate("CASHIER_STOCKHISTORY", " Orders"))
-        self.pushButton_Sales_CASHIER.setText(_translate("CASHIER_STOCKHISTORY", "  Sales"))
-        self.pushButton_Account_CASHIER.setText(_translate("CASHIER_STOCKHISTORY", " Account     "))
-        self.pushButton_LogOut_CASHIER.setText(_translate("CASHIER_STOCKHISTORY", "Log out"))
-        self.pushButton_Stock_History_CASHIER.setText(_translate("CASHIER_STOCKHISTORY", "Stock History"))
+        CASHIER_STOCKHISTORY.setWindowTitle(_translate("CASHIER_STOCKHISTORY", "Form"))
+        self.comboBox_filterStockHistory.setCurrentText(_translate("CASHIER_STOCKHISTORY", "    Filter History"))
+        self.comboBox_filterStockHistory.setItemText(0, _translate("CASHIER_STOCKHISTORY", "    Filter History"))
+        self.comboBox_filterStockHistory.setItemText(1, _translate("CASHIER_STOCKHISTORY", "Roof"))
+        self.comboBox_filterStockHistory.setItemText(2, _translate("CASHIER_STOCKHISTORY", "Spandrel"))
+        self.comboBox_filterStockHistory.setItemText(3, _translate("CASHIER_STOCKHISTORY", "Gutter"))
+        self.comboBox_filterStockHistory.setItemText(4, _translate("CASHIER_STOCKHISTORY", "Others"))
+        self.lineEdit_OWNER_QuickSearch_StockHistory.setPlaceholderText(_translate("CASHIER_STOCKHISTORY", "      Quick Search"))
+        self.pushButton_SEARCH_StockHistory.setText(_translate("CASHIER_STOCKHISTORY", "SEARCH"))
+        self.label.setText(_translate("CASHIER_STOCKHISTORY", "CASHIER"))
         item = self.tableWidget_StockHistory.horizontalHeaderItem(0)
         item.setText(_translate("CASHIER_STOCKHISTORY", "User ID"))
         item = self.tableWidget_StockHistory.horizontalHeaderItem(1)
@@ -458,13 +442,11 @@ class Ui_CASHIER_STOCKHISTORY(object):
         item.setText(_translate("CASHIER_STOCKHISTORY", "New Qty"))
         item = self.tableWidget_StockHistory.horizontalHeaderItem(7)
         item.setText(_translate("CASHIER_STOCKHISTORY", "Updated At"))
-        self.comboBox_filterStockHistory.setCurrentText(_translate("CASHIER_STOCKHISTORY", "    Filter History"))
-        self.comboBox_filterStockHistory.setItemText(0, _translate("CASHIER_STOCKHISTORY", "    Filter History"))
-        self.comboBox_filterStockHistory.setItemText(1, _translate("CASHIER_STOCKHISTORY", "Roof"))
-        self.comboBox_filterStockHistory.setItemText(2, _translate("CASHIER_STOCKHISTORY", "Spandrel"))
-        self.comboBox_filterStockHistory.setItemText(3, _translate("CASHIER_STOCKHISTORY", "Gutter"))
-        self.comboBox_filterStockHistory.setItemText(4, _translate("CASHIER_STOCKHISTORY", "Others"))
-        self.lineEdit_OWNER_QuickSearch_StockHistory.setPlaceholderText(_translate("CASHIER_STOCKHISTORY", "      Quick Search"))
-        self.pushButton_SEARCH_StockHistory.setText(_translate("CASHIER_STOCKHISTORY", "SEARCH"))
-        self.label.setText(_translate("CASHIER_STOCKHISTORY", "CASHIER"))
-from ui.resources import jj_resources_rc
+        self.JJelevate_text.setText(_translate("CASHIER_STOCKHISTORY", "J & J ELEVATE"))
+        self.pushButton_Dashboard_CASHIER.setText(_translate("CASHIER_STOCKHISTORY", " Dashboard   "))
+        self.pushButton_Inventory_CASHIER.setText(_translate("CASHIER_STOCKHISTORY", "Inventory"))
+        self.pushButton_Orders_CASHIER.setText(_translate("CASHIER_STOCKHISTORY", " Orders"))
+        self.pushButton_Sales_CASHIER.setText(_translate("CASHIER_STOCKHISTORY", "  Sales"))
+        self.pushButton_Account_CASHIER.setText(_translate("CASHIER_STOCKHISTORY", " Account     "))
+        self.pushButton_LogOut_CASHIER.setText(_translate("CASHIER_STOCKHISTORY", "Log out"))
+        self.pushButton_Stock_History_CASHIER.setText(_translate("CASHIER_STOCKHISTORY", "Stock History"))

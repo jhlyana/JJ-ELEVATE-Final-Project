@@ -15,26 +15,70 @@ class Ui_LOGIN(object):
     def setupUi(self, LOGIN):
         LOGIN.setObjectName("LOGIN")
         LOGIN.resize(1925, 1033)
-        LOGIN.setMaximumSize(QtCore.QSize(16777215, 16777215))
-        self.centralwidget = QtWidgets.QWidget(LOGIN)
-        self.centralwidget.setStyleSheet("background-color: white;")
-        self.centralwidget.setObjectName("centralwidget")
-        self.PIC = QtWidgets.QLabel(self.centralwidget)
+        self.PIC = QtWidgets.QLabel(LOGIN)
         self.PIC.setGeometry(QtCore.QRect(0, 0, 1921, 982))
         self.PIC.setMinimumSize(QtCore.QSize(100, 40))
         self.PIC.setMaximumSize(QtCore.QSize(16777215, 16777215))
         self.PIC.setText("")
-        self.PIC.setPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/PIC_log_sign_in.png"))
+        self.PIC.setPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/PIC_log_sign_in.png"))
         self.PIC.setScaledContents(True)
         self.PIC.setObjectName("PIC")
-        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.jframe = QtWidgets.QFrame(LOGIN)
+        self.jframe.setGeometry(QtCore.QRect(-10, 460, 951, 431))
+        self.jframe.setStyleSheet("background: transparent;")
+        self.jframe.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.jframe.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.jframe.setObjectName("jframe")
+        self.label_18 = QtWidgets.QLabel(self.jframe)
+        self.label_18.setGeometry(QtCore.QRect(120, 20, 771, 111))
+        font = QtGui.QFont()
+        font.setFamily("Verdana")
+        font.setPointSize(24)
+        font.setBold(True)
+        font.setWeight(87)
+        self.label_18.setFont(font)
+        self.label_18.setStyleSheet("color: #ffffff;\n"
+"font-weight: 700;\n"
+"font-family: \"Verdana\", sans-serif; \n"
+"background: transparent;\n"
+"")
+        self.label_18.setObjectName("label_18")
+        self.label_6 = QtWidgets.QLabel(self.jframe)
+        self.label_6.setGeometry(QtCore.QRect(340, 110, 291, 61))
+        font = QtGui.QFont()
+        font.setFamily("Verdana")
+        font.setPointSize(18)
+        font.setBold(True)
+        font.setWeight(87)
+        self.label_6.setFont(font)
+        self.label_6.setStyleSheet("color: #ffffff;\n"
+"font-weight: 700;\n"
+"font-family: \"Verdana\", sans-serif; \n"
+"background: transparent;\n"
+"")
+        self.label_6.setObjectName("label_6")
+        self.label_11 = QtWidgets.QLabel(self.jframe)
+        self.label_11.setGeometry(QtCore.QRect(170, 250, 631, 41))
+        font = QtGui.QFont()
+        font.setFamily("Verdana")
+        font.setPointSize(16)
+        font.setBold(True)
+        font.setWeight(87)
+        self.label_11.setFont(font)
+        self.label_11.setStyleSheet("color: #fff2bd; \n"
+"font-weight: 700;\n"
+"font-family: \"Verdana\", sans-serif; \n"
+"background: transparent; \n"
+"")
+        self.label_11.setObjectName("label_11")
+        self.label = QtWidgets.QLabel(LOGIN)
         self.label.setGeometry(QtCore.QRect(270, 130, 451, 331))
         self.label.setStyleSheet("background-color: transparent;")
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/JJLOGO.png"))
+        self.label.setPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/JJLOGO.png"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
-        self.frame = QtWidgets.QFrame(self.centralwidget)
+        self.frame = QtWidgets.QFrame(LOGIN)
         self.frame.setGeometry(QtCore.QRect(990, 0, 931, 982))
         self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
@@ -183,7 +227,7 @@ class Ui_LOGIN(object):
 "")
         self.togglePasswordButton.setText("")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../Downloads/EYE.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Downloads/EYE.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.togglePasswordButton.setIcon(icon)
         self.togglePasswordButton.setIconSize(QtCore.QSize(45, 45))
         self.togglePasswordButton.setObjectName("togglePasswordButton")
@@ -202,69 +246,16 @@ class Ui_LOGIN(object):
 "background-color: #c25b55; \n"
 "color: white;")
         self.pushButton_clearLogins.setObjectName("pushButton_clearLogins")
-        self.jframe = QtWidgets.QFrame(self.centralwidget)
-        self.jframe.setGeometry(QtCore.QRect(-10, 460, 951, 431))
-        self.jframe.setStyleSheet("background: transparent;")
-        self.jframe.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.jframe.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.jframe.setObjectName("jframe")
-        self.label_18 = QtWidgets.QLabel(self.jframe)
-        self.label_18.setGeometry(QtCore.QRect(120, 20, 771, 111))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(24)
-        font.setBold(True)
-        font.setWeight(87)
-        self.label_18.setFont(font)
-        self.label_18.setStyleSheet("color: #ffffff;\n"
-"font-weight: 700;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"background: transparent;\n"
-"")
-        self.label_18.setObjectName("label_18")
-        self.label_6 = QtWidgets.QLabel(self.jframe)
-        self.label_6.setGeometry(QtCore.QRect(340, 110, 291, 61))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(18)
-        font.setBold(True)
-        font.setWeight(87)
-        self.label_6.setFont(font)
-        self.label_6.setStyleSheet("color: #ffffff;\n"
-"font-weight: 700;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"background: transparent;\n"
-"")
-        self.label_6.setObjectName("label_6")
-        self.label_11 = QtWidgets.QLabel(self.jframe)
-        self.label_11.setGeometry(QtCore.QRect(170, 250, 631, 41))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(16)
-        font.setBold(True)
-        font.setWeight(87)
-        self.label_11.setFont(font)
-        self.label_11.setStyleSheet("color: #fff2bd; \n"
-"font-weight: 700;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"background: transparent; \n"
-"")
-        self.label_11.setObjectName("label_11")
-        LOGIN.setCentralWidget(self.centralwidget)
-        self.menubar = QtWidgets.QMenuBar(LOGIN)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 1925, 26))
-        self.menubar.setObjectName("menubar")
-        LOGIN.setMenuBar(self.menubar)
-        self.statusbar = QtWidgets.QStatusBar(LOGIN)
-        self.statusbar.setObjectName("statusbar")
-        LOGIN.setStatusBar(self.statusbar)
 
         self.retranslateUi(LOGIN)
         QtCore.QMetaObject.connectSlotsByName(LOGIN)
 
     def retranslateUi(self, LOGIN):
         _translate = QtCore.QCoreApplication.translate
-        LOGIN.setWindowTitle(_translate("LOGIN", "Inventory and Sales Management System"))
+        LOGIN.setWindowTitle(_translate("LOGIN", "Form"))
+        self.label_18.setText(_translate("LOGIN", "J & J Roofsteel and Gutter Supply"))
+        self.label_6.setText(_translate("LOGIN", "Moalboal Branch"))
+        self.label_11.setText(_translate("LOGIN", "Supply       |         Install       |         Repair    "))
         self.checkBox_rememberme.setText(_translate("LOGIN", "Remember me"))
         self.pushButton_xtolanding.setText(_translate("LOGIN", "← Back to Landing"))
         self.label_2.setText(_translate("LOGIN", "Login"))
@@ -276,7 +267,3 @@ class Ui_LOGIN(object):
         self.forgotPassLabel.setText(_translate("LOGIN", "Forgot password? Only available for Shop Owners"))
         self.pushButton_forgotPass_login_page.setText(_translate("LOGIN", "Reset Password"))
         self.pushButton_clearLogins.setText(_translate("LOGIN", "Clear "))
-        self.label_18.setText(_translate("LOGIN", "J & J Roofsteel and Gutter Supply"))
-        self.label_6.setText(_translate("LOGIN", "Moalboal Branch"))
-        self.label_11.setText(_translate("LOGIN", "Supply       |         Install       |         Repair    "))
-from ui.resources import jj_resources_rc

@@ -15,13 +15,7 @@ class Ui_CASHIER_DASHBOARD(object):
     def setupUi(self, CASHIER_DASHBOARD):
         CASHIER_DASHBOARD.setObjectName("CASHIER_DASHBOARD")
         CASHIER_DASHBOARD.resize(1921, 1005)
-        CASHIER_DASHBOARD.setStyleSheet("background: white;")
-        self.Owner_centralwidget = QtWidgets.QWidget(CASHIER_DASHBOARD)
-        font = QtGui.QFont()
-        font.setPointSize(14)
-        self.Owner_centralwidget.setFont(font)
-        self.Owner_centralwidget.setObjectName("Owner_centralwidget")
-        self.LeftMenuBar = QtWidgets.QFrame(self.Owner_centralwidget)
+        self.LeftMenuBar = QtWidgets.QFrame(CASHIER_DASHBOARD)
         self.LeftMenuBar.setGeometry(QtCore.QRect(-1, -1, 301, 981))
         font = QtGui.QFont()
         font.setPointSize(14)
@@ -47,7 +41,7 @@ class Ui_CASHIER_DASHBOARD(object):
         self.Logo.setGeometry(QtCore.QRect(30, 50, 241, 171))
         self.Logo.setStyleSheet("background: transparent;")
         self.Logo.setText("")
-        self.Logo.setPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/JJLOGO.png"))
+        self.Logo.setPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/JJLOGO.png"))
         self.Logo.setScaledContents(True)
         self.Logo.setAlignment(QtCore.Qt.AlignCenter)
         self.Logo.setObjectName("Logo")
@@ -79,7 +73,7 @@ class Ui_CASHIER_DASHBOARD(object):
 "}\n"
 "")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/dashboard_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/dashboard_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_Dashboard_CASHIER.setIcon(icon)
         self.pushButton_Dashboard_CASHIER.setIconSize(QtCore.QSize(40, 40))
         self.pushButton_Dashboard_CASHIER.setObjectName("pushButton_Dashboard_CASHIER")
@@ -108,7 +102,7 @@ class Ui_CASHIER_DASHBOARD(object):
 "}\n"
 "")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/inventory_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon1.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/inventory_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_Inventory_CASHIER.setIcon(icon1)
         self.pushButton_Inventory_CASHIER.setIconSize(QtCore.QSize(50, 45))
         self.pushButton_Inventory_CASHIER.setObjectName("pushButton_Inventory_CASHIER")
@@ -137,7 +131,7 @@ class Ui_CASHIER_DASHBOARD(object):
 "}\n"
 "")
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/orders_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon2.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/orders_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_Orders_CASHIER.setIcon(icon2)
         self.pushButton_Orders_CASHIER.setIconSize(QtCore.QSize(46, 42))
         self.pushButton_Orders_CASHIER.setObjectName("pushButton_Orders_CASHIER")
@@ -166,7 +160,7 @@ class Ui_CASHIER_DASHBOARD(object):
 "}\n"
 "")
         icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/sales_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon3.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/sales_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_Sales_CASHIER.setIcon(icon3)
         self.pushButton_Sales_CASHIER.setIconSize(QtCore.QSize(35, 35))
         self.pushButton_Sales_CASHIER.setObjectName("pushButton_Sales_CASHIER")
@@ -195,7 +189,7 @@ class Ui_CASHIER_DASHBOARD(object):
 "}\n"
 "")
         icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/account_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon4.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/account_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_Account_CASHIER.setIcon(icon4)
         self.pushButton_Account_CASHIER.setIconSize(QtCore.QSize(48, 48))
         self.pushButton_Account_CASHIER.setObjectName("pushButton_Account_CASHIER")
@@ -217,7 +211,7 @@ class Ui_CASHIER_DASHBOARD(object):
 "text-align: left;\n"
 "}")
         icon5 = QtGui.QIcon()
-        icon5.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/WHITElogout_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon5.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/WHITElogout_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_LogOut_CASHIER.setIcon(icon5)
         self.pushButton_LogOut_CASHIER.setIconSize(QtCore.QSize(38, 38))
         self.pushButton_LogOut_CASHIER.setObjectName("pushButton_LogOut_CASHIER")
@@ -248,7 +242,7 @@ class Ui_CASHIER_DASHBOARD(object):
         self.pushButton_Stock_History_CASHIER.setIcon(icon1)
         self.pushButton_Stock_History_CASHIER.setIconSize(QtCore.QSize(50, 45))
         self.pushButton_Stock_History_CASHIER.setObjectName("pushButton_Stock_History_CASHIER")
-        self.frame_45 = QtWidgets.QFrame(self.Owner_centralwidget)
+        self.frame_45 = QtWidgets.QFrame(CASHIER_DASHBOARD)
         self.frame_45.setGeometry(QtCore.QRect(300, 0, 1621, 211))
         self.frame_45.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_45.setFrameShadow(QtWidgets.QFrame.Raised)
@@ -284,7 +278,7 @@ class Ui_CASHIER_DASHBOARD(object):
 "")
         self.dateLabel_CASHIER.setTextFormat(QtCore.Qt.RichText)
         self.dateLabel_CASHIER.setObjectName("dateLabel_CASHIER")
-        self.frame_46 = QtWidgets.QFrame(self.Owner_centralwidget)
+        self.frame_46 = QtWidgets.QFrame(CASHIER_DASHBOARD)
         self.frame_46.setGeometry(QtCore.QRect(340, 210, 1531, 751))
         self.frame_46.setStyleSheet("\n"
 "    background-color: #f6f3ee;\n"
@@ -685,7 +679,7 @@ class Ui_CASHIER_DASHBOARD(object):
         self.top3LOWSTOCK_PROD_QTY_CASHIER.raise_()
         self.top4LOWSTOCK_PRODUCT_CASHIER.raise_()
         self.top4LOWSTOCK_PROD_QTY_CASHIER.raise_()
-        self.label = QtWidgets.QLabel(self.Owner_centralwidget)
+        self.label = QtWidgets.QLabel(CASHIER_DASHBOARD)
         self.label.setGeometry(QtCore.QRect(250, 430, 111, 31))
         font = QtGui.QFont()
         font.setPointSize(13)
@@ -693,17 +687,13 @@ class Ui_CASHIER_DASHBOARD(object):
         font.setWeight(75)
         self.label.setFont(font)
         self.label.setObjectName("label")
-        CASHIER_DASHBOARD.setCentralWidget(self.Owner_centralwidget)
-        self.statusbar = QtWidgets.QStatusBar(CASHIER_DASHBOARD)
-        self.statusbar.setObjectName("statusbar")
-        CASHIER_DASHBOARD.setStatusBar(self.statusbar)
 
         self.retranslateUi(CASHIER_DASHBOARD)
         QtCore.QMetaObject.connectSlotsByName(CASHIER_DASHBOARD)
 
     def retranslateUi(self, CASHIER_DASHBOARD):
         _translate = QtCore.QCoreApplication.translate
-        CASHIER_DASHBOARD.setWindowTitle(_translate("CASHIER_DASHBOARD", "Inventory and Sales Management System"))
+        CASHIER_DASHBOARD.setWindowTitle(_translate("CASHIER_DASHBOARD", "Form"))
         self.JJelevate_text.setText(_translate("CASHIER_DASHBOARD", "J & J ELEVATE"))
         self.pushButton_Dashboard_CASHIER.setText(_translate("CASHIER_DASHBOARD", " Dashboard   "))
         self.pushButton_Inventory_CASHIER.setText(_translate("CASHIER_DASHBOARD", "Inventory"))
@@ -736,4 +726,3 @@ class Ui_CASHIER_DASHBOARD(object):
         self.top2LOWSTOCK_PROD_QTY_CASHIER.setText(_translate("CASHIER_DASHBOARD", "ONLY 2 LEFT"))
         self.top1LOWEST_STOCK_PROD_QTY_CASHIER.setText(_translate("CASHIER_DASHBOARD", "ONLY 1 LEFT"))
         self.label.setText(_translate("CASHIER_DASHBOARD", "CASHIER"))
-from ui.resources import jj_resources_rc

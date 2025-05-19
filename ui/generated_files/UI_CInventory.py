@@ -15,13 +15,26 @@ class Ui_CASHIER_INVENTORY(object):
     def setupUi(self, CASHIER_INVENTORY):
         CASHIER_INVENTORY.setObjectName("CASHIER_INVENTORY")
         CASHIER_INVENTORY.resize(1936, 1005)
-        CASHIER_INVENTORY.setStyleSheet("background: white;")
-        self.Owner_centralwidget = QtWidgets.QWidget(CASHIER_INVENTORY)
+        self.pushButton_ViewHistory = QtWidgets.QPushButton(CASHIER_INVENTORY)
+        self.pushButton_ViewHistory.setGeometry(QtCore.QRect(1630, 30, 241, 51))
         font = QtGui.QFont()
-        font.setPointSize(14)
-        self.Owner_centralwidget.setFont(font)
-        self.Owner_centralwidget.setObjectName("Owner_centralwidget")
-        self.LeftMenuBar = QtWidgets.QFrame(self.Owner_centralwidget)
+        font.setFamily("Montserrat ExtraBold")
+        font.setPointSize(13)
+        font.setBold(True)
+        font.setWeight(75)
+        self.pushButton_ViewHistory.setFont(font)
+        self.pushButton_ViewHistory.setStyleSheet("\n"
+"    background-color: #b2423c;\n"
+"border-radius: 10;\n"
+"    color: white;\n"
+"    padding: 2px;\n"
+"    text-align: center;\n"
+"\n"
+"\n"
+"\n"
+"")
+        self.pushButton_ViewHistory.setObjectName("pushButton_ViewHistory")
+        self.LeftMenuBar = QtWidgets.QFrame(CASHIER_INVENTORY)
         self.LeftMenuBar.setGeometry(QtCore.QRect(0, 0, 301, 981))
         font = QtGui.QFont()
         font.setPointSize(14)
@@ -47,7 +60,7 @@ class Ui_CASHIER_INVENTORY(object):
         self.Logo.setGeometry(QtCore.QRect(30, 50, 241, 171))
         self.Logo.setStyleSheet("background: transparent;")
         self.Logo.setText("")
-        self.Logo.setPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/JJLOGO.png"))
+        self.Logo.setPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/JJLOGO.png"))
         self.Logo.setScaledContents(True)
         self.Logo.setAlignment(QtCore.Qt.AlignCenter)
         self.Logo.setObjectName("Logo")
@@ -79,7 +92,7 @@ class Ui_CASHIER_INVENTORY(object):
 "}\n"
 "")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/dashboard_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/dashboard_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_Dashboard_CASHIER.setIcon(icon)
         self.pushButton_Dashboard_CASHIER.setIconSize(QtCore.QSize(40, 40))
         self.pushButton_Dashboard_CASHIER.setObjectName("pushButton_Dashboard_CASHIER")
@@ -108,7 +121,7 @@ class Ui_CASHIER_INVENTORY(object):
 "}\n"
 "")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/inventory_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon1.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/inventory_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_Inventory_CASHIER.setIcon(icon1)
         self.pushButton_Inventory_CASHIER.setIconSize(QtCore.QSize(50, 45))
         self.pushButton_Inventory_CASHIER.setObjectName("pushButton_Inventory_CASHIER")
@@ -137,7 +150,7 @@ class Ui_CASHIER_INVENTORY(object):
 "}\n"
 "")
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/orders_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon2.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/orders_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_Orders_CASHIER.setIcon(icon2)
         self.pushButton_Orders_CASHIER.setIconSize(QtCore.QSize(46, 42))
         self.pushButton_Orders_CASHIER.setObjectName("pushButton_Orders_CASHIER")
@@ -166,17 +179,17 @@ class Ui_CASHIER_INVENTORY(object):
 "}\n"
 "")
         icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/sales_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon3.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/sales_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_Sales_CASHIER.setIcon(icon3)
         self.pushButton_Sales_CASHIER.setIconSize(QtCore.QSize(35, 35))
         self.pushButton_Sales_CASHIER.setObjectName("pushButton_Sales_CASHIER")
-        self.pushButton_Account = QtWidgets.QPushButton(self.LeftMenuBar)
-        self.pushButton_Account.setGeometry(QtCore.QRect(30, 710, 231, 51))
+        self.pushButton_Account_CASHIER = QtWidgets.QPushButton(self.LeftMenuBar)
+        self.pushButton_Account_CASHIER.setGeometry(QtCore.QRect(30, 710, 231, 51))
         font = QtGui.QFont()
         font.setFamily("Montserrat Medium")
         font.setPointSize(12)
-        self.pushButton_Account.setFont(font)
-        self.pushButton_Account.setStyleSheet("QPushButton {\n"
+        self.pushButton_Account_CASHIER.setFont(font)
+        self.pushButton_Account_CASHIER.setStyleSheet("QPushButton {\n"
 "    background-color: white;\n"
 "    color: black;\n"
 "    border-radius: 25px;\n"
@@ -195,10 +208,10 @@ class Ui_CASHIER_INVENTORY(object):
 "}\n"
 "")
         icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/account_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Account.setIcon(icon4)
-        self.pushButton_Account.setIconSize(QtCore.QSize(48, 48))
-        self.pushButton_Account.setObjectName("pushButton_Account")
+        icon4.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/account_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Account_CASHIER.setIcon(icon4)
+        self.pushButton_Account_CASHIER.setIconSize(QtCore.QSize(48, 48))
+        self.pushButton_Account_CASHIER.setObjectName("pushButton_Account_CASHIER")
         self.pushButton_LogOut_CASHIER = QtWidgets.QPushButton(self.LeftMenuBar)
         self.pushButton_LogOut_CASHIER.setGeometry(QtCore.QRect(30, 890, 231, 51))
         font = QtGui.QFont()
@@ -217,7 +230,7 @@ class Ui_CASHIER_INVENTORY(object):
 "text-align: left;\n"
 "}")
         icon5 = QtGui.QIcon()
-        icon5.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/WHITElogout_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon5.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/WHITElogout_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_LogOut_CASHIER.setIcon(icon5)
         self.pushButton_LogOut_CASHIER.setIconSize(QtCore.QSize(38, 38))
         self.pushButton_LogOut_CASHIER.setObjectName("pushButton_LogOut_CASHIER")
@@ -248,7 +261,7 @@ class Ui_CASHIER_INVENTORY(object):
         self.pushButton_Stock_History_CASHIER.setIcon(icon1)
         self.pushButton_Stock_History_CASHIER.setIconSize(QtCore.QSize(50, 45))
         self.pushButton_Stock_History_CASHIER.setObjectName("pushButton_Stock_History_CASHIER")
-        self.frame_4 = QtWidgets.QFrame(self.Owner_centralwidget)
+        self.frame_4 = QtWidgets.QFrame(CASHIER_INVENTORY)
         self.frame_4.setGeometry(QtCore.QRect(330, 20, 611, 71))
         self.frame_4.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_4.setFrameShadow(QtWidgets.QFrame.Raised)
@@ -279,7 +292,7 @@ class Ui_CASHIER_INVENTORY(object):
 "padding: 5;\n"
 "")
         self.label_14.setText("")
-        self.label_14.setPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/search.png"))
+        self.label_14.setPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/search.png"))
         self.label_14.setScaledContents(True)
         self.label_14.setObjectName("label_14")
         self.pushButton_SEARCHitems = QtWidgets.QPushButton(self.frame_4)
@@ -300,43 +313,15 @@ class Ui_CASHIER_INVENTORY(object):
 "\n"
 "")
         self.pushButton_SEARCHitems.setObjectName("pushButton_SEARCHitems")
-        self.pushButton_ViewHistory = QtWidgets.QPushButton(self.Owner_centralwidget)
-        self.pushButton_ViewHistory.setGeometry(QtCore.QRect(1630, 30, 241, 51))
+        self.label = QtWidgets.QLabel(CASHIER_INVENTORY)
+        self.label.setGeometry(QtCore.QRect(240, 370, 111, 31))
         font = QtGui.QFont()
-        font.setFamily("Montserrat ExtraBold")
         font.setPointSize(13)
         font.setBold(True)
         font.setWeight(75)
-        self.pushButton_ViewHistory.setFont(font)
-        self.pushButton_ViewHistory.setStyleSheet("\n"
-"    background-color: #b2423c;\n"
-"border-radius: 10;\n"
-"    color: white;\n"
-"    padding: 2px;\n"
-"    text-align: center;\n"
-"\n"
-"\n"
-"\n"
-"")
-        self.pushButton_ViewHistory.setObjectName("pushButton_ViewHistory")
-        self.textBrowser_inv_ROOF_lowstk_warning = QtWidgets.QTextBrowser(self.Owner_centralwidget)
-        self.textBrowser_inv_ROOF_lowstk_warning.setGeometry(QtCore.QRect(340, 890, 1531, 71))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(10)
-        self.textBrowser_inv_ROOF_lowstk_warning.setFont(font)
-        self.textBrowser_inv_ROOF_lowstk_warning.setStyleSheet("\n"
-"    background-color: #ffffff;\n"
-"border-radius: 11;\n"
-"    color: #d75413;\n"
-"    border: 1px solid #d75413; \n"
-"    padding: 3px;\n"
-"    font-family: \"Verdana\", sans-serif; \n"
-"\n"
-"\n"
-"")
-        self.textBrowser_inv_ROOF_lowstk_warning.setObjectName("textBrowser_inv_ROOF_lowstk_warning")
-        self.frame_46 = QtWidgets.QFrame(self.Owner_centralwidget)
+        self.label.setFont(font)
+        self.label.setObjectName("label")
+        self.frame_46 = QtWidgets.QFrame(CASHIER_INVENTORY)
         self.frame_46.setGeometry(QtCore.QRect(340, 110, 1531, 761))
         self.frame_46.setStyleSheet("\n"
 "    background-color: #f6f3ee;\n"
@@ -613,7 +598,7 @@ class Ui_CASHIER_INVENTORY(object):
 "}\n"
 "")
         icon6 = QtGui.QIcon()
-        icon6.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/add.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon6.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/add.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_OWNER_Add_Inventory.setIcon(icon6)
         self.pushButton_OWNER_Add_Inventory.setIconSize(QtCore.QSize(26, 26))
         self.pushButton_OWNER_Add_Inventory.setObjectName("pushButton_OWNER_Add_Inventory")
@@ -648,7 +633,7 @@ class Ui_CASHIER_INVENTORY(object):
 "}\n"
 "")
         icon7 = QtGui.QIcon()
-        icon7.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/edit.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon7.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/edit.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_OWNER_Edit_Inventory.setIcon(icon7)
         self.pushButton_OWNER_Edit_Inventory.setIconSize(QtCore.QSize(27, 27))
         self.pushButton_OWNER_Edit_Inventory.setObjectName("pushButton_OWNER_Edit_Inventory")
@@ -683,13 +668,13 @@ class Ui_CASHIER_INVENTORY(object):
 "}\n"
 "")
         icon8 = QtGui.QIcon()
-        icon8.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/delete.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon8.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/delete.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_OWNER_Delete_Inventory.setIcon(icon8)
         self.pushButton_OWNER_Delete_Inventory.setIconSize(QtCore.QSize(27, 27))
         self.pushButton_OWNER_Delete_Inventory.setObjectName("pushButton_OWNER_Delete_Inventory")
         self.frame_5.raise_()
         self.frame_3.raise_()
-        self.INVENTORY_afterBUTTONSclick = QtWidgets.QStackedWidget(self.Owner_centralwidget)
+        self.INVENTORY_afterBUTTONSclick = QtWidgets.QStackedWidget(CASHIER_INVENTORY)
         self.INVENTORY_afterBUTTONSclick.setGeometry(QtCore.QRect(310, 200, 1631, 711))
         self.INVENTORY_afterBUTTONSclick.setStyleSheet("background: transparent;")
         self.INVENTORY_afterBUTTONSclick.setObjectName("INVENTORY_afterBUTTONSclick")
@@ -4002,18 +3987,23 @@ class Ui_CASHIER_INVENTORY(object):
         self.label_317.setScaledContents(True)
         self.label_317.setObjectName("label_317")
         self.INVENTORY_afterBUTTONSclick.addWidget(self.page_INV_DELETE_STOCK)
-        self.label = QtWidgets.QLabel(self.Owner_centralwidget)
-        self.label.setGeometry(QtCore.QRect(240, 370, 111, 31))
+        self.textBrowser_inv_ROOF_lowstk_warning = QtWidgets.QTextBrowser(CASHIER_INVENTORY)
+        self.textBrowser_inv_ROOF_lowstk_warning.setGeometry(QtCore.QRect(340, 890, 1531, 71))
         font = QtGui.QFont()
-        font.setPointSize(13)
-        font.setBold(True)
-        font.setWeight(75)
-        self.label.setFont(font)
-        self.label.setObjectName("label")
-        CASHIER_INVENTORY.setCentralWidget(self.Owner_centralwidget)
-        self.statusbar = QtWidgets.QStatusBar(CASHIER_INVENTORY)
-        self.statusbar.setObjectName("statusbar")
-        CASHIER_INVENTORY.setStatusBar(self.statusbar)
+        font.setFamily("Verdana")
+        font.setPointSize(10)
+        self.textBrowser_inv_ROOF_lowstk_warning.setFont(font)
+        self.textBrowser_inv_ROOF_lowstk_warning.setStyleSheet("\n"
+"    background-color: #ffffff;\n"
+"border-radius: 11;\n"
+"    color: #d75413;\n"
+"    border: 1px solid #d75413; \n"
+"    padding: 3px;\n"
+"    font-family: \"Verdana\", sans-serif; \n"
+"\n"
+"\n"
+"")
+        self.textBrowser_inv_ROOF_lowstk_warning.setObjectName("textBrowser_inv_ROOF_lowstk_warning")
 
         self.retranslateUi(CASHIER_INVENTORY)
         self.INVENTORY_afterBUTTONSclick.setCurrentIndex(7)
@@ -4024,23 +4014,19 @@ class Ui_CASHIER_INVENTORY(object):
 
     def retranslateUi(self, CASHIER_INVENTORY):
         _translate = QtCore.QCoreApplication.translate
-        CASHIER_INVENTORY.setWindowTitle(_translate("CASHIER_INVENTORY", "Inventory and Sales Management System"))
+        CASHIER_INVENTORY.setWindowTitle(_translate("CASHIER_INVENTORY", "Form"))
+        self.pushButton_ViewHistory.setText(_translate("CASHIER_INVENTORY", "VIEW HISTORY"))
         self.JJelevate_text.setText(_translate("CASHIER_INVENTORY", "J & J ELEVATE"))
         self.pushButton_Dashboard_CASHIER.setText(_translate("CASHIER_INVENTORY", " Dashboard   "))
         self.pushButton_Inventory_CASHIER.setText(_translate("CASHIER_INVENTORY", "Inventory"))
         self.pushButton_Orders_CASHIER.setText(_translate("CASHIER_INVENTORY", " Orders"))
         self.pushButton_Sales_CASHIER.setText(_translate("CASHIER_INVENTORY", "  Sales"))
-        self.pushButton_Account.setText(_translate("CASHIER_INVENTORY", " Account     "))
+        self.pushButton_Account_CASHIER.setText(_translate("CASHIER_INVENTORY", " Account     "))
         self.pushButton_LogOut_CASHIER.setText(_translate("CASHIER_INVENTORY", "Log out"))
         self.pushButton_Stock_History_CASHIER.setText(_translate("CASHIER_INVENTORY", "Stock History"))
         self.lineEdit_OWNER_QuickSearch_Inventory.setPlaceholderText(_translate("CASHIER_INVENTORY", "      Quick Search"))
         self.pushButton_SEARCHitems.setText(_translate("CASHIER_INVENTORY", "SEARCH"))
-        self.pushButton_ViewHistory.setText(_translate("CASHIER_INVENTORY", "VIEW HISTORY"))
-        self.textBrowser_inv_ROOF_lowstk_warning.setHtml(_translate("CASHIER_INVENTORY", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'Verdana\',\'sans-serif\'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
+        self.label.setText(_translate("CASHIER_INVENTORY", "CASHIER"))
         self.pushButton_Inventory_ALL_ITEMS_table.setText(_translate("CASHIER_INVENTORY", "ALL ITEMS"))
         self.pushButton_Inventory_ROOF_table.setText(_translate("CASHIER_INVENTORY", "ROOF"))
         self.pushButton_Inventory_SPANDREL_table.setText(_translate("CASHIER_INVENTORY", "SPANDREL"))
@@ -4380,5 +4366,8 @@ class Ui_CASHIER_INVENTORY(object):
         self.comboBox_Select_Prod_Type_toDelete.setItemText(2, _translate("CASHIER_INVENTORY", "SPANDREL"))
         self.comboBox_Select_Prod_Type_toDelete.setItemText(3, _translate("CASHIER_INVENTORY", "GUTTER"))
         self.comboBox_Select_Prod_Type_toDelete.setItemText(4, _translate("CASHIER_INVENTORY", "OTHER"))
-        self.label.setText(_translate("CASHIER_INVENTORY", "CASHIER"))
-from ui.resources import jj_resources_rc
+        self.textBrowser_inv_ROOF_lowstk_warning.setHtml(_translate("CASHIER_INVENTORY", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'Verdana\',\'sans-serif\'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))

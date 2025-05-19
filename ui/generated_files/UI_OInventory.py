@@ -15,240 +15,7 @@ class Ui_OWNER_INVENTORY(object):
     def setupUi(self, OWNER_INVENTORY):
         OWNER_INVENTORY.setObjectName("OWNER_INVENTORY")
         OWNER_INVENTORY.resize(1936, 1005)
-        OWNER_INVENTORY.setStyleSheet("background: white;")
-        self.Owner_centralwidget = QtWidgets.QWidget(OWNER_INVENTORY)
-        font = QtGui.QFont()
-        font.setPointSize(14)
-        self.Owner_centralwidget.setFont(font)
-        self.Owner_centralwidget.setObjectName("Owner_centralwidget")
-        self.LeftMenuBar = QtWidgets.QFrame(self.Owner_centralwidget)
-        self.LeftMenuBar.setGeometry(QtCore.QRect(0, 0, 301, 981))
-        font = QtGui.QFont()
-        font.setPointSize(14)
-        self.LeftMenuBar.setFont(font)
-        self.LeftMenuBar.setStyleSheet("background-color: rgba(235, 224, 204, 0.47); /* #ebe0cc with 47% opacity */")
-        self.LeftMenuBar.setFrameShape(QtWidgets.QFrame.NoFrame)
-        self.LeftMenuBar.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.LeftMenuBar.setObjectName("LeftMenuBar")
-        self.JJelevate_text = QtWidgets.QLabel(self.LeftMenuBar)
-        self.JJelevate_text.setGeometry(QtCore.QRect(30, 250, 251, 21))
-        font = QtGui.QFont()
-        font.setFamily("Montserrat ExtraBold")
-        font.setPointSize(18)
-        font.setBold(True)
-        font.setWeight(75)
-        self.JJelevate_text.setFont(font)
-        self.JJelevate_text.setStyleSheet("color: #12245c; \n"
-"background: transparent;\n"
-"")
-        self.JJelevate_text.setScaledContents(True)
-        self.JJelevate_text.setObjectName("JJelevate_text")
-        self.Logo = QtWidgets.QLabel(self.LeftMenuBar)
-        self.Logo.setGeometry(QtCore.QRect(30, 50, 241, 171))
-        self.Logo.setStyleSheet("background: transparent;")
-        self.Logo.setText("")
-        self.Logo.setPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/JJLOGO.png"))
-        self.Logo.setScaledContents(True)
-        self.Logo.setAlignment(QtCore.Qt.AlignCenter)
-        self.Logo.setObjectName("Logo")
-        self.pushButton_Dashboard = QtWidgets.QPushButton(self.LeftMenuBar)
-        self.pushButton_Dashboard.setGeometry(QtCore.QRect(30, 310, 231, 51))
-        font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(12)
-        font.setBold(False)
-        font.setItalic(False)
-        font.setWeight(50)
-        self.pushButton_Dashboard.setFont(font)
-        self.pushButton_Dashboard.setStyleSheet("QPushButton {\n"
-"    background-color: white;\n"
-"    color: black;\n"
-"    border-radius: 25px;\n"
-"    padding: 9px;\n"
-"text-align: left;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"QPushButton#activeButton {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"")
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/dashboard_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Dashboard.setIcon(icon)
-        self.pushButton_Dashboard.setIconSize(QtCore.QSize(40, 40))
-        self.pushButton_Dashboard.setObjectName("pushButton_Dashboard")
-        self.pushButton_Inventory = QtWidgets.QPushButton(self.LeftMenuBar)
-        self.pushButton_Inventory.setGeometry(QtCore.QRect(30, 390, 231, 51))
-        font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(12)
-        self.pushButton_Inventory.setFont(font)
-        self.pushButton_Inventory.setStyleSheet("QPushButton {\n"
-"    background-color: white;\n"
-"    color: black;\n"
-"    border-radius: 25px;\n"
-"    padding: 9px;\n"
-"text-align: left;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"QPushButton#activeButton {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"")
-        icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/inventory_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Inventory.setIcon(icon1)
-        self.pushButton_Inventory.setIconSize(QtCore.QSize(50, 45))
-        self.pushButton_Inventory.setObjectName("pushButton_Inventory")
-        self.pushButton_Orders = QtWidgets.QPushButton(self.LeftMenuBar)
-        self.pushButton_Orders.setGeometry(QtCore.QRect(30, 470, 231, 51))
-        font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(12)
-        self.pushButton_Orders.setFont(font)
-        self.pushButton_Orders.setStyleSheet("QPushButton {\n"
-"    background-color: white;\n"
-"    color: black;\n"
-"    border-radius: 25px;\n"
-"    padding: 9px;\n"
-"text-align: left;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"QPushButton#activeButton {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"")
-        icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/orders_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Orders.setIcon(icon2)
-        self.pushButton_Orders.setIconSize(QtCore.QSize(46, 42))
-        self.pushButton_Orders.setObjectName("pushButton_Orders")
-        self.pushButton_Sales = QtWidgets.QPushButton(self.LeftMenuBar)
-        self.pushButton_Sales.setGeometry(QtCore.QRect(30, 550, 231, 51))
-        font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(12)
-        self.pushButton_Sales.setFont(font)
-        self.pushButton_Sales.setStyleSheet("QPushButton {\n"
-"    background-color: white;\n"
-"    color: black;\n"
-"    border-radius: 25px;\n"
-"    padding: 9px;\n"
-"text-align: left;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"QPushButton#activeButton {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"")
-        icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/sales_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Sales.setIcon(icon3)
-        self.pushButton_Sales.setIconSize(QtCore.QSize(35, 35))
-        self.pushButton_Sales.setObjectName("pushButton_Sales")
-        self.pushButton_Account = QtWidgets.QPushButton(self.LeftMenuBar)
-        self.pushButton_Account.setGeometry(QtCore.QRect(30, 710, 231, 51))
-        font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(12)
-        self.pushButton_Account.setFont(font)
-        self.pushButton_Account.setStyleSheet("QPushButton {\n"
-"    background-color: white;\n"
-"    color: black;\n"
-"    border-radius: 25px;\n"
-"    padding: 9px;\n"
-"text-align: left;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"QPushButton#activeButton {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"")
-        icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/account_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Account.setIcon(icon4)
-        self.pushButton_Account.setIconSize(QtCore.QSize(48, 48))
-        self.pushButton_Account.setObjectName("pushButton_Account")
-        self.pushButton_LogOut = QtWidgets.QPushButton(self.LeftMenuBar)
-        self.pushButton_LogOut.setGeometry(QtCore.QRect(30, 890, 231, 51))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(12)
-        font.setBold(True)
-        font.setWeight(87)
-        self.pushButton_LogOut.setFont(font)
-        self.pushButton_LogOut.setStyleSheet("QPushButton {\n"
-"    background-color:#022162;\n"
-"color:white;\n"
-"font-weight: 700;\n"
-"    border-radius: 25px;\n"
-"    padding: 9px;\n"
-"font-size: 14;\n"
-"text-align: left;\n"
-"}")
-        icon5 = QtGui.QIcon()
-        icon5.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/WHITElogout_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_LogOut.setIcon(icon5)
-        self.pushButton_LogOut.setIconSize(QtCore.QSize(38, 38))
-        self.pushButton_LogOut.setObjectName("pushButton_LogOut")
-        self.pushButton_Stock_History = QtWidgets.QPushButton(self.LeftMenuBar)
-        self.pushButton_Stock_History.setGeometry(QtCore.QRect(30, 630, 231, 51))
-        font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(12)
-        self.pushButton_Stock_History.setFont(font)
-        self.pushButton_Stock_History.setStyleSheet("QPushButton {\n"
-"    background-color: white;\n"
-"    color: black;\n"
-"    border-radius: 25px;\n"
-"    padding: 9px;\n"
-"text-align: left;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"QPushButton#activeButton {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"")
-        self.pushButton_Stock_History.setIcon(icon1)
-        self.pushButton_Stock_History.setIconSize(QtCore.QSize(50, 45))
-        self.pushButton_Stock_History.setObjectName("pushButton_Stock_History")
-        self.frame_4 = QtWidgets.QFrame(self.Owner_centralwidget)
+        self.frame_4 = QtWidgets.QFrame(OWNER_INVENTORY)
         self.frame_4.setGeometry(QtCore.QRect(330, 20, 611, 71))
         self.frame_4.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_4.setFrameShadow(QtWidgets.QFrame.Raised)
@@ -273,15 +40,15 @@ class Ui_OWNER_INVENTORY(object):
         self.lineEdit_OWNER_QuickSearch_Inventory.setAlignment(QtCore.Qt.AlignCenter)
         self.lineEdit_OWNER_QuickSearch_Inventory.setClearButtonEnabled(False)
         self.lineEdit_OWNER_QuickSearch_Inventory.setObjectName("lineEdit_OWNER_QuickSearch_Inventory")
-        self.label_14 = QtWidgets.QLabel(self.frame_4)
-        self.label_14.setGeometry(QtCore.QRect(10, 10, 71, 51))
-        self.label_14.setStyleSheet("background: transparent;\n"
+        self.label_18 = QtWidgets.QLabel(self.frame_4)
+        self.label_18.setGeometry(QtCore.QRect(10, 10, 71, 51))
+        self.label_18.setStyleSheet("background: transparent;\n"
 "padding: 5;\n"
 "")
-        self.label_14.setText("")
-        self.label_14.setPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/search.png"))
-        self.label_14.setScaledContents(True)
-        self.label_14.setObjectName("label_14")
+        self.label_18.setText("")
+        self.label_18.setPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/search.png"))
+        self.label_18.setScaledContents(True)
+        self.label_18.setObjectName("label_18")
         self.pushButton_SEARCHitems = QtWidgets.QPushButton(self.frame_4)
         self.pushButton_SEARCHitems.setGeometry(QtCore.QRect(300, 10, 181, 51))
         font = QtGui.QFont()
@@ -300,26 +67,7 @@ class Ui_OWNER_INVENTORY(object):
 "\n"
 "")
         self.pushButton_SEARCHitems.setObjectName("pushButton_SEARCHitems")
-        self.pushButton_ViewHistory = QtWidgets.QPushButton(self.Owner_centralwidget)
-        self.pushButton_ViewHistory.setGeometry(QtCore.QRect(1630, 30, 241, 51))
-        font = QtGui.QFont()
-        font.setFamily("Montserrat ExtraBold")
-        font.setPointSize(13)
-        font.setBold(True)
-        font.setWeight(75)
-        self.pushButton_ViewHistory.setFont(font)
-        self.pushButton_ViewHistory.setStyleSheet("\n"
-"    background-color: #b2423c;\n"
-"border-radius: 10;\n"
-"    color: white;\n"
-"    padding: 2px;\n"
-"    text-align: center;\n"
-"\n"
-"\n"
-"\n"
-"")
-        self.pushButton_ViewHistory.setObjectName("pushButton_ViewHistory")
-        self.textBrowser_inv_ROOF_lowstk_warning = QtWidgets.QTextBrowser(self.Owner_centralwidget)
+        self.textBrowser_inv_ROOF_lowstk_warning = QtWidgets.QTextBrowser(OWNER_INVENTORY)
         self.textBrowser_inv_ROOF_lowstk_warning.setGeometry(QtCore.QRect(340, 890, 1531, 71))
         font = QtGui.QFont()
         font.setFamily("Verdana")
@@ -336,23 +84,23 @@ class Ui_OWNER_INVENTORY(object):
 "\n"
 "")
         self.textBrowser_inv_ROOF_lowstk_warning.setObjectName("textBrowser_inv_ROOF_lowstk_warning")
-        self.frame_46 = QtWidgets.QFrame(self.Owner_centralwidget)
-        self.frame_46.setGeometry(QtCore.QRect(340, 110, 1531, 761))
-        self.frame_46.setStyleSheet("\n"
+        self.frame_80 = QtWidgets.QFrame(OWNER_INVENTORY)
+        self.frame_80.setGeometry(QtCore.QRect(340, 110, 1531, 761))
+        self.frame_80.setStyleSheet("\n"
 "    background-color: #f6f3ee;\n"
 "    border-radius: 16;\n"
 "    padding: 10px;\n"
 "\n"
 "")
-        self.frame_46.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_46.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_46.setObjectName("frame_46")
-        self.frame_3 = QtWidgets.QFrame(self.frame_46)
-        self.frame_3.setGeometry(QtCore.QRect(30, 20, 971, 71))
-        self.frame_3.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_3.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_3.setObjectName("frame_3")
-        self.pushButton_Inventory_ALL_ITEMS_table = QtWidgets.QPushButton(self.frame_3)
+        self.frame_80.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_80.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_80.setObjectName("frame_80")
+        self.frame_12 = QtWidgets.QFrame(self.frame_80)
+        self.frame_12.setGeometry(QtCore.QRect(30, 20, 971, 71))
+        self.frame_12.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_12.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_12.setObjectName("frame_12")
+        self.pushButton_Inventory_ALL_ITEMS_table = QtWidgets.QPushButton(self.frame_12)
         self.pushButton_Inventory_ALL_ITEMS_table.setGeometry(QtCore.QRect(0, 10, 201, 61))
         font = QtGui.QFont()
         font.setFamily("Verdana")
@@ -397,7 +145,7 @@ class Ui_OWNER_INVENTORY(object):
 "}\n"
 "")
         self.pushButton_Inventory_ALL_ITEMS_table.setObjectName("pushButton_Inventory_ALL_ITEMS_table")
-        self.pushButton_Inventory_ROOF_table = QtWidgets.QPushButton(self.frame_3)
+        self.pushButton_Inventory_ROOF_table = QtWidgets.QPushButton(self.frame_12)
         self.pushButton_Inventory_ROOF_table.setGeometry(QtCore.QRect(210, 10, 141, 61))
         font = QtGui.QFont()
         font.setFamily("Verdana")
@@ -442,7 +190,7 @@ class Ui_OWNER_INVENTORY(object):
 "}\n"
 "")
         self.pushButton_Inventory_ROOF_table.setObjectName("pushButton_Inventory_ROOF_table")
-        self.pushButton_Inventory_SPANDREL_table = QtWidgets.QPushButton(self.frame_3)
+        self.pushButton_Inventory_SPANDREL_table = QtWidgets.QPushButton(self.frame_12)
         self.pushButton_Inventory_SPANDREL_table.setGeometry(QtCore.QRect(360, 10, 201, 61))
         font = QtGui.QFont()
         font.setFamily("Verdana")
@@ -487,7 +235,7 @@ class Ui_OWNER_INVENTORY(object):
 "}\n"
 "")
         self.pushButton_Inventory_SPANDREL_table.setObjectName("pushButton_Inventory_SPANDREL_table")
-        self.pushButton_Inventory_GUTTER_table = QtWidgets.QPushButton(self.frame_3)
+        self.pushButton_Inventory_GUTTER_table = QtWidgets.QPushButton(self.frame_12)
         self.pushButton_Inventory_GUTTER_table.setGeometry(QtCore.QRect(570, 10, 191, 61))
         font = QtGui.QFont()
         font.setFamily("Verdana")
@@ -532,7 +280,7 @@ class Ui_OWNER_INVENTORY(object):
 "}\n"
 "")
         self.pushButton_Inventory_GUTTER_table.setObjectName("pushButton_Inventory_GUTTER_table")
-        self.pushButton_Inventory_OTHER_table = QtWidgets.QPushButton(self.frame_3)
+        self.pushButton_Inventory_OTHER_table = QtWidgets.QPushButton(self.frame_12)
         self.pushButton_Inventory_OTHER_table.setGeometry(QtCore.QRect(770, 10, 181, 61))
         font = QtGui.QFont()
         font.setFamily("Verdana")
@@ -577,12 +325,12 @@ class Ui_OWNER_INVENTORY(object):
 "}\n"
 "")
         self.pushButton_Inventory_OTHER_table.setObjectName("pushButton_Inventory_OTHER_table")
-        self.frame_5 = QtWidgets.QFrame(self.frame_46)
-        self.frame_5.setGeometry(QtCore.QRect(1000, 20, 551, 71))
-        self.frame_5.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_5.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_5.setObjectName("frame_5")
-        self.pushButton_OWNER_Add_Inventory = QtWidgets.QPushButton(self.frame_5)
+        self.frame_13 = QtWidgets.QFrame(self.frame_80)
+        self.frame_13.setGeometry(QtCore.QRect(1000, 20, 551, 71))
+        self.frame_13.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_13.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_13.setObjectName("frame_13")
+        self.pushButton_OWNER_Add_Inventory = QtWidgets.QPushButton(self.frame_13)
         self.pushButton_OWNER_Add_Inventory.setGeometry(QtCore.QRect(60, 10, 131, 41))
         font = QtGui.QFont()
         font.setFamily("Verdana")
@@ -612,12 +360,12 @@ class Ui_OWNER_INVENTORY(object):
 "color:black;\n"
 "}\n"
 "")
-        icon6 = QtGui.QIcon()
-        icon6.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/add.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_OWNER_Add_Inventory.setIcon(icon6)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/add.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_OWNER_Add_Inventory.setIcon(icon)
         self.pushButton_OWNER_Add_Inventory.setIconSize(QtCore.QSize(26, 26))
         self.pushButton_OWNER_Add_Inventory.setObjectName("pushButton_OWNER_Add_Inventory")
-        self.pushButton_OWNER_Edit_Inventory = QtWidgets.QPushButton(self.frame_5)
+        self.pushButton_OWNER_Edit_Inventory = QtWidgets.QPushButton(self.frame_13)
         self.pushButton_OWNER_Edit_Inventory.setGeometry(QtCore.QRect(210, 10, 131, 41))
         font = QtGui.QFont()
         font.setFamily("Verdana")
@@ -647,12 +395,12 @@ class Ui_OWNER_INVENTORY(object):
 "color:black;\n"
 "}\n"
 "")
-        icon7 = QtGui.QIcon()
-        icon7.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/edit.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_OWNER_Edit_Inventory.setIcon(icon7)
+        icon1 = QtGui.QIcon()
+        icon1.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/edit.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_OWNER_Edit_Inventory.setIcon(icon1)
         self.pushButton_OWNER_Edit_Inventory.setIconSize(QtCore.QSize(27, 27))
         self.pushButton_OWNER_Edit_Inventory.setObjectName("pushButton_OWNER_Edit_Inventory")
-        self.pushButton_OWNER_Delete_Inventory = QtWidgets.QPushButton(self.frame_5)
+        self.pushButton_OWNER_Delete_Inventory = QtWidgets.QPushButton(self.frame_13)
         self.pushButton_OWNER_Delete_Inventory.setGeometry(QtCore.QRect(360, 10, 141, 41))
         font = QtGui.QFont()
         font.setFamily("Verdana")
@@ -682,418 +430,662 @@ class Ui_OWNER_INVENTORY(object):
 "color:black;\n"
 "}\n"
 "")
-        icon8 = QtGui.QIcon()
-        icon8.addPixmap(QtGui.QPixmap("ui/raw_files\\../../assets/images/delete.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_OWNER_Delete_Inventory.setIcon(icon8)
+        icon2 = QtGui.QIcon()
+        icon2.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/delete.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_OWNER_Delete_Inventory.setIcon(icon2)
         self.pushButton_OWNER_Delete_Inventory.setIconSize(QtCore.QSize(27, 27))
         self.pushButton_OWNER_Delete_Inventory.setObjectName("pushButton_OWNER_Delete_Inventory")
-        self.frame_5.raise_()
-        self.frame_3.raise_()
-        self.INVENTORY_afterBUTTONSclick = QtWidgets.QStackedWidget(self.Owner_centralwidget)
-        self.INVENTORY_afterBUTTONSclick.setGeometry(QtCore.QRect(310, 200, 1631, 711))
+        self.LeftMenuBar = QtWidgets.QFrame(OWNER_INVENTORY)
+        self.LeftMenuBar.setGeometry(QtCore.QRect(0, 0, 301, 981))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.LeftMenuBar.setFont(font)
+        self.LeftMenuBar.setStyleSheet("background-color: rgba(235, 224, 204, 0.47); /* #ebe0cc with 47% opacity */")
+        self.LeftMenuBar.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.LeftMenuBar.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.LeftMenuBar.setObjectName("LeftMenuBar")
+        self.JJelevate_text_5 = QtWidgets.QLabel(self.LeftMenuBar)
+        self.JJelevate_text_5.setGeometry(QtCore.QRect(30, 250, 251, 21))
+        font = QtGui.QFont()
+        font.setFamily("Montserrat ExtraBold")
+        font.setPointSize(18)
+        font.setBold(True)
+        font.setWeight(75)
+        self.JJelevate_text_5.setFont(font)
+        self.JJelevate_text_5.setStyleSheet("color: #12245c; \n"
+"background: transparent;\n"
+"")
+        self.JJelevate_text_5.setScaledContents(True)
+        self.JJelevate_text_5.setObjectName("JJelevate_text_5")
+        self.Logo_5 = QtWidgets.QLabel(self.LeftMenuBar)
+        self.Logo_5.setGeometry(QtCore.QRect(30, 50, 241, 171))
+        self.Logo_5.setStyleSheet("background: transparent;")
+        self.Logo_5.setText("")
+        self.Logo_5.setPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/JJLOGO.png"))
+        self.Logo_5.setScaledContents(True)
+        self.Logo_5.setAlignment(QtCore.Qt.AlignCenter)
+        self.Logo_5.setObjectName("Logo_5")
+        self.pushButton_Dashboard = QtWidgets.QPushButton(self.LeftMenuBar)
+        self.pushButton_Dashboard.setGeometry(QtCore.QRect(30, 310, 231, 51))
+        font = QtGui.QFont()
+        font.setFamily("Montserrat Medium")
+        font.setPointSize(12)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.pushButton_Dashboard.setFont(font)
+        self.pushButton_Dashboard.setStyleSheet("QPushButton {\n"
+"    background-color: white;\n"
+"    color: black;\n"
+"    border-radius: 25px;\n"
+"    padding: 9px;\n"
+"text-align: left;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color:#c25b55;\n"
+"color:black;\n"
+"font-weight: 700;\n"
+"}\n"
+"QPushButton#activeButton {\n"
+"    background-color:#c25b55;\n"
+"color:black;\n"
+"font-weight: 700;\n"
+"}\n"
+"")
+        icon3 = QtGui.QIcon()
+        icon3.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/dashboard_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Dashboard.setIcon(icon3)
+        self.pushButton_Dashboard.setIconSize(QtCore.QSize(40, 40))
+        self.pushButton_Dashboard.setObjectName("pushButton_Dashboard")
+        self.pushButton_Inventory = QtWidgets.QPushButton(self.LeftMenuBar)
+        self.pushButton_Inventory.setGeometry(QtCore.QRect(30, 390, 231, 51))
+        font = QtGui.QFont()
+        font.setFamily("Montserrat Medium")
+        font.setPointSize(12)
+        self.pushButton_Inventory.setFont(font)
+        self.pushButton_Inventory.setStyleSheet("QPushButton {\n"
+"    background-color: white;\n"
+"    color: black;\n"
+"    border-radius: 25px;\n"
+"    padding: 9px;\n"
+"text-align: left;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color:#c25b55;\n"
+"color:black;\n"
+"font-weight: 700;\n"
+"}\n"
+"QPushButton#activeButton {\n"
+"    background-color:#c25b55;\n"
+"color:black;\n"
+"font-weight: 700;\n"
+"}\n"
+"")
+        icon4 = QtGui.QIcon()
+        icon4.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/inventory_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Inventory.setIcon(icon4)
+        self.pushButton_Inventory.setIconSize(QtCore.QSize(50, 45))
+        self.pushButton_Inventory.setObjectName("pushButton_Inventory")
+        self.pushButton_Orders = QtWidgets.QPushButton(self.LeftMenuBar)
+        self.pushButton_Orders.setGeometry(QtCore.QRect(30, 470, 231, 51))
+        font = QtGui.QFont()
+        font.setFamily("Montserrat Medium")
+        font.setPointSize(12)
+        self.pushButton_Orders.setFont(font)
+        self.pushButton_Orders.setStyleSheet("QPushButton {\n"
+"    background-color: white;\n"
+"    color: black;\n"
+"    border-radius: 25px;\n"
+"    padding: 9px;\n"
+"text-align: left;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color:#c25b55;\n"
+"color:black;\n"
+"font-weight: 700;\n"
+"}\n"
+"QPushButton#activeButton {\n"
+"    background-color:#c25b55;\n"
+"color:black;\n"
+"font-weight: 700;\n"
+"}\n"
+"")
+        icon5 = QtGui.QIcon()
+        icon5.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/orders_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Orders.setIcon(icon5)
+        self.pushButton_Orders.setIconSize(QtCore.QSize(46, 42))
+        self.pushButton_Orders.setObjectName("pushButton_Orders")
+        self.pushButton_Sales = QtWidgets.QPushButton(self.LeftMenuBar)
+        self.pushButton_Sales.setGeometry(QtCore.QRect(30, 550, 231, 51))
+        font = QtGui.QFont()
+        font.setFamily("Montserrat Medium")
+        font.setPointSize(12)
+        self.pushButton_Sales.setFont(font)
+        self.pushButton_Sales.setStyleSheet("QPushButton {\n"
+"    background-color: white;\n"
+"    color: black;\n"
+"    border-radius: 25px;\n"
+"    padding: 9px;\n"
+"text-align: left;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color:#c25b55;\n"
+"color:black;\n"
+"font-weight: 700;\n"
+"}\n"
+"QPushButton#activeButton {\n"
+"    background-color:#c25b55;\n"
+"color:black;\n"
+"font-weight: 700;\n"
+"}\n"
+"")
+        icon6 = QtGui.QIcon()
+        icon6.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/sales_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Sales.setIcon(icon6)
+        self.pushButton_Sales.setIconSize(QtCore.QSize(35, 35))
+        self.pushButton_Sales.setObjectName("pushButton_Sales")
+        self.pushButton_Account = QtWidgets.QPushButton(self.LeftMenuBar)
+        self.pushButton_Account.setGeometry(QtCore.QRect(30, 710, 231, 51))
+        font = QtGui.QFont()
+        font.setFamily("Montserrat Medium")
+        font.setPointSize(12)
+        self.pushButton_Account.setFont(font)
+        self.pushButton_Account.setStyleSheet("QPushButton {\n"
+"    background-color: white;\n"
+"    color: black;\n"
+"    border-radius: 25px;\n"
+"    padding: 9px;\n"
+"text-align: left;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color:#c25b55;\n"
+"color:black;\n"
+"font-weight: 700;\n"
+"}\n"
+"QPushButton#activeButton {\n"
+"    background-color:#c25b55;\n"
+"color:black;\n"
+"font-weight: 700;\n"
+"}\n"
+"")
+        icon7 = QtGui.QIcon()
+        icon7.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/account_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Account.setIcon(icon7)
+        self.pushButton_Account.setIconSize(QtCore.QSize(48, 48))
+        self.pushButton_Account.setObjectName("pushButton_Account")
+        self.pushButton_LogOut = QtWidgets.QPushButton(self.LeftMenuBar)
+        self.pushButton_LogOut.setGeometry(QtCore.QRect(30, 890, 231, 51))
+        font = QtGui.QFont()
+        font.setFamily("Verdana")
+        font.setPointSize(12)
+        font.setBold(True)
+        font.setWeight(87)
+        self.pushButton_LogOut.setFont(font)
+        self.pushButton_LogOut.setStyleSheet("QPushButton {\n"
+"    background-color:#022162;\n"
+"color:white;\n"
+"font-weight: 700;\n"
+"    border-radius: 25px;\n"
+"    padding: 9px;\n"
+"font-size: 14;\n"
+"text-align: left;\n"
+"}")
+        icon8 = QtGui.QIcon()
+        icon8.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/WHITElogout_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_LogOut.setIcon(icon8)
+        self.pushButton_LogOut.setIconSize(QtCore.QSize(38, 38))
+        self.pushButton_LogOut.setObjectName("pushButton_LogOut")
+        self.pushButton_Stock_History = QtWidgets.QPushButton(self.LeftMenuBar)
+        self.pushButton_Stock_History.setGeometry(QtCore.QRect(30, 630, 231, 51))
+        font = QtGui.QFont()
+        font.setFamily("Montserrat Medium")
+        font.setPointSize(12)
+        self.pushButton_Stock_History.setFont(font)
+        self.pushButton_Stock_History.setStyleSheet("QPushButton {\n"
+"    background-color: white;\n"
+"    color: black;\n"
+"    border-radius: 25px;\n"
+"    padding: 9px;\n"
+"text-align: left;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color:#c25b55;\n"
+"color:black;\n"
+"font-weight: 700;\n"
+"}\n"
+"QPushButton#activeButton {\n"
+"    background-color:#c25b55;\n"
+"color:black;\n"
+"font-weight: 700;\n"
+"}\n"
+"")
+        self.pushButton_Stock_History.setIcon(icon4)
+        self.pushButton_Stock_History.setIconSize(QtCore.QSize(50, 45))
+        self.pushButton_Stock_History.setObjectName("pushButton_Stock_History")
+        self.pushButton_ViewHistory = QtWidgets.QPushButton(OWNER_INVENTORY)
+        self.pushButton_ViewHistory.setGeometry(QtCore.QRect(1630, 30, 241, 51))
+        font = QtGui.QFont()
+        font.setFamily("Montserrat ExtraBold")
+        font.setPointSize(13)
+        font.setBold(True)
+        font.setWeight(75)
+        self.pushButton_ViewHistory.setFont(font)
+        self.pushButton_ViewHistory.setStyleSheet("\n"
+"    background-color: #b2423c;\n"
+"border-radius: 10;\n"
+"    color: white;\n"
+"    padding: 2px;\n"
+"    text-align: center;\n"
+"\n"
+"\n"
+"\n"
+"")
+        self.pushButton_ViewHistory.setObjectName("pushButton_ViewHistory")
+        self.INVENTORY_afterBUTTONSclick = QtWidgets.QStackedWidget(OWNER_INVENTORY)
+        self.INVENTORY_afterBUTTONSclick.setGeometry(QtCore.QRect(300, 200, 1631, 711))
         self.INVENTORY_afterBUTTONSclick.setStyleSheet("background: transparent;")
         self.INVENTORY_afterBUTTONSclick.setObjectName("INVENTORY_afterBUTTONSclick")
-        self.page_INV_ALL_ITEMS = QtWidgets.QWidget()
-        self.page_INV_ALL_ITEMS.setObjectName("page_INV_ALL_ITEMS")
-        self.tableWidget_ALL_ITEMS = QtWidgets.QTableWidget(self.page_INV_ALL_ITEMS)
-        self.tableWidget_ALL_ITEMS.setGeometry(QtCore.QRect(60, 0, 1471, 651))
-        self.tableWidget_ALL_ITEMS.setStyleSheet("padding: 1;")
-        self.tableWidget_ALL_ITEMS.setObjectName("tableWidget_ALL_ITEMS")
-        self.tableWidget_ALL_ITEMS.setColumnCount(11)
-        self.tableWidget_ALL_ITEMS.setRowCount(0)
+        self.page_INV_ALL_ITEMS_5 = QtWidgets.QWidget()
+        self.page_INV_ALL_ITEMS_5.setObjectName("page_INV_ALL_ITEMS_5")
+        self.tableWidget_ALL_ITEMS_5 = QtWidgets.QTableWidget(self.page_INV_ALL_ITEMS_5)
+        self.tableWidget_ALL_ITEMS_5.setGeometry(QtCore.QRect(60, 0, 1471, 651))
+        self.tableWidget_ALL_ITEMS_5.setStyleSheet("padding: 1;")
+        self.tableWidget_ALL_ITEMS_5.setObjectName("tableWidget_ALL_ITEMS_5")
+        self.tableWidget_ALL_ITEMS_5.setColumnCount(11)
+        self.tableWidget_ALL_ITEMS_5.setRowCount(0)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_ALL_ITEMS.setHorizontalHeaderItem(0, item)
+        self.tableWidget_ALL_ITEMS_5.setHorizontalHeaderItem(0, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_ALL_ITEMS.setHorizontalHeaderItem(1, item)
+        self.tableWidget_ALL_ITEMS_5.setHorizontalHeaderItem(1, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_ALL_ITEMS.setHorizontalHeaderItem(2, item)
+        self.tableWidget_ALL_ITEMS_5.setHorizontalHeaderItem(2, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_ALL_ITEMS.setHorizontalHeaderItem(3, item)
+        self.tableWidget_ALL_ITEMS_5.setHorizontalHeaderItem(3, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_ALL_ITEMS.setHorizontalHeaderItem(4, item)
+        self.tableWidget_ALL_ITEMS_5.setHorizontalHeaderItem(4, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_ALL_ITEMS.setHorizontalHeaderItem(5, item)
+        self.tableWidget_ALL_ITEMS_5.setHorizontalHeaderItem(5, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_ALL_ITEMS.setHorizontalHeaderItem(6, item)
+        self.tableWidget_ALL_ITEMS_5.setHorizontalHeaderItem(6, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_ALL_ITEMS.setHorizontalHeaderItem(7, item)
+        self.tableWidget_ALL_ITEMS_5.setHorizontalHeaderItem(7, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_ALL_ITEMS.setHorizontalHeaderItem(8, item)
+        self.tableWidget_ALL_ITEMS_5.setHorizontalHeaderItem(8, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_ALL_ITEMS.setHorizontalHeaderItem(9, item)
+        self.tableWidget_ALL_ITEMS_5.setHorizontalHeaderItem(9, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_ALL_ITEMS.setHorizontalHeaderItem(10, item)
-        self.tableWidget_ALL_ITEMS.horizontalHeader().setDefaultSectionSize(265)
-        self.INVENTORY_afterBUTTONSclick.addWidget(self.page_INV_ALL_ITEMS)
-        self.page_INV_ROOF = QtWidgets.QWidget()
-        self.page_INV_ROOF.setObjectName("page_INV_ROOF")
-        self.tableWidget_ROOF = QtWidgets.QTableWidget(self.page_INV_ROOF)
-        self.tableWidget_ROOF.setGeometry(QtCore.QRect(60, 0, 1471, 651))
-        self.tableWidget_ROOF.setStyleSheet("padding: 1;")
-        self.tableWidget_ROOF.setObjectName("tableWidget_ROOF")
-        self.tableWidget_ROOF.setColumnCount(11)
-        self.tableWidget_ROOF.setRowCount(0)
+        self.tableWidget_ALL_ITEMS_5.setHorizontalHeaderItem(10, item)
+        self.tableWidget_ALL_ITEMS_5.horizontalHeader().setDefaultSectionSize(265)
+        self.INVENTORY_afterBUTTONSclick.addWidget(self.page_INV_ALL_ITEMS_5)
+        self.page_INV_ROOF_5 = QtWidgets.QWidget()
+        self.page_INV_ROOF_5.setObjectName("page_INV_ROOF_5")
+        self.tableWidget_ROOF_5 = QtWidgets.QTableWidget(self.page_INV_ROOF_5)
+        self.tableWidget_ROOF_5.setGeometry(QtCore.QRect(60, 0, 1471, 651))
+        self.tableWidget_ROOF_5.setStyleSheet("padding: 1;")
+        self.tableWidget_ROOF_5.setObjectName("tableWidget_ROOF_5")
+        self.tableWidget_ROOF_5.setColumnCount(11)
+        self.tableWidget_ROOF_5.setRowCount(0)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_ROOF.setHorizontalHeaderItem(0, item)
+        self.tableWidget_ROOF_5.setHorizontalHeaderItem(0, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_ROOF.setHorizontalHeaderItem(1, item)
+        self.tableWidget_ROOF_5.setHorizontalHeaderItem(1, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_ROOF.setHorizontalHeaderItem(2, item)
+        self.tableWidget_ROOF_5.setHorizontalHeaderItem(2, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_ROOF.setHorizontalHeaderItem(3, item)
+        self.tableWidget_ROOF_5.setHorizontalHeaderItem(3, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_ROOF.setHorizontalHeaderItem(4, item)
+        self.tableWidget_ROOF_5.setHorizontalHeaderItem(4, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_ROOF.setHorizontalHeaderItem(5, item)
+        self.tableWidget_ROOF_5.setHorizontalHeaderItem(5, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_ROOF.setHorizontalHeaderItem(6, item)
+        self.tableWidget_ROOF_5.setHorizontalHeaderItem(6, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_ROOF.setHorizontalHeaderItem(7, item)
+        self.tableWidget_ROOF_5.setHorizontalHeaderItem(7, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_ROOF.setHorizontalHeaderItem(8, item)
+        self.tableWidget_ROOF_5.setHorizontalHeaderItem(8, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_ROOF.setHorizontalHeaderItem(9, item)
+        self.tableWidget_ROOF_5.setHorizontalHeaderItem(9, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_ROOF.setHorizontalHeaderItem(10, item)
-        self.tableWidget_ROOF.horizontalHeader().setDefaultSectionSize(265)
-        self.INVENTORY_afterBUTTONSclick.addWidget(self.page_INV_ROOF)
-        self.page_INV_SPANDREL = QtWidgets.QWidget()
-        self.page_INV_SPANDREL.setObjectName("page_INV_SPANDREL")
-        self.tableWidget_SPANDREL = QtWidgets.QTableWidget(self.page_INV_SPANDREL)
-        self.tableWidget_SPANDREL.setGeometry(QtCore.QRect(60, 0, 1471, 651))
-        self.tableWidget_SPANDREL.setStyleSheet("padding: 1;")
-        self.tableWidget_SPANDREL.setObjectName("tableWidget_SPANDREL")
-        self.tableWidget_SPANDREL.setColumnCount(11)
-        self.tableWidget_SPANDREL.setRowCount(0)
+        self.tableWidget_ROOF_5.setHorizontalHeaderItem(10, item)
+        self.tableWidget_ROOF_5.horizontalHeader().setDefaultSectionSize(265)
+        self.INVENTORY_afterBUTTONSclick.addWidget(self.page_INV_ROOF_5)
+        self.page_INV_SPANDREL_5 = QtWidgets.QWidget()
+        self.page_INV_SPANDREL_5.setObjectName("page_INV_SPANDREL_5")
+        self.tableWidget_SPANDREL_5 = QtWidgets.QTableWidget(self.page_INV_SPANDREL_5)
+        self.tableWidget_SPANDREL_5.setGeometry(QtCore.QRect(60, 0, 1471, 651))
+        self.tableWidget_SPANDREL_5.setStyleSheet("padding: 1;")
+        self.tableWidget_SPANDREL_5.setObjectName("tableWidget_SPANDREL_5")
+        self.tableWidget_SPANDREL_5.setColumnCount(11)
+        self.tableWidget_SPANDREL_5.setRowCount(0)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_SPANDREL.setHorizontalHeaderItem(0, item)
+        self.tableWidget_SPANDREL_5.setHorizontalHeaderItem(0, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_SPANDREL.setHorizontalHeaderItem(1, item)
+        self.tableWidget_SPANDREL_5.setHorizontalHeaderItem(1, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_SPANDREL.setHorizontalHeaderItem(2, item)
+        self.tableWidget_SPANDREL_5.setHorizontalHeaderItem(2, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_SPANDREL.setHorizontalHeaderItem(3, item)
+        self.tableWidget_SPANDREL_5.setHorizontalHeaderItem(3, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_SPANDREL.setHorizontalHeaderItem(4, item)
+        self.tableWidget_SPANDREL_5.setHorizontalHeaderItem(4, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_SPANDREL.setHorizontalHeaderItem(5, item)
+        self.tableWidget_SPANDREL_5.setHorizontalHeaderItem(5, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_SPANDREL.setHorizontalHeaderItem(6, item)
+        self.tableWidget_SPANDREL_5.setHorizontalHeaderItem(6, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_SPANDREL.setHorizontalHeaderItem(7, item)
+        self.tableWidget_SPANDREL_5.setHorizontalHeaderItem(7, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_SPANDREL.setHorizontalHeaderItem(8, item)
+        self.tableWidget_SPANDREL_5.setHorizontalHeaderItem(8, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_SPANDREL.setHorizontalHeaderItem(9, item)
+        self.tableWidget_SPANDREL_5.setHorizontalHeaderItem(9, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_SPANDREL.setHorizontalHeaderItem(10, item)
-        self.tableWidget_SPANDREL.horizontalHeader().setDefaultSectionSize(265)
-        self.INVENTORY_afterBUTTONSclick.addWidget(self.page_INV_SPANDREL)
-        self.page_INV_GUTTER = QtWidgets.QWidget()
-        self.page_INV_GUTTER.setObjectName("page_INV_GUTTER")
-        self.tableWidget_GUTTER = QtWidgets.QTableWidget(self.page_INV_GUTTER)
-        self.tableWidget_GUTTER.setGeometry(QtCore.QRect(60, 0, 1471, 651))
-        self.tableWidget_GUTTER.setStyleSheet("padding: 1;")
-        self.tableWidget_GUTTER.setObjectName("tableWidget_GUTTER")
-        self.tableWidget_GUTTER.setColumnCount(11)
-        self.tableWidget_GUTTER.setRowCount(0)
+        self.tableWidget_SPANDREL_5.setHorizontalHeaderItem(10, item)
+        self.tableWidget_SPANDREL_5.horizontalHeader().setDefaultSectionSize(265)
+        self.INVENTORY_afterBUTTONSclick.addWidget(self.page_INV_SPANDREL_5)
+        self.page_INV_GUTTER_5 = QtWidgets.QWidget()
+        self.page_INV_GUTTER_5.setObjectName("page_INV_GUTTER_5")
+        self.tableWidget_GUTTER_5 = QtWidgets.QTableWidget(self.page_INV_GUTTER_5)
+        self.tableWidget_GUTTER_5.setGeometry(QtCore.QRect(60, 0, 1471, 651))
+        self.tableWidget_GUTTER_5.setStyleSheet("padding: 1;")
+        self.tableWidget_GUTTER_5.setObjectName("tableWidget_GUTTER_5")
+        self.tableWidget_GUTTER_5.setColumnCount(11)
+        self.tableWidget_GUTTER_5.setRowCount(0)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_GUTTER.setHorizontalHeaderItem(0, item)
+        self.tableWidget_GUTTER_5.setHorizontalHeaderItem(0, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_GUTTER.setHorizontalHeaderItem(1, item)
+        self.tableWidget_GUTTER_5.setHorizontalHeaderItem(1, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_GUTTER.setHorizontalHeaderItem(2, item)
+        self.tableWidget_GUTTER_5.setHorizontalHeaderItem(2, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_GUTTER.setHorizontalHeaderItem(3, item)
+        self.tableWidget_GUTTER_5.setHorizontalHeaderItem(3, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_GUTTER.setHorizontalHeaderItem(4, item)
+        self.tableWidget_GUTTER_5.setHorizontalHeaderItem(4, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_GUTTER.setHorizontalHeaderItem(5, item)
+        self.tableWidget_GUTTER_5.setHorizontalHeaderItem(5, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_GUTTER.setHorizontalHeaderItem(6, item)
+        self.tableWidget_GUTTER_5.setHorizontalHeaderItem(6, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_GUTTER.setHorizontalHeaderItem(7, item)
+        self.tableWidget_GUTTER_5.setHorizontalHeaderItem(7, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_GUTTER.setHorizontalHeaderItem(8, item)
+        self.tableWidget_GUTTER_5.setHorizontalHeaderItem(8, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_GUTTER.setHorizontalHeaderItem(9, item)
+        self.tableWidget_GUTTER_5.setHorizontalHeaderItem(9, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_GUTTER.setHorizontalHeaderItem(10, item)
-        self.tableWidget_GUTTER.horizontalHeader().setDefaultSectionSize(265)
-        self.INVENTORY_afterBUTTONSclick.addWidget(self.page_INV_GUTTER)
-        self.page_INV_OTHER = QtWidgets.QWidget()
-        self.page_INV_OTHER.setObjectName("page_INV_OTHER")
-        self.tableWidget_OTHER = QtWidgets.QTableWidget(self.page_INV_OTHER)
-        self.tableWidget_OTHER.setGeometry(QtCore.QRect(60, 0, 1471, 651))
-        self.tableWidget_OTHER.setStyleSheet("padding: 1;")
-        self.tableWidget_OTHER.setObjectName("tableWidget_OTHER")
-        self.tableWidget_OTHER.setColumnCount(11)
-        self.tableWidget_OTHER.setRowCount(0)
+        self.tableWidget_GUTTER_5.setHorizontalHeaderItem(10, item)
+        self.tableWidget_GUTTER_5.horizontalHeader().setDefaultSectionSize(265)
+        self.INVENTORY_afterBUTTONSclick.addWidget(self.page_INV_GUTTER_5)
+        self.page_INV_OTHER_5 = QtWidgets.QWidget()
+        self.page_INV_OTHER_5.setObjectName("page_INV_OTHER_5")
+        self.tableWidget_OTHER_5 = QtWidgets.QTableWidget(self.page_INV_OTHER_5)
+        self.tableWidget_OTHER_5.setGeometry(QtCore.QRect(60, 0, 1471, 651))
+        self.tableWidget_OTHER_5.setStyleSheet("padding: 1;")
+        self.tableWidget_OTHER_5.setObjectName("tableWidget_OTHER_5")
+        self.tableWidget_OTHER_5.setColumnCount(11)
+        self.tableWidget_OTHER_5.setRowCount(0)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_OTHER.setHorizontalHeaderItem(0, item)
+        self.tableWidget_OTHER_5.setHorizontalHeaderItem(0, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_OTHER.setHorizontalHeaderItem(1, item)
+        self.tableWidget_OTHER_5.setHorizontalHeaderItem(1, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_OTHER.setHorizontalHeaderItem(2, item)
+        self.tableWidget_OTHER_5.setHorizontalHeaderItem(2, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_OTHER.setHorizontalHeaderItem(3, item)
+        self.tableWidget_OTHER_5.setHorizontalHeaderItem(3, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_OTHER.setHorizontalHeaderItem(4, item)
+        self.tableWidget_OTHER_5.setHorizontalHeaderItem(4, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_OTHER.setHorizontalHeaderItem(5, item)
+        self.tableWidget_OTHER_5.setHorizontalHeaderItem(5, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_OTHER.setHorizontalHeaderItem(6, item)
+        self.tableWidget_OTHER_5.setHorizontalHeaderItem(6, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_OTHER.setHorizontalHeaderItem(7, item)
+        self.tableWidget_OTHER_5.setHorizontalHeaderItem(7, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_OTHER.setHorizontalHeaderItem(8, item)
+        self.tableWidget_OTHER_5.setHorizontalHeaderItem(8, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_OTHER.setHorizontalHeaderItem(9, item)
+        self.tableWidget_OTHER_5.setHorizontalHeaderItem(9, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_OTHER.setHorizontalHeaderItem(10, item)
-        self.tableWidget_OTHER.horizontalHeader().setDefaultSectionSize(265)
-        self.INVENTORY_afterBUTTONSclick.addWidget(self.page_INV_OTHER)
-        self.page_INV_ADD_STOCK = QtWidgets.QWidget()
-        self.page_INV_ADD_STOCK.setObjectName("page_INV_ADD_STOCK")
-        self.frame_32 = QtWidgets.QFrame(self.page_INV_ADD_STOCK)
-        self.frame_32.setGeometry(QtCore.QRect(-20, -10, 1641, 701))
-        self.frame_32.setStyleSheet("background: transparent;")
-        self.frame_32.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_32.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_32.setObjectName("frame_32")
-        self.label_19 = QtWidgets.QLabel(self.frame_32)
-        self.label_19.setGeometry(QtCore.QRect(80, 30, 1451, 631))
-        self.label_19.setStyleSheet("    background-color: white;\n"
+        self.tableWidget_OTHER_5.setHorizontalHeaderItem(10, item)
+        self.tableWidget_OTHER_5.horizontalHeader().setDefaultSectionSize(265)
+        self.INVENTORY_afterBUTTONSclick.addWidget(self.page_INV_OTHER_5)
+        self.page_INV_ADD_STOCK_5 = QtWidgets.QWidget()
+        self.page_INV_ADD_STOCK_5.setObjectName("page_INV_ADD_STOCK_5")
+        self.frame_97 = QtWidgets.QFrame(self.page_INV_ADD_STOCK_5)
+        self.frame_97.setGeometry(QtCore.QRect(-20, -10, 1641, 701))
+        self.frame_97.setStyleSheet("background: transparent;")
+        self.frame_97.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_97.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_97.setObjectName("frame_97")
+        self.label_23 = QtWidgets.QLabel(self.frame_97)
+        self.label_23.setGeometry(QtCore.QRect(80, 30, 1451, 631))
+        self.label_23.setStyleSheet("    background-color: white;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; ")
-        self.label_19.setText("")
-        self.label_19.setObjectName("label_19")
-        self.addStocklabel = QtWidgets.QLabel(self.frame_32)
-        self.addStocklabel.setGeometry(QtCore.QRect(120, 30, 1371, 101))
+        self.label_23.setText("")
+        self.label_23.setObjectName("label_23")
+        self.addStocklabel_5 = QtWidgets.QLabel(self.frame_97)
+        self.addStocklabel_5.setGeometry(QtCore.QRect(120, 30, 1371, 101))
         font = QtGui.QFont()
         font.setFamily("Arial")
         font.setPointSize(21)
         font.setBold(True)
         font.setUnderline(False)
         font.setWeight(75)
-        self.addStocklabel.setFont(font)
-        self.addStocklabel.setStyleSheet("    background-color: transparent;\n"
+        self.addStocklabel_5.setFont(font)
+        self.addStocklabel_5.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.addStocklabel.setAlignment(QtCore.Qt.AlignCenter)
-        self.addStocklabel.setObjectName("addStocklabel")
-        self.Add_Select_Prod_Type = QtWidgets.QStackedWidget(self.frame_32)
-        self.Add_Select_Prod_Type.setGeometry(QtCore.QRect(100, 120, 1411, 521))
-        self.Add_Select_Prod_Type.setStyleSheet("background: #f6f3ee;")
-        self.Add_Select_Prod_Type.setObjectName("Add_Select_Prod_Type")
-        self.ADD_blank = QtWidgets.QWidget()
-        self.ADD_blank.setObjectName("ADD_blank")
-        self.label_72 = QtWidgets.QLabel(self.ADD_blank)
-        self.label_72.setGeometry(QtCore.QRect(0, -10, 1321, 361))
+        self.addStocklabel_5.setAlignment(QtCore.Qt.AlignCenter)
+        self.addStocklabel_5.setObjectName("addStocklabel_5")
+        self.Add_Select_Prod_Type_5 = QtWidgets.QStackedWidget(self.frame_97)
+        self.Add_Select_Prod_Type_5.setGeometry(QtCore.QRect(100, 120, 1411, 521))
+        self.Add_Select_Prod_Type_5.setStyleSheet("background: #f6f3ee;")
+        self.Add_Select_Prod_Type_5.setObjectName("Add_Select_Prod_Type_5")
+        self.ADD_blank_5 = QtWidgets.QWidget()
+        self.ADD_blank_5.setObjectName("ADD_blank_5")
+        self.label_120 = QtWidgets.QLabel(self.ADD_blank_5)
+        self.label_120.setGeometry(QtCore.QRect(0, -10, 1321, 361))
         font = QtGui.QFont()
         font.setFamily("Verdana")
         font.setPointSize(11)
         font.setItalic(True)
-        self.label_72.setFont(font)
-        self.label_72.setStyleSheet("background: transparent;\n"
+        self.label_120.setFont(font)
+        self.label_120.setStyleSheet("background: transparent;\n"
 "color: #a6a6a6;")
-        self.label_72.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_72.setObjectName("label_72")
-        self.Add_Select_Prod_Type.addWidget(self.ADD_blank)
-        self.ADD_ROOF = QtWidgets.QWidget()
-        self.ADD_ROOF.setObjectName("ADD_ROOF")
-        self.frame_33 = QtWidgets.QFrame(self.ADD_ROOF)
-        self.frame_33.setGeometry(QtCore.QRect(-10, 419, 1331, 91))
-        self.frame_33.setStyleSheet("    background-color: transparent;\n"
+        self.label_120.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_120.setObjectName("label_120")
+        self.Add_Select_Prod_Type_5.addWidget(self.ADD_blank_5)
+        self.ADD_ROOF_5 = QtWidgets.QWidget()
+        self.ADD_ROOF_5.setObjectName("ADD_ROOF_5")
+        self.frame_98 = QtWidgets.QFrame(self.ADD_ROOF_5)
+        self.frame_98.setGeometry(QtCore.QRect(-10, 419, 1331, 91))
+        self.frame_98.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.frame_33.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_33.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_33.setObjectName("frame_33")
-        self.pushButton_Confirm_ROOFadd = QtWidgets.QPushButton(self.frame_33)
-        self.pushButton_Confirm_ROOFadd.setGeometry(QtCore.QRect(360, 20, 331, 51))
+        self.frame_98.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_98.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_98.setObjectName("frame_98")
+        self.pushButton_Confirm_ROOFadd_5 = QtWidgets.QPushButton(self.frame_98)
+        self.pushButton_Confirm_ROOFadd_5.setGeometry(QtCore.QRect(360, 20, 331, 51))
         font = QtGui.QFont()
         font.setFamily("Verdana")
         font.setPointSize(14)
-        self.pushButton_Confirm_ROOFadd.setFont(font)
-        self.pushButton_Confirm_ROOFadd.setStyleSheet("    background-color: #b2423c;\n"
+        self.pushButton_Confirm_ROOFadd_5.setFont(font)
+        self.pushButton_Confirm_ROOFadd_5.setStyleSheet("    background-color: #b2423c;\n"
 "    color: white;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "font-family: \"Verdana\", sans-serif; \n"
 "text-align: center;")
-        self.pushButton_Confirm_ROOFadd.setObjectName("pushButton_Confirm_ROOFadd")
-        self.pushButton_Close_ROOFadd = QtWidgets.QPushButton(self.frame_33)
-        self.pushButton_Close_ROOFadd.setGeometry(QtCore.QRect(740, 20, 261, 51))
+        self.pushButton_Confirm_ROOFadd_5.setObjectName("pushButton_Confirm_ROOFadd_5")
+        self.pushButton_Close_ROOFadd_5 = QtWidgets.QPushButton(self.frame_98)
+        self.pushButton_Close_ROOFadd_5.setGeometry(QtCore.QRect(740, 20, 261, 51))
         font = QtGui.QFont()
         font.setFamily("Verdana")
         font.setPointSize(14)
-        self.pushButton_Close_ROOFadd.setFont(font)
-        self.pushButton_Close_ROOFadd.setStyleSheet("\n"
+        self.pushButton_Close_ROOFadd_5.setFont(font)
+        self.pushButton_Close_ROOFadd_5.setStyleSheet("\n"
 "/* Default Inactive Button */\n"
 "QPushButton {\n"
 "    background-color: #ffffff;\n"
@@ -1117,263 +1109,263 @@ class Ui_OWNER_INVENTORY(object):
 "    color: white;\n"
 "}\n"
 "")
-        self.pushButton_Close_ROOFadd.setObjectName("pushButton_Close_ROOFadd")
-        self.frame_addroof_3 = QtWidgets.QFrame(self.ADD_ROOF)
-        self.frame_addroof_3.setGeometry(QtCore.QRect(-11, 9, 1411, 411))
-        self.frame_addroof_3.setStyleSheet("    background-color: transparent;\n"
+        self.pushButton_Close_ROOFadd_5.setObjectName("pushButton_Close_ROOFadd_5")
+        self.frame_addroof_7 = QtWidgets.QFrame(self.ADD_ROOF_5)
+        self.frame_addroof_7.setGeometry(QtCore.QRect(-11, 9, 1411, 411))
+        self.frame_addroof_7.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.frame_addroof_3.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_addroof_3.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_addroof_3.setObjectName("frame_addroof_3")
-        self.label_73 = QtWidgets.QLabel(self.frame_addroof_3)
-        self.label_73.setGeometry(QtCore.QRect(30, 10, 241, 51))
+        self.frame_addroof_7.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_addroof_7.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_addroof_7.setObjectName("frame_addroof_7")
+        self.label_121 = QtWidgets.QLabel(self.frame_addroof_7)
+        self.label_121.setGeometry(QtCore.QRect(30, 10, 241, 51))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_73.setFont(font)
-        self.label_73.setStyleSheet("    background-color: transparent;\n"
+        self.label_121.setFont(font)
+        self.label_121.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_73.setObjectName("label_73")
-        self.label_74 = QtWidgets.QLabel(self.frame_addroof_3)
-        self.label_74.setGeometry(QtCore.QRect(30, 140, 171, 71))
+        self.label_121.setObjectName("label_121")
+        self.label_122 = QtWidgets.QLabel(self.frame_addroof_7)
+        self.label_122.setGeometry(QtCore.QRect(30, 140, 171, 71))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_74.setFont(font)
-        self.label_74.setStyleSheet("    background-color: transparent;\n"
+        self.label_122.setFont(font)
+        self.label_122.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_74.setObjectName("label_74")
-        self.label_75 = QtWidgets.QLabel(self.frame_addroof_3)
-        self.label_75.setGeometry(QtCore.QRect(30, 60, 171, 91))
+        self.label_122.setObjectName("label_122")
+        self.label_123 = QtWidgets.QLabel(self.frame_addroof_7)
+        self.label_123.setGeometry(QtCore.QRect(30, 60, 171, 91))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_75.setFont(font)
-        self.label_75.setStyleSheet("    background-color: transparent;\n"
+        self.label_123.setFont(font)
+        self.label_123.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_75.setObjectName("label_75")
-        self.lineEdit_AddROOF_prodID = QtWidgets.QLineEdit(self.frame_addroof_3)
-        self.lineEdit_AddROOF_prodID.setGeometry(QtCore.QRect(240, 10, 561, 51))
+        self.label_123.setObjectName("label_123")
+        self.lineEdit_AddROOF_prodID_5 = QtWidgets.QLineEdit(self.frame_addroof_7)
+        self.lineEdit_AddROOF_prodID_5.setGeometry(QtCore.QRect(240, 10, 561, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_AddROOF_prodID.setFont(font)
-        self.lineEdit_AddROOF_prodID.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_AddROOF_prodID_5.setFont(font)
+        self.lineEdit_AddROOF_prodID_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_AddROOF_prodID.setObjectName("lineEdit_AddROOF_prodID")
-        self.lineEdit_AddROOF_Width = QtWidgets.QLineEdit(self.frame_addroof_3)
-        self.lineEdit_AddROOF_Width.setGeometry(QtCore.QRect(1100, 290, 261, 51))
+        self.lineEdit_AddROOF_prodID_5.setObjectName("lineEdit_AddROOF_prodID_5")
+        self.lineEdit_AddROOF_Width_5 = QtWidgets.QLineEdit(self.frame_addroof_7)
+        self.lineEdit_AddROOF_Width_5.setGeometry(QtCore.QRect(1100, 290, 261, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_AddROOF_Width.setFont(font)
-        self.lineEdit_AddROOF_Width.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_AddROOF_Width_5.setFont(font)
+        self.lineEdit_AddROOF_Width_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_AddROOF_Width.setObjectName("lineEdit_AddROOF_Width")
-        self.label_230 = QtWidgets.QLabel(self.frame_addroof_3)
-        self.label_230.setGeometry(QtCore.QRect(820, -50, 271, 171))
+        self.lineEdit_AddROOF_Width_5.setObjectName("lineEdit_AddROOF_Width_5")
+        self.label_582 = QtWidgets.QLabel(self.frame_addroof_7)
+        self.label_582.setGeometry(QtCore.QRect(820, -50, 271, 171))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_230.setFont(font)
-        self.label_230.setStyleSheet("    background-color: transparent;\n"
+        self.label_582.setFont(font)
+        self.label_582.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_230.setObjectName("label_230")
-        self.lineEdit_AddROOF_Qty = QtWidgets.QLineEdit(self.frame_addroof_3)
-        self.lineEdit_AddROOF_Qty.setGeometry(QtCore.QRect(1100, 10, 261, 51))
+        self.label_582.setObjectName("label_582")
+        self.lineEdit_AddROOF_Qty_5 = QtWidgets.QLineEdit(self.frame_addroof_7)
+        self.lineEdit_AddROOF_Qty_5.setGeometry(QtCore.QRect(1100, 10, 261, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_AddROOF_Qty.setFont(font)
-        self.lineEdit_AddROOF_Qty.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_AddROOF_Qty_5.setFont(font)
+        self.lineEdit_AddROOF_Qty_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_AddROOF_Qty.setObjectName("lineEdit_AddROOF_Qty")
-        self.label_231 = QtWidgets.QLabel(self.frame_addroof_3)
-        self.label_231.setGeometry(QtCore.QRect(820, 270, 261, 91))
+        self.lineEdit_AddROOF_Qty_5.setObjectName("lineEdit_AddROOF_Qty_5")
+        self.label_583 = QtWidgets.QLabel(self.frame_addroof_7)
+        self.label_583.setGeometry(QtCore.QRect(820, 270, 261, 91))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_231.setFont(font)
-        self.label_231.setStyleSheet("    background-color: transparent;\n"
+        self.label_583.setFont(font)
+        self.label_583.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_231.setObjectName("label_231")
-        self.label_76 = QtWidgets.QLabel(self.frame_addroof_3)
-        self.label_76.setGeometry(QtCore.QRect(820, 200, 271, 91))
+        self.label_583.setObjectName("label_583")
+        self.label_124 = QtWidgets.QLabel(self.frame_addroof_7)
+        self.label_124.setGeometry(QtCore.QRect(820, 200, 271, 91))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_76.setFont(font)
-        self.label_76.setStyleSheet("    background-color: transparent;\n"
+        self.label_124.setFont(font)
+        self.label_124.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_76.setObjectName("label_76")
-        self.lineEdit_AddROOF_Color = QtWidgets.QLineEdit(self.frame_addroof_3)
-        self.lineEdit_AddROOF_Color.setGeometry(QtCore.QRect(1100, 220, 261, 51))
+        self.label_124.setObjectName("label_124")
+        self.lineEdit_AddROOF_Color_5 = QtWidgets.QLineEdit(self.frame_addroof_7)
+        self.lineEdit_AddROOF_Color_5.setGeometry(QtCore.QRect(1100, 220, 261, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_AddROOF_Color.setFont(font)
-        self.lineEdit_AddROOF_Color.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_AddROOF_Color_5.setFont(font)
+        self.lineEdit_AddROOF_Color_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_AddROOF_Color.setObjectName("lineEdit_AddROOF_Color")
-        self.label_81 = QtWidgets.QLabel(self.frame_addroof_3)
-        self.label_81.setGeometry(QtCore.QRect(820, 50, 261, 111))
+        self.lineEdit_AddROOF_Color_5.setObjectName("lineEdit_AddROOF_Color_5")
+        self.label_125 = QtWidgets.QLabel(self.frame_addroof_7)
+        self.label_125.setGeometry(QtCore.QRect(820, 50, 261, 111))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_81.setFont(font)
-        self.label_81.setStyleSheet("    background-color: transparent;\n"
+        self.label_125.setFont(font)
+        self.label_125.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_81.setObjectName("label_81")
-        self.lineEdit_AddROOF_Length = QtWidgets.QLineEdit(self.frame_addroof_3)
-        self.lineEdit_AddROOF_Length.setGeometry(QtCore.QRect(1100, 80, 261, 51))
+        self.label_125.setObjectName("label_125")
+        self.lineEdit_AddROOF_Length_5 = QtWidgets.QLineEdit(self.frame_addroof_7)
+        self.lineEdit_AddROOF_Length_5.setGeometry(QtCore.QRect(1100, 80, 261, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_AddROOF_Length.setFont(font)
-        self.lineEdit_AddROOF_Length.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_AddROOF_Length_5.setFont(font)
+        self.lineEdit_AddROOF_Length_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_AddROOF_Length.setObjectName("lineEdit_AddROOF_Length")
-        self.label_82 = QtWidgets.QLabel(self.frame_addroof_3)
-        self.label_82.setGeometry(QtCore.QRect(30, 170, 181, 151))
+        self.lineEdit_AddROOF_Length_5.setObjectName("lineEdit_AddROOF_Length_5")
+        self.label_126 = QtWidgets.QLabel(self.frame_addroof_7)
+        self.label_126.setGeometry(QtCore.QRect(30, 170, 181, 151))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_82.setFont(font)
-        self.label_82.setStyleSheet("    background-color: transparent;\n"
+        self.label_126.setFont(font)
+        self.label_126.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_82.setObjectName("label_82")
-        self.lineEdit_AddROOF_Price = QtWidgets.QLineEdit(self.frame_addroof_3)
-        self.lineEdit_AddROOF_Price.setGeometry(QtCore.QRect(240, 150, 561, 51))
+        self.label_126.setObjectName("label_126")
+        self.lineEdit_AddROOF_Price_5 = QtWidgets.QLineEdit(self.frame_addroof_7)
+        self.lineEdit_AddROOF_Price_5.setGeometry(QtCore.QRect(240, 150, 561, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_AddROOF_Price.setFont(font)
-        self.lineEdit_AddROOF_Price.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_AddROOF_Price_5.setFont(font)
+        self.lineEdit_AddROOF_Price_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_AddROOF_Price.setObjectName("lineEdit_AddROOF_Price")
-        self.lineEdit_AddROOF_OtherSpecifications = QtWidgets.QLineEdit(self.frame_addroof_3)
-        self.lineEdit_AddROOF_OtherSpecifications.setGeometry(QtCore.QRect(240, 230, 561, 111))
+        self.lineEdit_AddROOF_Price_5.setObjectName("lineEdit_AddROOF_Price_5")
+        self.lineEdit_AddROOF_OtherSpecifications_5 = QtWidgets.QLineEdit(self.frame_addroof_7)
+        self.lineEdit_AddROOF_OtherSpecifications_5.setGeometry(QtCore.QRect(240, 230, 561, 111))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_AddROOF_OtherSpecifications.setFont(font)
-        self.lineEdit_AddROOF_OtherSpecifications.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_AddROOF_OtherSpecifications_5.setFont(font)
+        self.lineEdit_AddROOF_OtherSpecifications_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_AddROOF_OtherSpecifications.setObjectName("lineEdit_AddROOF_OtherSpecifications")
-        self.label_232 = QtWidgets.QLabel(self.frame_addroof_3)
-        self.label_232.setGeometry(QtCore.QRect(820, 130, 271, 91))
+        self.lineEdit_AddROOF_OtherSpecifications_5.setObjectName("lineEdit_AddROOF_OtherSpecifications_5")
+        self.label_584 = QtWidgets.QLabel(self.frame_addroof_7)
+        self.label_584.setGeometry(QtCore.QRect(820, 130, 271, 91))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_232.setFont(font)
-        self.label_232.setStyleSheet("    background-color: transparent;\n"
+        self.label_584.setFont(font)
+        self.label_584.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_232.setObjectName("label_232")
-        self.lineEdit_AddROOF_Thickness = QtWidgets.QLineEdit(self.frame_addroof_3)
-        self.lineEdit_AddROOF_Thickness.setGeometry(QtCore.QRect(1100, 150, 261, 51))
+        self.label_584.setObjectName("label_584")
+        self.lineEdit_AddROOF_Thickness_5 = QtWidgets.QLineEdit(self.frame_addroof_7)
+        self.lineEdit_AddROOF_Thickness_5.setGeometry(QtCore.QRect(1100, 150, 261, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_AddROOF_Thickness.setFont(font)
-        self.lineEdit_AddROOF_Thickness.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_AddROOF_Thickness_5.setFont(font)
+        self.lineEdit_AddROOF_Thickness_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_AddROOF_Thickness.setObjectName("lineEdit_AddROOF_Thickness")
-        self.label_83 = QtWidgets.QLabel(self.frame_addroof_3)
-        self.label_83.setGeometry(QtCore.QRect(30, 250, 211, 51))
+        self.lineEdit_AddROOF_Thickness_5.setObjectName("lineEdit_AddROOF_Thickness_5")
+        self.label_127 = QtWidgets.QLabel(self.frame_addroof_7)
+        self.label_127.setGeometry(QtCore.QRect(30, 250, 211, 51))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(13)
         font.setBold(False)
         font.setWeight(50)
-        self.label_83.setFont(font)
-        self.label_83.setStyleSheet("    background-color: transparent;\n"
+        self.label_127.setFont(font)
+        self.label_127.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_83.setObjectName("label_83")
-        self.lineEdit_AddROOF_Name = QtWidgets.QLineEdit(self.frame_addroof_3)
-        self.lineEdit_AddROOF_Name.setGeometry(QtCore.QRect(240, 80, 561, 51))
+        self.label_127.setObjectName("label_127")
+        self.lineEdit_AddROOF_Name_5 = QtWidgets.QLineEdit(self.frame_addroof_7)
+        self.lineEdit_AddROOF_Name_5.setGeometry(QtCore.QRect(240, 80, 561, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_AddROOF_Name.setFont(font)
-        self.lineEdit_AddROOF_Name.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_AddROOF_Name_5.setFont(font)
+        self.lineEdit_AddROOF_Name_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_AddROOF_Name.setObjectName("lineEdit_AddROOF_Name")
-        self.Add_Select_Prod_Type.addWidget(self.ADD_ROOF)
-        self.ADD_SPANDREL = QtWidgets.QWidget()
-        self.ADD_SPANDREL.setObjectName("ADD_SPANDREL")
-        self.frame_34 = QtWidgets.QFrame(self.ADD_SPANDREL)
-        self.frame_34.setGeometry(QtCore.QRect(-10, 419, 1331, 91))
-        self.frame_34.setStyleSheet("    background-color: transparent;\n"
+        self.lineEdit_AddROOF_Name_5.setObjectName("lineEdit_AddROOF_Name_5")
+        self.Add_Select_Prod_Type_5.addWidget(self.ADD_ROOF_5)
+        self.ADD_SPANDREL_5 = QtWidgets.QWidget()
+        self.ADD_SPANDREL_5.setObjectName("ADD_SPANDREL_5")
+        self.frame_99 = QtWidgets.QFrame(self.ADD_SPANDREL_5)
+        self.frame_99.setGeometry(QtCore.QRect(-10, 419, 1331, 91))
+        self.frame_99.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.frame_34.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_34.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_34.setObjectName("frame_34")
-        self.pushButton_Confirm_SPANDRELadd = QtWidgets.QPushButton(self.frame_34)
-        self.pushButton_Confirm_SPANDRELadd.setGeometry(QtCore.QRect(360, 20, 331, 51))
+        self.frame_99.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_99.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_99.setObjectName("frame_99")
+        self.pushButton_Confirm_SPANDRELadd_5 = QtWidgets.QPushButton(self.frame_99)
+        self.pushButton_Confirm_SPANDRELadd_5.setGeometry(QtCore.QRect(360, 20, 331, 51))
         font = QtGui.QFont()
         font.setFamily("Verdana")
         font.setPointSize(14)
-        self.pushButton_Confirm_SPANDRELadd.setFont(font)
-        self.pushButton_Confirm_SPANDRELadd.setStyleSheet("    background-color: #b2423c;\n"
+        self.pushButton_Confirm_SPANDRELadd_5.setFont(font)
+        self.pushButton_Confirm_SPANDRELadd_5.setStyleSheet("    background-color: #b2423c;\n"
 "    color: white;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "font-family: \"Verdana\", sans-serif; \n"
 "text-align: center;")
-        self.pushButton_Confirm_SPANDRELadd.setObjectName("pushButton_Confirm_SPANDRELadd")
-        self.pushButton_Close_SPANDRELadd = QtWidgets.QPushButton(self.frame_34)
-        self.pushButton_Close_SPANDRELadd.setGeometry(QtCore.QRect(740, 20, 261, 51))
+        self.pushButton_Confirm_SPANDRELadd_5.setObjectName("pushButton_Confirm_SPANDRELadd_5")
+        self.pushButton_Close_SPANDRELadd_5 = QtWidgets.QPushButton(self.frame_99)
+        self.pushButton_Close_SPANDRELadd_5.setGeometry(QtCore.QRect(740, 20, 261, 51))
         font = QtGui.QFont()
         font.setFamily("Verdana")
         font.setPointSize(14)
-        self.pushButton_Close_SPANDRELadd.setFont(font)
-        self.pushButton_Close_SPANDRELadd.setStyleSheet("\n"
+        self.pushButton_Close_SPANDRELadd_5.setFont(font)
+        self.pushButton_Close_SPANDRELadd_5.setStyleSheet("\n"
 "/* Default Inactive Button */\n"
 "QPushButton {\n"
 "    background-color: #ffffff;\n"
@@ -1397,263 +1389,263 @@ class Ui_OWNER_INVENTORY(object):
 "    color: white;\n"
 "}\n"
 "")
-        self.pushButton_Close_SPANDRELadd.setObjectName("pushButton_Close_SPANDRELadd")
-        self.frame_addspandrel_7 = QtWidgets.QFrame(self.ADD_SPANDREL)
-        self.frame_addspandrel_7.setGeometry(QtCore.QRect(-10, 10, 1411, 411))
-        self.frame_addspandrel_7.setStyleSheet("    background-color: transparent;\n"
+        self.pushButton_Close_SPANDRELadd_5.setObjectName("pushButton_Close_SPANDRELadd_5")
+        self.frame_addspandrel_19 = QtWidgets.QFrame(self.ADD_SPANDREL_5)
+        self.frame_addspandrel_19.setGeometry(QtCore.QRect(-10, 10, 1411, 411))
+        self.frame_addspandrel_19.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.frame_addspandrel_7.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_addspandrel_7.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_addspandrel_7.setObjectName("frame_addspandrel_7")
-        self.label_84 = QtWidgets.QLabel(self.frame_addspandrel_7)
-        self.label_84.setGeometry(QtCore.QRect(30, 10, 241, 51))
+        self.frame_addspandrel_19.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_addspandrel_19.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_addspandrel_19.setObjectName("frame_addspandrel_19")
+        self.label_128 = QtWidgets.QLabel(self.frame_addspandrel_19)
+        self.label_128.setGeometry(QtCore.QRect(30, 10, 241, 51))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_84.setFont(font)
-        self.label_84.setStyleSheet("    background-color: transparent;\n"
+        self.label_128.setFont(font)
+        self.label_128.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_84.setObjectName("label_84")
-        self.label_85 = QtWidgets.QLabel(self.frame_addspandrel_7)
-        self.label_85.setGeometry(QtCore.QRect(30, 140, 171, 71))
+        self.label_128.setObjectName("label_128")
+        self.label_129 = QtWidgets.QLabel(self.frame_addspandrel_19)
+        self.label_129.setGeometry(QtCore.QRect(30, 140, 171, 71))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_85.setFont(font)
-        self.label_85.setStyleSheet("    background-color: transparent;\n"
+        self.label_129.setFont(font)
+        self.label_129.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_85.setObjectName("label_85")
-        self.label_86 = QtWidgets.QLabel(self.frame_addspandrel_7)
-        self.label_86.setGeometry(QtCore.QRect(30, 60, 171, 91))
+        self.label_129.setObjectName("label_129")
+        self.label_130 = QtWidgets.QLabel(self.frame_addspandrel_19)
+        self.label_130.setGeometry(QtCore.QRect(30, 60, 171, 91))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_86.setFont(font)
-        self.label_86.setStyleSheet("    background-color: transparent;\n"
+        self.label_130.setFont(font)
+        self.label_130.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_86.setObjectName("label_86")
-        self.lineEdit_AddSPANDREL_prodID = QtWidgets.QLineEdit(self.frame_addspandrel_7)
-        self.lineEdit_AddSPANDREL_prodID.setGeometry(QtCore.QRect(240, 10, 561, 51))
+        self.label_130.setObjectName("label_130")
+        self.lineEdit_AddSPANDREL_prodID_5 = QtWidgets.QLineEdit(self.frame_addspandrel_19)
+        self.lineEdit_AddSPANDREL_prodID_5.setGeometry(QtCore.QRect(240, 10, 561, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_AddSPANDREL_prodID.setFont(font)
-        self.lineEdit_AddSPANDREL_prodID.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_AddSPANDREL_prodID_5.setFont(font)
+        self.lineEdit_AddSPANDREL_prodID_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_AddSPANDREL_prodID.setObjectName("lineEdit_AddSPANDREL_prodID")
-        self.lineEdit_AddSPANDREL_Width = QtWidgets.QLineEdit(self.frame_addspandrel_7)
-        self.lineEdit_AddSPANDREL_Width.setGeometry(QtCore.QRect(1100, 290, 261, 51))
+        self.lineEdit_AddSPANDREL_prodID_5.setObjectName("lineEdit_AddSPANDREL_prodID_5")
+        self.lineEdit_AddSPANDREL_Width_5 = QtWidgets.QLineEdit(self.frame_addspandrel_19)
+        self.lineEdit_AddSPANDREL_Width_5.setGeometry(QtCore.QRect(1100, 290, 261, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_AddSPANDREL_Width.setFont(font)
-        self.lineEdit_AddSPANDREL_Width.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_AddSPANDREL_Width_5.setFont(font)
+        self.lineEdit_AddSPANDREL_Width_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_AddSPANDREL_Width.setObjectName("lineEdit_AddSPANDREL_Width")
-        self.label_233 = QtWidgets.QLabel(self.frame_addspandrel_7)
-        self.label_233.setGeometry(QtCore.QRect(820, -50, 271, 171))
+        self.lineEdit_AddSPANDREL_Width_5.setObjectName("lineEdit_AddSPANDREL_Width_5")
+        self.label_585 = QtWidgets.QLabel(self.frame_addspandrel_19)
+        self.label_585.setGeometry(QtCore.QRect(820, -50, 271, 171))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_233.setFont(font)
-        self.label_233.setStyleSheet("    background-color: transparent;\n"
+        self.label_585.setFont(font)
+        self.label_585.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_233.setObjectName("label_233")
-        self.lineEdit_AddSPANDREL_Qty = QtWidgets.QLineEdit(self.frame_addspandrel_7)
-        self.lineEdit_AddSPANDREL_Qty.setGeometry(QtCore.QRect(1100, 10, 261, 51))
+        self.label_585.setObjectName("label_585")
+        self.lineEdit_AddSPANDREL_Qty_5 = QtWidgets.QLineEdit(self.frame_addspandrel_19)
+        self.lineEdit_AddSPANDREL_Qty_5.setGeometry(QtCore.QRect(1100, 10, 261, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_AddSPANDREL_Qty.setFont(font)
-        self.lineEdit_AddSPANDREL_Qty.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_AddSPANDREL_Qty_5.setFont(font)
+        self.lineEdit_AddSPANDREL_Qty_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_AddSPANDREL_Qty.setObjectName("lineEdit_AddSPANDREL_Qty")
-        self.label_234 = QtWidgets.QLabel(self.frame_addspandrel_7)
-        self.label_234.setGeometry(QtCore.QRect(820, 270, 261, 91))
+        self.lineEdit_AddSPANDREL_Qty_5.setObjectName("lineEdit_AddSPANDREL_Qty_5")
+        self.label_586 = QtWidgets.QLabel(self.frame_addspandrel_19)
+        self.label_586.setGeometry(QtCore.QRect(820, 270, 261, 91))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_234.setFont(font)
-        self.label_234.setStyleSheet("    background-color: transparent;\n"
+        self.label_586.setFont(font)
+        self.label_586.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_234.setObjectName("label_234")
-        self.label_87 = QtWidgets.QLabel(self.frame_addspandrel_7)
-        self.label_87.setGeometry(QtCore.QRect(820, 200, 271, 91))
+        self.label_586.setObjectName("label_586")
+        self.label_131 = QtWidgets.QLabel(self.frame_addspandrel_19)
+        self.label_131.setGeometry(QtCore.QRect(820, 200, 271, 91))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_87.setFont(font)
-        self.label_87.setStyleSheet("    background-color: transparent;\n"
+        self.label_131.setFont(font)
+        self.label_131.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_87.setObjectName("label_87")
-        self.lineEdit_AddSPANDREL_Color = QtWidgets.QLineEdit(self.frame_addspandrel_7)
-        self.lineEdit_AddSPANDREL_Color.setGeometry(QtCore.QRect(1100, 220, 261, 51))
+        self.label_131.setObjectName("label_131")
+        self.lineEdit_AddSPANDREL_Color_5 = QtWidgets.QLineEdit(self.frame_addspandrel_19)
+        self.lineEdit_AddSPANDREL_Color_5.setGeometry(QtCore.QRect(1100, 220, 261, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_AddSPANDREL_Color.setFont(font)
-        self.lineEdit_AddSPANDREL_Color.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_AddSPANDREL_Color_5.setFont(font)
+        self.lineEdit_AddSPANDREL_Color_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_AddSPANDREL_Color.setObjectName("lineEdit_AddSPANDREL_Color")
-        self.label_235 = QtWidgets.QLabel(self.frame_addspandrel_7)
-        self.label_235.setGeometry(QtCore.QRect(820, 50, 261, 111))
+        self.lineEdit_AddSPANDREL_Color_5.setObjectName("lineEdit_AddSPANDREL_Color_5")
+        self.label_587 = QtWidgets.QLabel(self.frame_addspandrel_19)
+        self.label_587.setGeometry(QtCore.QRect(820, 50, 261, 111))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_235.setFont(font)
-        self.label_235.setStyleSheet("    background-color: transparent;\n"
+        self.label_587.setFont(font)
+        self.label_587.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_235.setObjectName("label_235")
-        self.lineEdit_AddSPANDREL_Length = QtWidgets.QLineEdit(self.frame_addspandrel_7)
-        self.lineEdit_AddSPANDREL_Length.setGeometry(QtCore.QRect(1100, 80, 261, 51))
+        self.label_587.setObjectName("label_587")
+        self.lineEdit_AddSPANDREL_Length_5 = QtWidgets.QLineEdit(self.frame_addspandrel_19)
+        self.lineEdit_AddSPANDREL_Length_5.setGeometry(QtCore.QRect(1100, 80, 261, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_AddSPANDREL_Length.setFont(font)
-        self.lineEdit_AddSPANDREL_Length.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_AddSPANDREL_Length_5.setFont(font)
+        self.lineEdit_AddSPANDREL_Length_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_AddSPANDREL_Length.setObjectName("lineEdit_AddSPANDREL_Length")
-        self.label_236 = QtWidgets.QLabel(self.frame_addspandrel_7)
-        self.label_236.setGeometry(QtCore.QRect(30, 170, 181, 151))
+        self.lineEdit_AddSPANDREL_Length_5.setObjectName("lineEdit_AddSPANDREL_Length_5")
+        self.label_588 = QtWidgets.QLabel(self.frame_addspandrel_19)
+        self.label_588.setGeometry(QtCore.QRect(30, 170, 181, 151))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_236.setFont(font)
-        self.label_236.setStyleSheet("    background-color: transparent;\n"
+        self.label_588.setFont(font)
+        self.label_588.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_236.setObjectName("label_236")
-        self.lineEdit_AddSPANDREL_Price = QtWidgets.QLineEdit(self.frame_addspandrel_7)
-        self.lineEdit_AddSPANDREL_Price.setGeometry(QtCore.QRect(240, 150, 561, 51))
+        self.label_588.setObjectName("label_588")
+        self.lineEdit_AddSPANDREL_Price_5 = QtWidgets.QLineEdit(self.frame_addspandrel_19)
+        self.lineEdit_AddSPANDREL_Price_5.setGeometry(QtCore.QRect(240, 150, 561, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_AddSPANDREL_Price.setFont(font)
-        self.lineEdit_AddSPANDREL_Price.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_AddSPANDREL_Price_5.setFont(font)
+        self.lineEdit_AddSPANDREL_Price_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_AddSPANDREL_Price.setObjectName("lineEdit_AddSPANDREL_Price")
-        self.lineEdit_AddSPANDREL_OtherSpecifications = QtWidgets.QLineEdit(self.frame_addspandrel_7)
-        self.lineEdit_AddSPANDREL_OtherSpecifications.setGeometry(QtCore.QRect(240, 230, 561, 111))
+        self.lineEdit_AddSPANDREL_Price_5.setObjectName("lineEdit_AddSPANDREL_Price_5")
+        self.lineEdit_AddSPANDREL_OtherSpecifications_5 = QtWidgets.QLineEdit(self.frame_addspandrel_19)
+        self.lineEdit_AddSPANDREL_OtherSpecifications_5.setGeometry(QtCore.QRect(240, 230, 561, 111))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_AddSPANDREL_OtherSpecifications.setFont(font)
-        self.lineEdit_AddSPANDREL_OtherSpecifications.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_AddSPANDREL_OtherSpecifications_5.setFont(font)
+        self.lineEdit_AddSPANDREL_OtherSpecifications_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_AddSPANDREL_OtherSpecifications.setObjectName("lineEdit_AddSPANDREL_OtherSpecifications")
-        self.label_237 = QtWidgets.QLabel(self.frame_addspandrel_7)
-        self.label_237.setGeometry(QtCore.QRect(820, 130, 271, 91))
+        self.lineEdit_AddSPANDREL_OtherSpecifications_5.setObjectName("lineEdit_AddSPANDREL_OtherSpecifications_5")
+        self.label_589 = QtWidgets.QLabel(self.frame_addspandrel_19)
+        self.label_589.setGeometry(QtCore.QRect(820, 130, 271, 91))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_237.setFont(font)
-        self.label_237.setStyleSheet("    background-color: transparent;\n"
+        self.label_589.setFont(font)
+        self.label_589.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_237.setObjectName("label_237")
-        self.lineEdit_AddSPANDREL_Thickness = QtWidgets.QLineEdit(self.frame_addspandrel_7)
-        self.lineEdit_AddSPANDREL_Thickness.setGeometry(QtCore.QRect(1100, 150, 261, 51))
+        self.label_589.setObjectName("label_589")
+        self.lineEdit_AddSPANDREL_Thickness_5 = QtWidgets.QLineEdit(self.frame_addspandrel_19)
+        self.lineEdit_AddSPANDREL_Thickness_5.setGeometry(QtCore.QRect(1100, 150, 261, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_AddSPANDREL_Thickness.setFont(font)
-        self.lineEdit_AddSPANDREL_Thickness.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_AddSPANDREL_Thickness_5.setFont(font)
+        self.lineEdit_AddSPANDREL_Thickness_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_AddSPANDREL_Thickness.setObjectName("lineEdit_AddSPANDREL_Thickness")
-        self.label_238 = QtWidgets.QLabel(self.frame_addspandrel_7)
-        self.label_238.setGeometry(QtCore.QRect(30, 250, 211, 51))
+        self.lineEdit_AddSPANDREL_Thickness_5.setObjectName("lineEdit_AddSPANDREL_Thickness_5")
+        self.label_590 = QtWidgets.QLabel(self.frame_addspandrel_19)
+        self.label_590.setGeometry(QtCore.QRect(30, 250, 211, 51))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(13)
         font.setBold(False)
         font.setWeight(50)
-        self.label_238.setFont(font)
-        self.label_238.setStyleSheet("    background-color: transparent;\n"
+        self.label_590.setFont(font)
+        self.label_590.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_238.setObjectName("label_238")
-        self.lineEdit_AddSPANDREL_Name = QtWidgets.QLineEdit(self.frame_addspandrel_7)
-        self.lineEdit_AddSPANDREL_Name.setGeometry(QtCore.QRect(240, 80, 561, 51))
+        self.label_590.setObjectName("label_590")
+        self.lineEdit_AddSPANDREL_Name_5 = QtWidgets.QLineEdit(self.frame_addspandrel_19)
+        self.lineEdit_AddSPANDREL_Name_5.setGeometry(QtCore.QRect(240, 80, 561, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_AddSPANDREL_Name.setFont(font)
-        self.lineEdit_AddSPANDREL_Name.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_AddSPANDREL_Name_5.setFont(font)
+        self.lineEdit_AddSPANDREL_Name_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_AddSPANDREL_Name.setObjectName("lineEdit_AddSPANDREL_Name")
-        self.Add_Select_Prod_Type.addWidget(self.ADD_SPANDREL)
-        self.ADD_GUTTER = QtWidgets.QWidget()
-        self.ADD_GUTTER.setObjectName("ADD_GUTTER")
-        self.frame_35 = QtWidgets.QFrame(self.ADD_GUTTER)
-        self.frame_35.setGeometry(QtCore.QRect(-10, 419, 1331, 91))
-        self.frame_35.setStyleSheet("    background-color: transparent;\n"
+        self.lineEdit_AddSPANDREL_Name_5.setObjectName("lineEdit_AddSPANDREL_Name_5")
+        self.Add_Select_Prod_Type_5.addWidget(self.ADD_SPANDREL_5)
+        self.ADD_GUTTER_5 = QtWidgets.QWidget()
+        self.ADD_GUTTER_5.setObjectName("ADD_GUTTER_5")
+        self.frame_100 = QtWidgets.QFrame(self.ADD_GUTTER_5)
+        self.frame_100.setGeometry(QtCore.QRect(-10, 419, 1331, 91))
+        self.frame_100.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.frame_35.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_35.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_35.setObjectName("frame_35")
-        self.pushButton_Confirm_GUTTERadd = QtWidgets.QPushButton(self.frame_35)
-        self.pushButton_Confirm_GUTTERadd.setGeometry(QtCore.QRect(360, 20, 331, 51))
+        self.frame_100.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_100.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_100.setObjectName("frame_100")
+        self.pushButton_Confirm_GUTTERadd_5 = QtWidgets.QPushButton(self.frame_100)
+        self.pushButton_Confirm_GUTTERadd_5.setGeometry(QtCore.QRect(360, 20, 331, 51))
         font = QtGui.QFont()
         font.setFamily("Verdana")
         font.setPointSize(14)
-        self.pushButton_Confirm_GUTTERadd.setFont(font)
-        self.pushButton_Confirm_GUTTERadd.setStyleSheet("    background-color: #b2423c;\n"
+        self.pushButton_Confirm_GUTTERadd_5.setFont(font)
+        self.pushButton_Confirm_GUTTERadd_5.setStyleSheet("    background-color: #b2423c;\n"
 "    color: white;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "font-family: \"Verdana\", sans-serif; \n"
 "text-align: center;")
-        self.pushButton_Confirm_GUTTERadd.setObjectName("pushButton_Confirm_GUTTERadd")
-        self.pushButton_Close_GUTTERadd = QtWidgets.QPushButton(self.frame_35)
-        self.pushButton_Close_GUTTERadd.setGeometry(QtCore.QRect(740, 20, 261, 51))
+        self.pushButton_Confirm_GUTTERadd_5.setObjectName("pushButton_Confirm_GUTTERadd_5")
+        self.pushButton_Close_GUTTERadd_5 = QtWidgets.QPushButton(self.frame_100)
+        self.pushButton_Close_GUTTERadd_5.setGeometry(QtCore.QRect(740, 20, 261, 51))
         font = QtGui.QFont()
         font.setFamily("Verdana")
         font.setPointSize(14)
-        self.pushButton_Close_GUTTERadd.setFont(font)
-        self.pushButton_Close_GUTTERadd.setStyleSheet("\n"
+        self.pushButton_Close_GUTTERadd_5.setFont(font)
+        self.pushButton_Close_GUTTERadd_5.setStyleSheet("\n"
 "/* Default Inactive Button */\n"
 "QPushButton {\n"
 "    background-color: #ffffff;\n"
@@ -1677,263 +1669,263 @@ class Ui_OWNER_INVENTORY(object):
 "    color: white;\n"
 "}\n"
 "")
-        self.pushButton_Close_GUTTERadd.setObjectName("pushButton_Close_GUTTERadd")
-        self.frame_addspandrel_8 = QtWidgets.QFrame(self.ADD_GUTTER)
-        self.frame_addspandrel_8.setGeometry(QtCore.QRect(-10, 10, 1411, 411))
-        self.frame_addspandrel_8.setStyleSheet("    background-color: transparent;\n"
+        self.pushButton_Close_GUTTERadd_5.setObjectName("pushButton_Close_GUTTERadd_5")
+        self.frame_addspandrel_20 = QtWidgets.QFrame(self.ADD_GUTTER_5)
+        self.frame_addspandrel_20.setGeometry(QtCore.QRect(-10, 10, 1411, 411))
+        self.frame_addspandrel_20.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.frame_addspandrel_8.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_addspandrel_8.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_addspandrel_8.setObjectName("frame_addspandrel_8")
-        self.label_239 = QtWidgets.QLabel(self.frame_addspandrel_8)
-        self.label_239.setGeometry(QtCore.QRect(30, 10, 241, 51))
+        self.frame_addspandrel_20.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_addspandrel_20.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_addspandrel_20.setObjectName("frame_addspandrel_20")
+        self.label_591 = QtWidgets.QLabel(self.frame_addspandrel_20)
+        self.label_591.setGeometry(QtCore.QRect(30, 10, 241, 51))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_239.setFont(font)
-        self.label_239.setStyleSheet("    background-color: transparent;\n"
+        self.label_591.setFont(font)
+        self.label_591.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_239.setObjectName("label_239")
-        self.label_240 = QtWidgets.QLabel(self.frame_addspandrel_8)
-        self.label_240.setGeometry(QtCore.QRect(30, 140, 171, 71))
+        self.label_591.setObjectName("label_591")
+        self.label_592 = QtWidgets.QLabel(self.frame_addspandrel_20)
+        self.label_592.setGeometry(QtCore.QRect(30, 140, 171, 71))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_240.setFont(font)
-        self.label_240.setStyleSheet("    background-color: transparent;\n"
+        self.label_592.setFont(font)
+        self.label_592.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_240.setObjectName("label_240")
-        self.label_241 = QtWidgets.QLabel(self.frame_addspandrel_8)
-        self.label_241.setGeometry(QtCore.QRect(30, 60, 171, 91))
+        self.label_592.setObjectName("label_592")
+        self.label_593 = QtWidgets.QLabel(self.frame_addspandrel_20)
+        self.label_593.setGeometry(QtCore.QRect(30, 60, 171, 91))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_241.setFont(font)
-        self.label_241.setStyleSheet("    background-color: transparent;\n"
+        self.label_593.setFont(font)
+        self.label_593.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_241.setObjectName("label_241")
-        self.lineEdit_AddGUTTER_prodID = QtWidgets.QLineEdit(self.frame_addspandrel_8)
-        self.lineEdit_AddGUTTER_prodID.setGeometry(QtCore.QRect(240, 10, 561, 51))
+        self.label_593.setObjectName("label_593")
+        self.lineEdit_AddGUTTER_prodID_5 = QtWidgets.QLineEdit(self.frame_addspandrel_20)
+        self.lineEdit_AddGUTTER_prodID_5.setGeometry(QtCore.QRect(240, 10, 561, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_AddGUTTER_prodID.setFont(font)
-        self.lineEdit_AddGUTTER_prodID.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_AddGUTTER_prodID_5.setFont(font)
+        self.lineEdit_AddGUTTER_prodID_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_AddGUTTER_prodID.setObjectName("lineEdit_AddGUTTER_prodID")
-        self.lineEdit_AddGUTTER_Width = QtWidgets.QLineEdit(self.frame_addspandrel_8)
-        self.lineEdit_AddGUTTER_Width.setGeometry(QtCore.QRect(1100, 290, 261, 51))
+        self.lineEdit_AddGUTTER_prodID_5.setObjectName("lineEdit_AddGUTTER_prodID_5")
+        self.lineEdit_AddGUTTER_Width_5 = QtWidgets.QLineEdit(self.frame_addspandrel_20)
+        self.lineEdit_AddGUTTER_Width_5.setGeometry(QtCore.QRect(1100, 290, 261, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_AddGUTTER_Width.setFont(font)
-        self.lineEdit_AddGUTTER_Width.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_AddGUTTER_Width_5.setFont(font)
+        self.lineEdit_AddGUTTER_Width_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_AddGUTTER_Width.setObjectName("lineEdit_AddGUTTER_Width")
-        self.label_242 = QtWidgets.QLabel(self.frame_addspandrel_8)
-        self.label_242.setGeometry(QtCore.QRect(820, -50, 271, 171))
+        self.lineEdit_AddGUTTER_Width_5.setObjectName("lineEdit_AddGUTTER_Width_5")
+        self.label_594 = QtWidgets.QLabel(self.frame_addspandrel_20)
+        self.label_594.setGeometry(QtCore.QRect(820, -50, 271, 171))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_242.setFont(font)
-        self.label_242.setStyleSheet("    background-color: transparent;\n"
+        self.label_594.setFont(font)
+        self.label_594.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_242.setObjectName("label_242")
-        self.lineEdit_AddGUTTER_Qty = QtWidgets.QLineEdit(self.frame_addspandrel_8)
-        self.lineEdit_AddGUTTER_Qty.setGeometry(QtCore.QRect(1100, 10, 261, 51))
+        self.label_594.setObjectName("label_594")
+        self.lineEdit_AddGUTTER_Qty_5 = QtWidgets.QLineEdit(self.frame_addspandrel_20)
+        self.lineEdit_AddGUTTER_Qty_5.setGeometry(QtCore.QRect(1100, 10, 261, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_AddGUTTER_Qty.setFont(font)
-        self.lineEdit_AddGUTTER_Qty.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_AddGUTTER_Qty_5.setFont(font)
+        self.lineEdit_AddGUTTER_Qty_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_AddGUTTER_Qty.setObjectName("lineEdit_AddGUTTER_Qty")
-        self.label_243 = QtWidgets.QLabel(self.frame_addspandrel_8)
-        self.label_243.setGeometry(QtCore.QRect(820, 270, 261, 91))
+        self.lineEdit_AddGUTTER_Qty_5.setObjectName("lineEdit_AddGUTTER_Qty_5")
+        self.label_595 = QtWidgets.QLabel(self.frame_addspandrel_20)
+        self.label_595.setGeometry(QtCore.QRect(820, 270, 261, 91))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_243.setFont(font)
-        self.label_243.setStyleSheet("    background-color: transparent;\n"
+        self.label_595.setFont(font)
+        self.label_595.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_243.setObjectName("label_243")
-        self.label_244 = QtWidgets.QLabel(self.frame_addspandrel_8)
-        self.label_244.setGeometry(QtCore.QRect(820, 200, 271, 91))
+        self.label_595.setObjectName("label_595")
+        self.label_596 = QtWidgets.QLabel(self.frame_addspandrel_20)
+        self.label_596.setGeometry(QtCore.QRect(820, 200, 271, 91))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_244.setFont(font)
-        self.label_244.setStyleSheet("    background-color: transparent;\n"
+        self.label_596.setFont(font)
+        self.label_596.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_244.setObjectName("label_244")
-        self.lineEdit_AddGUTTER_Color = QtWidgets.QLineEdit(self.frame_addspandrel_8)
-        self.lineEdit_AddGUTTER_Color.setGeometry(QtCore.QRect(1100, 220, 261, 51))
+        self.label_596.setObjectName("label_596")
+        self.lineEdit_AddGUTTER_Color_5 = QtWidgets.QLineEdit(self.frame_addspandrel_20)
+        self.lineEdit_AddGUTTER_Color_5.setGeometry(QtCore.QRect(1100, 220, 261, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_AddGUTTER_Color.setFont(font)
-        self.lineEdit_AddGUTTER_Color.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_AddGUTTER_Color_5.setFont(font)
+        self.lineEdit_AddGUTTER_Color_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_AddGUTTER_Color.setObjectName("lineEdit_AddGUTTER_Color")
-        self.label_245 = QtWidgets.QLabel(self.frame_addspandrel_8)
-        self.label_245.setGeometry(QtCore.QRect(820, 50, 261, 111))
+        self.lineEdit_AddGUTTER_Color_5.setObjectName("lineEdit_AddGUTTER_Color_5")
+        self.label_597 = QtWidgets.QLabel(self.frame_addspandrel_20)
+        self.label_597.setGeometry(QtCore.QRect(820, 50, 261, 111))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_245.setFont(font)
-        self.label_245.setStyleSheet("    background-color: transparent;\n"
+        self.label_597.setFont(font)
+        self.label_597.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_245.setObjectName("label_245")
-        self.lineEdit_AddGUTTER_Length = QtWidgets.QLineEdit(self.frame_addspandrel_8)
-        self.lineEdit_AddGUTTER_Length.setGeometry(QtCore.QRect(1100, 80, 261, 51))
+        self.label_597.setObjectName("label_597")
+        self.lineEdit_AddGUTTER_Length_5 = QtWidgets.QLineEdit(self.frame_addspandrel_20)
+        self.lineEdit_AddGUTTER_Length_5.setGeometry(QtCore.QRect(1100, 80, 261, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_AddGUTTER_Length.setFont(font)
-        self.lineEdit_AddGUTTER_Length.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_AddGUTTER_Length_5.setFont(font)
+        self.lineEdit_AddGUTTER_Length_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_AddGUTTER_Length.setObjectName("lineEdit_AddGUTTER_Length")
-        self.label_246 = QtWidgets.QLabel(self.frame_addspandrel_8)
-        self.label_246.setGeometry(QtCore.QRect(30, 170, 181, 151))
+        self.lineEdit_AddGUTTER_Length_5.setObjectName("lineEdit_AddGUTTER_Length_5")
+        self.label_598 = QtWidgets.QLabel(self.frame_addspandrel_20)
+        self.label_598.setGeometry(QtCore.QRect(30, 170, 181, 151))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_246.setFont(font)
-        self.label_246.setStyleSheet("    background-color: transparent;\n"
+        self.label_598.setFont(font)
+        self.label_598.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_246.setObjectName("label_246")
-        self.lineEdit_AddGUTTER_Price = QtWidgets.QLineEdit(self.frame_addspandrel_8)
-        self.lineEdit_AddGUTTER_Price.setGeometry(QtCore.QRect(240, 150, 561, 51))
+        self.label_598.setObjectName("label_598")
+        self.lineEdit_AddGUTTER_Price_5 = QtWidgets.QLineEdit(self.frame_addspandrel_20)
+        self.lineEdit_AddGUTTER_Price_5.setGeometry(QtCore.QRect(240, 150, 561, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_AddGUTTER_Price.setFont(font)
-        self.lineEdit_AddGUTTER_Price.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_AddGUTTER_Price_5.setFont(font)
+        self.lineEdit_AddGUTTER_Price_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_AddGUTTER_Price.setObjectName("lineEdit_AddGUTTER_Price")
-        self.lineEdit_AddGUTTER_OtherSpecifications = QtWidgets.QLineEdit(self.frame_addspandrel_8)
-        self.lineEdit_AddGUTTER_OtherSpecifications.setGeometry(QtCore.QRect(240, 230, 561, 111))
+        self.lineEdit_AddGUTTER_Price_5.setObjectName("lineEdit_AddGUTTER_Price_5")
+        self.lineEdit_AddGUTTER_OtherSpecifications_5 = QtWidgets.QLineEdit(self.frame_addspandrel_20)
+        self.lineEdit_AddGUTTER_OtherSpecifications_5.setGeometry(QtCore.QRect(240, 230, 561, 111))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_AddGUTTER_OtherSpecifications.setFont(font)
-        self.lineEdit_AddGUTTER_OtherSpecifications.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_AddGUTTER_OtherSpecifications_5.setFont(font)
+        self.lineEdit_AddGUTTER_OtherSpecifications_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_AddGUTTER_OtherSpecifications.setObjectName("lineEdit_AddGUTTER_OtherSpecifications")
-        self.label_247 = QtWidgets.QLabel(self.frame_addspandrel_8)
-        self.label_247.setGeometry(QtCore.QRect(820, 130, 271, 91))
+        self.lineEdit_AddGUTTER_OtherSpecifications_5.setObjectName("lineEdit_AddGUTTER_OtherSpecifications_5")
+        self.label_599 = QtWidgets.QLabel(self.frame_addspandrel_20)
+        self.label_599.setGeometry(QtCore.QRect(820, 130, 271, 91))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_247.setFont(font)
-        self.label_247.setStyleSheet("    background-color: transparent;\n"
+        self.label_599.setFont(font)
+        self.label_599.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_247.setObjectName("label_247")
-        self.lineEdit_AddGUTTER_Thickness = QtWidgets.QLineEdit(self.frame_addspandrel_8)
-        self.lineEdit_AddGUTTER_Thickness.setGeometry(QtCore.QRect(1100, 150, 261, 51))
+        self.label_599.setObjectName("label_599")
+        self.lineEdit_AddGUTTER_Thickness_5 = QtWidgets.QLineEdit(self.frame_addspandrel_20)
+        self.lineEdit_AddGUTTER_Thickness_5.setGeometry(QtCore.QRect(1100, 150, 261, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_AddGUTTER_Thickness.setFont(font)
-        self.lineEdit_AddGUTTER_Thickness.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_AddGUTTER_Thickness_5.setFont(font)
+        self.lineEdit_AddGUTTER_Thickness_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_AddGUTTER_Thickness.setObjectName("lineEdit_AddGUTTER_Thickness")
-        self.label_248 = QtWidgets.QLabel(self.frame_addspandrel_8)
-        self.label_248.setGeometry(QtCore.QRect(30, 250, 211, 51))
+        self.lineEdit_AddGUTTER_Thickness_5.setObjectName("lineEdit_AddGUTTER_Thickness_5")
+        self.label_600 = QtWidgets.QLabel(self.frame_addspandrel_20)
+        self.label_600.setGeometry(QtCore.QRect(30, 250, 211, 51))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(13)
         font.setBold(False)
         font.setWeight(50)
-        self.label_248.setFont(font)
-        self.label_248.setStyleSheet("    background-color: transparent;\n"
+        self.label_600.setFont(font)
+        self.label_600.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_248.setObjectName("label_248")
-        self.lineEdit_AddGUTTER_Name = QtWidgets.QLineEdit(self.frame_addspandrel_8)
-        self.lineEdit_AddGUTTER_Name.setGeometry(QtCore.QRect(240, 80, 561, 51))
+        self.label_600.setObjectName("label_600")
+        self.lineEdit_AddGUTTER_Name_5 = QtWidgets.QLineEdit(self.frame_addspandrel_20)
+        self.lineEdit_AddGUTTER_Name_5.setGeometry(QtCore.QRect(240, 80, 561, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_AddGUTTER_Name.setFont(font)
-        self.lineEdit_AddGUTTER_Name.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_AddGUTTER_Name_5.setFont(font)
+        self.lineEdit_AddGUTTER_Name_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_AddGUTTER_Name.setObjectName("lineEdit_AddGUTTER_Name")
-        self.Add_Select_Prod_Type.addWidget(self.ADD_GUTTER)
-        self.ADD_OTHER = QtWidgets.QWidget()
-        self.ADD_OTHER.setObjectName("ADD_OTHER")
-        self.frame_49 = QtWidgets.QFrame(self.ADD_OTHER)
-        self.frame_49.setGeometry(QtCore.QRect(-10, 420, 1331, 91))
-        self.frame_49.setStyleSheet("    background-color: transparent;\n"
+        self.lineEdit_AddGUTTER_Name_5.setObjectName("lineEdit_AddGUTTER_Name_5")
+        self.Add_Select_Prod_Type_5.addWidget(self.ADD_GUTTER_5)
+        self.ADD_OTHER_5 = QtWidgets.QWidget()
+        self.ADD_OTHER_5.setObjectName("ADD_OTHER_5")
+        self.frame_101 = QtWidgets.QFrame(self.ADD_OTHER_5)
+        self.frame_101.setGeometry(QtCore.QRect(-10, 420, 1331, 91))
+        self.frame_101.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.frame_49.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_49.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_49.setObjectName("frame_49")
-        self.pushButton_Confirm_OTHERadd = QtWidgets.QPushButton(self.frame_49)
-        self.pushButton_Confirm_OTHERadd.setGeometry(QtCore.QRect(360, 20, 331, 51))
+        self.frame_101.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_101.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_101.setObjectName("frame_101")
+        self.pushButton_Confirm_OTHERadd_5 = QtWidgets.QPushButton(self.frame_101)
+        self.pushButton_Confirm_OTHERadd_5.setGeometry(QtCore.QRect(360, 20, 331, 51))
         font = QtGui.QFont()
         font.setFamily("Verdana")
         font.setPointSize(14)
-        self.pushButton_Confirm_OTHERadd.setFont(font)
-        self.pushButton_Confirm_OTHERadd.setStyleSheet("    background-color: #b2423c;\n"
+        self.pushButton_Confirm_OTHERadd_5.setFont(font)
+        self.pushButton_Confirm_OTHERadd_5.setStyleSheet("    background-color: #b2423c;\n"
 "    color: white;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "font-family: \"Verdana\", sans-serif; \n"
 "text-align: center;")
-        self.pushButton_Confirm_OTHERadd.setObjectName("pushButton_Confirm_OTHERadd")
-        self.pushButton_Close_OTHERadd = QtWidgets.QPushButton(self.frame_49)
-        self.pushButton_Close_OTHERadd.setGeometry(QtCore.QRect(740, 20, 261, 51))
+        self.pushButton_Confirm_OTHERadd_5.setObjectName("pushButton_Confirm_OTHERadd_5")
+        self.pushButton_Close_OTHERadd_5 = QtWidgets.QPushButton(self.frame_101)
+        self.pushButton_Close_OTHERadd_5.setGeometry(QtCore.QRect(740, 20, 261, 51))
         font = QtGui.QFont()
         font.setFamily("Verdana")
         font.setPointSize(14)
-        self.pushButton_Close_OTHERadd.setFont(font)
-        self.pushButton_Close_OTHERadd.setStyleSheet("\n"
+        self.pushButton_Close_OTHERadd_5.setFont(font)
+        self.pushButton_Close_OTHERadd_5.setStyleSheet("\n"
 "/* Default Inactive Button */\n"
 "QPushButton {\n"
 "    background-color: #ffffff;\n"
@@ -1957,333 +1949,333 @@ class Ui_OWNER_INVENTORY(object):
 "    color: white;\n"
 "}\n"
 "")
-        self.pushButton_Close_OTHERadd.setObjectName("pushButton_Close_OTHERadd")
-        self.frame_addspandrel_9 = QtWidgets.QFrame(self.ADD_OTHER)
-        self.frame_addspandrel_9.setGeometry(QtCore.QRect(-10, 10, 1411, 411))
-        self.frame_addspandrel_9.setStyleSheet("    background-color: transparent;\n"
+        self.pushButton_Close_OTHERadd_5.setObjectName("pushButton_Close_OTHERadd_5")
+        self.frame_addspandrel_21 = QtWidgets.QFrame(self.ADD_OTHER_5)
+        self.frame_addspandrel_21.setGeometry(QtCore.QRect(-10, 10, 1411, 411))
+        self.frame_addspandrel_21.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.frame_addspandrel_9.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_addspandrel_9.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_addspandrel_9.setObjectName("frame_addspandrel_9")
-        self.label_249 = QtWidgets.QLabel(self.frame_addspandrel_9)
-        self.label_249.setGeometry(QtCore.QRect(30, 10, 241, 51))
+        self.frame_addspandrel_21.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_addspandrel_21.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_addspandrel_21.setObjectName("frame_addspandrel_21")
+        self.label_601 = QtWidgets.QLabel(self.frame_addspandrel_21)
+        self.label_601.setGeometry(QtCore.QRect(30, 10, 241, 51))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_249.setFont(font)
-        self.label_249.setStyleSheet("    background-color: transparent;\n"
+        self.label_601.setFont(font)
+        self.label_601.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_249.setObjectName("label_249")
-        self.label_250 = QtWidgets.QLabel(self.frame_addspandrel_9)
-        self.label_250.setGeometry(QtCore.QRect(30, 140, 171, 71))
+        self.label_601.setObjectName("label_601")
+        self.label_602 = QtWidgets.QLabel(self.frame_addspandrel_21)
+        self.label_602.setGeometry(QtCore.QRect(30, 140, 171, 71))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_250.setFont(font)
-        self.label_250.setStyleSheet("    background-color: transparent;\n"
+        self.label_602.setFont(font)
+        self.label_602.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_250.setObjectName("label_250")
-        self.label_251 = QtWidgets.QLabel(self.frame_addspandrel_9)
-        self.label_251.setGeometry(QtCore.QRect(30, 60, 171, 91))
+        self.label_602.setObjectName("label_602")
+        self.label_603 = QtWidgets.QLabel(self.frame_addspandrel_21)
+        self.label_603.setGeometry(QtCore.QRect(30, 60, 171, 91))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_251.setFont(font)
-        self.label_251.setStyleSheet("    background-color: transparent;\n"
+        self.label_603.setFont(font)
+        self.label_603.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_251.setObjectName("label_251")
-        self.lineEdit_AddOTHER_prodID = QtWidgets.QLineEdit(self.frame_addspandrel_9)
-        self.lineEdit_AddOTHER_prodID.setGeometry(QtCore.QRect(240, 10, 561, 51))
+        self.label_603.setObjectName("label_603")
+        self.lineEdit_AddOTHER_prodID_5 = QtWidgets.QLineEdit(self.frame_addspandrel_21)
+        self.lineEdit_AddOTHER_prodID_5.setGeometry(QtCore.QRect(240, 10, 561, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_AddOTHER_prodID.setFont(font)
-        self.lineEdit_AddOTHER_prodID.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_AddOTHER_prodID_5.setFont(font)
+        self.lineEdit_AddOTHER_prodID_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_AddOTHER_prodID.setObjectName("lineEdit_AddOTHER_prodID")
-        self.lineEdit_AddOTHER_Width = QtWidgets.QLineEdit(self.frame_addspandrel_9)
-        self.lineEdit_AddOTHER_Width.setGeometry(QtCore.QRect(1100, 290, 261, 51))
+        self.lineEdit_AddOTHER_prodID_5.setObjectName("lineEdit_AddOTHER_prodID_5")
+        self.lineEdit_AddOTHER_Width_5 = QtWidgets.QLineEdit(self.frame_addspandrel_21)
+        self.lineEdit_AddOTHER_Width_5.setGeometry(QtCore.QRect(1100, 290, 261, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_AddOTHER_Width.setFont(font)
-        self.lineEdit_AddOTHER_Width.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_AddOTHER_Width_5.setFont(font)
+        self.lineEdit_AddOTHER_Width_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_AddOTHER_Width.setObjectName("lineEdit_AddOTHER_Width")
-        self.label_252 = QtWidgets.QLabel(self.frame_addspandrel_9)
-        self.label_252.setGeometry(QtCore.QRect(820, -50, 271, 171))
+        self.lineEdit_AddOTHER_Width_5.setObjectName("lineEdit_AddOTHER_Width_5")
+        self.label_604 = QtWidgets.QLabel(self.frame_addspandrel_21)
+        self.label_604.setGeometry(QtCore.QRect(820, -50, 271, 171))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_252.setFont(font)
-        self.label_252.setStyleSheet("    background-color: transparent;\n"
+        self.label_604.setFont(font)
+        self.label_604.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_252.setObjectName("label_252")
-        self.lineEdit_AddOTHER_Qty = QtWidgets.QLineEdit(self.frame_addspandrel_9)
-        self.lineEdit_AddOTHER_Qty.setGeometry(QtCore.QRect(1100, 10, 261, 51))
+        self.label_604.setObjectName("label_604")
+        self.lineEdit_AddOTHER_Qty_5 = QtWidgets.QLineEdit(self.frame_addspandrel_21)
+        self.lineEdit_AddOTHER_Qty_5.setGeometry(QtCore.QRect(1100, 10, 261, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_AddOTHER_Qty.setFont(font)
-        self.lineEdit_AddOTHER_Qty.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_AddOTHER_Qty_5.setFont(font)
+        self.lineEdit_AddOTHER_Qty_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_AddOTHER_Qty.setObjectName("lineEdit_AddOTHER_Qty")
-        self.label_253 = QtWidgets.QLabel(self.frame_addspandrel_9)
-        self.label_253.setGeometry(QtCore.QRect(820, 270, 261, 91))
+        self.lineEdit_AddOTHER_Qty_5.setObjectName("lineEdit_AddOTHER_Qty_5")
+        self.label_605 = QtWidgets.QLabel(self.frame_addspandrel_21)
+        self.label_605.setGeometry(QtCore.QRect(820, 270, 261, 91))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_253.setFont(font)
-        self.label_253.setStyleSheet("    background-color: transparent;\n"
+        self.label_605.setFont(font)
+        self.label_605.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_253.setObjectName("label_253")
-        self.label_254 = QtWidgets.QLabel(self.frame_addspandrel_9)
-        self.label_254.setGeometry(QtCore.QRect(820, 200, 271, 91))
+        self.label_605.setObjectName("label_605")
+        self.label_606 = QtWidgets.QLabel(self.frame_addspandrel_21)
+        self.label_606.setGeometry(QtCore.QRect(820, 200, 271, 91))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_254.setFont(font)
-        self.label_254.setStyleSheet("    background-color: transparent;\n"
+        self.label_606.setFont(font)
+        self.label_606.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_254.setObjectName("label_254")
-        self.lineEdit_AddOTHER_Color = QtWidgets.QLineEdit(self.frame_addspandrel_9)
-        self.lineEdit_AddOTHER_Color.setGeometry(QtCore.QRect(1100, 220, 261, 51))
+        self.label_606.setObjectName("label_606")
+        self.lineEdit_AddOTHER_Color_5 = QtWidgets.QLineEdit(self.frame_addspandrel_21)
+        self.lineEdit_AddOTHER_Color_5.setGeometry(QtCore.QRect(1100, 220, 261, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_AddOTHER_Color.setFont(font)
-        self.lineEdit_AddOTHER_Color.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_AddOTHER_Color_5.setFont(font)
+        self.lineEdit_AddOTHER_Color_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_AddOTHER_Color.setObjectName("lineEdit_AddOTHER_Color")
-        self.label_255 = QtWidgets.QLabel(self.frame_addspandrel_9)
-        self.label_255.setGeometry(QtCore.QRect(820, 50, 261, 111))
+        self.lineEdit_AddOTHER_Color_5.setObjectName("lineEdit_AddOTHER_Color_5")
+        self.label_607 = QtWidgets.QLabel(self.frame_addspandrel_21)
+        self.label_607.setGeometry(QtCore.QRect(820, 50, 261, 111))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_255.setFont(font)
-        self.label_255.setStyleSheet("    background-color: transparent;\n"
+        self.label_607.setFont(font)
+        self.label_607.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_255.setObjectName("label_255")
-        self.lineEdit_AddOTHER_Length = QtWidgets.QLineEdit(self.frame_addspandrel_9)
-        self.lineEdit_AddOTHER_Length.setGeometry(QtCore.QRect(1100, 80, 261, 51))
+        self.label_607.setObjectName("label_607")
+        self.lineEdit_AddOTHER_Length_5 = QtWidgets.QLineEdit(self.frame_addspandrel_21)
+        self.lineEdit_AddOTHER_Length_5.setGeometry(QtCore.QRect(1100, 80, 261, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_AddOTHER_Length.setFont(font)
-        self.lineEdit_AddOTHER_Length.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_AddOTHER_Length_5.setFont(font)
+        self.lineEdit_AddOTHER_Length_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_AddOTHER_Length.setObjectName("lineEdit_AddOTHER_Length")
-        self.label_256 = QtWidgets.QLabel(self.frame_addspandrel_9)
-        self.label_256.setGeometry(QtCore.QRect(30, 170, 181, 151))
+        self.lineEdit_AddOTHER_Length_5.setObjectName("lineEdit_AddOTHER_Length_5")
+        self.label_608 = QtWidgets.QLabel(self.frame_addspandrel_21)
+        self.label_608.setGeometry(QtCore.QRect(30, 170, 181, 151))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_256.setFont(font)
-        self.label_256.setStyleSheet("    background-color: transparent;\n"
+        self.label_608.setFont(font)
+        self.label_608.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_256.setObjectName("label_256")
-        self.lineEdit_AddOTHER_Price = QtWidgets.QLineEdit(self.frame_addspandrel_9)
-        self.lineEdit_AddOTHER_Price.setGeometry(QtCore.QRect(240, 150, 561, 51))
+        self.label_608.setObjectName("label_608")
+        self.lineEdit_AddOTHER_Price_5 = QtWidgets.QLineEdit(self.frame_addspandrel_21)
+        self.lineEdit_AddOTHER_Price_5.setGeometry(QtCore.QRect(240, 150, 561, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_AddOTHER_Price.setFont(font)
-        self.lineEdit_AddOTHER_Price.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_AddOTHER_Price_5.setFont(font)
+        self.lineEdit_AddOTHER_Price_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_AddOTHER_Price.setObjectName("lineEdit_AddOTHER_Price")
-        self.lineEdit_AddOTHER_OtherSpecifications = QtWidgets.QLineEdit(self.frame_addspandrel_9)
-        self.lineEdit_AddOTHER_OtherSpecifications.setGeometry(QtCore.QRect(240, 230, 561, 111))
+        self.lineEdit_AddOTHER_Price_5.setObjectName("lineEdit_AddOTHER_Price_5")
+        self.lineEdit_AddOTHER_OtherSpecifications_5 = QtWidgets.QLineEdit(self.frame_addspandrel_21)
+        self.lineEdit_AddOTHER_OtherSpecifications_5.setGeometry(QtCore.QRect(240, 230, 561, 111))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_AddOTHER_OtherSpecifications.setFont(font)
-        self.lineEdit_AddOTHER_OtherSpecifications.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_AddOTHER_OtherSpecifications_5.setFont(font)
+        self.lineEdit_AddOTHER_OtherSpecifications_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_AddOTHER_OtherSpecifications.setObjectName("lineEdit_AddOTHER_OtherSpecifications")
-        self.label_257 = QtWidgets.QLabel(self.frame_addspandrel_9)
-        self.label_257.setGeometry(QtCore.QRect(820, 130, 271, 91))
+        self.lineEdit_AddOTHER_OtherSpecifications_5.setObjectName("lineEdit_AddOTHER_OtherSpecifications_5")
+        self.label_609 = QtWidgets.QLabel(self.frame_addspandrel_21)
+        self.label_609.setGeometry(QtCore.QRect(820, 130, 271, 91))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_257.setFont(font)
-        self.label_257.setStyleSheet("    background-color: transparent;\n"
+        self.label_609.setFont(font)
+        self.label_609.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_257.setObjectName("label_257")
-        self.lineEdit_AddOTHER_Thickness = QtWidgets.QLineEdit(self.frame_addspandrel_9)
-        self.lineEdit_AddOTHER_Thickness.setGeometry(QtCore.QRect(1100, 150, 261, 51))
+        self.label_609.setObjectName("label_609")
+        self.lineEdit_AddOTHER_Thickness_5 = QtWidgets.QLineEdit(self.frame_addspandrel_21)
+        self.lineEdit_AddOTHER_Thickness_5.setGeometry(QtCore.QRect(1100, 150, 261, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_AddOTHER_Thickness.setFont(font)
-        self.lineEdit_AddOTHER_Thickness.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_AddOTHER_Thickness_5.setFont(font)
+        self.lineEdit_AddOTHER_Thickness_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_AddOTHER_Thickness.setObjectName("lineEdit_AddOTHER_Thickness")
-        self.label_258 = QtWidgets.QLabel(self.frame_addspandrel_9)
-        self.label_258.setGeometry(QtCore.QRect(30, 250, 211, 51))
+        self.lineEdit_AddOTHER_Thickness_5.setObjectName("lineEdit_AddOTHER_Thickness_5")
+        self.label_610 = QtWidgets.QLabel(self.frame_addspandrel_21)
+        self.label_610.setGeometry(QtCore.QRect(30, 250, 211, 51))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(13)
         font.setBold(False)
         font.setWeight(50)
-        self.label_258.setFont(font)
-        self.label_258.setStyleSheet("    background-color: transparent;\n"
+        self.label_610.setFont(font)
+        self.label_610.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_258.setObjectName("label_258")
-        self.lineEdit_AddOTHER_Name = QtWidgets.QLineEdit(self.frame_addspandrel_9)
-        self.lineEdit_AddOTHER_Name.setGeometry(QtCore.QRect(240, 80, 561, 51))
+        self.label_610.setObjectName("label_610")
+        self.lineEdit_AddOTHER_Name_5 = QtWidgets.QLineEdit(self.frame_addspandrel_21)
+        self.lineEdit_AddOTHER_Name_5.setGeometry(QtCore.QRect(240, 80, 561, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_AddOTHER_Name.setFont(font)
-        self.lineEdit_AddOTHER_Name.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_AddOTHER_Name_5.setFont(font)
+        self.lineEdit_AddOTHER_Name_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_AddOTHER_Name.setObjectName("lineEdit_AddOTHER_Name")
-        self.Add_Select_Prod_Type.addWidget(self.ADD_OTHER)
-        self.comboBox_Select_Prod_Type_toAdd = QtWidgets.QComboBox(self.frame_32)
-        self.comboBox_Select_Prod_Type_toAdd.setGeometry(QtCore.QRect(1220, 50, 251, 51))
+        self.lineEdit_AddOTHER_Name_5.setObjectName("lineEdit_AddOTHER_Name_5")
+        self.Add_Select_Prod_Type_5.addWidget(self.ADD_OTHER_5)
+        self.comboBox_Select_Prod_Type_toAdd_5 = QtWidgets.QComboBox(self.frame_97)
+        self.comboBox_Select_Prod_Type_toAdd_5.setGeometry(QtCore.QRect(1220, 50, 251, 51))
         font = QtGui.QFont()
         font.setPointSize(14)
-        self.comboBox_Select_Prod_Type_toAdd.setFont(font)
-        self.comboBox_Select_Prod_Type_toAdd.setLayoutDirection(QtCore.Qt.LeftToRight)
-        self.comboBox_Select_Prod_Type_toAdd.setStyleSheet("    background-color: #ebe0cc;\n"
+        self.comboBox_Select_Prod_Type_toAdd_5.setFont(font)
+        self.comboBox_Select_Prod_Type_toAdd_5.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.comboBox_Select_Prod_Type_toAdd_5.setStyleSheet("    background-color: #ebe0cc;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "text-align: center;")
-        self.comboBox_Select_Prod_Type_toAdd.setObjectName("comboBox_Select_Prod_Type_toAdd")
-        self.comboBox_Select_Prod_Type_toAdd.addItem("")
-        self.comboBox_Select_Prod_Type_toAdd.addItem("")
-        self.comboBox_Select_Prod_Type_toAdd.addItem("")
-        self.comboBox_Select_Prod_Type_toAdd.addItem("")
-        self.comboBox_Select_Prod_Type_toAdd.addItem("")
-        self.label_259 = QtWidgets.QLabel(self.frame_32)
-        self.label_259.setGeometry(QtCore.QRect(360, 80, 881, 81))
-        self.label_259.setStyleSheet("background: transparent;")
-        self.label_259.setText("")
-        self.label_259.setPixmap(QtGui.QPixmap(":/JJimages/straightline.png"))
-        self.label_259.setScaledContents(True)
-        self.label_259.setObjectName("label_259")
-        self.INVENTORY_afterBUTTONSclick.addWidget(self.page_INV_ADD_STOCK)
-        self.page_INV_EDIT_STOCK = QtWidgets.QWidget()
-        self.page_INV_EDIT_STOCK.setObjectName("page_INV_EDIT_STOCK")
-        self.frame_36 = QtWidgets.QFrame(self.page_INV_EDIT_STOCK)
-        self.frame_36.setGeometry(QtCore.QRect(-20, -10, 1641, 691))
-        self.frame_36.setStyleSheet("background: transparent;")
-        self.frame_36.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_36.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_36.setObjectName("frame_36")
-        self.label_260 = QtWidgets.QLabel(self.frame_36)
-        self.label_260.setGeometry(QtCore.QRect(80, 30, 1451, 631))
-        self.label_260.setStyleSheet("    background-color: white;\n"
+        self.comboBox_Select_Prod_Type_toAdd_5.setObjectName("comboBox_Select_Prod_Type_toAdd_5")
+        self.comboBox_Select_Prod_Type_toAdd_5.addItem("")
+        self.comboBox_Select_Prod_Type_toAdd_5.addItem("")
+        self.comboBox_Select_Prod_Type_toAdd_5.addItem("")
+        self.comboBox_Select_Prod_Type_toAdd_5.addItem("")
+        self.comboBox_Select_Prod_Type_toAdd_5.addItem("")
+        self.label_611 = QtWidgets.QLabel(self.frame_97)
+        self.label_611.setGeometry(QtCore.QRect(360, 80, 881, 81))
+        self.label_611.setStyleSheet("background: transparent;")
+        self.label_611.setText("")
+        self.label_611.setPixmap(QtGui.QPixmap(":/JJimages/straightline.png"))
+        self.label_611.setScaledContents(True)
+        self.label_611.setObjectName("label_611")
+        self.INVENTORY_afterBUTTONSclick.addWidget(self.page_INV_ADD_STOCK_5)
+        self.page_INV_EDIT_STOCK_5 = QtWidgets.QWidget()
+        self.page_INV_EDIT_STOCK_5.setObjectName("page_INV_EDIT_STOCK_5")
+        self.frame_102 = QtWidgets.QFrame(self.page_INV_EDIT_STOCK_5)
+        self.frame_102.setGeometry(QtCore.QRect(-20, -10, 1641, 691))
+        self.frame_102.setStyleSheet("background: transparent;")
+        self.frame_102.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_102.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_102.setObjectName("frame_102")
+        self.label_612 = QtWidgets.QLabel(self.frame_102)
+        self.label_612.setGeometry(QtCore.QRect(80, 30, 1451, 631))
+        self.label_612.setStyleSheet("    background-color: white;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; ")
-        self.label_260.setText("")
-        self.label_260.setObjectName("label_260")
-        self.editStocklabel = QtWidgets.QLabel(self.frame_36)
-        self.editStocklabel.setGeometry(QtCore.QRect(120, 30, 1371, 101))
+        self.label_612.setText("")
+        self.label_612.setObjectName("label_612")
+        self.editStocklabel_5 = QtWidgets.QLabel(self.frame_102)
+        self.editStocklabel_5.setGeometry(QtCore.QRect(120, 30, 1371, 101))
         font = QtGui.QFont()
         font.setFamily("Arial")
         font.setPointSize(21)
         font.setBold(True)
         font.setUnderline(False)
         font.setWeight(75)
-        self.editStocklabel.setFont(font)
-        self.editStocklabel.setStyleSheet("    background-color: transparent;\n"
+        self.editStocklabel_5.setFont(font)
+        self.editStocklabel_5.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.editStocklabel.setAlignment(QtCore.Qt.AlignCenter)
-        self.editStocklabel.setObjectName("editStocklabel")
-        self.Edit_Select_Prod_Type = QtWidgets.QStackedWidget(self.frame_36)
-        self.Edit_Select_Prod_Type.setGeometry(QtCore.QRect(100, 120, 1411, 521))
-        self.Edit_Select_Prod_Type.setStyleSheet("background: #f6f3ee;")
-        self.Edit_Select_Prod_Type.setObjectName("Edit_Select_Prod_Type")
-        self.EDIT_blank = QtWidgets.QWidget()
-        self.EDIT_blank.setObjectName("EDIT_blank")
-        self.label_261 = QtWidgets.QLabel(self.EDIT_blank)
-        self.label_261.setGeometry(QtCore.QRect(0, -10, 1321, 361))
+        self.editStocklabel_5.setAlignment(QtCore.Qt.AlignCenter)
+        self.editStocklabel_5.setObjectName("editStocklabel_5")
+        self.Edit_Select_Prod_Type_5 = QtWidgets.QStackedWidget(self.frame_102)
+        self.Edit_Select_Prod_Type_5.setGeometry(QtCore.QRect(100, 120, 1411, 521))
+        self.Edit_Select_Prod_Type_5.setStyleSheet("background: #f6f3ee;")
+        self.Edit_Select_Prod_Type_5.setObjectName("Edit_Select_Prod_Type_5")
+        self.EDIT_blank_5 = QtWidgets.QWidget()
+        self.EDIT_blank_5.setObjectName("EDIT_blank_5")
+        self.label_613 = QtWidgets.QLabel(self.EDIT_blank_5)
+        self.label_613.setGeometry(QtCore.QRect(0, -10, 1321, 361))
         font = QtGui.QFont()
         font.setFamily("Verdana")
         font.setPointSize(11)
         font.setItalic(True)
-        self.label_261.setFont(font)
-        self.label_261.setStyleSheet("background: transparent;\n"
+        self.label_613.setFont(font)
+        self.label_613.setStyleSheet("background: transparent;\n"
 "color: #a6a6a6;")
-        self.label_261.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_261.setObjectName("label_261")
-        self.Edit_Select_Prod_Type.addWidget(self.EDIT_blank)
-        self.EDIT_ROOF = QtWidgets.QWidget()
-        self.EDIT_ROOF.setObjectName("EDIT_ROOF")
-        self.frame_37 = QtWidgets.QFrame(self.EDIT_ROOF)
-        self.frame_37.setGeometry(QtCore.QRect(-10, 419, 1331, 91))
-        self.frame_37.setStyleSheet("    background-color: transparent;\n"
+        self.label_613.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_613.setObjectName("label_613")
+        self.Edit_Select_Prod_Type_5.addWidget(self.EDIT_blank_5)
+        self.EDIT_ROOF_5 = QtWidgets.QWidget()
+        self.EDIT_ROOF_5.setObjectName("EDIT_ROOF_5")
+        self.frame_103 = QtWidgets.QFrame(self.EDIT_ROOF_5)
+        self.frame_103.setGeometry(QtCore.QRect(-10, 419, 1331, 91))
+        self.frame_103.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.frame_37.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_37.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_37.setObjectName("frame_37")
-        self.pushButton_Save_ROOFedit = QtWidgets.QPushButton(self.frame_37)
-        self.pushButton_Save_ROOFedit.setGeometry(QtCore.QRect(360, 20, 331, 51))
+        self.frame_103.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_103.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_103.setObjectName("frame_103")
+        self.pushButton_Save_ROOFedit_5 = QtWidgets.QPushButton(self.frame_103)
+        self.pushButton_Save_ROOFedit_5.setGeometry(QtCore.QRect(360, 20, 331, 51))
         font = QtGui.QFont()
         font.setFamily("Verdana")
         font.setPointSize(14)
-        self.pushButton_Save_ROOFedit.setFont(font)
-        self.pushButton_Save_ROOFedit.setStyleSheet("    background-color: #b2423c;\n"
+        self.pushButton_Save_ROOFedit_5.setFont(font)
+        self.pushButton_Save_ROOFedit_5.setStyleSheet("    background-color: #b2423c;\n"
 "    color: white;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "font-family: \"Verdana\", sans-serif; \n"
 "text-align: center;")
-        self.pushButton_Save_ROOFedit.setObjectName("pushButton_Save_ROOFedit")
-        self.pushButton_Discard_ROOFedit = QtWidgets.QPushButton(self.frame_37)
-        self.pushButton_Discard_ROOFedit.setGeometry(QtCore.QRect(740, 20, 281, 51))
+        self.pushButton_Save_ROOFedit_5.setObjectName("pushButton_Save_ROOFedit_5")
+        self.pushButton_Discard_ROOFedit_5 = QtWidgets.QPushButton(self.frame_103)
+        self.pushButton_Discard_ROOFedit_5.setGeometry(QtCore.QRect(740, 20, 281, 51))
         font = QtGui.QFont()
         font.setFamily("Verdana")
         font.setPointSize(14)
-        self.pushButton_Discard_ROOFedit.setFont(font)
-        self.pushButton_Discard_ROOFedit.setStyleSheet("\n"
+        self.pushButton_Discard_ROOFedit_5.setFont(font)
+        self.pushButton_Discard_ROOFedit_5.setStyleSheet("\n"
 "/* Default Inactive Button */\n"
 "QPushButton {\n"
 "    background-color: #ffffff;\n"
@@ -2307,263 +2299,263 @@ class Ui_OWNER_INVENTORY(object):
 "    color: white;\n"
 "}\n"
 "")
-        self.pushButton_Discard_ROOFedit.setObjectName("pushButton_Discard_ROOFedit")
-        self.frame_editroof_3 = QtWidgets.QFrame(self.EDIT_ROOF)
-        self.frame_editroof_3.setGeometry(QtCore.QRect(-10, 10, 1411, 411))
-        self.frame_editroof_3.setStyleSheet("    background-color: transparent;\n"
+        self.pushButton_Discard_ROOFedit_5.setObjectName("pushButton_Discard_ROOFedit_5")
+        self.frame_editroof_7 = QtWidgets.QFrame(self.EDIT_ROOF_5)
+        self.frame_editroof_7.setGeometry(QtCore.QRect(-10, 10, 1411, 411))
+        self.frame_editroof_7.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.frame_editroof_3.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_editroof_3.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_editroof_3.setObjectName("frame_editroof_3")
-        self.label_262 = QtWidgets.QLabel(self.frame_editroof_3)
-        self.label_262.setGeometry(QtCore.QRect(30, 10, 241, 51))
+        self.frame_editroof_7.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_editroof_7.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_editroof_7.setObjectName("frame_editroof_7")
+        self.label_614 = QtWidgets.QLabel(self.frame_editroof_7)
+        self.label_614.setGeometry(QtCore.QRect(30, 10, 241, 51))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_262.setFont(font)
-        self.label_262.setStyleSheet("    background-color: transparent;\n"
+        self.label_614.setFont(font)
+        self.label_614.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_262.setObjectName("label_262")
-        self.label_263 = QtWidgets.QLabel(self.frame_editroof_3)
-        self.label_263.setGeometry(QtCore.QRect(30, 140, 171, 71))
+        self.label_614.setObjectName("label_614")
+        self.label_615 = QtWidgets.QLabel(self.frame_editroof_7)
+        self.label_615.setGeometry(QtCore.QRect(30, 140, 171, 71))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_263.setFont(font)
-        self.label_263.setStyleSheet("    background-color: transparent;\n"
+        self.label_615.setFont(font)
+        self.label_615.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_263.setObjectName("label_263")
-        self.label_264 = QtWidgets.QLabel(self.frame_editroof_3)
-        self.label_264.setGeometry(QtCore.QRect(30, 60, 171, 91))
+        self.label_615.setObjectName("label_615")
+        self.label_616 = QtWidgets.QLabel(self.frame_editroof_7)
+        self.label_616.setGeometry(QtCore.QRect(30, 60, 171, 91))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_264.setFont(font)
-        self.label_264.setStyleSheet("    background-color: transparent;\n"
+        self.label_616.setFont(font)
+        self.label_616.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_264.setObjectName("label_264")
-        self.lineEdit_EditROOF_prodID = QtWidgets.QLineEdit(self.frame_editroof_3)
-        self.lineEdit_EditROOF_prodID.setGeometry(QtCore.QRect(240, 10, 561, 51))
+        self.label_616.setObjectName("label_616")
+        self.lineEdit_EditROOF_prodID_5 = QtWidgets.QLineEdit(self.frame_editroof_7)
+        self.lineEdit_EditROOF_prodID_5.setGeometry(QtCore.QRect(240, 10, 561, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_EditROOF_prodID.setFont(font)
-        self.lineEdit_EditROOF_prodID.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_EditROOF_prodID_5.setFont(font)
+        self.lineEdit_EditROOF_prodID_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_EditROOF_prodID.setObjectName("lineEdit_EditROOF_prodID")
-        self.lineEdit_EditROOF_Width = QtWidgets.QLineEdit(self.frame_editroof_3)
-        self.lineEdit_EditROOF_Width.setGeometry(QtCore.QRect(1100, 290, 261, 51))
+        self.lineEdit_EditROOF_prodID_5.setObjectName("lineEdit_EditROOF_prodID_5")
+        self.lineEdit_EditROOF_Width_5 = QtWidgets.QLineEdit(self.frame_editroof_7)
+        self.lineEdit_EditROOF_Width_5.setGeometry(QtCore.QRect(1100, 290, 261, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_EditROOF_Width.setFont(font)
-        self.lineEdit_EditROOF_Width.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_EditROOF_Width_5.setFont(font)
+        self.lineEdit_EditROOF_Width_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_EditROOF_Width.setObjectName("lineEdit_EditROOF_Width")
-        self.label_265 = QtWidgets.QLabel(self.frame_editroof_3)
-        self.label_265.setGeometry(QtCore.QRect(820, -50, 271, 171))
+        self.lineEdit_EditROOF_Width_5.setObjectName("lineEdit_EditROOF_Width_5")
+        self.label_617 = QtWidgets.QLabel(self.frame_editroof_7)
+        self.label_617.setGeometry(QtCore.QRect(820, -50, 271, 171))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_265.setFont(font)
-        self.label_265.setStyleSheet("    background-color: transparent;\n"
+        self.label_617.setFont(font)
+        self.label_617.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_265.setObjectName("label_265")
-        self.lineEdit_EditROOF_Qty = QtWidgets.QLineEdit(self.frame_editroof_3)
-        self.lineEdit_EditROOF_Qty.setGeometry(QtCore.QRect(1100, 10, 261, 51))
+        self.label_617.setObjectName("label_617")
+        self.lineEdit_EditROOF_Qty_5 = QtWidgets.QLineEdit(self.frame_editroof_7)
+        self.lineEdit_EditROOF_Qty_5.setGeometry(QtCore.QRect(1100, 10, 261, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_EditROOF_Qty.setFont(font)
-        self.lineEdit_EditROOF_Qty.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_EditROOF_Qty_5.setFont(font)
+        self.lineEdit_EditROOF_Qty_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_EditROOF_Qty.setObjectName("lineEdit_EditROOF_Qty")
-        self.label_266 = QtWidgets.QLabel(self.frame_editroof_3)
-        self.label_266.setGeometry(QtCore.QRect(820, 270, 261, 91))
+        self.lineEdit_EditROOF_Qty_5.setObjectName("lineEdit_EditROOF_Qty_5")
+        self.label_618 = QtWidgets.QLabel(self.frame_editroof_7)
+        self.label_618.setGeometry(QtCore.QRect(820, 270, 261, 91))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_266.setFont(font)
-        self.label_266.setStyleSheet("    background-color: transparent;\n"
+        self.label_618.setFont(font)
+        self.label_618.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_266.setObjectName("label_266")
-        self.label_267 = QtWidgets.QLabel(self.frame_editroof_3)
-        self.label_267.setGeometry(QtCore.QRect(820, 200, 271, 91))
+        self.label_618.setObjectName("label_618")
+        self.label_619 = QtWidgets.QLabel(self.frame_editroof_7)
+        self.label_619.setGeometry(QtCore.QRect(820, 200, 271, 91))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_267.setFont(font)
-        self.label_267.setStyleSheet("    background-color: transparent;\n"
+        self.label_619.setFont(font)
+        self.label_619.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_267.setObjectName("label_267")
-        self.lineEdit_EditROOF_Color = QtWidgets.QLineEdit(self.frame_editroof_3)
-        self.lineEdit_EditROOF_Color.setGeometry(QtCore.QRect(1100, 220, 261, 51))
+        self.label_619.setObjectName("label_619")
+        self.lineEdit_EditROOF_Color_5 = QtWidgets.QLineEdit(self.frame_editroof_7)
+        self.lineEdit_EditROOF_Color_5.setGeometry(QtCore.QRect(1100, 220, 261, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_EditROOF_Color.setFont(font)
-        self.lineEdit_EditROOF_Color.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_EditROOF_Color_5.setFont(font)
+        self.lineEdit_EditROOF_Color_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_EditROOF_Color.setObjectName("lineEdit_EditROOF_Color")
-        self.label_268 = QtWidgets.QLabel(self.frame_editroof_3)
-        self.label_268.setGeometry(QtCore.QRect(820, 50, 261, 111))
+        self.lineEdit_EditROOF_Color_5.setObjectName("lineEdit_EditROOF_Color_5")
+        self.label_620 = QtWidgets.QLabel(self.frame_editroof_7)
+        self.label_620.setGeometry(QtCore.QRect(820, 50, 261, 111))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_268.setFont(font)
-        self.label_268.setStyleSheet("    background-color: transparent;\n"
+        self.label_620.setFont(font)
+        self.label_620.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_268.setObjectName("label_268")
-        self.lineEdit_EditROOF_Length = QtWidgets.QLineEdit(self.frame_editroof_3)
-        self.lineEdit_EditROOF_Length.setGeometry(QtCore.QRect(1100, 80, 261, 51))
+        self.label_620.setObjectName("label_620")
+        self.lineEdit_EditROOF_Length_5 = QtWidgets.QLineEdit(self.frame_editroof_7)
+        self.lineEdit_EditROOF_Length_5.setGeometry(QtCore.QRect(1100, 80, 261, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_EditROOF_Length.setFont(font)
-        self.lineEdit_EditROOF_Length.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_EditROOF_Length_5.setFont(font)
+        self.lineEdit_EditROOF_Length_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_EditROOF_Length.setObjectName("lineEdit_EditROOF_Length")
-        self.label_269 = QtWidgets.QLabel(self.frame_editroof_3)
-        self.label_269.setGeometry(QtCore.QRect(30, 170, 181, 151))
+        self.lineEdit_EditROOF_Length_5.setObjectName("lineEdit_EditROOF_Length_5")
+        self.label_621 = QtWidgets.QLabel(self.frame_editroof_7)
+        self.label_621.setGeometry(QtCore.QRect(30, 170, 181, 151))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_269.setFont(font)
-        self.label_269.setStyleSheet("    background-color: transparent;\n"
+        self.label_621.setFont(font)
+        self.label_621.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_269.setObjectName("label_269")
-        self.lineEdit_EditROOF_Price = QtWidgets.QLineEdit(self.frame_editroof_3)
-        self.lineEdit_EditROOF_Price.setGeometry(QtCore.QRect(240, 150, 561, 51))
+        self.label_621.setObjectName("label_621")
+        self.lineEdit_EditROOF_Price_5 = QtWidgets.QLineEdit(self.frame_editroof_7)
+        self.lineEdit_EditROOF_Price_5.setGeometry(QtCore.QRect(240, 150, 561, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_EditROOF_Price.setFont(font)
-        self.lineEdit_EditROOF_Price.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_EditROOF_Price_5.setFont(font)
+        self.lineEdit_EditROOF_Price_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_EditROOF_Price.setObjectName("lineEdit_EditROOF_Price")
-        self.lineEdit_EditROOF_OtherSpecifications = QtWidgets.QLineEdit(self.frame_editroof_3)
-        self.lineEdit_EditROOF_OtherSpecifications.setGeometry(QtCore.QRect(240, 230, 561, 111))
+        self.lineEdit_EditROOF_Price_5.setObjectName("lineEdit_EditROOF_Price_5")
+        self.lineEdit_EditROOF_OtherSpecifications_5 = QtWidgets.QLineEdit(self.frame_editroof_7)
+        self.lineEdit_EditROOF_OtherSpecifications_5.setGeometry(QtCore.QRect(240, 230, 561, 111))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_EditROOF_OtherSpecifications.setFont(font)
-        self.lineEdit_EditROOF_OtherSpecifications.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_EditROOF_OtherSpecifications_5.setFont(font)
+        self.lineEdit_EditROOF_OtherSpecifications_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_EditROOF_OtherSpecifications.setObjectName("lineEdit_EditROOF_OtherSpecifications")
-        self.label_270 = QtWidgets.QLabel(self.frame_editroof_3)
-        self.label_270.setGeometry(QtCore.QRect(820, 130, 271, 91))
+        self.lineEdit_EditROOF_OtherSpecifications_5.setObjectName("lineEdit_EditROOF_OtherSpecifications_5")
+        self.label_622 = QtWidgets.QLabel(self.frame_editroof_7)
+        self.label_622.setGeometry(QtCore.QRect(820, 130, 271, 91))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_270.setFont(font)
-        self.label_270.setStyleSheet("    background-color: transparent;\n"
+        self.label_622.setFont(font)
+        self.label_622.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_270.setObjectName("label_270")
-        self.lineEdit_EditROOF_Thickness = QtWidgets.QLineEdit(self.frame_editroof_3)
-        self.lineEdit_EditROOF_Thickness.setGeometry(QtCore.QRect(1100, 150, 261, 51))
+        self.label_622.setObjectName("label_622")
+        self.lineEdit_EditROOF_Thickness_5 = QtWidgets.QLineEdit(self.frame_editroof_7)
+        self.lineEdit_EditROOF_Thickness_5.setGeometry(QtCore.QRect(1100, 150, 261, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_EditROOF_Thickness.setFont(font)
-        self.lineEdit_EditROOF_Thickness.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_EditROOF_Thickness_5.setFont(font)
+        self.lineEdit_EditROOF_Thickness_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_EditROOF_Thickness.setObjectName("lineEdit_EditROOF_Thickness")
-        self.label_271 = QtWidgets.QLabel(self.frame_editroof_3)
-        self.label_271.setGeometry(QtCore.QRect(30, 250, 211, 51))
+        self.lineEdit_EditROOF_Thickness_5.setObjectName("lineEdit_EditROOF_Thickness_5")
+        self.label_623 = QtWidgets.QLabel(self.frame_editroof_7)
+        self.label_623.setGeometry(QtCore.QRect(30, 250, 211, 51))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(13)
         font.setBold(False)
         font.setWeight(50)
-        self.label_271.setFont(font)
-        self.label_271.setStyleSheet("    background-color: transparent;\n"
+        self.label_623.setFont(font)
+        self.label_623.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_271.setObjectName("label_271")
-        self.lineEdit_EditROOF_Name = QtWidgets.QLineEdit(self.frame_editroof_3)
-        self.lineEdit_EditROOF_Name.setGeometry(QtCore.QRect(240, 80, 561, 51))
+        self.label_623.setObjectName("label_623")
+        self.lineEdit_EditROOF_Name_5 = QtWidgets.QLineEdit(self.frame_editroof_7)
+        self.lineEdit_EditROOF_Name_5.setGeometry(QtCore.QRect(240, 80, 561, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_EditROOF_Name.setFont(font)
-        self.lineEdit_EditROOF_Name.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_EditROOF_Name_5.setFont(font)
+        self.lineEdit_EditROOF_Name_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_EditROOF_Name.setObjectName("lineEdit_EditROOF_Name")
-        self.Edit_Select_Prod_Type.addWidget(self.EDIT_ROOF)
-        self.EDIT_SPANDREL = QtWidgets.QWidget()
-        self.EDIT_SPANDREL.setObjectName("EDIT_SPANDREL")
-        self.frame_38 = QtWidgets.QFrame(self.EDIT_SPANDREL)
-        self.frame_38.setGeometry(QtCore.QRect(-10, 419, 1331, 91))
-        self.frame_38.setStyleSheet("    background-color: transparent;\n"
+        self.lineEdit_EditROOF_Name_5.setObjectName("lineEdit_EditROOF_Name_5")
+        self.Edit_Select_Prod_Type_5.addWidget(self.EDIT_ROOF_5)
+        self.EDIT_SPANDREL_5 = QtWidgets.QWidget()
+        self.EDIT_SPANDREL_5.setObjectName("EDIT_SPANDREL_5")
+        self.frame_104 = QtWidgets.QFrame(self.EDIT_SPANDREL_5)
+        self.frame_104.setGeometry(QtCore.QRect(-10, 419, 1331, 91))
+        self.frame_104.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.frame_38.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_38.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_38.setObjectName("frame_38")
-        self.pushButton_Save_SPANDRELedit = QtWidgets.QPushButton(self.frame_38)
-        self.pushButton_Save_SPANDRELedit.setGeometry(QtCore.QRect(360, 20, 331, 51))
+        self.frame_104.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_104.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_104.setObjectName("frame_104")
+        self.pushButton_Save_SPANDRELedit_5 = QtWidgets.QPushButton(self.frame_104)
+        self.pushButton_Save_SPANDRELedit_5.setGeometry(QtCore.QRect(360, 20, 331, 51))
         font = QtGui.QFont()
         font.setFamily("Verdana")
         font.setPointSize(14)
-        self.pushButton_Save_SPANDRELedit.setFont(font)
-        self.pushButton_Save_SPANDRELedit.setStyleSheet("    background-color: #b2423c;\n"
+        self.pushButton_Save_SPANDRELedit_5.setFont(font)
+        self.pushButton_Save_SPANDRELedit_5.setStyleSheet("    background-color: #b2423c;\n"
 "    color: white;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "font-family: \"Verdana\", sans-serif; \n"
 "text-align: center;")
-        self.pushButton_Save_SPANDRELedit.setObjectName("pushButton_Save_SPANDRELedit")
-        self.pushButton_Discard_SPANDRELedit = QtWidgets.QPushButton(self.frame_38)
-        self.pushButton_Discard_SPANDRELedit.setGeometry(QtCore.QRect(740, 20, 281, 51))
+        self.pushButton_Save_SPANDRELedit_5.setObjectName("pushButton_Save_SPANDRELedit_5")
+        self.pushButton_Discard_SPANDRELedit_5 = QtWidgets.QPushButton(self.frame_104)
+        self.pushButton_Discard_SPANDRELedit_5.setGeometry(QtCore.QRect(740, 20, 281, 51))
         font = QtGui.QFont()
         font.setFamily("Verdana")
         font.setPointSize(14)
-        self.pushButton_Discard_SPANDRELedit.setFont(font)
-        self.pushButton_Discard_SPANDRELedit.setStyleSheet("\n"
+        self.pushButton_Discard_SPANDRELedit_5.setFont(font)
+        self.pushButton_Discard_SPANDRELedit_5.setStyleSheet("\n"
 "/* Default Inactive Button */\n"
 "QPushButton {\n"
 "    background-color: #ffffff;\n"
@@ -2587,263 +2579,263 @@ class Ui_OWNER_INVENTORY(object):
 "    color: white;\n"
 "}\n"
 "")
-        self.pushButton_Discard_SPANDRELedit.setObjectName("pushButton_Discard_SPANDRELedit")
-        self.frame_editspandrel_3 = QtWidgets.QFrame(self.EDIT_SPANDREL)
-        self.frame_editspandrel_3.setGeometry(QtCore.QRect(-10, 10, 1411, 411))
-        self.frame_editspandrel_3.setStyleSheet("    background-color: transparent;\n"
+        self.pushButton_Discard_SPANDRELedit_5.setObjectName("pushButton_Discard_SPANDRELedit_5")
+        self.frame_editspandrel_7 = QtWidgets.QFrame(self.EDIT_SPANDREL_5)
+        self.frame_editspandrel_7.setGeometry(QtCore.QRect(-10, 10, 1411, 411))
+        self.frame_editspandrel_7.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.frame_editspandrel_3.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_editspandrel_3.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_editspandrel_3.setObjectName("frame_editspandrel_3")
-        self.label_272 = QtWidgets.QLabel(self.frame_editspandrel_3)
-        self.label_272.setGeometry(QtCore.QRect(30, 10, 241, 51))
+        self.frame_editspandrel_7.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_editspandrel_7.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_editspandrel_7.setObjectName("frame_editspandrel_7")
+        self.label_624 = QtWidgets.QLabel(self.frame_editspandrel_7)
+        self.label_624.setGeometry(QtCore.QRect(30, 10, 241, 51))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_272.setFont(font)
-        self.label_272.setStyleSheet("    background-color: transparent;\n"
+        self.label_624.setFont(font)
+        self.label_624.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_272.setObjectName("label_272")
-        self.label_273 = QtWidgets.QLabel(self.frame_editspandrel_3)
-        self.label_273.setGeometry(QtCore.QRect(30, 140, 171, 71))
+        self.label_624.setObjectName("label_624")
+        self.label_625 = QtWidgets.QLabel(self.frame_editspandrel_7)
+        self.label_625.setGeometry(QtCore.QRect(30, 140, 171, 71))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_273.setFont(font)
-        self.label_273.setStyleSheet("    background-color: transparent;\n"
+        self.label_625.setFont(font)
+        self.label_625.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_273.setObjectName("label_273")
-        self.label_274 = QtWidgets.QLabel(self.frame_editspandrel_3)
-        self.label_274.setGeometry(QtCore.QRect(30, 60, 171, 91))
+        self.label_625.setObjectName("label_625")
+        self.label_626 = QtWidgets.QLabel(self.frame_editspandrel_7)
+        self.label_626.setGeometry(QtCore.QRect(30, 60, 171, 91))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_274.setFont(font)
-        self.label_274.setStyleSheet("    background-color: transparent;\n"
+        self.label_626.setFont(font)
+        self.label_626.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_274.setObjectName("label_274")
-        self.lineEdit_EditSPANDREL_prodID = QtWidgets.QLineEdit(self.frame_editspandrel_3)
-        self.lineEdit_EditSPANDREL_prodID.setGeometry(QtCore.QRect(240, 10, 561, 51))
+        self.label_626.setObjectName("label_626")
+        self.lineEdit_EditSPANDREL_prodID_5 = QtWidgets.QLineEdit(self.frame_editspandrel_7)
+        self.lineEdit_EditSPANDREL_prodID_5.setGeometry(QtCore.QRect(240, 10, 561, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_EditSPANDREL_prodID.setFont(font)
-        self.lineEdit_EditSPANDREL_prodID.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_EditSPANDREL_prodID_5.setFont(font)
+        self.lineEdit_EditSPANDREL_prodID_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_EditSPANDREL_prodID.setObjectName("lineEdit_EditSPANDREL_prodID")
-        self.lineEdit_EditSPANDREL_Width = QtWidgets.QLineEdit(self.frame_editspandrel_3)
-        self.lineEdit_EditSPANDREL_Width.setGeometry(QtCore.QRect(1100, 290, 261, 51))
+        self.lineEdit_EditSPANDREL_prodID_5.setObjectName("lineEdit_EditSPANDREL_prodID_5")
+        self.lineEdit_EditSPANDREL_Width_5 = QtWidgets.QLineEdit(self.frame_editspandrel_7)
+        self.lineEdit_EditSPANDREL_Width_5.setGeometry(QtCore.QRect(1100, 290, 261, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_EditSPANDREL_Width.setFont(font)
-        self.lineEdit_EditSPANDREL_Width.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_EditSPANDREL_Width_5.setFont(font)
+        self.lineEdit_EditSPANDREL_Width_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_EditSPANDREL_Width.setObjectName("lineEdit_EditSPANDREL_Width")
-        self.label_275 = QtWidgets.QLabel(self.frame_editspandrel_3)
-        self.label_275.setGeometry(QtCore.QRect(820, -50, 271, 171))
+        self.lineEdit_EditSPANDREL_Width_5.setObjectName("lineEdit_EditSPANDREL_Width_5")
+        self.label_627 = QtWidgets.QLabel(self.frame_editspandrel_7)
+        self.label_627.setGeometry(QtCore.QRect(820, -50, 271, 171))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_275.setFont(font)
-        self.label_275.setStyleSheet("    background-color: transparent;\n"
+        self.label_627.setFont(font)
+        self.label_627.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_275.setObjectName("label_275")
-        self.lineEdit_EditSPANDREL_Qty = QtWidgets.QLineEdit(self.frame_editspandrel_3)
-        self.lineEdit_EditSPANDREL_Qty.setGeometry(QtCore.QRect(1100, 10, 261, 51))
+        self.label_627.setObjectName("label_627")
+        self.lineEdit_EditSPANDREL_Qty_5 = QtWidgets.QLineEdit(self.frame_editspandrel_7)
+        self.lineEdit_EditSPANDREL_Qty_5.setGeometry(QtCore.QRect(1100, 10, 261, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_EditSPANDREL_Qty.setFont(font)
-        self.lineEdit_EditSPANDREL_Qty.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_EditSPANDREL_Qty_5.setFont(font)
+        self.lineEdit_EditSPANDREL_Qty_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_EditSPANDREL_Qty.setObjectName("lineEdit_EditSPANDREL_Qty")
-        self.label_276 = QtWidgets.QLabel(self.frame_editspandrel_3)
-        self.label_276.setGeometry(QtCore.QRect(820, 270, 261, 91))
+        self.lineEdit_EditSPANDREL_Qty_5.setObjectName("lineEdit_EditSPANDREL_Qty_5")
+        self.label_628 = QtWidgets.QLabel(self.frame_editspandrel_7)
+        self.label_628.setGeometry(QtCore.QRect(820, 270, 261, 91))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_276.setFont(font)
-        self.label_276.setStyleSheet("    background-color: transparent;\n"
+        self.label_628.setFont(font)
+        self.label_628.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_276.setObjectName("label_276")
-        self.label_277 = QtWidgets.QLabel(self.frame_editspandrel_3)
-        self.label_277.setGeometry(QtCore.QRect(820, 200, 271, 91))
+        self.label_628.setObjectName("label_628")
+        self.label_629 = QtWidgets.QLabel(self.frame_editspandrel_7)
+        self.label_629.setGeometry(QtCore.QRect(820, 200, 271, 91))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_277.setFont(font)
-        self.label_277.setStyleSheet("    background-color: transparent;\n"
+        self.label_629.setFont(font)
+        self.label_629.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_277.setObjectName("label_277")
-        self.lineEdit_EditSPANDREL_Color = QtWidgets.QLineEdit(self.frame_editspandrel_3)
-        self.lineEdit_EditSPANDREL_Color.setGeometry(QtCore.QRect(1100, 220, 261, 51))
+        self.label_629.setObjectName("label_629")
+        self.lineEdit_EditSPANDREL_Color_5 = QtWidgets.QLineEdit(self.frame_editspandrel_7)
+        self.lineEdit_EditSPANDREL_Color_5.setGeometry(QtCore.QRect(1100, 220, 261, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_EditSPANDREL_Color.setFont(font)
-        self.lineEdit_EditSPANDREL_Color.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_EditSPANDREL_Color_5.setFont(font)
+        self.lineEdit_EditSPANDREL_Color_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_EditSPANDREL_Color.setObjectName("lineEdit_EditSPANDREL_Color")
-        self.label_278 = QtWidgets.QLabel(self.frame_editspandrel_3)
-        self.label_278.setGeometry(QtCore.QRect(820, 50, 261, 111))
+        self.lineEdit_EditSPANDREL_Color_5.setObjectName("lineEdit_EditSPANDREL_Color_5")
+        self.label_630 = QtWidgets.QLabel(self.frame_editspandrel_7)
+        self.label_630.setGeometry(QtCore.QRect(820, 50, 261, 111))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_278.setFont(font)
-        self.label_278.setStyleSheet("    background-color: transparent;\n"
+        self.label_630.setFont(font)
+        self.label_630.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_278.setObjectName("label_278")
-        self.lineEdit_EditSPANDREL_Length = QtWidgets.QLineEdit(self.frame_editspandrel_3)
-        self.lineEdit_EditSPANDREL_Length.setGeometry(QtCore.QRect(1100, 80, 261, 51))
+        self.label_630.setObjectName("label_630")
+        self.lineEdit_EditSPANDREL_Length_5 = QtWidgets.QLineEdit(self.frame_editspandrel_7)
+        self.lineEdit_EditSPANDREL_Length_5.setGeometry(QtCore.QRect(1100, 80, 261, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_EditSPANDREL_Length.setFont(font)
-        self.lineEdit_EditSPANDREL_Length.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_EditSPANDREL_Length_5.setFont(font)
+        self.lineEdit_EditSPANDREL_Length_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_EditSPANDREL_Length.setObjectName("lineEdit_EditSPANDREL_Length")
-        self.label_279 = QtWidgets.QLabel(self.frame_editspandrel_3)
-        self.label_279.setGeometry(QtCore.QRect(30, 170, 181, 151))
+        self.lineEdit_EditSPANDREL_Length_5.setObjectName("lineEdit_EditSPANDREL_Length_5")
+        self.label_631 = QtWidgets.QLabel(self.frame_editspandrel_7)
+        self.label_631.setGeometry(QtCore.QRect(30, 170, 181, 151))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_279.setFont(font)
-        self.label_279.setStyleSheet("    background-color: transparent;\n"
+        self.label_631.setFont(font)
+        self.label_631.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_279.setObjectName("label_279")
-        self.lineEdit_EditSPANDREL_Price = QtWidgets.QLineEdit(self.frame_editspandrel_3)
-        self.lineEdit_EditSPANDREL_Price.setGeometry(QtCore.QRect(240, 150, 561, 51))
+        self.label_631.setObjectName("label_631")
+        self.lineEdit_EditSPANDREL_Price_5 = QtWidgets.QLineEdit(self.frame_editspandrel_7)
+        self.lineEdit_EditSPANDREL_Price_5.setGeometry(QtCore.QRect(240, 150, 561, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_EditSPANDREL_Price.setFont(font)
-        self.lineEdit_EditSPANDREL_Price.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_EditSPANDREL_Price_5.setFont(font)
+        self.lineEdit_EditSPANDREL_Price_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_EditSPANDREL_Price.setObjectName("lineEdit_EditSPANDREL_Price")
-        self.lineEdit_EditSPANDREL_OtherSpecifications = QtWidgets.QLineEdit(self.frame_editspandrel_3)
-        self.lineEdit_EditSPANDREL_OtherSpecifications.setGeometry(QtCore.QRect(240, 230, 561, 111))
+        self.lineEdit_EditSPANDREL_Price_5.setObjectName("lineEdit_EditSPANDREL_Price_5")
+        self.lineEdit_EditSPANDREL_OtherSpecifications_5 = QtWidgets.QLineEdit(self.frame_editspandrel_7)
+        self.lineEdit_EditSPANDREL_OtherSpecifications_5.setGeometry(QtCore.QRect(240, 230, 561, 111))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_EditSPANDREL_OtherSpecifications.setFont(font)
-        self.lineEdit_EditSPANDREL_OtherSpecifications.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_EditSPANDREL_OtherSpecifications_5.setFont(font)
+        self.lineEdit_EditSPANDREL_OtherSpecifications_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_EditSPANDREL_OtherSpecifications.setObjectName("lineEdit_EditSPANDREL_OtherSpecifications")
-        self.label_280 = QtWidgets.QLabel(self.frame_editspandrel_3)
-        self.label_280.setGeometry(QtCore.QRect(820, 130, 271, 91))
+        self.lineEdit_EditSPANDREL_OtherSpecifications_5.setObjectName("lineEdit_EditSPANDREL_OtherSpecifications_5")
+        self.label_632 = QtWidgets.QLabel(self.frame_editspandrel_7)
+        self.label_632.setGeometry(QtCore.QRect(820, 130, 271, 91))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_280.setFont(font)
-        self.label_280.setStyleSheet("    background-color: transparent;\n"
+        self.label_632.setFont(font)
+        self.label_632.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_280.setObjectName("label_280")
-        self.lineEdit_EditSPANDREL_Thickness = QtWidgets.QLineEdit(self.frame_editspandrel_3)
-        self.lineEdit_EditSPANDREL_Thickness.setGeometry(QtCore.QRect(1100, 150, 261, 51))
+        self.label_632.setObjectName("label_632")
+        self.lineEdit_EditSPANDREL_Thickness_5 = QtWidgets.QLineEdit(self.frame_editspandrel_7)
+        self.lineEdit_EditSPANDREL_Thickness_5.setGeometry(QtCore.QRect(1100, 150, 261, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_EditSPANDREL_Thickness.setFont(font)
-        self.lineEdit_EditSPANDREL_Thickness.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_EditSPANDREL_Thickness_5.setFont(font)
+        self.lineEdit_EditSPANDREL_Thickness_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_EditSPANDREL_Thickness.setObjectName("lineEdit_EditSPANDREL_Thickness")
-        self.label_281 = QtWidgets.QLabel(self.frame_editspandrel_3)
-        self.label_281.setGeometry(QtCore.QRect(30, 250, 211, 51))
+        self.lineEdit_EditSPANDREL_Thickness_5.setObjectName("lineEdit_EditSPANDREL_Thickness_5")
+        self.label_633 = QtWidgets.QLabel(self.frame_editspandrel_7)
+        self.label_633.setGeometry(QtCore.QRect(30, 250, 211, 51))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(13)
         font.setBold(False)
         font.setWeight(50)
-        self.label_281.setFont(font)
-        self.label_281.setStyleSheet("    background-color: transparent;\n"
+        self.label_633.setFont(font)
+        self.label_633.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_281.setObjectName("label_281")
-        self.lineEdit_EditSPANDREL_Name = QtWidgets.QLineEdit(self.frame_editspandrel_3)
-        self.lineEdit_EditSPANDREL_Name.setGeometry(QtCore.QRect(240, 80, 561, 51))
+        self.label_633.setObjectName("label_633")
+        self.lineEdit_EditSPANDREL_Name_5 = QtWidgets.QLineEdit(self.frame_editspandrel_7)
+        self.lineEdit_EditSPANDREL_Name_5.setGeometry(QtCore.QRect(240, 80, 561, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_EditSPANDREL_Name.setFont(font)
-        self.lineEdit_EditSPANDREL_Name.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_EditSPANDREL_Name_5.setFont(font)
+        self.lineEdit_EditSPANDREL_Name_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_EditSPANDREL_Name.setObjectName("lineEdit_EditSPANDREL_Name")
-        self.Edit_Select_Prod_Type.addWidget(self.EDIT_SPANDREL)
-        self.EDIT_GUTTER = QtWidgets.QWidget()
-        self.EDIT_GUTTER.setObjectName("EDIT_GUTTER")
-        self.frame_39 = QtWidgets.QFrame(self.EDIT_GUTTER)
-        self.frame_39.setGeometry(QtCore.QRect(-10, 419, 1331, 91))
-        self.frame_39.setStyleSheet("    background-color: transparent;\n"
+        self.lineEdit_EditSPANDREL_Name_5.setObjectName("lineEdit_EditSPANDREL_Name_5")
+        self.Edit_Select_Prod_Type_5.addWidget(self.EDIT_SPANDREL_5)
+        self.EDIT_GUTTER_5 = QtWidgets.QWidget()
+        self.EDIT_GUTTER_5.setObjectName("EDIT_GUTTER_5")
+        self.frame_105 = QtWidgets.QFrame(self.EDIT_GUTTER_5)
+        self.frame_105.setGeometry(QtCore.QRect(-10, 419, 1331, 91))
+        self.frame_105.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.frame_39.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_39.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_39.setObjectName("frame_39")
-        self.pushButton_Save_GUTTERedit = QtWidgets.QPushButton(self.frame_39)
-        self.pushButton_Save_GUTTERedit.setGeometry(QtCore.QRect(360, 20, 331, 51))
+        self.frame_105.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_105.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_105.setObjectName("frame_105")
+        self.pushButton_Save_GUTTERedit_5 = QtWidgets.QPushButton(self.frame_105)
+        self.pushButton_Save_GUTTERedit_5.setGeometry(QtCore.QRect(360, 20, 331, 51))
         font = QtGui.QFont()
         font.setFamily("Verdana")
         font.setPointSize(14)
-        self.pushButton_Save_GUTTERedit.setFont(font)
-        self.pushButton_Save_GUTTERedit.setStyleSheet("    background-color: #b2423c;\n"
+        self.pushButton_Save_GUTTERedit_5.setFont(font)
+        self.pushButton_Save_GUTTERedit_5.setStyleSheet("    background-color: #b2423c;\n"
 "    color: white;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "font-family: \"Verdana\", sans-serif; \n"
 "text-align: center;")
-        self.pushButton_Save_GUTTERedit.setObjectName("pushButton_Save_GUTTERedit")
-        self.pushButton_Discard_GUTTERedit = QtWidgets.QPushButton(self.frame_39)
-        self.pushButton_Discard_GUTTERedit.setGeometry(QtCore.QRect(740, 20, 281, 51))
+        self.pushButton_Save_GUTTERedit_5.setObjectName("pushButton_Save_GUTTERedit_5")
+        self.pushButton_Discard_GUTTERedit_5 = QtWidgets.QPushButton(self.frame_105)
+        self.pushButton_Discard_GUTTERedit_5.setGeometry(QtCore.QRect(740, 20, 281, 51))
         font = QtGui.QFont()
         font.setFamily("Verdana")
         font.setPointSize(14)
-        self.pushButton_Discard_GUTTERedit.setFont(font)
-        self.pushButton_Discard_GUTTERedit.setStyleSheet("\n"
+        self.pushButton_Discard_GUTTERedit_5.setFont(font)
+        self.pushButton_Discard_GUTTERedit_5.setStyleSheet("\n"
 "/* Default Inactive Button */\n"
 "QPushButton {\n"
 "    background-color: #ffffff;\n"
@@ -2867,488 +2859,488 @@ class Ui_OWNER_INVENTORY(object):
 "    color: white;\n"
 "}\n"
 "")
-        self.pushButton_Discard_GUTTERedit.setObjectName("pushButton_Discard_GUTTERedit")
-        self.frame_editgutter_3 = QtWidgets.QFrame(self.EDIT_GUTTER)
-        self.frame_editgutter_3.setGeometry(QtCore.QRect(-10, 10, 1411, 411))
-        self.frame_editgutter_3.setStyleSheet("    background-color: transparent;\n"
+        self.pushButton_Discard_GUTTERedit_5.setObjectName("pushButton_Discard_GUTTERedit_5")
+        self.frame_editgutter_7 = QtWidgets.QFrame(self.EDIT_GUTTER_5)
+        self.frame_editgutter_7.setGeometry(QtCore.QRect(-10, 10, 1411, 411))
+        self.frame_editgutter_7.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.frame_editgutter_3.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_editgutter_3.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_editgutter_3.setObjectName("frame_editgutter_3")
-        self.label_282 = QtWidgets.QLabel(self.frame_editgutter_3)
-        self.label_282.setGeometry(QtCore.QRect(30, 10, 241, 51))
+        self.frame_editgutter_7.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_editgutter_7.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_editgutter_7.setObjectName("frame_editgutter_7")
+        self.label_634 = QtWidgets.QLabel(self.frame_editgutter_7)
+        self.label_634.setGeometry(QtCore.QRect(30, 10, 241, 51))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_282.setFont(font)
-        self.label_282.setStyleSheet("    background-color: transparent;\n"
+        self.label_634.setFont(font)
+        self.label_634.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_282.setObjectName("label_282")
-        self.label_283 = QtWidgets.QLabel(self.frame_editgutter_3)
-        self.label_283.setGeometry(QtCore.QRect(30, 140, 171, 71))
+        self.label_634.setObjectName("label_634")
+        self.label_635 = QtWidgets.QLabel(self.frame_editgutter_7)
+        self.label_635.setGeometry(QtCore.QRect(30, 140, 171, 71))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_283.setFont(font)
-        self.label_283.setStyleSheet("    background-color: transparent;\n"
+        self.label_635.setFont(font)
+        self.label_635.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_283.setObjectName("label_283")
-        self.label_284 = QtWidgets.QLabel(self.frame_editgutter_3)
-        self.label_284.setGeometry(QtCore.QRect(30, 60, 171, 91))
+        self.label_635.setObjectName("label_635")
+        self.label_636 = QtWidgets.QLabel(self.frame_editgutter_7)
+        self.label_636.setGeometry(QtCore.QRect(30, 60, 171, 91))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_284.setFont(font)
-        self.label_284.setStyleSheet("    background-color: transparent;\n"
+        self.label_636.setFont(font)
+        self.label_636.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_284.setObjectName("label_284")
-        self.lineEdit_EditGUTTER_prodID = QtWidgets.QLineEdit(self.frame_editgutter_3)
-        self.lineEdit_EditGUTTER_prodID.setGeometry(QtCore.QRect(240, 10, 561, 51))
+        self.label_636.setObjectName("label_636")
+        self.lineEdit_EditGUTTER_prodID_5 = QtWidgets.QLineEdit(self.frame_editgutter_7)
+        self.lineEdit_EditGUTTER_prodID_5.setGeometry(QtCore.QRect(240, 10, 561, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_EditGUTTER_prodID.setFont(font)
-        self.lineEdit_EditGUTTER_prodID.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_EditGUTTER_prodID_5.setFont(font)
+        self.lineEdit_EditGUTTER_prodID_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_EditGUTTER_prodID.setObjectName("lineEdit_EditGUTTER_prodID")
-        self.lineEdit_EditGUTTER_Width = QtWidgets.QLineEdit(self.frame_editgutter_3)
-        self.lineEdit_EditGUTTER_Width.setGeometry(QtCore.QRect(1100, 290, 261, 51))
+        self.lineEdit_EditGUTTER_prodID_5.setObjectName("lineEdit_EditGUTTER_prodID_5")
+        self.lineEdit_EditGUTTER_Width_5 = QtWidgets.QLineEdit(self.frame_editgutter_7)
+        self.lineEdit_EditGUTTER_Width_5.setGeometry(QtCore.QRect(1100, 290, 261, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_EditGUTTER_Width.setFont(font)
-        self.lineEdit_EditGUTTER_Width.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_EditGUTTER_Width_5.setFont(font)
+        self.lineEdit_EditGUTTER_Width_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_EditGUTTER_Width.setObjectName("lineEdit_EditGUTTER_Width")
-        self.label_285 = QtWidgets.QLabel(self.frame_editgutter_3)
-        self.label_285.setGeometry(QtCore.QRect(820, -50, 271, 171))
+        self.lineEdit_EditGUTTER_Width_5.setObjectName("lineEdit_EditGUTTER_Width_5")
+        self.label_637 = QtWidgets.QLabel(self.frame_editgutter_7)
+        self.label_637.setGeometry(QtCore.QRect(820, -50, 271, 171))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_285.setFont(font)
-        self.label_285.setStyleSheet("    background-color: transparent;\n"
+        self.label_637.setFont(font)
+        self.label_637.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_285.setObjectName("label_285")
-        self.lineEdit_EditGUTTER_Qty = QtWidgets.QLineEdit(self.frame_editgutter_3)
-        self.lineEdit_EditGUTTER_Qty.setGeometry(QtCore.QRect(1100, 10, 261, 51))
+        self.label_637.setObjectName("label_637")
+        self.lineEdit_EditGUTTER_Qty_5 = QtWidgets.QLineEdit(self.frame_editgutter_7)
+        self.lineEdit_EditGUTTER_Qty_5.setGeometry(QtCore.QRect(1100, 10, 261, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_EditGUTTER_Qty.setFont(font)
-        self.lineEdit_EditGUTTER_Qty.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_EditGUTTER_Qty_5.setFont(font)
+        self.lineEdit_EditGUTTER_Qty_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_EditGUTTER_Qty.setObjectName("lineEdit_EditGUTTER_Qty")
-        self.label_286 = QtWidgets.QLabel(self.frame_editgutter_3)
-        self.label_286.setGeometry(QtCore.QRect(820, 270, 261, 91))
+        self.lineEdit_EditGUTTER_Qty_5.setObjectName("lineEdit_EditGUTTER_Qty_5")
+        self.label_638 = QtWidgets.QLabel(self.frame_editgutter_7)
+        self.label_638.setGeometry(QtCore.QRect(820, 270, 261, 91))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_286.setFont(font)
-        self.label_286.setStyleSheet("    background-color: transparent;\n"
+        self.label_638.setFont(font)
+        self.label_638.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_286.setObjectName("label_286")
-        self.label_287 = QtWidgets.QLabel(self.frame_editgutter_3)
-        self.label_287.setGeometry(QtCore.QRect(820, 200, 271, 91))
+        self.label_638.setObjectName("label_638")
+        self.label_639 = QtWidgets.QLabel(self.frame_editgutter_7)
+        self.label_639.setGeometry(QtCore.QRect(820, 200, 271, 91))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_287.setFont(font)
-        self.label_287.setStyleSheet("    background-color: transparent;\n"
+        self.label_639.setFont(font)
+        self.label_639.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_287.setObjectName("label_287")
-        self.lineEdit_EditGUTTER_Color = QtWidgets.QLineEdit(self.frame_editgutter_3)
-        self.lineEdit_EditGUTTER_Color.setGeometry(QtCore.QRect(1100, 220, 261, 51))
+        self.label_639.setObjectName("label_639")
+        self.lineEdit_EditGUTTER_Color_5 = QtWidgets.QLineEdit(self.frame_editgutter_7)
+        self.lineEdit_EditGUTTER_Color_5.setGeometry(QtCore.QRect(1100, 220, 261, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_EditGUTTER_Color.setFont(font)
-        self.lineEdit_EditGUTTER_Color.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_EditGUTTER_Color_5.setFont(font)
+        self.lineEdit_EditGUTTER_Color_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_EditGUTTER_Color.setObjectName("lineEdit_EditGUTTER_Color")
-        self.label_288 = QtWidgets.QLabel(self.frame_editgutter_3)
-        self.label_288.setGeometry(QtCore.QRect(820, 50, 261, 111))
+        self.lineEdit_EditGUTTER_Color_5.setObjectName("lineEdit_EditGUTTER_Color_5")
+        self.label_640 = QtWidgets.QLabel(self.frame_editgutter_7)
+        self.label_640.setGeometry(QtCore.QRect(820, 50, 261, 111))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_288.setFont(font)
-        self.label_288.setStyleSheet("    background-color: transparent;\n"
+        self.label_640.setFont(font)
+        self.label_640.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_288.setObjectName("label_288")
-        self.lineEdit_EditGUTTER_Length = QtWidgets.QLineEdit(self.frame_editgutter_3)
-        self.lineEdit_EditGUTTER_Length.setGeometry(QtCore.QRect(1100, 80, 261, 51))
+        self.label_640.setObjectName("label_640")
+        self.lineEdit_EditGUTTER_Length_5 = QtWidgets.QLineEdit(self.frame_editgutter_7)
+        self.lineEdit_EditGUTTER_Length_5.setGeometry(QtCore.QRect(1100, 80, 261, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_EditGUTTER_Length.setFont(font)
-        self.lineEdit_EditGUTTER_Length.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_EditGUTTER_Length_5.setFont(font)
+        self.lineEdit_EditGUTTER_Length_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_EditGUTTER_Length.setObjectName("lineEdit_EditGUTTER_Length")
-        self.label_289 = QtWidgets.QLabel(self.frame_editgutter_3)
-        self.label_289.setGeometry(QtCore.QRect(30, 170, 181, 151))
+        self.lineEdit_EditGUTTER_Length_5.setObjectName("lineEdit_EditGUTTER_Length_5")
+        self.label_641 = QtWidgets.QLabel(self.frame_editgutter_7)
+        self.label_641.setGeometry(QtCore.QRect(30, 170, 181, 151))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_289.setFont(font)
-        self.label_289.setStyleSheet("    background-color: transparent;\n"
+        self.label_641.setFont(font)
+        self.label_641.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_289.setObjectName("label_289")
-        self.lineEdit_EditGUTTER_Price = QtWidgets.QLineEdit(self.frame_editgutter_3)
-        self.lineEdit_EditGUTTER_Price.setGeometry(QtCore.QRect(240, 150, 561, 51))
+        self.label_641.setObjectName("label_641")
+        self.lineEdit_EditGUTTER_Price_5 = QtWidgets.QLineEdit(self.frame_editgutter_7)
+        self.lineEdit_EditGUTTER_Price_5.setGeometry(QtCore.QRect(240, 150, 561, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_EditGUTTER_Price.setFont(font)
-        self.lineEdit_EditGUTTER_Price.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_EditGUTTER_Price_5.setFont(font)
+        self.lineEdit_EditGUTTER_Price_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_EditGUTTER_Price.setObjectName("lineEdit_EditGUTTER_Price")
-        self.lineEdit_EditGUTTER_OtherSpecifications = QtWidgets.QLineEdit(self.frame_editgutter_3)
-        self.lineEdit_EditGUTTER_OtherSpecifications.setGeometry(QtCore.QRect(240, 230, 561, 111))
+        self.lineEdit_EditGUTTER_Price_5.setObjectName("lineEdit_EditGUTTER_Price_5")
+        self.lineEdit_EditGUTTER_OtherSpecifications_5 = QtWidgets.QLineEdit(self.frame_editgutter_7)
+        self.lineEdit_EditGUTTER_OtherSpecifications_5.setGeometry(QtCore.QRect(240, 230, 561, 111))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_EditGUTTER_OtherSpecifications.setFont(font)
-        self.lineEdit_EditGUTTER_OtherSpecifications.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_EditGUTTER_OtherSpecifications_5.setFont(font)
+        self.lineEdit_EditGUTTER_OtherSpecifications_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_EditGUTTER_OtherSpecifications.setObjectName("lineEdit_EditGUTTER_OtherSpecifications")
-        self.label_290 = QtWidgets.QLabel(self.frame_editgutter_3)
-        self.label_290.setGeometry(QtCore.QRect(820, 130, 271, 91))
+        self.lineEdit_EditGUTTER_OtherSpecifications_5.setObjectName("lineEdit_EditGUTTER_OtherSpecifications_5")
+        self.label_642 = QtWidgets.QLabel(self.frame_editgutter_7)
+        self.label_642.setGeometry(QtCore.QRect(820, 130, 271, 91))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_290.setFont(font)
-        self.label_290.setStyleSheet("    background-color: transparent;\n"
+        self.label_642.setFont(font)
+        self.label_642.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_290.setObjectName("label_290")
-        self.lineEdit_EditGUTTER_Thickness = QtWidgets.QLineEdit(self.frame_editgutter_3)
-        self.lineEdit_EditGUTTER_Thickness.setGeometry(QtCore.QRect(1100, 150, 261, 51))
+        self.label_642.setObjectName("label_642")
+        self.lineEdit_EditGUTTER_Thickness_5 = QtWidgets.QLineEdit(self.frame_editgutter_7)
+        self.lineEdit_EditGUTTER_Thickness_5.setGeometry(QtCore.QRect(1100, 150, 261, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_EditGUTTER_Thickness.setFont(font)
-        self.lineEdit_EditGUTTER_Thickness.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_EditGUTTER_Thickness_5.setFont(font)
+        self.lineEdit_EditGUTTER_Thickness_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_EditGUTTER_Thickness.setObjectName("lineEdit_EditGUTTER_Thickness")
-        self.label_291 = QtWidgets.QLabel(self.frame_editgutter_3)
-        self.label_291.setGeometry(QtCore.QRect(30, 250, 211, 51))
+        self.lineEdit_EditGUTTER_Thickness_5.setObjectName("lineEdit_EditGUTTER_Thickness_5")
+        self.label_643 = QtWidgets.QLabel(self.frame_editgutter_7)
+        self.label_643.setGeometry(QtCore.QRect(30, 250, 211, 51))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(13)
         font.setBold(False)
         font.setWeight(50)
-        self.label_291.setFont(font)
-        self.label_291.setStyleSheet("    background-color: transparent;\n"
+        self.label_643.setFont(font)
+        self.label_643.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_291.setObjectName("label_291")
-        self.lineEdit_EditGUTTER_Name = QtWidgets.QLineEdit(self.frame_editgutter_3)
-        self.lineEdit_EditGUTTER_Name.setGeometry(QtCore.QRect(240, 80, 561, 51))
+        self.label_643.setObjectName("label_643")
+        self.lineEdit_EditGUTTER_Name_5 = QtWidgets.QLineEdit(self.frame_editgutter_7)
+        self.lineEdit_EditGUTTER_Name_5.setGeometry(QtCore.QRect(240, 80, 561, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_EditGUTTER_Name.setFont(font)
-        self.lineEdit_EditGUTTER_Name.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_EditGUTTER_Name_5.setFont(font)
+        self.lineEdit_EditGUTTER_Name_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_EditGUTTER_Name.setObjectName("lineEdit_EditGUTTER_Name")
-        self.Edit_Select_Prod_Type.addWidget(self.EDIT_GUTTER)
-        self.EDIT_OTHER = QtWidgets.QWidget()
-        self.EDIT_OTHER.setObjectName("EDIT_OTHER")
-        self.frame_editother_3 = QtWidgets.QFrame(self.EDIT_OTHER)
-        self.frame_editother_3.setGeometry(QtCore.QRect(-10, 10, 1411, 411))
-        self.frame_editother_3.setStyleSheet("    background-color: transparent;\n"
+        self.lineEdit_EditGUTTER_Name_5.setObjectName("lineEdit_EditGUTTER_Name_5")
+        self.Edit_Select_Prod_Type_5.addWidget(self.EDIT_GUTTER_5)
+        self.EDIT_OTHER_5 = QtWidgets.QWidget()
+        self.EDIT_OTHER_5.setObjectName("EDIT_OTHER_5")
+        self.frame_editother_7 = QtWidgets.QFrame(self.EDIT_OTHER_5)
+        self.frame_editother_7.setGeometry(QtCore.QRect(-10, 10, 1411, 411))
+        self.frame_editother_7.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.frame_editother_3.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_editother_3.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_editother_3.setObjectName("frame_editother_3")
-        self.label_292 = QtWidgets.QLabel(self.frame_editother_3)
-        self.label_292.setGeometry(QtCore.QRect(30, 10, 241, 51))
-        font = QtGui.QFont()
-        font.setFamily("Poppins Medium")
-        font.setPointSize(14)
-        font.setBold(False)
-        font.setWeight(50)
-        self.label_292.setFont(font)
-        self.label_292.setStyleSheet("    background-color: transparent;\n"
-"")
-        self.label_292.setObjectName("label_292")
-        self.label_293 = QtWidgets.QLabel(self.frame_editother_3)
-        self.label_293.setGeometry(QtCore.QRect(30, 140, 171, 71))
+        self.frame_editother_7.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_editother_7.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_editother_7.setObjectName("frame_editother_7")
+        self.label_644 = QtWidgets.QLabel(self.frame_editother_7)
+        self.label_644.setGeometry(QtCore.QRect(30, 10, 241, 51))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_293.setFont(font)
-        self.label_293.setStyleSheet("    background-color: transparent;\n"
+        self.label_644.setFont(font)
+        self.label_644.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_293.setObjectName("label_293")
-        self.label_294 = QtWidgets.QLabel(self.frame_editother_3)
-        self.label_294.setGeometry(QtCore.QRect(30, 60, 171, 91))
+        self.label_644.setObjectName("label_644")
+        self.label_645 = QtWidgets.QLabel(self.frame_editother_7)
+        self.label_645.setGeometry(QtCore.QRect(30, 140, 171, 71))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_294.setFont(font)
-        self.label_294.setStyleSheet("    background-color: transparent;\n"
+        self.label_645.setFont(font)
+        self.label_645.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_294.setObjectName("label_294")
-        self.lineEdit_EditOTHER_prodID = QtWidgets.QLineEdit(self.frame_editother_3)
-        self.lineEdit_EditOTHER_prodID.setGeometry(QtCore.QRect(240, 10, 561, 51))
-        font = QtGui.QFont()
-        font.setPointSize(13)
-        self.lineEdit_EditOTHER_prodID.setFont(font)
-        self.lineEdit_EditOTHER_prodID.setStyleSheet("    background-color: #ffffff;\n"
-"    color: black;\n"
-"    border-radius: 15px;\n"
-"border: 1px solid #000000; \n"
-"    padding: 9px;\n"
-"")
-        self.lineEdit_EditOTHER_prodID.setObjectName("lineEdit_EditOTHER_prodID")
-        self.lineEdit_EditOTHER_Width = QtWidgets.QLineEdit(self.frame_editother_3)
-        self.lineEdit_EditOTHER_Width.setGeometry(QtCore.QRect(1100, 290, 261, 51))
-        font = QtGui.QFont()
-        font.setPointSize(13)
-        self.lineEdit_EditOTHER_Width.setFont(font)
-        self.lineEdit_EditOTHER_Width.setStyleSheet("    background-color: #ffffff;\n"
-"    color: black;\n"
-"    border-radius: 15px;\n"
-"border: 1px solid #000000; \n"
-"    padding: 9px;\n"
-"")
-        self.lineEdit_EditOTHER_Width.setObjectName("lineEdit_EditOTHER_Width")
-        self.label_295 = QtWidgets.QLabel(self.frame_editother_3)
-        self.label_295.setGeometry(QtCore.QRect(820, -50, 271, 171))
+        self.label_645.setObjectName("label_645")
+        self.label_646 = QtWidgets.QLabel(self.frame_editother_7)
+        self.label_646.setGeometry(QtCore.QRect(30, 60, 171, 91))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_295.setFont(font)
-        self.label_295.setStyleSheet("    background-color: transparent;\n"
+        self.label_646.setFont(font)
+        self.label_646.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_295.setObjectName("label_295")
-        self.lineEdit_EditOTHER_Qty = QtWidgets.QLineEdit(self.frame_editother_3)
-        self.lineEdit_EditOTHER_Qty.setGeometry(QtCore.QRect(1100, 10, 261, 51))
+        self.label_646.setObjectName("label_646")
+        self.lineEdit_EditOTHER_prodID_5 = QtWidgets.QLineEdit(self.frame_editother_7)
+        self.lineEdit_EditOTHER_prodID_5.setGeometry(QtCore.QRect(240, 10, 561, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_EditOTHER_Qty.setFont(font)
-        self.lineEdit_EditOTHER_Qty.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_EditOTHER_prodID_5.setFont(font)
+        self.lineEdit_EditOTHER_prodID_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_EditOTHER_Qty.setObjectName("lineEdit_EditOTHER_Qty")
-        self.label_296 = QtWidgets.QLabel(self.frame_editother_3)
-        self.label_296.setGeometry(QtCore.QRect(820, 270, 261, 91))
+        self.lineEdit_EditOTHER_prodID_5.setObjectName("lineEdit_EditOTHER_prodID_5")
+        self.lineEdit_EditOTHER_Width_5 = QtWidgets.QLineEdit(self.frame_editother_7)
+        self.lineEdit_EditOTHER_Width_5.setGeometry(QtCore.QRect(1100, 290, 261, 51))
+        font = QtGui.QFont()
+        font.setPointSize(13)
+        self.lineEdit_EditOTHER_Width_5.setFont(font)
+        self.lineEdit_EditOTHER_Width_5.setStyleSheet("    background-color: #ffffff;\n"
+"    color: black;\n"
+"    border-radius: 15px;\n"
+"border: 1px solid #000000; \n"
+"    padding: 9px;\n"
+"")
+        self.lineEdit_EditOTHER_Width_5.setObjectName("lineEdit_EditOTHER_Width_5")
+        self.label_647 = QtWidgets.QLabel(self.frame_editother_7)
+        self.label_647.setGeometry(QtCore.QRect(820, -50, 271, 171))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_296.setFont(font)
-        self.label_296.setStyleSheet("    background-color: transparent;\n"
+        self.label_647.setFont(font)
+        self.label_647.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_296.setObjectName("label_296")
-        self.label_297 = QtWidgets.QLabel(self.frame_editother_3)
-        self.label_297.setGeometry(QtCore.QRect(820, 200, 271, 91))
+        self.label_647.setObjectName("label_647")
+        self.lineEdit_EditOTHER_Qty_5 = QtWidgets.QLineEdit(self.frame_editother_7)
+        self.lineEdit_EditOTHER_Qty_5.setGeometry(QtCore.QRect(1100, 10, 261, 51))
+        font = QtGui.QFont()
+        font.setPointSize(13)
+        self.lineEdit_EditOTHER_Qty_5.setFont(font)
+        self.lineEdit_EditOTHER_Qty_5.setStyleSheet("    background-color: #ffffff;\n"
+"    color: black;\n"
+"    border-radius: 15px;\n"
+"border: 1px solid #000000; \n"
+"    padding: 9px;\n"
+"")
+        self.lineEdit_EditOTHER_Qty_5.setObjectName("lineEdit_EditOTHER_Qty_5")
+        self.label_648 = QtWidgets.QLabel(self.frame_editother_7)
+        self.label_648.setGeometry(QtCore.QRect(820, 270, 261, 91))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_297.setFont(font)
-        self.label_297.setStyleSheet("    background-color: transparent;\n"
+        self.label_648.setFont(font)
+        self.label_648.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_297.setObjectName("label_297")
-        self.lineEdit_EditOTHER_Color = QtWidgets.QLineEdit(self.frame_editother_3)
-        self.lineEdit_EditOTHER_Color.setGeometry(QtCore.QRect(1100, 220, 261, 51))
-        font = QtGui.QFont()
-        font.setPointSize(13)
-        self.lineEdit_EditOTHER_Color.setFont(font)
-        self.lineEdit_EditOTHER_Color.setStyleSheet("    background-color: #ffffff;\n"
-"    color: black;\n"
-"    border-radius: 15px;\n"
-"border: 1px solid #000000; \n"
-"    padding: 9px;\n"
-"")
-        self.lineEdit_EditOTHER_Color.setObjectName("lineEdit_EditOTHER_Color")
-        self.label_298 = QtWidgets.QLabel(self.frame_editother_3)
-        self.label_298.setGeometry(QtCore.QRect(820, 50, 261, 111))
+        self.label_648.setObjectName("label_648")
+        self.label_649 = QtWidgets.QLabel(self.frame_editother_7)
+        self.label_649.setGeometry(QtCore.QRect(820, 200, 271, 91))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_298.setFont(font)
-        self.label_298.setStyleSheet("    background-color: transparent;\n"
+        self.label_649.setFont(font)
+        self.label_649.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_298.setObjectName("label_298")
-        self.lineEdit_EditOTHER_Length = QtWidgets.QLineEdit(self.frame_editother_3)
-        self.lineEdit_EditOTHER_Length.setGeometry(QtCore.QRect(1100, 80, 261, 51))
+        self.label_649.setObjectName("label_649")
+        self.lineEdit_EditOTHER_Color_5 = QtWidgets.QLineEdit(self.frame_editother_7)
+        self.lineEdit_EditOTHER_Color_5.setGeometry(QtCore.QRect(1100, 220, 261, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_EditOTHER_Length.setFont(font)
-        self.lineEdit_EditOTHER_Length.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_EditOTHER_Color_5.setFont(font)
+        self.lineEdit_EditOTHER_Color_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_EditOTHER_Length.setObjectName("lineEdit_EditOTHER_Length")
-        self.label_299 = QtWidgets.QLabel(self.frame_editother_3)
-        self.label_299.setGeometry(QtCore.QRect(30, 170, 181, 151))
+        self.lineEdit_EditOTHER_Color_5.setObjectName("lineEdit_EditOTHER_Color_5")
+        self.label_650 = QtWidgets.QLabel(self.frame_editother_7)
+        self.label_650.setGeometry(QtCore.QRect(820, 50, 261, 111))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_299.setFont(font)
-        self.label_299.setStyleSheet("    background-color: transparent;\n"
+        self.label_650.setFont(font)
+        self.label_650.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_299.setObjectName("label_299")
-        self.lineEdit_EditOTHER_Price = QtWidgets.QLineEdit(self.frame_editother_3)
-        self.lineEdit_EditOTHER_Price.setGeometry(QtCore.QRect(240, 150, 561, 51))
+        self.label_650.setObjectName("label_650")
+        self.lineEdit_EditOTHER_Length_5 = QtWidgets.QLineEdit(self.frame_editother_7)
+        self.lineEdit_EditOTHER_Length_5.setGeometry(QtCore.QRect(1100, 80, 261, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_EditOTHER_Price.setFont(font)
-        self.lineEdit_EditOTHER_Price.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_EditOTHER_Length_5.setFont(font)
+        self.lineEdit_EditOTHER_Length_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_EditOTHER_Price.setObjectName("lineEdit_EditOTHER_Price")
-        self.lineEdit_EditOTHER_OtherSpecifications = QtWidgets.QLineEdit(self.frame_editother_3)
-        self.lineEdit_EditOTHER_OtherSpecifications.setGeometry(QtCore.QRect(240, 230, 561, 111))
-        font = QtGui.QFont()
-        font.setPointSize(13)
-        self.lineEdit_EditOTHER_OtherSpecifications.setFont(font)
-        self.lineEdit_EditOTHER_OtherSpecifications.setStyleSheet("    background-color: #ffffff;\n"
-"    color: black;\n"
-"    border-radius: 15px;\n"
-"border: 1px solid #000000; \n"
-"    padding: 9px;\n"
-"")
-        self.lineEdit_EditOTHER_OtherSpecifications.setObjectName("lineEdit_EditOTHER_OtherSpecifications")
-        self.label_300 = QtWidgets.QLabel(self.frame_editother_3)
-        self.label_300.setGeometry(QtCore.QRect(820, 130, 271, 91))
+        self.lineEdit_EditOTHER_Length_5.setObjectName("lineEdit_EditOTHER_Length_5")
+        self.label_651 = QtWidgets.QLabel(self.frame_editother_7)
+        self.label_651.setGeometry(QtCore.QRect(30, 170, 181, 151))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_300.setFont(font)
-        self.label_300.setStyleSheet("    background-color: transparent;\n"
+        self.label_651.setFont(font)
+        self.label_651.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_300.setObjectName("label_300")
-        self.lineEdit_EditOTHER_Thickness = QtWidgets.QLineEdit(self.frame_editother_3)
-        self.lineEdit_EditOTHER_Thickness.setGeometry(QtCore.QRect(1100, 150, 261, 51))
+        self.label_651.setObjectName("label_651")
+        self.lineEdit_EditOTHER_Price_5 = QtWidgets.QLineEdit(self.frame_editother_7)
+        self.lineEdit_EditOTHER_Price_5.setGeometry(QtCore.QRect(240, 150, 561, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_EditOTHER_Thickness.setFont(font)
-        self.lineEdit_EditOTHER_Thickness.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_EditOTHER_Price_5.setFont(font)
+        self.lineEdit_EditOTHER_Price_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_EditOTHER_Thickness.setObjectName("lineEdit_EditOTHER_Thickness")
-        self.label_301 = QtWidgets.QLabel(self.frame_editother_3)
-        self.label_301.setGeometry(QtCore.QRect(30, 250, 211, 51))
+        self.lineEdit_EditOTHER_Price_5.setObjectName("lineEdit_EditOTHER_Price_5")
+        self.lineEdit_EditOTHER_OtherSpecifications_5 = QtWidgets.QLineEdit(self.frame_editother_7)
+        self.lineEdit_EditOTHER_OtherSpecifications_5.setGeometry(QtCore.QRect(240, 230, 561, 111))
+        font = QtGui.QFont()
+        font.setPointSize(13)
+        self.lineEdit_EditOTHER_OtherSpecifications_5.setFont(font)
+        self.lineEdit_EditOTHER_OtherSpecifications_5.setStyleSheet("    background-color: #ffffff;\n"
+"    color: black;\n"
+"    border-radius: 15px;\n"
+"border: 1px solid #000000; \n"
+"    padding: 9px;\n"
+"")
+        self.lineEdit_EditOTHER_OtherSpecifications_5.setObjectName("lineEdit_EditOTHER_OtherSpecifications_5")
+        self.label_652 = QtWidgets.QLabel(self.frame_editother_7)
+        self.label_652.setGeometry(QtCore.QRect(820, 130, 271, 91))
+        font = QtGui.QFont()
+        font.setFamily("Poppins Medium")
+        font.setPointSize(14)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_652.setFont(font)
+        self.label_652.setStyleSheet("    background-color: transparent;\n"
+"")
+        self.label_652.setObjectName("label_652")
+        self.lineEdit_EditOTHER_Thickness_5 = QtWidgets.QLineEdit(self.frame_editother_7)
+        self.lineEdit_EditOTHER_Thickness_5.setGeometry(QtCore.QRect(1100, 150, 261, 51))
+        font = QtGui.QFont()
+        font.setPointSize(13)
+        self.lineEdit_EditOTHER_Thickness_5.setFont(font)
+        self.lineEdit_EditOTHER_Thickness_5.setStyleSheet("    background-color: #ffffff;\n"
+"    color: black;\n"
+"    border-radius: 15px;\n"
+"border: 1px solid #000000; \n"
+"    padding: 9px;\n"
+"")
+        self.lineEdit_EditOTHER_Thickness_5.setObjectName("lineEdit_EditOTHER_Thickness_5")
+        self.label_653 = QtWidgets.QLabel(self.frame_editother_7)
+        self.label_653.setGeometry(QtCore.QRect(30, 250, 211, 51))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(13)
         font.setBold(False)
         font.setWeight(50)
-        self.label_301.setFont(font)
-        self.label_301.setStyleSheet("    background-color: transparent;\n"
+        self.label_653.setFont(font)
+        self.label_653.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_301.setObjectName("label_301")
-        self.lineEdit_EditOTHER_Name = QtWidgets.QLineEdit(self.frame_editother_3)
-        self.lineEdit_EditOTHER_Name.setGeometry(QtCore.QRect(240, 80, 561, 51))
+        self.label_653.setObjectName("label_653")
+        self.lineEdit_EditOTHER_Name_5 = QtWidgets.QLineEdit(self.frame_editother_7)
+        self.lineEdit_EditOTHER_Name_5.setGeometry(QtCore.QRect(240, 80, 561, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_EditOTHER_Name.setFont(font)
-        self.lineEdit_EditOTHER_Name.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_EditOTHER_Name_5.setFont(font)
+        self.lineEdit_EditOTHER_Name_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_EditOTHER_Name.setObjectName("lineEdit_EditOTHER_Name")
-        self.frame_50 = QtWidgets.QFrame(self.EDIT_OTHER)
-        self.frame_50.setGeometry(QtCore.QRect(-10, 420, 1331, 91))
-        self.frame_50.setStyleSheet("    background-color: transparent;\n"
+        self.lineEdit_EditOTHER_Name_5.setObjectName("lineEdit_EditOTHER_Name_5")
+        self.frame_106 = QtWidgets.QFrame(self.EDIT_OTHER_5)
+        self.frame_106.setGeometry(QtCore.QRect(-10, 420, 1331, 91))
+        self.frame_106.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.frame_50.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_50.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_50.setObjectName("frame_50")
-        self.pushButton_Save_OTHERedit = QtWidgets.QPushButton(self.frame_50)
-        self.pushButton_Save_OTHERedit.setGeometry(QtCore.QRect(360, 20, 331, 51))
+        self.frame_106.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_106.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_106.setObjectName("frame_106")
+        self.pushButton_Save_OTHERedit_5 = QtWidgets.QPushButton(self.frame_106)
+        self.pushButton_Save_OTHERedit_5.setGeometry(QtCore.QRect(360, 20, 331, 51))
         font = QtGui.QFont()
         font.setFamily("Verdana")
         font.setPointSize(14)
-        self.pushButton_Save_OTHERedit.setFont(font)
-        self.pushButton_Save_OTHERedit.setStyleSheet("    background-color: #b2423c;\n"
+        self.pushButton_Save_OTHERedit_5.setFont(font)
+        self.pushButton_Save_OTHERedit_5.setStyleSheet("    background-color: #b2423c;\n"
 "    color: white;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "font-family: \"Verdana\", sans-serif; \n"
 "text-align: center;")
-        self.pushButton_Save_OTHERedit.setObjectName("pushButton_Save_OTHERedit")
-        self.pushButton_Discard_OTHERedit = QtWidgets.QPushButton(self.frame_50)
-        self.pushButton_Discard_OTHERedit.setGeometry(QtCore.QRect(740, 20, 281, 51))
+        self.pushButton_Save_OTHERedit_5.setObjectName("pushButton_Save_OTHERedit_5")
+        self.pushButton_Discard_OTHERedit_5 = QtWidgets.QPushButton(self.frame_106)
+        self.pushButton_Discard_OTHERedit_5.setGeometry(QtCore.QRect(740, 20, 281, 51))
         font = QtGui.QFont()
         font.setFamily("Verdana")
         font.setPointSize(14)
-        self.pushButton_Discard_OTHERedit.setFont(font)
-        self.pushButton_Discard_OTHERedit.setStyleSheet("\n"
+        self.pushButton_Discard_OTHERedit_5.setFont(font)
+        self.pushButton_Discard_OTHERedit_5.setStyleSheet("\n"
 "/* Default Inactive Button */\n"
 "QPushButton {\n"
 "    background-color: #ffffff;\n"
@@ -3372,114 +3364,114 @@ class Ui_OWNER_INVENTORY(object):
 "    color: white;\n"
 "}\n"
 "")
-        self.pushButton_Discard_OTHERedit.setObjectName("pushButton_Discard_OTHERedit")
-        self.Edit_Select_Prod_Type.addWidget(self.EDIT_OTHER)
-        self.comboBox_Select_Prod_Type_toEdit = QtWidgets.QComboBox(self.frame_36)
-        self.comboBox_Select_Prod_Type_toEdit.setGeometry(QtCore.QRect(1220, 50, 251, 51))
+        self.pushButton_Discard_OTHERedit_5.setObjectName("pushButton_Discard_OTHERedit_5")
+        self.Edit_Select_Prod_Type_5.addWidget(self.EDIT_OTHER_5)
+        self.comboBox_Select_Prod_Type_toEdit_5 = QtWidgets.QComboBox(self.frame_102)
+        self.comboBox_Select_Prod_Type_toEdit_5.setGeometry(QtCore.QRect(1220, 50, 251, 51))
         font = QtGui.QFont()
         font.setPointSize(14)
-        self.comboBox_Select_Prod_Type_toEdit.setFont(font)
-        self.comboBox_Select_Prod_Type_toEdit.setLayoutDirection(QtCore.Qt.LeftToRight)
-        self.comboBox_Select_Prod_Type_toEdit.setStyleSheet("    background-color: #ebe0cc;\n"
+        self.comboBox_Select_Prod_Type_toEdit_5.setFont(font)
+        self.comboBox_Select_Prod_Type_toEdit_5.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.comboBox_Select_Prod_Type_toEdit_5.setStyleSheet("    background-color: #ebe0cc;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "text-align: center;")
-        self.comboBox_Select_Prod_Type_toEdit.setObjectName("comboBox_Select_Prod_Type_toEdit")
-        self.comboBox_Select_Prod_Type_toEdit.addItem("")
-        self.comboBox_Select_Prod_Type_toEdit.addItem("")
-        self.comboBox_Select_Prod_Type_toEdit.addItem("")
-        self.comboBox_Select_Prod_Type_toEdit.addItem("")
-        self.comboBox_Select_Prod_Type_toEdit.addItem("")
-        self.label_302 = QtWidgets.QLabel(self.frame_36)
-        self.label_302.setGeometry(QtCore.QRect(360, 80, 881, 81))
-        self.label_302.setStyleSheet("background: transparent;")
-        self.label_302.setText("")
-        self.label_302.setPixmap(QtGui.QPixmap(":/JJimages/straightline.png"))
-        self.label_302.setScaledContents(True)
-        self.label_302.setObjectName("label_302")
-        self.INVENTORY_afterBUTTONSclick.addWidget(self.page_INV_EDIT_STOCK)
-        self.page_INV_DELETE_STOCK = QtWidgets.QWidget()
-        self.page_INV_DELETE_STOCK.setObjectName("page_INV_DELETE_STOCK")
-        self.frame_40 = QtWidgets.QFrame(self.page_INV_DELETE_STOCK)
-        self.frame_40.setGeometry(QtCore.QRect(0, 0, 1621, 691))
-        self.frame_40.setStyleSheet("background: transparent;")
-        self.frame_40.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_40.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_40.setObjectName("frame_40")
-        self.frame_41 = QtWidgets.QFrame(self.frame_40)
-        self.frame_41.setGeometry(QtCore.QRect(-20, -10, 1561, 691))
-        self.frame_41.setStyleSheet("background: transparent;")
-        self.frame_41.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_41.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_41.setObjectName("frame_41")
-        self.label_303 = QtWidgets.QLabel(self.frame_41)
-        self.label_303.setGeometry(QtCore.QRect(80, 30, 1451, 631))
-        self.label_303.setStyleSheet("    background-color: white;\n"
+        self.comboBox_Select_Prod_Type_toEdit_5.setObjectName("comboBox_Select_Prod_Type_toEdit_5")
+        self.comboBox_Select_Prod_Type_toEdit_5.addItem("")
+        self.comboBox_Select_Prod_Type_toEdit_5.addItem("")
+        self.comboBox_Select_Prod_Type_toEdit_5.addItem("")
+        self.comboBox_Select_Prod_Type_toEdit_5.addItem("")
+        self.comboBox_Select_Prod_Type_toEdit_5.addItem("")
+        self.label_654 = QtWidgets.QLabel(self.frame_102)
+        self.label_654.setGeometry(QtCore.QRect(360, 80, 881, 81))
+        self.label_654.setStyleSheet("background: transparent;")
+        self.label_654.setText("")
+        self.label_654.setPixmap(QtGui.QPixmap(":/JJimages/straightline.png"))
+        self.label_654.setScaledContents(True)
+        self.label_654.setObjectName("label_654")
+        self.INVENTORY_afterBUTTONSclick.addWidget(self.page_INV_EDIT_STOCK_5)
+        self.page_INV_DELETE_STOCK_5 = QtWidgets.QWidget()
+        self.page_INV_DELETE_STOCK_5.setObjectName("page_INV_DELETE_STOCK_5")
+        self.frame_107 = QtWidgets.QFrame(self.page_INV_DELETE_STOCK_5)
+        self.frame_107.setGeometry(QtCore.QRect(0, 0, 1621, 691))
+        self.frame_107.setStyleSheet("background: transparent;")
+        self.frame_107.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_107.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_107.setObjectName("frame_107")
+        self.frame_108 = QtWidgets.QFrame(self.frame_107)
+        self.frame_108.setGeometry(QtCore.QRect(-20, -10, 1561, 691))
+        self.frame_108.setStyleSheet("background: transparent;")
+        self.frame_108.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_108.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_108.setObjectName("frame_108")
+        self.label_655 = QtWidgets.QLabel(self.frame_108)
+        self.label_655.setGeometry(QtCore.QRect(80, 30, 1451, 631))
+        self.label_655.setStyleSheet("    background-color: white;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; ")
-        self.label_303.setText("")
-        self.label_303.setObjectName("label_303")
-        self.deleteStocklabel = QtWidgets.QLabel(self.frame_41)
-        self.deleteStocklabel.setGeometry(QtCore.QRect(120, 30, 1371, 101))
+        self.label_655.setText("")
+        self.label_655.setObjectName("label_655")
+        self.deleteStocklabel_5 = QtWidgets.QLabel(self.frame_108)
+        self.deleteStocklabel_5.setGeometry(QtCore.QRect(120, 30, 1371, 101))
         font = QtGui.QFont()
         font.setFamily("Arial")
         font.setPointSize(21)
         font.setBold(True)
         font.setUnderline(False)
         font.setWeight(75)
-        self.deleteStocklabel.setFont(font)
-        self.deleteStocklabel.setStyleSheet("    background-color: transparent;\n"
+        self.deleteStocklabel_5.setFont(font)
+        self.deleteStocklabel_5.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.deleteStocklabel.setAlignment(QtCore.Qt.AlignCenter)
-        self.deleteStocklabel.setObjectName("deleteStocklabel")
-        self.Delete_Select_Prod_Type = QtWidgets.QStackedWidget(self.frame_41)
-        self.Delete_Select_Prod_Type.setGeometry(QtCore.QRect(100, 120, 1411, 521))
-        self.Delete_Select_Prod_Type.setStyleSheet("background: #f6f3ee;")
-        self.Delete_Select_Prod_Type.setObjectName("Delete_Select_Prod_Type")
-        self.DELETE_blank = QtWidgets.QWidget()
-        self.DELETE_blank.setObjectName("DELETE_blank")
-        self.label_304 = QtWidgets.QLabel(self.DELETE_blank)
-        self.label_304.setGeometry(QtCore.QRect(0, -10, 1321, 361))
+        self.deleteStocklabel_5.setAlignment(QtCore.Qt.AlignCenter)
+        self.deleteStocklabel_5.setObjectName("deleteStocklabel_5")
+        self.Delete_Select_Prod_Type_5 = QtWidgets.QStackedWidget(self.frame_108)
+        self.Delete_Select_Prod_Type_5.setGeometry(QtCore.QRect(100, 120, 1411, 521))
+        self.Delete_Select_Prod_Type_5.setStyleSheet("background: #f6f3ee;")
+        self.Delete_Select_Prod_Type_5.setObjectName("Delete_Select_Prod_Type_5")
+        self.DELETE_blank_5 = QtWidgets.QWidget()
+        self.DELETE_blank_5.setObjectName("DELETE_blank_5")
+        self.label_656 = QtWidgets.QLabel(self.DELETE_blank_5)
+        self.label_656.setGeometry(QtCore.QRect(0, -10, 1321, 361))
         font = QtGui.QFont()
         font.setFamily("Verdana")
         font.setPointSize(11)
         font.setItalic(True)
-        self.label_304.setFont(font)
-        self.label_304.setStyleSheet("background: transparent;\n"
+        self.label_656.setFont(font)
+        self.label_656.setStyleSheet("background: transparent;\n"
 "color: #a6a6a6;")
-        self.label_304.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_304.setObjectName("label_304")
-        self.Delete_Select_Prod_Type.addWidget(self.DELETE_blank)
-        self.DELETE_ROOF = QtWidgets.QWidget()
-        self.DELETE_ROOF.setObjectName("DELETE_ROOF")
-        self.frame_51 = QtWidgets.QFrame(self.DELETE_ROOF)
-        self.frame_51.setGeometry(QtCore.QRect(-10, 419, 1331, 91))
-        self.frame_51.setStyleSheet("    background-color: transparent;\n"
+        self.label_656.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_656.setObjectName("label_656")
+        self.Delete_Select_Prod_Type_5.addWidget(self.DELETE_blank_5)
+        self.DELETE_ROOF_5 = QtWidgets.QWidget()
+        self.DELETE_ROOF_5.setObjectName("DELETE_ROOF_5")
+        self.frame_109 = QtWidgets.QFrame(self.DELETE_ROOF_5)
+        self.frame_109.setGeometry(QtCore.QRect(-10, 419, 1331, 91))
+        self.frame_109.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.frame_51.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_51.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_51.setObjectName("frame_51")
-        self.pushButton_Confirm_ROOFdelete = QtWidgets.QPushButton(self.frame_51)
-        self.pushButton_Confirm_ROOFdelete.setGeometry(QtCore.QRect(360, 20, 331, 51))
+        self.frame_109.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_109.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_109.setObjectName("frame_109")
+        self.pushButton_Confirm_ROOFdelete_5 = QtWidgets.QPushButton(self.frame_109)
+        self.pushButton_Confirm_ROOFdelete_5.setGeometry(QtCore.QRect(360, 20, 331, 51))
         font = QtGui.QFont()
         font.setFamily("Verdana")
         font.setPointSize(14)
-        self.pushButton_Confirm_ROOFdelete.setFont(font)
-        self.pushButton_Confirm_ROOFdelete.setStyleSheet("    background-color: #b2423c;\n"
+        self.pushButton_Confirm_ROOFdelete_5.setFont(font)
+        self.pushButton_Confirm_ROOFdelete_5.setStyleSheet("    background-color: #b2423c;\n"
 "    color: white;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "font-family: \"Verdana\", sans-serif; \n"
 "text-align: center;")
-        self.pushButton_Confirm_ROOFdelete.setObjectName("pushButton_Confirm_ROOFdelete")
-        self.pushButton_Close_ROOFdelete = QtWidgets.QPushButton(self.frame_51)
-        self.pushButton_Close_ROOFdelete.setGeometry(QtCore.QRect(740, 20, 281, 51))
+        self.pushButton_Confirm_ROOFdelete_5.setObjectName("pushButton_Confirm_ROOFdelete_5")
+        self.pushButton_Close_ROOFdelete_5 = QtWidgets.QPushButton(self.frame_109)
+        self.pushButton_Close_ROOFdelete_5.setGeometry(QtCore.QRect(740, 20, 281, 51))
         font = QtGui.QFont()
         font.setFamily("Verdana")
         font.setPointSize(14)
-        self.pushButton_Close_ROOFdelete.setFont(font)
-        self.pushButton_Close_ROOFdelete.setStyleSheet("\n"
+        self.pushButton_Close_ROOFdelete_5.setFont(font)
+        self.pushButton_Close_ROOFdelete_5.setStyleSheet("\n"
 "/* Default Inactive Button */\n"
 "QPushButton {\n"
 "    background-color: #ffffff;\n"
@@ -3503,115 +3495,115 @@ class Ui_OWNER_INVENTORY(object):
 "    color: white;\n"
 "}\n"
 "")
-        self.pushButton_Close_ROOFdelete.setObjectName("pushButton_Close_ROOFdelete")
-        self.frame_deleteroof = QtWidgets.QFrame(self.DELETE_ROOF)
-        self.frame_deleteroof.setGeometry(QtCore.QRect(-10, 30, 1411, 391))
-        self.frame_deleteroof.setStyleSheet("    background-color: transparent;\n"
+        self.pushButton_Close_ROOFdelete_5.setObjectName("pushButton_Close_ROOFdelete_5")
+        self.frame_deleteroof_5 = QtWidgets.QFrame(self.DELETE_ROOF_5)
+        self.frame_deleteroof_5.setGeometry(QtCore.QRect(-10, 30, 1411, 391))
+        self.frame_deleteroof_5.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.frame_deleteroof.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_deleteroof.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_deleteroof.setObjectName("frame_deleteroof")
-        self.label_305 = QtWidgets.QLabel(self.frame_deleteroof)
-        self.label_305.setGeometry(QtCore.QRect(230, 20, 321, 71))
+        self.frame_deleteroof_5.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_deleteroof_5.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_deleteroof_5.setObjectName("frame_deleteroof_5")
+        self.label_657 = QtWidgets.QLabel(self.frame_deleteroof_5)
+        self.label_657.setGeometry(QtCore.QRect(230, 20, 321, 71))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_305.setFont(font)
-        self.label_305.setStyleSheet("    background-color: transparent;\n"
+        self.label_657.setFont(font)
+        self.label_657.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_305.setObjectName("label_305")
-        self.lineEdit_DeleteROOF_prodID = QtWidgets.QLineEdit(self.frame_deleteroof)
-        self.lineEdit_DeleteROOF_prodID.setGeometry(QtCore.QRect(530, 30, 641, 51))
+        self.label_657.setObjectName("label_657")
+        self.lineEdit_DeleteROOF_prodID_5 = QtWidgets.QLineEdit(self.frame_deleteroof_5)
+        self.lineEdit_DeleteROOF_prodID_5.setGeometry(QtCore.QRect(530, 30, 641, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_DeleteROOF_prodID.setFont(font)
-        self.lineEdit_DeleteROOF_prodID.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_DeleteROOF_prodID_5.setFont(font)
+        self.lineEdit_DeleteROOF_prodID_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_DeleteROOF_prodID.setObjectName("lineEdit_DeleteROOF_prodID")
-        self.label_306 = QtWidgets.QLabel(self.frame_deleteroof)
-        self.label_306.setGeometry(QtCore.QRect(230, 110, 311, 51))
+        self.lineEdit_DeleteROOF_prodID_5.setObjectName("lineEdit_DeleteROOF_prodID_5")
+        self.label_658 = QtWidgets.QLabel(self.frame_deleteroof_5)
+        self.label_658.setGeometry(QtCore.QRect(230, 110, 311, 51))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_306.setFont(font)
-        self.label_306.setStyleSheet("    background-color: transparent;\n"
+        self.label_658.setFont(font)
+        self.label_658.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_306.setObjectName("label_306")
-        self.lineEdit_33 = QtWidgets.QLineEdit(self.frame_deleteroof)
-        self.lineEdit_33.setGeometry(QtCore.QRect(1030, 460, 371, 51))
-        self.lineEdit_33.setStyleSheet("    background-color: #ffffff;\n"
+        self.label_658.setObjectName("label_658")
+        self.lineEdit_49 = QtWidgets.QLineEdit(self.frame_deleteroof_5)
+        self.lineEdit_49.setGeometry(QtCore.QRect(1030, 460, 371, 51))
+        self.lineEdit_49.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "font-family: \"Verdana\", sans-serif; \n"
 "text-align: center;")
-        self.lineEdit_33.setObjectName("lineEdit_33")
-        self.lineEdit_DeleteROOF_Name = QtWidgets.QLineEdit(self.frame_deleteroof)
-        self.lineEdit_DeleteROOF_Name.setGeometry(QtCore.QRect(530, 110, 641, 51))
+        self.lineEdit_49.setObjectName("lineEdit_49")
+        self.lineEdit_DeleteROOF_Name_5 = QtWidgets.QLineEdit(self.frame_deleteroof_5)
+        self.lineEdit_DeleteROOF_Name_5.setGeometry(QtCore.QRect(530, 110, 641, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_DeleteROOF_Name.setFont(font)
-        self.lineEdit_DeleteROOF_Name.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_DeleteROOF_Name_5.setFont(font)
+        self.lineEdit_DeleteROOF_Name_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_DeleteROOF_Name.setObjectName("lineEdit_DeleteROOF_Name")
-        self.label_307 = QtWidgets.QLabel(self.frame_deleteroof)
-        self.label_307.setGeometry(QtCore.QRect(0, 185, 1411, 211))
+        self.lineEdit_DeleteROOF_Name_5.setObjectName("lineEdit_DeleteROOF_Name_5")
+        self.label_659 = QtWidgets.QLabel(self.frame_deleteroof_5)
+        self.label_659.setGeometry(QtCore.QRect(0, 185, 1411, 211))
         font = QtGui.QFont()
         font.setFamily("Arial")
         font.setPointSize(29)
         font.setBold(True)
         font.setItalic(True)
         font.setWeight(75)
-        self.label_307.setFont(font)
-        self.label_307.setStyleSheet("    background-color: transparent;\n"
+        self.label_659.setFont(font)
+        self.label_659.setStyleSheet("    background-color: transparent;\n"
 "color: #d75413;\n"
 "")
-        self.label_307.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_307.setObjectName("label_307")
-        self.Delete_Select_Prod_Type.addWidget(self.DELETE_ROOF)
-        self.DELETE_SPANDREL = QtWidgets.QWidget()
-        self.DELETE_SPANDREL.setObjectName("DELETE_SPANDREL")
-        self.frame_52 = QtWidgets.QFrame(self.DELETE_SPANDREL)
-        self.frame_52.setGeometry(QtCore.QRect(-10, 419, 1331, 91))
-        self.frame_52.setStyleSheet("    background-color: transparent;\n"
+        self.label_659.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_659.setObjectName("label_659")
+        self.Delete_Select_Prod_Type_5.addWidget(self.DELETE_ROOF_5)
+        self.DELETE_SPANDREL_5 = QtWidgets.QWidget()
+        self.DELETE_SPANDREL_5.setObjectName("DELETE_SPANDREL_5")
+        self.frame_110 = QtWidgets.QFrame(self.DELETE_SPANDREL_5)
+        self.frame_110.setGeometry(QtCore.QRect(-10, 419, 1331, 91))
+        self.frame_110.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.frame_52.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_52.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_52.setObjectName("frame_52")
-        self.pushButton_Confirm_SPANDRELdelete = QtWidgets.QPushButton(self.frame_52)
-        self.pushButton_Confirm_SPANDRELdelete.setGeometry(QtCore.QRect(360, 20, 331, 51))
+        self.frame_110.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_110.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_110.setObjectName("frame_110")
+        self.pushButton_Confirm_SPANDRELdelete_5 = QtWidgets.QPushButton(self.frame_110)
+        self.pushButton_Confirm_SPANDRELdelete_5.setGeometry(QtCore.QRect(360, 20, 331, 51))
         font = QtGui.QFont()
         font.setFamily("Verdana")
         font.setPointSize(14)
-        self.pushButton_Confirm_SPANDRELdelete.setFont(font)
-        self.pushButton_Confirm_SPANDRELdelete.setStyleSheet("    background-color: #b2423c;\n"
+        self.pushButton_Confirm_SPANDRELdelete_5.setFont(font)
+        self.pushButton_Confirm_SPANDRELdelete_5.setStyleSheet("    background-color: #b2423c;\n"
 "    color: white;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "font-family: \"Verdana\", sans-serif; \n"
 "text-align: center;")
-        self.pushButton_Confirm_SPANDRELdelete.setObjectName("pushButton_Confirm_SPANDRELdelete")
-        self.pushButton_Close_SPANDRELdelete = QtWidgets.QPushButton(self.frame_52)
-        self.pushButton_Close_SPANDRELdelete.setGeometry(QtCore.QRect(740, 20, 281, 51))
+        self.pushButton_Confirm_SPANDRELdelete_5.setObjectName("pushButton_Confirm_SPANDRELdelete_5")
+        self.pushButton_Close_SPANDRELdelete_5 = QtWidgets.QPushButton(self.frame_110)
+        self.pushButton_Close_SPANDRELdelete_5.setGeometry(QtCore.QRect(740, 20, 281, 51))
         font = QtGui.QFont()
         font.setFamily("Verdana")
         font.setPointSize(14)
-        self.pushButton_Close_SPANDRELdelete.setFont(font)
-        self.pushButton_Close_SPANDRELdelete.setStyleSheet("\n"
+        self.pushButton_Close_SPANDRELdelete_5.setFont(font)
+        self.pushButton_Close_SPANDRELdelete_5.setStyleSheet("\n"
 "/* Default Inactive Button */\n"
 "QPushButton {\n"
 "    background-color: #ffffff;\n"
@@ -3635,115 +3627,115 @@ class Ui_OWNER_INVENTORY(object):
 "    color: white;\n"
 "}\n"
 "")
-        self.pushButton_Close_SPANDRELdelete.setObjectName("pushButton_Close_SPANDRELdelete")
-        self.frame_deletespandrel_3 = QtWidgets.QFrame(self.DELETE_SPANDREL)
-        self.frame_deletespandrel_3.setGeometry(QtCore.QRect(-10, 30, 1411, 381))
-        self.frame_deletespandrel_3.setStyleSheet("    background-color: transparent;\n"
+        self.pushButton_Close_SPANDRELdelete_5.setObjectName("pushButton_Close_SPANDRELdelete_5")
+        self.frame_deletespandrel_7 = QtWidgets.QFrame(self.DELETE_SPANDREL_5)
+        self.frame_deletespandrel_7.setGeometry(QtCore.QRect(-10, 30, 1411, 381))
+        self.frame_deletespandrel_7.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.frame_deletespandrel_3.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_deletespandrel_3.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_deletespandrel_3.setObjectName("frame_deletespandrel_3")
-        self.label_308 = QtWidgets.QLabel(self.frame_deletespandrel_3)
-        self.label_308.setGeometry(QtCore.QRect(230, 20, 321, 71))
+        self.frame_deletespandrel_7.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_deletespandrel_7.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_deletespandrel_7.setObjectName("frame_deletespandrel_7")
+        self.label_660 = QtWidgets.QLabel(self.frame_deletespandrel_7)
+        self.label_660.setGeometry(QtCore.QRect(230, 20, 321, 71))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_308.setFont(font)
-        self.label_308.setStyleSheet("    background-color: transparent;\n"
+        self.label_660.setFont(font)
+        self.label_660.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_308.setObjectName("label_308")
-        self.lineEdit_DeleteSPANDREL_prodID = QtWidgets.QLineEdit(self.frame_deletespandrel_3)
-        self.lineEdit_DeleteSPANDREL_prodID.setGeometry(QtCore.QRect(530, 30, 641, 51))
+        self.label_660.setObjectName("label_660")
+        self.lineEdit_DeleteSPANDREL_prodID_5 = QtWidgets.QLineEdit(self.frame_deletespandrel_7)
+        self.lineEdit_DeleteSPANDREL_prodID_5.setGeometry(QtCore.QRect(530, 30, 641, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_DeleteSPANDREL_prodID.setFont(font)
-        self.lineEdit_DeleteSPANDREL_prodID.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_DeleteSPANDREL_prodID_5.setFont(font)
+        self.lineEdit_DeleteSPANDREL_prodID_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_DeleteSPANDREL_prodID.setObjectName("lineEdit_DeleteSPANDREL_prodID")
-        self.label_309 = QtWidgets.QLabel(self.frame_deletespandrel_3)
-        self.label_309.setGeometry(QtCore.QRect(230, 110, 311, 51))
+        self.lineEdit_DeleteSPANDREL_prodID_5.setObjectName("lineEdit_DeleteSPANDREL_prodID_5")
+        self.label_661 = QtWidgets.QLabel(self.frame_deletespandrel_7)
+        self.label_661.setGeometry(QtCore.QRect(230, 110, 311, 51))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_309.setFont(font)
-        self.label_309.setStyleSheet("    background-color: transparent;\n"
+        self.label_661.setFont(font)
+        self.label_661.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_309.setObjectName("label_309")
-        self.lineEdit_34 = QtWidgets.QLineEdit(self.frame_deletespandrel_3)
-        self.lineEdit_34.setGeometry(QtCore.QRect(1030, 460, 371, 51))
-        self.lineEdit_34.setStyleSheet("    background-color: #ffffff;\n"
+        self.label_661.setObjectName("label_661")
+        self.lineEdit_50 = QtWidgets.QLineEdit(self.frame_deletespandrel_7)
+        self.lineEdit_50.setGeometry(QtCore.QRect(1030, 460, 371, 51))
+        self.lineEdit_50.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "font-family: \"Verdana\", sans-serif; \n"
 "text-align: center;")
-        self.lineEdit_34.setObjectName("lineEdit_34")
-        self.lineEdit_DeleteSPANDREL_Name = QtWidgets.QLineEdit(self.frame_deletespandrel_3)
-        self.lineEdit_DeleteSPANDREL_Name.setGeometry(QtCore.QRect(530, 110, 641, 51))
+        self.lineEdit_50.setObjectName("lineEdit_50")
+        self.lineEdit_DeleteSPANDREL_Name_5 = QtWidgets.QLineEdit(self.frame_deletespandrel_7)
+        self.lineEdit_DeleteSPANDREL_Name_5.setGeometry(QtCore.QRect(530, 110, 641, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_DeleteSPANDREL_Name.setFont(font)
-        self.lineEdit_DeleteSPANDREL_Name.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_DeleteSPANDREL_Name_5.setFont(font)
+        self.lineEdit_DeleteSPANDREL_Name_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_DeleteSPANDREL_Name.setObjectName("lineEdit_DeleteSPANDREL_Name")
-        self.label_310 = QtWidgets.QLabel(self.frame_deletespandrel_3)
-        self.label_310.setGeometry(QtCore.QRect(0, 185, 1411, 211))
+        self.lineEdit_DeleteSPANDREL_Name_5.setObjectName("lineEdit_DeleteSPANDREL_Name_5")
+        self.label_662 = QtWidgets.QLabel(self.frame_deletespandrel_7)
+        self.label_662.setGeometry(QtCore.QRect(0, 185, 1411, 211))
         font = QtGui.QFont()
         font.setFamily("Arial")
         font.setPointSize(29)
         font.setBold(True)
         font.setItalic(True)
         font.setWeight(75)
-        self.label_310.setFont(font)
-        self.label_310.setStyleSheet("    background-color: transparent;\n"
+        self.label_662.setFont(font)
+        self.label_662.setStyleSheet("    background-color: transparent;\n"
 "color: #d75413;\n"
 "")
-        self.label_310.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_310.setObjectName("label_310")
-        self.Delete_Select_Prod_Type.addWidget(self.DELETE_SPANDREL)
-        self.DELETE_GUTTER = QtWidgets.QWidget()
-        self.DELETE_GUTTER.setObjectName("DELETE_GUTTER")
-        self.frame_53 = QtWidgets.QFrame(self.DELETE_GUTTER)
-        self.frame_53.setGeometry(QtCore.QRect(-10, 419, 1331, 91))
-        self.frame_53.setStyleSheet("    background-color: transparent;\n"
+        self.label_662.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_662.setObjectName("label_662")
+        self.Delete_Select_Prod_Type_5.addWidget(self.DELETE_SPANDREL_5)
+        self.DELETE_GUTTER_5 = QtWidgets.QWidget()
+        self.DELETE_GUTTER_5.setObjectName("DELETE_GUTTER_5")
+        self.frame_111 = QtWidgets.QFrame(self.DELETE_GUTTER_5)
+        self.frame_111.setGeometry(QtCore.QRect(-10, 419, 1331, 91))
+        self.frame_111.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.frame_53.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_53.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_53.setObjectName("frame_53")
-        self.pushButton_Confirm_GUTTERdelete = QtWidgets.QPushButton(self.frame_53)
-        self.pushButton_Confirm_GUTTERdelete.setGeometry(QtCore.QRect(360, 20, 331, 51))
+        self.frame_111.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_111.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_111.setObjectName("frame_111")
+        self.pushButton_Confirm_GUTTERdelete_5 = QtWidgets.QPushButton(self.frame_111)
+        self.pushButton_Confirm_GUTTERdelete_5.setGeometry(QtCore.QRect(360, 20, 331, 51))
         font = QtGui.QFont()
         font.setFamily("Verdana")
         font.setPointSize(14)
-        self.pushButton_Confirm_GUTTERdelete.setFont(font)
-        self.pushButton_Confirm_GUTTERdelete.setStyleSheet("    background-color: #b2423c;\n"
+        self.pushButton_Confirm_GUTTERdelete_5.setFont(font)
+        self.pushButton_Confirm_GUTTERdelete_5.setStyleSheet("    background-color: #b2423c;\n"
 "    color: white;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "font-family: \"Verdana\", sans-serif; \n"
 "text-align: center;")
-        self.pushButton_Confirm_GUTTERdelete.setObjectName("pushButton_Confirm_GUTTERdelete")
-        self.pushButton_Close_GUTTERdelete = QtWidgets.QPushButton(self.frame_53)
-        self.pushButton_Close_GUTTERdelete.setGeometry(QtCore.QRect(740, 20, 281, 51))
+        self.pushButton_Confirm_GUTTERdelete_5.setObjectName("pushButton_Confirm_GUTTERdelete_5")
+        self.pushButton_Close_GUTTERdelete_5 = QtWidgets.QPushButton(self.frame_111)
+        self.pushButton_Close_GUTTERdelete_5.setGeometry(QtCore.QRect(740, 20, 281, 51))
         font = QtGui.QFont()
         font.setFamily("Verdana")
         font.setPointSize(14)
-        self.pushButton_Close_GUTTERdelete.setFont(font)
-        self.pushButton_Close_GUTTERdelete.setStyleSheet("\n"
+        self.pushButton_Close_GUTTERdelete_5.setFont(font)
+        self.pushButton_Close_GUTTERdelete_5.setStyleSheet("\n"
 "/* Default Inactive Button */\n"
 "QPushButton {\n"
 "    background-color: #ffffff;\n"
@@ -3767,192 +3759,192 @@ class Ui_OWNER_INVENTORY(object):
 "    color: white;\n"
 "}\n"
 "")
-        self.pushButton_Close_GUTTERdelete.setObjectName("pushButton_Close_GUTTERdelete")
-        self.frame_deletegutter_5 = QtWidgets.QFrame(self.DELETE_GUTTER)
-        self.frame_deletegutter_5.setGeometry(QtCore.QRect(-10, 30, 1411, 391))
-        self.frame_deletegutter_5.setStyleSheet("    background-color: transparent;\n"
+        self.pushButton_Close_GUTTERdelete_5.setObjectName("pushButton_Close_GUTTERdelete_5")
+        self.frame_deletegutter_13 = QtWidgets.QFrame(self.DELETE_GUTTER_5)
+        self.frame_deletegutter_13.setGeometry(QtCore.QRect(-10, 30, 1411, 391))
+        self.frame_deletegutter_13.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.frame_deletegutter_5.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_deletegutter_5.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_deletegutter_5.setObjectName("frame_deletegutter_5")
-        self.label_311 = QtWidgets.QLabel(self.frame_deletegutter_5)
-        self.label_311.setGeometry(QtCore.QRect(230, 20, 321, 71))
+        self.frame_deletegutter_13.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_deletegutter_13.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_deletegutter_13.setObjectName("frame_deletegutter_13")
+        self.label_663 = QtWidgets.QLabel(self.frame_deletegutter_13)
+        self.label_663.setGeometry(QtCore.QRect(230, 20, 321, 71))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_311.setFont(font)
-        self.label_311.setStyleSheet("    background-color: transparent;\n"
+        self.label_663.setFont(font)
+        self.label_663.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_311.setObjectName("label_311")
-        self.lineEdit_DeleteGUTTER_prodID = QtWidgets.QLineEdit(self.frame_deletegutter_5)
-        self.lineEdit_DeleteGUTTER_prodID.setGeometry(QtCore.QRect(530, 30, 641, 51))
+        self.label_663.setObjectName("label_663")
+        self.lineEdit_DeleteGUTTER_prodID_5 = QtWidgets.QLineEdit(self.frame_deletegutter_13)
+        self.lineEdit_DeleteGUTTER_prodID_5.setGeometry(QtCore.QRect(530, 30, 641, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_DeleteGUTTER_prodID.setFont(font)
-        self.lineEdit_DeleteGUTTER_prodID.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_DeleteGUTTER_prodID_5.setFont(font)
+        self.lineEdit_DeleteGUTTER_prodID_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_DeleteGUTTER_prodID.setObjectName("lineEdit_DeleteGUTTER_prodID")
-        self.label_312 = QtWidgets.QLabel(self.frame_deletegutter_5)
-        self.label_312.setGeometry(QtCore.QRect(230, 110, 311, 51))
+        self.lineEdit_DeleteGUTTER_prodID_5.setObjectName("lineEdit_DeleteGUTTER_prodID_5")
+        self.label_664 = QtWidgets.QLabel(self.frame_deletegutter_13)
+        self.label_664.setGeometry(QtCore.QRect(230, 110, 311, 51))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_312.setFont(font)
-        self.label_312.setStyleSheet("    background-color: transparent;\n"
+        self.label_664.setFont(font)
+        self.label_664.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_312.setObjectName("label_312")
-        self.lineEdit_35 = QtWidgets.QLineEdit(self.frame_deletegutter_5)
-        self.lineEdit_35.setGeometry(QtCore.QRect(1030, 460, 371, 51))
-        self.lineEdit_35.setStyleSheet("    background-color: #ffffff;\n"
+        self.label_664.setObjectName("label_664")
+        self.lineEdit_51 = QtWidgets.QLineEdit(self.frame_deletegutter_13)
+        self.lineEdit_51.setGeometry(QtCore.QRect(1030, 460, 371, 51))
+        self.lineEdit_51.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "font-family: \"Verdana\", sans-serif; \n"
 "text-align: center;")
-        self.lineEdit_35.setObjectName("lineEdit_35")
-        self.lineEdit_DeleteGUTTER_Name = QtWidgets.QLineEdit(self.frame_deletegutter_5)
-        self.lineEdit_DeleteGUTTER_Name.setGeometry(QtCore.QRect(530, 110, 641, 51))
+        self.lineEdit_51.setObjectName("lineEdit_51")
+        self.lineEdit_DeleteGUTTER_Name_5 = QtWidgets.QLineEdit(self.frame_deletegutter_13)
+        self.lineEdit_DeleteGUTTER_Name_5.setGeometry(QtCore.QRect(530, 110, 641, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_DeleteGUTTER_Name.setFont(font)
-        self.lineEdit_DeleteGUTTER_Name.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_DeleteGUTTER_Name_5.setFont(font)
+        self.lineEdit_DeleteGUTTER_Name_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_DeleteGUTTER_Name.setObjectName("lineEdit_DeleteGUTTER_Name")
-        self.label_313 = QtWidgets.QLabel(self.frame_deletegutter_5)
-        self.label_313.setGeometry(QtCore.QRect(0, 185, 1411, 211))
+        self.lineEdit_DeleteGUTTER_Name_5.setObjectName("lineEdit_DeleteGUTTER_Name_5")
+        self.label_665 = QtWidgets.QLabel(self.frame_deletegutter_13)
+        self.label_665.setGeometry(QtCore.QRect(0, 185, 1411, 211))
         font = QtGui.QFont()
         font.setFamily("Arial")
         font.setPointSize(29)
         font.setBold(True)
         font.setItalic(True)
         font.setWeight(75)
-        self.label_313.setFont(font)
-        self.label_313.setStyleSheet("    background-color: transparent;\n"
+        self.label_665.setFont(font)
+        self.label_665.setStyleSheet("    background-color: transparent;\n"
 "color: #d75413;\n"
 "")
-        self.label_313.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_313.setObjectName("label_313")
-        self.Delete_Select_Prod_Type.addWidget(self.DELETE_GUTTER)
-        self.DELETE_OTHER = QtWidgets.QWidget()
-        self.DELETE_OTHER.setObjectName("DELETE_OTHER")
-        self.frame_deletegutter_6 = QtWidgets.QFrame(self.DELETE_OTHER)
-        self.frame_deletegutter_6.setGeometry(QtCore.QRect(-10, 30, 1411, 391))
-        self.frame_deletegutter_6.setStyleSheet("    background-color: transparent;\n"
+        self.label_665.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_665.setObjectName("label_665")
+        self.Delete_Select_Prod_Type_5.addWidget(self.DELETE_GUTTER_5)
+        self.DELETE_OTHER_5 = QtWidgets.QWidget()
+        self.DELETE_OTHER_5.setObjectName("DELETE_OTHER_5")
+        self.frame_deletegutter_14 = QtWidgets.QFrame(self.DELETE_OTHER_5)
+        self.frame_deletegutter_14.setGeometry(QtCore.QRect(-10, 30, 1411, 391))
+        self.frame_deletegutter_14.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.frame_deletegutter_6.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_deletegutter_6.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_deletegutter_6.setObjectName("frame_deletegutter_6")
-        self.label_314 = QtWidgets.QLabel(self.frame_deletegutter_6)
-        self.label_314.setGeometry(QtCore.QRect(230, 20, 321, 71))
+        self.frame_deletegutter_14.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_deletegutter_14.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_deletegutter_14.setObjectName("frame_deletegutter_14")
+        self.label_666 = QtWidgets.QLabel(self.frame_deletegutter_14)
+        self.label_666.setGeometry(QtCore.QRect(230, 20, 321, 71))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_314.setFont(font)
-        self.label_314.setStyleSheet("    background-color: transparent;\n"
+        self.label_666.setFont(font)
+        self.label_666.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_314.setObjectName("label_314")
-        self.lineEdit_DeleteOTHER_prodID = QtWidgets.QLineEdit(self.frame_deletegutter_6)
-        self.lineEdit_DeleteOTHER_prodID.setGeometry(QtCore.QRect(530, 30, 641, 51))
+        self.label_666.setObjectName("label_666")
+        self.lineEdit_DeleteOTHER_prodID_5 = QtWidgets.QLineEdit(self.frame_deletegutter_14)
+        self.lineEdit_DeleteOTHER_prodID_5.setGeometry(QtCore.QRect(530, 30, 641, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_DeleteOTHER_prodID.setFont(font)
-        self.lineEdit_DeleteOTHER_prodID.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_DeleteOTHER_prodID_5.setFont(font)
+        self.lineEdit_DeleteOTHER_prodID_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_DeleteOTHER_prodID.setObjectName("lineEdit_DeleteOTHER_prodID")
-        self.label_315 = QtWidgets.QLabel(self.frame_deletegutter_6)
-        self.label_315.setGeometry(QtCore.QRect(230, 110, 311, 51))
+        self.lineEdit_DeleteOTHER_prodID_5.setObjectName("lineEdit_DeleteOTHER_prodID_5")
+        self.label_667 = QtWidgets.QLabel(self.frame_deletegutter_14)
+        self.label_667.setGeometry(QtCore.QRect(230, 110, 311, 51))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
         font.setBold(False)
         font.setWeight(50)
-        self.label_315.setFont(font)
-        self.label_315.setStyleSheet("    background-color: transparent;\n"
+        self.label_667.setFont(font)
+        self.label_667.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.label_315.setObjectName("label_315")
-        self.lineEdit_36 = QtWidgets.QLineEdit(self.frame_deletegutter_6)
-        self.lineEdit_36.setGeometry(QtCore.QRect(1030, 460, 371, 51))
-        self.lineEdit_36.setStyleSheet("    background-color: #ffffff;\n"
+        self.label_667.setObjectName("label_667")
+        self.lineEdit_52 = QtWidgets.QLineEdit(self.frame_deletegutter_14)
+        self.lineEdit_52.setGeometry(QtCore.QRect(1030, 460, 371, 51))
+        self.lineEdit_52.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "font-family: \"Verdana\", sans-serif; \n"
 "text-align: center;")
-        self.lineEdit_36.setObjectName("lineEdit_36")
-        self.lineEdit_DeleteOTHER_Name = QtWidgets.QLineEdit(self.frame_deletegutter_6)
-        self.lineEdit_DeleteOTHER_Name.setGeometry(QtCore.QRect(530, 110, 641, 51))
+        self.lineEdit_52.setObjectName("lineEdit_52")
+        self.lineEdit_DeleteOTHER_Name_5 = QtWidgets.QLineEdit(self.frame_deletegutter_14)
+        self.lineEdit_DeleteOTHER_Name_5.setGeometry(QtCore.QRect(530, 110, 641, 51))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.lineEdit_DeleteOTHER_Name.setFont(font)
-        self.lineEdit_DeleteOTHER_Name.setStyleSheet("    background-color: #ffffff;\n"
+        self.lineEdit_DeleteOTHER_Name_5.setFont(font)
+        self.lineEdit_DeleteOTHER_Name_5.setStyleSheet("    background-color: #ffffff;\n"
 "    color: black;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "")
-        self.lineEdit_DeleteOTHER_Name.setObjectName("lineEdit_DeleteOTHER_Name")
-        self.label_316 = QtWidgets.QLabel(self.frame_deletegutter_6)
-        self.label_316.setGeometry(QtCore.QRect(0, 185, 1411, 211))
+        self.lineEdit_DeleteOTHER_Name_5.setObjectName("lineEdit_DeleteOTHER_Name_5")
+        self.label_668 = QtWidgets.QLabel(self.frame_deletegutter_14)
+        self.label_668.setGeometry(QtCore.QRect(0, 185, 1411, 211))
         font = QtGui.QFont()
         font.setFamily("Arial")
         font.setPointSize(29)
         font.setBold(True)
         font.setItalic(True)
         font.setWeight(75)
-        self.label_316.setFont(font)
-        self.label_316.setStyleSheet("    background-color: transparent;\n"
+        self.label_668.setFont(font)
+        self.label_668.setStyleSheet("    background-color: transparent;\n"
 "color: #d75413;\n"
 "")
-        self.label_316.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_316.setObjectName("label_316")
-        self.frame_54 = QtWidgets.QFrame(self.DELETE_OTHER)
-        self.frame_54.setGeometry(QtCore.QRect(-10, 420, 1331, 91))
-        self.frame_54.setStyleSheet("    background-color: transparent;\n"
+        self.label_668.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_668.setObjectName("label_668")
+        self.frame_112 = QtWidgets.QFrame(self.DELETE_OTHER_5)
+        self.frame_112.setGeometry(QtCore.QRect(-10, 420, 1331, 91))
+        self.frame_112.setStyleSheet("    background-color: transparent;\n"
 "")
-        self.frame_54.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_54.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_54.setObjectName("frame_54")
-        self.pushButton_Confirm_OTHERdelete = QtWidgets.QPushButton(self.frame_54)
-        self.pushButton_Confirm_OTHERdelete.setGeometry(QtCore.QRect(360, 20, 331, 51))
+        self.frame_112.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_112.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_112.setObjectName("frame_112")
+        self.pushButton_Confirm_OTHERdelete_5 = QtWidgets.QPushButton(self.frame_112)
+        self.pushButton_Confirm_OTHERdelete_5.setGeometry(QtCore.QRect(360, 20, 331, 51))
         font = QtGui.QFont()
         font.setFamily("Verdana")
         font.setPointSize(14)
-        self.pushButton_Confirm_OTHERdelete.setFont(font)
-        self.pushButton_Confirm_OTHERdelete.setStyleSheet("    background-color: #b2423c;\n"
+        self.pushButton_Confirm_OTHERdelete_5.setFont(font)
+        self.pushButton_Confirm_OTHERdelete_5.setStyleSheet("    background-color: #b2423c;\n"
 "    color: white;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "    padding: 9px;\n"
 "font-family: \"Verdana\", sans-serif; \n"
 "text-align: center;")
-        self.pushButton_Confirm_OTHERdelete.setObjectName("pushButton_Confirm_OTHERdelete")
-        self.pushButton_Close_OTHERdelete = QtWidgets.QPushButton(self.frame_54)
-        self.pushButton_Close_OTHERdelete.setGeometry(QtCore.QRect(740, 20, 281, 51))
+        self.pushButton_Confirm_OTHERdelete_5.setObjectName("pushButton_Confirm_OTHERdelete_5")
+        self.pushButton_Close_OTHERdelete_5 = QtWidgets.QPushButton(self.frame_112)
+        self.pushButton_Close_OTHERdelete_5.setGeometry(QtCore.QRect(740, 20, 281, 51))
         font = QtGui.QFont()
         font.setFamily("Verdana")
         font.setPointSize(14)
-        self.pushButton_Close_OTHERdelete.setFont(font)
-        self.pushButton_Close_OTHERdelete.setStyleSheet("\n"
+        self.pushButton_Close_OTHERdelete_5.setFont(font)
+        self.pushButton_Close_OTHERdelete_5.setStyleSheet("\n"
 "/* Default Inactive Button */\n"
 "QPushButton {\n"
 "    background-color: #ffffff;\n"
@@ -3976,58 +3968,45 @@ class Ui_OWNER_INVENTORY(object):
 "    color: white;\n"
 "}\n"
 "")
-        self.pushButton_Close_OTHERdelete.setObjectName("pushButton_Close_OTHERdelete")
-        self.Delete_Select_Prod_Type.addWidget(self.DELETE_OTHER)
-        self.comboBox_Select_Prod_Type_toDelete = QtWidgets.QComboBox(self.frame_41)
-        self.comboBox_Select_Prod_Type_toDelete.setGeometry(QtCore.QRect(1220, 50, 251, 51))
+        self.pushButton_Close_OTHERdelete_5.setObjectName("pushButton_Close_OTHERdelete_5")
+        self.Delete_Select_Prod_Type_5.addWidget(self.DELETE_OTHER_5)
+        self.comboBox_Select_Prod_Type_toDelete_5 = QtWidgets.QComboBox(self.frame_108)
+        self.comboBox_Select_Prod_Type_toDelete_5.setGeometry(QtCore.QRect(1220, 50, 251, 51))
         font = QtGui.QFont()
         font.setPointSize(14)
-        self.comboBox_Select_Prod_Type_toDelete.setFont(font)
-        self.comboBox_Select_Prod_Type_toDelete.setLayoutDirection(QtCore.Qt.LeftToRight)
-        self.comboBox_Select_Prod_Type_toDelete.setStyleSheet("    background-color: #ebe0cc;\n"
+        self.comboBox_Select_Prod_Type_toDelete_5.setFont(font)
+        self.comboBox_Select_Prod_Type_toDelete_5.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.comboBox_Select_Prod_Type_toDelete_5.setStyleSheet("    background-color: #ebe0cc;\n"
 "    border-radius: 15px;\n"
 "border: 1px solid #000000; \n"
 "text-align: center;")
-        self.comboBox_Select_Prod_Type_toDelete.setObjectName("comboBox_Select_Prod_Type_toDelete")
-        self.comboBox_Select_Prod_Type_toDelete.addItem("")
-        self.comboBox_Select_Prod_Type_toDelete.addItem("")
-        self.comboBox_Select_Prod_Type_toDelete.addItem("")
-        self.comboBox_Select_Prod_Type_toDelete.addItem("")
-        self.comboBox_Select_Prod_Type_toDelete.addItem("")
-        self.label_317 = QtWidgets.QLabel(self.frame_41)
-        self.label_317.setGeometry(QtCore.QRect(360, 80, 881, 81))
-        self.label_317.setStyleSheet("background: transparent;")
-        self.label_317.setText("")
-        self.label_317.setPixmap(QtGui.QPixmap(":/JJimages/straightline.png"))
-        self.label_317.setScaledContents(True)
-        self.label_317.setObjectName("label_317")
-        self.INVENTORY_afterBUTTONSclick.addWidget(self.page_INV_DELETE_STOCK)
-        OWNER_INVENTORY.setCentralWidget(self.Owner_centralwidget)
-        self.statusbar = QtWidgets.QStatusBar(OWNER_INVENTORY)
-        self.statusbar.setObjectName("statusbar")
-        OWNER_INVENTORY.setStatusBar(self.statusbar)
+        self.comboBox_Select_Prod_Type_toDelete_5.setObjectName("comboBox_Select_Prod_Type_toDelete_5")
+        self.comboBox_Select_Prod_Type_toDelete_5.addItem("")
+        self.comboBox_Select_Prod_Type_toDelete_5.addItem("")
+        self.comboBox_Select_Prod_Type_toDelete_5.addItem("")
+        self.comboBox_Select_Prod_Type_toDelete_5.addItem("")
+        self.comboBox_Select_Prod_Type_toDelete_5.addItem("")
+        self.label_669 = QtWidgets.QLabel(self.frame_108)
+        self.label_669.setGeometry(QtCore.QRect(360, 80, 881, 81))
+        self.label_669.setStyleSheet("background: transparent;")
+        self.label_669.setText("")
+        self.label_669.setPixmap(QtGui.QPixmap(":/JJimages/straightline.png"))
+        self.label_669.setScaledContents(True)
+        self.label_669.setObjectName("label_669")
+        self.INVENTORY_afterBUTTONSclick.addWidget(self.page_INV_DELETE_STOCK_5)
 
         self.retranslateUi(OWNER_INVENTORY)
-        self.INVENTORY_afterBUTTONSclick.setCurrentIndex(7)
-        self.Add_Select_Prod_Type.setCurrentIndex(4)
-        self.Edit_Select_Prod_Type.setCurrentIndex(4)
-        self.Delete_Select_Prod_Type.setCurrentIndex(3)
+        self.INVENTORY_afterBUTTONSclick.setCurrentIndex(5)
+        self.Add_Select_Prod_Type_5.setCurrentIndex(4)
+        self.Edit_Select_Prod_Type_5.setCurrentIndex(4)
+        self.Delete_Select_Prod_Type_5.setCurrentIndex(3)
         QtCore.QMetaObject.connectSlotsByName(OWNER_INVENTORY)
 
     def retranslateUi(self, OWNER_INVENTORY):
         _translate = QtCore.QCoreApplication.translate
-        OWNER_INVENTORY.setWindowTitle(_translate("OWNER_INVENTORY", "Inventory and Sales Management System"))
-        self.JJelevate_text.setText(_translate("OWNER_INVENTORY", "J & J ELEVATE"))
-        self.pushButton_Dashboard.setText(_translate("OWNER_INVENTORY", " Dashboard   "))
-        self.pushButton_Inventory.setText(_translate("OWNER_INVENTORY", "Inventory"))
-        self.pushButton_Orders.setText(_translate("OWNER_INVENTORY", " Orders"))
-        self.pushButton_Sales.setText(_translate("OWNER_INVENTORY", "  Sales"))
-        self.pushButton_Account.setText(_translate("OWNER_INVENTORY", " Account     "))
-        self.pushButton_LogOut.setText(_translate("OWNER_INVENTORY", "Log out"))
-        self.pushButton_Stock_History.setText(_translate("OWNER_INVENTORY", "Stock History"))
+        OWNER_INVENTORY.setWindowTitle(_translate("OWNER_INVENTORY", "Form"))
         self.lineEdit_OWNER_QuickSearch_Inventory.setPlaceholderText(_translate("OWNER_INVENTORY", "      Quick Search"))
         self.pushButton_SEARCHitems.setText(_translate("OWNER_INVENTORY", "SEARCH"))
-        self.pushButton_ViewHistory.setText(_translate("OWNER_INVENTORY", "VIEW HISTORY"))
         self.textBrowser_inv_ROOF_lowstk_warning.setHtml(_translate("OWNER_INVENTORY", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -4041,335 +4020,343 @@ class Ui_OWNER_INVENTORY(object):
         self.pushButton_OWNER_Add_Inventory.setText(_translate("OWNER_INVENTORY", "ADD"))
         self.pushButton_OWNER_Edit_Inventory.setText(_translate("OWNER_INVENTORY", "EDIT"))
         self.pushButton_OWNER_Delete_Inventory.setText(_translate("OWNER_INVENTORY", "DELETE"))
-        item = self.tableWidget_ALL_ITEMS.horizontalHeaderItem(0)
+        self.JJelevate_text_5.setText(_translate("OWNER_INVENTORY", "J & J ELEVATE"))
+        self.pushButton_Dashboard.setText(_translate("OWNER_INVENTORY", " Dashboard   "))
+        self.pushButton_Inventory.setText(_translate("OWNER_INVENTORY", "Inventory"))
+        self.pushButton_Orders.setText(_translate("OWNER_INVENTORY", " Orders"))
+        self.pushButton_Sales.setText(_translate("OWNER_INVENTORY", "  Sales"))
+        self.pushButton_Account.setText(_translate("OWNER_INVENTORY", " Account     "))
+        self.pushButton_LogOut.setText(_translate("OWNER_INVENTORY", "Log out"))
+        self.pushButton_Stock_History.setText(_translate("OWNER_INVENTORY", "Stock History"))
+        self.pushButton_ViewHistory.setText(_translate("OWNER_INVENTORY", "VIEW HISTORY"))
+        item = self.tableWidget_ALL_ITEMS_5.horizontalHeaderItem(0)
         item.setText(_translate("OWNER_INVENTORY", "PRODUCT ID"))
-        item = self.tableWidget_ALL_ITEMS.horizontalHeaderItem(1)
+        item = self.tableWidget_ALL_ITEMS_5.horizontalHeaderItem(1)
         item.setText(_translate("OWNER_INVENTORY", "PRODUCT TYPE"))
-        item = self.tableWidget_ALL_ITEMS.horizontalHeaderItem(2)
+        item = self.tableWidget_ALL_ITEMS_5.horizontalHeaderItem(2)
         item.setText(_translate("OWNER_INVENTORY", "NAME"))
-        item = self.tableWidget_ALL_ITEMS.horizontalHeaderItem(3)
+        item = self.tableWidget_ALL_ITEMS_5.horizontalHeaderItem(3)
         item.setText(_translate("OWNER_INVENTORY", "PRICE"))
-        item = self.tableWidget_ALL_ITEMS.horizontalHeaderItem(4)
+        item = self.tableWidget_ALL_ITEMS_5.horizontalHeaderItem(4)
         item.setText(_translate("OWNER_INVENTORY", "STOCK QTY."))
-        item = self.tableWidget_ALL_ITEMS.horizontalHeaderItem(5)
+        item = self.tableWidget_ALL_ITEMS_5.horizontalHeaderItem(5)
         item.setText(_translate("OWNER_INVENTORY", "UPDATED AT"))
-        item = self.tableWidget_ALL_ITEMS.horizontalHeaderItem(6)
+        item = self.tableWidget_ALL_ITEMS_5.horizontalHeaderItem(6)
         item.setText(_translate("OWNER_INVENTORY", "COLOR"))
-        item = self.tableWidget_ALL_ITEMS.horizontalHeaderItem(7)
+        item = self.tableWidget_ALL_ITEMS_5.horizontalHeaderItem(7)
         item.setText(_translate("OWNER_INVENTORY", "LENGTH "))
-        item = self.tableWidget_ALL_ITEMS.horizontalHeaderItem(8)
+        item = self.tableWidget_ALL_ITEMS_5.horizontalHeaderItem(8)
         item.setText(_translate("OWNER_INVENTORY", "THICKNESS"))
-        item = self.tableWidget_ALL_ITEMS.horizontalHeaderItem(9)
+        item = self.tableWidget_ALL_ITEMS_5.horizontalHeaderItem(9)
         item.setText(_translate("OWNER_INVENTORY", "WIDTH"))
-        item = self.tableWidget_ALL_ITEMS.horizontalHeaderItem(10)
+        item = self.tableWidget_ALL_ITEMS_5.horizontalHeaderItem(10)
         item.setText(_translate("OWNER_INVENTORY", "OTHER SPECIFICATIONS"))
-        item = self.tableWidget_ROOF.horizontalHeaderItem(0)
+        item = self.tableWidget_ROOF_5.horizontalHeaderItem(0)
         item.setText(_translate("OWNER_INVENTORY", "PRODUCT ID"))
-        item = self.tableWidget_ROOF.horizontalHeaderItem(1)
+        item = self.tableWidget_ROOF_5.horizontalHeaderItem(1)
         item.setText(_translate("OWNER_INVENTORY", "PRODUCT TYPE"))
-        item = self.tableWidget_ROOF.horizontalHeaderItem(2)
+        item = self.tableWidget_ROOF_5.horizontalHeaderItem(2)
         item.setText(_translate("OWNER_INVENTORY", "NAME"))
-        item = self.tableWidget_ROOF.horizontalHeaderItem(3)
+        item = self.tableWidget_ROOF_5.horizontalHeaderItem(3)
         item.setText(_translate("OWNER_INVENTORY", "PRICE"))
-        item = self.tableWidget_ROOF.horizontalHeaderItem(4)
+        item = self.tableWidget_ROOF_5.horizontalHeaderItem(4)
         item.setText(_translate("OWNER_INVENTORY", "STOCK QTY."))
-        item = self.tableWidget_ROOF.horizontalHeaderItem(5)
+        item = self.tableWidget_ROOF_5.horizontalHeaderItem(5)
         item.setText(_translate("OWNER_INVENTORY", "UPDATED AT"))
-        item = self.tableWidget_ROOF.horizontalHeaderItem(6)
+        item = self.tableWidget_ROOF_5.horizontalHeaderItem(6)
         item.setText(_translate("OWNER_INVENTORY", "COLOR"))
-        item = self.tableWidget_ROOF.horizontalHeaderItem(7)
+        item = self.tableWidget_ROOF_5.horizontalHeaderItem(7)
         item.setText(_translate("OWNER_INVENTORY", "LENGTH "))
-        item = self.tableWidget_ROOF.horizontalHeaderItem(8)
+        item = self.tableWidget_ROOF_5.horizontalHeaderItem(8)
         item.setText(_translate("OWNER_INVENTORY", "THICKNESS"))
-        item = self.tableWidget_ROOF.horizontalHeaderItem(9)
+        item = self.tableWidget_ROOF_5.horizontalHeaderItem(9)
         item.setText(_translate("OWNER_INVENTORY", "WIDTH"))
-        item = self.tableWidget_ROOF.horizontalHeaderItem(10)
+        item = self.tableWidget_ROOF_5.horizontalHeaderItem(10)
         item.setText(_translate("OWNER_INVENTORY", "OTHER SPECIFICATIONS"))
-        item = self.tableWidget_SPANDREL.horizontalHeaderItem(0)
+        item = self.tableWidget_SPANDREL_5.horizontalHeaderItem(0)
         item.setText(_translate("OWNER_INVENTORY", "PRODUCT ID"))
-        item = self.tableWidget_SPANDREL.horizontalHeaderItem(1)
+        item = self.tableWidget_SPANDREL_5.horizontalHeaderItem(1)
         item.setText(_translate("OWNER_INVENTORY", "PRODUCT TYPE"))
-        item = self.tableWidget_SPANDREL.horizontalHeaderItem(2)
+        item = self.tableWidget_SPANDREL_5.horizontalHeaderItem(2)
         item.setText(_translate("OWNER_INVENTORY", "NAME"))
-        item = self.tableWidget_SPANDREL.horizontalHeaderItem(3)
+        item = self.tableWidget_SPANDREL_5.horizontalHeaderItem(3)
         item.setText(_translate("OWNER_INVENTORY", "PRICE"))
-        item = self.tableWidget_SPANDREL.horizontalHeaderItem(4)
+        item = self.tableWidget_SPANDREL_5.horizontalHeaderItem(4)
         item.setText(_translate("OWNER_INVENTORY", "STOCK QTY."))
-        item = self.tableWidget_SPANDREL.horizontalHeaderItem(5)
+        item = self.tableWidget_SPANDREL_5.horizontalHeaderItem(5)
         item.setText(_translate("OWNER_INVENTORY", "UPDATED AT"))
-        item = self.tableWidget_SPANDREL.horizontalHeaderItem(6)
+        item = self.tableWidget_SPANDREL_5.horizontalHeaderItem(6)
         item.setText(_translate("OWNER_INVENTORY", "COLOR"))
-        item = self.tableWidget_SPANDREL.horizontalHeaderItem(7)
+        item = self.tableWidget_SPANDREL_5.horizontalHeaderItem(7)
         item.setText(_translate("OWNER_INVENTORY", "LENGTH "))
-        item = self.tableWidget_SPANDREL.horizontalHeaderItem(8)
+        item = self.tableWidget_SPANDREL_5.horizontalHeaderItem(8)
         item.setText(_translate("OWNER_INVENTORY", "THICKNESS"))
-        item = self.tableWidget_SPANDREL.horizontalHeaderItem(9)
+        item = self.tableWidget_SPANDREL_5.horizontalHeaderItem(9)
         item.setText(_translate("OWNER_INVENTORY", "WIDTH"))
-        item = self.tableWidget_SPANDREL.horizontalHeaderItem(10)
+        item = self.tableWidget_SPANDREL_5.horizontalHeaderItem(10)
         item.setText(_translate("OWNER_INVENTORY", "OTHER SPECIFICATIONS"))
-        item = self.tableWidget_GUTTER.horizontalHeaderItem(0)
+        item = self.tableWidget_GUTTER_5.horizontalHeaderItem(0)
         item.setText(_translate("OWNER_INVENTORY", "PRODUCT ID"))
-        item = self.tableWidget_GUTTER.horizontalHeaderItem(1)
+        item = self.tableWidget_GUTTER_5.horizontalHeaderItem(1)
         item.setText(_translate("OWNER_INVENTORY", "PRODUCT TYPE"))
-        item = self.tableWidget_GUTTER.horizontalHeaderItem(2)
+        item = self.tableWidget_GUTTER_5.horizontalHeaderItem(2)
         item.setText(_translate("OWNER_INVENTORY", "NAME"))
-        item = self.tableWidget_GUTTER.horizontalHeaderItem(3)
+        item = self.tableWidget_GUTTER_5.horizontalHeaderItem(3)
         item.setText(_translate("OWNER_INVENTORY", "PRICE"))
-        item = self.tableWidget_GUTTER.horizontalHeaderItem(4)
+        item = self.tableWidget_GUTTER_5.horizontalHeaderItem(4)
         item.setText(_translate("OWNER_INVENTORY", "STOCK QTY."))
-        item = self.tableWidget_GUTTER.horizontalHeaderItem(5)
+        item = self.tableWidget_GUTTER_5.horizontalHeaderItem(5)
         item.setText(_translate("OWNER_INVENTORY", "UPDATED AT"))
-        item = self.tableWidget_GUTTER.horizontalHeaderItem(6)
+        item = self.tableWidget_GUTTER_5.horizontalHeaderItem(6)
         item.setText(_translate("OWNER_INVENTORY", "COLOR"))
-        item = self.tableWidget_GUTTER.horizontalHeaderItem(7)
+        item = self.tableWidget_GUTTER_5.horizontalHeaderItem(7)
         item.setText(_translate("OWNER_INVENTORY", "LENGTH "))
-        item = self.tableWidget_GUTTER.horizontalHeaderItem(8)
+        item = self.tableWidget_GUTTER_5.horizontalHeaderItem(8)
         item.setText(_translate("OWNER_INVENTORY", "THICKNESS"))
-        item = self.tableWidget_GUTTER.horizontalHeaderItem(9)
+        item = self.tableWidget_GUTTER_5.horizontalHeaderItem(9)
         item.setText(_translate("OWNER_INVENTORY", "WIDTH"))
-        item = self.tableWidget_GUTTER.horizontalHeaderItem(10)
+        item = self.tableWidget_GUTTER_5.horizontalHeaderItem(10)
         item.setText(_translate("OWNER_INVENTORY", "OTHER SPECIFICATIONS"))
-        item = self.tableWidget_OTHER.horizontalHeaderItem(0)
+        item = self.tableWidget_OTHER_5.horizontalHeaderItem(0)
         item.setText(_translate("OWNER_INVENTORY", "PRODUCT ID"))
-        item = self.tableWidget_OTHER.horizontalHeaderItem(1)
+        item = self.tableWidget_OTHER_5.horizontalHeaderItem(1)
         item.setText(_translate("OWNER_INVENTORY", "PRODUCT TYPE"))
-        item = self.tableWidget_OTHER.horizontalHeaderItem(2)
+        item = self.tableWidget_OTHER_5.horizontalHeaderItem(2)
         item.setText(_translate("OWNER_INVENTORY", "NAME"))
-        item = self.tableWidget_OTHER.horizontalHeaderItem(3)
+        item = self.tableWidget_OTHER_5.horizontalHeaderItem(3)
         item.setText(_translate("OWNER_INVENTORY", "PRICE"))
-        item = self.tableWidget_OTHER.horizontalHeaderItem(4)
+        item = self.tableWidget_OTHER_5.horizontalHeaderItem(4)
         item.setText(_translate("OWNER_INVENTORY", "STOCK QTY."))
-        item = self.tableWidget_OTHER.horizontalHeaderItem(5)
+        item = self.tableWidget_OTHER_5.horizontalHeaderItem(5)
         item.setText(_translate("OWNER_INVENTORY", "UPDATED AT"))
-        item = self.tableWidget_OTHER.horizontalHeaderItem(6)
+        item = self.tableWidget_OTHER_5.horizontalHeaderItem(6)
         item.setText(_translate("OWNER_INVENTORY", "COLOR"))
-        item = self.tableWidget_OTHER.horizontalHeaderItem(7)
+        item = self.tableWidget_OTHER_5.horizontalHeaderItem(7)
         item.setText(_translate("OWNER_INVENTORY", "LENGTH "))
-        item = self.tableWidget_OTHER.horizontalHeaderItem(8)
+        item = self.tableWidget_OTHER_5.horizontalHeaderItem(8)
         item.setText(_translate("OWNER_INVENTORY", "THICKNESS"))
-        item = self.tableWidget_OTHER.horizontalHeaderItem(9)
+        item = self.tableWidget_OTHER_5.horizontalHeaderItem(9)
         item.setText(_translate("OWNER_INVENTORY", "WIDTH"))
-        item = self.tableWidget_OTHER.horizontalHeaderItem(10)
+        item = self.tableWidget_OTHER_5.horizontalHeaderItem(10)
         item.setText(_translate("OWNER_INVENTORY", "OTHER SPECIFICATIONS"))
-        self.addStocklabel.setText(_translate("OWNER_INVENTORY", "ADD STOCK"))
-        self.label_72.setText(_translate("OWNER_INVENTORY", "SELECT A PRODUCT TYPE TO ADD FIRST"))
-        self.pushButton_Confirm_ROOFadd.setText(_translate("OWNER_INVENTORY", "CONFIRM"))
-        self.pushButton_Close_ROOFadd.setText(_translate("OWNER_INVENTORY", "CLOSE"))
-        self.label_73.setText(_translate("OWNER_INVENTORY", "PRODUCT ID            :"))
-        self.label_74.setText(_translate("OWNER_INVENTORY", "PRICE           :"))
-        self.label_75.setText(_translate("OWNER_INVENTORY", "NAME            :"))
-        self.lineEdit_AddROOF_prodID.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.lineEdit_AddROOF_Width.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_230.setText(_translate("OWNER_INVENTORY", "STK. QTY.                    :"))
-        self.lineEdit_AddROOF_Qty.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_231.setText(_translate("OWNER_INVENTORY", "WIDTH                         :"))
-        self.label_76.setText(_translate("OWNER_INVENTORY", "COLOR                        :"))
-        self.lineEdit_AddROOF_Color.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_81.setText(_translate("OWNER_INVENTORY", "LENGTH                       :"))
-        self.lineEdit_AddROOF_Length.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_82.setText(_translate("OWNER_INVENTORY", "OTHER          :"))
-        self.lineEdit_AddROOF_Price.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.lineEdit_AddROOF_OtherSpecifications.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_232.setText(_translate("OWNER_INVENTORY", "THICKNESS (MM)     :"))
-        self.lineEdit_AddROOF_Thickness.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_83.setText(_translate("OWNER_INVENTORY", "SPECIFICATIONS"))
-        self.lineEdit_AddROOF_Name.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.pushButton_Confirm_SPANDRELadd.setText(_translate("OWNER_INVENTORY", "CONFIRM"))
-        self.pushButton_Close_SPANDRELadd.setText(_translate("OWNER_INVENTORY", "CLOSE"))
-        self.label_84.setText(_translate("OWNER_INVENTORY", "PRODUCT ID            :"))
-        self.label_85.setText(_translate("OWNER_INVENTORY", "PRICE           :"))
-        self.label_86.setText(_translate("OWNER_INVENTORY", "NAME            :"))
-        self.lineEdit_AddSPANDREL_prodID.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.lineEdit_AddSPANDREL_Width.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_233.setText(_translate("OWNER_INVENTORY", "STK. QTY.                    :"))
-        self.lineEdit_AddSPANDREL_Qty.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_234.setText(_translate("OWNER_INVENTORY", "WIDTH                         :"))
-        self.label_87.setText(_translate("OWNER_INVENTORY", "COLOR                        :"))
-        self.lineEdit_AddSPANDREL_Color.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_235.setText(_translate("OWNER_INVENTORY", "LENGTH                       :"))
-        self.lineEdit_AddSPANDREL_Length.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_236.setText(_translate("OWNER_INVENTORY", "OTHER          :"))
-        self.lineEdit_AddSPANDREL_Price.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.lineEdit_AddSPANDREL_OtherSpecifications.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_237.setText(_translate("OWNER_INVENTORY", "THICKNESS (MM)     :"))
-        self.lineEdit_AddSPANDREL_Thickness.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_238.setText(_translate("OWNER_INVENTORY", "SPECIFICATIONS"))
-        self.lineEdit_AddSPANDREL_Name.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.pushButton_Confirm_GUTTERadd.setText(_translate("OWNER_INVENTORY", "CONFIRM"))
-        self.pushButton_Close_GUTTERadd.setText(_translate("OWNER_INVENTORY", "CLOSE"))
-        self.label_239.setText(_translate("OWNER_INVENTORY", "PRODUCT ID            :"))
-        self.label_240.setText(_translate("OWNER_INVENTORY", "PRICE           :"))
-        self.label_241.setText(_translate("OWNER_INVENTORY", "NAME            :"))
-        self.lineEdit_AddGUTTER_prodID.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.lineEdit_AddGUTTER_Width.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_242.setText(_translate("OWNER_INVENTORY", "STK. QTY.                    :"))
-        self.lineEdit_AddGUTTER_Qty.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_243.setText(_translate("OWNER_INVENTORY", "WIDTH                         :"))
-        self.label_244.setText(_translate("OWNER_INVENTORY", "COLOR                        :"))
-        self.lineEdit_AddGUTTER_Color.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_245.setText(_translate("OWNER_INVENTORY", "LENGTH                       :"))
-        self.lineEdit_AddGUTTER_Length.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_246.setText(_translate("OWNER_INVENTORY", "OTHER          :"))
-        self.lineEdit_AddGUTTER_Price.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.lineEdit_AddGUTTER_OtherSpecifications.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_247.setText(_translate("OWNER_INVENTORY", "THICKNESS (MM)     :"))
-        self.lineEdit_AddGUTTER_Thickness.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_248.setText(_translate("OWNER_INVENTORY", "SPECIFICATIONS"))
-        self.lineEdit_AddGUTTER_Name.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.pushButton_Confirm_OTHERadd.setText(_translate("OWNER_INVENTORY", "CONFIRM"))
-        self.pushButton_Close_OTHERadd.setText(_translate("OWNER_INVENTORY", "CLOSE"))
-        self.label_249.setText(_translate("OWNER_INVENTORY", "PRODUCT ID            :"))
-        self.label_250.setText(_translate("OWNER_INVENTORY", "PRICE           :"))
-        self.label_251.setText(_translate("OWNER_INVENTORY", "NAME            :"))
-        self.lineEdit_AddOTHER_prodID.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.lineEdit_AddOTHER_Width.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_252.setText(_translate("OWNER_INVENTORY", "STK. QTY.                    :"))
-        self.lineEdit_AddOTHER_Qty.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_253.setText(_translate("OWNER_INVENTORY", "WIDTH                         :"))
-        self.label_254.setText(_translate("OWNER_INVENTORY", "COLOR                        :"))
-        self.lineEdit_AddOTHER_Color.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_255.setText(_translate("OWNER_INVENTORY", "LENGTH                       :"))
-        self.lineEdit_AddOTHER_Length.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_256.setText(_translate("OWNER_INVENTORY", "OTHER          :"))
-        self.lineEdit_AddOTHER_Price.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.lineEdit_AddOTHER_OtherSpecifications.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_257.setText(_translate("OWNER_INVENTORY", "THICKNESS (MM)     :"))
-        self.lineEdit_AddOTHER_Thickness.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_258.setText(_translate("OWNER_INVENTORY", "SPECIFICATIONS"))
-        self.lineEdit_AddOTHER_Name.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.comboBox_Select_Prod_Type_toAdd.setItemText(0, _translate("OWNER_INVENTORY", "Select Product Type"))
-        self.comboBox_Select_Prod_Type_toAdd.setItemText(1, _translate("OWNER_INVENTORY", "ROOF"))
-        self.comboBox_Select_Prod_Type_toAdd.setItemText(2, _translate("OWNER_INVENTORY", "SPANDREL"))
-        self.comboBox_Select_Prod_Type_toAdd.setItemText(3, _translate("OWNER_INVENTORY", "GUTTER"))
-        self.comboBox_Select_Prod_Type_toAdd.setItemText(4, _translate("OWNER_INVENTORY", "OTHER"))
-        self.editStocklabel.setText(_translate("OWNER_INVENTORY", "EDIT STOCK"))
-        self.label_261.setText(_translate("OWNER_INVENTORY", "SELECT A PRODUCT TYPE TO EDIT FIRST"))
-        self.pushButton_Save_ROOFedit.setText(_translate("OWNER_INVENTORY", "SAVE CHANGES"))
-        self.pushButton_Discard_ROOFedit.setText(_translate("OWNER_INVENTORY", "DISCARD CHANGES"))
-        self.label_262.setText(_translate("OWNER_INVENTORY", "PRODUCT ID            :"))
-        self.label_263.setText(_translate("OWNER_INVENTORY", "PRICE           :"))
-        self.label_264.setText(_translate("OWNER_INVENTORY", "NAME            :"))
-        self.lineEdit_EditROOF_prodID.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.lineEdit_EditROOF_Width.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_265.setText(_translate("OWNER_INVENTORY", "STK. QTY.                    :"))
-        self.lineEdit_EditROOF_Qty.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_266.setText(_translate("OWNER_INVENTORY", "WIDTH                         :"))
-        self.label_267.setText(_translate("OWNER_INVENTORY", "COLOR                        :"))
-        self.lineEdit_EditROOF_Color.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_268.setText(_translate("OWNER_INVENTORY", "LENGTH                       :"))
-        self.lineEdit_EditROOF_Length.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_269.setText(_translate("OWNER_INVENTORY", "OTHER          :"))
-        self.lineEdit_EditROOF_Price.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.lineEdit_EditROOF_OtherSpecifications.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_270.setText(_translate("OWNER_INVENTORY", "THICKNESS (MM)     :"))
-        self.lineEdit_EditROOF_Thickness.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_271.setText(_translate("OWNER_INVENTORY", "SPECIFICATIONS"))
-        self.lineEdit_EditROOF_Name.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.pushButton_Save_SPANDRELedit.setText(_translate("OWNER_INVENTORY", "SAVE CHANGES"))
-        self.pushButton_Discard_SPANDRELedit.setText(_translate("OWNER_INVENTORY", "DISCARD CHANGES"))
-        self.label_272.setText(_translate("OWNER_INVENTORY", "PRODUCT ID            :"))
-        self.label_273.setText(_translate("OWNER_INVENTORY", "PRICE           :"))
-        self.label_274.setText(_translate("OWNER_INVENTORY", "NAME            :"))
-        self.lineEdit_EditSPANDREL_prodID.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.lineEdit_EditSPANDREL_Width.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_275.setText(_translate("OWNER_INVENTORY", "STK. QTY.                    :"))
-        self.lineEdit_EditSPANDREL_Qty.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_276.setText(_translate("OWNER_INVENTORY", "WIDTH                         :"))
-        self.label_277.setText(_translate("OWNER_INVENTORY", "COLOR                        :"))
-        self.lineEdit_EditSPANDREL_Color.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_278.setText(_translate("OWNER_INVENTORY", "LENGTH                       :"))
-        self.lineEdit_EditSPANDREL_Length.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_279.setText(_translate("OWNER_INVENTORY", "OTHER          :"))
-        self.lineEdit_EditSPANDREL_Price.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.lineEdit_EditSPANDREL_OtherSpecifications.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_280.setText(_translate("OWNER_INVENTORY", "THICKNESS (MM)     :"))
-        self.lineEdit_EditSPANDREL_Thickness.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_281.setText(_translate("OWNER_INVENTORY", "SPECIFICATIONS"))
-        self.lineEdit_EditSPANDREL_Name.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.pushButton_Save_GUTTERedit.setText(_translate("OWNER_INVENTORY", "SAVE CHANGES"))
-        self.pushButton_Discard_GUTTERedit.setText(_translate("OWNER_INVENTORY", "DISCARD CHANGES"))
-        self.label_282.setText(_translate("OWNER_INVENTORY", "PRODUCT ID            :"))
-        self.label_283.setText(_translate("OWNER_INVENTORY", "PRICE           :"))
-        self.label_284.setText(_translate("OWNER_INVENTORY", "NAME            :"))
-        self.lineEdit_EditGUTTER_prodID.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.lineEdit_EditGUTTER_Width.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_285.setText(_translate("OWNER_INVENTORY", "STK. QTY.                    :"))
-        self.lineEdit_EditGUTTER_Qty.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_286.setText(_translate("OWNER_INVENTORY", "WIDTH                         :"))
-        self.label_287.setText(_translate("OWNER_INVENTORY", "COLOR                        :"))
-        self.lineEdit_EditGUTTER_Color.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_288.setText(_translate("OWNER_INVENTORY", "LENGTH                       :"))
-        self.lineEdit_EditGUTTER_Length.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_289.setText(_translate("OWNER_INVENTORY", "OTHER          :"))
-        self.lineEdit_EditGUTTER_Price.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.lineEdit_EditGUTTER_OtherSpecifications.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_290.setText(_translate("OWNER_INVENTORY", "THICKNESS (MM)     :"))
-        self.lineEdit_EditGUTTER_Thickness.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_291.setText(_translate("OWNER_INVENTORY", "SPECIFICATIONS"))
-        self.lineEdit_EditGUTTER_Name.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_292.setText(_translate("OWNER_INVENTORY", "PRODUCT ID            :"))
-        self.label_293.setText(_translate("OWNER_INVENTORY", "PRICE           :"))
-        self.label_294.setText(_translate("OWNER_INVENTORY", "NAME            :"))
-        self.lineEdit_EditOTHER_prodID.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.lineEdit_EditOTHER_Width.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_295.setText(_translate("OWNER_INVENTORY", "STK. QTY.                    :"))
-        self.lineEdit_EditOTHER_Qty.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_296.setText(_translate("OWNER_INVENTORY", "WIDTH                         :"))
-        self.label_297.setText(_translate("OWNER_INVENTORY", "COLOR                        :"))
-        self.lineEdit_EditOTHER_Color.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_298.setText(_translate("OWNER_INVENTORY", "LENGTH                       :"))
-        self.lineEdit_EditOTHER_Length.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_299.setText(_translate("OWNER_INVENTORY", "OTHER          :"))
-        self.lineEdit_EditOTHER_Price.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.lineEdit_EditOTHER_OtherSpecifications.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_300.setText(_translate("OWNER_INVENTORY", "THICKNESS (MM)     :"))
-        self.lineEdit_EditOTHER_Thickness.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_301.setText(_translate("OWNER_INVENTORY", "SPECIFICATIONS"))
-        self.lineEdit_EditOTHER_Name.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.pushButton_Save_OTHERedit.setText(_translate("OWNER_INVENTORY", "SAVE CHANGES"))
-        self.pushButton_Discard_OTHERedit.setText(_translate("OWNER_INVENTORY", "DISCARD CHANGES"))
-        self.comboBox_Select_Prod_Type_toEdit.setItemText(0, _translate("OWNER_INVENTORY", "Select Product Type"))
-        self.comboBox_Select_Prod_Type_toEdit.setItemText(1, _translate("OWNER_INVENTORY", "ROOF"))
-        self.comboBox_Select_Prod_Type_toEdit.setItemText(2, _translate("OWNER_INVENTORY", "SPANDREL"))
-        self.comboBox_Select_Prod_Type_toEdit.setItemText(3, _translate("OWNER_INVENTORY", "GUTTER"))
-        self.comboBox_Select_Prod_Type_toEdit.setItemText(4, _translate("OWNER_INVENTORY", "OTHER"))
-        self.deleteStocklabel.setText(_translate("OWNER_INVENTORY", "DELETE STOCK"))
-        self.label_304.setText(_translate("OWNER_INVENTORY", "SELECT A PRODUCT TYPE TO DELETE FIRST"))
-        self.pushButton_Confirm_ROOFdelete.setText(_translate("OWNER_INVENTORY", "CONFIRM"))
-        self.pushButton_Close_ROOFdelete.setText(_translate("OWNER_INVENTORY", "CLOSE"))
-        self.label_305.setText(_translate("OWNER_INVENTORY", "PRODUCT ID                  :"))
-        self.lineEdit_DeleteROOF_prodID.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_306.setText(_translate("OWNER_INVENTORY", "NAME                              :"))
-        self.lineEdit_33.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.lineEdit_DeleteROOF_Name.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_307.setText(_translate("OWNER_INVENTORY", "WARNING! This action cannot be undone."))
-        self.pushButton_Confirm_SPANDRELdelete.setText(_translate("OWNER_INVENTORY", "CONFIRM"))
-        self.pushButton_Close_SPANDRELdelete.setText(_translate("OWNER_INVENTORY", "CLOSE"))
-        self.label_308.setText(_translate("OWNER_INVENTORY", "PRODUCT ID                  :"))
-        self.lineEdit_DeleteSPANDREL_prodID.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_309.setText(_translate("OWNER_INVENTORY", "NAME                              :"))
-        self.lineEdit_34.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.lineEdit_DeleteSPANDREL_Name.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_310.setText(_translate("OWNER_INVENTORY", "WARNING! This action cannot be undone."))
-        self.pushButton_Confirm_GUTTERdelete.setText(_translate("OWNER_INVENTORY", "CONFIRM"))
-        self.pushButton_Close_GUTTERdelete.setText(_translate("OWNER_INVENTORY", "CLOSE"))
-        self.label_311.setText(_translate("OWNER_INVENTORY", "PRODUCT ID                  :"))
-        self.lineEdit_DeleteGUTTER_prodID.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_312.setText(_translate("OWNER_INVENTORY", "NAME                              :"))
-        self.lineEdit_35.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.lineEdit_DeleteGUTTER_Name.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_313.setText(_translate("OWNER_INVENTORY", "WARNING! This action cannot be undone."))
-        self.label_314.setText(_translate("OWNER_INVENTORY", "PRODUCT ID                  :"))
-        self.lineEdit_DeleteOTHER_prodID.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_315.setText(_translate("OWNER_INVENTORY", "NAME                              :"))
-        self.lineEdit_36.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.lineEdit_DeleteOTHER_Name.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_316.setText(_translate("OWNER_INVENTORY", "WARNING! This action cannot be undone."))
-        self.pushButton_Confirm_OTHERdelete.setText(_translate("OWNER_INVENTORY", "CONFIRM"))
-        self.pushButton_Close_OTHERdelete.setText(_translate("OWNER_INVENTORY", "CLOSE"))
-        self.comboBox_Select_Prod_Type_toDelete.setItemText(0, _translate("OWNER_INVENTORY", "Select Product Type"))
-        self.comboBox_Select_Prod_Type_toDelete.setItemText(1, _translate("OWNER_INVENTORY", "ROOF"))
-        self.comboBox_Select_Prod_Type_toDelete.setItemText(2, _translate("OWNER_INVENTORY", "SPANDREL"))
-        self.comboBox_Select_Prod_Type_toDelete.setItemText(3, _translate("OWNER_INVENTORY", "GUTTER"))
-        self.comboBox_Select_Prod_Type_toDelete.setItemText(4, _translate("OWNER_INVENTORY", "OTHER"))
-from ui.resources import jj_resources_rc
+        self.addStocklabel_5.setText(_translate("OWNER_INVENTORY", "ADD STOCK"))
+        self.label_120.setText(_translate("OWNER_INVENTORY", "SELECT A PRODUCT TYPE TO ADD FIRST"))
+        self.pushButton_Confirm_ROOFadd_5.setText(_translate("OWNER_INVENTORY", "CONFIRM"))
+        self.pushButton_Close_ROOFadd_5.setText(_translate("OWNER_INVENTORY", "CLOSE"))
+        self.label_121.setText(_translate("OWNER_INVENTORY", "PRODUCT ID            :"))
+        self.label_122.setText(_translate("OWNER_INVENTORY", "PRICE           :"))
+        self.label_123.setText(_translate("OWNER_INVENTORY", "NAME            :"))
+        self.lineEdit_AddROOF_prodID_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.lineEdit_AddROOF_Width_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_582.setText(_translate("OWNER_INVENTORY", "STK. QTY.                    :"))
+        self.lineEdit_AddROOF_Qty_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_583.setText(_translate("OWNER_INVENTORY", "WIDTH                         :"))
+        self.label_124.setText(_translate("OWNER_INVENTORY", "COLOR                        :"))
+        self.lineEdit_AddROOF_Color_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_125.setText(_translate("OWNER_INVENTORY", "LENGTH                       :"))
+        self.lineEdit_AddROOF_Length_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_126.setText(_translate("OWNER_INVENTORY", "OTHER          :"))
+        self.lineEdit_AddROOF_Price_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.lineEdit_AddROOF_OtherSpecifications_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_584.setText(_translate("OWNER_INVENTORY", "THICKNESS (MM)     :"))
+        self.lineEdit_AddROOF_Thickness_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_127.setText(_translate("OWNER_INVENTORY", "SPECIFICATIONS"))
+        self.lineEdit_AddROOF_Name_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.pushButton_Confirm_SPANDRELadd_5.setText(_translate("OWNER_INVENTORY", "CONFIRM"))
+        self.pushButton_Close_SPANDRELadd_5.setText(_translate("OWNER_INVENTORY", "CLOSE"))
+        self.label_128.setText(_translate("OWNER_INVENTORY", "PRODUCT ID            :"))
+        self.label_129.setText(_translate("OWNER_INVENTORY", "PRICE           :"))
+        self.label_130.setText(_translate("OWNER_INVENTORY", "NAME            :"))
+        self.lineEdit_AddSPANDREL_prodID_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.lineEdit_AddSPANDREL_Width_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_585.setText(_translate("OWNER_INVENTORY", "STK. QTY.                    :"))
+        self.lineEdit_AddSPANDREL_Qty_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_586.setText(_translate("OWNER_INVENTORY", "WIDTH                         :"))
+        self.label_131.setText(_translate("OWNER_INVENTORY", "COLOR                        :"))
+        self.lineEdit_AddSPANDREL_Color_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_587.setText(_translate("OWNER_INVENTORY", "LENGTH                       :"))
+        self.lineEdit_AddSPANDREL_Length_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_588.setText(_translate("OWNER_INVENTORY", "OTHER          :"))
+        self.lineEdit_AddSPANDREL_Price_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.lineEdit_AddSPANDREL_OtherSpecifications_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_589.setText(_translate("OWNER_INVENTORY", "THICKNESS (MM)     :"))
+        self.lineEdit_AddSPANDREL_Thickness_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_590.setText(_translate("OWNER_INVENTORY", "SPECIFICATIONS"))
+        self.lineEdit_AddSPANDREL_Name_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.pushButton_Confirm_GUTTERadd_5.setText(_translate("OWNER_INVENTORY", "CONFIRM"))
+        self.pushButton_Close_GUTTERadd_5.setText(_translate("OWNER_INVENTORY", "CLOSE"))
+        self.label_591.setText(_translate("OWNER_INVENTORY", "PRODUCT ID            :"))
+        self.label_592.setText(_translate("OWNER_INVENTORY", "PRICE           :"))
+        self.label_593.setText(_translate("OWNER_INVENTORY", "NAME            :"))
+        self.lineEdit_AddGUTTER_prodID_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.lineEdit_AddGUTTER_Width_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_594.setText(_translate("OWNER_INVENTORY", "STK. QTY.                    :"))
+        self.lineEdit_AddGUTTER_Qty_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_595.setText(_translate("OWNER_INVENTORY", "WIDTH                         :"))
+        self.label_596.setText(_translate("OWNER_INVENTORY", "COLOR                        :"))
+        self.lineEdit_AddGUTTER_Color_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_597.setText(_translate("OWNER_INVENTORY", "LENGTH                       :"))
+        self.lineEdit_AddGUTTER_Length_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_598.setText(_translate("OWNER_INVENTORY", "OTHER          :"))
+        self.lineEdit_AddGUTTER_Price_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.lineEdit_AddGUTTER_OtherSpecifications_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_599.setText(_translate("OWNER_INVENTORY", "THICKNESS (MM)     :"))
+        self.lineEdit_AddGUTTER_Thickness_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_600.setText(_translate("OWNER_INVENTORY", "SPECIFICATIONS"))
+        self.lineEdit_AddGUTTER_Name_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.pushButton_Confirm_OTHERadd_5.setText(_translate("OWNER_INVENTORY", "CONFIRM"))
+        self.pushButton_Close_OTHERadd_5.setText(_translate("OWNER_INVENTORY", "CLOSE"))
+        self.label_601.setText(_translate("OWNER_INVENTORY", "PRODUCT ID            :"))
+        self.label_602.setText(_translate("OWNER_INVENTORY", "PRICE           :"))
+        self.label_603.setText(_translate("OWNER_INVENTORY", "NAME            :"))
+        self.lineEdit_AddOTHER_prodID_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.lineEdit_AddOTHER_Width_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_604.setText(_translate("OWNER_INVENTORY", "STK. QTY.                    :"))
+        self.lineEdit_AddOTHER_Qty_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_605.setText(_translate("OWNER_INVENTORY", "WIDTH                         :"))
+        self.label_606.setText(_translate("OWNER_INVENTORY", "COLOR                        :"))
+        self.lineEdit_AddOTHER_Color_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_607.setText(_translate("OWNER_INVENTORY", "LENGTH                       :"))
+        self.lineEdit_AddOTHER_Length_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_608.setText(_translate("OWNER_INVENTORY", "OTHER          :"))
+        self.lineEdit_AddOTHER_Price_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.lineEdit_AddOTHER_OtherSpecifications_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_609.setText(_translate("OWNER_INVENTORY", "THICKNESS (MM)     :"))
+        self.lineEdit_AddOTHER_Thickness_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_610.setText(_translate("OWNER_INVENTORY", "SPECIFICATIONS"))
+        self.lineEdit_AddOTHER_Name_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.comboBox_Select_Prod_Type_toAdd_5.setItemText(0, _translate("OWNER_INVENTORY", "Select Product Type"))
+        self.comboBox_Select_Prod_Type_toAdd_5.setItemText(1, _translate("OWNER_INVENTORY", "ROOF"))
+        self.comboBox_Select_Prod_Type_toAdd_5.setItemText(2, _translate("OWNER_INVENTORY", "SPANDREL"))
+        self.comboBox_Select_Prod_Type_toAdd_5.setItemText(3, _translate("OWNER_INVENTORY", "GUTTER"))
+        self.comboBox_Select_Prod_Type_toAdd_5.setItemText(4, _translate("OWNER_INVENTORY", "OTHER"))
+        self.editStocklabel_5.setText(_translate("OWNER_INVENTORY", "EDIT STOCK"))
+        self.label_613.setText(_translate("OWNER_INVENTORY", "SELECT A PRODUCT TYPE TO EDIT FIRST"))
+        self.pushButton_Save_ROOFedit_5.setText(_translate("OWNER_INVENTORY", "SAVE CHANGES"))
+        self.pushButton_Discard_ROOFedit_5.setText(_translate("OWNER_INVENTORY", "DISCARD CHANGES"))
+        self.label_614.setText(_translate("OWNER_INVENTORY", "PRODUCT ID            :"))
+        self.label_615.setText(_translate("OWNER_INVENTORY", "PRICE           :"))
+        self.label_616.setText(_translate("OWNER_INVENTORY", "NAME            :"))
+        self.lineEdit_EditROOF_prodID_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.lineEdit_EditROOF_Width_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_617.setText(_translate("OWNER_INVENTORY", "STK. QTY.                    :"))
+        self.lineEdit_EditROOF_Qty_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_618.setText(_translate("OWNER_INVENTORY", "WIDTH                         :"))
+        self.label_619.setText(_translate("OWNER_INVENTORY", "COLOR                        :"))
+        self.lineEdit_EditROOF_Color_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_620.setText(_translate("OWNER_INVENTORY", "LENGTH                       :"))
+        self.lineEdit_EditROOF_Length_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_621.setText(_translate("OWNER_INVENTORY", "OTHER          :"))
+        self.lineEdit_EditROOF_Price_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.lineEdit_EditROOF_OtherSpecifications_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_622.setText(_translate("OWNER_INVENTORY", "THICKNESS (MM)     :"))
+        self.lineEdit_EditROOF_Thickness_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_623.setText(_translate("OWNER_INVENTORY", "SPECIFICATIONS"))
+        self.lineEdit_EditROOF_Name_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.pushButton_Save_SPANDRELedit_5.setText(_translate("OWNER_INVENTORY", "SAVE CHANGES"))
+        self.pushButton_Discard_SPANDRELedit_5.setText(_translate("OWNER_INVENTORY", "DISCARD CHANGES"))
+        self.label_624.setText(_translate("OWNER_INVENTORY", "PRODUCT ID            :"))
+        self.label_625.setText(_translate("OWNER_INVENTORY", "PRICE           :"))
+        self.label_626.setText(_translate("OWNER_INVENTORY", "NAME            :"))
+        self.lineEdit_EditSPANDREL_prodID_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.lineEdit_EditSPANDREL_Width_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_627.setText(_translate("OWNER_INVENTORY", "STK. QTY.                    :"))
+        self.lineEdit_EditSPANDREL_Qty_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_628.setText(_translate("OWNER_INVENTORY", "WIDTH                         :"))
+        self.label_629.setText(_translate("OWNER_INVENTORY", "COLOR                        :"))
+        self.lineEdit_EditSPANDREL_Color_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_630.setText(_translate("OWNER_INVENTORY", "LENGTH                       :"))
+        self.lineEdit_EditSPANDREL_Length_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_631.setText(_translate("OWNER_INVENTORY", "OTHER          :"))
+        self.lineEdit_EditSPANDREL_Price_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.lineEdit_EditSPANDREL_OtherSpecifications_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_632.setText(_translate("OWNER_INVENTORY", "THICKNESS (MM)     :"))
+        self.lineEdit_EditSPANDREL_Thickness_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_633.setText(_translate("OWNER_INVENTORY", "SPECIFICATIONS"))
+        self.lineEdit_EditSPANDREL_Name_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.pushButton_Save_GUTTERedit_5.setText(_translate("OWNER_INVENTORY", "SAVE CHANGES"))
+        self.pushButton_Discard_GUTTERedit_5.setText(_translate("OWNER_INVENTORY", "DISCARD CHANGES"))
+        self.label_634.setText(_translate("OWNER_INVENTORY", "PRODUCT ID            :"))
+        self.label_635.setText(_translate("OWNER_INVENTORY", "PRICE           :"))
+        self.label_636.setText(_translate("OWNER_INVENTORY", "NAME            :"))
+        self.lineEdit_EditGUTTER_prodID_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.lineEdit_EditGUTTER_Width_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_637.setText(_translate("OWNER_INVENTORY", "STK. QTY.                    :"))
+        self.lineEdit_EditGUTTER_Qty_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_638.setText(_translate("OWNER_INVENTORY", "WIDTH                         :"))
+        self.label_639.setText(_translate("OWNER_INVENTORY", "COLOR                        :"))
+        self.lineEdit_EditGUTTER_Color_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_640.setText(_translate("OWNER_INVENTORY", "LENGTH                       :"))
+        self.lineEdit_EditGUTTER_Length_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_641.setText(_translate("OWNER_INVENTORY", "OTHER          :"))
+        self.lineEdit_EditGUTTER_Price_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.lineEdit_EditGUTTER_OtherSpecifications_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_642.setText(_translate("OWNER_INVENTORY", "THICKNESS (MM)     :"))
+        self.lineEdit_EditGUTTER_Thickness_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_643.setText(_translate("OWNER_INVENTORY", "SPECIFICATIONS"))
+        self.lineEdit_EditGUTTER_Name_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_644.setText(_translate("OWNER_INVENTORY", "PRODUCT ID            :"))
+        self.label_645.setText(_translate("OWNER_INVENTORY", "PRICE           :"))
+        self.label_646.setText(_translate("OWNER_INVENTORY", "NAME            :"))
+        self.lineEdit_EditOTHER_prodID_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.lineEdit_EditOTHER_Width_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_647.setText(_translate("OWNER_INVENTORY", "STK. QTY.                    :"))
+        self.lineEdit_EditOTHER_Qty_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_648.setText(_translate("OWNER_INVENTORY", "WIDTH                         :"))
+        self.label_649.setText(_translate("OWNER_INVENTORY", "COLOR                        :"))
+        self.lineEdit_EditOTHER_Color_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_650.setText(_translate("OWNER_INVENTORY", "LENGTH                       :"))
+        self.lineEdit_EditOTHER_Length_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_651.setText(_translate("OWNER_INVENTORY", "OTHER          :"))
+        self.lineEdit_EditOTHER_Price_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.lineEdit_EditOTHER_OtherSpecifications_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_652.setText(_translate("OWNER_INVENTORY", "THICKNESS (MM)     :"))
+        self.lineEdit_EditOTHER_Thickness_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_653.setText(_translate("OWNER_INVENTORY", "SPECIFICATIONS"))
+        self.lineEdit_EditOTHER_Name_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.pushButton_Save_OTHERedit_5.setText(_translate("OWNER_INVENTORY", "SAVE CHANGES"))
+        self.pushButton_Discard_OTHERedit_5.setText(_translate("OWNER_INVENTORY", "DISCARD CHANGES"))
+        self.comboBox_Select_Prod_Type_toEdit_5.setItemText(0, _translate("OWNER_INVENTORY", "Select Product Type"))
+        self.comboBox_Select_Prod_Type_toEdit_5.setItemText(1, _translate("OWNER_INVENTORY", "ROOF"))
+        self.comboBox_Select_Prod_Type_toEdit_5.setItemText(2, _translate("OWNER_INVENTORY", "SPANDREL"))
+        self.comboBox_Select_Prod_Type_toEdit_5.setItemText(3, _translate("OWNER_INVENTORY", "GUTTER"))
+        self.comboBox_Select_Prod_Type_toEdit_5.setItemText(4, _translate("OWNER_INVENTORY", "OTHER"))
+        self.deleteStocklabel_5.setText(_translate("OWNER_INVENTORY", "DELETE STOCK"))
+        self.label_656.setText(_translate("OWNER_INVENTORY", "SELECT A PRODUCT TYPE TO DELETE FIRST"))
+        self.pushButton_Confirm_ROOFdelete_5.setText(_translate("OWNER_INVENTORY", "CONFIRM"))
+        self.pushButton_Close_ROOFdelete_5.setText(_translate("OWNER_INVENTORY", "CLOSE"))
+        self.label_657.setText(_translate("OWNER_INVENTORY", "PRODUCT ID                  :"))
+        self.lineEdit_DeleteROOF_prodID_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_658.setText(_translate("OWNER_INVENTORY", "NAME                              :"))
+        self.lineEdit_49.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.lineEdit_DeleteROOF_Name_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_659.setText(_translate("OWNER_INVENTORY", "WARNING! This action cannot be undone."))
+        self.pushButton_Confirm_SPANDRELdelete_5.setText(_translate("OWNER_INVENTORY", "CONFIRM"))
+        self.pushButton_Close_SPANDRELdelete_5.setText(_translate("OWNER_INVENTORY", "CLOSE"))
+        self.label_660.setText(_translate("OWNER_INVENTORY", "PRODUCT ID                  :"))
+        self.lineEdit_DeleteSPANDREL_prodID_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_661.setText(_translate("OWNER_INVENTORY", "NAME                              :"))
+        self.lineEdit_50.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.lineEdit_DeleteSPANDREL_Name_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_662.setText(_translate("OWNER_INVENTORY", "WARNING! This action cannot be undone."))
+        self.pushButton_Confirm_GUTTERdelete_5.setText(_translate("OWNER_INVENTORY", "CONFIRM"))
+        self.pushButton_Close_GUTTERdelete_5.setText(_translate("OWNER_INVENTORY", "CLOSE"))
+        self.label_663.setText(_translate("OWNER_INVENTORY", "PRODUCT ID                  :"))
+        self.lineEdit_DeleteGUTTER_prodID_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_664.setText(_translate("OWNER_INVENTORY", "NAME                              :"))
+        self.lineEdit_51.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.lineEdit_DeleteGUTTER_Name_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_665.setText(_translate("OWNER_INVENTORY", "WARNING! This action cannot be undone."))
+        self.label_666.setText(_translate("OWNER_INVENTORY", "PRODUCT ID                  :"))
+        self.lineEdit_DeleteOTHER_prodID_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_667.setText(_translate("OWNER_INVENTORY", "NAME                              :"))
+        self.lineEdit_52.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.lineEdit_DeleteOTHER_Name_5.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_668.setText(_translate("OWNER_INVENTORY", "WARNING! This action cannot be undone."))
+        self.pushButton_Confirm_OTHERdelete_5.setText(_translate("OWNER_INVENTORY", "CONFIRM"))
+        self.pushButton_Close_OTHERdelete_5.setText(_translate("OWNER_INVENTORY", "CLOSE"))
+        self.comboBox_Select_Prod_Type_toDelete_5.setItemText(0, _translate("OWNER_INVENTORY", "Select Product Type"))
+        self.comboBox_Select_Prod_Type_toDelete_5.setItemText(1, _translate("OWNER_INVENTORY", "ROOF"))
+        self.comboBox_Select_Prod_Type_toDelete_5.setItemText(2, _translate("OWNER_INVENTORY", "SPANDREL"))
+        self.comboBox_Select_Prod_Type_toDelete_5.setItemText(3, _translate("OWNER_INVENTORY", "GUTTER"))
+        self.comboBox_Select_Prod_Type_toDelete_5.setItemText(4, _translate("OWNER_INVENTORY", "OTHER"))

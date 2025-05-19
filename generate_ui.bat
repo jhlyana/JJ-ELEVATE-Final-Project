@@ -1,3 +1,20 @@
+:: ========================================================
+:: generate_ui.bat - PyQt5 UI Compiler Script
+::
+:: PURPOSE:
+:: 1. Compiles Qt resource files (.qrc → _rc.py)
+:: 2. Converts Qt Designer files (.ui → .py)
+:: 3. Fixes resource import paths in generated files
+:: Automatically updates all UI and resource files when design changes occur
+::
+:: TO RUN:
+:: Type .\generate_ui.bat in VSCode terminal or CMD
+:: 
+:: TO DELETE:
+:: del ui\generated_files\*.py
+:: del ui\resources\jj_resources_rc.py
+:: ========================================================
+
 @echo off
 cd /d "C:\Users\jhane\Desktop\JJ ELEVATE Final Project"
 
@@ -55,6 +72,38 @@ call :convert_ui UI_COrders
 call :convert_ui UI_CSales
 call :convert_ui UI_CStockHistory
 call :convert_ui UI_CAccount
+
+:: ========================================================
+:: VERIFY ALL GENERATED CLASS NAMES
+:: ========================================================
+echo.
+echo Verifying all UI class names...
+echo.
+
+:: Authentication pages
+findstr "class Ui_" ui\generated_files\UI_Landing.py
+findstr "class Ui_" ui\generated_files\UI_LogIn.py
+findstr "class Ui_" ui\generated_files\UI_ForgotPass.py
+
+:: Owner interface
+findstr "class Ui_" ui\generated_files\UI_ODashboard.py
+findstr "class Ui_" ui\generated_files\UI_OInventory.py
+findstr "class Ui_" ui\generated_files\UI_OOrders.py
+findstr "class Ui_" ui\generated_files\UI_OSales.py
+findstr "class Ui_" ui\generated_files\UI_OStockHistory.py
+findstr "class Ui_" ui\generated_files\UI_OAccount.py
+
+:: Cashier interface
+findstr "class Ui_" ui\generated_files\UI_CDashboard.py
+findstr "class Ui_" ui\generated_files\UI_CInventory.py
+findstr "class Ui_" ui\generated_files\UI_COrders.py
+findstr "class Ui_" ui\generated_files\UI_CSales.py
+findstr "class Ui_" ui\generated_files\UI_CStockHistory.py
+findstr "class Ui_" ui\generated_files\UI_CAccount.py
+
+echo.
+echo Class name verification complete!
+pause
 
 :: Fix imports in all generated files
 echo Fixing imports...
