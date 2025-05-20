@@ -256,26 +256,82 @@ class OwnerController:
             self.main_controller.logout()
         ])
     
-    def reset_button_styles(self):
-        """Reset all navigation buttons to inactive state"""
-        for button in self.nav_buttons.values():
-            button.setProperty('class', '')  # Clear active class
-            button.style().unpolish(button)
-            button.style().polish(button)
-
     def set_active_button(self, button_name):
         """Set a single button as active using CSS classes"""
-        # Reset all buttons first
-        self.reset_button_styles()
+        # Create a dictionary of all navigation buttons on all pages
+        all_nav_buttons = {
+            'dashboard': [
+                self.dashboard_ui.pushButton_Dashboard,
+                self.inventory_ui.pushButton_Dashboard,
+                self.orders_ui.pushButton_Dashboard,
+                self.sales_ui.pushButton_Dashboard,
+                self.stock_history_ui.pushButton_Dashboard,
+                self.account_ui.pushButton_Dashboard
+            ],
+            'inventory': [
+                self.dashboard_ui.pushButton_Inventory,
+                self.inventory_ui.pushButton_Inventory,
+                self.orders_ui.pushButton_Inventory,
+                self.sales_ui.pushButton_Inventory,
+                self.stock_history_ui.pushButton_Inventory,
+                self.account_ui.pushButton_Inventory
+            ],
+            'orders': [
+                self.dashboard_ui.pushButton_Orders,
+                self.inventory_ui.pushButton_Orders,
+                self.orders_ui.pushButton_Orders,
+                self.sales_ui.pushButton_Orders,
+                self.stock_history_ui.pushButton_Orders,
+                self.account_ui.pushButton_Orders
+            ],
+            'sales': [
+                self.dashboard_ui.pushButton_Sales,
+                self.inventory_ui.pushButton_Sales,
+                self.orders_ui.pushButton_Sales,
+                self.sales_ui.pushButton_Sales,
+                self.stock_history_ui.pushButton_Sales,
+                self.account_ui.pushButton_Sales
+            ],
+            'stock_history': [
+                self.dashboard_ui.pushButton_Stock_History,
+                self.inventory_ui.pushButton_Stock_History,
+                self.orders_ui.pushButton_Stock_History,
+                self.sales_ui.pushButton_Stock_History,
+                self.stock_history_ui.pushButton_Stock_History,
+                self.account_ui.pushButton_Stock_History
+            ],
+            'account': [
+                self.dashboard_ui.pushButton_Account,
+                self.inventory_ui.pushButton_Account,
+                self.orders_ui.pushButton_Account,
+                self.sales_ui.pushButton_Account,
+                self.stock_history_ui.pushButton_Account,
+                self.account_ui.pushButton_Account
+            ]
+        }
         
-        # Set new active button
-        button = self.nav_buttons.get(button_name)
-        if button:
-            button.setProperty('class', 'activeButton')
-            button.style().unpolish(button)
-            button.style().polish(button)
-            self.current_active_button = button
+        # Reset all navigation buttons on all pages
+        for button_list in all_nav_buttons.values():
+            for button in button_list:
+                if hasattr(button, 'setProperty'):  # Check if button exists
+                    button.setProperty('class', '')  # Clear active class
+                    button.style().unpolish(button)
+                    button.style().polish(button)
+                    button.update()
         
+        # Set active class on all buttons corresponding to the active page
+        active_buttons = all_nav_buttons.get(button_name, [])
+        for button in active_buttons:
+            if hasattr(button, 'setProperty'):  # Check if button exists
+                button.setProperty('class', 'activeButton')
+                button.style().unpolish(button)
+                button.style().polish(button)
+                button.update()
+        
+        # Store current active button name
+        self.current_active_button = button_name
+        
+        # Force application to process all pending events
         QApplication.processEvents()
     
     def show_dashboard(self):
