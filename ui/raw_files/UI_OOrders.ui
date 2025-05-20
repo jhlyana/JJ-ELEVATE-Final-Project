@@ -20,9 +20,9 @@
    <property name="geometry">
     <rect>
      <x>300</x>
-     <y>210</y>
+     <y>140</y>
      <width>1621</width>
-     <height>771</height>
+     <height>841</height>
     </rect>
    </property>
    <property name="currentIndex">
@@ -33,13 +33,37 @@
      <property name="geometry">
       <rect>
        <x>50</x>
-       <y>0</y>
+       <y>30</y>
        <width>1531</width>
-       <height>741</height>
+       <height>781</height>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">padding: 1;</string>
+      <string notr="true"> 
+QTableWidget {
+    background-color: white;
+    gridline-color: lightgray;
+    selection-background-color: #ebe0cc;
+    selection-color: white;               /* selected row text */
+}
+
+QTableWidget::item:hover {
+    background-color: #b33c35;  /* slightly lighter hover effect */
+    color: white;
+}
+
+QHeaderView::section {
+    background-color: #c25b55; /* deep maroon header */
+    color: white;
+    font-weight: bold;
+    padding: 4px;
+    border: 1px solid lightgray;
+}
+
+QTableWidget::item {
+    padding-left: 12px;
+    padding-right: 12px;
+}</string>
      </property>
      <attribute name="horizontalHeaderDefaultSectionSize">
       <number>265</number>
@@ -47,46 +71,6 @@
      <column>
       <property name="text">
        <string>Order ID</string>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>14</pointsize>
-       </font>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>Date Created</string>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>14</pointsize>
-       </font>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>Status</string>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>14</pointsize>
-       </font>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>Total Amount (₱)</string>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>14</pointsize>
-       </font>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>Service</string>
       </property>
       <property name="font">
        <font>
@@ -106,7 +90,7 @@
      </column>
      <column>
       <property name="text">
-       <string>Contact Number</string>
+       <string>Products</string>
       </property>
       <property name="font">
        <font>
@@ -116,65 +100,7 @@
      </column>
      <column>
       <property name="text">
-       <string>Customer Address</string>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>14</pointsize>
-       </font>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>Processed by</string>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>14</pointsize>
-       </font>
-      </property>
-     </column>
-    </widget>
-   </widget>
-   <widget class="QWidget" name="page_2">
-    <widget class="QTableWidget" name="tableWidget_orderDetails">
-     <property name="geometry">
-      <rect>
-       <x>50</x>
-       <y>0</y>
-       <width>1531</width>
-       <height>741</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">padding: 1;</string>
-     </property>
-     <attribute name="horizontalHeaderDefaultSectionSize">
-      <number>265</number>
-     </attribute>
-     <column>
-      <property name="text">
-       <string>Order ID</string>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>14</pointsize>
-       </font>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>Order Detail ID</string>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>14</pointsize>
-       </font>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>Product</string>
+       <string>Price</string>
       </property>
       <property name="font">
        <font>
@@ -194,7 +120,12 @@
      </column>
      <column>
       <property name="text">
-       <string>Unit Price</string>
+       <string>Subtotal</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Total Amount (₱)</string>
       </property>
       <property name="font">
        <font>
@@ -204,36 +135,17 @@
      </column>
      <column>
       <property name="text">
-       <string>Discount</string>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>14</pointsize>
-       </font>
+       <string>New Column</string>
       </property>
      </column>
      <column>
       <property name="text">
-       <string>Total Amount</string>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>14</pointsize>
-       </font>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>Date Created</string>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>14</pointsize>
-       </font>
+       <string>Created at</string>
       </property>
      </column>
     </widget>
    </widget>
+   <widget class="QWidget" name="page_2"/>
   </widget>
   <widget class="QFrame" name="frame_45">
    <property name="geometry">
@@ -241,7 +153,7 @@
      <x>300</x>
      <y>0</y>
      <width>1621</width>
-     <height>211</height>
+     <height>151</height>
     </rect>
    </property>
    <property name="frameShape">
@@ -280,121 +192,24 @@ text-align: center;</string>
     </item>
     <item>
      <property name="text">
-      <string>Daily</string>
+      <string>Roof</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>Weekly</string>
+      <string>Spandrel</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>Monthly</string>
+      <string>Gutter</string>
      </property>
     </item>
-   </widget>
-   <widget class="QFrame" name="frame_29">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>150</y>
-      <width>661</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-    <widget class="QPushButton" name="pushButton_order">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>10</y>
-       <width>221</width>
-       <height>61</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Verdana</family>
-       <pointsize>-1</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">/* Default Button Style */
-QPushButton {
-    background-color: #003366;
-    border-radius: 10px;
-    font-size: 24px;
-    color: #ffffff;
-    padding: 9px;
-    font-family: &quot;Verdana&quot;, sans-serif;
-    text-align: center;
-}
-
-/* Hover Effect */
-QPushButton:hover {
-    background-color: #8d2721;
-    color: #ffffff;
-}
-
-/* ACTIVE BUTTON (using CLASS selector) */
-QPushButton.activeButton {
-    background-color: #8d2721;
-    color: #ffffff;
-}</string>
-     </property>
+    <item>
      <property name="text">
-      <string>Orders</string>
+      <string>Others</string>
      </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_orderDetail">
-     <property name="geometry">
-      <rect>
-       <x>220</x>
-       <y>10</y>
-       <width>421</width>
-       <height>61</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Verdana</family>
-       <pointsize>-1</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">/* Default Button Style */
-QPushButton {
-    background-color: #003366;
-    border-radius: 10px;
-    font-size: 24px;
-    color: #ffffff;
-    padding: 9px;
-    font-family: &quot;Verdana&quot;, sans-serif;
-    text-align: center;
-}
-
-/* Hover Effect */
-QPushButton:hover {
-    background-color: #8d2721;
-    color: #ffffff;
-}
-
-/* ACTIVE BUTTON (using CLASS selector) */
-QPushButton.activeButton {
-    background-color: #8d2721;
-    color: #ffffff;
-}</string>
-     </property>
-     <property name="text">
-      <string>View Order Details</string>
-     </property>
-    </widget>
+    </item>
    </widget>
    <widget class="QFrame" name="frame_4">
     <property name="geometry">
@@ -511,7 +326,7 @@ padding: 5;
      <rect>
       <x>50</x>
       <y>50</y>
-      <width>501</width>
+      <width>761</width>
       <height>71</height>
      </rect>
     </property>
@@ -522,7 +337,7 @@ background: transparent;
 font-size: 50px;</string>
     </property>
     <property name="text">
-     <string>Order Report</string>
+     <string>Order History</string>
     </property>
    </widget>
   </widget>

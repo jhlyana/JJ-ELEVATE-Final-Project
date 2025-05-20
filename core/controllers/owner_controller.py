@@ -9,6 +9,7 @@ from ui.generated_files.UI_OAccount import Ui_OWNER_ACCOUNT
 from core.controllers.OInv_pageController import InventoryPageController
 from core.controllers.OOrders_pageController import OrdersPageController
 from core.controllers.OSales_pageController import SalesPageController
+from core.controllers.OStk_Hstry_pageController import StockHistoryPageController
 from core.controllers.OAcc_pageController import AccountPageController
 from core.controllers.Date_Time import DateTimeController
 
@@ -87,6 +88,9 @@ class OwnerController:
         self.stock_history_ui = Ui_OWNER_STOCKHISTORY()
         self.stock_history_ui.setupUi(self.stock_history_page)
         self.stack.addWidget(self.stock_history_page)
+    
+        # Initialize stock history controller
+        self.stkhistory_controller = StockHistoryPageController(self.stock_history_ui, self)
     
     def _init_account(self):
         self.account_page = QWidget()
@@ -252,43 +256,24 @@ class OwnerController:
             self.main_controller.logout()
         ])
     
-    def set_active_button(self, button_name):
-        """Set the active button style using direct stylesheet changes"""
-        # Reset all buttons first
+    def reset_button_styles(self):
+        """Reset all navigation buttons to inactive state"""
         for button in self.nav_buttons.values():
-            button.setStyleSheet("""
-                QPushButton {
-                    background-color: white;
-                    color: black;
-                    border-radius: 25px;
-                    padding: 9px;
-                    text-align: left;
-                }
-                QPushButton:hover {
-                    background-color: #c25b55;
-                    color: black;
-                    font-weight: 700;
-                }
-            """)
+            button.setProperty('class', '')  # Clear active class
+            button.style().unpolish(button)
+            button.style().polish(button)
+
+    def set_active_button(self, button_name):
+        """Set a single button as active using CSS classes"""
+        # Reset all buttons first
+        self.reset_button_styles()
         
         # Set new active button
         button = self.nav_buttons.get(button_name)
         if button:
-            button.setStyleSheet("""
-                QPushButton {
-                    background-color: #c25b55;
-                    color: black;
-                    font-weight: 700;
-                    border-radius: 25px;
-                    padding: 9px;
-                    text-align: left;
-                }
-                QPushButton:hover {
-                    background-color: #c25b55;
-                    color: black;
-                    font-weight: 700;
-                }
-            """)
+            button.setProperty('class', 'activeButton')
+            button.style().unpolish(button)
+            button.style().polish(button)
             self.current_active_button = button
         
         QApplication.processEvents()

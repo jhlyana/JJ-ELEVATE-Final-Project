@@ -97,7 +97,7 @@ class Ui_LOGIN(object):
         self.pushButton_xtolanding.setGeometry(QtCore.QRect(670, 50, 221, 41))
         font = QtGui.QFont()
         font.setFamily("Verdana")
-        font.setPointSize(-1)
+        font.setPointSize(11)
         font.setBold(True)
         font.setWeight(87)
         self.pushButton_xtolanding.setFont(font)
@@ -105,7 +105,6 @@ class Ui_LOGIN(object):
 "padding: 1px; \n"
 "font-weight: 700;\n"
 "font-family: \"Verdana\", sans-serif; \n"
-"font-size: 18px;\n"
 "background-color: #374550; \n"
 "color: white;")
         self.pushButton_xtolanding.setObjectName("pushButton_xtolanding")
@@ -188,16 +187,15 @@ class Ui_LOGIN(object):
 "color: white;")
         self.pushButton_LOGIN.setObjectName("pushButton_LOGIN")
         self.forgotPassLabel = QtWidgets.QLabel(self.frame)
-        self.forgotPassLabel.setGeometry(QtCore.QRect(60, 680, 351, 61))
+        self.forgotPassLabel.setGeometry(QtCore.QRect(60, 680, 381, 61))
         font = QtGui.QFont()
         font.setFamily("Verdana")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         font.setBold(False)
         font.setWeight(50)
         self.forgotPassLabel.setFont(font)
         self.forgotPassLabel.setStyleSheet("color: #022162;\n"
 "font-family: \"Verdana\", sans-serif; \n"
-"font-size: 14px;\n"
 "background: transparent;")
         self.forgotPassLabel.setObjectName("forgotPassLabel")
         self.pushButton_forgotPass_login_page = QtWidgets.QPushButton(self.frame)
@@ -227,7 +225,7 @@ class Ui_LOGIN(object):
 "")
         self.togglePasswordButton.setText("")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Downloads/EYE.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/EYE.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.togglePasswordButton.setIcon(icon)
         self.togglePasswordButton.setIconSize(QtCore.QSize(45, 45))
         self.togglePasswordButton.setObjectName("togglePasswordButton")
@@ -235,32 +233,16 @@ class Ui_LOGIN(object):
         self.pushButton_clearLogins.setGeometry(QtCore.QRect(740, 600, 141, 51))
         font = QtGui.QFont()
         font.setFamily("Verdana")
-        font.setPointSize(-1)
+        font.setPointSize(12)
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_clearLogins.setFont(font)
         self.pushButton_clearLogins.setStyleSheet("border-radius: 25px; \n"
 "padding: 5px; \n"
-"font-size: 20px;\n"
 "font-family: \"Verdana\", sans-serif; \n"
 "background-color: #c25b55; \n"
 "color: white;")
         self.pushButton_clearLogins.setObjectName("pushButton_clearLogins")
-        self.togglePasswordButton_2 = QtWidgets.QPushButton(self.frame)
-        self.togglePasswordButton_2.setGeometry(QtCore.QRect(810, 540, 51, 41))
-        self.togglePasswordButton_2.setStyleSheet("QPushButton#togglePasswordButton {\n"
-"    border: none;          /* Removes the border */\n"
-"    background-color: transparent; /* Transparent background */\n"
-"    padding: 2px;          /* Optional: Adds a bit of spacing */\n"
-"}\n"
-"\n"
-"")
-        self.togglePasswordButton_2.setText("")
-        icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/EYE.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.togglePasswordButton_2.setIcon(icon1)
-        self.togglePasswordButton_2.setIconSize(QtCore.QSize(45, 45))
-        self.togglePasswordButton_2.setObjectName("togglePasswordButton_2")
 
         self.retranslateUi(LOGIN)
         QtCore.QMetaObject.connectSlotsByName(LOGIN)

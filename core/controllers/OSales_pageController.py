@@ -9,6 +9,12 @@ class SalesPageController:
         self.ui.stackedWidget_Sales.setCurrentIndex(0)
         self.set_active_button(self.ui.pushButton_summaryView)
 
+        # Connect the filter combo box to update the label
+        self.ui.comboBox_filterSales.currentTextChanged.connect(self.update_sales_report_label)
+        
+        # Initialize label text based on the default combo box selection
+        self.update_sales_report_label(self.ui.comboBox_filterSales.currentText())
+
     def _setup_salestab_states(self):
         # List of all tab buttons in the sales page
         self.sales_tab_buttons = [
@@ -47,3 +53,16 @@ class SalesPageController:
             self.set_active_button(self.ui.pushButton_summaryView)
         elif index == 1:
             self.set_active_button(self.ui.pushButton_salesDetail)
+
+    def update_sales_report_label(self, filter_text):
+        """Update the sales report label based on the selected filter"""
+        filter_text = filter_text.upper()  
+        
+        if filter_text == "DAILY":
+            self.ui.SALES_label.setText("Daily Sales Report")
+        elif filter_text == "WEEKLY":
+            self.ui.SALES_label.setText("Weekly Sales Report")
+        elif filter_text == "MONTHLY":
+            self.ui.SALES_label.setText("Monthly Sales Report")
+        else:
+            self.ui.SALES_label.setText("Sales Report")   # Default/fallback

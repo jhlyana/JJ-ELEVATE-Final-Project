@@ -501,7 +501,7 @@ background: transparent;</string>
     <property name="font">
      <font>
       <family>Verdana</family>
-      <pointsize>-1</pointsize>
+      <pointsize>11</pointsize>
       <weight>87</weight>
       <bold>true</bold>
      </font>
@@ -511,7 +511,6 @@ background: transparent;</string>
 padding: 1px; 
 font-weight: 700;
 font-family: &quot;Verdana&quot;, sans-serif; 
-font-size: 18px;
 background-color: #374550; 
 color: white;</string>
     </property>
@@ -536,7 +535,7 @@ color: white;</string>
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../../../../New folder/resources/images/J&amp;J logo.png</pixmap>
+    <pixmap>../resources/images/JJLOGO.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -670,7 +669,7 @@ background: transparent;
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../../../../New folder/resources/images/login_pic.png</pixmap>
+    <pixmap>../resources/images/PIC_log_sign_in.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>

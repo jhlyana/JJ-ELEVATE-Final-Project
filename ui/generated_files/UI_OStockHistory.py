@@ -177,7 +177,7 @@ class Ui_OWNER_STOCKHISTORY(object):
 "    }")
         self.pushButton_SEARCH_StockHistory.setObjectName("pushButton_SEARCH_StockHistory")
         self.stockHistoryText = QtWidgets.QLabel(self.frame_45)
-        self.stockHistoryText.setGeometry(QtCore.QRect(40, 50, 501, 71))
+        self.stockHistoryText.setGeometry(QtCore.QRect(40, 50, 801, 71))
         self.stockHistoryText.setStyleSheet("color: #12245c;\n"
 "font-family: \"Arial Black\", Arial, sans-serif; \n"
 "background: transparent;\n"

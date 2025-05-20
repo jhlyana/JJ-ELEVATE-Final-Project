@@ -244,7 +244,7 @@ class Ui_ForgotPass(object):
         self.pushButton_xtolanding_forgotpass_2.setGeometry(QtCore.QRect(680, 30, 221, 41))
         font = QtGui.QFont()
         font.setFamily("Verdana")
-        font.setPointSize(-1)
+        font.setPointSize(11)
         font.setBold(True)
         font.setWeight(87)
         self.pushButton_xtolanding_forgotpass_2.setFont(font)
@@ -252,7 +252,6 @@ class Ui_ForgotPass(object):
 "padding: 1px; \n"
 "font-weight: 700;\n"
 "font-family: \"Verdana\", sans-serif; \n"
-"font-size: 18px;\n"
 "background-color: #374550; \n"
 "color: white;")
         self.pushButton_xtolanding_forgotpass_2.setObjectName("pushButton_xtolanding_forgotpass_2")
@@ -260,7 +259,7 @@ class Ui_ForgotPass(object):
         self.label.setGeometry(QtCore.QRect(270, 130, 451, 331))
         self.label.setStyleSheet("background-color: transparent;")
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("ui/raw_files\\../../../../New folder/resources/images/J&J logo.png"))
+        self.label.setPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/JJLOGO.png"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.jframe = QtWidgets.QFrame(ForgotPass)
@@ -316,7 +315,7 @@ class Ui_ForgotPass(object):
         self.PIC.setMinimumSize(QtCore.QSize(100, 40))
         self.PIC.setMaximumSize(QtCore.QSize(16777215, 16777215))
         self.PIC.setText("")
-        self.PIC.setPixmap(QtGui.QPixmap("ui/raw_files\\../../../../New folder/resources/images/login_pic.png"))
+        self.PIC.setPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/PIC_log_sign_in.png"))
         self.PIC.setScaledContents(True)
         self.PIC.setObjectName("PIC")
         self.PIC.raise_()

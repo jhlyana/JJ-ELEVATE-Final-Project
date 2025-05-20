@@ -17,13 +17,37 @@ class Ui_OWNER_ORDERS(object):
         OWNER_ORDERS.resize(1921, 1005)
         OWNER_ORDERS.setStyleSheet("background: white;")
         self.stackedWidget_Orders = QtWidgets.QStackedWidget(OWNER_ORDERS)
-        self.stackedWidget_Orders.setGeometry(QtCore.QRect(300, 210, 1621, 771))
+        self.stackedWidget_Orders.setGeometry(QtCore.QRect(300, 140, 1621, 841))
         self.stackedWidget_Orders.setObjectName("stackedWidget_Orders")
         self.page = QtWidgets.QWidget()
         self.page.setObjectName("page")
         self.tableWidget_order = QtWidgets.QTableWidget(self.page)
-        self.tableWidget_order.setGeometry(QtCore.QRect(50, 0, 1531, 741))
-        self.tableWidget_order.setStyleSheet("padding: 1;")
+        self.tableWidget_order.setGeometry(QtCore.QRect(50, 30, 1531, 781))
+        self.tableWidget_order.setStyleSheet(" \n"
+"QTableWidget {\n"
+"    background-color: white;\n"
+"    gridline-color: lightgray;\n"
+"    selection-background-color: #ebe0cc;\n"
+"    selection-color: white;               /* selected row text */\n"
+"}\n"
+"\n"
+"QTableWidget::item:hover {\n"
+"    background-color: #b33c35;  /* slightly lighter hover effect */\n"
+"    color: white;\n"
+"}\n"
+"\n"
+"QHeaderView::section {\n"
+"    background-color: #c25b55; /* deep maroon header */\n"
+"    color: white;\n"
+"    font-weight: bold;\n"
+"    padding: 4px;\n"
+"    border: 1px solid lightgray;\n"
+"}\n"
+"\n"
+"QTableWidget::item {\n"
+"    padding-left: 12px;\n"
+"    padding-right: 12px;\n"
+"}")
         self.tableWidget_order.setObjectName("tableWidget_order")
         self.tableWidget_order.setColumnCount(9)
         self.tableWidget_order.setRowCount(0)
@@ -53,9 +77,6 @@ class Ui_OWNER_ORDERS(object):
         item.setFont(font)
         self.tableWidget_order.setHorizontalHeaderItem(4, item)
         item = QtWidgets.QTableWidgetItem()
-        font = QtGui.QFont()
-        font.setPointSize(14)
-        item.setFont(font)
         self.tableWidget_order.setHorizontalHeaderItem(5, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
@@ -63,69 +84,16 @@ class Ui_OWNER_ORDERS(object):
         item.setFont(font)
         self.tableWidget_order.setHorizontalHeaderItem(6, item)
         item = QtWidgets.QTableWidgetItem()
-        font = QtGui.QFont()
-        font.setPointSize(14)
-        item.setFont(font)
         self.tableWidget_order.setHorizontalHeaderItem(7, item)
         item = QtWidgets.QTableWidgetItem()
-        font = QtGui.QFont()
-        font.setPointSize(14)
-        item.setFont(font)
         self.tableWidget_order.setHorizontalHeaderItem(8, item)
         self.tableWidget_order.horizontalHeader().setDefaultSectionSize(265)
         self.stackedWidget_Orders.addWidget(self.page)
         self.page_2 = QtWidgets.QWidget()
         self.page_2.setObjectName("page_2")
-        self.tableWidget_orderDetails = QtWidgets.QTableWidget(self.page_2)
-        self.tableWidget_orderDetails.setGeometry(QtCore.QRect(50, 0, 1531, 741))
-        self.tableWidget_orderDetails.setStyleSheet("padding: 1;")
-        self.tableWidget_orderDetails.setObjectName("tableWidget_orderDetails")
-        self.tableWidget_orderDetails.setColumnCount(8)
-        self.tableWidget_orderDetails.setRowCount(0)
-        item = QtWidgets.QTableWidgetItem()
-        font = QtGui.QFont()
-        font.setPointSize(14)
-        item.setFont(font)
-        self.tableWidget_orderDetails.setHorizontalHeaderItem(0, item)
-        item = QtWidgets.QTableWidgetItem()
-        font = QtGui.QFont()
-        font.setPointSize(14)
-        item.setFont(font)
-        self.tableWidget_orderDetails.setHorizontalHeaderItem(1, item)
-        item = QtWidgets.QTableWidgetItem()
-        font = QtGui.QFont()
-        font.setPointSize(14)
-        item.setFont(font)
-        self.tableWidget_orderDetails.setHorizontalHeaderItem(2, item)
-        item = QtWidgets.QTableWidgetItem()
-        font = QtGui.QFont()
-        font.setPointSize(14)
-        item.setFont(font)
-        self.tableWidget_orderDetails.setHorizontalHeaderItem(3, item)
-        item = QtWidgets.QTableWidgetItem()
-        font = QtGui.QFont()
-        font.setPointSize(14)
-        item.setFont(font)
-        self.tableWidget_orderDetails.setHorizontalHeaderItem(4, item)
-        item = QtWidgets.QTableWidgetItem()
-        font = QtGui.QFont()
-        font.setPointSize(14)
-        item.setFont(font)
-        self.tableWidget_orderDetails.setHorizontalHeaderItem(5, item)
-        item = QtWidgets.QTableWidgetItem()
-        font = QtGui.QFont()
-        font.setPointSize(14)
-        item.setFont(font)
-        self.tableWidget_orderDetails.setHorizontalHeaderItem(6, item)
-        item = QtWidgets.QTableWidgetItem()
-        font = QtGui.QFont()
-        font.setPointSize(14)
-        item.setFont(font)
-        self.tableWidget_orderDetails.setHorizontalHeaderItem(7, item)
-        self.tableWidget_orderDetails.horizontalHeader().setDefaultSectionSize(265)
         self.stackedWidget_Orders.addWidget(self.page_2)
         self.frame_45 = QtWidgets.QFrame(OWNER_ORDERS)
-        self.frame_45.setGeometry(QtCore.QRect(300, 0, 1621, 211))
+        self.frame_45.setGeometry(QtCore.QRect(300, 0, 1621, 151))
         self.frame_45.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_45.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_45.setObjectName("frame_45")
@@ -143,69 +111,7 @@ class Ui_OWNER_ORDERS(object):
         self.comboBox_filterOrders.addItem("")
         self.comboBox_filterOrders.addItem("")
         self.comboBox_filterOrders.addItem("")
-        self.frame_29 = QtWidgets.QFrame(self.frame_45)
-        self.frame_29.setGeometry(QtCore.QRect(50, 150, 661, 61))
-        self.frame_29.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_29.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_29.setObjectName("frame_29")
-        self.pushButton_order = QtWidgets.QPushButton(self.frame_29)
-        self.pushButton_order.setGeometry(QtCore.QRect(0, 10, 221, 61))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(-1)
-        self.pushButton_order.setFont(font)
-        self.pushButton_order.setStyleSheet("/* Default Button Style */\n"
-"QPushButton {\n"
-"    background-color: #003366;\n"
-"    border-radius: 10px;\n"
-"    font-size: 24px;\n"
-"    color: #ffffff;\n"
-"    padding: 9px;\n"
-"    font-family: \"Verdana\", sans-serif;\n"
-"    text-align: center;\n"
-"}\n"
-"\n"
-"/* Hover Effect */\n"
-"QPushButton:hover {\n"
-"    background-color: #8d2721;\n"
-"    color: #ffffff;\n"
-"}\n"
-"\n"
-"/* ACTIVE BUTTON (using CLASS selector) */\n"
-"QPushButton.activeButton {\n"
-"    background-color: #8d2721;\n"
-"    color: #ffffff;\n"
-"}")
-        self.pushButton_order.setObjectName("pushButton_order")
-        self.pushButton_orderDetail = QtWidgets.QPushButton(self.frame_29)
-        self.pushButton_orderDetail.setGeometry(QtCore.QRect(220, 10, 421, 61))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(-1)
-        self.pushButton_orderDetail.setFont(font)
-        self.pushButton_orderDetail.setStyleSheet("/* Default Button Style */\n"
-"QPushButton {\n"
-"    background-color: #003366;\n"
-"    border-radius: 10px;\n"
-"    font-size: 24px;\n"
-"    color: #ffffff;\n"
-"    padding: 9px;\n"
-"    font-family: \"Verdana\", sans-serif;\n"
-"    text-align: center;\n"
-"}\n"
-"\n"
-"/* Hover Effect */\n"
-"QPushButton:hover {\n"
-"    background-color: #8d2721;\n"
-"    color: #ffffff;\n"
-"}\n"
-"\n"
-"/* ACTIVE BUTTON (using CLASS selector) */\n"
-"QPushButton.activeButton {\n"
-"    background-color: #8d2721;\n"
-"    color: #ffffff;\n"
-"}")
-        self.pushButton_orderDetail.setObjectName("pushButton_orderDetail")
+        self.comboBox_filterOrders.addItem("")
         self.frame_4 = QtWidgets.QFrame(self.frame_45)
         self.frame_4.setGeometry(QtCore.QRect(830, 50, 511, 71))
         self.frame_4.setFrameShape(QtWidgets.QFrame.StyledPanel)
@@ -259,7 +165,7 @@ class Ui_OWNER_ORDERS(object):
 "    }")
         self.pushButton_searchOrders.setObjectName("pushButton_searchOrders")
         self.orderReportText = QtWidgets.QLabel(self.frame_45)
-        self.orderReportText.setGeometry(QtCore.QRect(50, 50, 501, 71))
+        self.orderReportText.setGeometry(QtCore.QRect(50, 50, 761, 71))
         self.orderReportText.setStyleSheet("color: #12245c;\n"
 "font-family: \"Arial Black\", Arial, sans-serif; \n"
 "background: transparent;\n"
@@ -524,47 +430,30 @@ class Ui_OWNER_ORDERS(object):
         item = self.tableWidget_order.horizontalHeaderItem(0)
         item.setText(_translate("OWNER_ORDERS", "Order ID"))
         item = self.tableWidget_order.horizontalHeaderItem(1)
-        item.setText(_translate("OWNER_ORDERS", "Date Created"))
-        item = self.tableWidget_order.horizontalHeaderItem(2)
-        item.setText(_translate("OWNER_ORDERS", "Status"))
-        item = self.tableWidget_order.horizontalHeaderItem(3)
-        item.setText(_translate("OWNER_ORDERS", "Total Amount (₱)"))
-        item = self.tableWidget_order.horizontalHeaderItem(4)
-        item.setText(_translate("OWNER_ORDERS", "Service"))
-        item = self.tableWidget_order.horizontalHeaderItem(5)
         item.setText(_translate("OWNER_ORDERS", "Customer Name"))
-        item = self.tableWidget_order.horizontalHeaderItem(6)
-        item.setText(_translate("OWNER_ORDERS", "Contact Number"))
-        item = self.tableWidget_order.horizontalHeaderItem(7)
-        item.setText(_translate("OWNER_ORDERS", "Customer Address"))
-        item = self.tableWidget_order.horizontalHeaderItem(8)
-        item.setText(_translate("OWNER_ORDERS", "Processed by"))
-        item = self.tableWidget_orderDetails.horizontalHeaderItem(0)
-        item.setText(_translate("OWNER_ORDERS", "Order ID"))
-        item = self.tableWidget_orderDetails.horizontalHeaderItem(1)
-        item.setText(_translate("OWNER_ORDERS", "Order Detail ID"))
-        item = self.tableWidget_orderDetails.horizontalHeaderItem(2)
-        item.setText(_translate("OWNER_ORDERS", "Product"))
-        item = self.tableWidget_orderDetails.horizontalHeaderItem(3)
+        item = self.tableWidget_order.horizontalHeaderItem(2)
+        item.setText(_translate("OWNER_ORDERS", "Products"))
+        item = self.tableWidget_order.horizontalHeaderItem(3)
+        item.setText(_translate("OWNER_ORDERS", "Price"))
+        item = self.tableWidget_order.horizontalHeaderItem(4)
         item.setText(_translate("OWNER_ORDERS", "Quantity"))
-        item = self.tableWidget_orderDetails.horizontalHeaderItem(4)
-        item.setText(_translate("OWNER_ORDERS", "Unit Price"))
-        item = self.tableWidget_orderDetails.horizontalHeaderItem(5)
-        item.setText(_translate("OWNER_ORDERS", "Discount"))
-        item = self.tableWidget_orderDetails.horizontalHeaderItem(6)
-        item.setText(_translate("OWNER_ORDERS", "Total Amount"))
-        item = self.tableWidget_orderDetails.horizontalHeaderItem(7)
-        item.setText(_translate("OWNER_ORDERS", "Date Created"))
+        item = self.tableWidget_order.horizontalHeaderItem(5)
+        item.setText(_translate("OWNER_ORDERS", "Subtotal"))
+        item = self.tableWidget_order.horizontalHeaderItem(6)
+        item.setText(_translate("OWNER_ORDERS", "Total Amount (₱)"))
+        item = self.tableWidget_order.horizontalHeaderItem(7)
+        item.setText(_translate("OWNER_ORDERS", "New Column"))
+        item = self.tableWidget_order.horizontalHeaderItem(8)
+        item.setText(_translate("OWNER_ORDERS", "Created at"))
         self.comboBox_filterOrders.setCurrentText(_translate("OWNER_ORDERS", "    Filter Orders"))
         self.comboBox_filterOrders.setItemText(0, _translate("OWNER_ORDERS", "    Filter Orders"))
-        self.comboBox_filterOrders.setItemText(1, _translate("OWNER_ORDERS", "Daily"))
-        self.comboBox_filterOrders.setItemText(2, _translate("OWNER_ORDERS", "Weekly"))
-        self.comboBox_filterOrders.setItemText(3, _translate("OWNER_ORDERS", "Monthly"))
-        self.pushButton_order.setText(_translate("OWNER_ORDERS", "Orders"))
-        self.pushButton_orderDetail.setText(_translate("OWNER_ORDERS", "View Order Details"))
+        self.comboBox_filterOrders.setItemText(1, _translate("OWNER_ORDERS", "Roof"))
+        self.comboBox_filterOrders.setItemText(2, _translate("OWNER_ORDERS", "Spandrel"))
+        self.comboBox_filterOrders.setItemText(3, _translate("OWNER_ORDERS", "Gutter"))
+        self.comboBox_filterOrders.setItemText(4, _translate("OWNER_ORDERS", "Others"))
         self.lineEdit__QuickSearch_Orders.setPlaceholderText(_translate("OWNER_ORDERS", "      Quick Search"))
         self.pushButton_searchOrders.setText(_translate("OWNER_ORDERS", "Search"))
-        self.orderReportText.setText(_translate("OWNER_ORDERS", "Order Report"))
+        self.orderReportText.setText(_translate("OWNER_ORDERS", "Order History"))
         self.JJelevate_text_2.setText(_translate("OWNER_ORDERS", "J&J "))
         self.pushButton_Dashboard.setText(_translate("OWNER_ORDERS", "  Home   "))
         self.pushButton_Inventory.setText(_translate("OWNER_ORDERS", "Inventory"))

@@ -186,12 +186,12 @@ QPushButton.activeButton {
       </property>
      </widget>
     </widget>
-    <widget class="QLabel" name="salesReportText">
+    <widget class="QLabel" name="SALES_label">
      <property name="geometry">
       <rect>
        <x>60</x>
        <y>50</y>
-       <width>501</width>
+       <width>801</width>
        <height>71</height>
       </rect>
      </property>
@@ -433,6 +433,11 @@ text-align: left;</string>
         <height>741</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
       <property name="styleSheet">
        <string notr="true"> 
 QTableWidget {
@@ -461,7 +466,7 @@ QTableWidget::item {
 }</string>
       </property>
       <attribute name="horizontalHeaderDefaultSectionSize">
-       <number>265</number>
+       <number>310</number>
       </attribute>
       <column>
        <property name="text">
@@ -516,7 +521,7 @@ QTableWidget::item {
      </widget>
     </widget>
     <widget class="QWidget" name="page_2">
-     <widget class="QTableWidget" name="tableWidget_salesDetails">
+     <widget class="QTableWidget" name="tableWidget_orderDetails">
       <property name="geometry">
        <rect>
         <x>50</x>
@@ -526,7 +531,7 @@ QTableWidget::item {
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">
+       <string notr="true"> 
 QTableWidget {
     background-color: white;
     gridline-color: lightgray;
@@ -550,12 +555,10 @@ QHeaderView::section {
 QTableWidget::item {
     padding-left: 12px;
     padding-right: 12px;
-}
-
-</string>
+}</string>
       </property>
       <attribute name="horizontalHeaderDefaultSectionSize">
-       <number>265</number>
+       <number>310</number>
       </attribute>
       <column>
        <property name="text">
@@ -563,7 +566,6 @@ QTableWidget::item {
        </property>
        <property name="font">
         <font>
-         <family>MS Shell Dlg 2</family>
          <pointsize>14</pointsize>
         </font>
        </property>
@@ -574,7 +576,6 @@ QTableWidget::item {
        </property>
        <property name="font">
         <font>
-         <family>MS Shell Dlg 2</family>
          <pointsize>14</pointsize>
         </font>
        </property>
@@ -585,7 +586,6 @@ QTableWidget::item {
        </property>
        <property name="font">
         <font>
-         <family>MS Shell Dlg 2</family>
          <pointsize>14</pointsize>
         </font>
        </property>
@@ -594,22 +594,10 @@ QTableWidget::item {
        <property name="text">
         <string>Total Sales Amount (₱)</string>
        </property>
-       <property name="font">
-        <font>
-         <family>MS Shell Dlg 2</family>
-         <pointsize>14</pointsize>
-        </font>
-       </property>
       </column>
       <column>
        <property name="text">
         <string>Date Recorded</string>
-       </property>
-       <property name="font">
-        <font>
-         <family>MS Shell Dlg 2</family>
-         <pointsize>14</pointsize>
-        </font>
        </property>
       </column>
      </widget>

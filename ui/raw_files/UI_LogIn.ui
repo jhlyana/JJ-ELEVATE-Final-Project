@@ -220,7 +220,7 @@ background: transparent;</string>
     <property name="font">
      <font>
       <family>Verdana</family>
-      <pointsize>-1</pointsize>
+      <pointsize>11</pointsize>
       <weight>87</weight>
       <bold>true</bold>
      </font>
@@ -230,7 +230,6 @@ background: transparent;</string>
 padding: 1px; 
 font-weight: 700;
 font-family: &quot;Verdana&quot;, sans-serif; 
-font-size: 18px;
 background-color: #374550; 
 color: white;</string>
     </property>
@@ -407,14 +406,14 @@ color: white;</string>
      <rect>
       <x>60</x>
       <y>680</y>
-      <width>351</width>
+      <width>381</width>
       <height>61</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Verdana</family>
-      <pointsize>-1</pointsize>
+      <pointsize>9</pointsize>
       <weight>50</weight>
       <bold>false</bold>
      </font>
@@ -422,7 +421,6 @@ color: white;</string>
     <property name="styleSheet">
      <string notr="true">color: #022162;
 font-family: &quot;Verdana&quot;, sans-serif; 
-font-size: 14px;
 background: transparent;</string>
     </property>
     <property name="text">
@@ -482,7 +480,7 @@ color: #022162;</string>
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>../../../../Downloads/EYE.png</normaloff>../../../../Downloads/EYE.png</iconset>
+      <normaloff>../resources/images/EYE.png</normaloff>../resources/images/EYE.png</iconset>
     </property>
     <property name="iconSize">
      <size>
@@ -503,7 +501,7 @@ color: #022162;</string>
     <property name="font">
      <font>
       <family>Verdana</family>
-      <pointsize>-1</pointsize>
+      <pointsize>12</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -511,45 +509,12 @@ color: #022162;</string>
     <property name="styleSheet">
      <string notr="true">border-radius: 25px; 
 padding: 5px; 
-font-size: 20px;
 font-family: &quot;Verdana&quot;, sans-serif; 
 background-color: #c25b55; 
 color: white;</string>
     </property>
     <property name="text">
      <string>Clear </string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="togglePasswordButton_2">
-    <property name="geometry">
-     <rect>
-      <x>810</x>
-      <y>540</y>
-      <width>51</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton#togglePasswordButton {
-    border: none;          /* Removes the border */
-    background-color: transparent; /* Transparent background */
-    padding: 2px;          /* Optional: Adds a bit of spacing */
-}
-
-</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>../resources/images/EYE.png</normaloff>../resources/images/EYE.png</iconset>
-    </property>
-    <property name="iconSize">
-     <size>
-      <width>45</width>
-      <height>45</height>
-     </size>
     </property>
    </widget>
   </widget>
