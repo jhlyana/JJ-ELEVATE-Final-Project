@@ -2326,7 +2326,7 @@ color: #051a54;
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_7">
+   <widget class="QLabel" name="dateLabel">
     <property name="geometry">
      <rect>
       <x>40</x>

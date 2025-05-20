@@ -1119,21 +1119,21 @@ class Ui_OWNER_ACCOUNT(object):
 "")
         self.timeLabel.setAlignment(QtCore.Qt.AlignCenter)
         self.timeLabel.setObjectName("timeLabel")
-        self.label_7 = QtWidgets.QLabel(self.frame_45)
-        self.label_7.setGeometry(QtCore.QRect(40, 20, 771, 171))
+        self.dateLabel = QtWidgets.QLabel(self.frame_45)
+        self.dateLabel.setGeometry(QtCore.QRect(40, 20, 771, 171))
         font = QtGui.QFont()
         font.setFamily("Montserrat ExtraBold")
         font.setBold(True)
         font.setWeight(75)
-        self.label_7.setFont(font)
-        self.label_7.setStyleSheet("\n"
+        self.dateLabel.setFont(font)
+        self.dateLabel.setStyleSheet("\n"
 "    background-color: #f6f3ee;\n"
 "    border-radius: 16;\n"
 "    padding: 10px;\n"
 "\n"
 "")
-        self.label_7.setTextFormat(QtCore.Qt.RichText)
-        self.label_7.setObjectName("label_7")
+        self.dateLabel.setTextFormat(QtCore.Qt.RichText)
+        self.dateLabel.setObjectName("dateLabel")
         self.label = QtWidgets.QLabel(OWNER_ACCOUNT)
         self.label.setGeometry(QtCore.QRect(300, 930, 1631, 51))
         font = QtGui.QFont()
@@ -1443,7 +1443,7 @@ class Ui_OWNER_ACCOUNT(object):
         self.pushButton_CreateAccount_cashier.setText(_translate("OWNER_ACCOUNT", "Confirm"))
         self.pushButton_cancelCreateAccount_cashier.setText(_translate("OWNER_ACCOUNT", "Discard"))
         self.timeLabel.setText(_translate("OWNER_ACCOUNT", " 09 : 10 : 54 AM"))
-        self.label_7.setText(_translate("OWNER_ACCOUNT", "<html><head/><body><p align=\"center\"><span style=\" font-size:38pt; color:#022162;\">March 1, 2025</span><br/><span style=\" font-size:20pt; color:#b2423c;\">Monday</span></p></body></html>"))
+        self.dateLabel.setText(_translate("OWNER_ACCOUNT", "<html><head/><body><p align=\"center\"><span style=\" font-size:38pt; color:#022162;\">March 1, 2025</span><br/><span style=\" font-size:20pt; color:#b2423c;\">Monday</span></p></body></html>"))
         self.label.setText(_translate("OWNER_ACCOUNT", "                                                                           J  &  J  ROOFSTEEL  AND  GUTTER  SUPPLY  (MOALBOAL BRANCH)     "))
         self.JJelevate_text_2.setText(_translate("OWNER_ACCOUNT", "J&J "))
         self.pushButton_Dashboard.setText(_translate("OWNER_ACCOUNT", "  Home   "))

@@ -10,6 +10,7 @@ from core.controllers.OInv_pageController import InventoryPageController
 from core.controllers.OOrders_pageController import OrdersPageController
 from core.controllers.OSales_pageController import SalesPageController
 from core.controllers.OAcc_pageController import AccountPageController
+from core.controllers.Date_Time import DateTimeController
 
 class OwnerController:
     def __init__(self, main_controller):
@@ -18,6 +19,9 @@ class OwnerController:
         self.stack.setFixedSize(1921, 1005)
         self.current_active_button = None
         
+        # Initialize DateTimeController
+        self.date_time_controller = DateTimeController()
+        
         # Initialize all owner pages
         self._init_dashboard()
         self._init_inventory()
@@ -25,6 +29,16 @@ class OwnerController:
         self._init_sales()
         self._init_stock_history()
         self._init_account()
+        
+        # Connect date/time labels
+        self.date_time_controller.add_date_time_labels(
+            self.dashboard_ui.dateLabel,
+            self.dashboard_ui.timeLabel
+        )
+        self.date_time_controller.add_date_time_labels(
+            self.account_ui.dateLabel,
+            self.account_ui.timeLabel
+        )
         
         # Connect navigation signals
         self._connect_navigation()
@@ -48,7 +62,6 @@ class OwnerController:
         self.stack.addWidget(self.inventory_page)
         
         # Initialize inventory controller
-        from core.controllers.OInv_pageController import InventoryPageController
         self.inventory_controller = InventoryPageController(self.inventory_ui)
     
     def _init_orders(self):
