@@ -110,6 +110,9 @@ class OwnerController:
         }
         
         # Dashboard navigation
+        self.dashboard_ui.pushButton_Dashboard.clicked.connect(
+            lambda: [self.stack.setCurrentWidget(self.dashboard_page), 
+                    self.set_active_button('dashboard')])
         self.dashboard_ui.pushButton_Inventory.clicked.connect(
             lambda: [self.stack.setCurrentWidget(self.inventory_page), 
                     self.set_active_button('inventory')])
@@ -129,6 +132,15 @@ class OwnerController:
             self.stack.hide(),
             self.main_controller.logout()
         ])
+        
+        # Dashboard quick links
+        self.dashboard_ui.btnViewSalesReport.clicked.connect(
+            lambda: [self.stack.setCurrentWidget(self.sales_page),
+                    self.set_active_button('sales')])
+        
+        self.dashboard_ui.btnViewMore_Inventory.clicked.connect(
+            lambda: [self.stack.setCurrentWidget(self.inventory_page),
+                    self.set_active_button('inventory')])
         
         # Inventory navigation
         self.inventory_ui.pushButton_Dashboard.clicked.connect(
@@ -150,6 +162,11 @@ class OwnerController:
             self.stack.hide(),
             self.main_controller.logout()
         ])
+        
+        # Inventory view history button
+        self.inventory_ui.pushButton_ViewHistory.clicked.connect(
+            lambda: [self.stack.setCurrentWidget(self.stock_history_page),
+                    self.set_active_button('stock_history')])
         
         # Orders navigation
         self.orders_ui.pushButton_Dashboard.clicked.connect(

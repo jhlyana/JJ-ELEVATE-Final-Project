@@ -108,6 +108,112 @@ class Ui_OWNER_SALES(object):
 "background: transparent;\n"
 "font-size: 50px;")
         self.salesReportText.setObjectName("salesReportText")
+        self.pushButton_GenerateSReport = QtWidgets.QPushButton(self.frame_45)
+        self.pushButton_GenerateSReport.setGeometry(QtCore.QRect(1000, 120, 211, 31))
+        font = QtGui.QFont()
+        font.setFamily("Verdana")
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
+        self.pushButton_GenerateSReport.setFont(font)
+        self.pushButton_GenerateSReport.setStyleSheet("/* Default Inactive Action Buttons */\n"
+"QPushButton {\n"
+"    background-color: #ebe0cc;\n"
+"    border-radius: 10px;  /* Added \'px\' unit */\n"
+"    color: black;\n"
+"    padding: 2px;\n"
+"    text-align: center;\n"
+"}\n"
+"\n"
+"/* Hover Effect on Inactive Action Buttons */\n"
+"QPushButton:hover {\n"
+"    background-color: #c25b55;\n"
+"    color: black;\n"
+"}\n"
+"\n"
+"/* Active Action Button */\n"
+"QPushButton.activeActionButton {  /* Changed from # to . for class selector */\n"
+"    background-color: #c25b55;\n"
+"    color: black;\n"
+"    /* Maintain same properties as base button */\n"
+"    border-radius: 10px;\n"
+"    padding: 2px;\n"
+"}")
+        self.pushButton_GenerateSReport.setIconSize(QtCore.QSize(26, 26))
+        self.pushButton_GenerateSReport.setObjectName("pushButton_GenerateSReport")
+        self.pushButton_EndDate = QtWidgets.QPushButton(self.frame_45)
+        self.pushButton_EndDate.setGeometry(QtCore.QRect(1120, 70, 211, 31))
+        font = QtGui.QFont()
+        font.setFamily("Verdana")
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
+        self.pushButton_EndDate.setFont(font)
+        self.pushButton_EndDate.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.pushButton_EndDate.setStyleSheet("QPushButton {\n"
+"    background-color: #ebe0cc;\n"
+"    border-radius: 10px; \n"
+"    color: black;\n"
+"    padding: 2px 2px 2px 2px; /* top, right, bottom, left */\n"
+"    text-align: right;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(235, 224, 204, 0.9); \n"
+"}")
+        self.pushButton_EndDate.setText("")
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/Cicon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_EndDate.setIcon(icon)
+        self.pushButton_EndDate.setIconSize(QtCore.QSize(26, 26))
+        self.pushButton_EndDate.setObjectName("pushButton_EndDate")
+        self.pushButton_StartDate = QtWidgets.QPushButton(self.frame_45)
+        self.pushButton_StartDate.setGeometry(QtCore.QRect(880, 70, 211, 31))
+        font = QtGui.QFont()
+        font.setFamily("Verdana")
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
+        self.pushButton_StartDate.setFont(font)
+        self.pushButton_StartDate.setStyleSheet("QPushButton {\n"
+"    background-color: #ebe0cc;\n"
+"    border-radius: 10px; \n"
+"    color: black;\n"
+"    padding: 2px 2px 2px 2px; /* top, right, bottom, left */\n"
+"    text-align: right;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(235, 224, 204, 0.9); \n"
+"}")
+        self.pushButton_StartDate.setText("")
+        self.pushButton_StartDate.setIcon(icon)
+        self.pushButton_StartDate.setIconSize(QtCore.QSize(26, 26))
+        self.pushButton_StartDate.setObjectName("pushButton_StartDate")
+        self.label = QtWidgets.QPushButton(self.frame_45)
+        self.label.setGeometry(QtCore.QRect(880, 40, 151, 31))
+        font = QtGui.QFont()
+        font.setFamily("Verdana")
+        font.setPointSize(8)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label.setFont(font)
+        self.label.setStyleSheet("background: transparent;\n"
+"text-align: left;")
+        self.label.setIconSize(QtCore.QSize(26, 26))
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QPushButton(self.frame_45)
+        self.label_2.setGeometry(QtCore.QRect(1120, 40, 151, 31))
+        font = QtGui.QFont()
+        font.setFamily("Verdana")
+        font.setPointSize(8)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label_2.setFont(font)
+        self.label_2.setStyleSheet("background: transparent;\n"
+"text-align: left;")
+        self.label_2.setIconSize(QtCore.QSize(26, 26))
+        self.label_2.setObjectName("label_2")
         self.stackedWidget_Sales = QtWidgets.QStackedWidget(self.sales_inview)
         self.stackedWidget_Sales.setGeometry(QtCore.QRect(0, 210, 1621, 771))
         self.stackedWidget_Sales.setObjectName("stackedWidget_Sales")
@@ -141,7 +247,7 @@ class Ui_OWNER_SALES(object):
 "    padding-right: 12px;\n"
 "}")
         self.tableWidget_salesSummary.setObjectName("tableWidget_salesSummary")
-        self.tableWidget_salesSummary.setColumnCount(6)
+        self.tableWidget_salesSummary.setColumnCount(5)
         self.tableWidget_salesSummary.setRowCount(0)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
@@ -168,11 +274,6 @@ class Ui_OWNER_SALES(object):
         font.setPointSize(14)
         item.setFont(font)
         self.tableWidget_salesSummary.setHorizontalHeaderItem(4, item)
-        item = QtWidgets.QTableWidgetItem()
-        font = QtGui.QFont()
-        font.setPointSize(14)
-        item.setFont(font)
-        self.tableWidget_salesSummary.setHorizontalHeaderItem(5, item)
         self.tableWidget_salesSummary.horizontalHeader().setDefaultSectionSize(265)
         self.stackedWidget_Sales.addWidget(self.page)
         self.page_2 = QtWidgets.QWidget()
@@ -299,9 +400,9 @@ class Ui_OWNER_SALES(object):
 "    font-weight: 700;\n"
 "}\n"
 "")
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/dashboard_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Dashboard.setIcon(icon)
+        icon1 = QtGui.QIcon()
+        icon1.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/dashboard_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Dashboard.setIcon(icon1)
         self.pushButton_Dashboard.setIconSize(QtCore.QSize(40, 40))
         self.pushButton_Dashboard.setObjectName("pushButton_Dashboard")
         self.pushButton_Inventory = QtWidgets.QPushButton(self.LeftMenuBar)
@@ -328,9 +429,9 @@ class Ui_OWNER_SALES(object):
 "    font-weight: 700;\n"
 "}\n"
 "")
-        icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/inventory_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Inventory.setIcon(icon1)
+        icon2 = QtGui.QIcon()
+        icon2.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/inventory_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Inventory.setIcon(icon2)
         self.pushButton_Inventory.setIconSize(QtCore.QSize(50, 45))
         self.pushButton_Inventory.setObjectName("pushButton_Inventory")
         self.pushButton_Orders = QtWidgets.QPushButton(self.LeftMenuBar)
@@ -357,9 +458,9 @@ class Ui_OWNER_SALES(object):
 "    font-weight: 700;\n"
 "}\n"
 "")
-        icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/orders_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Orders.setIcon(icon2)
+        icon3 = QtGui.QIcon()
+        icon3.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/orders_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Orders.setIcon(icon3)
         self.pushButton_Orders.setIconSize(QtCore.QSize(46, 42))
         self.pushButton_Orders.setObjectName("pushButton_Orders")
         self.pushButton_Sales = QtWidgets.QPushButton(self.LeftMenuBar)
@@ -386,9 +487,9 @@ class Ui_OWNER_SALES(object):
 "    font-weight: 700;\n"
 "}\n"
 "")
-        icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/sales_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Sales.setIcon(icon3)
+        icon4 = QtGui.QIcon()
+        icon4.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/sales_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Sales.setIcon(icon4)
         self.pushButton_Sales.setIconSize(QtCore.QSize(35, 35))
         self.pushButton_Sales.setObjectName("pushButton_Sales")
         self.pushButton_Account = QtWidgets.QPushButton(self.LeftMenuBar)
@@ -415,9 +516,9 @@ class Ui_OWNER_SALES(object):
 "    font-weight: 700;\n"
 "}\n"
 "")
-        icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/account_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Account.setIcon(icon4)
+        icon5 = QtGui.QIcon()
+        icon5.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/account_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Account.setIcon(icon5)
         self.pushButton_Account.setIconSize(QtCore.QSize(48, 48))
         self.pushButton_Account.setObjectName("pushButton_Account")
         self.pushButton_LogOut = QtWidgets.QPushButton(self.LeftMenuBar)
@@ -442,9 +543,9 @@ class Ui_OWNER_SALES(object):
 "        color: white;\n"
 "    font-weight: 700;\n"
 "}")
-        icon5 = QtGui.QIcon()
-        icon5.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/WHITElogout_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_LogOut.setIcon(icon5)
+        icon6 = QtGui.QIcon()
+        icon6.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/WHITElogout_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_LogOut.setIcon(icon6)
         self.pushButton_LogOut.setIconSize(QtCore.QSize(38, 38))
         self.pushButton_LogOut.setObjectName("pushButton_LogOut")
         self.pushButton_Stock_History = QtWidgets.QPushButton(self.LeftMenuBar)
@@ -471,7 +572,7 @@ class Ui_OWNER_SALES(object):
 "    font-weight: 700;\n"
 "}\n"
 "")
-        self.pushButton_Stock_History.setIcon(icon1)
+        self.pushButton_Stock_History.setIcon(icon2)
         self.pushButton_Stock_History.setIconSize(QtCore.QSize(50, 45))
         self.pushButton_Stock_History.setObjectName("pushButton_Stock_History")
         self.JJelevate_text_3 = QtWidgets.QLabel(self.LeftMenuBar)
@@ -505,17 +606,18 @@ class Ui_OWNER_SALES(object):
         self.pushButton_summaryView.setText(_translate("OWNER_SALES", "Summary View"))
         self.pushButton_salesDetail.setText(_translate("OWNER_SALES", "Detailed View"))
         self.salesReportText.setText(_translate("OWNER_SALES", "Sales Report"))
+        self.pushButton_GenerateSReport.setText(_translate("OWNER_SALES", "Generate Report"))
+        self.label.setText(_translate("OWNER_SALES", "Start date"))
+        self.label_2.setText(_translate("OWNER_SALES", "End date"))
         item = self.tableWidget_salesSummary.horizontalHeaderItem(0)
         item.setText(_translate("OWNER_SALES", "Report ID"))
         item = self.tableWidget_salesSummary.horizontalHeaderItem(1)
         item.setText(_translate("OWNER_SALES", "Shop Branch"))
         item = self.tableWidget_salesSummary.horizontalHeaderItem(2)
-        item.setText(_translate("OWNER_SALES", "Report Type"))
-        item = self.tableWidget_salesSummary.horizontalHeaderItem(3)
         item.setText(_translate("OWNER_SALES", "Total Quantity Sold"))
-        item = self.tableWidget_salesSummary.horizontalHeaderItem(4)
+        item = self.tableWidget_salesSummary.horizontalHeaderItem(3)
         item.setText(_translate("OWNER_SALES", "Total Revenue (₱)"))
-        item = self.tableWidget_salesSummary.horizontalHeaderItem(5)
+        item = self.tableWidget_salesSummary.horizontalHeaderItem(4)
         item.setText(_translate("OWNER_SALES", "Date Generated"))
         item = self.tableWidget_salesDetails.horizontalHeaderItem(0)
         item.setText(_translate("OWNER_SALES", "Detail ID"))

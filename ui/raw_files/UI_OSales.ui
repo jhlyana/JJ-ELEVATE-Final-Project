@@ -205,6 +205,211 @@ font-size: 50px;</string>
       <string>Sales Report</string>
      </property>
     </widget>
+    <widget class="QPushButton" name="pushButton_GenerateSReport">
+     <property name="geometry">
+      <rect>
+       <x>1000</x>
+       <y>120</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Verdana</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">/* Default Inactive Action Buttons */
+QPushButton {
+    background-color: #ebe0cc;
+    border-radius: 10px;  /* Added 'px' unit */
+    color: black;
+    padding: 2px;
+    text-align: center;
+}
+
+/* Hover Effect on Inactive Action Buttons */
+QPushButton:hover {
+    background-color: #c25b55;
+    color: black;
+}
+
+/* Active Action Button */
+QPushButton.activeActionButton {  /* Changed from # to . for class selector */
+    background-color: #c25b55;
+    color: black;
+    /* Maintain same properties as base button */
+    border-radius: 10px;
+    padding: 2px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Generate Report</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>26</width>
+       <height>26</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_EndDate">
+     <property name="geometry">
+      <rect>
+       <x>1120</x>
+       <y>70</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Verdana</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: #ebe0cc;
+    border-radius: 10px; 
+    color: black;
+    padding: 2px 2px 2px 2px; /* top, right, bottom, left */
+    text-align: right;
+}
+
+QPushButton:hover {
+    background-color: rgba(235, 224, 204, 0.9); 
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../resources/images/Cicon.png</normaloff>../resources/images/Cicon.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>26</width>
+       <height>26</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_StartDate">
+     <property name="geometry">
+      <rect>
+       <x>880</x>
+       <y>70</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Verdana</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: #ebe0cc;
+    border-radius: 10px; 
+    color: black;
+    padding: 2px 2px 2px 2px; /* top, right, bottom, left */
+    text-align: right;
+}
+
+QPushButton:hover {
+    background-color: rgba(235, 224, 204, 0.9); 
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../resources/images/Cicon.png</normaloff>../resources/images/Cicon.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>26</width>
+       <height>26</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="label">
+     <property name="geometry">
+      <rect>
+       <x>880</x>
+       <y>40</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Verdana</family>
+       <pointsize>8</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: transparent;
+text-align: left;</string>
+     </property>
+     <property name="text">
+      <string>Start date</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>26</width>
+       <height>26</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>1120</x>
+       <y>40</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Verdana</family>
+       <pointsize>8</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: transparent;
+text-align: left;</string>
+     </property>
+     <property name="text">
+      <string>End date</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>26</width>
+       <height>26</height>
+      </size>
+     </property>
+    </widget>
    </widget>
    <widget class="QStackedWidget" name="stackedWidget_Sales">
     <property name="geometry">
@@ -271,16 +476,6 @@ QTableWidget::item {
       <column>
        <property name="text">
         <string>Shop Branch</string>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>14</pointsize>
-        </font>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>Report Type</string>
        </property>
        <property name="font">
         <font>
