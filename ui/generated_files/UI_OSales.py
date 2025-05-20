@@ -49,26 +49,27 @@ class Ui_OWNER_SALES(object):
         font.setFamily("Verdana")
         font.setPointSize(-1)
         self.pushButton_summaryView.setFont(font)
-        self.pushButton_summaryView.setStyleSheet("QPushButton {\n"
-"    background-color: #003366; /* Blue color */\n"
+        self.pushButton_summaryView.setStyleSheet("/* Default Button Style */\n"
+"QPushButton {\n"
+"    background-color: #003366;\n"
 "    border-radius: 10px;\n"
 "    font-size: 24px;\n"
-"    color: #ffffff; /* Corrected from font-color */\n"
+"    color: #ffffff;\n"
 "    padding: 9px;\n"
 "    font-family: \"Verdana\", sans-serif;\n"
 "    text-align: center;\n"
 "}\n"
 "\n"
-"/* Hover Effect on Inactive Buttons */\n"
+"/* Hover Effect */\n"
 "QPushButton:hover {\n"
 "    background-color: #8d2721;\n"
-"    color: #ffffff; /* Ensure text color remains white */\n"
+"    color: #ffffff;\n"
 "}\n"
 "\n"
-"/* Active Button (Current Page) */\n"
-"QPushButton#activeButton {\n"
-"    background-color:#8d2721;\n"
-"    color: #ffffff; /* Ensure text color remains white */\n"
+"/* Active Button (using CLASS selector) */\n"
+"QPushButton.activeButton {\n"
+"    background-color: #8d2721;\n"
+"    color: #ffffff;\n"
 "}")
         self.pushButton_summaryView.setObjectName("pushButton_summaryView")
         self.pushButton_salesDetail = QtWidgets.QPushButton(self.frame_29)
@@ -77,26 +78,27 @@ class Ui_OWNER_SALES(object):
         font.setFamily("Verdana")
         font.setPointSize(-1)
         self.pushButton_salesDetail.setFont(font)
-        self.pushButton_salesDetail.setStyleSheet("QPushButton {\n"
-"    background-color: #003366; /* Blue color */\n"
+        self.pushButton_salesDetail.setStyleSheet("/* Default Button Style */\n"
+"QPushButton {\n"
+"    background-color: #003366;\n"
 "    border-radius: 10px;\n"
 "    font-size: 24px;\n"
-"    color: #ffffff; /* Corrected from font-color */\n"
+"    color: #ffffff;\n"
 "    padding: 9px;\n"
 "    font-family: \"Verdana\", sans-serif;\n"
 "    text-align: center;\n"
 "}\n"
 "\n"
-"/* Hover Effect on Inactive Buttons */\n"
+"/* Hover Effect */\n"
 "QPushButton:hover {\n"
 "    background-color: #8d2721;\n"
-"    color: #ffffff; /* Ensure text color remains white */\n"
+"    color: #ffffff;\n"
 "}\n"
 "\n"
-"/* Active Button (Current Page) */\n"
-"QPushButton#activeButton {\n"
+"/* Active Button (using CLASS selector) */\n"
+"QPushButton.activeButton {\n"
 "    background-color: #8d2721;\n"
-"    color: #ffffff; /* Ensure text color remains white */\n"
+"    color: #ffffff;\n"
 "}")
         self.pushButton_salesDetail.setObjectName("pushButton_salesDetail")
         self.salesReportText = QtWidgets.QLabel(self.frame_45)
@@ -106,9 +108,9 @@ class Ui_OWNER_SALES(object):
 "background: transparent;\n"
 "font-size: 50px;")
         self.salesReportText.setObjectName("salesReportText")
-        self.stackedWidget = QtWidgets.QStackedWidget(self.sales_inview)
-        self.stackedWidget.setGeometry(QtCore.QRect(0, 210, 1621, 771))
-        self.stackedWidget.setObjectName("stackedWidget")
+        self.stackedWidget_Sales = QtWidgets.QStackedWidget(self.sales_inview)
+        self.stackedWidget_Sales.setGeometry(QtCore.QRect(0, 210, 1621, 771))
+        self.stackedWidget_Sales.setObjectName("stackedWidget_Sales")
         self.page = QtWidgets.QWidget()
         self.page.setObjectName("page")
         self.tableWidget_salesSummary = QtWidgets.QTableWidget(self.page)
@@ -172,7 +174,7 @@ class Ui_OWNER_SALES(object):
         item.setFont(font)
         self.tableWidget_salesSummary.setHorizontalHeaderItem(5, item)
         self.tableWidget_salesSummary.horizontalHeader().setDefaultSectionSize(265)
-        self.stackedWidget.addWidget(self.page)
+        self.stackedWidget_Sales.addWidget(self.page)
         self.page_2 = QtWidgets.QWidget()
         self.page_2.setObjectName("page_2")
         self.tableWidget_salesDetails = QtWidgets.QTableWidget(self.page_2)
@@ -238,7 +240,7 @@ class Ui_OWNER_SALES(object):
         item.setFont(font)
         self.tableWidget_salesDetails.setHorizontalHeaderItem(4, item)
         self.tableWidget_salesDetails.horizontalHeader().setDefaultSectionSize(265)
-        self.stackedWidget.addWidget(self.page_2)
+        self.stackedWidget_Sales.addWidget(self.page_2)
         self.LeftMenuBar = QtWidgets.QFrame(OWNER_SALES)
         self.LeftMenuBar.setGeometry(QtCore.QRect(0, 0, 301, 1011))
         font = QtGui.QFont()
@@ -489,7 +491,7 @@ class Ui_OWNER_SALES(object):
         self.JJelevate_text_3.setObjectName("JJelevate_text_3")
 
         self.retranslateUi(OWNER_SALES)
-        self.stackedWidget.setCurrentIndex(1)
+        self.stackedWidget_Sales.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(OWNER_SALES)
 
     def retranslateUi(self, OWNER_SALES):

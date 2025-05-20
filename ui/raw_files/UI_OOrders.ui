@@ -16,7 +16,7 @@
   <property name="styleSheet">
    <string notr="true">background: white;</string>
   </property>
-  <widget class="QStackedWidget" name="stackedWidget">
+  <widget class="QStackedWidget" name="stackedWidget_Orders">
    <property name="geometry">
     <rect>
      <x>300</x>
@@ -325,26 +325,27 @@ text-align: center;</string>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">QPushButton {
-    background-color: #003366; /* Blue color */
+      <string notr="true">/* Default Button Style */
+QPushButton {
+    background-color: #003366;
     border-radius: 10px;
     font-size: 24px;
-    color: #ffffff; /* Corrected from font-color */
+    color: #ffffff;
     padding: 9px;
     font-family: &quot;Verdana&quot;, sans-serif;
     text-align: center;
 }
 
-/* Hover Effect on Inactive Buttons */
+/* Hover Effect */
 QPushButton:hover {
     background-color: #8d2721;
-    color: #ffffff; /* Ensure text color remains white */
+    color: #ffffff;
 }
 
-/* Active Button (Current Page) */
-QPushButton#activeButton {
-    background-color:#8d2721;
-    color: #ffffff; /* Ensure text color remains white */
+/* ACTIVE BUTTON (using CLASS selector) */
+QPushButton.activeButton {
+    background-color: #8d2721;
+    color: #ffffff;
 }</string>
      </property>
      <property name="text">
@@ -367,26 +368,27 @@ QPushButton#activeButton {
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">QPushButton {
-    background-color: #003366; /* Blue color */
+      <string notr="true">/* Default Button Style */
+QPushButton {
+    background-color: #003366;
     border-radius: 10px;
     font-size: 24px;
-    color: #ffffff; /* Corrected from font-color */
+    color: #ffffff;
     padding: 9px;
     font-family: &quot;Verdana&quot;, sans-serif;
     text-align: center;
 }
 
-/* Hover Effect on Inactive Buttons */
+/* Hover Effect */
 QPushButton:hover {
     background-color: #8d2721;
-    color: #ffffff; /* Ensure text color remains white */
+    color: #ffffff;
 }
 
-/* Active Button (Current Page) */
-QPushButton#activeButton {
+/* ACTIVE BUTTON (using CLASS selector) */
+QPushButton.activeButton {
     background-color: #8d2721;
-    color: #ffffff; /* Ensure text color remains white */
+    color: #ffffff;
 }</string>
      </property>
      <property name="text">

@@ -115,26 +115,27 @@ text-align: center;</string>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">QPushButton {
-    background-color: #003366; /* Blue color */
+       <string notr="true">/* Default Button Style */
+QPushButton {
+    background-color: #003366;
     border-radius: 10px;
     font-size: 24px;
-    color: #ffffff; /* Corrected from font-color */
+    color: #ffffff;
     padding: 9px;
     font-family: &quot;Verdana&quot;, sans-serif;
     text-align: center;
 }
 
-/* Hover Effect on Inactive Buttons */
+/* Hover Effect */
 QPushButton:hover {
     background-color: #8d2721;
-    color: #ffffff; /* Ensure text color remains white */
+    color: #ffffff;
 }
 
-/* Active Button (Current Page) */
-QPushButton#activeButton {
-    background-color:#8d2721;
-    color: #ffffff; /* Ensure text color remains white */
+/* Active Button (using CLASS selector) */
+QPushButton.activeButton {
+    background-color: #8d2721;
+    color: #ffffff;
 }</string>
       </property>
       <property name="text">
@@ -157,26 +158,27 @@ QPushButton#activeButton {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">QPushButton {
-    background-color: #003366; /* Blue color */
+       <string notr="true">/* Default Button Style */
+QPushButton {
+    background-color: #003366;
     border-radius: 10px;
     font-size: 24px;
-    color: #ffffff; /* Corrected from font-color */
+    color: #ffffff;
     padding: 9px;
     font-family: &quot;Verdana&quot;, sans-serif;
     text-align: center;
 }
 
-/* Hover Effect on Inactive Buttons */
+/* Hover Effect */
 QPushButton:hover {
     background-color: #8d2721;
-    color: #ffffff; /* Ensure text color remains white */
+    color: #ffffff;
 }
 
-/* Active Button (Current Page) */
-QPushButton#activeButton {
+/* Active Button (using CLASS selector) */
+QPushButton.activeButton {
     background-color: #8d2721;
-    color: #ffffff; /* Ensure text color remains white */
+    color: #ffffff;
 }</string>
       </property>
       <property name="text">
@@ -204,7 +206,7 @@ font-size: 50px;</string>
      </property>
     </widget>
    </widget>
-   <widget class="QStackedWidget" name="stackedWidget">
+   <widget class="QStackedWidget" name="stackedWidget_Sales">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -214,7 +216,7 @@ font-size: 50px;</string>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QTableWidget" name="tableWidget_salesSummary">

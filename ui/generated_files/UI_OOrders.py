@@ -16,9 +16,9 @@ class Ui_OWNER_ORDERS(object):
         OWNER_ORDERS.setObjectName("OWNER_ORDERS")
         OWNER_ORDERS.resize(1921, 1005)
         OWNER_ORDERS.setStyleSheet("background: white;")
-        self.stackedWidget = QtWidgets.QStackedWidget(OWNER_ORDERS)
-        self.stackedWidget.setGeometry(QtCore.QRect(300, 210, 1621, 771))
-        self.stackedWidget.setObjectName("stackedWidget")
+        self.stackedWidget_Orders = QtWidgets.QStackedWidget(OWNER_ORDERS)
+        self.stackedWidget_Orders.setGeometry(QtCore.QRect(300, 210, 1621, 771))
+        self.stackedWidget_Orders.setObjectName("stackedWidget_Orders")
         self.page = QtWidgets.QWidget()
         self.page.setObjectName("page")
         self.tableWidget_order = QtWidgets.QTableWidget(self.page)
@@ -73,7 +73,7 @@ class Ui_OWNER_ORDERS(object):
         item.setFont(font)
         self.tableWidget_order.setHorizontalHeaderItem(8, item)
         self.tableWidget_order.horizontalHeader().setDefaultSectionSize(265)
-        self.stackedWidget.addWidget(self.page)
+        self.stackedWidget_Orders.addWidget(self.page)
         self.page_2 = QtWidgets.QWidget()
         self.page_2.setObjectName("page_2")
         self.tableWidget_orderDetails = QtWidgets.QTableWidget(self.page_2)
@@ -123,7 +123,7 @@ class Ui_OWNER_ORDERS(object):
         item.setFont(font)
         self.tableWidget_orderDetails.setHorizontalHeaderItem(7, item)
         self.tableWidget_orderDetails.horizontalHeader().setDefaultSectionSize(265)
-        self.stackedWidget.addWidget(self.page_2)
+        self.stackedWidget_Orders.addWidget(self.page_2)
         self.frame_45 = QtWidgets.QFrame(OWNER_ORDERS)
         self.frame_45.setGeometry(QtCore.QRect(300, 0, 1621, 211))
         self.frame_45.setFrameShape(QtWidgets.QFrame.StyledPanel)
@@ -154,26 +154,27 @@ class Ui_OWNER_ORDERS(object):
         font.setFamily("Verdana")
         font.setPointSize(-1)
         self.pushButton_order.setFont(font)
-        self.pushButton_order.setStyleSheet("QPushButton {\n"
-"    background-color: #003366; /* Blue color */\n"
+        self.pushButton_order.setStyleSheet("/* Default Button Style */\n"
+"QPushButton {\n"
+"    background-color: #003366;\n"
 "    border-radius: 10px;\n"
 "    font-size: 24px;\n"
-"    color: #ffffff; /* Corrected from font-color */\n"
+"    color: #ffffff;\n"
 "    padding: 9px;\n"
 "    font-family: \"Verdana\", sans-serif;\n"
 "    text-align: center;\n"
 "}\n"
 "\n"
-"/* Hover Effect on Inactive Buttons */\n"
+"/* Hover Effect */\n"
 "QPushButton:hover {\n"
 "    background-color: #8d2721;\n"
-"    color: #ffffff; /* Ensure text color remains white */\n"
+"    color: #ffffff;\n"
 "}\n"
 "\n"
-"/* Active Button (Current Page) */\n"
-"QPushButton#activeButton {\n"
-"    background-color:#8d2721;\n"
-"    color: #ffffff; /* Ensure text color remains white */\n"
+"/* ACTIVE BUTTON (using CLASS selector) */\n"
+"QPushButton.activeButton {\n"
+"    background-color: #8d2721;\n"
+"    color: #ffffff;\n"
 "}")
         self.pushButton_order.setObjectName("pushButton_order")
         self.pushButton_orderDetail = QtWidgets.QPushButton(self.frame_29)
@@ -182,26 +183,27 @@ class Ui_OWNER_ORDERS(object):
         font.setFamily("Verdana")
         font.setPointSize(-1)
         self.pushButton_orderDetail.setFont(font)
-        self.pushButton_orderDetail.setStyleSheet("QPushButton {\n"
-"    background-color: #003366; /* Blue color */\n"
+        self.pushButton_orderDetail.setStyleSheet("/* Default Button Style */\n"
+"QPushButton {\n"
+"    background-color: #003366;\n"
 "    border-radius: 10px;\n"
 "    font-size: 24px;\n"
-"    color: #ffffff; /* Corrected from font-color */\n"
+"    color: #ffffff;\n"
 "    padding: 9px;\n"
 "    font-family: \"Verdana\", sans-serif;\n"
 "    text-align: center;\n"
 "}\n"
 "\n"
-"/* Hover Effect on Inactive Buttons */\n"
+"/* Hover Effect */\n"
 "QPushButton:hover {\n"
 "    background-color: #8d2721;\n"
-"    color: #ffffff; /* Ensure text color remains white */\n"
+"    color: #ffffff;\n"
 "}\n"
 "\n"
-"/* Active Button (Current Page) */\n"
-"QPushButton#activeButton {\n"
+"/* ACTIVE BUTTON (using CLASS selector) */\n"
+"QPushButton.activeButton {\n"
 "    background-color: #8d2721;\n"
-"    color: #ffffff; /* Ensure text color remains white */\n"
+"    color: #ffffff;\n"
 "}")
         self.pushButton_orderDetail.setObjectName("pushButton_orderDetail")
         self.frame_4 = QtWidgets.QFrame(self.frame_45)
@@ -513,7 +515,7 @@ class Ui_OWNER_ORDERS(object):
         self.JJelevate_text_3.setObjectName("JJelevate_text_3")
 
         self.retranslateUi(OWNER_ORDERS)
-        self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget_Orders.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(OWNER_ORDERS)
 
     def retranslateUi(self, OWNER_ORDERS):

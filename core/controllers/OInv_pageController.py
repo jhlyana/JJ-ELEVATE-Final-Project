@@ -146,7 +146,6 @@ class InventoryPageController:
         """
         button.setStyleSheet(active_action_style)
 
-    # [Rest of your existing methods remain exactly the same...]
     def connect_inventory_buttons(self):
         """Connect all inventory page buttons to their handlers"""
         # Table view buttons

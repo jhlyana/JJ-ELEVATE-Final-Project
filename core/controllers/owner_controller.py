@@ -6,7 +6,9 @@ from ui.generated_files.UI_OSales import Ui_OWNER_SALES
 from ui.generated_files.UI_OStockHistory import Ui_OWNER_STOCKHISTORY
 from ui.generated_files.UI_OAccount import Ui_OWNER_ACCOUNT
 
-from core.controllers.OInv_pageController import InventoryPageController 
+from core.controllers.OInv_pageController import InventoryPageController
+from core.controllers.OOrders_pageController import OrdersPageController
+from core.controllers.OSales_pageController import SalesPageController
 from core.controllers.OAcc_pageController import AccountPageController
 
 class OwnerController:
@@ -54,12 +56,18 @@ class OwnerController:
         self.orders_ui = Ui_OWNER_ORDERS()
         self.orders_ui.setupUi(self.orders_page)
         self.stack.addWidget(self.orders_page)
+        
+        # Initialize orders controller
+        self.orders_controller = OrdersPageController(self.orders_ui, self)
     
     def _init_sales(self):
         self.sales_page = QWidget()
         self.sales_ui = Ui_OWNER_SALES()
         self.sales_ui.setupUi(self.sales_page)
         self.stack.addWidget(self.sales_page)
+        
+        # Initialize sales controller
+        self.sales_controller = SalesPageController(self.sales_ui, self)
     
     def _init_stock_history(self):
         self.stock_history_page = QWidget()
