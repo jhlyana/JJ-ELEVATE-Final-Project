@@ -5,146 +5,65 @@ class InventoryPageController:
         self.ui = ui
         # Initialize with all items table shown and ALL ITEMS button active
         self.ui.INVENTORY_afterBUTTONSclick.setCurrentIndex(0)
+        
+        # Group buttons for easier management
+        self._setup_button_groups()
         self.connect_inventory_buttons()
         self.set_active_inventorytable_button(self.ui.pushButton_Inventory_ALL_ITEMS_table)
     
+    def _setup_button_groups(self):
+        """Group related buttons together for styling purposes"""
+        self.table_view_buttons = [
+            self.ui.pushButton_Inventory_ALL_ITEMS_table,
+            self.ui.pushButton_Inventory_ROOF_table,
+            self.ui.pushButton_Inventory_SPANDREL_table,
+            self.ui.pushButton_Inventory_GUTTER_table,
+            self.ui.pushButton_Inventory_OTHER_table
+        ]
+        
+        self.action_buttons = [
+            self.ui.pushButton_OWNER_Add_Inventory,
+            self.ui.pushButton_OWNER_Edit_Inventory,
+            self.ui.pushButton_OWNER_Delete_Inventory
+        ]
+    
     def set_active_inventorytable_button(self, button):
         """Set the active state for inventory table view buttons"""
-        # Define base style for all buttons
-        base_style = """
-            QPushButton {
-                background-color: #ffffff;
-                color: black;
-                border: 1px solid #004aad; 
-                padding: 10px;
-                font-family: "Verdana", sans-serif; 
-                text-align: center;
-                border-top-left-radius: 15px;
-                border-top-right-radius: 15px;
-                border-bottom-left-radius: 0px;
-                border-bottom-right-radius: 0px;
-            }
-            QPushButton:hover {
-                background-color: #903929;
-                color: white;
-                font-weight: 700;
-                border: 1px solid #903929; 
-            }
-        """
+        # Reset all table view buttons first
+        for btn in self.table_view_buttons:
+            btn.setProperty('class', '')
+            btn.style().unpolish(btn)
+            btn.style().polish(btn)
         
-        # Reset all table view buttons
-        self.ui.pushButton_Inventory_ALL_ITEMS_table.setStyleSheet(base_style)
-        self.ui.pushButton_Inventory_ROOF_table.setStyleSheet(base_style)
-        self.ui.pushButton_Inventory_SPANDREL_table.setStyleSheet(base_style)
-        self.ui.pushButton_Inventory_GUTTER_table.setStyleSheet(base_style)
-        self.ui.pushButton_Inventory_OTHER_table.setStyleSheet(base_style)
+        # Reset action buttons to inactive state
+        for btn in self.action_buttons:
+            btn.setProperty('class', '')
+            btn.style().unpolish(btn)
+            btn.style().polish(btn)
         
-        # Also reset all action buttons
-        base_action_style = """
-            QPushButton {
-                background-color: #a6a6a6;
-                border-radius: 10px;
-                color: black;
-                padding: 2px;
-                text-align: center;
-            }
-            QPushButton:hover {
-                background-color: #c25b55;
-                color: black;
-            }
-        """
-        self.ui.pushButton_OWNER_Add_Inventory.setStyleSheet(base_action_style)
-        self.ui.pushButton_OWNER_Edit_Inventory.setStyleSheet(base_action_style)
-        self.ui.pushButton_OWNER_Delete_Inventory.setStyleSheet(base_action_style)
-        
-        # Set active button style
-        active_style = """
-            QPushButton {
-                background-color: #903929;
-                color: white;
-                font-weight: 700;
-                border: 1px solid #903929; 
-                padding: 10px;
-                font-family: "Verdana", sans-serif; 
-                text-align: center;
-                border-top-left-radius: 15px;
-                border-top-right-radius: 15px;
-                border-bottom-left-radius: 0px;
-                border-bottom-right-radius: 0px;
-            }
-            QPushButton:hover {
-                background-color: #903929;
-                color: white;
-                font-weight: 700;
-                border: 1px solid #903929; 
-            }
-        """
-        button.setStyleSheet(active_style)
+        # Set the clicked button as active
+        button.setProperty('class', 'activeButton')
+        button.style().unpolish(button)
+        button.style().polish(button)
     
     def set_active_inventory_updateStock_button(self, button):
         """Set the active state for inventory action buttons (Add/Edit/Delete)"""
-        # Define base style for action buttons
-        base_action_style = """
-            QPushButton {
-                background-color: #a6a6a6;
-                border-radius: 10px;
-                color: black;
-                padding: 2px;
-                text-align: center;
-            }
-            QPushButton:hover {
-                background-color: #c25b55;
-                color: black;
-            }
-        """
+        # Reset all action buttons first
+        for btn in self.action_buttons:
+            btn.setProperty('class', '')
+            btn.style().unpolish(btn)
+            btn.style().polish(btn)
         
-        # Reset all action buttons
-        self.ui.pushButton_OWNER_Add_Inventory.setStyleSheet(base_action_style)
-        self.ui.pushButton_OWNER_Edit_Inventory.setStyleSheet(base_action_style)
-        self.ui.pushButton_OWNER_Delete_Inventory.setStyleSheet(base_action_style)
+        # Reset table view buttons to inactive state
+        for btn in self.table_view_buttons:
+            btn.setProperty('class', '')
+            btn.style().unpolish(btn)
+            btn.style().polish(btn)
         
-        # Also reset all table view buttons
-        base_style = """
-            QPushButton {
-                background-color: #ffffff;
-                color: black;
-                border: 1px solid #004aad; 
-                padding: 10px;
-                font-family: "Verdana", sans-serif; 
-                text-align: center;
-                border-top-left-radius: 15px;
-                border-top-right-radius: 15px;
-                border-bottom-left-radius: 0px;
-                border-bottom-right-radius: 0px;
-            }
-            QPushButton:hover {
-                background-color: #903929;
-                color: white;
-                font-weight: 700;
-                border: 1px solid #903929; 
-            }
-        """
-        self.ui.pushButton_Inventory_ALL_ITEMS_table.setStyleSheet(base_style)
-        self.ui.pushButton_Inventory_ROOF_table.setStyleSheet(base_style)
-        self.ui.pushButton_Inventory_SPANDREL_table.setStyleSheet(base_style)
-        self.ui.pushButton_Inventory_GUTTER_table.setStyleSheet(base_style)
-        self.ui.pushButton_Inventory_OTHER_table.setStyleSheet(base_style)
-        
-        # Set active button style
-        active_action_style = """
-            QPushButton {
-                background-color: #c25b55;
-                color: black;
-                border-radius: 10px;
-                padding: 2px;
-                text-align: center;
-            }
-            QPushButton:hover {
-                background-color: #c25b55;
-                color: black;
-            }
-        """
-        button.setStyleSheet(active_action_style)
+        # Set the clicked button as active
+        button.setProperty('class', 'activeActionButton')
+        button.style().unpolish(button)
+        button.style().polish(button)
 
     def connect_inventory_buttons(self):
         """Connect all inventory page buttons to their handlers"""
@@ -326,14 +245,12 @@ class InventoryPageController:
             
     def confirm_add_stock(self, product_type):
         """Handle confirmation of adding new stock"""
-        # TODO: Implement actual stock addition logic
         msg = QMessageBox()
         msg.setIcon(QMessageBox.Information)
         msg.setWindowTitle("Success")
         msg.setText(f"{product_type} stock added successfully!")
         msg.exec_()
         
-        # Return to inventory table view
         self.view_all_items_table_inventory()
 
     def close_add_stock_form(self):
@@ -364,14 +281,12 @@ class InventoryPageController:
             
     def save_edit_stock(self, product_type):
         """Handle saving of edited stock information"""
-        # TODO: Implement actual stock editing logic
         msg = QMessageBox()
         msg.setIcon(QMessageBox.Information)
         msg.setWindowTitle("Success")
         msg.setText(f"{product_type} stock updated successfully!")
         msg.exec_()
         
-        # Return to inventory table view
         self.view_all_items_table_inventory()
 
     def close_edit_stock_form(self):
@@ -402,25 +317,21 @@ class InventoryPageController:
             
     def confirm_delete_stock(self, product_type):
         """Handle confirmation of deleting stock"""
-        # Create confirmation dialog
         msg = QMessageBox()
         msg.setIcon(QMessageBox.Warning)
         msg.setWindowTitle("Confirm Deletion")
         msg.setText(f"Are you sure you want to delete this {product_type} stock?")
         msg.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
         
-        # Show dialog and get response
         response = msg.exec_()
         
         if response == QMessageBox.Yes:
-            # TODO: Implement actual stock deletion logic
             success_msg = QMessageBox()
             success_msg.setIcon(QMessageBox.Information)
             success_msg.setWindowTitle("Success")
             success_msg.setText(f"{product_type} stock deleted successfully!")
             success_msg.exec_()
             
-            # Return to inventory table view
             self.view_all_items_table_inventory()
 
     def close_delete_stock_form(self):

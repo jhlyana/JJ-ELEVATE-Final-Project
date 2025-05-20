@@ -223,8 +223,6 @@ QPushButton {
     padding: 10px;
     font-family: &quot;Verdana&quot;, sans-serif; 
     text-align: center;
-
-    /* Only top corners curved */
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     border-bottom-left-radius: 0px;
@@ -239,20 +237,21 @@ QPushButton:hover {
     border: 1px solid #903929; 
 }
 
-/* Active Button (Current Page) */
-QPushButton#activeButton {
+/* Active Table View Button */
+QPushButton.activeButton {
     background-color: #903929;
     color: white;
     font-weight: 700;
-    border: 1px solid #903929; 
-
-    /* Keep the same corner radius for active button */
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border: 1px solid #903929;
 }
-</string>
+
+/* Active Action Button (Add/Edit/Delete) */
+QPushButton.activeActionButton {
+    background-color: #c25b55;
+    color: black;
+    border-radius: 10px;
+    padding: 2px;
+}</string>
      </property>
      <property name="text">
       <string>All Items</string>
@@ -282,8 +281,6 @@ QPushButton {
     padding: 10px;
     font-family: &quot;Verdana&quot;, sans-serif; 
     text-align: center;
-
-    /* Only top corners curved */
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     border-bottom-left-radius: 0px;
@@ -298,20 +295,21 @@ QPushButton:hover {
     border: 1px solid #903929; 
 }
 
-/* Active Button (Current Page) */
-QPushButton#activeButton {
+/* Active Table View Button */
+QPushButton.activeButton {
     background-color: #903929;
     color: white;
     font-weight: 700;
-    border: 1px solid #903929; 
-
-    /* Keep the same corner radius for active button */
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border: 1px solid #903929;
 }
-</string>
+
+/* Active Action Button (Add/Edit/Delete) */
+QPushButton.activeActionButton {
+    background-color: #c25b55;
+    color: black;
+    border-radius: 10px;
+    padding: 2px;
+}</string>
      </property>
      <property name="text">
       <string>Roof</string>
@@ -341,8 +339,6 @@ QPushButton {
     padding: 10px;
     font-family: &quot;Verdana&quot;, sans-serif; 
     text-align: center;
-
-    /* Only top corners curved */
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     border-bottom-left-radius: 0px;
@@ -357,20 +353,21 @@ QPushButton:hover {
     border: 1px solid #903929; 
 }
 
-/* Active Button (Current Page) */
-QPushButton#activeButton {
+/* Active Table View Button */
+QPushButton.activeButton {
     background-color: #903929;
     color: white;
     font-weight: 700;
-    border: 1px solid #903929; 
-
-    /* Keep the same corner radius for active button */
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border: 1px solid #903929;
 }
-</string>
+
+/* Active Action Button (Add/Edit/Delete) */
+QPushButton.activeActionButton {
+    background-color: #c25b55;
+    color: black;
+    border-radius: 10px;
+    padding: 2px;
+}</string>
      </property>
      <property name="text">
       <string>Spandrel</string>
@@ -400,8 +397,6 @@ QPushButton {
     padding: 10px;
     font-family: &quot;Verdana&quot;, sans-serif; 
     text-align: center;
-
-    /* Only top corners curved */
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     border-bottom-left-radius: 0px;
@@ -416,20 +411,21 @@ QPushButton:hover {
     border: 1px solid #903929; 
 }
 
-/* Active Button (Current Page) */
-QPushButton#activeButton {
+/* Active Table View Button */
+QPushButton.activeButton {
     background-color: #903929;
     color: white;
     font-weight: 700;
-    border: 1px solid #903929; 
-
-    /* Keep the same corner radius for active button */
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border: 1px solid #903929;
 }
-</string>
+
+/* Active Action Button (Add/Edit/Delete) */
+QPushButton.activeActionButton {
+    background-color: #c25b55;
+    color: black;
+    border-radius: 10px;
+    padding: 2px;
+}</string>
      </property>
      <property name="text">
       <string>Gutter</string>
@@ -459,10 +455,8 @@ QPushButton {
     padding: 10px;
     font-family: &quot;Verdana&quot;, sans-serif; 
     text-align: center;
-
-    /* Only top corners curved */
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
 }
@@ -475,20 +469,21 @@ QPushButton:hover {
     border: 1px solid #903929; 
 }
 
-/* Active Button (Current Page) */
-QPushButton#activeButton {
+/* Active Table View Button */
+QPushButton.activeButton {
     background-color: #903929;
     color: white;
     font-weight: 700;
-    border: 1px solid #903929; 
-
-    /* Keep the same corner radius for active button */
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border: 1px solid #903929;
 }
-</string>
+
+/* Active Action Button (Add/Edit/Delete) */
+QPushButton.activeActionButton {
+    background-color: #c25b55;
+    color: black;
+    border-radius: 10px;
+    padding: 2px;
+}</string>
      </property>
      <property name="text">
       <string>Other</string>
@@ -528,28 +523,29 @@ QPushButton#activeButton {
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">/* Default Inactive Buttons */
+      <string notr="true">/* Default Inactive Action Buttons */
 QPushButton {
     background-color: #a6a6a6;
-border-radius: 10;
+    border-radius: 10px;  /* Added 'px' unit */
     color: black;
     padding: 2px;
     text-align: center;
 }
 
-
-/* Hover Effect on Inactive Buttons */
+/* Hover Effect on Inactive Action Buttons */
 QPushButton:hover {
-    background-color:#c25b55;
-color:black;
+    background-color: #c25b55;
+    color: black;
 }
 
-/* Active Button (Current Page) */
-QPushButton#activeButton {
-    background-color:#c25b55;
-color:black;
-}
-</string>
+/* Active Action Button */
+QPushButton.activeActionButton {  /* Changed from # to . for class selector */
+    background-color: #c25b55;
+    color: black;
+    /* Maintain same properties as base button */
+    border-radius: 10px;
+    padding: 2px;
+}</string>
      </property>
      <property name="text">
       <string>ADD</string>
@@ -583,28 +579,29 @@ color:black;
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">/* Default Inactive Buttons */
+      <string notr="true">/* Default Inactive Action Buttons */
 QPushButton {
     background-color: #a6a6a6;
-border-radius: 10;
+    border-radius: 10px;  /* Added 'px' unit */
     color: black;
     padding: 2px;
     text-align: center;
 }
 
-
-/* Hover Effect on Inactive Buttons */
+/* Hover Effect on Inactive Action Buttons */
 QPushButton:hover {
-    background-color:#c25b55;
-color:black;
+    background-color: #c25b55;
+    color: black;
 }
 
-/* Active Button (Current Page) */
-QPushButton#activeButton {
-    background-color:#c25b55;
-color:black;
-}
-</string>
+/* Active Action Button */
+QPushButton.activeActionButton {  /* Changed from # to . for class selector */
+    background-color: #c25b55;
+    color: black;
+    /* Maintain same properties as base button */
+    border-radius: 10px;
+    padding: 2px;
+}</string>
      </property>
      <property name="text">
       <string>EDIT</string>
@@ -638,28 +635,29 @@ color:black;
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">/* Default Inactive Buttons */
+      <string notr="true">/* Default Inactive Action Buttons */
 QPushButton {
     background-color: #a6a6a6;
-border-radius: 10;
+    border-radius: 10px;  /* Added 'px' unit */
     color: black;
     padding: 2px;
     text-align: center;
 }
 
-
-/* Hover Effect on Inactive Buttons */
+/* Hover Effect on Inactive Action Buttons */
 QPushButton:hover {
-    background-color:#c25b55;
-color:black;
+    background-color: #c25b55;
+    color: black;
 }
 
-/* Active Button (Current Page) */
-QPushButton#activeButton {
-    background-color:#c25b55;
-color:black;
-}
-</string>
+/* Active Action Button */
+QPushButton.activeActionButton {  /* Changed from # to . for class selector */
+    background-color: #c25b55;
+    color: black;
+    /* Maintain same properties as base button */
+    border-radius: 10px;
+    padding: 2px;
+}</string>
      </property>
      <property name="text">
       <string>DELETE</string>
