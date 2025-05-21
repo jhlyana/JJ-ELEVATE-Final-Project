@@ -27,7 +27,7 @@ class Ui_CASHIER_SALES(object):
         self.comboBox_filterSales = QtWidgets.QComboBox(self.frame_45)
         self.comboBox_filterSales.setGeometry(QtCore.QRect(1350, 50, 231, 71))
         font = QtGui.QFont()
-        font.setPointSize(-1)
+        font.setPointSize(9)
         self.comboBox_filterSales.setFont(font)
         self.comboBox_filterSales.setStyleSheet("    background-color: #ebe0cc;\n"
 "    border-radius: 15px;\n"
@@ -47,7 +47,7 @@ class Ui_CASHIER_SALES(object):
         self.pushButton_summaryView.setGeometry(QtCore.QRect(0, 10, 261, 61))
         font = QtGui.QFont()
         font.setFamily("Verdana")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         self.pushButton_summaryView.setFont(font)
         self.pushButton_summaryView.setStyleSheet("/* Default Button Style */\n"
 "QPushButton {\n"
@@ -76,7 +76,7 @@ class Ui_CASHIER_SALES(object):
         self.pushButton_salesDetail.setGeometry(QtCore.QRect(260, 10, 281, 61))
         font = QtGui.QFont()
         font.setFamily("Verdana")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         self.pushButton_salesDetail.setFont(font)
         self.pushButton_salesDetail.setStyleSheet("/* Default Button Style */\n"
 "QPushButton {\n"
@@ -239,7 +239,7 @@ class Ui_CASHIER_SALES(object):
         self.JJelevate_text_2.setGeometry(QtCore.QRect(60, 220, 71, 41))
         font = QtGui.QFont()
         font.setFamily("Arial Black")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         font.setBold(True)
         font.setWeight(75)
         self.JJelevate_text_2.setFont(font)
@@ -407,7 +407,7 @@ class Ui_CASHIER_SALES(object):
         self.JJelevate_text_3.setGeometry(QtCore.QRect(130, 220, 131, 41))
         font = QtGui.QFont()
         font.setFamily("Arial Black")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         font.setBold(True)
         font.setWeight(75)
         self.JJelevate_text_3.setFont(font)

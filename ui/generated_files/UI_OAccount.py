@@ -30,14 +30,14 @@ class Ui_OWNER_ACCOUNT(object):
         self.pushButton_CREATE_C.setGeometry(QtCore.QRect(1130, 0, 441, 61))
         font = QtGui.QFont()
         font.setFamily("Verdana")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         self.pushButton_CREATE_C.setFont(font)
         self.pushButton_CREATE_C.setStyleSheet("/* Default Inactive Buttons */\n"
 "QPushButton {\n"
 "    background-color: #a6a6a6;\n"
 "    border-radius: 20px;\n"
 "    font-size: 24px;\n"
-"    color: #000000;  /* Fixed from font-color to color */\n"
+"    color: #000000;  /* Fixed from color to color */\n"
 "    padding: 9px;\n"
 "    font-family: \"Verdana\", sans-serif; \n"
 "    text-align: center;\n"
@@ -59,14 +59,14 @@ class Ui_OWNER_ACCOUNT(object):
         self.pushButton_VIEW_C.setGeometry(QtCore.QRect(590, 0, 441, 61))
         font = QtGui.QFont()
         font.setFamily("Verdana")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         self.pushButton_VIEW_C.setFont(font)
         self.pushButton_VIEW_C.setStyleSheet("/* Default Inactive Buttons */\n"
 "QPushButton {\n"
 "    background-color: #a6a6a6;\n"
 "    border-radius: 20px;\n"
 "    font-size: 24px;\n"
-"    color: #000000;  /* Fixed from font-color to color */\n"
+"    color: #000000;  /* Fixed from color to color */\n"
 "    padding: 9px;\n"
 "    font-family: \"Verdana\", sans-serif; \n"
 "    text-align: center;\n"
@@ -88,14 +88,14 @@ class Ui_OWNER_ACCOUNT(object):
         self.pushButton_VIEW.setGeometry(QtCore.QRect(50, 0, 441, 61))
         font = QtGui.QFont()
         font.setFamily("Verdana")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         self.pushButton_VIEW.setFont(font)
         self.pushButton_VIEW.setStyleSheet("/* Default Inactive Buttons */\n"
 "QPushButton {\n"
 "    background-color: #a6a6a6;\n"
 "    border-radius: 20px;\n"
 "    font-size: 24px;\n"
-"    color: #000000;  /* Fixed from font-color to color */\n"
+"    color: #000000;  /* Fixed from color to color */\n"
 "    padding: 9px;\n"
 "    font-family: \"Verdana\", sans-serif; \n"
 "    text-align: center;\n"
@@ -137,7 +137,7 @@ class Ui_OWNER_ACCOUNT(object):
         self.ownerIDText.setGeometry(QtCore.QRect(230, 120, 141, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         self.ownerIDText.setFont(font)
         self.ownerIDText.setStyleSheet("\n"
 "QLabel {\n"
@@ -161,7 +161,7 @@ class Ui_OWNER_ACCOUNT(object):
         self.ownerRoleText.setGeometry(QtCore.QRect(230, 260, 191, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         self.ownerRoleText.setFont(font)
         self.ownerRoleText.setStyleSheet("\n"
 "QLabel {\n"
@@ -185,7 +185,7 @@ class Ui_OWNER_ACCOUNT(object):
         self.ownerNameText.setGeometry(QtCore.QRect(230, 380, 191, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         self.ownerNameText.setFont(font)
         self.ownerNameText.setStyleSheet("\n"
 "QLabel {\n"
@@ -282,7 +282,7 @@ class Ui_OWNER_ACCOUNT(object):
         self.userNameText.setGeometry(QtCore.QRect(160, 130, 141, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         self.userNameText.setFont(font)
         self.userNameText.setStyleSheet("\n"
 "QLabel {\n"
@@ -306,7 +306,7 @@ class Ui_OWNER_ACCOUNT(object):
         self.oldPassText.setGeometry(QtCore.QRect(160, 300, 201, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         self.oldPassText.setFont(font)
         self.oldPassText.setStyleSheet("\n"
 "QLabel {\n"
@@ -330,7 +330,7 @@ class Ui_OWNER_ACCOUNT(object):
         self.setPassText.setGeometry(QtCore.QRect(580, 300, 261, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         self.setPassText.setFont(font)
         self.setPassText.setStyleSheet("\n"
 "QLabel {\n"
@@ -380,12 +380,12 @@ class Ui_OWNER_ACCOUNT(object):
         self.changeUserNameText.setGeometry(QtCore.QRect(340, 70, 351, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         self.changeUserNameText.setFont(font)
         self.changeUserNameText.setStyleSheet("\n"
 "QLabel {\n"
 "    font-size:36px;\n"
-"    font-color: #003366;\n"
+"    color: #003366;\n"
 "}\n"
 "    \n"
 "")
@@ -405,7 +405,7 @@ class Ui_OWNER_ACCOUNT(object):
         self.newUserNameText.setGeometry(QtCore.QRect(580, 130, 191, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         self.newUserNameText.setFont(font)
         self.newUserNameText.setStyleSheet("\n"
 "QLabel {\n"
@@ -418,7 +418,7 @@ class Ui_OWNER_ACCOUNT(object):
         self.changeUserPassText.setGeometry(QtCore.QRect(350, 250, 361, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         self.changeUserPassText.setFont(font)
         self.changeUserPassText.setStyleSheet("\n"
 "QLabel {\n"
@@ -442,7 +442,7 @@ class Ui_OWNER_ACCOUNT(object):
         self.confirmPassText.setGeometry(QtCore.QRect(160, 410, 261, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         self.confirmPassText.setFont(font)
         self.confirmPassText.setStyleSheet("\n"
 "QLabel {\n"
@@ -528,7 +528,7 @@ class Ui_OWNER_ACCOUNT(object):
         self.cashierIDText.setGeometry(QtCore.QRect(230, 120, 141, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         self.cashierIDText.setFont(font)
         self.cashierIDText.setStyleSheet("\n"
 "QLabel {\n"
@@ -552,7 +552,7 @@ class Ui_OWNER_ACCOUNT(object):
         self.cashierRoleText.setGeometry(QtCore.QRect(230, 260, 191, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         self.cashierRoleText.setFont(font)
         self.cashierRoleText.setStyleSheet("\n"
 "QLabel {\n"
@@ -576,7 +576,7 @@ class Ui_OWNER_ACCOUNT(object):
         self.cashierNameText.setGeometry(QtCore.QRect(230, 380, 191, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         self.cashierNameText.setFont(font)
         self.cashierNameText.setStyleSheet("\n"
 "QLabel {\n"
@@ -673,7 +673,7 @@ class Ui_OWNER_ACCOUNT(object):
         self.userNameText_2.setGeometry(QtCore.QRect(160, 130, 141, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         self.userNameText_2.setFont(font)
         self.userNameText_2.setStyleSheet("\n"
 "QLabel {\n"
@@ -697,7 +697,7 @@ class Ui_OWNER_ACCOUNT(object):
         self.oldPassText_2.setGeometry(QtCore.QRect(160, 300, 201, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         self.oldPassText_2.setFont(font)
         self.oldPassText_2.setStyleSheet("\n"
 "QLabel {\n"
@@ -721,7 +721,7 @@ class Ui_OWNER_ACCOUNT(object):
         self.setPassText_2.setGeometry(QtCore.QRect(580, 300, 261, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         self.setPassText_2.setFont(font)
         self.setPassText_2.setStyleSheet("\n"
 "QLabel {\n"
@@ -771,12 +771,12 @@ class Ui_OWNER_ACCOUNT(object):
         self.changeUserNameText_2.setGeometry(QtCore.QRect(340, 70, 351, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         self.changeUserNameText_2.setFont(font)
         self.changeUserNameText_2.setStyleSheet("\n"
 "QLabel {\n"
 "    font-size:36px;\n"
-"    font-color: #003366;\n"
+"    color: #003366;\n"
 "}\n"
 "    \n"
 "")
@@ -796,7 +796,7 @@ class Ui_OWNER_ACCOUNT(object):
         self.newUserNameText_2.setGeometry(QtCore.QRect(580, 130, 191, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         self.newUserNameText_2.setFont(font)
         self.newUserNameText_2.setStyleSheet("\n"
 "QLabel {\n"
@@ -809,7 +809,7 @@ class Ui_OWNER_ACCOUNT(object):
         self.changeUserPassText_2.setGeometry(QtCore.QRect(350, 250, 361, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         self.changeUserPassText_2.setFont(font)
         self.changeUserPassText_2.setStyleSheet("\n"
 "QLabel {\n"
@@ -833,7 +833,7 @@ class Ui_OWNER_ACCOUNT(object):
         self.confirmPassText_2.setGeometry(QtCore.QRect(160, 410, 261, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         self.confirmPassText_2.setFont(font)
         self.confirmPassText_2.setStyleSheet("\n"
 "QLabel {\n"
@@ -912,14 +912,14 @@ class Ui_OWNER_ACCOUNT(object):
         self.changeUserNameText_3.setGeometry(QtCore.QRect(100, 90, 631, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         self.changeUserNameText_3.setFont(font)
         self.changeUserNameText_3.setAutoFillBackground(False)
         self.changeUserNameText_3.setStyleSheet("\n"
 "QLabel {\n"
 "    background: transparent;\n"
 "    font-size: 40px;\n"
-"    font-color: #003366;\n"
+"    color: #003366;\n"
 "}\n"
 "    \n"
 "")
@@ -928,14 +928,14 @@ class Ui_OWNER_ACCOUNT(object):
         self.changeUserNameText_4.setGeometry(QtCore.QRect(190, 200, 101, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         self.changeUserNameText_4.setFont(font)
         self.changeUserNameText_4.setAutoFillBackground(False)
         self.changeUserNameText_4.setStyleSheet("\n"
 "QLabel {\n"
 "    background: transparent;\n"
 "    font-size:22px;\n"
-"    font-color: #003366;\n"
+"    color: #003366;\n"
 "}\n"
 "    \n"
 "")
@@ -944,14 +944,14 @@ class Ui_OWNER_ACCOUNT(object):
         self.changeUserNameText_5.setGeometry(QtCore.QRect(650, 200, 131, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         self.changeUserNameText_5.setFont(font)
         self.changeUserNameText_5.setAutoFillBackground(False)
         self.changeUserNameText_5.setStyleSheet("\n"
 "QLabel {\n"
 "    background: transparent;\n"
 "    font-size:22px;\n"
-"    font-color: #003366;\n"
+"    color: #003366;\n"
 "}\n"
 "    \n"
 "")
@@ -960,14 +960,14 @@ class Ui_OWNER_ACCOUNT(object):
         self.changeUserNameText_6.setGeometry(QtCore.QRect(1110, 200, 171, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         self.changeUserNameText_6.setFont(font)
         self.changeUserNameText_6.setAutoFillBackground(False)
         self.changeUserNameText_6.setStyleSheet("\n"
 "QLabel {\n"
 "    background: transparent;\n"
 "    font-size:22px;\n"
-"    font-color: #003366;\n"
+"    color: #003366;\n"
 "}\n"
 "    \n"
 "")
@@ -1020,14 +1020,14 @@ class Ui_OWNER_ACCOUNT(object):
         self.changeUserNameText_7.setGeometry(QtCore.QRect(190, 330, 131, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         self.changeUserNameText_7.setFont(font)
         self.changeUserNameText_7.setAutoFillBackground(False)
         self.changeUserNameText_7.setStyleSheet("\n"
 "QLabel {\n"
 "    background: transparent;\n"
 "    font-size:22px;\n"
-"    font-color: #003366;\n"
+"    color: #003366;\n"
 "}\n"
 "    \n"
 "")
@@ -1047,14 +1047,14 @@ class Ui_OWNER_ACCOUNT(object):
         self.changeUserNameText_8.setGeometry(QtCore.QRect(650, 330, 241, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         self.changeUserNameText_8.setFont(font)
         self.changeUserNameText_8.setAutoFillBackground(False)
         self.changeUserNameText_8.setStyleSheet("\n"
 "QLabel {\n"
 "    background: transparent;\n"
 "    font-size:22px;\n"
-"    font-color: #003366;\n"
+"    color: #003366;\n"
 "}\n"
 "    \n"
 "")
@@ -1162,7 +1162,7 @@ class Ui_OWNER_ACCOUNT(object):
         self.JJelevate_text_2.setGeometry(QtCore.QRect(60, 220, 71, 41))
         font = QtGui.QFont()
         font.setFamily("Arial Black")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         font.setBold(True)
         font.setWeight(75)
         self.JJelevate_text_2.setFont(font)
@@ -1386,7 +1386,7 @@ class Ui_OWNER_ACCOUNT(object):
         self.JJelevate_text_3.setGeometry(QtCore.QRect(130, 220, 131, 41))
         font = QtGui.QFont()
         font.setFamily("Arial Black")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         font.setBold(True)
         font.setWeight(75)
         self.JJelevate_text_3.setFont(font)

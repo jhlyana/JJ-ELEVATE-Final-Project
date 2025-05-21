@@ -112,32 +112,6 @@ QLabel {
          <string>User ID</string>
         </property>
        </widget>
-       <widget class="QLineEdit" name="cashierID">
-        <property name="geometry">
-         <rect>
-          <x>220</x>
-          <y>170</y>
-          <width>561</width>
-          <height>51</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <pointsize>15</pointsize>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">border: 1px solid #000000; 
-border-radius: 22px; 
-padding: 1px;</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="placeholderText">
-         <string/>
-        </property>
-       </widget>
        <widget class="QLabel" name="cashierRoleText_2">
         <property name="geometry">
          <rect>
@@ -163,32 +137,6 @@ QLabel {
         </property>
         <property name="text">
          <string>User Role</string>
-        </property>
-       </widget>
-       <widget class="QLineEdit" name="cashierRole">
-        <property name="geometry">
-         <rect>
-          <x>220</x>
-          <y>300</y>
-          <width>561</width>
-          <height>51</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <pointsize>15</pointsize>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">border: 1px solid #000000; 
-border-radius: 22px; 
-padding: 1px;</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="placeholderText">
-         <string/>
         </property>
        </widget>
        <widget class="QLabel" name="cashierNameText_2">
@@ -218,32 +166,6 @@ QLabel {
          <string>Username</string>
         </property>
        </widget>
-       <widget class="QLineEdit" name="cashierName">
-        <property name="geometry">
-         <rect>
-          <x>220</x>
-          <y>420</y>
-          <width>561</width>
-          <height>51</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <pointsize>15</pointsize>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">border: 1px solid #000000; 
-border-radius: 22px; 
-padding: 1px;</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="placeholderText">
-         <string/>
-        </property>
-       </widget>
        <widget class="QLabel" name="label_7">
         <property name="geometry">
          <rect>
@@ -262,13 +184,82 @@ border-radius: 80px;
          <string/>
         </property>
        </widget>
+       <widget class="QLabel" name="cashierID">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>170</y>
+          <width>561</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Poppins Medium</family>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: 1px solid #000000; 
+border-radius: 22px; 
+padding: 1px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="cashierRole">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>300</y>
+          <width>561</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Poppins Medium</family>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: 1px solid #000000; 
+border-radius: 22px; 
+padding: 1px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="cashierName">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>420</y>
+          <width>561</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Poppins Medium</family>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: 1px solid #000000; 
+border-radius: 22px; 
+padding: 1px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
        <zorder>label_7</zorder>
        <zorder>cashierIDText</zorder>
-       <zorder>cashierID</zorder>
        <zorder>cashierNameText_2</zorder>
-       <zorder>cashierName</zorder>
        <zorder>cashierRoleText_2</zorder>
+       <zorder>cashierID</zorder>
        <zorder>cashierRole</zorder>
+       <zorder>cashierName</zorder>
       </widget>
      </widget>
      <widget class="QFrame" name="frame_10">

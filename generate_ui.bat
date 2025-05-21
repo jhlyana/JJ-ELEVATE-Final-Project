@@ -9,6 +9,11 @@
 ::
 :: TO RUN:
 :: Type .\generate_ui.bat in VSCode terminal or CMD
+::
+:: NEW FEATURES:
+:: 1. Automatically fixes QFont::setPointSize(-1) warnings
+:: 2. Replaces invalid 'font-color' with 'color' in stylesheets
+:: 3. Fixes 'backgrouond' typo (changes to 'background')
 :: ========================================================
 
 @echo off
@@ -69,9 +74,18 @@ call :convert_ui UI_CSales
 call :convert_ui UI_CAccount
 
 :: ========================================================
-:: VERIFY ALL GENERATED CLASS NAMES
+:: CLEAN UP GENERATED FILES
 :: ========================================================
 echo.
+echo Cleaning up generated files...
+echo.
+
+:: Fix font size issues, font-color properties, and backgrouond typo in all generated files
+powershell -NoProfile -ExecutionPolicy Bypass -Command "Get-ChildItem 'ui/generated_files/*.py' | ForEach-Object { $content = Get-Content $_.FullName -Raw; $content = $content -replace '\.setPointSize\(-?[01]\)', '.setPointSize(9)'; $content = $content -replace 'font-color', 'color'; $content = $content -replace 'backgrouond', 'background'; Set-Content -Path $_.FullName -Value $content -NoNewline }"
+
+:: ========================================================
+:: VERIFY ALL GENERATED CLASS NAMES
+:: ========================================================
 echo Verifying all UI class names...
 echo.
 
@@ -97,11 +111,10 @@ findstr "class Ui_" ui\generated_files\UI_CAccount.py
 
 echo.
 echo Class name verification complete!
-pause
 
 :: Fix imports in all generated files
 echo Fixing imports...
-powershell -Command "(Get-ChildItem ui/generated_files/*.py) | ForEach-Object { (Get-Content $_) -replace 'import jj_resources_rc', 'from ui.resources import jj_resources_rc' | Set-Content $_ }"
+powershell -NoProfile -ExecutionPolicy Bypass -Command "Get-ChildItem 'ui/generated_files/*.py' | ForEach-Object { (Get-Content $_.FullName) -replace 'import jj_resources_rc', 'from ui.resources import jj_resources_rc' | Set-Content $_.FullName }"
 
 :: Verify generation - more accurate check
 set "error=0"

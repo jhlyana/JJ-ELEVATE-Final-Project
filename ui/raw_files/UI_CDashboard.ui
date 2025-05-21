@@ -25,6 +25,9 @@
      <height>211</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background:transparent;</string>
+   </property>
    <property name="frameShape">
     <enum>QFrame::StyledPanel</enum>
    </property>

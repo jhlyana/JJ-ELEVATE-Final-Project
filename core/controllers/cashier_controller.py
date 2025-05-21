@@ -5,6 +5,9 @@ from ui.generated_files.UI_COrder_History import Ui_CASHIER_ORDER_HISTORY
 from ui.generated_files.UI_CSales import Ui_CASHIER_SALES
 from ui.generated_files.UI_CAccount import Ui_CASHIER_ACCOUNT 
 
+from core.controllers.COrders_pageController import OrdersPageController
+from core.controllers.COrderHistory_pageController import OrderHistoryPageController
+from core.controllers.OSales_pageController import SalesPageController
 from core.controllers.Date_Time import DateTimeController  
 
 class CashierController:
@@ -51,18 +54,27 @@ class CashierController:
         self.orders_ui = Ui_CASHIER_ORDERS()
         self.orders_ui.setupUi(self.orders_page)
         self.stack.addWidget(self.orders_page)
+        
+        # Initialize orders controller
+        self.orders_controller = OrdersPageController(self.orders_ui, self)
 
     def _init_order_history(self):
         self.order_history_page = QWidget()
         self.order_history_ui = Ui_CASHIER_ORDER_HISTORY()
         self.order_history_ui.setupUi(self.order_history_page)
         self.stack.addWidget(self.order_history_page)
+        
+        # Initialize order history controller
+        self.orderHistory_controller = OrderHistoryPageController(self.order_history_ui, self)
     
     def _init_sales(self):
         self.sales_page = QWidget()
         self.sales_ui = Ui_CASHIER_SALES()
         self.sales_ui.setupUi(self.sales_page)
         self.stack.addWidget(self.sales_page)
+        
+        # Initialize sales controller
+        self.sales_controller = SalesPageController(self.sales_ui, self)
     
     def _init_account(self):
         self.account_page = QWidget()

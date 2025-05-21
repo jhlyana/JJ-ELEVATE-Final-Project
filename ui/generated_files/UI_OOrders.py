@@ -100,7 +100,7 @@ class Ui_OWNER_ORDERS(object):
         self.comboBox_filterOrders = QtWidgets.QComboBox(self.frame_45)
         self.comboBox_filterOrders.setGeometry(QtCore.QRect(1350, 50, 231, 71))
         font = QtGui.QFont()
-        font.setPointSize(-1)
+        font.setPointSize(9)
         self.comboBox_filterOrders.setFont(font)
         self.comboBox_filterOrders.setStyleSheet("    background-color: #ebe0cc;\n"
 "    border-radius: 15px;\n"
@@ -184,7 +184,7 @@ class Ui_OWNER_ORDERS(object):
         self.JJelevate_text_2.setGeometry(QtCore.QRect(60, 220, 71, 41))
         font = QtGui.QFont()
         font.setFamily("Arial Black")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         font.setBold(True)
         font.setWeight(75)
         self.JJelevate_text_2.setFont(font)
@@ -408,7 +408,7 @@ class Ui_OWNER_ORDERS(object):
         self.JJelevate_text_3.setGeometry(QtCore.QRect(130, 220, 131, 41))
         font = QtGui.QFont()
         font.setFamily("Arial Black")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         font.setBold(True)
         font.setWeight(75)
         self.JJelevate_text_3.setFont(font)

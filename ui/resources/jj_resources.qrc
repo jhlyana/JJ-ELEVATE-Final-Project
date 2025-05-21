@@ -23,5 +23,6 @@
     <file>images/WHITElogout_icon.svg</file>
     <file>images/WHITEsearch_icon.png</file>
     <file>images/Cicon.png</file>
+    <file>images/print.png</file>
   </qresource>
 </RCC>

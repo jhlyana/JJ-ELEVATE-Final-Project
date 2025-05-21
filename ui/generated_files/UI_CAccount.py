@@ -45,7 +45,7 @@ class Ui_CASHIER_ACCOUNT(object):
         self.cashierIDText.setGeometry(QtCore.QRect(230, 120, 141, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         self.cashierIDText.setFont(font)
         self.cashierIDText.setStyleSheet("\n"
 "QLabel {\n"
@@ -54,22 +54,11 @@ class Ui_CASHIER_ACCOUNT(object):
 "    \n"
 "")
         self.cashierIDText.setObjectName("cashierIDText")
-        self.cashierID = QtWidgets.QLineEdit(self.frame_46)
-        self.cashierID.setGeometry(QtCore.QRect(220, 170, 561, 51))
-        font = QtGui.QFont()
-        font.setPointSize(15)
-        self.cashierID.setFont(font)
-        self.cashierID.setStyleSheet("border: 1px solid #000000; \n"
-"border-radius: 22px; \n"
-"padding: 1px;")
-        self.cashierID.setText("")
-        self.cashierID.setPlaceholderText("")
-        self.cashierID.setObjectName("cashierID")
         self.cashierRoleText_2 = QtWidgets.QLabel(self.frame_46)
         self.cashierRoleText_2.setGeometry(QtCore.QRect(230, 260, 191, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         self.cashierRoleText_2.setFont(font)
         self.cashierRoleText_2.setStyleSheet("\n"
 "QLabel {\n"
@@ -78,22 +67,11 @@ class Ui_CASHIER_ACCOUNT(object):
 "    \n"
 "")
         self.cashierRoleText_2.setObjectName("cashierRoleText_2")
-        self.cashierRole = QtWidgets.QLineEdit(self.frame_46)
-        self.cashierRole.setGeometry(QtCore.QRect(220, 300, 561, 51))
-        font = QtGui.QFont()
-        font.setPointSize(15)
-        self.cashierRole.setFont(font)
-        self.cashierRole.setStyleSheet("border: 1px solid #000000; \n"
-"border-radius: 22px; \n"
-"padding: 1px;")
-        self.cashierRole.setText("")
-        self.cashierRole.setPlaceholderText("")
-        self.cashierRole.setObjectName("cashierRole")
         self.cashierNameText_2 = QtWidgets.QLabel(self.frame_46)
         self.cashierNameText_2.setGeometry(QtCore.QRect(230, 380, 191, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         self.cashierNameText_2.setFont(font)
         self.cashierNameText_2.setStyleSheet("\n"
 "QLabel {\n"
@@ -102,17 +80,6 @@ class Ui_CASHIER_ACCOUNT(object):
 "    \n"
 "")
         self.cashierNameText_2.setObjectName("cashierNameText_2")
-        self.cashierName = QtWidgets.QLineEdit(self.frame_46)
-        self.cashierName.setGeometry(QtCore.QRect(220, 420, 561, 51))
-        font = QtGui.QFont()
-        font.setPointSize(15)
-        self.cashierName.setFont(font)
-        self.cashierName.setStyleSheet("border: 1px solid #000000; \n"
-"border-radius: 22px; \n"
-"padding: 1px;")
-        self.cashierName.setText("")
-        self.cashierName.setPlaceholderText("")
-        self.cashierName.setObjectName("cashierName")
         self.label_7 = QtWidgets.QLabel(self.frame_46)
         self.label_7.setGeometry(QtCore.QRect(-70, 40, 1051, 501))
         self.label_7.setStyleSheet("background-color: rgba(235, 224, 204, 0.47); \n"
@@ -120,13 +87,43 @@ class Ui_CASHIER_ACCOUNT(object):
 "")
         self.label_7.setText("")
         self.label_7.setObjectName("label_7")
+        self.cashierID = QtWidgets.QLabel(self.frame_46)
+        self.cashierID.setGeometry(QtCore.QRect(220, 170, 561, 51))
+        font = QtGui.QFont()
+        font.setFamily("Poppins Medium")
+        self.cashierID.setFont(font)
+        self.cashierID.setStyleSheet("border: 1px solid #000000; \n"
+"border-radius: 22px; \n"
+"padding: 1px;")
+        self.cashierID.setText("")
+        self.cashierID.setObjectName("cashierID")
+        self.cashierRole = QtWidgets.QLabel(self.frame_46)
+        self.cashierRole.setGeometry(QtCore.QRect(220, 300, 561, 51))
+        font = QtGui.QFont()
+        font.setFamily("Poppins Medium")
+        self.cashierRole.setFont(font)
+        self.cashierRole.setStyleSheet("border: 1px solid #000000; \n"
+"border-radius: 22px; \n"
+"padding: 1px;")
+        self.cashierRole.setText("")
+        self.cashierRole.setObjectName("cashierRole")
+        self.cashierName = QtWidgets.QLabel(self.frame_46)
+        self.cashierName.setGeometry(QtCore.QRect(220, 420, 561, 51))
+        font = QtGui.QFont()
+        font.setFamily("Poppins Medium")
+        self.cashierName.setFont(font)
+        self.cashierName.setStyleSheet("border: 1px solid #000000; \n"
+"border-radius: 22px; \n"
+"padding: 1px;")
+        self.cashierName.setText("")
+        self.cashierName.setObjectName("cashierName")
         self.label_7.raise_()
         self.cashierIDText.raise_()
-        self.cashierID.raise_()
         self.cashierNameText_2.raise_()
-        self.cashierName.raise_()
         self.cashierRoleText_2.raise_()
+        self.cashierID.raise_()
         self.cashierRole.raise_()
+        self.cashierName.raise_()
         self.frame_10 = QtWidgets.QFrame(self.page)
         self.frame_10.setGeometry(QtCore.QRect(0, 0, 591, 661))
         self.frame_10.setFrameShape(QtWidgets.QFrame.StyledPanel)
@@ -231,7 +228,7 @@ class Ui_CASHIER_ACCOUNT(object):
         self.JJelevate_text_2.setGeometry(QtCore.QRect(60, 220, 71, 41))
         font = QtGui.QFont()
         font.setFamily("Arial Black")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         font.setBold(True)
         font.setWeight(75)
         self.JJelevate_text_2.setFont(font)
@@ -399,7 +396,7 @@ class Ui_CASHIER_ACCOUNT(object):
         self.JJelevate_text_3.setGeometry(QtCore.QRect(130, 220, 131, 41))
         font = QtGui.QFont()
         font.setFamily("Arial Black")
-        font.setPointSize(-1)
+        font.setPointSize(9)
         font.setBold(True)
         font.setWeight(75)
         self.JJelevate_text_3.setFont(font)

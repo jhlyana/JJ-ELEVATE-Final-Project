@@ -581,9 +581,9 @@ color:#8d2721;
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>430</y>
-       <width>741</width>
-       <height>121</height>
+       <y>420</y>
+       <width>751</width>
+       <height>161</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -593,7 +593,7 @@ color:#8d2721;
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>:/JJimages/dottedline.png</pixmap>
+      <pixmap>../resources/images/dottedline.png</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
@@ -604,7 +604,7 @@ color:#8d2721;
       <rect>
        <x>0</x>
        <y>350</y>
-       <width>741</width>
+       <width>751</width>
        <height>171</height>
       </rect>
      </property>
@@ -615,7 +615,7 @@ color:#8d2721;
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>:/JJimages/dottedline.png</pixmap>
+      <pixmap>../resources/images/dottedline.png</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
@@ -626,7 +626,7 @@ color:#8d2721;
       <rect>
        <x>0</x>
        <y>280</y>
-       <width>741</width>
+       <width>751</width>
        <height>191</height>
       </rect>
      </property>
@@ -637,7 +637,7 @@ color:#8d2721;
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>:/JJimages/dottedline.png</pixmap>
+      <pixmap>../resources/images/dottedline.png</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
@@ -659,7 +659,7 @@ color:#8d2721;
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>:/JJimages/dottedline.png</pixmap>
+      <pixmap>../resources/images/dottedline.png</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
@@ -985,7 +985,6 @@ background: transparent;</string>
     <zorder>dashb_lowinstock_value</zorder>
     <zorder>label_12</zorder>
     <zorder>label_13</zorder>
-    <zorder>dotline_4</zorder>
     <zorder>dotline_3</zorder>
     <zorder>dotline_2</zorder>
     <zorder>dotline_1</zorder>
@@ -997,6 +996,7 @@ background: transparent;</string>
     <zorder>top3LOWSTOCK_PROD_QTY</zorder>
     <zorder>top4LOWSTOCK_PRODUCT</zorder>
     <zorder>top4LOWSTOCK_PROD_QTY</zorder>
+    <zorder>dotline_4</zorder>
     <zorder>btnViewMore_Inventory</zorder>
    </widget>
   </widget>

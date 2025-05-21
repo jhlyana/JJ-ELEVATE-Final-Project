@@ -421,7 +421,7 @@ QPushButton.activeButton {
     </property>
    </widget>
   </widget>
-  <widget class="QStackedWidget" name="stackedWidget">
+  <widget class="QStackedWidget" name="stackedWidget_Orders">
    <property name="geometry">
     <rect>
      <x>299</x>
@@ -449,7 +449,7 @@ QPushButton.activeButton {
      <property name="frameShadow">
       <enum>QFrame::Raised</enum>
      </property>
-     <widget class="QComboBox" name="comboBox_filterOrders">
+     <widget class="QComboBox" name="comboBox_filterProduct_List">
       <property name="geometry">
        <rect>
         <x>1330</x>
@@ -470,11 +470,11 @@ font-size:28px;
 text-align: center;</string>
       </property>
       <property name="currentText">
-       <string>    Filter Orders</string>
+       <string>    Filter Product</string>
       </property>
       <item>
        <property name="text">
-        <string>    Filter Orders</string>
+        <string>    Filter Product</string>
        </property>
       </item>
       <item>
@@ -513,7 +513,7 @@ text-align: center;</string>
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
       </property>
-      <widget class="QLineEdit" name="lineEdit__QuickSearch_Orders">
+      <widget class="QLineEdit" name="lineEdit__QuicksearchProduct">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -575,7 +575,7 @@ padding: 5;
         <bool>true</bool>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_searchOrders">
+      <widget class="QPushButton" name="pushButton_searchProduct">
        <property name="geometry">
         <rect>
          <x>300</x>
@@ -1122,19 +1122,15 @@ padding: 3;
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">QPushButton {
-    background-color: #b2423c;
+        <string notr="true">
+    background-color: #8d2721;
     color: white;
     border-radius: 15px;
     border: 1px solid #000000;
     padding: 9px;
-    font-family: &quot;Verdana&quot;, sans-serif;
     text-align: center;
-}
 
-QPushButton:hover {
-    background-color: rgba(178, 66, 60, 0.9); 
-}</string>
+</string>
        </property>
        <property name="text">
         <string>Product Specification</string>
@@ -1439,22 +1435,19 @@ border: 1px solid #000000;
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">
-/* Default Inactive Button */
+        <string notr="true">/* Default Inactive Button */
 QPushButton {
     background-color: #003366;
     color: #fefefe;
     border-radius: 15px;
-border: 1px solid #000000; 
     padding: 9px;
-text-align: center;
+    text-align: center;
 }
 
 /* Hover Effect on Inactive Buttons */
 QPushButton:hover {
-    background-color: #003366;
-}
-</string>
+    background-color: rgba(0, 51, 102, 0.9); /* 90% opacity of #003366 */
+}</string>
        </property>
        <property name="text">
         <string>Add</string>
@@ -1478,22 +1471,19 @@ QPushButton:hover {
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">
-/* Default Inactive Button */
+        <string notr="true">/* Default Inactive Button */
 QPushButton {
     background-color: #c25b55;
     color: #fefefe;
     border-radius: 15px;
-border: 1px solid #000000; 
     padding: 9px;
-text-align: center;
+    text-align: center;
 }
 
 /* Hover Effect on Inactive Buttons */
 QPushButton:hover {
-    background-color: #c25b55;
-}
-</string>
+    background-color: rgba(194, 91, 85, 0.9); /* 90% opacity of #c25b55 */
+}</string>
        </property>
        <property name="text">
         <string>Cancel </string>
@@ -1502,8 +1492,1401 @@ QPushButton:hover {
      </widget>
     </widget>
    </widget>
-   <widget class="QWidget" name="Order_Summary"/>
-   <widget class="QWidget" name="Receipts"/>
+   <widget class="QWidget" name="Order_Summary">
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>20</y>
+       <width>1531</width>
+       <height>951</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+    background-color: #f6f3ee;
+	border-radius: 16;
+
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Save_OTHERedit_2">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>60</y>
+       <width>1471</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Verdana</family>
+       <pointsize>13</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #8d2721;
+color: white;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+border-bottom-left-radius: 0;
+border-bottom-right-radius: 0;
+border: 1px solid #000000;
+padding: 9px;
+text-align: center;</string>
+     </property>
+     <property name="text">
+      <string>Order Summary</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="tableWidget_OrderSummary">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>110</y>
+       <width>1471</width>
+       <height>491</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>MS Shell Dlg 2</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTableWidget {
+    background-color: white;
+    gridline-color: lightgray;
+}
+
+QHeaderView::section {
+    background-color: #003366; 
+    color: #ffffff;
+    font-weight: bold;
+padding: 3;
+}
+</string>
+     </property>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>306</number>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>Product</string>
+      </property>
+      <property name="font">
+       <font>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Quantity</string>
+      </property>
+      <property name="font">
+       <font>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Thickness</string>
+      </property>
+      <property name="font">
+       <font>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Width</string>
+      </property>
+      <property name="font">
+       <font>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Quantity</string>
+      </property>
+      <property name="font">
+       <font>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Color</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Price</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QFrame" name="frame_47">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>650</y>
+       <width>1531</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background: transparent;
+	border-radius: 16;
+    padding: 10px;
+
+</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_650">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>70</y>
+        <width>311</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Poppins Medium</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">    background-color: transparent;
+</string>
+      </property>
+      <property name="text">
+       <string>Customer Name    :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_651">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>140</y>
+        <width>311</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Poppins Medium</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">    background-color: transparent;
+</string>
+      </property>
+      <property name="text">
+       <string>Address                    :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="OrderSummary_CusName">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>70</y>
+        <width>681</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">    background-color: #ffffff;
+    color: black;
+    border-radius: 15px;
+border: 1px solid #000000; 
+    padding: 9px;
+</string>
+      </property>
+      <property name="placeholderText">
+       <string>.....</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="OrderSummary_CusAddress">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>140</y>
+        <width>681</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">    background-color: #ffffff;
+    color: black;
+    border-radius: 15px;
+border: 1px solid #000000; 
+    padding: 9px;
+</string>
+      </property>
+      <property name="placeholderText">
+       <string>.....</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Save_OTHERedit_3">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>0</y>
+        <width>501</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+    background-color: #8d2721;
+    color: white;
+    border-radius: 15px;
+    border: 1px solid #000000;
+    padding: 9px;
+    text-align: center;
+
+</string>
+      </property>
+      <property name="text">
+       <string>CUSTOMER INFORMATION</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_653">
+      <property name="geometry">
+       <rect>
+        <x>980</x>
+        <y>140</y>
+        <width>291</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Poppins Medium</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">    background-color: transparent;
+</string>
+      </property>
+      <property name="text">
+       <string>Service         :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_654">
+      <property name="geometry">
+       <rect>
+        <x>980</x>
+        <y>70</y>
+        <width>321</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Poppins Medium</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">    background-color: transparent;
+</string>
+      </property>
+      <property name="text">
+       <string>Contact #   :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="OrderSummary_CusContactnum">
+      <property name="geometry">
+       <rect>
+        <x>1140</x>
+        <y>70</y>
+        <width>361</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">    background-color: #ffffff;
+    color: black;
+    border-radius: 15px;
+border: 1px solid #000000; 
+    padding: 9px;
+</string>
+      </property>
+      <property name="placeholderText">
+       <string>.....</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="OrderSummary_CusService_type">
+      <property name="geometry">
+       <rect>
+        <x>1140</x>
+        <y>140</y>
+        <width>361</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">    background-color: #a6a6a6;
+    color: black;
+    border-radius: 15px;
+border: 1px solid #000000; 
+    padding: 9px;
+</string>
+      </property>
+      <property name="currentText">
+       <string>Select Service Type</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Select Service Type</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Install</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Repair</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Deliver</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="dotline_1">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-30</y>
+        <width>521</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: transparent;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../resources/images/dottedline.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="dotline_2">
+      <property name="geometry">
+       <rect>
+        <x>1020</x>
+        <y>-30</y>
+        <width>511</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: transparent;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../resources/images/dottedline.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="OrderSummary_cancelOrder">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>210</y>
+        <width>231</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat Black</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* Default Inactive Button */
+QPushButton {
+    background-color: #c25b55;
+    color: #fefefe;
+    border-radius: 15px;
+    padding: 9px;
+    text-align: center;
+}
+
+/* Hover Effect on Inactive Buttons */
+QPushButton:hover {
+    background-color: rgba(194, 91, 85, 0.9); /* 90% opacity of #c25b55 */
+}</string>
+      </property>
+      <property name="text">
+       <string>Cancel Order</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="OrderSummary_submitOrder">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>210</y>
+        <width>261</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat Black</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* Default Inactive Button */
+QPushButton {
+    background-color: #003366;
+    color: #fefefe;
+    border-radius: 15px;
+    padding: 9px;
+    text-align: center;
+}
+
+/* Hover Effect on Inactive Buttons */
+QPushButton:hover {
+    background-color: rgba(0, 51, 102, 0.9); /* 90% opacity of #003366 */
+}</string>
+      </property>
+      <property name="text">
+       <string>Submit Order</string>
+      </property>
+     </widget>
+     <zorder>label_650</zorder>
+     <zorder>label_651</zorder>
+     <zorder>pushButton_Save_OTHERedit_3</zorder>
+     <zorder>label_653</zorder>
+     <zorder>label_654</zorder>
+     <zorder>dotline_1</zorder>
+     <zorder>OrderSummary_CusName</zorder>
+     <zorder>OrderSummary_CusAddress</zorder>
+     <zorder>dotline_2</zorder>
+     <zorder>OrderSummary_CusContactnum</zorder>
+     <zorder>OrderSummary_CusService_type</zorder>
+     <zorder>OrderSummary_cancelOrder</zorder>
+     <zorder>OrderSummary_submitOrder</zorder>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="Receipts">
+    <widget class="QFrame" name="frame_49">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>90</y>
+       <width>871</width>
+       <height>881</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+    background-color: #f6f3ee;
+	border-radius: 16;
+    padding: 10px;
+
+</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QPushButton" name="Save_Receipt">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>810</y>
+        <width>221</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat SemiBold</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* Default Inactive Button */
+QPushButton {
+    background-color: #c25b55;
+    color: #fefefe;
+    border-radius: 15px;
+    padding: 9px;
+    text-align: center;
+}
+
+/* Hover Effect on Inactive Buttons */
+QPushButton:hover {
+    background-color: rgba(194, 91, 85, 0.9); /* 90% opacity of #c25b55 */
+}</string>
+      </property>
+      <property name="text">
+       <string>Save Receipt</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../resources/images/print.png</normaloff>../resources/images/print.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Close">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>810</y>
+        <width>221</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat SemiBold</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* Default Inactive Button */
+QPushButton {
+    background-color: #a6a6a6;
+    color: #fefefe;
+    border-radius: 15px;
+    padding: 9px;
+    text-align: center;
+}
+
+/* Hover Effect on Inactive Buttons (90% opacity) */
+QPushButton:hover {
+    background-color: rgba(166, 166, 166, 0.9);
+}</string>
+      </property>
+      <property name="text">
+       <string>Close</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_3">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>500</y>
+        <width>241</width>
+        <height>311</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: transparent;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_655">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>250</y>
+         <width>151</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Poppins Medium</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">    background-color: transparent;
+</string>
+       </property>
+       <property name="text">
+        <string>Service Type</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_652">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>210</y>
+         <width>141</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Poppins Medium</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">    background-color: transparent;
+</string>
+       </property>
+       <property name="text">
+        <string>Address</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_657">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>170</y>
+         <width>201</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Poppins Medium</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">    background-color: transparent;
+</string>
+       </property>
+       <property name="text">
+        <string>Contact #</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_658">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>130</y>
+         <width>201</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Poppins Medium</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">    background-color: transparent;
+</string>
+       </property>
+       <property name="text">
+        <string>Customer Name</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_659">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>90</y>
+         <width>201</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Poppins Medium</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">    background-color: transparent;
+</string>
+       </property>
+       <property name="text">
+        <string>Processed by</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_660">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>50</y>
+         <width>201</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Poppins Medium</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">    background-color: transparent;
+</string>
+       </property>
+       <property name="text">
+        <string>Date and Time</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_661">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>10</y>
+         <width>201</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Poppins Medium</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">    background-color: transparent;
+</string>
+       </property>
+       <property name="text">
+        <string>Order ID</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_5">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>500</y>
+        <width>591</width>
+        <height>311</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: transparent;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="storeRcpt_ServiceType">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>260</y>
+         <width>531</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Poppins Medium</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0.9); /* #ffffff at 90% opacity */
+color: black;
+border-radius: 15px;
+padding: 9px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="storeRcpt_CusAddress">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>220</y>
+         <width>531</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Poppins Medium</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0.9); /* #ffffff at 90% opacity */
+color: black;
+border-radius: 15px;
+padding: 9px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="storeRcpt_CusContactnum">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>180</y>
+         <width>531</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Poppins Medium</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0.9); /* #ffffff at 90% opacity */
+color: black;
+border-radius: 15px;
+padding: 9px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="storeRcpt_CusName">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>140</y>
+         <width>531</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Poppins Medium</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0.9); /* #ffffff at 90% opacity */
+color: black;
+border-radius: 15px;
+padding: 9px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="storeRcpt_CashierName">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>100</y>
+         <width>531</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Poppins Medium</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0.9); /* #ffffff at 90% opacity */
+color: black;
+border-radius: 15px;
+padding: 9px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="storeRcpt_DateTime">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>531</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Poppins Medium</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0.9); /* #ffffff at 90% opacity */
+color: black;
+border-radius: 15px;
+padding: 9px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="storeRcpt_OrderID">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>531</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Poppins Medium</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0.9); /* #ffffff at 90% opacity */
+color: black;
+border-radius: 15px;
+padding: 9px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="storeRcpt_ReceiptID">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>480</y>
+        <width>531</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Poppins Medium</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0.9); /* #ffffff at 90% opacity */
+color: black;
+border-radius: 15px;
+padding: 9px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Cancel_Order_5">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>400</y>
+        <width>221</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat SemiBold</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">    background-color: rgba(0, 51, 102, 0.9); /* 90% opacity of #003366 */
+    color: #fefefe;</string>
+      </property>
+      <property name="text">
+       <string>Total Price</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Cancel_Order_6">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>350</y>
+        <width>221</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat SemiBold</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">    background-color: rgba(0, 51, 102, 0.9); /* 90% opacity of #003366 */
+    color: #fefefe;</string>
+      </property>
+      <property name="text">
+       <string>Subtotal Price</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_674">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>470</y>
+        <width>201</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Poppins Medium</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">    background-color: transparent;
+</string>
+      </property>
+      <property name="text">
+       <string>Receipt ID
+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="storeRcpt_Total_Price">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>400</y>
+        <width>311</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Poppins Medium</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0.9); /* #ffffff at 90% opacity */
+color: black;
+border-radius: 15px;
+padding: 9px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="storeRcpt_Subtotal_Price">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>360</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Poppins Medium</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0.9); /* #ffffff at 90% opacity */
+color: black;
+border-radius: 15px;
+padding: 9px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Cancel_Order_7">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>350</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat SemiBold</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">    background-color: rgba(0, 51, 102, 0.9); /* 90% opacity of #003366 */
+    color: #fefefe;</string>
+      </property>
+      <property name="text">
+       <string>Discount</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="storeRcpt_Discount">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>360</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Poppins Medium</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0.9); /* #ffffff at 90% opacity */
+color: black;
+border-radius: 15px;
+padding: 9px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_storeRcpt">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>41</y>
+        <width>831</width>
+        <height>301</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">padding: 2px;
+backgrouond: transparent;</string>
+      </property>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>275</number>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>Product</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Quantity  </string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Price</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </column>
+     </widget>
+     <widget class="QLabel" name="label_675">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>0</y>
+        <width>461</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Poppins SemiBold</family>
+        <pointsize>15</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">    background-color: transparent;
+</string>
+      </property>
+      <property name="text">
+       <string>J &amp; J Roofsteel and Gutter Supply</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="orderReportText_2">
+     <property name="geometry">
+      <rect>
+       <x>680</x>
+       <y>10</y>
+       <width>381</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #12245c;
+font-family: &quot;Arial Black&quot;, Arial, sans-serif; 
+background: transparent;
+font-size: 50px;</string>
+     </property>
+     <property name="text">
+      <string>Receipt</string>
+     </property>
+    </widget>
+   </widget>
   </widget>
  </widget>
  <resources/>
