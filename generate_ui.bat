@@ -9,10 +9,6 @@
 ::
 :: TO RUN:
 :: Type .\generate_ui.bat in VSCode terminal or CMD
-:: 
-:: TO DELETE:
-:: del ui\generated_files\*.py
-:: del ui\resources\jj_resources_rc.py
 :: ========================================================
 
 @echo off
@@ -67,10 +63,9 @@ call :convert_ui UI_OAccount
 
 :: Cashier interface
 call :convert_ui UI_CDashboard
-call :convert_ui UI_CInventory
 call :convert_ui UI_COrders
+call :convert_ui UI_COrder_History
 call :convert_ui UI_CSales
-call :convert_ui UI_CStockHistory
 call :convert_ui UI_CAccount
 
 :: ========================================================
@@ -95,10 +90,9 @@ findstr "class Ui_" ui\generated_files\UI_OAccount.py
 
 :: Cashier interface
 findstr "class Ui_" ui\generated_files\UI_CDashboard.py
-findstr "class Ui_" ui\generated_files\UI_CInventory.py
 findstr "class Ui_" ui\generated_files\UI_COrders.py
+findstr "class Ui_" ui\generated_files\UI_COrder_History.py
 findstr "class Ui_" ui\generated_files\UI_CSales.py
-findstr "class Ui_" ui\generated_files\UI_CStockHistory.py
 findstr "class Ui_" ui\generated_files\UI_CAccount.py
 
 echo.

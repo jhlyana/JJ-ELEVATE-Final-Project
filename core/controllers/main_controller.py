@@ -3,13 +3,13 @@ from ui.generated_files.UI_Landing import Ui_JJ_LANDING
 from ui.generated_files.UI_LogIn import Ui_LOGIN
 from ui.generated_files.UI_ForgotPass import Ui_ForgotPass
 from core.controllers.owner_controller import OwnerController
-# from core.controllers.cashier_controller import CashierController
+from core.controllers.cashier_controller import CashierController 
 
 class MainController: # Create the main controller to handle navigation
     def __init__(self):
         # Initialize all controllers
         self.owner_controller = OwnerController(self)
-        # self.cashier_controller = CashierController(self)
+        self.cashier_controller = CashierController(self)
         
         # Create main stacked widget for auth pages
         self.auth_stack = QStackedWidget()
@@ -76,9 +76,9 @@ class MainController: # Create the main controller to handle navigation
         if username == "owner" and password == "owner123":
             self.owner_controller.show_dashboard()
             self.auth_stack.hide()
-        # elif username == "cashier" and password == "cashier123":
-        #     self.cashier_controller.show_dashboard()
-        #     self.auth_stack.hide()
+        elif username == "cashier" and password == "cashier123":
+            self.cashier_controller.show_dashboard()
+            self.auth_stack.hide()
 
     
     def reset_password(self):

@@ -15,8 +15,9 @@ class Ui_CASHIER_SALES(object):
     def setupUi(self, CASHIER_SALES):
         CASHIER_SALES.setObjectName("CASHIER_SALES")
         CASHIER_SALES.resize(1921, 1005)
+        CASHIER_SALES.setStyleSheet("background: white;")
         self.sales_inview = QtWidgets.QWidget(CASHIER_SALES)
-        self.sales_inview.setGeometry(QtCore.QRect(301, 1, 1931, 1005))
+        self.sales_inview.setGeometry(QtCore.QRect(300, 0, 1931, 1005))
         self.sales_inview.setObjectName("sales_inview")
         self.frame_45 = QtWidgets.QFrame(self.sales_inview)
         self.frame_45.setGeometry(QtCore.QRect(0, 0, 1621, 211))
@@ -48,26 +49,27 @@ class Ui_CASHIER_SALES(object):
         font.setFamily("Verdana")
         font.setPointSize(-1)
         self.pushButton_summaryView.setFont(font)
-        self.pushButton_summaryView.setStyleSheet("QPushButton {\n"
-"    background-color: #003366; /* Blue color */\n"
+        self.pushButton_summaryView.setStyleSheet("/* Default Button Style */\n"
+"QPushButton {\n"
+"    background-color: #003366;\n"
 "    border-radius: 10px;\n"
 "    font-size: 24px;\n"
-"    color: #ffffff; /* Corrected from font-color */\n"
+"    color: #ffffff;\n"
 "    padding: 9px;\n"
 "    font-family: \"Verdana\", sans-serif;\n"
 "    text-align: center;\n"
 "}\n"
 "\n"
-"/* Hover Effect on Inactive Buttons */\n"
+"/* Hover Effect */\n"
 "QPushButton:hover {\n"
 "    background-color: #8d2721;\n"
-"    color: #ffffff; /* Ensure text color remains white */\n"
+"    color: #ffffff;\n"
 "}\n"
 "\n"
-"/* Active Button (Current Page) */\n"
-"QPushButton#activeButton {\n"
-"    background-color:#8d2721;\n"
-"    color: #ffffff; /* Ensure text color remains white */\n"
+"/* Active Button (using CLASS selector) */\n"
+"QPushButton.activeButton {\n"
+"    background-color: #8d2721;\n"
+"    color: #ffffff;\n"
 "}")
         self.pushButton_summaryView.setObjectName("pushButton_summaryView")
         self.pushButton_salesDetail = QtWidgets.QPushButton(self.frame_29)
@@ -76,40 +78,46 @@ class Ui_CASHIER_SALES(object):
         font.setFamily("Verdana")
         font.setPointSize(-1)
         self.pushButton_salesDetail.setFont(font)
-        self.pushButton_salesDetail.setStyleSheet("QPushButton {\n"
-"    background-color: #003366; /* Blue color */\n"
+        self.pushButton_salesDetail.setStyleSheet("/* Default Button Style */\n"
+"QPushButton {\n"
+"    background-color: #003366;\n"
 "    border-radius: 10px;\n"
 "    font-size: 24px;\n"
-"    color: #ffffff; /* Corrected from font-color */\n"
+"    color: #ffffff;\n"
 "    padding: 9px;\n"
 "    font-family: \"Verdana\", sans-serif;\n"
 "    text-align: center;\n"
 "}\n"
 "\n"
-"/* Hover Effect on Inactive Buttons */\n"
+"/* Hover Effect */\n"
 "QPushButton:hover {\n"
 "    background-color: #8d2721;\n"
-"    color: #ffffff; /* Ensure text color remains white */\n"
+"    color: #ffffff;\n"
 "}\n"
 "\n"
-"/* Active Button (Current Page) */\n"
-"QPushButton#activeButton {\n"
+"/* Active Button (using CLASS selector) */\n"
+"QPushButton.activeButton {\n"
 "    background-color: #8d2721;\n"
-"    color: #ffffff; /* Ensure text color remains white */\n"
+"    color: #ffffff;\n"
 "}")
         self.pushButton_salesDetail.setObjectName("pushButton_salesDetail")
-        self.salesReportText = QtWidgets.QLabel(self.frame_45)
-        self.salesReportText.setGeometry(QtCore.QRect(60, 50, 501, 71))
-        self.salesReportText.setStyleSheet("font-size:50px;\n"
-"background: transparent;")
-        self.salesReportText.setObjectName("salesReportText")
-        self.stackedWidget = QtWidgets.QStackedWidget(self.sales_inview)
-        self.stackedWidget.setGeometry(QtCore.QRect(0, 210, 1621, 771))
-        self.stackedWidget.setObjectName("stackedWidget")
+        self.SALES_label = QtWidgets.QLabel(self.frame_45)
+        self.SALES_label.setGeometry(QtCore.QRect(60, 50, 801, 71))
+        self.SALES_label.setStyleSheet("color: #12245c;\n"
+"font-family: \"Arial Black\", Arial, sans-serif; \n"
+"background: transparent;\n"
+"font-size: 50px;")
+        self.SALES_label.setObjectName("SALES_label")
+        self.stackedWidget_Sales = QtWidgets.QStackedWidget(self.sales_inview)
+        self.stackedWidget_Sales.setGeometry(QtCore.QRect(0, 210, 1621, 771))
+        self.stackedWidget_Sales.setObjectName("stackedWidget_Sales")
         self.page = QtWidgets.QWidget()
         self.page.setObjectName("page")
         self.tableWidget_salesSummary = QtWidgets.QTableWidget(self.page)
         self.tableWidget_salesSummary.setGeometry(QtCore.QRect(50, 0, 1531, 741))
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        self.tableWidget_salesSummary.setFont(font)
         self.tableWidget_salesSummary.setStyleSheet(" \n"
 "QTableWidget {\n"
 "    background-color: white;\n"
@@ -136,7 +144,7 @@ class Ui_CASHIER_SALES(object):
 "    padding-right: 12px;\n"
 "}")
         self.tableWidget_salesSummary.setObjectName("tableWidget_salesSummary")
-        self.tableWidget_salesSummary.setColumnCount(6)
+        self.tableWidget_salesSummary.setColumnCount(5)
         self.tableWidget_salesSummary.setRowCount(0)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
@@ -163,18 +171,13 @@ class Ui_CASHIER_SALES(object):
         font.setPointSize(14)
         item.setFont(font)
         self.tableWidget_salesSummary.setHorizontalHeaderItem(4, item)
-        item = QtWidgets.QTableWidgetItem()
-        font = QtGui.QFont()
-        font.setPointSize(14)
-        item.setFont(font)
-        self.tableWidget_salesSummary.setHorizontalHeaderItem(5, item)
-        self.tableWidget_salesSummary.horizontalHeader().setDefaultSectionSize(265)
-        self.stackedWidget.addWidget(self.page)
+        self.tableWidget_salesSummary.horizontalHeader().setDefaultSectionSize(310)
+        self.stackedWidget_Sales.addWidget(self.page)
         self.page_2 = QtWidgets.QWidget()
         self.page_2.setObjectName("page_2")
-        self.tableWidget_salesDetails = QtWidgets.QTableWidget(self.page_2)
-        self.tableWidget_salesDetails.setGeometry(QtCore.QRect(50, 0, 1531, 741))
-        self.tableWidget_salesDetails.setStyleSheet("\n"
+        self.tableWidget_orderDetails = QtWidgets.QTableWidget(self.page_2)
+        self.tableWidget_orderDetails.setGeometry(QtCore.QRect(50, 0, 1531, 741))
+        self.tableWidget_orderDetails.setStyleSheet(" \n"
 "QTableWidget {\n"
 "    background-color: white;\n"
 "    gridline-color: lightgray;\n"
@@ -198,54 +201,33 @@ class Ui_CASHIER_SALES(object):
 "QTableWidget::item {\n"
 "    padding-left: 12px;\n"
 "    padding-right: 12px;\n"
-"}\n"
-"\n"
-"")
-        self.tableWidget_salesDetails.setObjectName("tableWidget_salesDetails")
-        self.tableWidget_salesDetails.setColumnCount(5)
-        self.tableWidget_salesDetails.setRowCount(0)
+"}")
+        self.tableWidget_orderDetails.setObjectName("tableWidget_orderDetails")
+        self.tableWidget_orderDetails.setColumnCount(5)
+        self.tableWidget_orderDetails.setRowCount(0)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
-        font.setFamily("MS Shell Dlg 2")
         font.setPointSize(14)
         item.setFont(font)
-        self.tableWidget_salesDetails.setHorizontalHeaderItem(0, item)
+        self.tableWidget_orderDetails.setHorizontalHeaderItem(0, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
-        font.setFamily("MS Shell Dlg 2")
         font.setPointSize(14)
         item.setFont(font)
-        self.tableWidget_salesDetails.setHorizontalHeaderItem(1, item)
+        self.tableWidget_orderDetails.setHorizontalHeaderItem(1, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
-        font.setFamily("MS Shell Dlg 2")
         font.setPointSize(14)
         item.setFont(font)
-        self.tableWidget_salesDetails.setHorizontalHeaderItem(2, item)
+        self.tableWidget_orderDetails.setHorizontalHeaderItem(2, item)
         item = QtWidgets.QTableWidgetItem()
-        font = QtGui.QFont()
-        font.setFamily("MS Shell Dlg 2")
-        font.setPointSize(14)
-        item.setFont(font)
-        self.tableWidget_salesDetails.setHorizontalHeaderItem(3, item)
+        self.tableWidget_orderDetails.setHorizontalHeaderItem(3, item)
         item = QtWidgets.QTableWidgetItem()
-        font = QtGui.QFont()
-        font.setFamily("MS Shell Dlg 2")
-        font.setPointSize(14)
-        item.setFont(font)
-        self.tableWidget_salesDetails.setHorizontalHeaderItem(4, item)
-        self.tableWidget_salesDetails.horizontalHeader().setDefaultSectionSize(265)
-        self.label = QtWidgets.QLabel(self.page_2)
-        self.label.setGeometry(QtCore.QRect(110, 140, 111, 31))
-        font = QtGui.QFont()
-        font.setPointSize(13)
-        font.setBold(True)
-        font.setWeight(75)
-        self.label.setFont(font)
-        self.label.setObjectName("label")
-        self.stackedWidget.addWidget(self.page_2)
+        self.tableWidget_orderDetails.setHorizontalHeaderItem(4, item)
+        self.tableWidget_orderDetails.horizontalHeader().setDefaultSectionSize(310)
+        self.stackedWidget_Sales.addWidget(self.page_2)
         self.LeftMenuBar = QtWidgets.QFrame(CASHIER_SALES)
-        self.LeftMenuBar.setGeometry(QtCore.QRect(0, 0, 301, 981))
+        self.LeftMenuBar.setGeometry(QtCore.QRect(0, 0, 301, 1011))
         font = QtGui.QFont()
         font.setPointSize(14)
         self.LeftMenuBar.setFont(font)
@@ -253,184 +235,156 @@ class Ui_CASHIER_SALES(object):
         self.LeftMenuBar.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.LeftMenuBar.setFrameShadow(QtWidgets.QFrame.Raised)
         self.LeftMenuBar.setObjectName("LeftMenuBar")
-        self.JJelevate_text = QtWidgets.QLabel(self.LeftMenuBar)
-        self.JJelevate_text.setGeometry(QtCore.QRect(30, 250, 251, 21))
+        self.JJelevate_text_2 = QtWidgets.QLabel(self.LeftMenuBar)
+        self.JJelevate_text_2.setGeometry(QtCore.QRect(60, 220, 71, 41))
         font = QtGui.QFont()
-        font.setFamily("Montserrat ExtraBold")
-        font.setPointSize(18)
+        font.setFamily("Arial Black")
+        font.setPointSize(-1)
         font.setBold(True)
         font.setWeight(75)
-        self.JJelevate_text.setFont(font)
-        self.JJelevate_text.setStyleSheet("color: #12245c; \n"
+        self.JJelevate_text_2.setFont(font)
+        self.JJelevate_text_2.setStyleSheet("color: #12245c;\n"
+"font-family: \"Arial Black\", Arial, sans-serif; \n"
 "background: transparent;\n"
-"")
-        self.JJelevate_text.setScaledContents(True)
-        self.JJelevate_text.setObjectName("JJelevate_text")
+"font-size: 30px;")
+        self.JJelevate_text_2.setScaledContents(True)
+        self.JJelevate_text_2.setObjectName("JJelevate_text_2")
         self.Logo = QtWidgets.QLabel(self.LeftMenuBar)
         self.Logo.setGeometry(QtCore.QRect(30, 50, 241, 171))
         self.Logo.setStyleSheet("background: transparent;")
         self.Logo.setText("")
-        self.Logo.setPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/JJLOGO.png"))
+        self.Logo.setPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/JJLOGO.png"))
         self.Logo.setScaledContents(True)
         self.Logo.setAlignment(QtCore.Qt.AlignCenter)
         self.Logo.setObjectName("Logo")
-        self.pushButton_Dashboard_CASHIER = QtWidgets.QPushButton(self.LeftMenuBar)
-        self.pushButton_Dashboard_CASHIER.setGeometry(QtCore.QRect(30, 310, 231, 51))
+        self.pushButton_Dashboard = QtWidgets.QPushButton(self.LeftMenuBar)
+        self.pushButton_Dashboard.setGeometry(QtCore.QRect(30, 310, 231, 51))
         font = QtGui.QFont()
         font.setFamily("Montserrat Medium")
         font.setPointSize(12)
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
-        self.pushButton_Dashboard_CASHIER.setFont(font)
-        self.pushButton_Dashboard_CASHIER.setStyleSheet("QPushButton {\n"
+        self.pushButton_Dashboard.setFont(font)
+        self.pushButton_Dashboard.setStyleSheet("QPushButton {\n"
 "    background-color: white;\n"
 "    color: black;\n"
 "    border-radius: 25px;\n"
 "    padding: 9px;\n"
-"text-align: left;\n"
+"    text-align: left;\n"
 "}\n"
 "QPushButton:hover {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
-"QPushButton#activeButton {\n"
+"QPushButton.activeButton {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
 "")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/dashboard_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Dashboard_CASHIER.setIcon(icon)
-        self.pushButton_Dashboard_CASHIER.setIconSize(QtCore.QSize(40, 40))
-        self.pushButton_Dashboard_CASHIER.setObjectName("pushButton_Dashboard_CASHIER")
-        self.pushButton_Inventory_CASHIER = QtWidgets.QPushButton(self.LeftMenuBar)
-        self.pushButton_Inventory_CASHIER.setGeometry(QtCore.QRect(30, 390, 231, 51))
+        icon.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/dashboard_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Dashboard.setIcon(icon)
+        self.pushButton_Dashboard.setIconSize(QtCore.QSize(40, 40))
+        self.pushButton_Dashboard.setObjectName("pushButton_Dashboard")
+        self.pushButton_Order_History = QtWidgets.QPushButton(self.LeftMenuBar)
+        self.pushButton_Order_History.setGeometry(QtCore.QRect(30, 470, 231, 51))
         font = QtGui.QFont()
         font.setFamily("Montserrat Medium")
         font.setPointSize(12)
-        self.pushButton_Inventory_CASHIER.setFont(font)
-        self.pushButton_Inventory_CASHIER.setStyleSheet("QPushButton {\n"
+        self.pushButton_Order_History.setFont(font)
+        self.pushButton_Order_History.setStyleSheet("QPushButton {\n"
 "    background-color: white;\n"
 "    color: black;\n"
 "    border-radius: 25px;\n"
 "    padding: 9px;\n"
-"text-align: left;\n"
+"    text-align: left;\n"
 "}\n"
 "QPushButton:hover {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
-"QPushButton#activeButton {\n"
+"QPushButton.activeButton {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
 "")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/inventory_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Inventory_CASHIER.setIcon(icon1)
-        self.pushButton_Inventory_CASHIER.setIconSize(QtCore.QSize(50, 45))
-        self.pushButton_Inventory_CASHIER.setObjectName("pushButton_Inventory_CASHIER")
-        self.pushButton_Orders_CASHIER = QtWidgets.QPushButton(self.LeftMenuBar)
-        self.pushButton_Orders_CASHIER.setGeometry(QtCore.QRect(30, 470, 231, 51))
+        icon1.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/inventory_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Order_History.setIcon(icon1)
+        self.pushButton_Order_History.setIconSize(QtCore.QSize(46, 42))
+        self.pushButton_Order_History.setObjectName("pushButton_Order_History")
+        self.pushButton_Sales = QtWidgets.QPushButton(self.LeftMenuBar)
+        self.pushButton_Sales.setGeometry(QtCore.QRect(30, 550, 231, 51))
         font = QtGui.QFont()
         font.setFamily("Montserrat Medium")
         font.setPointSize(12)
-        self.pushButton_Orders_CASHIER.setFont(font)
-        self.pushButton_Orders_CASHIER.setStyleSheet("QPushButton {\n"
+        self.pushButton_Sales.setFont(font)
+        self.pushButton_Sales.setStyleSheet("QPushButton {\n"
 "    background-color: white;\n"
 "    color: black;\n"
 "    border-radius: 25px;\n"
 "    padding: 9px;\n"
-"text-align: left;\n"
+"    text-align: left;\n"
 "}\n"
 "QPushButton:hover {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
-"QPushButton#activeButton {\n"
+"QPushButton.activeButton {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
 "")
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/orders_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Orders_CASHIER.setIcon(icon2)
-        self.pushButton_Orders_CASHIER.setIconSize(QtCore.QSize(46, 42))
-        self.pushButton_Orders_CASHIER.setObjectName("pushButton_Orders_CASHIER")
-        self.pushButton_Sales_CASHIER = QtWidgets.QPushButton(self.LeftMenuBar)
-        self.pushButton_Sales_CASHIER.setGeometry(QtCore.QRect(30, 550, 231, 51))
+        icon2.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/sales_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Sales.setIcon(icon2)
+        self.pushButton_Sales.setIconSize(QtCore.QSize(35, 35))
+        self.pushButton_Sales.setObjectName("pushButton_Sales")
+        self.pushButton_Account = QtWidgets.QPushButton(self.LeftMenuBar)
+        self.pushButton_Account.setGeometry(QtCore.QRect(30, 630, 231, 51))
         font = QtGui.QFont()
         font.setFamily("Montserrat Medium")
         font.setPointSize(12)
-        self.pushButton_Sales_CASHIER.setFont(font)
-        self.pushButton_Sales_CASHIER.setStyleSheet("QPushButton {\n"
+        self.pushButton_Account.setFont(font)
+        self.pushButton_Account.setStyleSheet("QPushButton {\n"
 "    background-color: white;\n"
 "    color: black;\n"
 "    border-radius: 25px;\n"
 "    padding: 9px;\n"
-"text-align: left;\n"
+"    text-align: left;\n"
 "}\n"
 "QPushButton:hover {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
-"QPushButton#activeButton {\n"
+"QPushButton.activeButton {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
 "")
         icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/sales_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Sales_CASHIER.setIcon(icon3)
-        self.pushButton_Sales_CASHIER.setIconSize(QtCore.QSize(35, 35))
-        self.pushButton_Sales_CASHIER.setObjectName("pushButton_Sales_CASHIER")
-        self.pushButton_Account_CASHIER = QtWidgets.QPushButton(self.LeftMenuBar)
-        self.pushButton_Account_CASHIER.setGeometry(QtCore.QRect(30, 710, 231, 51))
-        font = QtGui.QFont()
-        font.setFamily("Montserrat Medium")
-        font.setPointSize(12)
-        self.pushButton_Account_CASHIER.setFont(font)
-        self.pushButton_Account_CASHIER.setStyleSheet("QPushButton {\n"
-"    background-color: white;\n"
-"    color: black;\n"
-"    border-radius: 25px;\n"
-"    padding: 9px;\n"
-"text-align: left;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"QPushButton#activeButton {\n"
-"    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
-"}\n"
-"")
-        icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/account_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Account_CASHIER.setIcon(icon4)
-        self.pushButton_Account_CASHIER.setIconSize(QtCore.QSize(48, 48))
-        self.pushButton_Account_CASHIER.setObjectName("pushButton_Account_CASHIER")
-        self.pushButton_LogOut_CASHIER = QtWidgets.QPushButton(self.LeftMenuBar)
-        self.pushButton_LogOut_CASHIER.setGeometry(QtCore.QRect(30, 890, 231, 51))
+        icon3.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/account_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Account.setIcon(icon3)
+        self.pushButton_Account.setIconSize(QtCore.QSize(48, 48))
+        self.pushButton_Account.setObjectName("pushButton_Account")
+        self.pushButton_LogOut = QtWidgets.QPushButton(self.LeftMenuBar)
+        self.pushButton_LogOut.setGeometry(QtCore.QRect(30, 890, 231, 51))
         font = QtGui.QFont()
         font.setFamily("Verdana")
         font.setPointSize(12)
         font.setBold(True)
         font.setWeight(87)
-        self.pushButton_LogOut_CASHIER.setFont(font)
-        self.pushButton_LogOut_CASHIER.setStyleSheet("QPushButton {\n"
+        self.pushButton_LogOut.setFont(font)
+        self.pushButton_LogOut.setStyleSheet("QPushButton {\n"
 "    background-color:#022162;\n"
 "color:white;\n"
 "font-weight: 700;\n"
@@ -438,42 +392,64 @@ class Ui_CASHIER_SALES(object):
 "    padding: 9px;\n"
 "font-size: 14;\n"
 "text-align: left;\n"
+"}\n"
+"QPushButton:hover {\n"
+"        background-color: rgba(2, 33, 98, 0.8);\n"
+"        color: white;\n"
+"    font-weight: 700;\n"
 "}")
-        icon5 = QtGui.QIcon()
-        icon5.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../Documents/assets/images/WHITElogout_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_LogOut_CASHIER.setIcon(icon5)
-        self.pushButton_LogOut_CASHIER.setIconSize(QtCore.QSize(38, 38))
-        self.pushButton_LogOut_CASHIER.setObjectName("pushButton_LogOut_CASHIER")
-        self.pushButton_Stock_History_CASHIER = QtWidgets.QPushButton(self.LeftMenuBar)
-        self.pushButton_Stock_History_CASHIER.setGeometry(QtCore.QRect(30, 630, 231, 51))
+        icon4 = QtGui.QIcon()
+        icon4.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/WHITElogout_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_LogOut.setIcon(icon4)
+        self.pushButton_LogOut.setIconSize(QtCore.QSize(38, 38))
+        self.pushButton_LogOut.setObjectName("pushButton_LogOut")
+        self.JJelevate_text_3 = QtWidgets.QLabel(self.LeftMenuBar)
+        self.JJelevate_text_3.setGeometry(QtCore.QRect(130, 220, 131, 41))
+        font = QtGui.QFont()
+        font.setFamily("Arial Black")
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setWeight(75)
+        self.JJelevate_text_3.setFont(font)
+        self.JJelevate_text_3.setStyleSheet("color: #d75413;\n"
+"font-family: \"Arial Black\", Arial, sans-serif; \n"
+"background: transparent;\n"
+"font-size: 29px;\n"
+"")
+        self.JJelevate_text_3.setScaledContents(True)
+        self.JJelevate_text_3.setObjectName("JJelevate_text_3")
+        self.pushButton_Orders = QtWidgets.QPushButton(self.LeftMenuBar)
+        self.pushButton_Orders.setGeometry(QtCore.QRect(30, 390, 231, 51))
         font = QtGui.QFont()
         font.setFamily("Montserrat Medium")
         font.setPointSize(12)
-        self.pushButton_Stock_History_CASHIER.setFont(font)
-        self.pushButton_Stock_History_CASHIER.setStyleSheet("QPushButton {\n"
+        self.pushButton_Orders.setFont(font)
+        self.pushButton_Orders.setStyleSheet("QPushButton {\n"
 "    background-color: white;\n"
 "    color: black;\n"
 "    border-radius: 25px;\n"
 "    padding: 9px;\n"
-"text-align: left;\n"
+"    text-align: left;\n"
 "}\n"
 "QPushButton:hover {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
-"QPushButton#activeButton {\n"
+"QPushButton.activeButton {\n"
 "    background-color:#c25b55;\n"
-"color:black;\n"
-"font-weight: 700;\n"
+"    color:black;\n"
+"    font-weight: 700;\n"
 "}\n"
 "")
-        self.pushButton_Stock_History_CASHIER.setIcon(icon1)
-        self.pushButton_Stock_History_CASHIER.setIconSize(QtCore.QSize(50, 45))
-        self.pushButton_Stock_History_CASHIER.setObjectName("pushButton_Stock_History_CASHIER")
+        icon5 = QtGui.QIcon()
+        icon5.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/orders_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Orders.setIcon(icon5)
+        self.pushButton_Orders.setIconSize(QtCore.QSize(46, 42))
+        self.pushButton_Orders.setObjectName("pushButton_Orders")
 
         self.retranslateUi(CASHIER_SALES)
-        self.stackedWidget.setCurrentIndex(1)
+        self.stackedWidget_Sales.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(CASHIER_SALES)
 
     def retranslateUi(self, CASHIER_SALES):
@@ -486,35 +462,32 @@ class Ui_CASHIER_SALES(object):
         self.comboBox_filterSales.setItemText(3, _translate("CASHIER_SALES", "Monthly"))
         self.pushButton_summaryView.setText(_translate("CASHIER_SALES", "Summary View"))
         self.pushButton_salesDetail.setText(_translate("CASHIER_SALES", "Detailed View"))
-        self.salesReportText.setText(_translate("CASHIER_SALES", "Sales Report"))
+        self.SALES_label.setText(_translate("CASHIER_SALES", "Sales Report"))
         item = self.tableWidget_salesSummary.horizontalHeaderItem(0)
         item.setText(_translate("CASHIER_SALES", "Report ID"))
         item = self.tableWidget_salesSummary.horizontalHeaderItem(1)
         item.setText(_translate("CASHIER_SALES", "Shop Branch"))
         item = self.tableWidget_salesSummary.horizontalHeaderItem(2)
-        item.setText(_translate("CASHIER_SALES", "Report Type"))
-        item = self.tableWidget_salesSummary.horizontalHeaderItem(3)
         item.setText(_translate("CASHIER_SALES", "Total Quantity Sold"))
-        item = self.tableWidget_salesSummary.horizontalHeaderItem(4)
+        item = self.tableWidget_salesSummary.horizontalHeaderItem(3)
         item.setText(_translate("CASHIER_SALES", "Total Revenue (₱)"))
-        item = self.tableWidget_salesSummary.horizontalHeaderItem(5)
+        item = self.tableWidget_salesSummary.horizontalHeaderItem(4)
         item.setText(_translate("CASHIER_SALES", "Date Generated"))
-        item = self.tableWidget_salesDetails.horizontalHeaderItem(0)
+        item = self.tableWidget_orderDetails.horizontalHeaderItem(0)
         item.setText(_translate("CASHIER_SALES", "Detail ID"))
-        item = self.tableWidget_salesDetails.horizontalHeaderItem(1)
+        item = self.tableWidget_orderDetails.horizontalHeaderItem(1)
         item.setText(_translate("CASHIER_SALES", "Product Name"))
-        item = self.tableWidget_salesDetails.horizontalHeaderItem(2)
+        item = self.tableWidget_orderDetails.horizontalHeaderItem(2)
         item.setText(_translate("CASHIER_SALES", "Quantity Sold"))
-        item = self.tableWidget_salesDetails.horizontalHeaderItem(3)
+        item = self.tableWidget_orderDetails.horizontalHeaderItem(3)
         item.setText(_translate("CASHIER_SALES", "Total Sales Amount (₱)"))
-        item = self.tableWidget_salesDetails.horizontalHeaderItem(4)
+        item = self.tableWidget_orderDetails.horizontalHeaderItem(4)
         item.setText(_translate("CASHIER_SALES", "Date Recorded"))
-        self.label.setText(_translate("CASHIER_SALES", "CASHIER"))
-        self.JJelevate_text.setText(_translate("CASHIER_SALES", "J & J ELEVATE"))
-        self.pushButton_Dashboard_CASHIER.setText(_translate("CASHIER_SALES", " Dashboard   "))
-        self.pushButton_Inventory_CASHIER.setText(_translate("CASHIER_SALES", "Inventory"))
-        self.pushButton_Orders_CASHIER.setText(_translate("CASHIER_SALES", " Orders"))
-        self.pushButton_Sales_CASHIER.setText(_translate("CASHIER_SALES", "  Sales"))
-        self.pushButton_Account_CASHIER.setText(_translate("CASHIER_SALES", " Account     "))
-        self.pushButton_LogOut_CASHIER.setText(_translate("CASHIER_SALES", "Log out"))
-        self.pushButton_Stock_History_CASHIER.setText(_translate("CASHIER_SALES", "Stock History"))
+        self.JJelevate_text_2.setText(_translate("CASHIER_SALES", "J&J "))
+        self.pushButton_Dashboard.setText(_translate("CASHIER_SALES", "  Home   "))
+        self.pushButton_Order_History.setText(_translate("CASHIER_SALES", "Order History"))
+        self.pushButton_Sales.setText(_translate("CASHIER_SALES", "  Sales"))
+        self.pushButton_Account.setText(_translate("CASHIER_SALES", " Account     "))
+        self.pushButton_LogOut.setText(_translate("CASHIER_SALES", "   Log out"))
+        self.JJelevate_text_3.setText(_translate("CASHIER_SALES", "Elevate"))
+        self.pushButton_Orders.setText(_translate("CASHIER_SALES", " Orders"))

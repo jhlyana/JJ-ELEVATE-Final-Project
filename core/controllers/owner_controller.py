@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QStackedWidget, QWidget, QApplication
+from PyQt5.QtWidgets import QStackedWidget, QWidget
 from ui.generated_files.UI_ODashboard import Ui_OWNER_DASHBOARD
 from ui.generated_files.UI_OInventory import Ui_OWNER_INVENTORY
 from ui.generated_files.UI_OOrders import Ui_OWNER_ORDERS
@@ -6,7 +6,7 @@ from ui.generated_files.UI_OSales import Ui_OWNER_SALES
 from ui.generated_files.UI_OStockHistory import Ui_OWNER_STOCKHISTORY
 from ui.generated_files.UI_OAccount import Ui_OWNER_ACCOUNT
 
-from core.controllers.OInv_pageController import InventoryPageController
+from core.controllers.OInv_pageController import InventoryPageController 
 from core.controllers.OOrders_pageController import OrdersPageController
 from core.controllers.OSales_pageController import SalesPageController
 from core.controllers.OStk_Hstry_pageController import StockHistoryPageController
@@ -18,7 +18,6 @@ class OwnerController:
         self.main_controller = main_controller
         self.stack = QStackedWidget()
         self.stack.setFixedSize(1921, 1005)
-        self.current_active_button = None
         
         # Initialize DateTimeController
         self.date_time_controller = DateTimeController()
@@ -44,11 +43,9 @@ class OwnerController:
         # Connect navigation signals
         self._connect_navigation()
         
-        # Force initial state
+        # Set initial state
         self.stack.setCurrentIndex(0)
-        QApplication.processEvents()
         self.set_active_button('dashboard')
-        QApplication.processEvents()
     
     def _init_dashboard(self):
         self.dashboard_page = QWidget()
@@ -313,26 +310,16 @@ class OwnerController:
         # Reset all navigation buttons on all pages
         for button_list in all_nav_buttons.values():
             for button in button_list:
-                if hasattr(button, 'setProperty'):  # Check if button exists
-                    button.setProperty('class', '')  # Clear active class
-                    button.style().unpolish(button)
-                    button.style().polish(button)
-                    button.update()
+                button.setProperty('class', '')  # Clear active class
+                button.style().unpolish(button)
+                button.style().polish(button)
         
         # Set active class on all buttons corresponding to the active page
         active_buttons = all_nav_buttons.get(button_name, [])
         for button in active_buttons:
-            if hasattr(button, 'setProperty'):  # Check if button exists
-                button.setProperty('class', 'activeButton')
-                button.style().unpolish(button)
-                button.style().polish(button)
-                button.update()
-        
-        # Store current active button name
-        self.current_active_button = button_name
-        
-        # Force application to process all pending events
-        QApplication.processEvents()
+            button.setProperty('class', 'activeButton')
+            button.style().unpolish(button)
+            button.style().polish(button)
     
     def show_dashboard(self):
         self.stack.setCurrentWidget(self.dashboard_page)
