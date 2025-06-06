@@ -1,67 +1,92 @@
 from PyQt5.QtWidgets import QMessageBox
+from PyQt5.QtCore import Qt
 
 class OrdersPageController:
     def __init__(self, orders_ui, cashier_controller):
         self.ui = orders_ui
         self.cashier_controller = cashier_controller
         
-        # Set initial view to index 0
-        self.ui.stackedWidget_Orders.setCurrentIndex(0)
+        # Set initial view to Take Orders page (index 0)
+        self.ui.stackedWidget.setCurrentIndex(0)
         
-        # Connect button signals
-        self.ui.Add_Order.clicked.connect(self.show_add_order_page)
-        self.ui.OrderSummary_submitOrder.clicked.connect(self.show_receipt_page)
-        self.ui.OrderSummary_cancelOrder.clicked.connect(self.cancel_order)
-        self.ui.Save_Receipt.clicked.connect(self.save_receipt)
-        self.ui.Close.clicked.connect(self.close_receipt)
-    
-    def show_add_order_page(self):
-        """Show the add order page (index 1)"""
-        self.ui.stackedWidget_Orders.setCurrentIndex(1)
-    
-    def show_receipt_page(self):
-        """Show the receipt page (index 2)"""
-        self.ui.stackedWidget_Orders.setCurrentIndex(2)
-    
-    def cancel_order(self):
-        """Handle cancel order confirmation"""
-        reply = QMessageBox.question(
-            None, 'Cancel Order',
-            "Are you sure you want to Cancel and Reset current Order?",
-            QMessageBox.Yes | QMessageBox.No, QMessageBox.No
-        )
+        # Connect button signals for Take Orders page
+        self.ui.Add_Order_2.clicked.connect(self.add_order)
+        self.ui.View_OrderSummary.clicked.connect(self.show_OrderSummary_page)
         
-        if reply == QMessageBox.No:
-            # Reset form and stay on current index (1)
-            self.reset_order_form()
-        else:
-            # Go back to index 0
-            self.ui.stackedWidget_Orders.setCurrentIndex(0)
+        # Connect button signals for Order Summary page
+        self.ui.Back.clicked.connect(self.show_Take_Orders_page)
+        self.ui.ConfirmandPrint.clicked.connect(self.confirm_and_print)
+        self.ui.Remove.clicked.connect(self.remove_product)
     
-    def reset_order_form(self):
-        """Reset the order form fields"""
-        # Add your form reset logic here
-        pass
-    
-    def save_receipt(self):
-        """Handle save receipt confirmation"""
+    def add_order(self):
+        """Handle Add Order button click"""
         QMessageBox.information(
-            None, 'Order Completed',
-            "Order Completed! Save Receipt?",
+            None, 
+            'Order Added', 
+            "Order added to Order Summary!", 
             QMessageBox.Ok
         )
-        # Add your receipt saving logic here
+        # Here you would add the actual order to your data structure
+        # For example: self.cashier_controller.add_to_order(...)
     
-    def close_receipt(self):
-        """Handle close receipt confirmation"""
+    def show_OrderSummary_page(self):
+        """Show the Order Summary page (index 1"""
+        self.ui.stackedWidget.setCurrentIndex(1)
+        # Here you would update the order summary display with current items
+    
+    def show_Take_Orders_page(self):
+        """Show the Take Orders page (index 0)"""
+        self.ui.stackedWidget.setCurrentIndex(0)
+    
+    def confirm_and_print(self):
+        """Handle Confirm and Print button click"""
         reply = QMessageBox.question(
-            None, 'Next Order',
-            "Proceed to next order?",
-            QMessageBox.Yes | QMessageBox.No, QMessageBox.Yes
+            None, 
+            'Confirm Order', 
+            "Order Confirmed! Print Receipt?",
+            QMessageBox.Yes | QMessageBox.No, 
+            QMessageBox.Yes
         )
         
         if reply == QMessageBox.Yes:
-            # Go back to index 0 for new order
-            self.ui.stackedWidget_Orders.setCurrentIndex(0)
-            self.reset_order_form()
-        # Else stay on current index (2)
+            # Here you would call your receipt printing function
+            self.print_receipt()
+            QMessageBox.information(
+                None, 
+                'Receipt Printed', 
+                "Receipt has been printed!", 
+                QMessageBox.Ok
+            )
+    
+    def print_receipt(self):
+        """Generate and print the receipt using fpdf2"""
+        # This is where you would implement your actual receipt printing
+        # Example:
+        # from fpdf import FPDF
+        # pdf = FPDF()
+        # pdf.add_page()
+        # pdf.set_font("Arial", size=12)
+        # pdf.cell(200, 10, txt="Your Receipt", ln=1, align="C")
+        # ... add more receipt content ...
+        # pdf.output("receipt.pdf")
+        pass
+    
+    def remove_product(self):
+        """Handle Remove button click"""
+        reply = QMessageBox.question(
+            None, 
+            'Remove Product', 
+            "Are you sure you want to remove this product from Order Summary?",
+            QMessageBox.Yes | QMessageBox.No, 
+            QMessageBox.No
+        )
+        
+        if reply == QMessageBox.Yes:
+            # Here you would remove the selected product from your order
+            # For example: self.cashier_controller.remove_from_order(...)
+            QMessageBox.information(
+                None, 
+                'Product Removed', 
+                "Product has been removed from order summary!", 
+                QMessageBox.Ok
+            )

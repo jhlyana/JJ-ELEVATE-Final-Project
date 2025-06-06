@@ -1,10 +1,11 @@
 import sys
-from PyQt5.QtWidgets import QApplication
-from ui.generated_files.UI_Landing import Ui_JJ_LANDING
+from PyQt5.QtWidgets import QApplication, QMessageBox
+from ui.generated_files.UI_Landing import Ui_JJ_LANDING 
 from core.controllers.main_controller import MainController
+from database import Database  # Import the Database class
 
 def main():
-    app = QApplication(sys.argv)
+    app = QApplication(sys.argv) 
     
     # Initialize the main controller
     controller = MainController()
@@ -16,3 +17,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
+
+# Owner account (username: Aowner, password: Aaron123!, security answer: fluffy)
+# Cashier account (username: Cashier, password: OnlyCashier123, security answer: spot)
