@@ -11,8 +11,9 @@ from core.controllers.OSales_pageController import SalesPageController
 from core.controllers.Date_Time import DateTimeController  
 
 class CashierController:
-    def __init__(self, main_controller):
+    def __init__(self, main_controller, database):
         self.main_controller = main_controller
+        self.database = database  # Use the passed database connection
         self.stack = QStackedWidget()
         self.stack.setFixedSize(1921, 1005)
         

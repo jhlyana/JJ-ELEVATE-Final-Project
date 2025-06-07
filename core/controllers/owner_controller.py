@@ -14,8 +14,9 @@ from core.controllers.OAcc_pageController import AccountPageController
 from core.controllers.Date_Time import DateTimeController
 
 class OwnerController:
-    def __init__(self, main_controller):
+    def __init__(self, main_controller, database):  # Add database parameter
         self.main_controller = main_controller
+        self.database = database  # Store the database connection
         self.stack = QStackedWidget()
         self.stack.setFixedSize(1921, 1005)
         

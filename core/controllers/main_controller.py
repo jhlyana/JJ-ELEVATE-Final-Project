@@ -4,12 +4,16 @@ from ui.generated_files.UI_LogIn import Ui_LOGIN
 from core.controllers.owner_controller import OwnerController
 from core.controllers.cashier_controller import CashierController
 from core.controllers.forgotpass_controller import ForgotPasswordController
+from database import Database
 
 class MainController:
     def __init__(self):
-        # Initialize controllers
-        self.owner_controller = OwnerController(self)
-        self.cashier_controller = CashierController(self)
+        self.database = Database()  # Create database instance
+        self.database.connect()     # Connect to database
+        
+        # Pass database to controllers
+        self.owner_controller = OwnerController(self, self.database)
+        self.cashier_controller = CashierController(self, self.database)
 
         # Auth stack
         self.auth_stack = QStackedWidget()

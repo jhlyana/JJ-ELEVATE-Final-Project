@@ -20,4 +20,4 @@ class OrderHistoryPageController:
         elif filter_text == "Others":
             self.ui.orderReportText.setText("Other Orders History")
         else:
-            self.ui.orderReportText.setText("Order History")  # Default/fallback
+            self.ui.orderReportText.setText("All Order History")  # Default/fallback

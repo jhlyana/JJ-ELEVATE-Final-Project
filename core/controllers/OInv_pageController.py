@@ -4,20 +4,21 @@ from database import Database
 from core.models.OInventory_pageModel import InventoryModel
 
 class InventoryPageController:
-
+    
     COL_PRODUCT_ID = 0 # Assuming Product ID is the first column (index 0)
     COL_PROD_TYPE_NAME = 1
     COL_PRODUCT_NAME = 2
     COL_PRODUCT_PRICE = 3
     COL_STOCK_QTY = 4
-    COL_COLOR = 5
-    COL_LENGTH_MM = 6
-    COL_THICKNESS_MM = 7
-    COL_WIDTH_MM = 8
-    COL_OTHER = 9
-    COL_PRODUCT_SOURCE = 10
-    COL_CREATED_AT = 11
-    COL_UPDATED_AT = 12
+    COL_UPDATED_AT = 5
+    COL_COLOR = 6
+    COL_LENGTH_MM = 7
+    COL_THICKNESS_MM = 8
+    COL_WIDTH_MM = 9
+    COL_OTHER = 10
+    # COL_PRODUCT_SOURCE = 10
+    # COL_CREATED_AT = 11
+    # COL_UPDATED_AT = 12
     
     def __init__(self, inventory_ui, inventory_data=None, parent=None):
         self.ui = inventory_ui
