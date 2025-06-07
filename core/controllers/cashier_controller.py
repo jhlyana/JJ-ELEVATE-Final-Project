@@ -11,23 +11,21 @@ from core.controllers.OSales_pageController import SalesPageController
 from core.controllers.Date_Time import DateTimeController  
 
 class CashierController:
-    def __init__(self, main_controller, database):
+    def __init__(self, main_controller, database, user_id):
         self.main_controller = main_controller
-        self.database = database  # Use the passed database connection
+        self.database = database
+        self.user_id = user_id
         self.stack = QStackedWidget()
         self.stack.setFixedSize(1921, 1005)
         
-        # Initialize DateTimeController
         self.date_time_controller = DateTimeController()
         
-        # Initialize all cashier pages
         self._init_dashboard()
         self._init_orders()
         self._init_order_history()
         self._init_sales()
         self._init_account()
         
-        # Connect date/time labels
         self.date_time_controller.add_date_time_labels(
             self.dashboard_ui.dateLabel,
             self.dashboard_ui.timeLabel
@@ -37,10 +35,7 @@ class CashierController:
             self.account_ui.timeLabel
         )
         
-        # Connect navigation signals
         self._connect_navigation()
-        
-        # Set initial state
         self.stack.setCurrentIndex(0)
         self.set_active_button('dashboard')
     
@@ -55,17 +50,13 @@ class CashierController:
         self.orders_ui = Ui_CASHIER_ORDERS()
         self.orders_ui.setupUi(self.orders_page)
         self.stack.addWidget(self.orders_page)
-        
-        # Initialize orders controller
         self.orders_controller = OrdersPageController(self.orders_ui, self)
-
+    
     def _init_order_history(self):
         self.order_history_page = QWidget()
         self.order_history_ui = Ui_CASHIER_ORDER_HISTORY()
         self.order_history_ui.setupUi(self.order_history_page)
         self.stack.addWidget(self.order_history_page)
-        
-        # Initialize order history controller
         self.orderHistory_controller = OrderHistoryPageController(self.order_history_ui, self)
     
     def _init_sales(self):
@@ -73,8 +64,6 @@ class CashierController:
         self.sales_ui = Ui_CASHIER_SALES()
         self.sales_ui.setupUi(self.sales_page)
         self.stack.addWidget(self.sales_page)
-        
-        # Initialize sales controller
         self.sales_controller = SalesPageController(self.sales_ui, self)
     
     def _init_account(self):
@@ -82,7 +71,7 @@ class CashierController:
         self.account_ui = Ui_CASHIER_ACCOUNT()
         self.account_ui.setupUi(self.account_page)
         self.stack.addWidget(self.account_page)
-        
+    
     def _connect_navigation(self):
         # Dashboard navigation
         self.dashboard_ui.pushButton_Dashboard.clicked.connect(
@@ -186,8 +175,6 @@ class CashierController:
         ])
     
     def set_active_button(self, button_name):
-        """Set a single button as active using CSS classes"""
-        # Create a dictionary of all navigation buttons on all pages
         all_nav_buttons = {
             'dashboard': [
                 self.dashboard_ui.pushButton_Dashboard,
@@ -226,14 +213,12 @@ class CashierController:
             ]
         }
         
-        # Reset all navigation buttons on all pages
         for button_list in all_nav_buttons.values():
             for button in button_list:
-                button.setProperty('class', '')  # Clear active class
+                button.setProperty('class', '')
                 button.style().unpolish(button)
                 button.style().polish(button)
         
-        # Set active class on all buttons corresponding to the active page
         active_buttons = all_nav_buttons.get(button_name, [])
         for button in active_buttons:
             button.setProperty('class', 'activeButton')

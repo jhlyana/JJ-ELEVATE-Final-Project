@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QMainWindow, QStackedWidget, QWidget, QMessageBox # Import QMessageBox
+from PyQt5.QtWidgets import QMainWindow, QStackedWidget, QWidget, QMessageBox
 from ui.generated_files.UI_Landing import Ui_JJ_LANDING
 from ui.generated_files.UI_LogIn import Ui_LOGIN
 from core.controllers.owner_controller import OwnerController
@@ -8,12 +8,13 @@ from database import Database
 
 class MainController:
     def __init__(self):
-        self.database = Database()  # Create database instance
-        self.database.connect()     # Connect to database
+        self.database = Database()
+        self.database.connect()
         
-        # Pass database to controllers
-        self.owner_controller = OwnerController(self, self.database)
-        self.cashier_controller = CashierController(self, self.database)
+        # Initialize controllers without user_id first
+        self.owner_controller = None
+        self.cashier_controller = None
+        self.current_user_id = None  # Track current user ID
 
         # Auth stack
         self.auth_stack = QStackedWidget()
@@ -63,28 +64,33 @@ class MainController:
         user = authenticate_user(username, password)
 
         if user is None:
-            # Replaced label_login_error with QMessageBox
             QMessageBox.warning(self.login_page, "Login Error", "Invalid username or password")
         elif user is False:
-            # Replaced label_login_error with QMessageBox
             QMessageBox.critical(self.login_page, "Login Error", "Authentication error. Please try again later.")
         else:
+            # Store the user ID
+            self.current_user_id = user.get("user_id")
+            
             if user["role"] == "OWNER":
+                if self.owner_controller is None:
+                    self.owner_controller = OwnerController(self, self.database)
                 self.owner_controller.show_dashboard()
             elif user["role"] == "CASHIER":
+                if self.cashier_controller is None:
+                    self.cashier_controller = CashierController(self, self.database, self.current_user_id)
                 self.cashier_controller.show_dashboard()
             self.auth_stack.hide()
 
     def logout(self):
         # Hide all controller stacks
-        self.owner_controller.stack.hide()
-        self.cashier_controller.stack.hide()
+        if self.owner_controller:
+            self.owner_controller.stack.hide()
+        if self.cashier_controller:
+            self.cashier_controller.stack.hide()
 
-        # Clear any session data (add your own logic here)
-        # ...
+        # Clear current user
+        self.current_user_id = None
 
         # Show auth stack and landing page
         self.auth_stack.setCurrentWidget(self.landing_page)
         self.auth_stack.show()
-
-        # Reset any active states if needed

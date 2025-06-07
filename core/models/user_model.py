@@ -10,24 +10,25 @@ def get_db_connection():
     )
 
 def get_user_by_username(username):
+    conn = get_db_connection()
+    cursor = conn.cursor()
     try:
-        conn = get_db_connection()
-        cursor = conn.cursor()
-        
         cursor.execute("""
-            SELECT user_acc_id, user_acc_password_hash, user_acc_role, 
-                   security_question, security_answer 
+            SELECT user_acc_id, user_acc_username, user_acc_password_hash, 
+                   user_acc_role, shop_id, security_question, security_answer
             FROM user_account 
             WHERE user_acc_username = %s
         """, (username,))
         
-        return cursor.fetchone()
-    except Exception as e:
-        print(f"Database error: {e}")
+        # Convert result to dictionary
+        columns = [desc[0] for desc in cursor.description]
+        row = cursor.fetchone()
+        if row:
+            return dict(zip(columns, row))
         return None
     finally:
-        if conn:
-            conn.close()
+        cursor.close()
+        conn.close()
 
 def update_user_password(username, new_hash):
     try:
@@ -48,3 +49,26 @@ def update_user_password(username, new_hash):
     finally:
         if conn:
             conn.close()
+            
+def authenticate_user(username, password):
+    username = username.strip()
+    user = get_user_by_username(username)
+
+    if user is None:
+        return None
+
+    try:
+        stored_hash = user['user_acc_password_hash']
+        role = user['user_acc_role']
+        user_id = user['user_acc_id']
+
+        if bcrypt.checkpw(password.encode(), stored_hash.encode()):
+            return {
+                "username": username, 
+                "role": role,
+                "user_id": user_id
+            }
+        return None
+    except Exception as e:
+        print(f"Auth error: {e}")
+        return False

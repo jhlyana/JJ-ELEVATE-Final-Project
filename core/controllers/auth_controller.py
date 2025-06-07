@@ -9,14 +9,18 @@ def authenticate_user(username, password):
         return None
 
     try:
-        stored_hash = user[1]  # hashed password from the database
-        role = user[2]         # role
+        stored_hash = user['user_acc_password_hash']  # Access via column name
+        role = user['user_acc_role']
+        user_id = user['user_acc_id']
 
-        # *** CRITICAL FIX: Strip any whitespace from the stored hash ***
         stored_hash_cleaned = stored_hash.strip()
 
         if bcrypt.checkpw(password.encode(), stored_hash_cleaned.encode()):
-            return {"username": username, "role": role}
+            return {
+                "username": username, 
+                "role": role,
+                "user_id": user_id  # Include user_id in the return
+            }
         return None
     except Exception as e:
         print(f"Auth error: {e}")

@@ -1327,7 +1327,7 @@ border: 1px solid #000000;
        <string/>
       </property>
       <property name="placeholderText">
-       <string>Install / Supply / Repair</string>
+       <string>Install / Supply / Repair / Deliver</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_656">

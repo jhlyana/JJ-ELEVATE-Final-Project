@@ -869,7 +869,7 @@ class Ui_CASHIER_ORDERS(object):
         self.OrderSummary_CusName.setPlaceholderText(_translate("CASHIER_ORDERS", "....."))
         self.OrderSummary_CusAddress.setPlaceholderText(_translate("CASHIER_ORDERS", "....."))
         self.OrderSummary_CusContactNumber.setPlaceholderText(_translate("CASHIER_ORDERS", "....."))
-        self.OrderSummary_CusService.setPlaceholderText(_translate("CASHIER_ORDERS", "Install / Supply / Repair"))
+        self.OrderSummary_CusService.setPlaceholderText(_translate("CASHIER_ORDERS", "Install / Supply / Repair / Deliver"))
         self.label_656.setText(_translate("CASHIER_ORDERS", "Enter Amount Payed    :"))
         self.OrderSummary_CusCash.setPlaceholderText(_translate("CASHIER_ORDERS", "....."))
         self.ConfirmandPrint.setText(_translate("CASHIER_ORDERS", "Confirm Order and Print Receipt"))

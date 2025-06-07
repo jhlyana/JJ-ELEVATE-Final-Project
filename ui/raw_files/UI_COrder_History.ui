@@ -71,7 +71,7 @@ QHeaderView::section {
      </column>
      <column>
       <property name="text">
-       <string>Product</string>
+       <string>Product Name</string>
       </property>
       <property name="font">
        <font>
@@ -91,7 +91,7 @@ QHeaderView::section {
      </column>
      <column>
       <property name="text">
-       <string>Quantity</string>
+       <string>Qty</string>
       </property>
       <property name="font">
        <font>
@@ -179,6 +179,11 @@ text-align: center;</string>
     <item>
      <property name="text">
       <string>Others</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>All Products</string>
      </property>
     </item>
    </widget>
