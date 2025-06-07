@@ -167,35 +167,6 @@ border-radius: 10px;
       <string/>
      </property>
     </widget>
-    <widget class="QLabel" name="value_Tod_sales">
-     <property name="geometry">
-      <rect>
-       <x>80</x>
-       <y>30</y>
-       <width>341</width>
-       <height>121</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Montserrat ExtraBold</family>
-       <pointsize>32</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color:#ebe0cc;
-background: transparent;
-</string>
-     </property>
-     <property name="text">
-      <string>800,000</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
     <widget class="QLabel" name="label_4">
      <property name="geometry">
       <rect>
@@ -219,6 +190,35 @@ background: transparent;</string>
      </property>
      <property name="text">
       <string>Today’s Sales</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="value_Tod_sales">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>30</y>
+       <width>361</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>MS Shell Dlg 2</family>
+       <pointsize>32</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:#ebe0cc;
+background: transparent;
+</string>
+     </property>
+     <property name="text">
+      <string>800,000</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
    </widget>
@@ -375,8 +375,8 @@ border-radius: 10px;
       <font>
        <family>MS Shell Dlg 2</family>
        <pointsize>32</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
@@ -488,7 +488,7 @@ border-radius: 10px;
        <x>270</x>
        <y>10</y>
        <width>461</width>
-       <height>61</height>
+       <height>101</height>
       </rect>
      </property>
      <property name="font">

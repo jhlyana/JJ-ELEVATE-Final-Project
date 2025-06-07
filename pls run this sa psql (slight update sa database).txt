@@ -31,3 +31,8 @@ ALTER TABLE order_header ADD COLUMN oh_service_ids TEXT;
 
 THENNNN PARA SA RECEIPT GENERATING KAY RUN THIS SA TERMINAL
 pip install fpdf2
+
+
+AND ALSO THIS SA TERMINAL
+.\.venv\Scripts\activate
+pip install matplotlib
