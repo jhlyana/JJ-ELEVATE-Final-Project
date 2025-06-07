@@ -7,7 +7,7 @@ from ui.generated_files.UI_CAccount import Ui_CASHIER_ACCOUNT
 
 from core.controllers.COrders_pageController import OrdersPageController
 from core.controllers.COrderHistory_pageController import OrderHistoryPageController
-from core.controllers.OSales_pageController import SalesPageController
+from core.controllers.CSales_pageController import SalesPageController
 from core.controllers.Date_Time import DateTimeController  
 
 class CashierController:

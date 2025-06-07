@@ -83,6 +83,11 @@ text-align: center;</string>
        <string>Monthly</string>
       </property>
      </item>
+     <item>
+      <property name="text">
+       <string>All </string>
+      </property>
+     </item>
     </widget>
     <widget class="QFrame" name="frame_29">
      <property name="geometry">
