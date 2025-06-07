@@ -1,0 +1,33 @@
+ALTER TABLE receipt
+ADD COLUMN receipt_cash NUMERIC(12,2),
+ADD COLUMN receipt_change NUMERIC(12,2);
+
+ALTER TABLE receipt
+ADD CONSTRAINT receipt_cash_check CHECK (receipt_cash >= 0::numeric),
+ADD CONSTRAINT receipt_change_check CHECK (receipt_change >= 0::numeric);
+
+ALTER TABLE receipt
+ALTER COLUMN receipt_cash SET NOT NULL,
+ALTER COLUMN receipt_change SET NOT NULL;
+
+
+-- First, update existing data to match allowed values (if needed)
+UPDATE service 
+SET service_name = 'Supply'
+WHERE service_name NOT IN ('Supply', 'Install', 'Repair', 'Deliver');
+
+-- Then add a check constraint to enforce allowed values
+ALTER TABLE service
+ADD CONSTRAINT service_name_check 
+CHECK (service_name IN ('Supply', 'Install', 'Repair', 'Deliver'));
+
+INSERT INTO service (service_name) VALUES 
+('Supply'), 
+('Install'), 
+('Repair'), 
+('Deliver');
+
+ALTER TABLE order_header ADD COLUMN oh_service_ids TEXT;
+
+THENNNN PARA SA RECEIPT GENERATING KAY RUN THIS SA TERMINAL
+pip install fpdf2
