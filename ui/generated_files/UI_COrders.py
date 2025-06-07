@@ -778,7 +778,7 @@ class Ui_CASHIER_ORDERS(object):
 "}\n"
 "")
         self.tableWidget_OrderSummary.setObjectName("tableWidget_OrderSummary")
-        self.tableWidget_OrderSummary.setColumnCount(4)
+        self.tableWidget_OrderSummary.setColumnCount(5)
         self.tableWidget_OrderSummary.setRowCount(0)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
@@ -796,15 +796,17 @@ class Ui_CASHIER_ORDERS(object):
         item.setFont(font)
         self.tableWidget_OrderSummary.setHorizontalHeaderItem(2, item)
         item = QtWidgets.QTableWidgetItem()
+        self.tableWidget_OrderSummary.setHorizontalHeaderItem(3, item)
+        item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setPointSize(12)
         item.setFont(font)
-        self.tableWidget_OrderSummary.setHorizontalHeaderItem(3, item)
+        self.tableWidget_OrderSummary.setHorizontalHeaderItem(4, item)
         self.tableWidget_OrderSummary.horizontalHeader().setDefaultSectionSize(360)
         self.stackedWidget.addWidget(self.ViewOrderSummary)
 
         self.retranslateUi(CASHIER_ORDERS)
-        self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(1)
         QtCore.QMetaObject.connectSlotsByName(CASHIER_ORDERS)
 
     def retranslateUi(self, CASHIER_ORDERS):
@@ -880,4 +882,6 @@ class Ui_CASHIER_ORDERS(object):
         item = self.tableWidget_OrderSummary.horizontalHeaderItem(2)
         item.setText(_translate("CASHIER_ORDERS", "Price"))
         item = self.tableWidget_OrderSummary.horizontalHeaderItem(3)
+        item.setText(_translate("CASHIER_ORDERS", "Discount"))
+        item = self.tableWidget_OrderSummary.horizontalHeaderItem(4)
         item.setText(_translate("CASHIER_ORDERS", "Total"))

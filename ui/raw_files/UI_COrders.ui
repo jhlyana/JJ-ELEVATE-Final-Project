@@ -431,7 +431,7 @@ QPushButton.activeButton {
     </rect>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>1</number>
    </property>
    <widget class="QWidget" name="TakeOrder">
     <widget class="QTableWidget" name="tableWidget_ProdList">
@@ -1553,6 +1553,11 @@ padding: 3;
        <font>
         <pointsize>12</pointsize>
        </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Discount</string>
       </property>
      </column>
      <column>
