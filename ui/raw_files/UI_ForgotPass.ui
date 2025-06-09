@@ -418,7 +418,7 @@ color: white;</string>
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>../../../../../../Downloads/EYE.png</normaloff>../../../../../../Downloads/EYE.png</iconset>
+         <normaloff>../resources/images/EYE.png</normaloff>../resources/images/EYE.png</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -450,7 +450,7 @@ color: white;</string>
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>../../../../../../Downloads/EYE.png</normaloff>../../../../../../Downloads/EYE.png</iconset>
+         <normaloff>../resources/images/EYE.png</normaloff>../resources/images/EYE.png</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -501,7 +501,7 @@ background: transparent;</string>
     <property name="font">
      <font>
       <family>Verdana</family>
-      <pointsize>11</pointsize>
+      <pointsize>-1</pointsize>
       <weight>87</weight>
       <bold>true</bold>
      </font>
@@ -511,6 +511,7 @@ background: transparent;</string>
 padding: 1px; 
 font-weight: 700;
 font-family: &quot;Verdana&quot;, sans-serif; 
+font-size: 18px;
 background-color: #374550; 
 color: white;</string>
     </property>

@@ -208,7 +208,7 @@ class Ui_ForgotPass(object):
 "")
         self.toggleNewPass.setText("")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../../../../Downloads/EYE.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/EYE.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.toggleNewPass.setIcon(icon)
         self.toggleNewPass.setIconSize(QtCore.QSize(45, 45))
         self.toggleNewPass.setObjectName("toggleNewPass")
@@ -244,7 +244,7 @@ class Ui_ForgotPass(object):
         self.pushButton_xtolanding_forgotpass_2.setGeometry(QtCore.QRect(680, 30, 221, 41))
         font = QtGui.QFont()
         font.setFamily("Verdana")
-        font.setPointSize(11)
+        font.setPointSize(9)
         font.setBold(True)
         font.setWeight(87)
         self.pushButton_xtolanding_forgotpass_2.setFont(font)
@@ -252,6 +252,7 @@ class Ui_ForgotPass(object):
 "padding: 1px; \n"
 "font-weight: 700;\n"
 "font-family: \"Verdana\", sans-serif; \n"
+"font-size: 18px;\n"
 "background-color: #374550; \n"
 "color: white;")
         self.pushButton_xtolanding_forgotpass_2.setObjectName("pushButton_xtolanding_forgotpass_2")

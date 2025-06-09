@@ -18,7 +18,7 @@
     <rect>
      <x>610</x>
      <y>650</y>
-     <width>691</width>
+     <width>751</width>
      <height>51</height>
     </rect>
    </property>
@@ -34,7 +34,7 @@ font-family: &quot;Poppins Extrabold&quot;, sans-serif;
 background: transparent;</string>
    </property>
    <property name="text">
-    <string>Supply                               Install                               Repair    </string>
+    <string>Supply                               Install                            Repair    </string>
    </property>
   </widget>
   <widget class="QLabel" name="BG">
@@ -60,9 +60,9 @@ background: transparent;</string>
    <property name="geometry">
     <rect>
      <x>860</x>
-     <y>420</y>
+     <y>410</y>
      <width>581</width>
-     <height>111</height>
+     <height>121</height>
     </rect>
    </property>
    <property name="font">
@@ -157,7 +157,7 @@ font-weight: 700;
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../resources/images/JJLOGO.png</pixmap>
+    <pixmap>../resources/images/J&amp;J logo.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>

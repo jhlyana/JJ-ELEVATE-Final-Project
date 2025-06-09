@@ -146,19 +146,8 @@ class Ui_OWNER_ACCOUNT(object):
 "    \n"
 "")
         self.ownerIDText.setObjectName("ownerIDText")
-        self.ownerID = QtWidgets.QLineEdit(self.frame_41)
-        self.ownerID.setGeometry(QtCore.QRect(220, 170, 561, 51))
-        font = QtGui.QFont()
-        font.setPointSize(15)
-        self.ownerID.setFont(font)
-        self.ownerID.setStyleSheet("border: 1px solid #000000; \n"
-"border-radius: 22px; \n"
-"padding: 1px;")
-        self.ownerID.setText("")
-        self.ownerID.setPlaceholderText("")
-        self.ownerID.setObjectName("ownerID")
         self.ownerRoleText = QtWidgets.QLabel(self.frame_41)
-        self.ownerRoleText.setGeometry(QtCore.QRect(230, 260, 191, 41))
+        self.ownerRoleText.setGeometry(QtCore.QRect(230, 250, 191, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(9)
@@ -170,19 +159,8 @@ class Ui_OWNER_ACCOUNT(object):
 "    \n"
 "")
         self.ownerRoleText.setObjectName("ownerRoleText")
-        self.ownerRole = QtWidgets.QLineEdit(self.frame_41)
-        self.ownerRole.setGeometry(QtCore.QRect(220, 300, 561, 51))
-        font = QtGui.QFont()
-        font.setPointSize(15)
-        self.ownerRole.setFont(font)
-        self.ownerRole.setStyleSheet("border: 1px solid #000000; \n"
-"border-radius: 22px; \n"
-"padding: 1px;")
-        self.ownerRole.setText("")
-        self.ownerRole.setPlaceholderText("")
-        self.ownerRole.setObjectName("ownerRole")
         self.ownerNameText = QtWidgets.QLabel(self.frame_41)
-        self.ownerNameText.setGeometry(QtCore.QRect(230, 380, 191, 41))
+        self.ownerNameText.setGeometry(QtCore.QRect(230, 370, 191, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(9)
@@ -194,17 +172,6 @@ class Ui_OWNER_ACCOUNT(object):
 "    \n"
 "")
         self.ownerNameText.setObjectName("ownerNameText")
-        self.ownerName = QtWidgets.QLineEdit(self.frame_41)
-        self.ownerName.setGeometry(QtCore.QRect(220, 420, 561, 51))
-        font = QtGui.QFont()
-        font.setPointSize(15)
-        self.ownerName.setFont(font)
-        self.ownerName.setStyleSheet("border: 1px solid #000000; \n"
-"border-radius: 22px; \n"
-"padding: 1px;")
-        self.ownerName.setText("")
-        self.ownerName.setPlaceholderText("")
-        self.ownerName.setObjectName("ownerName")
         self.label_3 = QtWidgets.QLabel(self.frame_41)
         self.label_3.setGeometry(QtCore.QRect(-70, 40, 1051, 501))
         self.label_3.setStyleSheet("background-color: rgba(235, 224, 204, 0.47); \n"
@@ -231,14 +198,50 @@ class Ui_OWNER_ACCOUNT(object):
 "        background-color: rgba(178, 66, 60, 0.9);\n"
 "    }")
         self.pushButton_EditAccount.setObjectName("pushButton_EditAccount")
+        self.ownerID = QtWidgets.QLabel(self.frame_41)
+        self.ownerID.setGeometry(QtCore.QRect(230, 160, 551, 51))
+        self.ownerID.setStyleSheet("border-radius: 22px; \n"
+"font-size: 30px;\n"
+"background-color: #ffffff;\n"
+"padding: 9px;\n"
+"color: #12245c;\n"
+"font-family: \"Arial Black\", Arial, sans-serif; \n"
+"font-size: 25px\n"
+"")
+        self.ownerID.setText("")
+        self.ownerID.setObjectName("ownerID")
+        self.ownerRole = QtWidgets.QLabel(self.frame_41)
+        self.ownerRole.setGeometry(QtCore.QRect(230, 290, 551, 51))
+        self.ownerRole.setStyleSheet("border-radius: 22px; \n"
+"font-size: 30px;\n"
+"background-color: #ffffff;\n"
+"padding: 9px;\n"
+"color: #12245c;\n"
+"font-family: \"Arial Black\", Arial, sans-serif; \n"
+"font-size: 25px\n"
+"")
+        self.ownerRole.setText("")
+        self.ownerRole.setObjectName("ownerRole")
+        self.ownerName = QtWidgets.QLabel(self.frame_41)
+        self.ownerName.setGeometry(QtCore.QRect(230, 410, 551, 51))
+        self.ownerName.setStyleSheet("border-radius: 22px; \n"
+"font-size: 30px;\n"
+"background-color: #ffffff;\n"
+"padding: 9px;\n"
+"color: #12245c;\n"
+"font-family: \"Arial Black\", Arial, sans-serif; \n"
+"font-size: 25px\n"
+"")
+        self.ownerName.setText("")
+        self.ownerName.setObjectName("ownerName")
         self.label_3.raise_()
         self.ownerIDText.raise_()
-        self.ownerID.raise_()
         self.ownerRoleText.raise_()
-        self.ownerRole.raise_()
         self.ownerNameText.raise_()
-        self.ownerName.raise_()
         self.pushButton_EditAccount.raise_()
+        self.ownerID.raise_()
+        self.ownerRole.raise_()
+        self.ownerName.raise_()
         self.frame_10 = QtWidgets.QFrame(self.page)
         self.frame_10.setGeometry(QtCore.QRect(0, -10, 591, 661))
         self.frame_10.setFrameShape(QtWidgets.QFrame.StyledPanel)
@@ -291,17 +294,6 @@ class Ui_OWNER_ACCOUNT(object):
 "    \n"
 "")
         self.userNameText.setObjectName("userNameText")
-        self.userNameEnter = QtWidgets.QLineEdit(self.frame_42)
-        self.userNameEnter.setGeometry(QtCore.QRect(150, 170, 341, 51))
-        font = QtGui.QFont()
-        font.setPointSize(15)
-        self.userNameEnter.setFont(font)
-        self.userNameEnter.setStyleSheet("border: 1px solid #000000; \n"
-"border-radius: 22px; \n"
-"padding: 1px;")
-        self.userNameEnter.setText("")
-        self.userNameEnter.setPlaceholderText("")
-        self.userNameEnter.setObjectName("userNameEnter")
         self.oldPassText = QtWidgets.QLabel(self.frame_42)
         self.oldPassText.setGeometry(QtCore.QRect(160, 300, 201, 41))
         font = QtGui.QFont()
@@ -318,11 +310,17 @@ class Ui_OWNER_ACCOUNT(object):
         self.oldPassEnter = QtWidgets.QLineEdit(self.frame_42)
         self.oldPassEnter.setGeometry(QtCore.QRect(150, 340, 341, 51))
         font = QtGui.QFont()
-        font.setPointSize(15)
+        font.setFamily("Arial Black")
+        font.setPointSize(9)
         self.oldPassEnter.setFont(font)
-        self.oldPassEnter.setStyleSheet("border: 1px solid #000000; \n"
-"border-radius: 22px; \n"
-"padding: 1px;")
+        self.oldPassEnter.setStyleSheet("border-radius: 22px; \n"
+"font-size: 30px;\n"
+"background-color: #ffffff;\n"
+"padding: 9px;\n"
+"color: #12245c;\n"
+"font-family: \"Arial Black\", Arial, sans-serif; \n"
+"font-size: 25px\n"
+"")
         self.oldPassEnter.setText("")
         self.oldPassEnter.setPlaceholderText("")
         self.oldPassEnter.setObjectName("oldPassEnter")
@@ -342,11 +340,17 @@ class Ui_OWNER_ACCOUNT(object):
         self.setPassEnter = QtWidgets.QLineEdit(self.frame_42)
         self.setPassEnter.setGeometry(QtCore.QRect(570, 340, 341, 51))
         font = QtGui.QFont()
-        font.setPointSize(15)
+        font.setFamily("Arial Black")
+        font.setPointSize(9)
         self.setPassEnter.setFont(font)
-        self.setPassEnter.setStyleSheet("border: 1px solid #000000; \n"
-"border-radius: 22px; \n"
-"padding: 1px;")
+        self.setPassEnter.setStyleSheet("border-radius: 22px; \n"
+"font-size: 30px;\n"
+"background-color: #ffffff;\n"
+"padding: 9px;\n"
+"color: #12245c;\n"
+"font-family: \"Arial Black\", Arial, sans-serif; \n"
+"font-size: 25px\n"
+"")
         self.setPassEnter.setText("")
         self.setPassEnter.setPlaceholderText("")
         self.setPassEnter.setObjectName("setPassEnter")
@@ -393,11 +397,17 @@ class Ui_OWNER_ACCOUNT(object):
         self.newUserNameEnter = QtWidgets.QLineEdit(self.frame_42)
         self.newUserNameEnter.setGeometry(QtCore.QRect(570, 170, 341, 51))
         font = QtGui.QFont()
-        font.setPointSize(15)
+        font.setFamily("Arial Black")
+        font.setPointSize(9)
         self.newUserNameEnter.setFont(font)
-        self.newUserNameEnter.setStyleSheet("border: 1px solid #000000; \n"
-"border-radius: 22px; \n"
-"padding: 1px;")
+        self.newUserNameEnter.setStyleSheet("border-radius: 22px; \n"
+"font-size: 30px;\n"
+"background-color: #ffffff;\n"
+"padding: 9px;\n"
+"color: #12245c;\n"
+"font-family: \"Arial Black\", Arial, sans-serif; \n"
+"font-size: 25px\n"
+"")
         self.newUserNameEnter.setText("")
         self.newUserNameEnter.setPlaceholderText("")
         self.newUserNameEnter.setObjectName("newUserNameEnter")
@@ -430,11 +440,17 @@ class Ui_OWNER_ACCOUNT(object):
         self.confirmPassEnter = QtWidgets.QLineEdit(self.frame_42)
         self.confirmPassEnter.setGeometry(QtCore.QRect(150, 450, 341, 51))
         font = QtGui.QFont()
-        font.setPointSize(15)
+        font.setFamily("Arial Black")
+        font.setPointSize(9)
         self.confirmPassEnter.setFont(font)
-        self.confirmPassEnter.setStyleSheet("border: 1px solid #000000; \n"
-"border-radius: 22px; \n"
-"padding: 1px;")
+        self.confirmPassEnter.setStyleSheet("border-radius: 22px; \n"
+"font-size: 30px;\n"
+"background-color: #ffffff;\n"
+"padding: 9px;\n"
+"color: #12245c;\n"
+"font-family: \"Arial Black\", Arial, sans-serif; \n"
+"font-size: 25px\n"
+"")
         self.confirmPassEnter.setText("")
         self.confirmPassEnter.setPlaceholderText("")
         self.confirmPassEnter.setObjectName("confirmPassEnter")
@@ -470,9 +486,58 @@ class Ui_OWNER_ACCOUNT(object):
 "        background-color: rgba(178, 66, 60, 0.9);\n"
 "    }")
         self.pushButton_cancelEditAccount_owner.setObjectName("pushButton_cancelEditAccount_owner")
+        self.userNameEnter = QtWidgets.QLabel(self.frame_42)
+        self.userNameEnter.setGeometry(QtCore.QRect(150, 170, 341, 51))
+        self.userNameEnter.setStyleSheet("border-radius: 22px; \n"
+"font-size: 30px;\n"
+"background-color: #ffffff;\n"
+"padding: 9px;\n"
+"color: #12245c;\n"
+"font-family: \"Arial Black\", Arial, sans-serif; \n"
+"font-size: 25px\n"
+"")
+        self.userNameEnter.setText("")
+        self.userNameEnter.setObjectName("userNameEnter")
+        self.btn_toggle_old = QtWidgets.QPushButton(self.frame_42)
+        self.btn_toggle_old.setGeometry(QtCore.QRect(420, 350, 51, 31))
+        self.btn_toggle_old.setStyleSheet("QPushButton#togglePasswordButton {\n"
+"    border: none;          /* Removes the border */\n"
+"    background-color: transparent; /* Transparent background */\n"
+"    padding: 2px;          /* Optional: Adds a bit of spacing */\n"
+"}\n"
+"\n"
+"")
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("ui/raw_files\\../../../Downloads/EYE.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.btn_toggle_old.setIcon(icon)
+        self.btn_toggle_old.setIconSize(QtCore.QSize(45, 45))
+        self.btn_toggle_old.setObjectName("btn_toggle_old")
+        self.btn_toggle_new = QtWidgets.QPushButton(self.frame_42)
+        self.btn_toggle_new.setGeometry(QtCore.QRect(840, 350, 51, 31))
+        self.btn_toggle_new.setStyleSheet("QPushButton#togglePasswordButton {\n"
+"    border: none;          /* Removes the border */\n"
+"    background-color: transparent; /* Transparent background */\n"
+"    padding: 2px;          /* Optional: Adds a bit of spacing */\n"
+"}\n"
+"\n"
+"")
+        self.btn_toggle_new.setIcon(icon)
+        self.btn_toggle_new.setIconSize(QtCore.QSize(45, 45))
+        self.btn_toggle_new.setObjectName("btn_toggle_new")
+        self.btn_toggle_confirm = QtWidgets.QPushButton(self.frame_42)
+        self.btn_toggle_confirm.setGeometry(QtCore.QRect(420, 460, 51, 31))
+        self.btn_toggle_confirm.setStyleSheet("QPushButton#togglePasswordButton {\n"
+"    border: none;          /* Removes the border */\n"
+"    background-color: transparent; /* Transparent background */\n"
+"    padding: 2px;          /* Optional: Adds a bit of spacing */\n"
+"}\n"
+"\n"
+"")
+        self.btn_toggle_confirm.setIcon(icon)
+        self.btn_toggle_confirm.setIconSize(QtCore.QSize(45, 45))
+        self.btn_toggle_confirm.setObjectName("btn_toggle_confirm")
         self.label_4.raise_()
         self.userNameText.raise_()
-        self.userNameEnter.raise_()
         self.oldPassText.raise_()
         self.oldPassEnter.raise_()
         self.setPassText.raise_()
@@ -485,6 +550,10 @@ class Ui_OWNER_ACCOUNT(object):
         self.confirmPassEnter.raise_()
         self.confirmPassText.raise_()
         self.pushButton_cancelEditAccount_owner.raise_()
+        self.userNameEnter.raise_()
+        self.btn_toggle_old.raise_()
+        self.btn_toggle_new.raise_()
+        self.btn_toggle_confirm.raise_()
         self.frame_11 = QtWidgets.QFrame(self.page_2)
         self.frame_11.setGeometry(QtCore.QRect(0, -10, 591, 661))
         self.frame_11.setFrameShape(QtWidgets.QFrame.StyledPanel)
@@ -537,19 +606,8 @@ class Ui_OWNER_ACCOUNT(object):
 "    \n"
 "")
         self.cashierIDText.setObjectName("cashierIDText")
-        self.cashierID = QtWidgets.QLineEdit(self.frame_43)
-        self.cashierID.setGeometry(QtCore.QRect(220, 170, 561, 51))
-        font = QtGui.QFont()
-        font.setPointSize(15)
-        self.cashierID.setFont(font)
-        self.cashierID.setStyleSheet("border: 1px solid #000000; \n"
-"border-radius: 22px; \n"
-"padding: 1px;")
-        self.cashierID.setText("")
-        self.cashierID.setPlaceholderText("")
-        self.cashierID.setObjectName("cashierID")
         self.cashierRoleText = QtWidgets.QLabel(self.frame_43)
-        self.cashierRoleText.setGeometry(QtCore.QRect(230, 260, 191, 41))
+        self.cashierRoleText.setGeometry(QtCore.QRect(230, 250, 191, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(9)
@@ -561,19 +619,8 @@ class Ui_OWNER_ACCOUNT(object):
 "    \n"
 "")
         self.cashierRoleText.setObjectName("cashierRoleText")
-        self.cashierRole = QtWidgets.QLineEdit(self.frame_43)
-        self.cashierRole.setGeometry(QtCore.QRect(220, 300, 561, 51))
-        font = QtGui.QFont()
-        font.setPointSize(15)
-        self.cashierRole.setFont(font)
-        self.cashierRole.setStyleSheet("border: 1px solid #000000; \n"
-"border-radius: 22px; \n"
-"padding: 1px;")
-        self.cashierRole.setText("")
-        self.cashierRole.setPlaceholderText("")
-        self.cashierRole.setObjectName("cashierRole")
         self.cashierNameText = QtWidgets.QLabel(self.frame_43)
-        self.cashierNameText.setGeometry(QtCore.QRect(230, 380, 191, 41))
+        self.cashierNameText.setGeometry(QtCore.QRect(230, 370, 191, 41))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(9)
@@ -585,17 +632,6 @@ class Ui_OWNER_ACCOUNT(object):
 "    \n"
 "")
         self.cashierNameText.setObjectName("cashierNameText")
-        self.cashierName = QtWidgets.QLineEdit(self.frame_43)
-        self.cashierName.setGeometry(QtCore.QRect(220, 420, 561, 51))
-        font = QtGui.QFont()
-        font.setPointSize(15)
-        self.cashierName.setFont(font)
-        self.cashierName.setStyleSheet("border: 1px solid #000000; \n"
-"border-radius: 22px; \n"
-"padding: 1px;")
-        self.cashierName.setText("")
-        self.cashierName.setPlaceholderText("")
-        self.cashierName.setObjectName("cashierName")
         self.label_5 = QtWidgets.QLabel(self.frame_43)
         self.label_5.setGeometry(QtCore.QRect(-70, 40, 1051, 501))
         self.label_5.setStyleSheet("background-color: rgba(235, 224, 204, 0.47); \n"
@@ -622,14 +658,50 @@ class Ui_OWNER_ACCOUNT(object):
 "        background-color: rgba(178, 66, 60, 0.9);\n"
 "    }")
         self.pushButton_EditAccount_cashier.setObjectName("pushButton_EditAccount_cashier")
+        self.cashierID = QtWidgets.QLabel(self.frame_43)
+        self.cashierID.setGeometry(QtCore.QRect(230, 160, 561, 51))
+        self.cashierID.setStyleSheet("border-radius: 22px; \n"
+"font-size: 30px;\n"
+"background-color: #ffffff;\n"
+"padding: 9px;\n"
+"color: #12245c;\n"
+"font-family: \"Arial Black\", Arial, sans-serif; \n"
+"font-size: 25px\n"
+"")
+        self.cashierID.setText("")
+        self.cashierID.setObjectName("cashierID")
+        self.cashierRole = QtWidgets.QLabel(self.frame_43)
+        self.cashierRole.setGeometry(QtCore.QRect(230, 290, 561, 51))
+        self.cashierRole.setStyleSheet("border-radius: 22px; \n"
+"font-size: 30px;\n"
+"background-color: #ffffff;\n"
+"padding: 9px;\n"
+"color: #12245c;\n"
+"font-family: \"Arial Black\", Arial, sans-serif; \n"
+"font-size: 25px\n"
+"")
+        self.cashierRole.setText("")
+        self.cashierRole.setObjectName("cashierRole")
+        self.cashierName_2 = QtWidgets.QLabel(self.frame_43)
+        self.cashierName_2.setGeometry(QtCore.QRect(230, 410, 561, 51))
+        self.cashierName_2.setStyleSheet("border-radius: 22px; \n"
+"font-size: 30px;\n"
+"background-color: #ffffff;\n"
+"padding: 9px;\n"
+"color: #12245c;\n"
+"font-family: \"Arial Black\", Arial, sans-serif; \n"
+"font-size: 25px\n"
+"")
+        self.cashierName_2.setText("")
+        self.cashierName_2.setObjectName("cashierName_2")
         self.label_5.raise_()
         self.cashierIDText.raise_()
-        self.cashierID.raise_()
         self.cashierRoleText.raise_()
-        self.cashierRole.raise_()
         self.cashierNameText.raise_()
-        self.cashierName.raise_()
         self.pushButton_EditAccount_cashier.raise_()
+        self.cashierID.raise_()
+        self.cashierRole.raise_()
+        self.cashierName_2.raise_()
         self.frame_8 = QtWidgets.QFrame(self.page_3)
         self.frame_8.setGeometry(QtCore.QRect(0, -10, 591, 661))
         self.frame_8.setFrameShape(QtWidgets.QFrame.StyledPanel)
@@ -682,17 +754,6 @@ class Ui_OWNER_ACCOUNT(object):
 "    \n"
 "")
         self.userNameText_2.setObjectName("userNameText_2")
-        self.userNameEnter_2 = QtWidgets.QLineEdit(self.frame_44)
-        self.userNameEnter_2.setGeometry(QtCore.QRect(150, 170, 341, 51))
-        font = QtGui.QFont()
-        font.setPointSize(15)
-        self.userNameEnter_2.setFont(font)
-        self.userNameEnter_2.setStyleSheet("border: 1px solid #000000; \n"
-"border-radius: 22px; \n"
-"padding: 1px;")
-        self.userNameEnter_2.setText("")
-        self.userNameEnter_2.setPlaceholderText("")
-        self.userNameEnter_2.setObjectName("userNameEnter_2")
         self.oldPassText_2 = QtWidgets.QLabel(self.frame_44)
         self.oldPassText_2.setGeometry(QtCore.QRect(160, 300, 201, 41))
         font = QtGui.QFont()
@@ -861,9 +922,51 @@ class Ui_OWNER_ACCOUNT(object):
 "        background-color: rgba(178, 66, 60, 0.9);\n"
 "    }")
         self.pushButton_cancelEditAccount_cashier.setObjectName("pushButton_cancelEditAccount_cashier")
+        self.userNameEnter_2 = QtWidgets.QLabel(self.frame_44)
+        self.userNameEnter_2.setGeometry(QtCore.QRect(150, 170, 341, 51))
+        self.userNameEnter_2.setStyleSheet("border: 1px solid #000000; \n"
+"border-radius: 22px; \n"
+"padding: 1px;")
+        self.userNameEnter_2.setText("")
+        self.userNameEnter_2.setObjectName("userNameEnter_2")
+        self.btn_toggle_old_2 = QtWidgets.QPushButton(self.frame_44)
+        self.btn_toggle_old_2.setGeometry(QtCore.QRect(420, 350, 51, 31))
+        self.btn_toggle_old_2.setStyleSheet("QPushButton#togglePasswordButton {\n"
+"    border: none;          /* Removes the border */\n"
+"    background-color: transparent; /* Transparent background */\n"
+"    padding: 2px;          /* Optional: Adds a bit of spacing */\n"
+"}\n"
+"\n"
+"")
+        self.btn_toggle_old_2.setIcon(icon)
+        self.btn_toggle_old_2.setIconSize(QtCore.QSize(45, 45))
+        self.btn_toggle_old_2.setObjectName("btn_toggle_old_2")
+        self.btn_toggle_new_2 = QtWidgets.QPushButton(self.frame_44)
+        self.btn_toggle_new_2.setGeometry(QtCore.QRect(850, 350, 41, 31))
+        self.btn_toggle_new_2.setStyleSheet("QPushButton#togglePasswordButton {\n"
+"    border: none;          /* Removes the border */\n"
+"    background-color: transparent; /* Transparent background */\n"
+"    padding: 2px;          /* Optional: Adds a bit of spacing */\n"
+"}\n"
+"\n"
+"")
+        self.btn_toggle_new_2.setIcon(icon)
+        self.btn_toggle_new_2.setIconSize(QtCore.QSize(45, 45))
+        self.btn_toggle_new_2.setObjectName("btn_toggle_new_2")
+        self.btn_toggle_confirm_2 = QtWidgets.QPushButton(self.frame_44)
+        self.btn_toggle_confirm_2.setGeometry(QtCore.QRect(430, 460, 41, 31))
+        self.btn_toggle_confirm_2.setStyleSheet("QPushButton#togglePasswordButton {\n"
+"    border: none;          /* Removes the border */\n"
+"    background-color: transparent; /* Transparent background */\n"
+"    padding: 2px;          /* Optional: Adds a bit of spacing */\n"
+"}\n"
+"\n"
+"")
+        self.btn_toggle_confirm_2.setIcon(icon)
+        self.btn_toggle_confirm_2.setIconSize(QtCore.QSize(45, 45))
+        self.btn_toggle_confirm_2.setObjectName("btn_toggle_confirm_2")
         self.label_6.raise_()
         self.userNameText_2.raise_()
-        self.userNameEnter_2.raise_()
         self.oldPassText_2.raise_()
         self.oldPassEnter_2.raise_()
         self.setPassText_2.raise_()
@@ -876,6 +979,10 @@ class Ui_OWNER_ACCOUNT(object):
         self.confirmPassEnter_2.raise_()
         self.confirmPassText_2.raise_()
         self.pushButton_cancelEditAccount_cashier.raise_()
+        self.userNameEnter_2.raise_()
+        self.btn_toggle_old_2.raise_()
+        self.btn_toggle_new_2.raise_()
+        self.btn_toggle_confirm_2.raise_()
         self.frame_3 = QtWidgets.QFrame(self.page_4)
         self.frame_3.setGeometry(QtCore.QRect(0, -10, 591, 661))
         self.frame_3.setFrameShape(QtWidgets.QFrame.StyledPanel)
@@ -972,50 +1079,50 @@ class Ui_OWNER_ACCOUNT(object):
 "    \n"
 "")
         self.changeUserNameText_6.setObjectName("changeUserNameText_6")
-        self.newUserNameEnter_3 = QtWidgets.QLineEdit(self.page_5)
-        self.newUserNameEnter_3.setGeometry(QtCore.QRect(180, 250, 341, 51))
+        self.shopIDCashier = QtWidgets.QLineEdit(self.page_5)
+        self.shopIDCashier.setGeometry(QtCore.QRect(180, 250, 341, 51))
         font = QtGui.QFont()
         font.setPointSize(15)
-        self.newUserNameEnter_3.setFont(font)
-        self.newUserNameEnter_3.setStyleSheet("border: 1px solid #000000; \n"
+        self.shopIDCashier.setFont(font)
+        self.shopIDCashier.setStyleSheet("border: 1px solid #000000; \n"
 "border-radius: 22px; \n"
 "padding: 1px;")
-        self.newUserNameEnter_3.setText("")
-        self.newUserNameEnter_3.setPlaceholderText("")
-        self.newUserNameEnter_3.setObjectName("newUserNameEnter_3")
-        self.newUserNameEnter_4 = QtWidgets.QLineEdit(self.page_5)
-        self.newUserNameEnter_4.setGeometry(QtCore.QRect(640, 250, 341, 51))
+        self.shopIDCashier.setText("")
+        self.shopIDCashier.setPlaceholderText("")
+        self.shopIDCashier.setObjectName("shopIDCashier")
+        self.createAccRole = QtWidgets.QLineEdit(self.page_5)
+        self.createAccRole.setGeometry(QtCore.QRect(640, 250, 341, 51))
         font = QtGui.QFont()
         font.setPointSize(15)
-        self.newUserNameEnter_4.setFont(font)
-        self.newUserNameEnter_4.setStyleSheet("border: 1px solid #000000; \n"
+        self.createAccRole.setFont(font)
+        self.createAccRole.setStyleSheet("border: 1px solid #000000; \n"
 "border-radius: 22px; \n"
 "padding: 1px;")
-        self.newUserNameEnter_4.setText("")
-        self.newUserNameEnter_4.setPlaceholderText("")
-        self.newUserNameEnter_4.setObjectName("newUserNameEnter_4")
-        self.newUserNameEnter_5 = QtWidgets.QLineEdit(self.page_5)
-        self.newUserNameEnter_5.setGeometry(QtCore.QRect(1100, 250, 341, 51))
+        self.createAccRole.setText("")
+        self.createAccRole.setPlaceholderText("")
+        self.createAccRole.setObjectName("createAccRole")
+        self.createAccName = QtWidgets.QLineEdit(self.page_5)
+        self.createAccName.setGeometry(QtCore.QRect(1100, 250, 341, 51))
         font = QtGui.QFont()
         font.setPointSize(15)
-        self.newUserNameEnter_5.setFont(font)
-        self.newUserNameEnter_5.setStyleSheet("border: 1px solid #000000; \n"
+        self.createAccName.setFont(font)
+        self.createAccName.setStyleSheet("border: 1px solid #000000; \n"
 "border-radius: 22px; \n"
 "padding: 1px;")
-        self.newUserNameEnter_5.setText("")
-        self.newUserNameEnter_5.setPlaceholderText("")
-        self.newUserNameEnter_5.setObjectName("newUserNameEnter_5")
-        self.newUserNameEnter_6 = QtWidgets.QLineEdit(self.page_5)
-        self.newUserNameEnter_6.setGeometry(QtCore.QRect(180, 380, 341, 51))
+        self.createAccName.setText("")
+        self.createAccName.setPlaceholderText("")
+        self.createAccName.setObjectName("createAccName")
+        self.createAccPass = QtWidgets.QLineEdit(self.page_5)
+        self.createAccPass.setGeometry(QtCore.QRect(180, 380, 341, 51))
         font = QtGui.QFont()
         font.setPointSize(15)
-        self.newUserNameEnter_6.setFont(font)
-        self.newUserNameEnter_6.setStyleSheet("border: 1px solid #000000; \n"
+        self.createAccPass.setFont(font)
+        self.createAccPass.setStyleSheet("border: 1px solid #000000; \n"
 "border-radius: 22px; \n"
 "padding: 1px;")
-        self.newUserNameEnter_6.setText("")
-        self.newUserNameEnter_6.setPlaceholderText("")
-        self.newUserNameEnter_6.setObjectName("newUserNameEnter_6")
+        self.createAccPass.setText("")
+        self.createAccPass.setPlaceholderText("")
+        self.createAccPass.setObjectName("createAccPass")
         self.changeUserNameText_7 = QtWidgets.QLabel(self.page_5)
         self.changeUserNameText_7.setGeometry(QtCore.QRect(190, 330, 131, 41))
         font = QtGui.QFont()
@@ -1032,17 +1139,17 @@ class Ui_OWNER_ACCOUNT(object):
 "    \n"
 "")
         self.changeUserNameText_7.setObjectName("changeUserNameText_7")
-        self.newUserNameEnter_7 = QtWidgets.QLineEdit(self.page_5)
-        self.newUserNameEnter_7.setGeometry(QtCore.QRect(640, 380, 341, 51))
+        self.createAccConfrimPass = QtWidgets.QLineEdit(self.page_5)
+        self.createAccConfrimPass.setGeometry(QtCore.QRect(640, 380, 341, 51))
         font = QtGui.QFont()
         font.setPointSize(15)
-        self.newUserNameEnter_7.setFont(font)
-        self.newUserNameEnter_7.setStyleSheet("border: 1px solid #000000; \n"
+        self.createAccConfrimPass.setFont(font)
+        self.createAccConfrimPass.setStyleSheet("border: 1px solid #000000; \n"
 "border-radius: 22px; \n"
 "padding: 1px;")
-        self.newUserNameEnter_7.setText("")
-        self.newUserNameEnter_7.setPlaceholderText("")
-        self.newUserNameEnter_7.setObjectName("newUserNameEnter_7")
+        self.createAccConfrimPass.setText("")
+        self.createAccConfrimPass.setPlaceholderText("")
+        self.createAccConfrimPass.setObjectName("createAccConfrimPass")
         self.changeUserNameText_8 = QtWidgets.QLabel(self.page_5)
         self.changeUserNameText_8.setGeometry(QtCore.QRect(650, 330, 241, 41))
         font = QtGui.QFont()
@@ -1207,9 +1314,9 @@ class Ui_OWNER_ACCOUNT(object):
 "    font-weight: 700;\n"
 "}\n"
 "")
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/dashboard_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Dashboard.setIcon(icon)
+        icon1 = QtGui.QIcon()
+        icon1.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/dashboard_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Dashboard.setIcon(icon1)
         self.pushButton_Dashboard.setIconSize(QtCore.QSize(40, 40))
         self.pushButton_Dashboard.setObjectName("pushButton_Dashboard")
         self.pushButton_Inventory = QtWidgets.QPushButton(self.LeftMenuBar)
@@ -1236,9 +1343,9 @@ class Ui_OWNER_ACCOUNT(object):
 "    font-weight: 700;\n"
 "}\n"
 "")
-        icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/inventory_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Inventory.setIcon(icon1)
+        icon2 = QtGui.QIcon()
+        icon2.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/inventory_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Inventory.setIcon(icon2)
         self.pushButton_Inventory.setIconSize(QtCore.QSize(50, 45))
         self.pushButton_Inventory.setObjectName("pushButton_Inventory")
         self.pushButton_Orders = QtWidgets.QPushButton(self.LeftMenuBar)
@@ -1265,9 +1372,9 @@ class Ui_OWNER_ACCOUNT(object):
 "    font-weight: 700;\n"
 "}\n"
 "")
-        icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/orders_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Orders.setIcon(icon2)
+        icon3 = QtGui.QIcon()
+        icon3.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/orders_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Orders.setIcon(icon3)
         self.pushButton_Orders.setIconSize(QtCore.QSize(46, 42))
         self.pushButton_Orders.setObjectName("pushButton_Orders")
         self.pushButton_Sales = QtWidgets.QPushButton(self.LeftMenuBar)
@@ -1294,9 +1401,9 @@ class Ui_OWNER_ACCOUNT(object):
 "    font-weight: 700;\n"
 "}\n"
 "")
-        icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/sales_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Sales.setIcon(icon3)
+        icon4 = QtGui.QIcon()
+        icon4.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/sales_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Sales.setIcon(icon4)
         self.pushButton_Sales.setIconSize(QtCore.QSize(35, 35))
         self.pushButton_Sales.setObjectName("pushButton_Sales")
         self.pushButton_Account = QtWidgets.QPushButton(self.LeftMenuBar)
@@ -1323,9 +1430,9 @@ class Ui_OWNER_ACCOUNT(object):
 "    font-weight: 700;\n"
 "}\n"
 "")
-        icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/account_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Account.setIcon(icon4)
+        icon5 = QtGui.QIcon()
+        icon5.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/account_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Account.setIcon(icon5)
         self.pushButton_Account.setIconSize(QtCore.QSize(48, 48))
         self.pushButton_Account.setObjectName("pushButton_Account")
         self.pushButton_LogOut = QtWidgets.QPushButton(self.LeftMenuBar)
@@ -1350,9 +1457,9 @@ class Ui_OWNER_ACCOUNT(object):
 "        color: white;\n"
 "    font-weight: 700;\n"
 "}")
-        icon5 = QtGui.QIcon()
-        icon5.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/WHITElogout_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_LogOut.setIcon(icon5)
+        icon6 = QtGui.QIcon()
+        icon6.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/WHITElogout_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_LogOut.setIcon(icon6)
         self.pushButton_LogOut.setIconSize(QtCore.QSize(38, 38))
         self.pushButton_LogOut.setObjectName("pushButton_LogOut")
         self.pushButton_Stock_History = QtWidgets.QPushButton(self.LeftMenuBar)
@@ -1379,7 +1486,7 @@ class Ui_OWNER_ACCOUNT(object):
 "    font-weight: 700;\n"
 "}\n"
 "")
-        self.pushButton_Stock_History.setIcon(icon1)
+        self.pushButton_Stock_History.setIcon(icon2)
         self.pushButton_Stock_History.setIconSize(QtCore.QSize(50, 45))
         self.pushButton_Stock_History.setObjectName("pushButton_Stock_History")
         self.JJelevate_text_3 = QtWidgets.QLabel(self.LeftMenuBar)
@@ -1399,7 +1506,7 @@ class Ui_OWNER_ACCOUNT(object):
         self.JJelevate_text_3.setObjectName("JJelevate_text_3")
 
         self.retranslateUi(OWNER_ACCOUNT)
-        self.stackedWidget_AccountBtns.setCurrentIndex(0)
+        self.stackedWidget_AccountBtns.setCurrentIndex(2)
         QtCore.QMetaObject.connectSlotsByName(OWNER_ACCOUNT)
 
     def retranslateUi(self, OWNER_ACCOUNT):
@@ -1421,6 +1528,9 @@ class Ui_OWNER_ACCOUNT(object):
         self.changeUserPassText.setText(_translate("OWNER_ACCOUNT", "Change Password"))
         self.confirmPassText.setText(_translate("OWNER_ACCOUNT", "Confirm New Password"))
         self.pushButton_cancelEditAccount_owner.setText(_translate("OWNER_ACCOUNT", "Cancel"))
+        self.btn_toggle_old.setText(_translate("OWNER_ACCOUNT", "Show"))
+        self.btn_toggle_new.setText(_translate("OWNER_ACCOUNT", "Show"))
+        self.btn_toggle_confirm.setText(_translate("OWNER_ACCOUNT", "Show"))
         self.cashierIDText.setText(_translate("OWNER_ACCOUNT", "User ID"))
         self.cashierRoleText.setText(_translate("OWNER_ACCOUNT", "User Role"))
         self.cashierNameText.setText(_translate("OWNER_ACCOUNT", "Username"))
@@ -1434,6 +1544,9 @@ class Ui_OWNER_ACCOUNT(object):
         self.changeUserPassText_2.setText(_translate("OWNER_ACCOUNT", "Change Password"))
         self.confirmPassText_2.setText(_translate("OWNER_ACCOUNT", "Confirm New Password"))
         self.pushButton_cancelEditAccount_cashier.setText(_translate("OWNER_ACCOUNT", "Cancel"))
+        self.btn_toggle_old_2.setText(_translate("OWNER_ACCOUNT", "Show"))
+        self.btn_toggle_new_2.setText(_translate("OWNER_ACCOUNT", "Show"))
+        self.btn_toggle_confirm_2.setText(_translate("OWNER_ACCOUNT", "Show"))
         self.changeUserNameText_3.setText(_translate("OWNER_ACCOUNT", "Create a New Cashier Account"))
         self.changeUserNameText_4.setText(_translate("OWNER_ACCOUNT", "Shop ID"))
         self.changeUserNameText_5.setText(_translate("OWNER_ACCOUNT", "User Role"))

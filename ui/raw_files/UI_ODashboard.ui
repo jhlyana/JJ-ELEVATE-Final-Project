@@ -187,7 +187,7 @@ background: transparent;
 </string>
      </property>
      <property name="text">
-      <string>800,000</string>
+      <string/>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -199,7 +199,7 @@ background: transparent;
        <x>160</x>
        <y>100</y>
        <width>201</width>
-       <height>51</height>
+       <height>61</height>
       </rect>
      </property>
      <property name="font">
@@ -284,7 +284,7 @@ border-radius: 10px;
 background: transparent;</string>
      </property>
      <property name="text">
-      <string>300</string>
+      <string/>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -296,7 +296,7 @@ background: transparent;</string>
        <x>90</x>
        <y>100</y>
        <width>301</width>
-       <height>61</height>
+       <height>71</height>
       </rect>
      </property>
      <property name="font">
@@ -344,7 +344,7 @@ border-radius: 10px;
        <x>10</x>
        <y>0</y>
        <width>471</width>
-       <height>161</height>
+       <height>171</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -382,7 +382,7 @@ background: transparent;
 </string>
      </property>
      <property name="text">
-      <string>900,000</string>
+      <string/>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -392,9 +392,9 @@ background: transparent;
      <property name="geometry">
       <rect>
        <x>140</x>
-       <y>90</y>
+       <y>100</y>
        <width>301</width>
-       <height>61</height>
+       <height>71</height>
       </rect>
      </property>
      <property name="font">
@@ -482,10 +482,10 @@ border-radius: 10px;
     <widget class="QLabel" name="label_10">
      <property name="geometry">
       <rect>
-       <x>170</x>
-       <y>10</y>
-       <width>381</width>
-       <height>61</height>
+       <x>190</x>
+       <y>0</y>
+       <width>341</width>
+       <height>71</height>
       </rect>
      </property>
      <property name="font">
@@ -516,7 +516,7 @@ background: transparent;</string>
      <property name="font">
       <font>
        <family>Poppins</family>
-       <pointsize>16</pointsize>
+       <pointsize>-1</pointsize>
        <underline>true</underline>
       </font>
      </property>
@@ -524,6 +524,7 @@ background: transparent;</string>
       <string notr="true">QPushButton{color: #004aad;
 text-decoration: underline;
 border: none;
+font-size: 24px;
 background: transparent;}
 QPushButton:hover {
 color:#8d2721;
@@ -557,7 +558,7 @@ color:#8d2721;
     <widget class="QLabel" name="lowstockbox">
      <property name="geometry">
       <rect>
-       <x>10</x>
+       <x>20</x>
        <y>0</y>
        <width>721</width>
        <height>521</height>
@@ -581,9 +582,9 @@ color:#8d2721;
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>420</y>
-       <width>751</width>
-       <height>161</height>
+       <y>430</y>
+       <width>741</width>
+       <height>121</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -604,7 +605,7 @@ color:#8d2721;
       <rect>
        <x>0</x>
        <y>350</y>
-       <width>751</width>
+       <width>741</width>
        <height>171</height>
       </rect>
      </property>
@@ -626,7 +627,7 @@ color:#8d2721;
       <rect>
        <x>0</x>
        <y>280</y>
-       <width>751</width>
+       <width>741</width>
        <height>191</height>
       </rect>
      </property>
@@ -668,9 +669,9 @@ color:#8d2721;
     <widget class="QLabel" name="label_11">
      <property name="geometry">
       <rect>
-       <x>210</x>
+       <x>250</x>
        <y>0</y>
-       <width>321</width>
+       <width>281</width>
        <height>81</height>
       </rect>
      </property>
@@ -693,7 +694,7 @@ background: transparent;</string>
     <widget class="QPushButton" name="btnViewMore_Inventory">
      <property name="geometry">
       <rect>
-       <x>220</x>
+       <x>230</x>
        <y>470</y>
        <width>331</width>
        <height>51</height>
@@ -702,13 +703,14 @@ background: transparent;</string>
      <property name="font">
       <font>
        <family>Poppins</family>
-       <pointsize>16</pointsize>
+       <pointsize>-1</pointsize>
        <underline>true</underline>
       </font>
      </property>
      <property name="styleSheet">
       <string notr="true">QPushButton{color: #004aad;
 text-decoration: underline;
+font-size: 24px;
 border: none;
 background: transparent;}
 QPushButton:hover {
@@ -723,9 +725,9 @@ color:#8d2721;
     <widget class="QLabel" name="dashb_lowinstock_value">
      <property name="geometry">
       <rect>
-       <x>570</x>
-       <y>70</y>
-       <width>121</width>
+       <x>560</x>
+       <y>80</y>
+       <width>141</width>
        <height>51</height>
       </rect>
      </property>
@@ -743,14 +745,14 @@ color:#8d2721;
 background: transparent;</string>
      </property>
      <property name="text">
-      <string>3 items</string>
+      <string/>
      </property>
     </widget>
     <widget class="QLabel" name="label_12">
      <property name="geometry">
       <rect>
-       <x>40</x>
-       <y>70</y>
+       <x>50</x>
+       <y>80</y>
        <width>191</width>
        <height>51</height>
       </rect>
@@ -769,10 +771,10 @@ background: transparent;</string>
     <widget class="QLabel" name="label_13">
      <property name="geometry">
       <rect>
-       <x>40</x>
-       <y>120</y>
-       <width>661</width>
-       <height>71</height>
+       <x>60</x>
+       <y>130</y>
+       <width>641</width>
+       <height>51</height>
       </rect>
      </property>
      <property name="font">
@@ -790,88 +792,19 @@ background-color: #c25b55;
 </string>
      </property>
      <property name="text">
-      <string>Warning! These items are low of stock.</string>
+      <string>Warning! These items are low in stock.</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="top1LOWEST_STOCK_PRODUCT">
+    <widget class="QLabel" name="lowstock_product_label_1">
      <property name="geometry">
       <rect>
-       <x>40</x>
-       <y>410</y>
-       <width>271</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Poppins</family>
-       <pointsize>16</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: #000000;
-background: transparent;</string>
-     </property>
-     <property name="text">
-      <string>Product Name</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="top2LOWSTOCK_PRODUCT">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>340</y>
-       <width>271</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Poppins</family>
-       <pointsize>16</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: #000000;
-background: transparent;</string>
-     </property>
-     <property name="text">
-      <string>Product Name</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="top3LOWSTOCK_PRODUCT">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>270</y>
-       <width>261</width>
-       <height>61</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Poppins</family>
-       <pointsize>16</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: #000000;
-background: transparent;</string>
-     </property>
-     <property name="text">
-      <string>Product Name</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="top4LOWSTOCK_PRODUCT">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
+       <x>60</x>
        <y>200</y>
-       <width>261</width>
-       <height>61</height>
+       <width>441</width>
+       <height>51</height>
       </rect>
      </property>
      <property name="font">
@@ -882,18 +815,19 @@ background: transparent;</string>
      </property>
      <property name="styleSheet">
       <string notr="true">color: #000000;
-background: transparent;</string>
+background: transparent;
+</string>
      </property>
      <property name="text">
-      <string>Product Name</string>
+      <string/>
      </property>
     </widget>
-    <widget class="QLabel" name="top4LOWSTOCK_PROD_QTY">
+    <widget class="QLabel" name="lowstock_qty_label_1">
      <property name="geometry">
       <rect>
-       <x>520</x>
-       <y>210</y>
-       <width>191</width>
+       <x>470</x>
+       <y>200</y>
+       <width>221</width>
        <height>51</height>
       </rect>
      </property>
@@ -905,19 +839,20 @@ background: transparent;</string>
      </property>
      <property name="styleSheet">
       <string notr="true">color: #b2423c;
-background: transparent;</string>
+background:transparent;
+</string>
      </property>
      <property name="text">
-      <string>ONLY 5 LEFT</string>
+      <string/>
      </property>
     </widget>
-    <widget class="QLabel" name="top3LOWSTOCK_PROD_QTY">
+    <widget class="QLabel" name="lowstock_product_label_2">
      <property name="geometry">
       <rect>
-       <x>520</x>
+       <x>60</x>
        <y>270</y>
-       <width>211</width>
-       <height>61</height>
+       <width>441</width>
+       <height>51</height>
       </rect>
      </property>
      <property name="font">
@@ -927,42 +862,20 @@ background: transparent;</string>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">color: #b2423c;
-background: transparent;</string>
+      <string notr="true">color: #000000;
+background: transparent;
+</string>
      </property>
      <property name="text">
-      <string>ONLY 4 LEFT</string>
+      <string/>
      </property>
     </widget>
-    <widget class="QLabel" name="top2LOWSTOCK_PROD_QTY">
+    <widget class="QLabel" name="lowstock_qty_label_2">
      <property name="geometry">
       <rect>
-       <x>520</x>
-       <y>330</y>
-       <width>201</width>
-       <height>71</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Poppins</family>
-       <pointsize>16</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: #b2423c;
-background: transparent;</string>
-     </property>
-     <property name="text">
-      <string>ONLY 2 LEFT</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="top1LOWEST_STOCK_PROD_QTY">
-     <property name="geometry">
-      <rect>
-       <x>520</x>
-       <y>410</y>
-       <width>171</width>
+       <x>470</x>
+       <y>270</y>
+       <width>221</width>
        <height>51</height>
       </rect>
      </property>
@@ -974,10 +887,107 @@ background: transparent;</string>
      </property>
      <property name="styleSheet">
       <string notr="true">color: #b2423c;
-background: transparent;</string>
+background:transparent;
+</string>
      </property>
      <property name="text">
-      <string>ONLY 1 LEFT</string>
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lowstock_product_label_3">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>340</y>
+       <width>441</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Poppins</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #000000;
+background: transparent;
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lowstock_product_label_4">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>410</y>
+       <width>441</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Poppins</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #000000;
+background: transparent;
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lowstock_qty_label_3">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>340</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Poppins</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #b2423c;
+background:transparent;
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lowstock_qty_label_4">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>410</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Poppins</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #b2423c;
+background:transparent;
+</string>
+     </property>
+     <property name="text">
+      <string/>
      </property>
     </widget>
     <zorder>lowstockbox</zorder>
@@ -985,19 +995,19 @@ background: transparent;</string>
     <zorder>dashb_lowinstock_value</zorder>
     <zorder>label_12</zorder>
     <zorder>label_13</zorder>
+    <zorder>dotline_4</zorder>
     <zorder>dotline_3</zorder>
     <zorder>dotline_2</zorder>
     <zorder>dotline_1</zorder>
-    <zorder>top1LOWEST_STOCK_PRODUCT</zorder>
-    <zorder>top1LOWEST_STOCK_PROD_QTY</zorder>
-    <zorder>top2LOWSTOCK_PRODUCT</zorder>
-    <zorder>top2LOWSTOCK_PROD_QTY</zorder>
-    <zorder>top3LOWSTOCK_PRODUCT</zorder>
-    <zorder>top3LOWSTOCK_PROD_QTY</zorder>
-    <zorder>top4LOWSTOCK_PRODUCT</zorder>
-    <zorder>top4LOWSTOCK_PROD_QTY</zorder>
-    <zorder>dotline_4</zorder>
+    <zorder>lowstock_product_label_1</zorder>
+    <zorder>lowstock_qty_label_1</zorder>
     <zorder>btnViewMore_Inventory</zorder>
+    <zorder>lowstock_product_label_2</zorder>
+    <zorder>lowstock_qty_label_2</zorder>
+    <zorder>lowstock_product_label_3</zorder>
+    <zorder>lowstock_product_label_4</zorder>
+    <zorder>lowstock_qty_label_3</zorder>
+    <zorder>lowstock_qty_label_4</zorder>
    </widget>
   </widget>
   <widget class="QFrame" name="LeftMenuBar">

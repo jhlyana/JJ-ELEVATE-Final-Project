@@ -66,7 +66,7 @@ QTableWidget::item {
 }</string>
      </property>
      <attribute name="horizontalHeaderDefaultSectionSize">
-      <number>265</number>
+      <number>345</number>
      </attribute>
      <column>
       <property name="text">
@@ -131,11 +131,6 @@ QTableWidget::item {
        <font>
         <pointsize>14</pointsize>
        </font>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>New Column</string>
       </property>
      </column>
      <column>
@@ -282,7 +277,7 @@ padding: 5;
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>../resources/images/search.png</pixmap>
+      <pixmap>../../Cashier UI/JJ-ELEVATE-Final-Project-main/ui/resources/images/search.png</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>

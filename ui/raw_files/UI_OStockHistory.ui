@@ -19,18 +19,18 @@
   <widget class="QTableWidget" name="tableWidget_StockHistory">
    <property name="geometry">
     <rect>
-     <x>340</x>
-     <y>160</y>
-     <width>1521</width>
-     <height>791</height>
+     <x>380</x>
+     <y>230</y>
+     <width>1471</width>
+     <height>701</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <family>Montserrat SemiBold</family>
-     <pointsize>16</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
+     <family>MS Shell Dlg 2</family>
+     <pointsize>14</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">
@@ -42,12 +42,13 @@
 QHeaderView::section {
     background-color: #003366; 
     color: #ffffff;
-    font-weight: bold;
+	font-weight: bold;
+    font-size:18px;
 }
 </string>
    </property>
    <attribute name="horizontalHeaderDefaultSectionSize">
-    <number>265</number>
+    <number>345</number>
    </attribute>
    <column>
     <property name="text">
@@ -56,7 +57,7 @@ QHeaderView::section {
     <property name="font">
      <font>
       <family>Montserrat SemiBold</family>
-      <pointsize>14</pointsize>
+      <pointsize>15</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -69,20 +70,7 @@ QHeaderView::section {
     <property name="font">
      <font>
       <family>Montserrat SemiBold</family>
-      <pointsize>14</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>Date       </string>
-    </property>
-    <property name="font">
-     <font>
-      <family>Montserrat SemiBold</family>
-      <pointsize>14</pointsize>
+      <pointsize>15</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -95,7 +83,7 @@ QHeaderView::section {
     <property name="font">
      <font>
       <family>Montserrat SemiBold</family>
-      <pointsize>16</pointsize>
+      <pointsize>15</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -108,7 +96,7 @@ QHeaderView::section {
     <property name="font">
      <font>
       <family>Montserrat SemiBold</family>
-      <pointsize>16</pointsize>
+      <pointsize>15</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -121,7 +109,7 @@ QHeaderView::section {
     <property name="font">
      <font>
       <family>Montserrat SemiBold</family>
-      <pointsize>16</pointsize>
+      <pointsize>15</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -134,7 +122,7 @@ QHeaderView::section {
     <property name="font">
      <font>
       <family>Montserrat SemiBold</family>
-      <pointsize>16</pointsize>
+      <pointsize>15</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -147,7 +135,7 @@ QHeaderView::section {
     <property name="font">
      <font>
       <family>Montserrat SemiBold</family>
-      <pointsize>16</pointsize>
+      <pointsize>15</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -159,8 +147,8 @@ QHeaderView::section {
     <rect>
      <x>300</x>
      <y>0</y>
-     <width>1621</width>
-     <height>211</height>
+     <width>1641</width>
+     <height>231</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -195,6 +183,9 @@ text-align: center;</string>
     <property name="currentText">
      <string>    Filter History</string>
     </property>
+    <property name="maxCount">
+     <number>2147483644</number>
+    </property>
     <item>
      <property name="text">
       <string>    Filter History</string>
@@ -224,7 +215,7 @@ text-align: center;</string>
    <widget class="QFrame" name="frame_4">
     <property name="geometry">
      <rect>
-      <x>840</x>
+      <x>830</x>
       <y>50</y>
       <width>501</width>
       <height>71</height>
@@ -348,6 +339,137 @@ font-size: 50px;</string>
     </property>
     <property name="text">
      <string>Stock History</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_OWNER_Delete_Stock">
+    <property name="geometry">
+     <rect>
+      <x>1110</x>
+      <y>170</y>
+      <width>201</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* Default Inactive Action Buttons */
+QPushButton {
+    background-color: #a6a6a6;
+    border-radius: 10px;  /* Added 'px' unit */
+    color: black;
+    padding: 2px;
+    text-align: center;
+}
+
+/* Hover Effect on Inactive Action Buttons */
+QPushButton:hover {
+    background-color: #c25b55;
+    color: black;
+}
+
+/* Active Action Button */
+QPushButton.activeActionButton {  /* Changed from # to . for class selector */
+    background-color: #c25b55;
+    color: black;
+    /* Maintain same properties as base button */
+    border-radius: 10px;
+    padding: 2px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Delete Entry</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../resources/images/delete.png</normaloff>../resources/images/delete.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>27</width>
+      <height>27</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="stockHistoryText_2">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>160</y>
+      <width>801</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:  #c25b55;
+font-family: &quot;Arial Black&quot;, Arial, sans-serif; 
+background: transparent;
+font-size: 36px;</string>
+    </property>
+    <property name="text">
+     <string>Product List</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_OWNER_Delete_All">
+    <property name="geometry">
+     <rect>
+      <x>1330</x>
+      <y>170</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* Default Inactive Action Buttons */
+QPushButton {
+    background-color: #a6a6a6;
+    border-radius: 10px;  /* Added 'px' unit */
+    color: black;
+    padding: 2px;
+    text-align: center;
+}
+
+/* Hover Effect on Inactive Action Buttons */
+QPushButton:hover {
+    background-color: #c25b55;
+    color: black;
+}
+
+/* Active Action Button */
+QPushButton.activeActionButton {  /* Changed from # to . for class selector */
+    background-color: #c25b55;
+    color: black;
+    /* Maintain same properties as base button */
+    border-radius: 10px;
+    padding: 2px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Clear All History</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../resources/images/delete.png</normaloff>../resources/images/delete.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>27</width>
+      <height>27</height>
+     </size>
     </property>
    </widget>
   </widget>
@@ -805,6 +927,39 @@ font-size: 29px;
     </property>
    </widget>
   </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>150</y>
+     <width>1541</width>
+     <height>821</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Poppins</family>
+     <pointsize>16</pointsize>
+     <italic>true</italic>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> background-color: #f6f3ee;
+	border-radius: 16;
+    padding: 10px;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <zorder>label_13</zorder>
+  <zorder>frame_45</zorder>
+  <zorder>tableWidget_StockHistory</zorder>
+  <zorder>LeftMenuBar</zorder>
  </widget>
  <resources/>
  <connections/>

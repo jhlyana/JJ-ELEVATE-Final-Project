@@ -1,12 +1,12 @@
 from datetime import datetime, timedelta
-# from database import Database # We will receive an instance, so no need to import the class directly here
+import logging
 
 class DashboardPageModel:
-    # FIX: Accept database_instance, user_id, and shop_id
     def __init__(self, database_instance, user_id, shop_id):
-        self.database = database_instance # Store the provided database instance
-        self.user_id = user_id # Store user ID for potential future use in queries
-        self.shop_id = shop_id # Store shop ID for potential future use in queries
+        self.database = database_instance 
+        self.user_id = user_id 
+        self.shop_id = shop_id 
+        logging.debug(f"DashboardPageModel initialized with User ID: {self.user_id}, Shop ID: {self.shop_id}")
         
     def get_today_sales(self):
         """Get total sales amount for today for the current shop."""
@@ -15,11 +15,12 @@ class DashboardPageModel:
         FROM order_detail od
         JOIN order_header oh ON od.oh_id = oh.oh_id
         WHERE DATE(oh.oh_created_at) = CURRENT_DATE
-        AND oh.shop_id = %s -- Add shop_id to filter sales by the current shop
+        AND oh.shop_id = %s
         """
-        # Pass the query and its parameters (shop_id) to fetch_one
         result = self.database.fetch_one(query, (self.shop_id,))
-        return float(result['total_sales']) if result and result['total_sales'] is not None else 0.0
+        sales = float(result['total_sales']) if result and result['total_sales'] is not None else 0.0
+        logging.debug(f"Retrieved today's sales: {sales}")
+        return sales
 
     def get_today_orders(self):
         """Get total number of orders for today for the current shop."""
@@ -27,15 +28,18 @@ class DashboardPageModel:
         SELECT COUNT(DISTINCT oh_id) as total_orders
         FROM order_header
         WHERE DATE(oh_created_at) = CURRENT_DATE
-        AND shop_id = %s -- Add shop_id to filter orders by the current shop
+        AND shop_id = %s
         """
-        # Pass the query and its parameters (shop_id) to fetch_one
         result = self.database.fetch_one(query, (self.shop_id,))
-        return result['total_orders'] if result and result['total_orders'] is not None else 0
+        orders = result['total_orders'] if result and result['total_orders'] is not None else 0
+        logging.debug(f"Retrieved today's orders: {orders}")
+        return orders
 
     def get_today_revenue(self):
         """Get total revenue for today (same as sales in this implementation)"""
-        return self.get_today_sales()
+        revenue = self.get_today_sales()
+        logging.debug(f"Retrieved today's revenue: {revenue}")
+        return revenue
 
     def get_best_sellers(self, limit=5):
         """Get top selling products of all time for the current shop."""
@@ -47,10 +51,11 @@ class DashboardPageModel:
         FROM order_detail od
         JOIN product p ON od.product_id = p.product_id
         JOIN order_header oh ON od.oh_id = oh.oh_id
-        WHERE oh.shop_id = %s -- Add shop_id to filter best sellers by the current shop
+        WHERE oh.shop_id = %s
         GROUP BY p.product_name
         ORDER BY total_quantity DESC
         LIMIT {limit}
         """
-        # Pass the query and its parameters (shop_id) to fetch_all
-        return self.database.fetch_all(query, (self.shop_id,))
+        best_sellers = self.database.fetch_all(query, (self.shop_id,))
+        logging.debug(f"Retrieved best sellers: {best_sellers}")
+        return best_sellers

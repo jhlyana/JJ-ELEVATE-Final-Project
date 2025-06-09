@@ -1,13 +1,22 @@
 from PyQt5.QtWidgets import QTableWidgetItem, QHeaderView
 from core.models.CSales_pageModel import SalesPageModel
-from database import Database
+# Remove this import if you were using it. The database instance is passed directly.
+# from database import Database # MAKE SURE THIS LINE IS REMOVED OR COMMENTED OUT
 from datetime import datetime
 
 class SalesPageController:
-    def __init__(self, sales_ui, sales_controller):
+    # ***** CRITICAL FIX HERE: Change the __init__ signature to accept 'database' *****
+    def __init__(self, sales_ui, sales_controller, database): # <--- THIS LINE MUST BE EXACTLY LIKE THIS
+        # Debug print to confirm arguments received
+        print(f"DEBUG: SalesPageController.__init__ received:")
+        print(f"  sales_ui: {type(sales_ui)}")
+        print(f"  sales_controller: {type(sales_controller)}")
+        print(f"  database: {type(database)}")
+
         self.ui = sales_ui
         self.sales_controller = sales_controller
-        self.model = SalesPageModel(Database)
+        # Pass the database instance to the model
+        self.model = SalesPageModel(database) # <--- MAKE SURE 'database' (the instance) is passed
 
         self._setup_salestab_states()
         self._connect_sales_buttons()
@@ -27,7 +36,7 @@ class SalesPageController:
             "Report ID", "Shop Branch", "Total Quantity Sold",
             "Total Revenue (₱)", "Date Generated"
         ])
-        
+
         self.ui.tableWidget_salesSummary.setColumnWidth(0, 200)
         self.ui.tableWidget_salesSummary.setColumnWidth(1, 350)
         self.ui.tableWidget_salesSummary.setColumnWidth(2, 250)

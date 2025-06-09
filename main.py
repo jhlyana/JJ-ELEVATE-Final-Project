@@ -20,4 +20,4 @@ if __name__ == "__main__":
     
 
 # Owner account (username: Aowner, password: Aaron123!, security answer: fluffy)
-# Cashier account (username: Cashier, password: OnlyCashier123, security answer: spot)
+# Cashier account (username: Cashieracc, password: OnlyCashier123, security answer: spot)

@@ -79,25 +79,15 @@ class Ui_LOGIN(object):
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.frame = QtWidgets.QFrame(LOGIN)
-        self.frame.setGeometry(QtCore.QRect(990, 0, 961, 1051))
+        self.frame.setGeometry(QtCore.QRect(990, -10, 911, 1061))
         self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame.setObjectName("frame")
-        self.checkBox_rememberme = QtWidgets.QCheckBox(self.frame)
-        self.checkBox_rememberme.setGeometry(QtCore.QRect(60, 610, 201, 20))
-        font = QtGui.QFont()
-        font.setFamily("Verdana")
-        font.setPointSize(13)
-        self.checkBox_rememberme.setFont(font)
-        self.checkBox_rememberme.setStyleSheet("color: #022162;\n"
-"font-family: \"Verdana\", sans-serif; \n"
-"background: transparent;")
-        self.checkBox_rememberme.setObjectName("checkBox_rememberme")
         self.pushButton_xtolanding = QtWidgets.QPushButton(self.frame)
         self.pushButton_xtolanding.setGeometry(QtCore.QRect(670, 50, 221, 41))
         font = QtGui.QFont()
         font.setFamily("Verdana")
-        font.setPointSize(11)
+        font.setPointSize(9)
         font.setBold(True)
         font.setWeight(87)
         self.pushButton_xtolanding.setFont(font)
@@ -105,6 +95,7 @@ class Ui_LOGIN(object):
 "padding: 1px; \n"
 "font-weight: 700;\n"
 "font-family: \"Verdana\", sans-serif; \n"
+"font-size: 18px;\n"
 "background-color: #374550; \n"
 "color: white;")
         self.pushButton_xtolanding.setObjectName("pushButton_xtolanding")
@@ -121,7 +112,22 @@ class Ui_LOGIN(object):
 "font-family: \"Verdana\", sans-serif; \n"
 "background: transparent;")
         self.label_2.setObjectName("label_2")
-        self.username = QtWidgets.QLabel(self.frame)
+        self.frame_2 = QtWidgets.QFrame(self.frame)
+        self.frame_2.setGeometry(QtCore.QRect(0, 130, 911, 1051))
+        self.frame_2.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_2.setObjectName("frame_2")
+        self.checkBox_rememberme = QtWidgets.QCheckBox(self.frame_2)
+        self.checkBox_rememberme.setGeometry(QtCore.QRect(60, 610, 201, 20))
+        font = QtGui.QFont()
+        font.setFamily("Verdana")
+        font.setPointSize(13)
+        self.checkBox_rememberme.setFont(font)
+        self.checkBox_rememberme.setStyleSheet("color: #022162;\n"
+"font-family: \"Verdana\", sans-serif; \n"
+"background: transparent;")
+        self.checkBox_rememberme.setObjectName("checkBox_rememberme")
+        self.username = QtWidgets.QLabel(self.frame_2)
         self.username.setGeometry(QtCore.QRect(60, 310, 181, 61))
         font = QtGui.QFont()
         font.setFamily("Verdana")
@@ -134,7 +140,7 @@ class Ui_LOGIN(object):
 "font-family: \"Verdana\", sans-serif; \n"
 "background: transparent;")
         self.username.setObjectName("username")
-        self.password = QtWidgets.QLabel(self.frame)
+        self.password = QtWidgets.QLabel(self.frame_2)
         self.password.setGeometry(QtCore.QRect(60, 460, 181, 71))
         font = QtGui.QFont()
         font.setFamily("Verdana")
@@ -147,7 +153,7 @@ class Ui_LOGIN(object):
 "font-family: \"Verdana\", sans-serif; \n"
 "background: transparent;")
         self.password.setObjectName("password")
-        self.login_usrname = QtWidgets.QLineEdit(self.frame)
+        self.login_usrname = QtWidgets.QLineEdit(self.frame_2)
         self.login_usrname.setGeometry(QtCore.QRect(50, 370, 841, 61))
         font = QtGui.QFont()
         font.setFamily("Verdana")
@@ -158,7 +164,7 @@ class Ui_LOGIN(object):
 "padding: 5px;\n"
 "font-family: \"Verdana\", sans-serif; ")
         self.login_usrname.setObjectName("login_usrname")
-        self.login_password = QtWidgets.QLineEdit(self.frame)
+        self.login_password = QtWidgets.QLineEdit(self.frame_2)
         self.login_password.setGeometry(QtCore.QRect(50, 530, 831, 61))
         font = QtGui.QFont()
         font.setFamily("Verdana")
@@ -170,7 +176,7 @@ class Ui_LOGIN(object):
 "font-family: \"Verdana\", sans-serif; ")
         self.login_password.setEchoMode(QtWidgets.QLineEdit.Password)
         self.login_password.setObjectName("login_password")
-        self.pushButton_LOGIN = QtWidgets.QPushButton(self.frame)
+        self.pushButton_LOGIN = QtWidgets.QPushButton(self.frame_2)
         self.pushButton_LOGIN.setGeometry(QtCore.QRect(640, 700, 241, 61))
         font = QtGui.QFont()
         font.setFamily("Verdana")
@@ -186,8 +192,8 @@ class Ui_LOGIN(object):
 "background-color: #374550; \n"
 "color: white;")
         self.pushButton_LOGIN.setObjectName("pushButton_LOGIN")
-        self.forgotPassLabel = QtWidgets.QLabel(self.frame)
-        self.forgotPassLabel.setGeometry(QtCore.QRect(60, 680, 381, 61))
+        self.forgotPassLabel = QtWidgets.QLabel(self.frame_2)
+        self.forgotPassLabel.setGeometry(QtCore.QRect(60, 680, 351, 61))
         font = QtGui.QFont()
         font.setFamily("Verdana")
         font.setPointSize(9)
@@ -196,9 +202,10 @@ class Ui_LOGIN(object):
         self.forgotPassLabel.setFont(font)
         self.forgotPassLabel.setStyleSheet("color: #022162;\n"
 "font-family: \"Verdana\", sans-serif; \n"
+"font-size: 14px;\n"
 "background: transparent;")
         self.forgotPassLabel.setObjectName("forgotPassLabel")
-        self.pushButton_forgotPass_login_page = QtWidgets.QPushButton(self.frame)
+        self.pushButton_forgotPass_login_page = QtWidgets.QPushButton(self.frame_2)
         self.pushButton_forgotPass_login_page.setGeometry(QtCore.QRect(120, 720, 221, 41))
         font = QtGui.QFont()
         font.setFamily("Verdana")
@@ -214,7 +221,22 @@ class Ui_LOGIN(object):
 "background-color: transparent; \n"
 "color: #022162;")
         self.pushButton_forgotPass_login_page.setObjectName("pushButton_forgotPass_login_page")
-        self.togglePasswordButton = QtWidgets.QPushButton(self.frame)
+        self.pushButton_clearLogins = QtWidgets.QPushButton(self.frame_2)
+        self.pushButton_clearLogins.setGeometry(QtCore.QRect(740, 600, 141, 51))
+        font = QtGui.QFont()
+        font.setFamily("Verdana")
+        font.setPointSize(9)
+        font.setBold(True)
+        font.setWeight(75)
+        self.pushButton_clearLogins.setFont(font)
+        self.pushButton_clearLogins.setStyleSheet("border-radius: 25px; \n"
+"padding: 5px; \n"
+"font-size: 20px;\n"
+"font-family: \"Verdana\", sans-serif; \n"
+"background-color: #c25b55; \n"
+"color: white;")
+        self.pushButton_clearLogins.setObjectName("pushButton_clearLogins")
+        self.togglePasswordButton = QtWidgets.QPushButton(self.frame_2)
         self.togglePasswordButton.setGeometry(QtCore.QRect(810, 540, 51, 41))
         self.togglePasswordButton.setStyleSheet("QPushButton#togglePasswordButton {\n"
 "    border: none;          /* Removes the border */\n"
@@ -229,20 +251,30 @@ class Ui_LOGIN(object):
         self.togglePasswordButton.setIcon(icon)
         self.togglePasswordButton.setIconSize(QtCore.QSize(45, 45))
         self.togglePasswordButton.setObjectName("togglePasswordButton")
-        self.pushButton_clearLogins = QtWidgets.QPushButton(self.frame)
-        self.pushButton_clearLogins.setGeometry(QtCore.QRect(740, 600, 141, 51))
+        self.username_3 = QtWidgets.QLabel(self.frame_2)
+        self.username_3.setGeometry(QtCore.QRect(70, 150, 181, 61))
         font = QtGui.QFont()
         font.setFamily("Verdana")
-        font.setPointSize(12)
+        font.setPointSize(18)
         font.setBold(True)
-        font.setWeight(75)
-        self.pushButton_clearLogins.setFont(font)
-        self.pushButton_clearLogins.setStyleSheet("border-radius: 25px; \n"
-"padding: 5px; \n"
+        font.setWeight(87)
+        self.username_3.setFont(font)
+        self.username_3.setStyleSheet("color: #022162;\n"
+"font-weight: 700;\n"
 "font-family: \"Verdana\", sans-serif; \n"
-"background-color: #c25b55; \n"
-"color: white;")
-        self.pushButton_clearLogins.setObjectName("pushButton_clearLogins")
+"background: transparent;")
+        self.username_3.setObjectName("username_3")
+        self.login_shop_id = QtWidgets.QLineEdit(self.frame_2)
+        self.login_shop_id.setGeometry(QtCore.QRect(50, 210, 841, 61))
+        font = QtGui.QFont()
+        font.setFamily("Verdana")
+        font.setPointSize(13)
+        self.login_shop_id.setFont(font)
+        self.login_shop_id.setStyleSheet("border: 2px solid #022162; \n"
+"border-radius: 25px; \n"
+"padding: 5px;\n"
+"font-family: \"Verdana\", sans-serif; ")
+        self.login_shop_id.setObjectName("login_shop_id")
 
         self.retranslateUi(LOGIN)
         QtCore.QMetaObject.connectSlotsByName(LOGIN)
@@ -253,9 +285,9 @@ class Ui_LOGIN(object):
         self.label_18.setText(_translate("LOGIN", "J & J Roofsteel and Gutter Supply"))
         self.label_6.setText(_translate("LOGIN", "Moalboal Branch"))
         self.label_11.setText(_translate("LOGIN", "Supply       |         Install       |         Repair    "))
-        self.checkBox_rememberme.setText(_translate("LOGIN", "Remember me"))
         self.pushButton_xtolanding.setText(_translate("LOGIN", "← Back to Landing"))
         self.label_2.setText(_translate("LOGIN", "Login"))
+        self.checkBox_rememberme.setText(_translate("LOGIN", "Remember me"))
         self.username.setText(_translate("LOGIN", "Username"))
         self.password.setText(_translate("LOGIN", "Password"))
         self.login_usrname.setPlaceholderText(_translate("LOGIN", "  Enter your username"))
@@ -264,3 +296,5 @@ class Ui_LOGIN(object):
         self.forgotPassLabel.setText(_translate("LOGIN", "Forgot password? Only available for Shop Owners"))
         self.pushButton_forgotPass_login_page.setText(_translate("LOGIN", "Reset Password"))
         self.pushButton_clearLogins.setText(_translate("LOGIN", "Clear "))
+        self.username_3.setText(_translate("LOGIN", "Shop ID"))
+        self.login_shop_id.setPlaceholderText(_translate("LOGIN", "  Enter your Shop ID"))

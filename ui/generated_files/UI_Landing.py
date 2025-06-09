@@ -16,7 +16,7 @@ class Ui_JJ_LANDING(object):
         JJ_LANDING.setObjectName("JJ_LANDING")
         JJ_LANDING.resize(1925, 1035)
         self.label_5 = QtWidgets.QLabel(JJ_LANDING)
-        self.label_5.setGeometry(QtCore.QRect(610, 650, 691, 51))
+        self.label_5.setGeometry(QtCore.QRect(610, 650, 751, 51))
         font = QtGui.QFont()
         font.setFamily("Poppins Extrabold")
         font.setPointSize(18)
@@ -32,7 +32,7 @@ class Ui_JJ_LANDING(object):
         self.BG.setScaledContents(True)
         self.BG.setObjectName("BG")
         self.label_2 = QtWidgets.QLabel(JJ_LANDING)
-        self.label_2.setGeometry(QtCore.QRect(860, 420, 581, 111))
+        self.label_2.setGeometry(QtCore.QRect(860, 410, 581, 121))
         font = QtGui.QFont()
         font.setFamily("Arial Black")
         font.setPointSize(80)
@@ -78,7 +78,7 @@ class Ui_JJ_LANDING(object):
         self.label = QtWidgets.QLabel(JJ_LANDING)
         self.label.setGeometry(QtCore.QRect(790, 130, 381, 251))
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/JJLOGO.png"))
+        self.label.setPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/J&J logo.png"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.label_4 = QtWidgets.QLabel(JJ_LANDING)
@@ -105,7 +105,7 @@ class Ui_JJ_LANDING(object):
     def retranslateUi(self, JJ_LANDING):
         _translate = QtCore.QCoreApplication.translate
         JJ_LANDING.setWindowTitle(_translate("JJ_LANDING", "Form"))
-        self.label_5.setText(_translate("JJ_LANDING", "Supply                               Install                               Repair    "))
+        self.label_5.setText(_translate("JJ_LANDING", "Supply                               Install                            Repair    "))
         self.label_2.setText(_translate("JJ_LANDING", "Elevate\n"
 ""))
         self.label_3.setText(_translate("JJ_LANDING", "J&J\n"

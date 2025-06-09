@@ -17,12 +17,12 @@ class Ui_OWNER_STOCKHISTORY(object):
         OWNER_STOCKHISTORY.resize(1921, 1005)
         OWNER_STOCKHISTORY.setStyleSheet("background: white;")
         self.tableWidget_StockHistory = QtWidgets.QTableWidget(OWNER_STOCKHISTORY)
-        self.tableWidget_StockHistory.setGeometry(QtCore.QRect(340, 160, 1521, 791))
+        self.tableWidget_StockHistory.setGeometry(QtCore.QRect(380, 230, 1471, 701))
         font = QtGui.QFont()
-        font.setFamily("Montserrat SemiBold")
-        font.setPointSize(16)
-        font.setBold(True)
-        font.setWeight(75)
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(14)
+        font.setBold(False)
+        font.setWeight(50)
         self.tableWidget_StockHistory.setFont(font)
         self.tableWidget_StockHistory.setStyleSheet("QTableWidget {\n"
 "    background-color: white;\n"
@@ -33,15 +33,16 @@ class Ui_OWNER_STOCKHISTORY(object):
 "    background-color: #003366; \n"
 "    color: #ffffff;\n"
 "    font-weight: bold;\n"
+"    font-size:18px;\n"
 "}\n"
 "")
         self.tableWidget_StockHistory.setObjectName("tableWidget_StockHistory")
-        self.tableWidget_StockHistory.setColumnCount(8)
+        self.tableWidget_StockHistory.setColumnCount(7)
         self.tableWidget_StockHistory.setRowCount(0)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setFamily("Montserrat SemiBold")
-        font.setPointSize(14)
+        font.setPointSize(15)
         font.setBold(True)
         font.setWeight(75)
         item.setFont(font)
@@ -49,7 +50,7 @@ class Ui_OWNER_STOCKHISTORY(object):
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setFamily("Montserrat SemiBold")
-        font.setPointSize(14)
+        font.setPointSize(15)
         font.setBold(True)
         font.setWeight(75)
         item.setFont(font)
@@ -57,7 +58,7 @@ class Ui_OWNER_STOCKHISTORY(object):
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setFamily("Montserrat SemiBold")
-        font.setPointSize(14)
+        font.setPointSize(15)
         font.setBold(True)
         font.setWeight(75)
         item.setFont(font)
@@ -65,7 +66,7 @@ class Ui_OWNER_STOCKHISTORY(object):
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setFamily("Montserrat SemiBold")
-        font.setPointSize(16)
+        font.setPointSize(15)
         font.setBold(True)
         font.setWeight(75)
         item.setFont(font)
@@ -73,7 +74,7 @@ class Ui_OWNER_STOCKHISTORY(object):
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setFamily("Montserrat SemiBold")
-        font.setPointSize(16)
+        font.setPointSize(15)
         font.setBold(True)
         font.setWeight(75)
         item.setFont(font)
@@ -81,7 +82,7 @@ class Ui_OWNER_STOCKHISTORY(object):
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setFamily("Montserrat SemiBold")
-        font.setPointSize(16)
+        font.setPointSize(15)
         font.setBold(True)
         font.setWeight(75)
         item.setFont(font)
@@ -89,22 +90,14 @@ class Ui_OWNER_STOCKHISTORY(object):
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
         font.setFamily("Montserrat SemiBold")
-        font.setPointSize(16)
+        font.setPointSize(15)
         font.setBold(True)
         font.setWeight(75)
         item.setFont(font)
         self.tableWidget_StockHistory.setHorizontalHeaderItem(6, item)
-        item = QtWidgets.QTableWidgetItem()
-        font = QtGui.QFont()
-        font.setFamily("Montserrat SemiBold")
-        font.setPointSize(16)
-        font.setBold(True)
-        font.setWeight(75)
-        item.setFont(font)
-        self.tableWidget_StockHistory.setHorizontalHeaderItem(7, item)
-        self.tableWidget_StockHistory.horizontalHeader().setDefaultSectionSize(265)
+        self.tableWidget_StockHistory.horizontalHeader().setDefaultSectionSize(345)
         self.frame_45 = QtWidgets.QFrame(OWNER_STOCKHISTORY)
-        self.frame_45.setGeometry(QtCore.QRect(300, 0, 1621, 211))
+        self.frame_45.setGeometry(QtCore.QRect(300, 0, 1641, 231))
         self.frame_45.setStyleSheet("background: transparent;;")
         self.frame_45.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_45.setFrameShadow(QtWidgets.QFrame.Raised)
@@ -118,6 +111,7 @@ class Ui_OWNER_STOCKHISTORY(object):
 "    border-radius: 15px;\n"
 "font-size:28px;\n"
 "text-align: center;")
+        self.comboBox_filterStockHistory.setMaxCount(2147483644)
         self.comboBox_filterStockHistory.setObjectName("comboBox_filterStockHistory")
         self.comboBox_filterStockHistory.addItem("")
         self.comboBox_filterStockHistory.addItem("")
@@ -125,7 +119,7 @@ class Ui_OWNER_STOCKHISTORY(object):
         self.comboBox_filterStockHistory.addItem("")
         self.comboBox_filterStockHistory.addItem("")
         self.frame_4 = QtWidgets.QFrame(self.frame_45)
-        self.frame_4.setGeometry(QtCore.QRect(840, 50, 501, 71))
+        self.frame_4.setGeometry(QtCore.QRect(830, 50, 501, 71))
         self.frame_4.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_4.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_4.setObjectName("frame_4")
@@ -183,6 +177,83 @@ class Ui_OWNER_STOCKHISTORY(object):
 "background: transparent;\n"
 "font-size: 50px;")
         self.stockHistoryText.setObjectName("stockHistoryText")
+        self.pushButton_OWNER_Delete_Stock = QtWidgets.QPushButton(self.frame_45)
+        self.pushButton_OWNER_Delete_Stock.setGeometry(QtCore.QRect(1110, 170, 201, 41))
+        font = QtGui.QFont()
+        font.setFamily("Verdana")
+        font.setPointSize(11)
+        font.setBold(True)
+        font.setWeight(75)
+        self.pushButton_OWNER_Delete_Stock.setFont(font)
+        self.pushButton_OWNER_Delete_Stock.setStyleSheet("/* Default Inactive Action Buttons */\n"
+"QPushButton {\n"
+"    background-color: #a6a6a6;\n"
+"    border-radius: 10px;  /* Added \'px\' unit */\n"
+"    color: black;\n"
+"    padding: 2px;\n"
+"    text-align: center;\n"
+"}\n"
+"\n"
+"/* Hover Effect on Inactive Action Buttons */\n"
+"QPushButton:hover {\n"
+"    background-color: #c25b55;\n"
+"    color: black;\n"
+"}\n"
+"\n"
+"/* Active Action Button */\n"
+"QPushButton.activeActionButton {  /* Changed from # to . for class selector */\n"
+"    background-color: #c25b55;\n"
+"    color: black;\n"
+"    /* Maintain same properties as base button */\n"
+"    border-radius: 10px;\n"
+"    padding: 2px;\n"
+"}")
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/delete.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_OWNER_Delete_Stock.setIcon(icon)
+        self.pushButton_OWNER_Delete_Stock.setIconSize(QtCore.QSize(27, 27))
+        self.pushButton_OWNER_Delete_Stock.setObjectName("pushButton_OWNER_Delete_Stock")
+        self.stockHistoryText_2 = QtWidgets.QLabel(self.frame_45)
+        self.stockHistoryText_2.setGeometry(QtCore.QRect(80, 160, 801, 61))
+        self.stockHistoryText_2.setStyleSheet("color:  #c25b55;\n"
+"font-family: \"Arial Black\", Arial, sans-serif; \n"
+"background: transparent;\n"
+"font-size: 36px;")
+        self.stockHistoryText_2.setObjectName("stockHistoryText_2")
+        self.pushButton_OWNER_Delete_All = QtWidgets.QPushButton(self.frame_45)
+        self.pushButton_OWNER_Delete_All.setGeometry(QtCore.QRect(1330, 170, 221, 41))
+        font = QtGui.QFont()
+        font.setFamily("Verdana")
+        font.setPointSize(11)
+        font.setBold(True)
+        font.setWeight(75)
+        self.pushButton_OWNER_Delete_All.setFont(font)
+        self.pushButton_OWNER_Delete_All.setStyleSheet("/* Default Inactive Action Buttons */\n"
+"QPushButton {\n"
+"    background-color: #a6a6a6;\n"
+"    border-radius: 10px;  /* Added \'px\' unit */\n"
+"    color: black;\n"
+"    padding: 2px;\n"
+"    text-align: center;\n"
+"}\n"
+"\n"
+"/* Hover Effect on Inactive Action Buttons */\n"
+"QPushButton:hover {\n"
+"    background-color: #c25b55;\n"
+"    color: black;\n"
+"}\n"
+"\n"
+"/* Active Action Button */\n"
+"QPushButton.activeActionButton {  /* Changed from # to . for class selector */\n"
+"    background-color: #c25b55;\n"
+"    color: black;\n"
+"    /* Maintain same properties as base button */\n"
+"    border-radius: 10px;\n"
+"    padding: 2px;\n"
+"}")
+        self.pushButton_OWNER_Delete_All.setIcon(icon)
+        self.pushButton_OWNER_Delete_All.setIconSize(QtCore.QSize(27, 27))
+        self.pushButton_OWNER_Delete_All.setObjectName("pushButton_OWNER_Delete_All")
         self.LeftMenuBar = QtWidgets.QFrame(OWNER_STOCKHISTORY)
         self.LeftMenuBar.setGeometry(QtCore.QRect(0, 0, 301, 1011))
         font = QtGui.QFont()
@@ -241,9 +312,9 @@ class Ui_OWNER_STOCKHISTORY(object):
 "    font-weight: 700;\n"
 "}\n"
 "")
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/dashboard_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Dashboard.setIcon(icon)
+        icon1 = QtGui.QIcon()
+        icon1.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/dashboard_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Dashboard.setIcon(icon1)
         self.pushButton_Dashboard.setIconSize(QtCore.QSize(40, 40))
         self.pushButton_Dashboard.setObjectName("pushButton_Dashboard")
         self.pushButton_Inventory = QtWidgets.QPushButton(self.LeftMenuBar)
@@ -270,9 +341,9 @@ class Ui_OWNER_STOCKHISTORY(object):
 "    font-weight: 700;\n"
 "}\n"
 "")
-        icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/inventory_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Inventory.setIcon(icon1)
+        icon2 = QtGui.QIcon()
+        icon2.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/inventory_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Inventory.setIcon(icon2)
         self.pushButton_Inventory.setIconSize(QtCore.QSize(50, 45))
         self.pushButton_Inventory.setObjectName("pushButton_Inventory")
         self.pushButton_Orders = QtWidgets.QPushButton(self.LeftMenuBar)
@@ -299,9 +370,9 @@ class Ui_OWNER_STOCKHISTORY(object):
 "    font-weight: 700;\n"
 "}\n"
 "")
-        icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/orders_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Orders.setIcon(icon2)
+        icon3 = QtGui.QIcon()
+        icon3.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/orders_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Orders.setIcon(icon3)
         self.pushButton_Orders.setIconSize(QtCore.QSize(46, 42))
         self.pushButton_Orders.setObjectName("pushButton_Orders")
         self.pushButton_Sales = QtWidgets.QPushButton(self.LeftMenuBar)
@@ -328,9 +399,9 @@ class Ui_OWNER_STOCKHISTORY(object):
 "    font-weight: 700;\n"
 "}\n"
 "")
-        icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/sales_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Sales.setIcon(icon3)
+        icon4 = QtGui.QIcon()
+        icon4.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/sales_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Sales.setIcon(icon4)
         self.pushButton_Sales.setIconSize(QtCore.QSize(35, 35))
         self.pushButton_Sales.setObjectName("pushButton_Sales")
         self.pushButton_Account = QtWidgets.QPushButton(self.LeftMenuBar)
@@ -357,9 +428,9 @@ class Ui_OWNER_STOCKHISTORY(object):
 "    font-weight: 700;\n"
 "}\n"
 "")
-        icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/account_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_Account.setIcon(icon4)
+        icon5 = QtGui.QIcon()
+        icon5.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/account_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_Account.setIcon(icon5)
         self.pushButton_Account.setIconSize(QtCore.QSize(48, 48))
         self.pushButton_Account.setObjectName("pushButton_Account")
         self.pushButton_LogOut = QtWidgets.QPushButton(self.LeftMenuBar)
@@ -384,9 +455,9 @@ class Ui_OWNER_STOCKHISTORY(object):
 "        color: white;\n"
 "    font-weight: 700;\n"
 "}")
-        icon5 = QtGui.QIcon()
-        icon5.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/WHITElogout_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_LogOut.setIcon(icon5)
+        icon6 = QtGui.QIcon()
+        icon6.addPixmap(QtGui.QPixmap("ui/raw_files\\../resources/images/WHITElogout_icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_LogOut.setIcon(icon6)
         self.pushButton_LogOut.setIconSize(QtCore.QSize(38, 38))
         self.pushButton_LogOut.setObjectName("pushButton_LogOut")
         self.pushButton_Stock_History = QtWidgets.QPushButton(self.LeftMenuBar)
@@ -413,7 +484,7 @@ class Ui_OWNER_STOCKHISTORY(object):
 "    font-weight: 700;\n"
 "}\n"
 "")
-        self.pushButton_Stock_History.setIcon(icon1)
+        self.pushButton_Stock_History.setIcon(icon2)
         self.pushButton_Stock_History.setIconSize(QtCore.QSize(50, 45))
         self.pushButton_Stock_History.setObjectName("pushButton_Stock_History")
         self.JJelevate_text_3 = QtWidgets.QLabel(self.LeftMenuBar)
@@ -431,6 +502,24 @@ class Ui_OWNER_STOCKHISTORY(object):
 "")
         self.JJelevate_text_3.setScaledContents(True)
         self.JJelevate_text_3.setObjectName("JJelevate_text_3")
+        self.label_13 = QtWidgets.QLabel(OWNER_STOCKHISTORY)
+        self.label_13.setGeometry(QtCore.QRect(340, 150, 1541, 821))
+        font = QtGui.QFont()
+        font.setFamily("Poppins")
+        font.setPointSize(16)
+        font.setItalic(True)
+        self.label_13.setFont(font)
+        self.label_13.setStyleSheet(" background-color: #f6f3ee;\n"
+"    border-radius: 16;\n"
+"    padding: 10px;\n"
+"")
+        self.label_13.setText("")
+        self.label_13.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_13.setObjectName("label_13")
+        self.label_13.raise_()
+        self.frame_45.raise_()
+        self.tableWidget_StockHistory.raise_()
+        self.LeftMenuBar.raise_()
 
         self.retranslateUi(OWNER_STOCKHISTORY)
         QtCore.QMetaObject.connectSlotsByName(OWNER_STOCKHISTORY)
@@ -443,16 +532,14 @@ class Ui_OWNER_STOCKHISTORY(object):
         item = self.tableWidget_StockHistory.horizontalHeaderItem(1)
         item.setText(_translate("OWNER_STOCKHISTORY", "Username"))
         item = self.tableWidget_StockHistory.horizontalHeaderItem(2)
-        item.setText(_translate("OWNER_STOCKHISTORY", "Date       "))
-        item = self.tableWidget_StockHistory.horizontalHeaderItem(3)
         item.setText(_translate("OWNER_STOCKHISTORY", "Action  "))
-        item = self.tableWidget_StockHistory.horizontalHeaderItem(4)
+        item = self.tableWidget_StockHistory.horizontalHeaderItem(3)
         item.setText(_translate("OWNER_STOCKHISTORY", "Product Name"))
-        item = self.tableWidget_StockHistory.horizontalHeaderItem(5)
+        item = self.tableWidget_StockHistory.horizontalHeaderItem(4)
         item.setText(_translate("OWNER_STOCKHISTORY", "Old Qty"))
-        item = self.tableWidget_StockHistory.horizontalHeaderItem(6)
+        item = self.tableWidget_StockHistory.horizontalHeaderItem(5)
         item.setText(_translate("OWNER_STOCKHISTORY", "New Qty"))
-        item = self.tableWidget_StockHistory.horizontalHeaderItem(7)
+        item = self.tableWidget_StockHistory.horizontalHeaderItem(6)
         item.setText(_translate("OWNER_STOCKHISTORY", "Updated At"))
         self.comboBox_filterStockHistory.setCurrentText(_translate("OWNER_STOCKHISTORY", "    Filter History"))
         self.comboBox_filterStockHistory.setItemText(0, _translate("OWNER_STOCKHISTORY", "    Filter History"))
@@ -463,6 +550,9 @@ class Ui_OWNER_STOCKHISTORY(object):
         self.lineEdit_OWNER_QuickSearch_StockHistory.setPlaceholderText(_translate("OWNER_STOCKHISTORY", "      Quick Search"))
         self.pushButton_SEARCH_StockHistory.setText(_translate("OWNER_STOCKHISTORY", "Search"))
         self.stockHistoryText.setText(_translate("OWNER_STOCKHISTORY", "Stock History"))
+        self.pushButton_OWNER_Delete_Stock.setText(_translate("OWNER_STOCKHISTORY", "Delete Entry"))
+        self.stockHistoryText_2.setText(_translate("OWNER_STOCKHISTORY", "Product List"))
+        self.pushButton_OWNER_Delete_All.setText(_translate("OWNER_STOCKHISTORY", "Clear All History"))
         self.JJelevate_text_2.setText(_translate("OWNER_STOCKHISTORY", "J&J "))
         self.pushButton_Dashboard.setText(_translate("OWNER_STOCKHISTORY", "  Home   "))
         self.pushButton_Inventory.setText(_translate("OWNER_STOCKHISTORY", "Inventory"))

@@ -69,10 +69,10 @@ class Ui_OWNER_INVENTORY(object):
 "    }")
         self.pushButton_SEARCHitems.setObjectName("pushButton_SEARCHitems")
         self.textBrowser_inv_ROOF_lowstk_warning = QtWidgets.QTextBrowser(OWNER_INVENTORY)
-        self.textBrowser_inv_ROOF_lowstk_warning.setGeometry(QtCore.QRect(340, 890, 1531, 71))
+        self.textBrowser_inv_ROOF_lowstk_warning.setGeometry(QtCore.QRect(340, 890, 1531, 81))
         font = QtGui.QFont()
         font.setFamily("Verdana")
-        font.setPointSize(10)
+        font.setPointSize(16)
         self.textBrowser_inv_ROOF_lowstk_warning.setFont(font)
         self.textBrowser_inv_ROOF_lowstk_warning.setStyleSheet("\n"
 "    background-color: #ffffff;\n"
@@ -478,7 +478,7 @@ class Ui_OWNER_INVENTORY(object):
 "}\n"
 "")
         self.tableWidget_ALL_ITEMS.setObjectName("tableWidget_ALL_ITEMS")
-        self.tableWidget_ALL_ITEMS.setColumnCount(11)
+        self.tableWidget_ALL_ITEMS.setColumnCount(13)
         self.tableWidget_ALL_ITEMS.setRowCount(0)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
@@ -542,11 +542,21 @@ class Ui_OWNER_INVENTORY(object):
         self.tableWidget_ALL_ITEMS.setHorizontalHeaderItem(9, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
-        font.setFamily("MS Shell Dlg 2")
         font.setPointSize(14)
         item.setFont(font)
         self.tableWidget_ALL_ITEMS.setHorizontalHeaderItem(10, item)
-        self.tableWidget_ALL_ITEMS.horizontalHeader().setDefaultSectionSize(265)
+        item = QtWidgets.QTableWidgetItem()
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(14)
+        item.setFont(font)
+        self.tableWidget_ALL_ITEMS.setHorizontalHeaderItem(11, item)
+        item = QtWidgets.QTableWidgetItem()
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        item.setFont(font)
+        self.tableWidget_ALL_ITEMS.setHorizontalHeaderItem(12, item)
+        self.tableWidget_ALL_ITEMS.horizontalHeader().setDefaultSectionSize(345)
         self.INVENTORY_afterBUTTONSclick.addWidget(self.page_INV_ALL_ITEMS)
         self.page_INV_ROOF = QtWidgets.QWidget()
         self.page_INV_ROOF.setObjectName("page_INV_ROOF")
@@ -569,7 +579,7 @@ class Ui_OWNER_INVENTORY(object):
 "}\n"
 "")
         self.tableWidget_ROOF.setObjectName("tableWidget_ROOF")
-        self.tableWidget_ROOF.setColumnCount(11)
+        self.tableWidget_ROOF.setColumnCount(13)
         self.tableWidget_ROOF.setRowCount(0)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
@@ -623,10 +633,20 @@ class Ui_OWNER_INVENTORY(object):
         self.tableWidget_ROOF.setHorizontalHeaderItem(9, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
-        font.setPointSize(12)
+        font.setPointSize(14)
         item.setFont(font)
         self.tableWidget_ROOF.setHorizontalHeaderItem(10, item)
-        self.tableWidget_ROOF.horizontalHeader().setDefaultSectionSize(265)
+        item = QtWidgets.QTableWidgetItem()
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        item.setFont(font)
+        self.tableWidget_ROOF.setHorizontalHeaderItem(11, item)
+        item = QtWidgets.QTableWidgetItem()
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        item.setFont(font)
+        self.tableWidget_ROOF.setHorizontalHeaderItem(12, item)
+        self.tableWidget_ROOF.horizontalHeader().setDefaultSectionSize(345)
         self.INVENTORY_afterBUTTONSclick.addWidget(self.page_INV_ROOF)
         self.page_INV_SPANDREL = QtWidgets.QWidget()
         self.page_INV_SPANDREL.setObjectName("page_INV_SPANDREL")
@@ -649,7 +669,7 @@ class Ui_OWNER_INVENTORY(object):
 "}\n"
 "")
         self.tableWidget_SPANDREL.setObjectName("tableWidget_SPANDREL")
-        self.tableWidget_SPANDREL.setColumnCount(11)
+        self.tableWidget_SPANDREL.setColumnCount(13)
         self.tableWidget_SPANDREL.setRowCount(0)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
@@ -703,10 +723,20 @@ class Ui_OWNER_INVENTORY(object):
         self.tableWidget_SPANDREL.setHorizontalHeaderItem(9, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
-        font.setPointSize(12)
+        font.setPointSize(14)
         item.setFont(font)
         self.tableWidget_SPANDREL.setHorizontalHeaderItem(10, item)
-        self.tableWidget_SPANDREL.horizontalHeader().setDefaultSectionSize(265)
+        item = QtWidgets.QTableWidgetItem()
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        item.setFont(font)
+        self.tableWidget_SPANDREL.setHorizontalHeaderItem(11, item)
+        item = QtWidgets.QTableWidgetItem()
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        item.setFont(font)
+        self.tableWidget_SPANDREL.setHorizontalHeaderItem(12, item)
+        self.tableWidget_SPANDREL.horizontalHeader().setDefaultSectionSize(345)
         self.INVENTORY_afterBUTTONSclick.addWidget(self.page_INV_SPANDREL)
         self.page_INV_GUTTER = QtWidgets.QWidget()
         self.page_INV_GUTTER.setObjectName("page_INV_GUTTER")
@@ -729,7 +759,7 @@ class Ui_OWNER_INVENTORY(object):
 "}\n"
 "")
         self.tableWidget_GUTTER.setObjectName("tableWidget_GUTTER")
-        self.tableWidget_GUTTER.setColumnCount(11)
+        self.tableWidget_GUTTER.setColumnCount(13)
         self.tableWidget_GUTTER.setRowCount(0)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
@@ -783,10 +813,20 @@ class Ui_OWNER_INVENTORY(object):
         self.tableWidget_GUTTER.setHorizontalHeaderItem(9, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
-        font.setPointSize(12)
+        font.setPointSize(14)
         item.setFont(font)
         self.tableWidget_GUTTER.setHorizontalHeaderItem(10, item)
-        self.tableWidget_GUTTER.horizontalHeader().setDefaultSectionSize(265)
+        item = QtWidgets.QTableWidgetItem()
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        item.setFont(font)
+        self.tableWidget_GUTTER.setHorizontalHeaderItem(11, item)
+        item = QtWidgets.QTableWidgetItem()
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        item.setFont(font)
+        self.tableWidget_GUTTER.setHorizontalHeaderItem(12, item)
+        self.tableWidget_GUTTER.horizontalHeader().setDefaultSectionSize(345)
         self.INVENTORY_afterBUTTONSclick.addWidget(self.page_INV_GUTTER)
         self.page_INV_OTHER = QtWidgets.QWidget()
         self.page_INV_OTHER.setObjectName("page_INV_OTHER")
@@ -809,7 +849,7 @@ class Ui_OWNER_INVENTORY(object):
 "}\n"
 "")
         self.tableWidget_OTHER.setObjectName("tableWidget_OTHER")
-        self.tableWidget_OTHER.setColumnCount(11)
+        self.tableWidget_OTHER.setColumnCount(13)
         self.tableWidget_OTHER.setRowCount(0)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
@@ -863,10 +903,20 @@ class Ui_OWNER_INVENTORY(object):
         self.tableWidget_OTHER.setHorizontalHeaderItem(9, item)
         item = QtWidgets.QTableWidgetItem()
         font = QtGui.QFont()
-        font.setPointSize(12)
+        font.setPointSize(14)
         item.setFont(font)
         self.tableWidget_OTHER.setHorizontalHeaderItem(10, item)
-        self.tableWidget_OTHER.horizontalHeader().setDefaultSectionSize(265)
+        item = QtWidgets.QTableWidgetItem()
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        item.setFont(font)
+        self.tableWidget_OTHER.setHorizontalHeaderItem(11, item)
+        item = QtWidgets.QTableWidgetItem()
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        item.setFont(font)
+        self.tableWidget_OTHER.setHorizontalHeaderItem(12, item)
+        self.tableWidget_OTHER.horizontalHeader().setDefaultSectionSize(345)
         self.INVENTORY_afterBUTTONSclick.addWidget(self.page_INV_OTHER)
         self.page_INV_ADD_STOCK = QtWidgets.QWidget()
         self.page_INV_ADD_STOCK.setObjectName("page_INV_ADD_STOCK")
@@ -1014,18 +1064,6 @@ class Ui_OWNER_INVENTORY(object):
         self.label_123.setStyleSheet("    background-color: transparent;\n"
 "")
         self.label_123.setObjectName("label_123")
-        self.lineEdit_AddROOF_prodID = QtWidgets.QLineEdit(self.frame_addroof_7)
-        self.lineEdit_AddROOF_prodID.setGeometry(QtCore.QRect(240, 10, 561, 51))
-        font = QtGui.QFont()
-        font.setPointSize(13)
-        self.lineEdit_AddROOF_prodID.setFont(font)
-        self.lineEdit_AddROOF_prodID.setStyleSheet("    background-color: #ffffff;\n"
-"    color: black;\n"
-"    border-radius: 15px;\n"
-"border: 1px solid #000000; \n"
-"    padding: 9px;\n"
-"")
-        self.lineEdit_AddROOF_prodID.setObjectName("lineEdit_AddROOF_prodID")
         self.lineEdit_AddROOF_Width = QtWidgets.QLineEdit(self.frame_addroof_7)
         self.lineEdit_AddROOF_Width.setGeometry(QtCore.QRect(1100, 290, 261, 51))
         font = QtGui.QFont()
@@ -1199,6 +1237,16 @@ class Ui_OWNER_INVENTORY(object):
 "    padding: 9px;\n"
 "")
         self.lineEdit_AddROOF_Name.setObjectName("lineEdit_AddROOF_Name")
+        self.label_AddProduct_SourceValue = QtWidgets.QLabel(self.frame_addroof_7)
+        self.label_AddProduct_SourceValue.setGeometry(QtCore.QRect(240, 10, 561, 51))
+        self.label_AddProduct_SourceValue.setStyleSheet("    background-color: #ffffff;\n"
+"    border-radius: 15px;\n"
+"border: 1px solid #000000; \n"
+"    padding: 9px;\n"
+"color: #12245c;\n"
+"font-family: \"Arial Black\", Arial, sans-serif; \n"
+"font-size: 25px;")
+        self.label_AddProduct_SourceValue.setObjectName("label_AddProduct_SourceValue")
         self.Add_Select_Prod_Type.addWidget(self.ADD_ROOF)
         self.ADD_SPANDREL = QtWidgets.QWidget()
         self.ADD_SPANDREL.setObjectName("ADD_SPANDREL")
@@ -1300,18 +1348,6 @@ class Ui_OWNER_INVENTORY(object):
         self.label_130.setStyleSheet("    background-color: transparent;\n"
 "")
         self.label_130.setObjectName("label_130")
-        self.lineEdit_AddSPANDREL_prodID = QtWidgets.QLineEdit(self.frame_addspandrel_19)
-        self.lineEdit_AddSPANDREL_prodID.setGeometry(QtCore.QRect(240, 10, 561, 51))
-        font = QtGui.QFont()
-        font.setPointSize(13)
-        self.lineEdit_AddSPANDREL_prodID.setFont(font)
-        self.lineEdit_AddSPANDREL_prodID.setStyleSheet("    background-color: #ffffff;\n"
-"    color: black;\n"
-"    border-radius: 15px;\n"
-"border: 1px solid #000000; \n"
-"    padding: 9px;\n"
-"")
-        self.lineEdit_AddSPANDREL_prodID.setObjectName("lineEdit_AddSPANDREL_prodID")
         self.lineEdit_AddSPANDREL_Width = QtWidgets.QLineEdit(self.frame_addspandrel_19)
         self.lineEdit_AddSPANDREL_Width.setGeometry(QtCore.QRect(1100, 290, 261, 51))
         font = QtGui.QFont()
@@ -1485,6 +1521,17 @@ class Ui_OWNER_INVENTORY(object):
 "    padding: 9px;\n"
 "")
         self.lineEdit_AddSPANDREL_Name.setObjectName("lineEdit_AddSPANDREL_Name")
+        self.label_AddProduct_SourceValue_2 = QtWidgets.QLabel(self.frame_addspandrel_19)
+        self.label_AddProduct_SourceValue_2.setGeometry(QtCore.QRect(240, 10, 561, 51))
+        self.label_AddProduct_SourceValue_2.setStyleSheet("    background-color: #ffffff;\n"
+"    border-radius: 15px;\n"
+"border: 1px solid #000000; \n"
+"    padding: 9px;\n"
+"color: #12245c;\n"
+"font-family: \"Arial Black\", Arial, sans-serif; \n"
+"font-size: 25px\n"
+"")
+        self.label_AddProduct_SourceValue_2.setObjectName("label_AddProduct_SourceValue_2")
         self.Add_Select_Prod_Type.addWidget(self.ADD_SPANDREL)
         self.ADD_GUTTER = QtWidgets.QWidget()
         self.ADD_GUTTER.setObjectName("ADD_GUTTER")
@@ -1586,18 +1633,6 @@ class Ui_OWNER_INVENTORY(object):
         self.label_593.setStyleSheet("    background-color: transparent;\n"
 "")
         self.label_593.setObjectName("label_593")
-        self.lineEdit_AddGUTTER_prodID = QtWidgets.QLineEdit(self.frame_addspandrel_20)
-        self.lineEdit_AddGUTTER_prodID.setGeometry(QtCore.QRect(240, 10, 561, 51))
-        font = QtGui.QFont()
-        font.setPointSize(13)
-        self.lineEdit_AddGUTTER_prodID.setFont(font)
-        self.lineEdit_AddGUTTER_prodID.setStyleSheet("    background-color: #ffffff;\n"
-"    color: black;\n"
-"    border-radius: 15px;\n"
-"border: 1px solid #000000; \n"
-"    padding: 9px;\n"
-"")
-        self.lineEdit_AddGUTTER_prodID.setObjectName("lineEdit_AddGUTTER_prodID")
         self.lineEdit_AddGUTTER_Width = QtWidgets.QLineEdit(self.frame_addspandrel_20)
         self.lineEdit_AddGUTTER_Width.setGeometry(QtCore.QRect(1100, 290, 261, 51))
         font = QtGui.QFont()
@@ -1771,6 +1806,17 @@ class Ui_OWNER_INVENTORY(object):
 "    padding: 9px;\n"
 "")
         self.lineEdit_AddGUTTER_Name.setObjectName("lineEdit_AddGUTTER_Name")
+        self.label_AddProduct_SourceValue_3 = QtWidgets.QLabel(self.frame_addspandrel_20)
+        self.label_AddProduct_SourceValue_3.setGeometry(QtCore.QRect(240, 10, 561, 51))
+        self.label_AddProduct_SourceValue_3.setStyleSheet("    background-color: #ffffff;\n"
+"    border-radius: 15px;\n"
+"border: 1px solid #000000; \n"
+"    padding: 9px;\n"
+"color: #12245c;\n"
+"font-family: \"Arial Black\", Arial, sans-serif; \n"
+"font-size: 25px\n"
+"")
+        self.label_AddProduct_SourceValue_3.setObjectName("label_AddProduct_SourceValue_3")
         self.Add_Select_Prod_Type.addWidget(self.ADD_GUTTER)
         self.ADD_OTHER = QtWidgets.QWidget()
         self.ADD_OTHER.setObjectName("ADD_OTHER")
@@ -1840,7 +1886,7 @@ class Ui_OWNER_INVENTORY(object):
         self.frame_addspandrel_21.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_addspandrel_21.setObjectName("frame_addspandrel_21")
         self.label_601 = QtWidgets.QLabel(self.frame_addspandrel_21)
-        self.label_601.setGeometry(QtCore.QRect(30, 10, 241, 51))
+        self.label_601.setGeometry(QtCore.QRect(30, 10, 201, 51))
         font = QtGui.QFont()
         font.setFamily("Poppins Medium")
         font.setPointSize(14)
@@ -1872,18 +1918,6 @@ class Ui_OWNER_INVENTORY(object):
         self.label_603.setStyleSheet("    background-color: transparent;\n"
 "")
         self.label_603.setObjectName("label_603")
-        self.lineEdit_AddOTHER_prodID = QtWidgets.QLineEdit(self.frame_addspandrel_21)
-        self.lineEdit_AddOTHER_prodID.setGeometry(QtCore.QRect(240, 10, 561, 51))
-        font = QtGui.QFont()
-        font.setPointSize(13)
-        self.lineEdit_AddOTHER_prodID.setFont(font)
-        self.lineEdit_AddOTHER_prodID.setStyleSheet("    background-color: #ffffff;\n"
-"    color: black;\n"
-"    border-radius: 15px;\n"
-"border: 1px solid #000000; \n"
-"    padding: 9px;\n"
-"")
-        self.lineEdit_AddOTHER_prodID.setObjectName("lineEdit_AddOTHER_prodID")
         self.lineEdit_AddOTHER_Width = QtWidgets.QLineEdit(self.frame_addspandrel_21)
         self.lineEdit_AddOTHER_Width.setGeometry(QtCore.QRect(1100, 290, 261, 51))
         font = QtGui.QFont()
@@ -2057,6 +2091,17 @@ class Ui_OWNER_INVENTORY(object):
 "    padding: 9px;\n"
 "")
         self.lineEdit_AddOTHER_Name.setObjectName("lineEdit_AddOTHER_Name")
+        self.label_AddProduct_SourceValue_4 = QtWidgets.QLabel(self.frame_addspandrel_21)
+        self.label_AddProduct_SourceValue_4.setGeometry(QtCore.QRect(240, 10, 561, 51))
+        self.label_AddProduct_SourceValue_4.setStyleSheet("    background-color: #ffffff;\n"
+"    border-radius: 15px;\n"
+"border: 1px solid #000000; \n"
+"    padding: 9px;\n"
+"color: #12245c;\n"
+"font-family: \"Arial Black\", Arial, sans-serif; \n"
+"font-size: 25px\n"
+"")
+        self.label_AddProduct_SourceValue_4.setObjectName("label_AddProduct_SourceValue_4")
         self.Add_Select_Prod_Type.addWidget(self.ADD_OTHER)
         self.comboBox_Select_Prod_Type_toAdd = QtWidgets.QComboBox(self.frame_97)
         self.comboBox_Select_Prod_Type_toAdd.setGeometry(QtCore.QRect(1220, 50, 251, 51))
@@ -2228,18 +2273,6 @@ class Ui_OWNER_INVENTORY(object):
         self.label_616.setStyleSheet("    background-color: transparent;\n"
 "")
         self.label_616.setObjectName("label_616")
-        self.lineEdit_EditROOF_prodID = QtWidgets.QLineEdit(self.frame_editroof_7)
-        self.lineEdit_EditROOF_prodID.setGeometry(QtCore.QRect(240, 10, 561, 51))
-        font = QtGui.QFont()
-        font.setPointSize(13)
-        self.lineEdit_EditROOF_prodID.setFont(font)
-        self.lineEdit_EditROOF_prodID.setStyleSheet("    background-color: #ffffff;\n"
-"    color: black;\n"
-"    border-radius: 15px;\n"
-"border: 1px solid #000000; \n"
-"    padding: 9px;\n"
-"")
-        self.lineEdit_EditROOF_prodID.setObjectName("lineEdit_EditROOF_prodID")
         self.lineEdit_EditROOF_Width = QtWidgets.QLineEdit(self.frame_editroof_7)
         self.lineEdit_EditROOF_Width.setGeometry(QtCore.QRect(1100, 290, 261, 51))
         font = QtGui.QFont()
@@ -2413,6 +2446,17 @@ class Ui_OWNER_INVENTORY(object):
 "    padding: 9px;\n"
 "")
         self.lineEdit_EditROOF_Name.setObjectName("lineEdit_EditROOF_Name")
+        self.label_EditProduct_SourceValue = QtWidgets.QLabel(self.frame_editroof_7)
+        self.label_EditProduct_SourceValue.setGeometry(QtCore.QRect(240, 10, 561, 51))
+        self.label_EditProduct_SourceValue.setStyleSheet("    background-color: #ffffff;\n"
+"    border-radius: 15px;\n"
+"border: 1px solid #000000; \n"
+"    padding: 9px;\n"
+"color: #12245c;\n"
+"font-family: \"Arial Black\", Arial, sans-serif; \n"
+"font-size: 25px\n"
+"")
+        self.label_EditProduct_SourceValue.setObjectName("label_EditProduct_SourceValue")
         self.Edit_Select_Prod_Type.addWidget(self.EDIT_ROOF)
         self.EDIT_SPANDREL = QtWidgets.QWidget()
         self.EDIT_SPANDREL.setObjectName("EDIT_SPANDREL")
@@ -2514,18 +2558,6 @@ class Ui_OWNER_INVENTORY(object):
         self.label_626.setStyleSheet("    background-color: transparent;\n"
 "")
         self.label_626.setObjectName("label_626")
-        self.lineEdit_EditSPANDREL_prodID = QtWidgets.QLineEdit(self.frame_editspandrel_7)
-        self.lineEdit_EditSPANDREL_prodID.setGeometry(QtCore.QRect(240, 10, 561, 51))
-        font = QtGui.QFont()
-        font.setPointSize(13)
-        self.lineEdit_EditSPANDREL_prodID.setFont(font)
-        self.lineEdit_EditSPANDREL_prodID.setStyleSheet("    background-color: #ffffff;\n"
-"    color: black;\n"
-"    border-radius: 15px;\n"
-"border: 1px solid #000000; \n"
-"    padding: 9px;\n"
-"")
-        self.lineEdit_EditSPANDREL_prodID.setObjectName("lineEdit_EditSPANDREL_prodID")
         self.lineEdit_EditSPANDREL_Width = QtWidgets.QLineEdit(self.frame_editspandrel_7)
         self.lineEdit_EditSPANDREL_Width.setGeometry(QtCore.QRect(1100, 290, 261, 51))
         font = QtGui.QFont()
@@ -2699,6 +2731,17 @@ class Ui_OWNER_INVENTORY(object):
 "    padding: 9px;\n"
 "")
         self.lineEdit_EditSPANDREL_Name.setObjectName("lineEdit_EditSPANDREL_Name")
+        self.label_EditProduct_SourceValue_2 = QtWidgets.QLabel(self.frame_editspandrel_7)
+        self.label_EditProduct_SourceValue_2.setGeometry(QtCore.QRect(240, 10, 561, 51))
+        self.label_EditProduct_SourceValue_2.setStyleSheet("    background-color: #ffffff;\n"
+"    border-radius: 15px;\n"
+"border: 1px solid #000000; \n"
+"    padding: 9px;\n"
+"color: #12245c;\n"
+"font-family: \"Arial Black\", Arial, sans-serif; \n"
+"font-size: 25px\n"
+"")
+        self.label_EditProduct_SourceValue_2.setObjectName("label_EditProduct_SourceValue_2")
         self.Edit_Select_Prod_Type.addWidget(self.EDIT_SPANDREL)
         self.EDIT_GUTTER = QtWidgets.QWidget()
         self.EDIT_GUTTER.setObjectName("EDIT_GUTTER")
@@ -2800,18 +2843,6 @@ class Ui_OWNER_INVENTORY(object):
         self.label_636.setStyleSheet("    background-color: transparent;\n"
 "")
         self.label_636.setObjectName("label_636")
-        self.lineEdit_EditGUTTER_prodID = QtWidgets.QLineEdit(self.frame_editgutter_7)
-        self.lineEdit_EditGUTTER_prodID.setGeometry(QtCore.QRect(240, 10, 561, 51))
-        font = QtGui.QFont()
-        font.setPointSize(13)
-        self.lineEdit_EditGUTTER_prodID.setFont(font)
-        self.lineEdit_EditGUTTER_prodID.setStyleSheet("    background-color: #ffffff;\n"
-"    color: black;\n"
-"    border-radius: 15px;\n"
-"border: 1px solid #000000; \n"
-"    padding: 9px;\n"
-"")
-        self.lineEdit_EditGUTTER_prodID.setObjectName("lineEdit_EditGUTTER_prodID")
         self.lineEdit_EditGUTTER_Width = QtWidgets.QLineEdit(self.frame_editgutter_7)
         self.lineEdit_EditGUTTER_Width.setGeometry(QtCore.QRect(1100, 290, 261, 51))
         font = QtGui.QFont()
@@ -2985,6 +3016,17 @@ class Ui_OWNER_INVENTORY(object):
 "    padding: 9px;\n"
 "")
         self.lineEdit_EditGUTTER_Name.setObjectName("lineEdit_EditGUTTER_Name")
+        self.label_EditProduct_SourceValue_3 = QtWidgets.QLabel(self.frame_editgutter_7)
+        self.label_EditProduct_SourceValue_3.setGeometry(QtCore.QRect(240, 10, 561, 51))
+        self.label_EditProduct_SourceValue_3.setStyleSheet("    background-color: #ffffff;\n"
+"    border-radius: 15px;\n"
+"border: 1px solid #000000; \n"
+"    padding: 9px;\n"
+"color: #12245c;\n"
+"font-family: \"Arial Black\", Arial, sans-serif; \n"
+"font-size: 25px\n"
+"")
+        self.label_EditProduct_SourceValue_3.setObjectName("label_EditProduct_SourceValue_3")
         self.Edit_Select_Prod_Type.addWidget(self.EDIT_GUTTER)
         self.EDIT_OTHER = QtWidgets.QWidget()
         self.EDIT_OTHER.setObjectName("EDIT_OTHER")
@@ -3028,18 +3070,6 @@ class Ui_OWNER_INVENTORY(object):
         self.label_646.setStyleSheet("    background-color: transparent;\n"
 "")
         self.label_646.setObjectName("label_646")
-        self.lineEdit_EditOTHER_prodID = QtWidgets.QLineEdit(self.frame_editother_7)
-        self.lineEdit_EditOTHER_prodID.setGeometry(QtCore.QRect(240, 10, 561, 51))
-        font = QtGui.QFont()
-        font.setPointSize(13)
-        self.lineEdit_EditOTHER_prodID.setFont(font)
-        self.lineEdit_EditOTHER_prodID.setStyleSheet("    background-color: #ffffff;\n"
-"    color: black;\n"
-"    border-radius: 15px;\n"
-"border: 1px solid #000000; \n"
-"    padding: 9px;\n"
-"")
-        self.lineEdit_EditOTHER_prodID.setObjectName("lineEdit_EditOTHER_prodID")
         self.lineEdit_EditOTHER_Width = QtWidgets.QLineEdit(self.frame_editother_7)
         self.lineEdit_EditOTHER_Width.setGeometry(QtCore.QRect(1100, 290, 261, 51))
         font = QtGui.QFont()
@@ -3213,6 +3243,17 @@ class Ui_OWNER_INVENTORY(object):
 "    padding: 9px;\n"
 "")
         self.lineEdit_EditOTHER_Name.setObjectName("lineEdit_EditOTHER_Name")
+        self.label_EditProduct_SourceValue_4 = QtWidgets.QLabel(self.frame_editother_7)
+        self.label_EditProduct_SourceValue_4.setGeometry(QtCore.QRect(240, 10, 561, 51))
+        self.label_EditProduct_SourceValue_4.setStyleSheet("    background-color: #ffffff;\n"
+"    border-radius: 15px;\n"
+"border: 1px solid #000000; \n"
+"    padding: 9px;\n"
+"color: #12245c;\n"
+"font-family: \"Arial Black\", Arial, sans-serif; \n"
+"font-size: 25px\n"
+"")
+        self.label_EditProduct_SourceValue_4.setObjectName("label_EditProduct_SourceValue_4")
         self.frame_106 = QtWidgets.QFrame(self.EDIT_OTHER)
         self.frame_106.setGeometry(QtCore.QRect(-10, 420, 1331, 91))
         self.frame_106.setStyleSheet("    background-color: transparent;\n"
@@ -3415,29 +3456,6 @@ class Ui_OWNER_INVENTORY(object):
         self.frame_deleteroof.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_deleteroof.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_deleteroof.setObjectName("frame_deleteroof")
-        self.label_657 = QtWidgets.QLabel(self.frame_deleteroof)
-        self.label_657.setGeometry(QtCore.QRect(230, 20, 321, 71))
-        font = QtGui.QFont()
-        font.setFamily("Poppins Medium")
-        font.setPointSize(14)
-        font.setBold(False)
-        font.setWeight(50)
-        self.label_657.setFont(font)
-        self.label_657.setStyleSheet("    background-color: transparent;\n"
-"")
-        self.label_657.setObjectName("label_657")
-        self.lineEdit_DeleteROOF_prodID = QtWidgets.QLineEdit(self.frame_deleteroof)
-        self.lineEdit_DeleteROOF_prodID.setGeometry(QtCore.QRect(530, 30, 641, 51))
-        font = QtGui.QFont()
-        font.setPointSize(13)
-        self.lineEdit_DeleteROOF_prodID.setFont(font)
-        self.lineEdit_DeleteROOF_prodID.setStyleSheet("    background-color: #ffffff;\n"
-"    color: black;\n"
-"    border-radius: 15px;\n"
-"border: 1px solid #000000; \n"
-"    padding: 9px;\n"
-"")
-        self.lineEdit_DeleteROOF_prodID.setObjectName("lineEdit_DeleteROOF_prodID")
         self.label_658 = QtWidgets.QLabel(self.frame_deleteroof)
         self.label_658.setGeometry(QtCore.QRect(230, 110, 311, 51))
         font = QtGui.QFont()
@@ -3553,29 +3571,6 @@ class Ui_OWNER_INVENTORY(object):
         self.frame_deletespandrel_7.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_deletespandrel_7.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_deletespandrel_7.setObjectName("frame_deletespandrel_7")
-        self.label_660 = QtWidgets.QLabel(self.frame_deletespandrel_7)
-        self.label_660.setGeometry(QtCore.QRect(230, 20, 321, 71))
-        font = QtGui.QFont()
-        font.setFamily("Poppins Medium")
-        font.setPointSize(14)
-        font.setBold(False)
-        font.setWeight(50)
-        self.label_660.setFont(font)
-        self.label_660.setStyleSheet("    background-color: transparent;\n"
-"")
-        self.label_660.setObjectName("label_660")
-        self.lineEdit_DeleteSPANDREL_prodID = QtWidgets.QLineEdit(self.frame_deletespandrel_7)
-        self.lineEdit_DeleteSPANDREL_prodID.setGeometry(QtCore.QRect(530, 30, 641, 51))
-        font = QtGui.QFont()
-        font.setPointSize(13)
-        self.lineEdit_DeleteSPANDREL_prodID.setFont(font)
-        self.lineEdit_DeleteSPANDREL_prodID.setStyleSheet("    background-color: #ffffff;\n"
-"    color: black;\n"
-"    border-radius: 15px;\n"
-"border: 1px solid #000000; \n"
-"    padding: 9px;\n"
-"")
-        self.lineEdit_DeleteSPANDREL_prodID.setObjectName("lineEdit_DeleteSPANDREL_prodID")
         self.label_661 = QtWidgets.QLabel(self.frame_deletespandrel_7)
         self.label_661.setGeometry(QtCore.QRect(230, 110, 311, 51))
         font = QtGui.QFont()
@@ -3691,29 +3686,6 @@ class Ui_OWNER_INVENTORY(object):
         self.frame_deletegutter_13.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_deletegutter_13.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_deletegutter_13.setObjectName("frame_deletegutter_13")
-        self.label_663 = QtWidgets.QLabel(self.frame_deletegutter_13)
-        self.label_663.setGeometry(QtCore.QRect(230, 20, 321, 71))
-        font = QtGui.QFont()
-        font.setFamily("Poppins Medium")
-        font.setPointSize(14)
-        font.setBold(False)
-        font.setWeight(50)
-        self.label_663.setFont(font)
-        self.label_663.setStyleSheet("    background-color: transparent;\n"
-"")
-        self.label_663.setObjectName("label_663")
-        self.lineEdit_DeleteGUTTER_prodID = QtWidgets.QLineEdit(self.frame_deletegutter_13)
-        self.lineEdit_DeleteGUTTER_prodID.setGeometry(QtCore.QRect(530, 30, 641, 51))
-        font = QtGui.QFont()
-        font.setPointSize(13)
-        self.lineEdit_DeleteGUTTER_prodID.setFont(font)
-        self.lineEdit_DeleteGUTTER_prodID.setStyleSheet("    background-color: #ffffff;\n"
-"    color: black;\n"
-"    border-radius: 15px;\n"
-"border: 1px solid #000000; \n"
-"    padding: 9px;\n"
-"")
-        self.lineEdit_DeleteGUTTER_prodID.setObjectName("lineEdit_DeleteGUTTER_prodID")
         self.label_664 = QtWidgets.QLabel(self.frame_deletegutter_13)
         self.label_664.setGeometry(QtCore.QRect(230, 110, 311, 51))
         font = QtGui.QFont()
@@ -3771,29 +3743,6 @@ class Ui_OWNER_INVENTORY(object):
         self.frame_deletegutter_14.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_deletegutter_14.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_deletegutter_14.setObjectName("frame_deletegutter_14")
-        self.label_666 = QtWidgets.QLabel(self.frame_deletegutter_14)
-        self.label_666.setGeometry(QtCore.QRect(230, 20, 321, 71))
-        font = QtGui.QFont()
-        font.setFamily("Poppins Medium")
-        font.setPointSize(14)
-        font.setBold(False)
-        font.setWeight(50)
-        self.label_666.setFont(font)
-        self.label_666.setStyleSheet("    background-color: transparent;\n"
-"")
-        self.label_666.setObjectName("label_666")
-        self.lineEdit_DeleteOTHER_prodID = QtWidgets.QLineEdit(self.frame_deletegutter_14)
-        self.lineEdit_DeleteOTHER_prodID.setGeometry(QtCore.QRect(530, 30, 641, 51))
-        font = QtGui.QFont()
-        font.setPointSize(13)
-        self.lineEdit_DeleteOTHER_prodID.setFont(font)
-        self.lineEdit_DeleteOTHER_prodID.setStyleSheet("    background-color: #ffffff;\n"
-"    color: black;\n"
-"    border-radius: 15px;\n"
-"border: 1px solid #000000; \n"
-"    padding: 9px;\n"
-"")
-        self.lineEdit_DeleteOTHER_prodID.setObjectName("lineEdit_DeleteOTHER_prodID")
         self.label_667 = QtWidgets.QLabel(self.frame_deletegutter_14)
         self.label_667.setGeometry(QtCore.QRect(230, 110, 311, 51))
         font = QtGui.QFont()
@@ -4183,8 +4132,8 @@ class Ui_OWNER_INVENTORY(object):
         self.retranslateUi(OWNER_INVENTORY)
         self.INVENTORY_afterBUTTONSclick.setCurrentIndex(7)
         self.Add_Select_Prod_Type.setCurrentIndex(4)
-        self.Edit_Select_Prod_Type.setCurrentIndex(4)
-        self.Delete_Select_Prod_Type.setCurrentIndex(4)
+        self.Edit_Select_Prod_Type.setCurrentIndex(0)
+        self.Delete_Select_Prod_Type.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(OWNER_INVENTORY)
 
     def retranslateUi(self, OWNER_INVENTORY):
@@ -4195,8 +4144,8 @@ class Ui_OWNER_INVENTORY(object):
         self.textBrowser_inv_ROOF_lowstk_warning.setHtml(_translate("OWNER_INVENTORY", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'Verdana\',\'sans-serif\'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
+"</style></head><body style=\" font-family:\'Verdana\',\'sans-serif\'; font-size:16pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><br /></p></body></html>"))
         self.pushButton_Inventory_ALL_ITEMS_table.setText(_translate("OWNER_INVENTORY", "All Items"))
         self.pushButton_Inventory_ROOF_table.setText(_translate("OWNER_INVENTORY", "Roof"))
         self.pushButton_Inventory_SPANDREL_table.setText(_translate("OWNER_INVENTORY", "Spandrel"))
@@ -4217,17 +4166,21 @@ class Ui_OWNER_INVENTORY(object):
         item = self.tableWidget_ALL_ITEMS.horizontalHeaderItem(4)
         item.setText(_translate("OWNER_INVENTORY", "Stock Qty."))
         item = self.tableWidget_ALL_ITEMS.horizontalHeaderItem(5)
-        item.setText(_translate("OWNER_INVENTORY", "Updated At"))
-        item = self.tableWidget_ALL_ITEMS.horizontalHeaderItem(6)
         item.setText(_translate("OWNER_INVENTORY", "Color"))
-        item = self.tableWidget_ALL_ITEMS.horizontalHeaderItem(7)
+        item = self.tableWidget_ALL_ITEMS.horizontalHeaderItem(6)
         item.setText(_translate("OWNER_INVENTORY", "Length"))
-        item = self.tableWidget_ALL_ITEMS.horizontalHeaderItem(8)
+        item = self.tableWidget_ALL_ITEMS.horizontalHeaderItem(7)
         item.setText(_translate("OWNER_INVENTORY", "Thickness"))
-        item = self.tableWidget_ALL_ITEMS.horizontalHeaderItem(9)
+        item = self.tableWidget_ALL_ITEMS.horizontalHeaderItem(8)
         item.setText(_translate("OWNER_INVENTORY", "Width"))
-        item = self.tableWidget_ALL_ITEMS.horizontalHeaderItem(10)
+        item = self.tableWidget_ALL_ITEMS.horizontalHeaderItem(9)
         item.setText(_translate("OWNER_INVENTORY", "Other Specifications"))
+        item = self.tableWidget_ALL_ITEMS.horizontalHeaderItem(10)
+        item.setText(_translate("OWNER_INVENTORY", "Source"))
+        item = self.tableWidget_ALL_ITEMS.horizontalHeaderItem(11)
+        item.setText(_translate("OWNER_INVENTORY", "Created At"))
+        item = self.tableWidget_ALL_ITEMS.horizontalHeaderItem(12)
+        item.setText(_translate("OWNER_INVENTORY", "Updated At"))
         item = self.tableWidget_ROOF.horizontalHeaderItem(0)
         item.setText(_translate("OWNER_INVENTORY", "Product ID"))
         item = self.tableWidget_ROOF.horizontalHeaderItem(1)
@@ -4239,17 +4192,21 @@ class Ui_OWNER_INVENTORY(object):
         item = self.tableWidget_ROOF.horizontalHeaderItem(4)
         item.setText(_translate("OWNER_INVENTORY", "Stock Qty."))
         item = self.tableWidget_ROOF.horizontalHeaderItem(5)
-        item.setText(_translate("OWNER_INVENTORY", "Updated At "))
-        item = self.tableWidget_ROOF.horizontalHeaderItem(6)
         item.setText(_translate("OWNER_INVENTORY", "Color  "))
-        item = self.tableWidget_ROOF.horizontalHeaderItem(7)
+        item = self.tableWidget_ROOF.horizontalHeaderItem(6)
         item.setText(_translate("OWNER_INVENTORY", "Length  "))
-        item = self.tableWidget_ROOF.horizontalHeaderItem(8)
+        item = self.tableWidget_ROOF.horizontalHeaderItem(7)
         item.setText(_translate("OWNER_INVENTORY", "Thickness  "))
-        item = self.tableWidget_ROOF.horizontalHeaderItem(9)
+        item = self.tableWidget_ROOF.horizontalHeaderItem(8)
         item.setText(_translate("OWNER_INVENTORY", "Width  "))
-        item = self.tableWidget_ROOF.horizontalHeaderItem(10)
+        item = self.tableWidget_ROOF.horizontalHeaderItem(9)
         item.setText(_translate("OWNER_INVENTORY", "Other Specifications"))
+        item = self.tableWidget_ROOF.horizontalHeaderItem(10)
+        item.setText(_translate("OWNER_INVENTORY", "Source"))
+        item = self.tableWidget_ROOF.horizontalHeaderItem(11)
+        item.setText(_translate("OWNER_INVENTORY", "Created At"))
+        item = self.tableWidget_ROOF.horizontalHeaderItem(12)
+        item.setText(_translate("OWNER_INVENTORY", "Updated At "))
         item = self.tableWidget_SPANDREL.horizontalHeaderItem(0)
         item.setText(_translate("OWNER_INVENTORY", "Product ID"))
         item = self.tableWidget_SPANDREL.horizontalHeaderItem(1)
@@ -4261,17 +4218,21 @@ class Ui_OWNER_INVENTORY(object):
         item = self.tableWidget_SPANDREL.horizontalHeaderItem(4)
         item.setText(_translate("OWNER_INVENTORY", "Stock Qty.  "))
         item = self.tableWidget_SPANDREL.horizontalHeaderItem(5)
-        item.setText(_translate("OWNER_INVENTORY", "Updated At"))
-        item = self.tableWidget_SPANDREL.horizontalHeaderItem(6)
         item.setText(_translate("OWNER_INVENTORY", "Color  "))
-        item = self.tableWidget_SPANDREL.horizontalHeaderItem(7)
+        item = self.tableWidget_SPANDREL.horizontalHeaderItem(6)
         item.setText(_translate("OWNER_INVENTORY", "Length  "))
-        item = self.tableWidget_SPANDREL.horizontalHeaderItem(8)
+        item = self.tableWidget_SPANDREL.horizontalHeaderItem(7)
         item.setText(_translate("OWNER_INVENTORY", "Thickness  "))
-        item = self.tableWidget_SPANDREL.horizontalHeaderItem(9)
+        item = self.tableWidget_SPANDREL.horizontalHeaderItem(8)
         item.setText(_translate("OWNER_INVENTORY", "Width  "))
-        item = self.tableWidget_SPANDREL.horizontalHeaderItem(10)
+        item = self.tableWidget_SPANDREL.horizontalHeaderItem(9)
         item.setText(_translate("OWNER_INVENTORY", "Other Specifications"))
+        item = self.tableWidget_SPANDREL.horizontalHeaderItem(10)
+        item.setText(_translate("OWNER_INVENTORY", "Source"))
+        item = self.tableWidget_SPANDREL.horizontalHeaderItem(11)
+        item.setText(_translate("OWNER_INVENTORY", "Created At"))
+        item = self.tableWidget_SPANDREL.horizontalHeaderItem(12)
+        item.setText(_translate("OWNER_INVENTORY", "Updated At"))
         item = self.tableWidget_GUTTER.horizontalHeaderItem(0)
         item.setText(_translate("OWNER_INVENTORY", "Product ID"))
         item = self.tableWidget_GUTTER.horizontalHeaderItem(1)
@@ -4283,17 +4244,21 @@ class Ui_OWNER_INVENTORY(object):
         item = self.tableWidget_GUTTER.horizontalHeaderItem(4)
         item.setText(_translate("OWNER_INVENTORY", "Stock Qty. "))
         item = self.tableWidget_GUTTER.horizontalHeaderItem(5)
-        item.setText(_translate("OWNER_INVENTORY", "Updated At "))
-        item = self.tableWidget_GUTTER.horizontalHeaderItem(6)
         item.setText(_translate("OWNER_INVENTORY", "Color"))
-        item = self.tableWidget_GUTTER.horizontalHeaderItem(7)
+        item = self.tableWidget_GUTTER.horizontalHeaderItem(6)
         item.setText(_translate("OWNER_INVENTORY", "Length "))
-        item = self.tableWidget_GUTTER.horizontalHeaderItem(8)
+        item = self.tableWidget_GUTTER.horizontalHeaderItem(7)
         item.setText(_translate("OWNER_INVENTORY", "Thickness  "))
-        item = self.tableWidget_GUTTER.horizontalHeaderItem(9)
+        item = self.tableWidget_GUTTER.horizontalHeaderItem(8)
         item.setText(_translate("OWNER_INVENTORY", "Width  "))
-        item = self.tableWidget_GUTTER.horizontalHeaderItem(10)
+        item = self.tableWidget_GUTTER.horizontalHeaderItem(9)
         item.setText(_translate("OWNER_INVENTORY", "Other Specifications"))
+        item = self.tableWidget_GUTTER.horizontalHeaderItem(10)
+        item.setText(_translate("OWNER_INVENTORY", "Source"))
+        item = self.tableWidget_GUTTER.horizontalHeaderItem(11)
+        item.setText(_translate("OWNER_INVENTORY", "Created At"))
+        item = self.tableWidget_GUTTER.horizontalHeaderItem(12)
+        item.setText(_translate("OWNER_INVENTORY", "Updated At "))
         item = self.tableWidget_OTHER.horizontalHeaderItem(0)
         item.setText(_translate("OWNER_INVENTORY", "Product ID"))
         item = self.tableWidget_OTHER.horizontalHeaderItem(1)
@@ -4305,25 +4270,28 @@ class Ui_OWNER_INVENTORY(object):
         item = self.tableWidget_OTHER.horizontalHeaderItem(4)
         item.setText(_translate("OWNER_INVENTORY", "Stock Qty."))
         item = self.tableWidget_OTHER.horizontalHeaderItem(5)
-        item.setText(_translate("OWNER_INVENTORY", "Updated At"))
-        item = self.tableWidget_OTHER.horizontalHeaderItem(6)
         item.setText(_translate("OWNER_INVENTORY", "Color"))
-        item = self.tableWidget_OTHER.horizontalHeaderItem(7)
+        item = self.tableWidget_OTHER.horizontalHeaderItem(6)
         item.setText(_translate("OWNER_INVENTORY", "Length"))
-        item = self.tableWidget_OTHER.horizontalHeaderItem(8)
+        item = self.tableWidget_OTHER.horizontalHeaderItem(7)
         item.setText(_translate("OWNER_INVENTORY", "Thickness"))
-        item = self.tableWidget_OTHER.horizontalHeaderItem(9)
+        item = self.tableWidget_OTHER.horizontalHeaderItem(8)
         item.setText(_translate("OWNER_INVENTORY", "Width"))
-        item = self.tableWidget_OTHER.horizontalHeaderItem(10)
+        item = self.tableWidget_OTHER.horizontalHeaderItem(9)
         item.setText(_translate("OWNER_INVENTORY", "Other Specifications"))
-        self.addStocklabel.setText(_translate("OWNER_INVENTORY", "ADD STOCK"))
+        item = self.tableWidget_OTHER.horizontalHeaderItem(10)
+        item.setText(_translate("OWNER_INVENTORY", "Source"))
+        item = self.tableWidget_OTHER.horizontalHeaderItem(11)
+        item.setText(_translate("OWNER_INVENTORY", "Created At"))
+        item = self.tableWidget_OTHER.horizontalHeaderItem(12)
+        item.setText(_translate("OWNER_INVENTORY", "Updated At"))
+        self.addStocklabel.setText(_translate("OWNER_INVENTORY", "ADD PRODUCT"))
         self.label_120.setText(_translate("OWNER_INVENTORY", "SELECT A PRODUCT TYPE TO ADD FIRST"))
         self.pushButton_Confirm_ROOFadd.setText(_translate("OWNER_INVENTORY", "CONFIRM"))
         self.pushButton_Close_ROOFadd.setText(_translate("OWNER_INVENTORY", "CLOSE"))
-        self.label_121.setText(_translate("OWNER_INVENTORY", "PRODUCT ID            :"))
+        self.label_121.setText(_translate("OWNER_INVENTORY", "SOURCE       :"))
         self.label_122.setText(_translate("OWNER_INVENTORY", "PRICE           :"))
         self.label_123.setText(_translate("OWNER_INVENTORY", "NAME            :"))
-        self.lineEdit_AddROOF_prodID.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.lineEdit_AddROOF_Width.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_582.setText(_translate("OWNER_INVENTORY", "STK. QTY.                    :"))
         self.lineEdit_AddROOF_Qty.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
@@ -4333,18 +4301,18 @@ class Ui_OWNER_INVENTORY(object):
         self.label_125.setText(_translate("OWNER_INVENTORY", "LENGTH                       :"))
         self.lineEdit_AddROOF_Length.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_126.setText(_translate("OWNER_INVENTORY", "OTHER          :"))
-        self.lineEdit_AddROOF_Price.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.lineEdit_AddROOF_Price.setPlaceholderText(_translate("OWNER_INVENTORY", "₱0.00"))
         self.lineEdit_AddROOF_OtherSpecifications.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_584.setText(_translate("OWNER_INVENTORY", "THICKNESS (MM)     :"))
         self.lineEdit_AddROOF_Thickness.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_127.setText(_translate("OWNER_INVENTORY", "SPECIFICATIONS"))
         self.lineEdit_AddROOF_Name.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_AddProduct_SourceValue.setText(_translate("OWNER_INVENTORY", "J&J FACTORY-MOALBOAL"))
         self.pushButton_Confirm_SPANDRELadd.setText(_translate("OWNER_INVENTORY", "CONFIRM"))
         self.pushButton_Close_SPANDRELadd.setText(_translate("OWNER_INVENTORY", "CLOSE"))
-        self.label_128.setText(_translate("OWNER_INVENTORY", "PRODUCT ID            :"))
+        self.label_128.setText(_translate("OWNER_INVENTORY", "SOURCE        :"))
         self.label_129.setText(_translate("OWNER_INVENTORY", "PRICE           :"))
         self.label_130.setText(_translate("OWNER_INVENTORY", "NAME            :"))
-        self.lineEdit_AddSPANDREL_prodID.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.lineEdit_AddSPANDREL_Width.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_585.setText(_translate("OWNER_INVENTORY", "STK. QTY.                    :"))
         self.lineEdit_AddSPANDREL_Qty.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
@@ -4354,18 +4322,18 @@ class Ui_OWNER_INVENTORY(object):
         self.label_587.setText(_translate("OWNER_INVENTORY", "LENGTH                       :"))
         self.lineEdit_AddSPANDREL_Length.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_588.setText(_translate("OWNER_INVENTORY", "OTHER          :"))
-        self.lineEdit_AddSPANDREL_Price.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.lineEdit_AddSPANDREL_Price.setPlaceholderText(_translate("OWNER_INVENTORY", "₱0.00"))
         self.lineEdit_AddSPANDREL_OtherSpecifications.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_589.setText(_translate("OWNER_INVENTORY", "THICKNESS (MM)     :"))
         self.lineEdit_AddSPANDREL_Thickness.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_590.setText(_translate("OWNER_INVENTORY", "SPECIFICATIONS"))
         self.lineEdit_AddSPANDREL_Name.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_AddProduct_SourceValue_2.setText(_translate("OWNER_INVENTORY", "J&J FACTORY-MOALBOAL"))
         self.pushButton_Confirm_GUTTERadd.setText(_translate("OWNER_INVENTORY", "CONFIRM"))
         self.pushButton_Close_GUTTERadd.setText(_translate("OWNER_INVENTORY", "CLOSE"))
-        self.label_591.setText(_translate("OWNER_INVENTORY", "PRODUCT ID            :"))
+        self.label_591.setText(_translate("OWNER_INVENTORY", "SOURCE       :"))
         self.label_592.setText(_translate("OWNER_INVENTORY", "PRICE           :"))
         self.label_593.setText(_translate("OWNER_INVENTORY", "NAME            :"))
-        self.lineEdit_AddGUTTER_prodID.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.lineEdit_AddGUTTER_Width.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_594.setText(_translate("OWNER_INVENTORY", "STK. QTY.                    :"))
         self.lineEdit_AddGUTTER_Qty.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
@@ -4375,18 +4343,18 @@ class Ui_OWNER_INVENTORY(object):
         self.label_597.setText(_translate("OWNER_INVENTORY", "LENGTH                       :"))
         self.lineEdit_AddGUTTER_Length.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_598.setText(_translate("OWNER_INVENTORY", "OTHER          :"))
-        self.lineEdit_AddGUTTER_Price.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.lineEdit_AddGUTTER_Price.setPlaceholderText(_translate("OWNER_INVENTORY", "₱0.00"))
         self.lineEdit_AddGUTTER_OtherSpecifications.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_599.setText(_translate("OWNER_INVENTORY", "THICKNESS (MM)     :"))
         self.lineEdit_AddGUTTER_Thickness.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_600.setText(_translate("OWNER_INVENTORY", "SPECIFICATIONS"))
         self.lineEdit_AddGUTTER_Name.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_AddProduct_SourceValue_3.setText(_translate("OWNER_INVENTORY", "J&J FACTORY-MOALBOAL"))
         self.pushButton_Confirm_OTHERadd.setText(_translate("OWNER_INVENTORY", "CONFIRM"))
         self.pushButton_Close_OTHERadd.setText(_translate("OWNER_INVENTORY", "CLOSE"))
-        self.label_601.setText(_translate("OWNER_INVENTORY", "PRODUCT ID            :"))
-        self.label_602.setText(_translate("OWNER_INVENTORY", "PRICE           :"))
+        self.label_601.setText(_translate("OWNER_INVENTORY", "SOURCE       : "))
+        self.label_602.setText(_translate("OWNER_INVENTORY", "PRICE            :"))
         self.label_603.setText(_translate("OWNER_INVENTORY", "NAME            :"))
-        self.lineEdit_AddOTHER_prodID.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.lineEdit_AddOTHER_Width.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_604.setText(_translate("OWNER_INVENTORY", "STK. QTY.                    :"))
         self.lineEdit_AddOTHER_Qty.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
@@ -4396,25 +4364,25 @@ class Ui_OWNER_INVENTORY(object):
         self.label_607.setText(_translate("OWNER_INVENTORY", "LENGTH                       :"))
         self.lineEdit_AddOTHER_Length.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_608.setText(_translate("OWNER_INVENTORY", "OTHER          :"))
-        self.lineEdit_AddOTHER_Price.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.lineEdit_AddOTHER_Price.setPlaceholderText(_translate("OWNER_INVENTORY", "₱0.00"))
         self.lineEdit_AddOTHER_OtherSpecifications.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_609.setText(_translate("OWNER_INVENTORY", "THICKNESS (MM)     :"))
         self.lineEdit_AddOTHER_Thickness.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_610.setText(_translate("OWNER_INVENTORY", "SPECIFICATIONS"))
         self.lineEdit_AddOTHER_Name.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_AddProduct_SourceValue_4.setText(_translate("OWNER_INVENTORY", "J&J FACTORY-MOALBOAL"))
         self.comboBox_Select_Prod_Type_toAdd.setItemText(0, _translate("OWNER_INVENTORY", "Select Product Type"))
         self.comboBox_Select_Prod_Type_toAdd.setItemText(1, _translate("OWNER_INVENTORY", "ROOF"))
         self.comboBox_Select_Prod_Type_toAdd.setItemText(2, _translate("OWNER_INVENTORY", "SPANDREL"))
         self.comboBox_Select_Prod_Type_toAdd.setItemText(3, _translate("OWNER_INVENTORY", "GUTTER"))
         self.comboBox_Select_Prod_Type_toAdd.setItemText(4, _translate("OWNER_INVENTORY", "OTHER"))
-        self.editStocklabel.setText(_translate("OWNER_INVENTORY", "EDIT STOCK"))
+        self.editStocklabel.setText(_translate("OWNER_INVENTORY", "EDIT PRODUCT STOCK"))
         self.label_613.setText(_translate("OWNER_INVENTORY", "SELECT A PRODUCT TYPE TO EDIT FIRST"))
         self.pushButton_Save_ROOFedit.setText(_translate("OWNER_INVENTORY", "SAVE CHANGES"))
         self.pushButton_Discard_ROOFedit.setText(_translate("OWNER_INVENTORY", "DISCARD CHANGES"))
-        self.label_614.setText(_translate("OWNER_INVENTORY", "PRODUCT ID            :"))
+        self.label_614.setText(_translate("OWNER_INVENTORY", "SOURCE       :"))
         self.label_615.setText(_translate("OWNER_INVENTORY", "PRICE           :"))
         self.label_616.setText(_translate("OWNER_INVENTORY", "NAME            :"))
-        self.lineEdit_EditROOF_prodID.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.lineEdit_EditROOF_Width.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_617.setText(_translate("OWNER_INVENTORY", "STK. QTY.                    :"))
         self.lineEdit_EditROOF_Qty.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
@@ -4424,18 +4392,18 @@ class Ui_OWNER_INVENTORY(object):
         self.label_620.setText(_translate("OWNER_INVENTORY", "LENGTH                       :"))
         self.lineEdit_EditROOF_Length.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_621.setText(_translate("OWNER_INVENTORY", "OTHER          :"))
-        self.lineEdit_EditROOF_Price.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.lineEdit_EditROOF_Price.setPlaceholderText(_translate("OWNER_INVENTORY", "₱0.00"))
         self.lineEdit_EditROOF_OtherSpecifications.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_622.setText(_translate("OWNER_INVENTORY", "THICKNESS (MM)     :"))
         self.lineEdit_EditROOF_Thickness.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_623.setText(_translate("OWNER_INVENTORY", "SPECIFICATIONS"))
         self.lineEdit_EditROOF_Name.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_EditProduct_SourceValue.setText(_translate("OWNER_INVENTORY", "J&J FACTORY-MOALBOAL"))
         self.pushButton_Save_SPANDRELedit.setText(_translate("OWNER_INVENTORY", "SAVE CHANGES"))
         self.pushButton_Discard_SPANDRELedit.setText(_translate("OWNER_INVENTORY", "DISCARD CHANGES"))
-        self.label_624.setText(_translate("OWNER_INVENTORY", "PRODUCT ID            :"))
+        self.label_624.setText(_translate("OWNER_INVENTORY", "SOURCE        :"))
         self.label_625.setText(_translate("OWNER_INVENTORY", "PRICE           :"))
         self.label_626.setText(_translate("OWNER_INVENTORY", "NAME            :"))
-        self.lineEdit_EditSPANDREL_prodID.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.lineEdit_EditSPANDREL_Width.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_627.setText(_translate("OWNER_INVENTORY", "STK. QTY.                    :"))
         self.lineEdit_EditSPANDREL_Qty.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
@@ -4445,18 +4413,18 @@ class Ui_OWNER_INVENTORY(object):
         self.label_630.setText(_translate("OWNER_INVENTORY", "LENGTH                       :"))
         self.lineEdit_EditSPANDREL_Length.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_631.setText(_translate("OWNER_INVENTORY", "OTHER          :"))
-        self.lineEdit_EditSPANDREL_Price.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.lineEdit_EditSPANDREL_Price.setPlaceholderText(_translate("OWNER_INVENTORY", "₱0.00"))
         self.lineEdit_EditSPANDREL_OtherSpecifications.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_632.setText(_translate("OWNER_INVENTORY", "THICKNESS (MM)     :"))
         self.lineEdit_EditSPANDREL_Thickness.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_633.setText(_translate("OWNER_INVENTORY", "SPECIFICATIONS"))
         self.lineEdit_EditSPANDREL_Name.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_EditProduct_SourceValue_2.setText(_translate("OWNER_INVENTORY", "J&J FACTORY-MOALBOAL"))
         self.pushButton_Save_GUTTERedit.setText(_translate("OWNER_INVENTORY", "SAVE CHANGES"))
         self.pushButton_Discard_GUTTERedit.setText(_translate("OWNER_INVENTORY", "DISCARD CHANGES"))
-        self.label_634.setText(_translate("OWNER_INVENTORY", "PRODUCT ID            :"))
+        self.label_634.setText(_translate("OWNER_INVENTORY", "SOURCE        :"))
         self.label_635.setText(_translate("OWNER_INVENTORY", "PRICE           :"))
         self.label_636.setText(_translate("OWNER_INVENTORY", "NAME            :"))
-        self.lineEdit_EditGUTTER_prodID.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.lineEdit_EditGUTTER_Width.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_637.setText(_translate("OWNER_INVENTORY", "STK. QTY.                    :"))
         self.lineEdit_EditGUTTER_Qty.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
@@ -4466,16 +4434,16 @@ class Ui_OWNER_INVENTORY(object):
         self.label_640.setText(_translate("OWNER_INVENTORY", "LENGTH                       :"))
         self.lineEdit_EditGUTTER_Length.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_641.setText(_translate("OWNER_INVENTORY", "OTHER          :"))
-        self.lineEdit_EditGUTTER_Price.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.lineEdit_EditGUTTER_Price.setPlaceholderText(_translate("OWNER_INVENTORY", "₱0.00"))
         self.lineEdit_EditGUTTER_OtherSpecifications.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_642.setText(_translate("OWNER_INVENTORY", "THICKNESS (MM)     :"))
         self.lineEdit_EditGUTTER_Thickness.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_643.setText(_translate("OWNER_INVENTORY", "SPECIFICATIONS"))
         self.lineEdit_EditGUTTER_Name.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
-        self.label_644.setText(_translate("OWNER_INVENTORY", "PRODUCT ID            :"))
+        self.label_EditProduct_SourceValue_3.setText(_translate("OWNER_INVENTORY", "J&J FACTORY-MOALBOAL"))
+        self.label_644.setText(_translate("OWNER_INVENTORY", "SOURCE       :"))
         self.label_645.setText(_translate("OWNER_INVENTORY", "PRICE           :"))
         self.label_646.setText(_translate("OWNER_INVENTORY", "NAME            :"))
-        self.lineEdit_EditOTHER_prodID.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.lineEdit_EditOTHER_Width.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_647.setText(_translate("OWNER_INVENTORY", "STK. QTY.                    :"))
         self.lineEdit_EditOTHER_Qty.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
@@ -4485,12 +4453,13 @@ class Ui_OWNER_INVENTORY(object):
         self.label_650.setText(_translate("OWNER_INVENTORY", "LENGTH                       :"))
         self.lineEdit_EditOTHER_Length.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_651.setText(_translate("OWNER_INVENTORY", "OTHER          :"))
-        self.lineEdit_EditOTHER_Price.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.lineEdit_EditOTHER_Price.setPlaceholderText(_translate("OWNER_INVENTORY", "₱0.00"))
         self.lineEdit_EditOTHER_OtherSpecifications.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_652.setText(_translate("OWNER_INVENTORY", "THICKNESS (MM)     :"))
         self.lineEdit_EditOTHER_Thickness.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_653.setText(_translate("OWNER_INVENTORY", "SPECIFICATIONS"))
         self.lineEdit_EditOTHER_Name.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
+        self.label_EditProduct_SourceValue_4.setText(_translate("OWNER_INVENTORY", "J&J FACTORY-MOALBOAL"))
         self.pushButton_Save_OTHERedit.setText(_translate("OWNER_INVENTORY", "SAVE CHANGES"))
         self.pushButton_Discard_OTHERedit.setText(_translate("OWNER_INVENTORY", "DISCARD CHANGES"))
         self.comboBox_Select_Prod_Type_toEdit.setItemText(0, _translate("OWNER_INVENTORY", "Select Product Type"))
@@ -4498,34 +4467,26 @@ class Ui_OWNER_INVENTORY(object):
         self.comboBox_Select_Prod_Type_toEdit.setItemText(2, _translate("OWNER_INVENTORY", "SPANDREL"))
         self.comboBox_Select_Prod_Type_toEdit.setItemText(3, _translate("OWNER_INVENTORY", "GUTTER"))
         self.comboBox_Select_Prod_Type_toEdit.setItemText(4, _translate("OWNER_INVENTORY", "OTHER"))
-        self.deleteStocklabel.setText(_translate("OWNER_INVENTORY", "DELETE STOCK"))
+        self.deleteStocklabel.setText(_translate("OWNER_INVENTORY", "DELETE PRODUCT"))
         self.label_656.setText(_translate("OWNER_INVENTORY", "SELECT A PRODUCT TYPE TO DELETE FIRST"))
         self.pushButton_Confirm_ROOFdelete.setText(_translate("OWNER_INVENTORY", "CONFIRM"))
         self.pushButton_Close_ROOFdelete.setText(_translate("OWNER_INVENTORY", "CLOSE"))
-        self.label_657.setText(_translate("OWNER_INVENTORY", "PRODUCT ID                  :"))
-        self.lineEdit_DeleteROOF_prodID.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_658.setText(_translate("OWNER_INVENTORY", "NAME                              :"))
         self.lineEdit_49.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.lineEdit_DeleteROOF_Name.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_659.setText(_translate("OWNER_INVENTORY", "WARNING! This action cannot be undone."))
         self.pushButton_Confirm_SPANDRELdelete.setText(_translate("OWNER_INVENTORY", "CONFIRM"))
         self.pushButton_Close_SPANDRELdelete.setText(_translate("OWNER_INVENTORY", "CLOSE"))
-        self.label_660.setText(_translate("OWNER_INVENTORY", "PRODUCT ID                  :"))
-        self.lineEdit_DeleteSPANDREL_prodID.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_661.setText(_translate("OWNER_INVENTORY", "NAME                              :"))
         self.lineEdit_50.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.lineEdit_DeleteSPANDREL_Name.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_662.setText(_translate("OWNER_INVENTORY", "WARNING! This action cannot be undone."))
         self.pushButton_Confirm_GUTTERdelete.setText(_translate("OWNER_INVENTORY", "CONFIRM"))
         self.pushButton_Close_GUTTERdelete.setText(_translate("OWNER_INVENTORY", "CLOSE"))
-        self.label_663.setText(_translate("OWNER_INVENTORY", "PRODUCT ID                  :"))
-        self.lineEdit_DeleteGUTTER_prodID.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_664.setText(_translate("OWNER_INVENTORY", "NAME                              :"))
         self.lineEdit_51.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.lineEdit_DeleteGUTTER_Name.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_665.setText(_translate("OWNER_INVENTORY", "WARNING! This action cannot be undone."))
-        self.label_666.setText(_translate("OWNER_INVENTORY", "PRODUCT ID                  :"))
-        self.lineEdit_DeleteOTHER_prodID.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.label_667.setText(_translate("OWNER_INVENTORY", "NAME                              :"))
         self.lineEdit_52.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
         self.lineEdit_DeleteOTHER_Name.setPlaceholderText(_translate("OWNER_INVENTORY", "....."))
